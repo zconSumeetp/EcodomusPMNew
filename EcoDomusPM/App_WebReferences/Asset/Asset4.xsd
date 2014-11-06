@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.datacontract.org/2004/07/EcoDomus.Asset" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/EcoDomus.Asset" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://devservices.ecodomus.com/ClientPM/Asset.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="AssetModel">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Asset_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Attribute" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Barcode_Compponent_Ids" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Barcode_Structure_Id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Component_Ids" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CriteriaName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CriteriaText" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Culture" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EntityName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FacilityNames" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Fk_Assembly_ids" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Fk_facility_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="IsNew" type="ser:char" />
+      <xs:element minOccurs="0" name="Locationids" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="New_Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="No_of_clone" type="xs:int" />
+      <xs:element minOccurs="0" name="Orderby" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Pageindex" type="xs:int" />
+      <xs:element minOccurs="0" name="Pagesize" type="xs:int" />
+      <xs:element minOccurs="0" name="Project_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Search_Text" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="System_id" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Type_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Uploaded_file_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="User_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="entity_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="impactid" type="ser:guid" />
+      <xs:element minOccurs="0" name="row_id" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="AssetModel" nillable="true" type="tns:AssetModel" />
+</xs:schema>

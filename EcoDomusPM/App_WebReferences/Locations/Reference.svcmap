@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="d77f8fa6-9208-4907-9bb7-2c2a3487a9b8" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>false</ReferenceAllAssemblies>
+    <ReferencedAssemblies>
+      <ReferencedAssembly AssemblyName="System" />
+      <ReferencedAssembly AssemblyName="System.Core" />
+      <ReferencedAssembly AssemblyName="System.Data" />
+      <ReferencedAssembly AssemblyName="System.Xml" />
+      <ReferencedAssembly AssemblyName="System.Xml.Linq" />
+    </ReferencedAssemblies>
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://devservices.ecodomus.com/ClientPM/Locations.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="Locations4.xsd" MetadataType="Schema" ID="14a6ad03-2a83-4cca-a835-203d7fbad347" SourceId="1" SourceUrl="http://devservices.ecodomus.com/ClientPM/Locations.svc?xsd=xsd3" />
+    <MetadataFile FileName="Locations1.disco" MetadataType="Disco" ID="02e336a5-7dbd-40cd-bfaf-7d025d3398c1" SourceId="1" SourceUrl="http://devservices.ecodomus.com/ClientPM/Locations.svc?disco" />
+    <MetadataFile FileName="Locations42.xsd" MetadataType="Schema" ID="4da0ba0c-cbb5-455d-a12a-8772ac1f20b5" SourceId="1" SourceUrl="http://devservices.ecodomus.com/ClientPM/Locations.svc?xsd=xsd1" />
+    <MetadataFile FileName="Locations43.xsd" MetadataType="Schema" ID="0ad0295e-7698-49a3-8cd1-9efc609c5caf" SourceId="1" SourceUrl="http://devservices.ecodomus.com/ClientPM/Locations.svc?xsd=xsd0" />
+    <MetadataFile FileName="Locations1.wsdl" MetadataType="Wsdl" ID="bdc1d19b-6560-4026-9b44-4df573ad1cc9" SourceId="1" SourceUrl="http://devservices.ecodomus.com/ClientPM/Locations.svc?wsdl" />
+    <MetadataFile FileName="Locations44.xsd" MetadataType="Schema" ID="6b61639d-4a00-4c84-8033-379663617adb" SourceId="1" SourceUrl="http://devservices.ecodomus.com/ClientPM/Locations.svc?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

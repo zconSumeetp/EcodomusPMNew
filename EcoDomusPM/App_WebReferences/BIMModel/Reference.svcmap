@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="7cb732ed-dfd1-435a-896f-f798909e8374" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>false</ReferenceAllAssemblies>
+    <ReferencedAssemblies>
+      <ReferencedAssembly AssemblyName="Microsoft.CSharp" />
+      <ReferencedAssembly AssemblyName="System" />
+      <ReferencedAssembly AssemblyName="System.Activities" />
+      <ReferencedAssembly AssemblyName="System.ComponentModel.DataAnnotations" />
+      <ReferencedAssembly AssemblyName="System.Configuration" />
+      <ReferencedAssembly AssemblyName="System.Core" />
+      <ReferencedAssembly AssemblyName="System.Data" />
+      <ReferencedAssembly AssemblyName="System.Data.DataSetExtensions" />
+      <ReferencedAssembly AssemblyName="System.Drawing" />
+      <ReferencedAssembly AssemblyName="System.EnterpriseServices" />
+      <ReferencedAssembly AssemblyName="System.IdentityModel" />
+      <ReferencedAssembly AssemblyName="System.Runtime.Serialization" />
+      <ReferencedAssembly AssemblyName="System.ServiceModel" />
+      <ReferencedAssembly AssemblyName="System.ServiceModel.Activation" />
+      <ReferencedAssembly AssemblyName="System.ServiceModel.Activities" />
+      <ReferencedAssembly AssemblyName="System.ServiceModel.Web" />
+      <ReferencedAssembly AssemblyName="System.ServiceProcess" />
+      <ReferencedAssembly AssemblyName="System.Web" />
+      <ReferencedAssembly AssemblyName="System.Web.ApplicationServices" />
+      <ReferencedAssembly AssemblyName="System.Web.DataVisualization" />
+      <ReferencedAssembly AssemblyName="System.Web.DynamicData" />
+      <ReferencedAssembly AssemblyName="System.Web.Extensions" />
+      <ReferencedAssembly AssemblyName="System.Web.Services" />
+      <ReferencedAssembly AssemblyName="System.WorkflowServices" />
+      <ReferencedAssembly AssemblyName="System.Xml" />
+      <ReferencedAssembly AssemblyName="System.Xml.Linq" />
+    </ReferencedAssemblies>
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://services.ecodomus.com/ClientPM/BIMModel.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="BIMModel4.xsd" MetadataType="Schema" ID="2832eda2-f113-430e-998b-3b0d9dfa4ed8" SourceId="1" SourceUrl="http://services.ecodomus.com/ClientPM/BIMModel.svc?xsd=xsd2" />
+    <MetadataFile FileName="BIMModel1.wsdl" MetadataType="Wsdl" ID="6b2af49d-bb00-4c98-a2f2-ffcc6dddd7da" SourceId="1" SourceUrl="http://services.ecodomus.com/ClientPM/BIMModel.svc?wsdl" />
+    <MetadataFile FileName="BIMModel1.disco" MetadataType="Disco" ID="9ce070a3-3729-4361-a00f-0fcd7353bad8" SourceId="1" SourceUrl="http://services.ecodomus.com/ClientPM/BIMModel.svc?disco" />
+    <MetadataFile FileName="BIMModel42.xsd" MetadataType="Schema" ID="f6908259-7391-47b4-a873-0194042b2431" SourceId="1" SourceUrl="http://services.ecodomus.com/ClientPM/BIMModel.svc?xsd=xsd5" />
+    <MetadataFile FileName="BIMModel43.xsd" MetadataType="Schema" ID="8c810618-ee16-4bb7-93a0-956de873d9bb" SourceId="1" SourceUrl="http://services.ecodomus.com/ClientPM/BIMModel.svc?xsd=xsd3" />
+    <MetadataFile FileName="BIMModel44.xsd" MetadataType="Schema" ID="60591550-0e80-4c53-99e4-bc13b0ce3fc0" SourceId="1" SourceUrl="http://services.ecodomus.com/ClientPM/BIMModel.svc?xsd=xsd0" />
+    <MetadataFile FileName="BIMModel45.xsd" MetadataType="Schema" ID="69166a0d-22c6-4768-8266-392d7cd82232" SourceId="1" SourceUrl="http://services.ecodomus.com/ClientPM/BIMModel.svc?xsd=xsd1" />
+    <MetadataFile FileName="BIMModel46.xsd" MetadataType="Schema" ID="7600902c-6f9f-4ec0-99f6-3e136b6a962a" SourceId="1" SourceUrl="http://services.ecodomus.com/ClientPM/BIMModel.svc?xsd=xsd4" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

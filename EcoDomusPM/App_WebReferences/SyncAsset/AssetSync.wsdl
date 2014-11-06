@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="AssetSync" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:4444/Client WCF/AssetSync.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:4444/Client WCF/AssetSync.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:4444/Client WCF/AssetSync.svc?xsd=xsd2" />
+      <xsd:import schemaLocation="http://localhost:4444/Client WCF/AssetSync.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IAssetSync_DoWork_InputMessage">
+    <wsdl:part name="parameters" element="tns:DoWork" />
+  </wsdl:message>
+  <wsdl:message name="IAssetSync_DoWork_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DoWorkResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAssetSync_GetSyncGrid_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSyncGrid" />
+  </wsdl:message>
+  <wsdl:message name="IAssetSync_GetSyncGrid_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSyncGridResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAssetSync_SyncReport_InputMessage">
+    <wsdl:part name="parameters" element="tns:SyncReport" />
+  </wsdl:message>
+  <wsdl:message name="IAssetSync_SyncReport_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SyncReportResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAssetSync_GetSyncSearch_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSyncSearch" />
+  </wsdl:message>
+  <wsdl:message name="IAssetSync_GetSyncSearch_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSyncSearchResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAssetSync_GetEntityCode_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetEntityCode" />
+  </wsdl:message>
+  <wsdl:message name="IAssetSync_GetEntityCode_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetEntityCodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAssetSync_GetFailedDetails_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetFailedDetails" />
+  </wsdl:message>
+  <wsdl:message name="IAssetSync_GetFailedDetails_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFailedDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAssetSync_GetSchedularDetails_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSchedularDetails" />
+  </wsdl:message>
+  <wsdl:message name="IAssetSync_GetSchedularDetails_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSchedularDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAssetSync_UpdateSchedularDetails_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateSchedularDetails" />
+  </wsdl:message>
+  <wsdl:message name="IAssetSync_UpdateSchedularDetails_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateSchedularDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAssetSync_GetSyncDetails_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSyncDetails" />
+  </wsdl:message>
+  <wsdl:message name="IAssetSync_GetSyncDetails_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSyncDetailsResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IAssetSync">
+    <wsdl:operation name="DoWork">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAssetSync/DoWork" message="tns:IAssetSync_DoWork_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAssetSync/DoWorkResponse" message="tns:IAssetSync_DoWork_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSyncGrid">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAssetSync/GetSyncGrid" message="tns:IAssetSync_GetSyncGrid_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAssetSync/GetSyncGridResponse" message="tns:IAssetSync_GetSyncGrid_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SyncReport">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAssetSync/SyncReport" message="tns:IAssetSync_SyncReport_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAssetSync/SyncReportResponse" message="tns:IAssetSync_SyncReport_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSyncSearch">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAssetSync/GetSyncSearch" message="tns:IAssetSync_GetSyncSearch_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAssetSync/GetSyncSearchResponse" message="tns:IAssetSync_GetSyncSearch_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEntityCode">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAssetSync/GetEntityCode" message="tns:IAssetSync_GetEntityCode_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAssetSync/GetEntityCodeResponse" message="tns:IAssetSync_GetEntityCode_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFailedDetails">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAssetSync/GetFailedDetails" message="tns:IAssetSync_GetFailedDetails_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAssetSync/GetFailedDetailsResponse" message="tns:IAssetSync_GetFailedDetails_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSchedularDetails">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAssetSync/GetSchedularDetails" message="tns:IAssetSync_GetSchedularDetails_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAssetSync/GetSchedularDetailsResponse" message="tns:IAssetSync_GetSchedularDetails_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateSchedularDetails">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAssetSync/UpdateSchedularDetails" message="tns:IAssetSync_UpdateSchedularDetails_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAssetSync/UpdateSchedularDetailsResponse" message="tns:IAssetSync_UpdateSchedularDetails_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSyncDetails">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAssetSync/GetSyncDetails" message="tns:IAssetSync_GetSyncDetails_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAssetSync/GetSyncDetailsResponse" message="tns:IAssetSync_GetSyncDetails_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IAssetSync" type="tns:IAssetSync">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="DoWork">
+      <soap:operation soapAction="http://tempuri.org/IAssetSync/DoWork" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSyncGrid">
+      <soap:operation soapAction="http://tempuri.org/IAssetSync/GetSyncGrid" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SyncReport">
+      <soap:operation soapAction="http://tempuri.org/IAssetSync/SyncReport" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSyncSearch">
+      <soap:operation soapAction="http://tempuri.org/IAssetSync/GetSyncSearch" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEntityCode">
+      <soap:operation soapAction="http://tempuri.org/IAssetSync/GetEntityCode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFailedDetails">
+      <soap:operation soapAction="http://tempuri.org/IAssetSync/GetFailedDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSchedularDetails">
+      <soap:operation soapAction="http://tempuri.org/IAssetSync/GetSchedularDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateSchedularDetails">
+      <soap:operation soapAction="http://tempuri.org/IAssetSync/UpdateSchedularDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSyncDetails">
+      <soap:operation soapAction="http://tempuri.org/IAssetSync/GetSyncDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="AssetSync">
+    <wsdl:port name="BasicHttpBinding_IAssetSync" binding="tns:BasicHttpBinding_IAssetSync">
+      <soap:address location="http://localhost:4444/Client%20WCF/AssetSync.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

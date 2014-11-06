@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.datacontract.org/2004/07/EcoDomus.Dashboard" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/EcoDomus.Dashboard" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:4444/Client WCF/Dashboard.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="DashboardModel">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ClientID" type="ser:guid" />
+      <xs:element minOccurs="0" name="Culture" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Entity" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FacilityId" type="ser:guid" />
+      <xs:element minOccurs="0" name="Name_Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OrganizationId" type="ser:guid" />
+      <xs:element minOccurs="0" name="ParentID" type="ser:guid" />
+      <xs:element minOccurs="0" name="ProjectId" type="ser:guid" />
+      <xs:element minOccurs="0" name="Row_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Search_text" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="System_role" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="User_id" type="ser:guid" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DashboardModel" nillable="true" type="tns:DashboardModel" />
+</xs:schema>

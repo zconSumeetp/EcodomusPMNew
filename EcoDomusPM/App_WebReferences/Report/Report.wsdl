@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Report" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:4444/Client WCF/Report.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:4444/Client WCF/Report.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:4444/Client WCF/Report.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/" />
+      <xsd:import schemaLocation="http://localhost:4444/Client WCF/Report.svc?xsd=xsd3" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IReport_DoWork_InputMessage">
+    <wsdl:part name="parameters" element="tns:DoWork" />
+  </wsdl:message>
+  <wsdl:message name="IReport_DoWork_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DoWorkResponse" />
+  </wsdl:message>
+  <wsdl:message name="IReport_proc_bind_error_grid_for_entity_InputMessage">
+    <wsdl:part name="parameters" element="tns:proc_bind_error_grid_for_entity" />
+  </wsdl:message>
+  <wsdl:message name="IReport_proc_bind_error_grid_for_entity_OutputMessage">
+    <wsdl:part name="parameters" element="tns:proc_bind_error_grid_for_entityResponse" />
+  </wsdl:message>
+  <wsdl:message name="IReport_proc_insert_errors_in_view_InputMessage">
+    <wsdl:part name="parameters" element="tns:proc_insert_errors_in_view" />
+  </wsdl:message>
+  <wsdl:message name="IReport_proc_insert_errors_in_view_OutputMessage">
+    <wsdl:part name="parameters" element="tns:proc_insert_errors_in_viewResponse" />
+  </wsdl:message>
+  <wsdl:message name="IReport_proc_generate_report_for_cobieqc_InputMessage">
+    <wsdl:part name="parameters" element="tns:proc_generate_report_for_cobieqc" />
+  </wsdl:message>
+  <wsdl:message name="IReport_proc_generate_report_for_cobieqc_OutputMessage">
+    <wsdl:part name="parameters" element="tns:proc_generate_report_for_cobieqcResponse" />
+  </wsdl:message>
+  <wsdl:message name="IReport_proc_get_pahse_id_InputMessage">
+    <wsdl:part name="parameters" element="tns:proc_get_pahse_id" />
+  </wsdl:message>
+  <wsdl:message name="IReport_proc_get_pahse_id_OutputMessage">
+    <wsdl:part name="parameters" element="tns:proc_get_pahse_idResponse" />
+  </wsdl:message>
+  <wsdl:message name="IReport_proc_bind_facility_dropdown_for_cobieqc_InputMessage">
+    <wsdl:part name="parameters" element="tns:proc_bind_facility_dropdown_for_cobieqc" />
+  </wsdl:message>
+  <wsdl:message name="IReport_proc_bind_facility_dropdown_for_cobieqc_OutputMessage">
+    <wsdl:part name="parameters" element="tns:proc_bind_facility_dropdown_for_cobieqcResponse" />
+  </wsdl:message>
+  <wsdl:message name="IReport_proc_insrt_update_selected_phase_status_InputMessage">
+    <wsdl:part name="parameters" element="tns:proc_insrt_update_selected_phase_status" />
+  </wsdl:message>
+  <wsdl:message name="IReport_proc_insrt_update_selected_phase_status_OutputMessage">
+    <wsdl:part name="parameters" element="tns:proc_insrt_update_selected_phase_statusResponse" />
+  </wsdl:message>
+  <wsdl:message name="IReport_proc_bind_entity_field_tree_InputMessage">
+    <wsdl:part name="parameters" element="tns:proc_bind_entity_field_tree" />
+  </wsdl:message>
+  <wsdl:message name="IReport_proc_bind_entity_field_tree_OutputMessage">
+    <wsdl:part name="parameters" element="tns:proc_bind_entity_field_treeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IReport_GetAssetConditionReport_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAssetConditionReport" />
+  </wsdl:message>
+  <wsdl:message name="IReport_GetAssetConditionReport_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAssetConditionReportResponse" />
+  </wsdl:message>
+  <wsdl:message name="IReport_GetMissingAttributes_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMissingAttributes" />
+  </wsdl:message>
+  <wsdl:message name="IReport_GetMissingAttributes_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMissingAttributesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IReport_proc_insert_missing_attributes_InputMessage">
+    <wsdl:part name="parameters" element="tns:proc_insert_missing_attributes" />
+  </wsdl:message>
+  <wsdl:message name="IReport_proc_insert_missing_attributes_OutputMessage">
+    <wsdl:part name="parameters" element="tns:proc_insert_missing_attributesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IReport_proc_insert_missing_attributes_group_InputMessage">
+    <wsdl:part name="parameters" element="tns:proc_insert_missing_attributes_group" />
+  </wsdl:message>
+  <wsdl:message name="IReport_proc_insert_missing_attributes_group_OutputMessage">
+    <wsdl:part name="parameters" element="tns:proc_insert_missing_attributes_groupResponse" />
+  </wsdl:message>
+  <wsdl:message name="IReport_proc_get_searched_entity_data_InputMessage">
+    <wsdl:part name="parameters" element="tns:proc_get_searched_entity_data" />
+  </wsdl:message>
+  <wsdl:message name="IReport_proc_get_searched_entity_data_OutputMessage">
+    <wsdl:part name="parameters" element="tns:proc_get_searched_entity_dataResponse" />
+  </wsdl:message>
+  <wsdl:message name="IReport_get_MI_report_types_InputMessage">
+    <wsdl:part name="parameters" element="tns:get_MI_report_types" />
+  </wsdl:message>
+  <wsdl:message name="IReport_get_MI_report_types_OutputMessage">
+    <wsdl:part name="parameters" element="tns:get_MI_report_typesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IReport_get_MI_entity_list_InputMessage">
+    <wsdl:part name="parameters" element="tns:get_MI_entity_list" />
+  </wsdl:message>
+  <wsdl:message name="IReport_get_MI_entity_list_OutputMessage">
+    <wsdl:part name="parameters" element="tns:get_MI_entity_listResponse" />
+  </wsdl:message>
+  <wsdl:message name="IReport_get_MI_attributes_InputMessage">
+    <wsdl:part name="parameters" element="tns:get_MI_attributes" />
+  </wsdl:message>
+  <wsdl:message name="IReport_get_MI_attributes_OutputMessage">
+    <wsdl:part name="parameters" element="tns:get_MI_attributesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IReport_get_missing_information_report_by_entity_InputMessage">
+    <wsdl:part name="parameters" element="tns:get_missing_information_report_by_entity" />
+  </wsdl:message>
+  <wsdl:message name="IReport_get_missing_information_report_by_entity_OutputMessage">
+    <wsdl:part name="parameters" element="tns:get_missing_information_report_by_entityResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IReport">
+    <wsdl:operation name="DoWork">
+      <wsdl:input wsaw:Action="http://tempuri.org/IReport/DoWork" message="tns:IReport_DoWork_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IReport/DoWorkResponse" message="tns:IReport_DoWork_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="proc_bind_error_grid_for_entity">
+      <wsdl:input wsaw:Action="http://tempuri.org/IReport/proc_bind_error_grid_for_entity" message="tns:IReport_proc_bind_error_grid_for_entity_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IReport/proc_bind_error_grid_for_entityResponse" message="tns:IReport_proc_bind_error_grid_for_entity_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="proc_insert_errors_in_view">
+      <wsdl:input wsaw:Action="http://tempuri.org/IReport/proc_insert_errors_in_view" message="tns:IReport_proc_insert_errors_in_view_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IReport/proc_insert_errors_in_viewResponse" message="tns:IReport_proc_insert_errors_in_view_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="proc_generate_report_for_cobieqc">
+      <wsdl:input wsaw:Action="http://tempuri.org/IReport/proc_generate_report_for_cobieqc" message="tns:IReport_proc_generate_report_for_cobieqc_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IReport/proc_generate_report_for_cobieqcResponse" message="tns:IReport_proc_generate_report_for_cobieqc_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="proc_get_pahse_id">
+      <wsdl:input wsaw:Action="http://tempuri.org/IReport/proc_get_pahse_id" message="tns:IReport_proc_get_pahse_id_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IReport/proc_get_pahse_idResponse" message="tns:IReport_proc_get_pahse_id_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="proc_bind_facility_dropdown_for_cobieqc">
+      <wsdl:input wsaw:Action="http://tempuri.org/IReport/proc_bind_facility_dropdown_for_cobieqc" message="tns:IReport_proc_bind_facility_dropdown_for_cobieqc_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IReport/proc_bind_facility_dropdown_for_cobieqcResponse" message="tns:IReport_proc_bind_facility_dropdown_for_cobieqc_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="proc_insrt_update_selected_phase_status">
+      <wsdl:input wsaw:Action="http://tempuri.org/IReport/proc_insrt_update_selected_phase_status" message="tns:IReport_proc_insrt_update_selected_phase_status_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IReport/proc_insrt_update_selected_phase_statusResponse" message="tns:IReport_proc_insrt_update_selected_phase_status_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="proc_bind_entity_field_tree">
+      <wsdl:input wsaw:Action="http://tempuri.org/IReport/proc_bind_entity_field_tree" message="tns:IReport_proc_bind_entity_field_tree_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IReport/proc_bind_entity_field_treeResponse" message="tns:IReport_proc_bind_entity_field_tree_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAssetConditionReport">
+      <wsdl:input wsaw:Action="http://tempuri.org/IReport/GetAssetConditionReport" message="tns:IReport_GetAssetConditionReport_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IReport/GetAssetConditionReportResponse" message="tns:IReport_GetAssetConditionReport_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMissingAttributes">
+      <wsdl:input wsaw:Action="http://tempuri.org/IReport/GetMissingAttributes" message="tns:IReport_GetMissingAttributes_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IReport/GetMissingAttributesResponse" message="tns:IReport_GetMissingAttributes_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="proc_insert_missing_attributes">
+      <wsdl:input wsaw:Action="http://tempuri.org/IReport/proc_insert_missing_attributes" message="tns:IReport_proc_insert_missing_attributes_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IReport/proc_insert_missing_attributesResponse" message="tns:IReport_proc_insert_missing_attributes_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="proc_insert_missing_attributes_group">
+      <wsdl:input wsaw:Action="http://tempuri.org/IReport/proc_insert_missing_attributes_group" message="tns:IReport_proc_insert_missing_attributes_group_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IReport/proc_insert_missing_attributes_groupResponse" message="tns:IReport_proc_insert_missing_attributes_group_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="proc_get_searched_entity_data">
+      <wsdl:input wsaw:Action="http://tempuri.org/IReport/proc_get_searched_entity_data" message="tns:IReport_proc_get_searched_entity_data_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IReport/proc_get_searched_entity_dataResponse" message="tns:IReport_proc_get_searched_entity_data_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="get_MI_report_types">
+      <wsdl:input wsaw:Action="http://tempuri.org/IReport/get_MI_report_types" message="tns:IReport_get_MI_report_types_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IReport/get_MI_report_typesResponse" message="tns:IReport_get_MI_report_types_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="get_MI_entity_list">
+      <wsdl:input wsaw:Action="http://tempuri.org/IReport/get_MI_entity_list" message="tns:IReport_get_MI_entity_list_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IReport/get_MI_entity_listResponse" message="tns:IReport_get_MI_entity_list_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="get_MI_attributes">
+      <wsdl:input wsaw:Action="http://tempuri.org/IReport/get_MI_attributes" message="tns:IReport_get_MI_attributes_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IReport/get_MI_attributesResponse" message="tns:IReport_get_MI_attributes_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="get_missing_information_report_by_entity">
+      <wsdl:input wsaw:Action="http://tempuri.org/IReport/get_missing_information_report_by_entity" message="tns:IReport_get_missing_information_report_by_entity_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IReport/get_missing_information_report_by_entityResponse" message="tns:IReport_get_missing_information_report_by_entity_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IReport" type="tns:IReport">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="DoWork">
+      <soap:operation soapAction="http://tempuri.org/IReport/DoWork" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="proc_bind_error_grid_for_entity">
+      <soap:operation soapAction="http://tempuri.org/IReport/proc_bind_error_grid_for_entity" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="proc_insert_errors_in_view">
+      <soap:operation soapAction="http://tempuri.org/IReport/proc_insert_errors_in_view" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="proc_generate_report_for_cobieqc">
+      <soap:operation soapAction="http://tempuri.org/IReport/proc_generate_report_for_cobieqc" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="proc_get_pahse_id">
+      <soap:operation soapAction="http://tempuri.org/IReport/proc_get_pahse_id" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="proc_bind_facility_dropdown_for_cobieqc">
+      <soap:operation soapAction="http://tempuri.org/IReport/proc_bind_facility_dropdown_for_cobieqc" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="proc_insrt_update_selected_phase_status">
+      <soap:operation soapAction="http://tempuri.org/IReport/proc_insrt_update_selected_phase_status" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="proc_bind_entity_field_tree">
+      <soap:operation soapAction="http://tempuri.org/IReport/proc_bind_entity_field_tree" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAssetConditionReport">
+      <soap:operation soapAction="http://tempuri.org/IReport/GetAssetConditionReport" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMissingAttributes">
+      <soap:operation soapAction="http://tempuri.org/IReport/GetMissingAttributes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="proc_insert_missing_attributes">
+      <soap:operation soapAction="http://tempuri.org/IReport/proc_insert_missing_attributes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="proc_insert_missing_attributes_group">
+      <soap:operation soapAction="http://tempuri.org/IReport/proc_insert_missing_attributes_group" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="proc_get_searched_entity_data">
+      <soap:operation soapAction="http://tempuri.org/IReport/proc_get_searched_entity_data" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="get_MI_report_types">
+      <soap:operation soapAction="http://tempuri.org/IReport/get_MI_report_types" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="get_MI_entity_list">
+      <soap:operation soapAction="http://tempuri.org/IReport/get_MI_entity_list" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="get_MI_attributes">
+      <soap:operation soapAction="http://tempuri.org/IReport/get_MI_attributes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="get_missing_information_report_by_entity">
+      <soap:operation soapAction="http://tempuri.org/IReport/get_missing_information_report_by_entity" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Report">
+    <wsdl:port name="BasicHttpBinding_IReport" binding="tns:BasicHttpBinding_IReport">
+      <soap:address location="http://localhost:4444/Client%20WCF/Report.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.datacontract.org/2004/07/" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:4444/Client WCF/SetupSync.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="SetupSyncModel">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Configuration_name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Configuration_status" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Connection_string" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Created_by_user_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Ecodomus_system_data_id" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Entity_code" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="External_system_code_dec" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="External_system_configuration_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="External_system_data_id" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="External_system_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Fk_entity_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Fk_facility_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Group_name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Insert_sql" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Insert_sql1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Modified_by_user_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Pk_external_system_configuration_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Search_value" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Service_auth_url" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Service_client" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Service_password" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Service_url" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Service_username" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Table_name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="User_id" type="ser:guid" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SetupSyncModel" nillable="true" type="tns:SetupSyncModel" />
+</xs:schema>

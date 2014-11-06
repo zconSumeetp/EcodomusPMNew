@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="ba0e9801-cec5-4b0d-a837-c4b8bde5f267" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>false</ReferenceAllAssemblies>
+    <ReferencedAssemblies>
+      <ReferencedAssembly AssemblyName="System" />
+      <ReferencedAssembly AssemblyName="System.Core" />
+      <ReferencedAssembly AssemblyName="System.Data" />
+      <ReferencedAssembly AssemblyName="System.Xml" />
+      <ReferencedAssembly AssemblyName="System.Xml.Linq" />
+    </ReferencedAssemblies>
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:4444/Client%20WCF/AttributeTemplate.svc?wsdl" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="AttributeTemplate1.xsd" MetadataType="Schema" ID="61961938-9b13-4a14-bbce-fe764ffb4744" SourceId="1" SourceUrl="http://localhost:4444/Client WCF/AttributeTemplate.svc?xsd=xsd5" />
+    <MetadataFile FileName="AttributeTemplate.xsd" MetadataType="Schema" ID="9d86172a-8283-47c8-8c15-b706ed677b1c" SourceId="1" SourceUrl="http://localhost:4444/Client WCF/AttributeTemplate.svc?xsd=xsd6" />
+    <MetadataFile FileName="AttributeTemplate3.xsd" MetadataType="Schema" ID="98bb1b60-1a64-43ab-84fc-9ca2211bb47f" SourceId="1" SourceUrl="http://localhost:4444/Client WCF/AttributeTemplate.svc?xsd=xsd8" />
+    <MetadataFile FileName="AttributeTemplate13.xsd" MetadataType="Schema" ID="c08f272e-a579-4fa7-8a77-d23d7482013b" SourceId="1" SourceUrl="http://localhost:4444/Client WCF/AttributeTemplate.svc?xsd=xsd4" />
+    <MetadataFile FileName="AttributeTemplate1.wsdl" MetadataType="Wsdl" ID="66f3271c-c6d7-4d4b-b3ef-466e7074f095" SourceId="1" SourceUrl="http://localhost:4444/Client WCF/AttributeTemplate.svc?wsdl" />
+    <MetadataFile FileName="AttributeTemplate14.xsd" MetadataType="Schema" ID="a776783c-149f-4347-9478-76affa6775cc" SourceId="1" SourceUrl="http://localhost:4444/Client WCF/AttributeTemplate.svc?xsd=xsd1" />
+    <MetadataFile FileName="AttributeTemplate15.xsd" MetadataType="Schema" ID="311f4d92-56da-4cd0-aab8-48372ff31613" SourceId="1" SourceUrl="http://localhost:4444/Client WCF/AttributeTemplate.svc?xsd=xsd0" />
+    <MetadataFile FileName="AttributeTemplate16.xsd" MetadataType="Schema" ID="de22a3bb-3e43-4126-8ef3-4e9ef58f498f" SourceId="1" SourceUrl="http://localhost:4444/Client WCF/AttributeTemplate.svc?xsd=xsd2" />
+    <MetadataFile FileName="AttributeTemplate2.xsd" MetadataType="Schema" ID="881a1acc-542c-4c50-859f-49b96beec13b" SourceId="1" SourceUrl="http://localhost:4444/Client WCF/AttributeTemplate.svc?xsd=xsd7" />
+    <MetadataFile FileName="AttributeTemplate18.xsd" MetadataType="Schema" ID="c78abbc4-09ab-4b91-8fe2-8fd44fea2114" SourceId="1" SourceUrl="http://localhost:4444/Client WCF/AttributeTemplate.svc?xsd=xsd3" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

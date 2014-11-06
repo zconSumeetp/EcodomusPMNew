@@ -1,0 +1,2548 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="EnergyPlus" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://services.ecodomus.com/ClientPM/EnergyPlus.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://services.ecodomus.com/ClientPM/EnergyPlus.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://services.ecodomus.com/ClientPM/EnergyPlus.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/" />
+      <xsd:import schemaLocation="http://services.ecodomus.com/ClientPM/EnergyPlus.svc?xsd=xsd3" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IEnergyPlus_Get_energy_modeling_facility_project_schedules_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_energy_modeling_facility_project_schedules" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Get_energy_modeling_facility_project_schedules_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_energy_modeling_facility_project_schedulesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Delete_Energy_Modeling_Unselected_Schedules_InputMessage">
+    <wsdl:part name="parameters" element="tns:Delete_Energy_Modeling_Unselected_Schedules" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Delete_Energy_Modeling_Unselected_Schedules_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Delete_Energy_Modeling_Unselected_SchedulesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Get_Energy_Modeling_Compact_Schedules_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Energy_Modeling_Compact_Schedules" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Get_Energy_Modeling_Compact_Schedules_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Energy_Modeling_Compact_SchedulesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Insert_Update_Energy_Modeling_Compact_Schedule_InputMessage">
+    <wsdl:part name="parameters" element="tns:Insert_Update_Energy_Modeling_Compact_Schedule" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Insert_Update_Energy_Modeling_Compact_Schedule_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Insert_Update_Energy_Modeling_Compact_ScheduleResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Update_Energy_Modeling_Compact_Schedule_Week_Type_Flag_InputMessage">
+    <wsdl:part name="parameters" element="tns:Update_Energy_Modeling_Compact_Schedule_Week_Type_Flag" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Update_Energy_Modeling_Compact_Schedule_Week_Type_Flag_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Update_Energy_Modeling_Compact_Schedule_Week_Type_FlagResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Insert_update_facility_utility_data_InputMessage">
+    <wsdl:part name="parameters" element="tns:Insert_update_facility_utility_data" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Insert_update_facility_utility_data_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Insert_update_facility_utility_dataResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Get_Energy_Modeling_Unassigned_Compact_Schedule_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Energy_Modeling_Unassigned_Compact_Schedule" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Get_Energy_Modeling_Unassigned_Compact_Schedule_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Energy_Modeling_Unassigned_Compact_ScheduleResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Insert_Update_Energy_Modeling_Entity_Schedule_Linkup_InputMessage">
+    <wsdl:part name="parameters" element="tns:Insert_Update_Energy_Modeling_Entity_Schedule_Linkup" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Insert_Update_Energy_Modeling_Entity_Schedule_Linkup_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Insert_Update_Energy_Modeling_Entity_Schedule_LinkupResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Get_Energy_Modeling_Utility_data_Profile_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Energy_Modeling_Utility_data_Profile" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Get_Energy_Modeling_Utility_data_Profile_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Energy_Modeling_Utility_data_ProfileResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Get_Energy_Modeling_Compact_Schedule_Types_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Energy_Modeling_Compact_Schedule_Types" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Get_Energy_Modeling_Compact_Schedule_Types_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Energy_Modeling_Compact_Schedule_TypesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Get_Energy_Modeling_Schedule_For_Update_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Energy_Modeling_Schedule_For_Update" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Get_Energy_Modeling_Schedule_For_Update_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Energy_Modeling_Schedule_For_UpdateResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Delete_Energy_Modeling_Schedule_InputMessage">
+    <wsdl:part name="parameters" element="tns:Delete_Energy_Modeling_Schedule" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Delete_Energy_Modeling_Schedule_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Delete_Energy_Modeling_ScheduleResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Insert_Update_Energy_Modeling_IDF_File_Data_InputMessage">
+    <wsdl:part name="parameters" element="tns:Insert_Update_Energy_Modeling_IDF_File_Data" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Insert_Update_Energy_Modeling_IDF_File_Data_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Insert_Update_Energy_Modeling_IDF_File_DataResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Insert_Update_Energy_Modeling_Zone_Attribute_InputMessage">
+    <wsdl:part name="parameters" element="tns:Insert_Update_Energy_Modeling_Zone_Attribute" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Insert_Update_Energy_Modeling_Zone_Attribute_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Insert_Update_Energy_Modeling_Zone_AttributeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Get_Energy_Modeling_File_List_For_Facility_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Energy_Modeling_File_List_For_Facility" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Get_Energy_Modeling_File_List_For_Facility_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Energy_Modeling_File_List_For_FacilityResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Get_energy_modeling_object_fields_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_energy_modeling_object_fields" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Get_energy_modeling_object_fields_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_energy_modeling_object_fieldsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Insert_update_energy_model_zone_zone_attribute_InputMessage">
+    <wsdl:part name="parameters" element="tns:Insert_update_energy_model_zone_zone_attribute" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Insert_update_energy_model_zone_zone_attribute_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Insert_update_energy_model_zone_zone_attributeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Get_energy_modeling_entity_validation_details_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_energy_modeling_entity_validation_details" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Get_energy_modeling_entity_validation_details_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_energy_modeling_entity_validation_detailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Get_energy_modeling_entity_details_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_energy_modeling_entity_details" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Get_energy_modeling_entity_details_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_energy_modeling_entity_detailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Insert_update_energy_modeling_zonelist_zone_InputMessage">
+    <wsdl:part name="parameters" element="tns:Insert_update_energy_modeling_zonelist_zone" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Insert_update_energy_modeling_zonelist_zone_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Insert_update_energy_modeling_zonelist_zoneResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Get_simulation_energymodeling_zone_attribute_series_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_simulation_energymodeling_zone_attribute_series" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Get_simulation_energymodeling_zone_attribute_series_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_simulation_energymodeling_zone_attribute_seriesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Get_energy_modeling_zone_list_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_energy_modeling_zone_list" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Get_energy_modeling_zone_list_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_energy_modeling_zone_listResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Get_energy_modeling_Zones_zonelist_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_energy_modeling_Zones_zonelist" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Get_energy_modeling_Zones_zonelist_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_energy_modeling_Zones_zonelistResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Get_Energy_Modeling_Project_Zonelist_Zones_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Energy_Modeling_Project_Zonelist_Zones" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Get_Energy_Modeling_Project_Zonelist_Zones_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Energy_Modeling_Project_Zonelist_ZonesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Get_Energy_Modeling_Project_Zone_Equipment_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Energy_Modeling_Project_Zone_Equipment" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Get_Energy_Modeling_Project_Zone_Equipment_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Energy_Modeling_Project_Zone_EquipmentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Insert_Zones_for_Zonelist_InputMessage">
+    <wsdl:part name="parameters" element="tns:Insert_Zones_for_Zonelist" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Insert_Zones_for_Zonelist_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Insert_Zones_for_ZonelistResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Get_energymodeling_weather_sources_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_energymodeling_weather_sources" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Get_energymodeling_weather_sources_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_energymodeling_weather_sourcesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Get_energy_modeling_weather_series_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_energy_modeling_weather_series" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Get_energy_modeling_weather_series_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_energy_modeling_weather_seriesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Insert_Zones_List_Energy_Modeling_InputMessage">
+    <wsdl:part name="parameters" element="tns:Insert_Zones_List_Energy_Modeling" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Insert_Zones_List_Energy_Modeling_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Insert_Zones_List_Energy_ModelingResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Insert_energy_modeling_object_InputMessage">
+    <wsdl:part name="parameters" element="tns:Insert_energy_modeling_object" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Insert_energy_modeling_object_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Insert_energy_modeling_objectResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Get_Energy_Modeling_Project_Attributes_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Energy_Modeling_Project_Attributes" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Get_Energy_Modeling_Project_Attributes_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Energy_Modeling_Project_AttributesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Insert_New_Energy_Modeling_Object_InputMessage">
+    <wsdl:part name="parameters" element="tns:Insert_New_Energy_Modeling_Object" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Insert_New_Energy_Modeling_Object_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Insert_New_Energy_Modeling_ObjectResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Insert_Update_Energy_Modeling_Project_Attribute_Value_InputMessage">
+    <wsdl:part name="parameters" element="tns:Insert_Update_Energy_Modeling_Project_Attribute_Value" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Insert_Update_Energy_Modeling_Project_Attribute_Value_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Insert_Update_Energy_Modeling_Project_Attribute_ValueResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Get_energy_modeling_object_details_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_energy_modeling_object_details" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Get_energy_modeling_object_details_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_energy_modeling_object_detailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Delete_energy_modeling_objects_and_objects_fields_InputMessage">
+    <wsdl:part name="parameters" element="tns:Delete_energy_modeling_objects_and_objects_fields" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Delete_energy_modeling_objects_and_objects_fields_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Delete_energy_modeling_objects_and_objects_fieldsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Get_energy_modeling_objects_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_energy_modeling_objects" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Get_energy_modeling_objects_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_energy_modeling_objectsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Get_energy_modeling_all_objects_fields_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_energy_modeling_all_objects_fields" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Get_energy_modeling_all_objects_fields_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_energy_modeling_all_objects_fieldsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Get_Energy_Modeling_Object_Attributes_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Energy_Modeling_Object_Attributes" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Get_Energy_Modeling_Object_Attributes_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Energy_Modeling_Object_AttributesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Insert_Update_Energy_Modeling_Simulation_AAS_InputMessage">
+    <wsdl:part name="parameters" element="tns:Insert_Update_Energy_Modeling_Simulation_AAS" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Insert_Update_Energy_Modeling_Simulation_AAS_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Insert_Update_Energy_Modeling_Simulation_AASResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Get_Energy_Modeling_AAS_Data_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Energy_Modeling_AAS_Data" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Get_Energy_Modeling_AAS_Data_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Energy_Modeling_AAS_DataResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Get_Energy_Modeling_Object_And_Object_Attributes_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Energy_Modeling_Object_And_Object_Attributes" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Get_Energy_Modeling_Object_And_Object_Attributes_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Energy_Modeling_Object_And_Object_AttributesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Get_simulation_energymodeling_meter_attribute_series_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_simulation_energymodeling_meter_attribute_series" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Get_simulation_energymodeling_meter_attribute_series_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_simulation_energymodeling_meter_attribute_seriesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Delete_Energy_Modeling_AAS_Data_InputMessage">
+    <wsdl:part name="parameters" element="tns:Delete_Energy_Modeling_AAS_Data" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Delete_Energy_Modeling_AAS_Data_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Delete_Energy_Modeling_AAS_DataResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Get_Energy_Modeling_Object_Fields_Key_Values_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Energy_Modeling_Object_Fields_Key_Values" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Get_Energy_Modeling_Object_Fields_Key_Values_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Energy_Modeling_Object_Fields_Key_ValuesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_proc_get_energy_modeling_import_objects_count_InputMessage">
+    <wsdl:part name="parameters" element="tns:proc_get_energy_modeling_import_objects_count" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_proc_get_energy_modeling_import_objects_count_OutputMessage">
+    <wsdl:part name="parameters" element="tns:proc_get_energy_modeling_import_objects_countResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Delete_Energy_Modeling_Object_And_Object_Value_InputMessage">
+    <wsdl:part name="parameters" element="tns:Delete_Energy_Modeling_Object_And_Object_Value" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Delete_Energy_Modeling_Object_And_Object_Value_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Delete_Energy_Modeling_Object_And_Object_ValueResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Get_Energy_Modeling_Performance_Hierarchy_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Energy_Modeling_Performance_Hierarchy" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Get_Energy_Modeling_Performance_Hierarchy_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Energy_Modeling_Performance_HierarchyResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Get_Energy_Modeling_Simulation_Status_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Energy_Modeling_Simulation_Status" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Get_Energy_Modeling_Simulation_Status_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Energy_Modeling_Simulation_StatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_DoWork_InputMessage">
+    <wsdl:part name="parameters" element="tns:DoWork" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_DoWork_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DoWorkResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Get_Energy_Modeling_Space_Gains_Monthly_Report_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Energy_Modeling_Space_Gains_Monthly_Report" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Get_Energy_Modeling_Space_Gains_Monthly_Report_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Energy_Modeling_Space_Gains_Monthly_ReportResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_proc_insert_update_EnergyModeling_projects_equipments_InputMessage">
+    <wsdl:part name="parameters" element="tns:proc_insert_update_EnergyModeling_projects_equipments" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_proc_insert_update_EnergyModeling_projects_equipments_OutputMessage">
+    <wsdl:part name="parameters" element="tns:proc_insert_update_EnergyModeling_projects_equipmentsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Insert_Energy_Modeling_simulation_algorithm_record_InputMessage">
+    <wsdl:part name="parameters" element="tns:Insert_Energy_Modeling_simulation_algorithm_record" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Insert_Energy_Modeling_simulation_algorithm_record_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Insert_Energy_Modeling_simulation_algorithm_recordResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Get_Energy_Modeling_simulation_algorithm_record_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Energy_Modeling_simulation_algorithm_record" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Get_Energy_Modeling_simulation_algorithm_record_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Energy_Modeling_simulation_algorithm_recordResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_proc_insert_update_EnergyModeling_projects_zonelist_InputMessage">
+    <wsdl:part name="parameters" element="tns:proc_insert_update_EnergyModeling_projects_zonelist" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_proc_insert_update_EnergyModeling_projects_zonelist_OutputMessage">
+    <wsdl:part name="parameters" element="tns:proc_insert_update_EnergyModeling_projects_zonelistResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_proc_update_energy_modeling_equipment_attributes_InputMessage">
+    <wsdl:part name="parameters" element="tns:proc_update_energy_modeling_equipment_attributes" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_proc_update_energy_modeling_equipment_attributes_OutputMessage">
+    <wsdl:part name="parameters" element="tns:proc_update_energy_modeling_equipment_attributesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_proc_get_energymodeling_objects_for_equipment_InputMessage">
+    <wsdl:part name="parameters" element="tns:proc_get_energymodeling_objects_for_equipment" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_proc_get_energymodeling_objects_for_equipment_OutputMessage">
+    <wsdl:part name="parameters" element="tns:proc_get_energymodeling_objects_for_equipmentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_proc_get_energy_modeling_equipment_attributes_InputMessage">
+    <wsdl:part name="parameters" element="tns:proc_get_energy_modeling_equipment_attributes" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_proc_get_energy_modeling_equipment_attributes_OutputMessage">
+    <wsdl:part name="parameters" element="tns:proc_get_energy_modeling_equipment_attributesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_proc_get_energy_modeling_equipment_InputMessage">
+    <wsdl:part name="parameters" element="tns:proc_get_energy_modeling_equipment" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_proc_get_energy_modeling_equipment_OutputMessage">
+    <wsdl:part name="parameters" element="tns:proc_get_energy_modeling_equipmentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_proc_update_energy_modeling_space_attributes_InputMessage">
+    <wsdl:part name="parameters" element="tns:proc_update_energy_modeling_space_attributes" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_proc_update_energy_modeling_space_attributes_OutputMessage">
+    <wsdl:part name="parameters" element="tns:proc_update_energy_modeling_space_attributesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_proc_get_energymodeling_objects_for_space_InputMessage">
+    <wsdl:part name="parameters" element="tns:proc_get_energymodeling_objects_for_space" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_proc_get_energymodeling_objects_for_space_OutputMessage">
+    <wsdl:part name="parameters" element="tns:proc_get_energymodeling_objects_for_spaceResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_proc_get_energy_modeling_space_attributes_InputMessage">
+    <wsdl:part name="parameters" element="tns:proc_get_energy_modeling_space_attributes" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_proc_get_energy_modeling_space_attributes_OutputMessage">
+    <wsdl:part name="parameters" element="tns:proc_get_energy_modeling_space_attributesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_GetLastWeatherDataFile_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLastWeatherDataFile" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_GetLastWeatherDataFile_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLastWeatherDataFileResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_proc_get_energy_modeling_zones_for_dropdown_InputMessage">
+    <wsdl:part name="parameters" element="tns:proc_get_energy_modeling_zones_for_dropdown" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_proc_get_energy_modeling_zones_for_dropdown_OutputMessage">
+    <wsdl:part name="parameters" element="tns:proc_get_energy_modeling_zones_for_dropdownResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_GetUserProjects_NewUI_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserProjects_NewUI" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_GetUserProjects_NewUI_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserProjects_NewUIResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_proc_get_zone_list_NewUI_InputMessage">
+    <wsdl:part name="parameters" element="tns:proc_get_zone_list_NewUI" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_proc_get_zone_list_NewUI_OutputMessage">
+    <wsdl:part name="parameters" element="tns:proc_get_zone_list_NewUIResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_GetFacilitiesNewUI_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetFacilitiesNewUI" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_GetFacilitiesNewUI_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFacilitiesNewUIResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Get_Energy_Modeling_Monthly_Summary_Report_Hierarchy_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Energy_Modeling_Monthly_Summary_Report_Hierarchy" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Get_Energy_Modeling_Monthly_Summary_Report_Hierarchy_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Energy_Modeling_Monthly_Summary_Report_HierarchyResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Get_Billing_Statements_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Billing_Statements" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Get_Billing_Statements_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Billing_StatementsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Get_Simulation_Schedule_Limit_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Simulation_Schedule_Limit" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Get_Simulation_Schedule_Limit_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Simulation_Schedule_LimitResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Insert_Update_Simulation_Schedule_Limit_InputMessage">
+    <wsdl:part name="parameters" element="tns:Insert_Update_Simulation_Schedule_Limit" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Insert_Update_Simulation_Schedule_Limit_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Insert_Update_Simulation_Schedule_LimitResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Delete_Simulation_Schedule_Limit_InputMessage">
+    <wsdl:part name="parameters" element="tns:Delete_Simulation_Schedule_Limit" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Delete_Simulation_Schedule_Limit_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Delete_Simulation_Schedule_LimitResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Delete_EnergyModeling_Facility_InputMessage">
+    <wsdl:part name="parameters" element="tns:Delete_EnergyModeling_Facility" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Delete_EnergyModeling_Facility_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Delete_EnergyModeling_FacilityResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Insert_Update_Simulation_Schedule_InputMessage">
+    <wsdl:part name="parameters" element="tns:Insert_Update_Simulation_Schedule" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Insert_Update_Simulation_Schedule_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Insert_Update_Simulation_ScheduleResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Get_Simulation_Type_Name_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Simulation_Type_Name" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Get_Simulation_Type_Name_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Simulation_Type_NameResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Delete_Simulation_Schedule_InputMessage">
+    <wsdl:part name="parameters" element="tns:Delete_Simulation_Schedule" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Delete_Simulation_Schedule_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Delete_Simulation_ScheduleResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Get_Simulation_Schedule_Data_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Simulation_Schedule_Data" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Get_Simulation_Schedule_Data_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Simulation_Schedule_DataResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Update_Flag_For_Schedules_InputMessage">
+    <wsdl:part name="parameters" element="tns:Update_Flag_For_Schedules" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Update_Flag_For_Schedules_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Update_Flag_For_SchedulesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Get_Data_To_Generate_Simulation_IDF_File_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Data_To_Generate_Simulation_IDF_File" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Get_Data_To_Generate_Simulation_IDF_File_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Data_To_Generate_Simulation_IDF_FileResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Get_Simulation_Schedule_Data_By_Name_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Simulation_Schedule_Data_By_Name" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Get_Simulation_Schedule_Data_By_Name_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Simulation_Schedule_Data_By_NameResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Get_Simulation_Schedule_Names_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Simulation_Schedule_Names" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Get_Simulation_Schedule_Names_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Simulation_Schedule_NamesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Get_Simulation_Week_Type_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Simulation_Week_Type" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Get_Simulation_Week_Type_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Simulation_Week_TypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Insert_Update_Space_Attribute_From_IDF_File_InputMessage">
+    <wsdl:part name="parameters" element="tns:Insert_Update_Space_Attribute_From_IDF_File" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Insert_Update_Space_Attribute_From_IDF_File_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Insert_Update_Space_Attribute_From_IDF_FileResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Insert_update_energy_model_system_system_attribute_InputMessage">
+    <wsdl:part name="parameters" element="tns:Insert_update_energy_model_system_system_attribute" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Insert_update_energy_model_system_system_attribute_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Insert_update_energy_model_system_system_attributeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Get_Energy_modeling_Output_Class_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Energy_modeling_Output_Class" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Get_Energy_modeling_Output_Class_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Energy_modeling_Output_ClassResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Get_Energy_modeling_Output_Object_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Energy_modeling_Output_Object" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Get_Energy_modeling_Output_Object_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Energy_modeling_Output_ObjectResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Get_Energy_modeling_Output_Object_Fields_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Energy_modeling_Output_Object_Fields" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Get_Energy_modeling_Output_Object_Fields_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Energy_modeling_Output_Object_FieldsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Insert_Energy_modeling_simulation_control_parameter_InputMessage">
+    <wsdl:part name="parameters" element="tns:Insert_Energy_modeling_simulation_control_parameter" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Insert_Energy_modeling_simulation_control_parameter_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Insert_Energy_modeling_simulation_control_parameterResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Add_Simulation_File_Name_InputMessage">
+    <wsdl:part name="parameters" element="tns:Add_Simulation_File_Name" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Add_Simulation_File_Name_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Add_Simulation_File_NameResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Get_Simulation_File_Name_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Simulation_File_Name" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Get_Simulation_File_Name_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Simulation_File_NameResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Delete_Simulation_Import_Entries_InputMessage">
+    <wsdl:part name="parameters" element="tns:Delete_Simulation_Import_Entries" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Delete_Simulation_Import_Entries_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Delete_Simulation_Import_EntriesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Get_Simulation_IDF_Object_ID_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Simulation_IDF_Object_ID" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Get_Simulation_IDF_Object_ID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Simulation_IDF_Object_IDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Get_Simulation_IDF_Object_Fields_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Simulation_IDF_Object_Fields" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Get_Simulation_IDF_Object_Fields_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Simulation_IDF_Object_FieldsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Insert_Simulation_File_Field_Value_InputMessage">
+    <wsdl:part name="parameters" element="tns:Insert_Simulation_File_Field_Value" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Insert_Simulation_File_Field_Value_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Insert_Simulation_File_Field_ValueResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Update_simulation_weather_flag_InputMessage">
+    <wsdl:part name="parameters" element="tns:Update_simulation_weather_flag" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Update_simulation_weather_flag_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Update_simulation_weather_flagResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Update_simulation_weather_file_InputMessage">
+    <wsdl:part name="parameters" element="tns:Update_simulation_weather_file" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Update_simulation_weather_file_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Update_simulation_weather_fileResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Get_Simulation_Object_Validation_Count_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Simulation_Object_Validation_Count" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Get_Simulation_Object_Validation_Count_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Simulation_Object_Validation_CountResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Get_Simulation_Multi_Occurance_Object_Validation_Count_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Simulation_Multi_Occurance_Object_Validation_Count" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Get_Simulation_Multi_Occurance_Object_Validation_Count_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Simulation_Multi_Occurance_Object_Validation_CountResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Get_Simulation_Building_Validation_Details_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Simulation_Building_Validation_Details" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Get_Simulation_Building_Validation_Details_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Simulation_Building_Validation_DetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Get_Simulation_Zonelist_Validation_Details_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Simulation_Zonelist_Validation_Details" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Get_Simulation_Zonelist_Validation_Details_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Simulation_Zonelist_Validation_DetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Get_Simulation_Zone_Validation_Details_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Simulation_Zone_Validation_Details" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Get_Simulation_Zone_Validation_Details_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Simulation_Zone_Validation_DetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_proc_get_simulation_schedule_InputMessage">
+    <wsdl:part name="parameters" element="tns:proc_get_simulation_schedule" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_proc_get_simulation_schedule_OutputMessage">
+    <wsdl:part name="parameters" element="tns:proc_get_simulation_scheduleResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_proc_get_limit_schedule_InputMessage">
+    <wsdl:part name="parameters" element="tns:proc_get_limit_schedule" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_proc_get_limit_schedule_OutputMessage">
+    <wsdl:part name="parameters" element="tns:proc_get_limit_scheduleResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_proc_get_simulation_value_schedule_InputMessage">
+    <wsdl:part name="parameters" element="tns:proc_get_simulation_value_schedule" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_proc_get_simulation_value_schedule_OutputMessage">
+    <wsdl:part name="parameters" element="tns:proc_get_simulation_value_scheduleResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Get_Energy_Modeling_Facilities_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Energy_Modeling_Facilities" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Get_Energy_Modeling_Facilities_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Energy_Modeling_FacilitiesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Get_All_Attribute_Template_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_All_Attribute_Template" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Get_All_Attribute_Template_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_All_Attribute_TemplateResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Get_Template_Groups_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Template_Groups" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Get_Template_Groups_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Template_GroupsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Get_Energy_Plus_Details_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Energy_Plus_Details" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Get_Energy_Plus_Details_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Energy_Plus_DetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Get_Modeling_Class_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Modeling_Class" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Get_Modeling_Class_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Modeling_ClassResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Get_Modeling_Objects_By_Class_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Modeling_Objects_By_Class" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Get_Modeling_Objects_By_Class_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Modeling_Objects_By_ClassResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Insert_Update_Energy_Modeling_Facility_InputMessage">
+    <wsdl:part name="parameters" element="tns:Insert_Update_Energy_Modeling_Facility" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Insert_Update_Energy_Modeling_Facility_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Insert_Update_Energy_Modeling_FacilityResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Insert_Update_Facility_Attribute_Template_Linkup_InputMessage">
+    <wsdl:part name="parameters" element="tns:Insert_Update_Facility_Attribute_Template_Linkup" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Insert_Update_Facility_Attribute_Template_Linkup_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Insert_Update_Facility_Attribute_Template_LinkupResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Get_Modeling_Object_Fields_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Modeling_Object_Fields" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Get_Modeling_Object_Fields_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Modeling_Object_FieldsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Insert_Update_EM_Simulation_Profile_InputMessage">
+    <wsdl:part name="parameters" element="tns:Insert_Update_EM_Simulation_Profile" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Insert_Update_EM_Simulation_Profile_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Insert_Update_EM_Simulation_ProfileResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Get_EM_Simulation_Control_Data_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_EM_Simulation_Control_Data" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Get_EM_Simulation_Control_Data_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_EM_Simulation_Control_DataResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Update_EM_Simulation_Control_Attribute_Value_InputMessage">
+    <wsdl:part name="parameters" element="tns:Update_EM_Simulation_Control_Attribute_Value" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Update_EM_Simulation_Control_Attribute_Value_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Update_EM_Simulation_Control_Attribute_ValueResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Get_Energy_Modeling_IDF_File_Name_Of_Facility_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Energy_Modeling_IDF_File_Name_Of_Facility" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Get_Energy_Modeling_IDF_File_Name_Of_Facility_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Energy_Modeling_IDF_File_Name_Of_FacilityResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Update_Modeling_Obj_Filed_InputMessage">
+    <wsdl:part name="parameters" element="tns:Update_Modeling_Obj_Filed" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Update_Modeling_Obj_Filed_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Update_Modeling_Obj_FiledResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Get_EM_Space_Attribute_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_EM_Space_Attribute" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Get_EM_Space_Attribute_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_EM_Space_AttributeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Insert_Update_Energy_Modeling_Simulation_Control_Parameter_InputMessage">
+    <wsdl:part name="parameters" element="tns:Insert_Update_Energy_Modeling_Simulation_Control_Parameter" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Insert_Update_Energy_Modeling_Simulation_Control_Parameter_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Insert_Update_Energy_Modeling_Simulation_Control_ParameterResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Get_Energy_Modeling_Simulation_Control_Parameter_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Energy_Modeling_Simulation_Control_Parameter" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Get_Energy_Modeling_Simulation_Control_Parameter_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Energy_Modeling_Simulation_Control_ParameterResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Get_Energy_Modeling_ZoneList_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Energy_Modeling_ZoneList" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Get_Energy_Modeling_ZoneList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Energy_Modeling_ZoneListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Get_Energy_Modeling_Space_Attribute_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Energy_Modeling_Space_Attribute" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Get_Energy_Modeling_Space_Attribute_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Energy_Modeling_Space_AttributeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Get_Energy_Modeling_Equipment_Attribute_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Energy_Modeling_Equipment_Attribute" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Get_Energy_Modeling_Equipment_Attribute_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Energy_Modeling_Equipment_AttributeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Get_Energy_Modeling_Project_Simulation_Data_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Energy_Modeling_Project_Simulation_Data" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Get_Energy_Modeling_Project_Simulation_Data_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Energy_Modeling_Project_Simulation_DataResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Get_Connection_String_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Connection_String" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Get_Connection_String_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Connection_StringResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Get_Energy_Modeling_Enable_Facility_Attribute_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Energy_Modeling_Enable_Facility_Attribute" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Get_Energy_Modeling_Enable_Facility_Attribute_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Energy_Modeling_Enable_Facility_AttributeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Get_Energy_Modeling_Project_Profile_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Energy_Modeling_Project_Profile" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Get_Energy_Modeling_Project_Profile_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Energy_Modeling_Project_ProfileResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Get_Energy_Modeling_Spatial_Hierarchy_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Energy_Modeling_Spatial_Hierarchy" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Get_Energy_Modeling_Spatial_Hierarchy_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Energy_Modeling_Spatial_HierarchyResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Get_Simulation_BAS_Attribute_Series_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Simulation_BAS_Attribute_Series" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Get_Simulation_BAS_Attribute_Series_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Simulation_BAS_Attribute_SeriesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Get_Energy_Modeling_HVAC_Hierarchy_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Energy_Modeling_HVAC_Hierarchy" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Get_Energy_Modeling_HVAC_Hierarchy_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Energy_Modeling_HVAC_HierarchyResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Insert_Update_Energy_Modeling_Simulation_Request_InputMessage">
+    <wsdl:part name="parameters" element="tns:Insert_Update_Energy_Modeling_Simulation_Request" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Insert_Update_Energy_Modeling_Simulation_Request_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Insert_Update_Energy_Modeling_Simulation_RequestResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Get_Energy_Modeling_Schedule_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Energy_Modeling_Schedule" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Get_Energy_Modeling_Schedule_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Energy_Modeling_ScheduleResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Insert_Update_Energy_Modeling_Facility_Project_Schedules_InputMessage">
+    <wsdl:part name="parameters" element="tns:Insert_Update_Energy_Modeling_Facility_Project_Schedules" />
+  </wsdl:message>
+  <wsdl:message name="IEnergyPlus_Insert_Update_Energy_Modeling_Facility_Project_Schedules_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Insert_Update_Energy_Modeling_Facility_Project_SchedulesResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IEnergyPlus">
+    <wsdl:operation name="Get_energy_modeling_facility_project_schedules">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEnergyPlus/Get_energy_modeling_facility_project_schedules" message="tns:IEnergyPlus_Get_energy_modeling_facility_project_schedules_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEnergyPlus/Get_energy_modeling_facility_project_schedulesResponse" message="tns:IEnergyPlus_Get_energy_modeling_facility_project_schedules_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Delete_Energy_Modeling_Unselected_Schedules">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEnergyPlus/Delete_Energy_Modeling_Unselected_Schedules" message="tns:IEnergyPlus_Delete_Energy_Modeling_Unselected_Schedules_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEnergyPlus/Delete_Energy_Modeling_Unselected_SchedulesResponse" message="tns:IEnergyPlus_Delete_Energy_Modeling_Unselected_Schedules_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_Energy_Modeling_Compact_Schedules">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEnergyPlus/Get_Energy_Modeling_Compact_Schedules" message="tns:IEnergyPlus_Get_Energy_Modeling_Compact_Schedules_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEnergyPlus/Get_Energy_Modeling_Compact_SchedulesResponse" message="tns:IEnergyPlus_Get_Energy_Modeling_Compact_Schedules_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Insert_Update_Energy_Modeling_Compact_Schedule">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEnergyPlus/Insert_Update_Energy_Modeling_Compact_Schedule" message="tns:IEnergyPlus_Insert_Update_Energy_Modeling_Compact_Schedule_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEnergyPlus/Insert_Update_Energy_Modeling_Compact_ScheduleResponse" message="tns:IEnergyPlus_Insert_Update_Energy_Modeling_Compact_Schedule_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Update_Energy_Modeling_Compact_Schedule_Week_Type_Flag">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEnergyPlus/Update_Energy_Modeling_Compact_Schedule_Week_Type_Flag" message="tns:IEnergyPlus_Update_Energy_Modeling_Compact_Schedule_Week_Type_Flag_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEnergyPlus/Update_Energy_Modeling_Compact_Schedule_Week_Type_FlagResponse" message="tns:IEnergyPlus_Update_Energy_Modeling_Compact_Schedule_Week_Type_Flag_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Insert_update_facility_utility_data">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEnergyPlus/Insert_update_facility_utility_data" message="tns:IEnergyPlus_Insert_update_facility_utility_data_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEnergyPlus/Insert_update_facility_utility_dataResponse" message="tns:IEnergyPlus_Insert_update_facility_utility_data_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_Energy_Modeling_Unassigned_Compact_Schedule">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEnergyPlus/Get_Energy_Modeling_Unassigned_Compact_Schedule" message="tns:IEnergyPlus_Get_Energy_Modeling_Unassigned_Compact_Schedule_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEnergyPlus/Get_Energy_Modeling_Unassigned_Compact_ScheduleResponse" message="tns:IEnergyPlus_Get_Energy_Modeling_Unassigned_Compact_Schedule_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Insert_Update_Energy_Modeling_Entity_Schedule_Linkup">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEnergyPlus/Insert_Update_Energy_Modeling_Entity_Schedule_Linkup" message="tns:IEnergyPlus_Insert_Update_Energy_Modeling_Entity_Schedule_Linkup_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEnergyPlus/Insert_Update_Energy_Modeling_Entity_Schedule_LinkupResponse" message="tns:IEnergyPlus_Insert_Update_Energy_Modeling_Entity_Schedule_Linkup_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_Energy_Modeling_Utility_data_Profile">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEnergyPlus/Get_Energy_Modeling_Utility_data_Profile" message="tns:IEnergyPlus_Get_Energy_Modeling_Utility_data_Profile_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEnergyPlus/Get_Energy_Modeling_Utility_data_ProfileResponse" message="tns:IEnergyPlus_Get_Energy_Modeling_Utility_data_Profile_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_Energy_Modeling_Compact_Schedule_Types">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEnergyPlus/Get_Energy_Modeling_Compact_Schedule_Types" message="tns:IEnergyPlus_Get_Energy_Modeling_Compact_Schedule_Types_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEnergyPlus/Get_Energy_Modeling_Compact_Schedule_TypesResponse" message="tns:IEnergyPlus_Get_Energy_Modeling_Compact_Schedule_Types_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_Energy_Modeling_Schedule_For_Update">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEnergyPlus/Get_Energy_Modeling_Schedule_For_Update" message="tns:IEnergyPlus_Get_Energy_Modeling_Schedule_For_Update_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEnergyPlus/Get_Energy_Modeling_Schedule_For_UpdateResponse" message="tns:IEnergyPlus_Get_Energy_Modeling_Schedule_For_Update_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Delete_Energy_Modeling_Schedule">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEnergyPlus/Delete_Energy_Modeling_Schedule" message="tns:IEnergyPlus_Delete_Energy_Modeling_Schedule_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEnergyPlus/Delete_Energy_Modeling_ScheduleResponse" message="tns:IEnergyPlus_Delete_Energy_Modeling_Schedule_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Insert_Update_Energy_Modeling_IDF_File_Data">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEnergyPlus/Insert_Update_Energy_Modeling_IDF_File_Data" message="tns:IEnergyPlus_Insert_Update_Energy_Modeling_IDF_File_Data_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEnergyPlus/Insert_Update_Energy_Modeling_IDF_File_DataResponse" message="tns:IEnergyPlus_Insert_Update_Energy_Modeling_IDF_File_Data_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Insert_Update_Energy_Modeling_Zone_Attribute">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEnergyPlus/Insert_Update_Energy_Modeling_Zone_Attribute" message="tns:IEnergyPlus_Insert_Update_Energy_Modeling_Zone_Attribute_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEnergyPlus/Insert_Update_Energy_Modeling_Zone_AttributeResponse" message="tns:IEnergyPlus_Insert_Update_Energy_Modeling_Zone_Attribute_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_Energy_Modeling_File_List_For_Facility">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEnergyPlus/Get_Energy_Modeling_File_List_For_Facility" message="tns:IEnergyPlus_Get_Energy_Modeling_File_List_For_Facility_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEnergyPlus/Get_Energy_Modeling_File_List_For_FacilityResponse" message="tns:IEnergyPlus_Get_Energy_Modeling_File_List_For_Facility_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_energy_modeling_object_fields">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEnergyPlus/Get_energy_modeling_object_fields" message="tns:IEnergyPlus_Get_energy_modeling_object_fields_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEnergyPlus/Get_energy_modeling_object_fieldsResponse" message="tns:IEnergyPlus_Get_energy_modeling_object_fields_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Insert_update_energy_model_zone_zone_attribute">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEnergyPlus/Insert_update_energy_model_zone_zone_attribute" message="tns:IEnergyPlus_Insert_update_energy_model_zone_zone_attribute_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEnergyPlus/Insert_update_energy_model_zone_zone_attributeResponse" message="tns:IEnergyPlus_Insert_update_energy_model_zone_zone_attribute_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_energy_modeling_entity_validation_details">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEnergyPlus/Get_energy_modeling_entity_validation_details" message="tns:IEnergyPlus_Get_energy_modeling_entity_validation_details_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEnergyPlus/Get_energy_modeling_entity_validation_detailsResponse" message="tns:IEnergyPlus_Get_energy_modeling_entity_validation_details_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_energy_modeling_entity_details">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEnergyPlus/Get_energy_modeling_entity_details" message="tns:IEnergyPlus_Get_energy_modeling_entity_details_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEnergyPlus/Get_energy_modeling_entity_detailsResponse" message="tns:IEnergyPlus_Get_energy_modeling_entity_details_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Insert_update_energy_modeling_zonelist_zone">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEnergyPlus/Insert_update_energy_modeling_zonelist_zone" message="tns:IEnergyPlus_Insert_update_energy_modeling_zonelist_zone_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEnergyPlus/Insert_update_energy_modeling_zonelist_zoneResponse" message="tns:IEnergyPlus_Insert_update_energy_modeling_zonelist_zone_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_simulation_energymodeling_zone_attribute_series">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEnergyPlus/Get_simulation_energymodeling_zone_attribute_series" message="tns:IEnergyPlus_Get_simulation_energymodeling_zone_attribute_series_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEnergyPlus/Get_simulation_energymodeling_zone_attribute_seriesResponse" message="tns:IEnergyPlus_Get_simulation_energymodeling_zone_attribute_series_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_energy_modeling_zone_list">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEnergyPlus/Get_energy_modeling_zone_list" message="tns:IEnergyPlus_Get_energy_modeling_zone_list_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEnergyPlus/Get_energy_modeling_zone_listResponse" message="tns:IEnergyPlus_Get_energy_modeling_zone_list_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_energy_modeling_Zones_zonelist">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEnergyPlus/Get_energy_modeling_Zones_zonelist" message="tns:IEnergyPlus_Get_energy_modeling_Zones_zonelist_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEnergyPlus/Get_energy_modeling_Zones_zonelistResponse" message="tns:IEnergyPlus_Get_energy_modeling_Zones_zonelist_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_Energy_Modeling_Project_Zonelist_Zones">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEnergyPlus/Get_Energy_Modeling_Project_Zonelist_Zones" message="tns:IEnergyPlus_Get_Energy_Modeling_Project_Zonelist_Zones_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEnergyPlus/Get_Energy_Modeling_Project_Zonelist_ZonesResponse" message="tns:IEnergyPlus_Get_Energy_Modeling_Project_Zonelist_Zones_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_Energy_Modeling_Project_Zone_Equipment">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEnergyPlus/Get_Energy_Modeling_Project_Zone_Equipment" message="tns:IEnergyPlus_Get_Energy_Modeling_Project_Zone_Equipment_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEnergyPlus/Get_Energy_Modeling_Project_Zone_EquipmentResponse" message="tns:IEnergyPlus_Get_Energy_Modeling_Project_Zone_Equipment_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Insert_Zones_for_Zonelist">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEnergyPlus/Insert_Zones_for_Zonelist" message="tns:IEnergyPlus_Insert_Zones_for_Zonelist_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEnergyPlus/Insert_Zones_for_ZonelistResponse" message="tns:IEnergyPlus_Insert_Zones_for_Zonelist_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_energymodeling_weather_sources">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEnergyPlus/Get_energymodeling_weather_sources" message="tns:IEnergyPlus_Get_energymodeling_weather_sources_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEnergyPlus/Get_energymodeling_weather_sourcesResponse" message="tns:IEnergyPlus_Get_energymodeling_weather_sources_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_energy_modeling_weather_series">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEnergyPlus/Get_energy_modeling_weather_series" message="tns:IEnergyPlus_Get_energy_modeling_weather_series_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEnergyPlus/Get_energy_modeling_weather_seriesResponse" message="tns:IEnergyPlus_Get_energy_modeling_weather_series_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Insert_Zones_List_Energy_Modeling">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEnergyPlus/Insert_Zones_List_Energy_Modeling" message="tns:IEnergyPlus_Insert_Zones_List_Energy_Modeling_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEnergyPlus/Insert_Zones_List_Energy_ModelingResponse" message="tns:IEnergyPlus_Insert_Zones_List_Energy_Modeling_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Insert_energy_modeling_object">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEnergyPlus/Insert_energy_modeling_object" message="tns:IEnergyPlus_Insert_energy_modeling_object_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEnergyPlus/Insert_energy_modeling_objectResponse" message="tns:IEnergyPlus_Insert_energy_modeling_object_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_Energy_Modeling_Project_Attributes">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEnergyPlus/Get_Energy_Modeling_Project_Attributes" message="tns:IEnergyPlus_Get_Energy_Modeling_Project_Attributes_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEnergyPlus/Get_Energy_Modeling_Project_AttributesResponse" message="tns:IEnergyPlus_Get_Energy_Modeling_Project_Attributes_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Insert_New_Energy_Modeling_Object">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEnergyPlus/Insert_New_Energy_Modeling_Object" message="tns:IEnergyPlus_Insert_New_Energy_Modeling_Object_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEnergyPlus/Insert_New_Energy_Modeling_ObjectResponse" message="tns:IEnergyPlus_Insert_New_Energy_Modeling_Object_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Insert_Update_Energy_Modeling_Project_Attribute_Value">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEnergyPlus/Insert_Update_Energy_Modeling_Project_Attribute_Value" message="tns:IEnergyPlus_Insert_Update_Energy_Modeling_Project_Attribute_Value_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEnergyPlus/Insert_Update_Energy_Modeling_Project_Attribute_ValueResponse" message="tns:IEnergyPlus_Insert_Update_Energy_Modeling_Project_Attribute_Value_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_energy_modeling_object_details">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEnergyPlus/Get_energy_modeling_object_details" message="tns:IEnergyPlus_Get_energy_modeling_object_details_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEnergyPlus/Get_energy_modeling_object_detailsResponse" message="tns:IEnergyPlus_Get_energy_modeling_object_details_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Delete_energy_modeling_objects_and_objects_fields">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEnergyPlus/Delete_energy_modeling_objects_and_objects_fields" message="tns:IEnergyPlus_Delete_energy_modeling_objects_and_objects_fields_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEnergyPlus/Delete_energy_modeling_objects_and_objects_fieldsResponse" message="tns:IEnergyPlus_Delete_energy_modeling_objects_and_objects_fields_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_energy_modeling_objects">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEnergyPlus/Get_energy_modeling_objects" message="tns:IEnergyPlus_Get_energy_modeling_objects_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEnergyPlus/Get_energy_modeling_objectsResponse" message="tns:IEnergyPlus_Get_energy_modeling_objects_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_energy_modeling_all_objects_fields">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEnergyPlus/Get_energy_modeling_all_objects_fields" message="tns:IEnergyPlus_Get_energy_modeling_all_objects_fields_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEnergyPlus/Get_energy_modeling_all_objects_fieldsResponse" message="tns:IEnergyPlus_Get_energy_modeling_all_objects_fields_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_Energy_Modeling_Object_Attributes">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEnergyPlus/Get_Energy_Modeling_Object_Attributes" message="tns:IEnergyPlus_Get_Energy_Modeling_Object_Attributes_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEnergyPlus/Get_Energy_Modeling_Object_AttributesResponse" message="tns:IEnergyPlus_Get_Energy_Modeling_Object_Attributes_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Insert_Update_Energy_Modeling_Simulation_AAS">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEnergyPlus/Insert_Update_Energy_Modeling_Simulation_AAS" message="tns:IEnergyPlus_Insert_Update_Energy_Modeling_Simulation_AAS_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEnergyPlus/Insert_Update_Energy_Modeling_Simulation_AASResponse" message="tns:IEnergyPlus_Insert_Update_Energy_Modeling_Simulation_AAS_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_Energy_Modeling_AAS_Data">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEnergyPlus/Get_Energy_Modeling_AAS_Data" message="tns:IEnergyPlus_Get_Energy_Modeling_AAS_Data_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEnergyPlus/Get_Energy_Modeling_AAS_DataResponse" message="tns:IEnergyPlus_Get_Energy_Modeling_AAS_Data_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_Energy_Modeling_Object_And_Object_Attributes">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEnergyPlus/Get_Energy_Modeling_Object_And_Object_Attributes" message="tns:IEnergyPlus_Get_Energy_Modeling_Object_And_Object_Attributes_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEnergyPlus/Get_Energy_Modeling_Object_And_Object_AttributesResponse" message="tns:IEnergyPlus_Get_Energy_Modeling_Object_And_Object_Attributes_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_simulation_energymodeling_meter_attribute_series">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEnergyPlus/Get_simulation_energymodeling_meter_attribute_series" message="tns:IEnergyPlus_Get_simulation_energymodeling_meter_attribute_series_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEnergyPlus/Get_simulation_energymodeling_meter_attribute_seriesResponse" message="tns:IEnergyPlus_Get_simulation_energymodeling_meter_attribute_series_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Delete_Energy_Modeling_AAS_Data">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEnergyPlus/Delete_Energy_Modeling_AAS_Data" message="tns:IEnergyPlus_Delete_Energy_Modeling_AAS_Data_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEnergyPlus/Delete_Energy_Modeling_AAS_DataResponse" message="tns:IEnergyPlus_Delete_Energy_Modeling_AAS_Data_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_Energy_Modeling_Object_Fields_Key_Values">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEnergyPlus/Get_Energy_Modeling_Object_Fields_Key_Values" message="tns:IEnergyPlus_Get_Energy_Modeling_Object_Fields_Key_Values_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEnergyPlus/Get_Energy_Modeling_Object_Fields_Key_ValuesResponse" message="tns:IEnergyPlus_Get_Energy_Modeling_Object_Fields_Key_Values_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="proc_get_energy_modeling_import_objects_count">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEnergyPlus/proc_get_energy_modeling_import_objects_count" message="tns:IEnergyPlus_proc_get_energy_modeling_import_objects_count_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEnergyPlus/proc_get_energy_modeling_import_objects_countResponse" message="tns:IEnergyPlus_proc_get_energy_modeling_import_objects_count_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Delete_Energy_Modeling_Object_And_Object_Value">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEnergyPlus/Delete_Energy_Modeling_Object_And_Object_Value" message="tns:IEnergyPlus_Delete_Energy_Modeling_Object_And_Object_Value_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEnergyPlus/Delete_Energy_Modeling_Object_And_Object_ValueResponse" message="tns:IEnergyPlus_Delete_Energy_Modeling_Object_And_Object_Value_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_Energy_Modeling_Performance_Hierarchy">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEnergyPlus/Get_Energy_Modeling_Performance_Hierarchy" message="tns:IEnergyPlus_Get_Energy_Modeling_Performance_Hierarchy_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEnergyPlus/Get_Energy_Modeling_Performance_HierarchyResponse" message="tns:IEnergyPlus_Get_Energy_Modeling_Performance_Hierarchy_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_Energy_Modeling_Simulation_Status">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEnergyPlus/Get_Energy_Modeling_Simulation_Status" message="tns:IEnergyPlus_Get_Energy_Modeling_Simulation_Status_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEnergyPlus/Get_Energy_Modeling_Simulation_StatusResponse" message="tns:IEnergyPlus_Get_Energy_Modeling_Simulation_Status_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DoWork">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEnergyPlus/DoWork" message="tns:IEnergyPlus_DoWork_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEnergyPlus/DoWorkResponse" message="tns:IEnergyPlus_DoWork_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_Energy_Modeling_Space_Gains_Monthly_Report">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEnergyPlus/Get_Energy_Modeling_Space_Gains_Monthly_Report" message="tns:IEnergyPlus_Get_Energy_Modeling_Space_Gains_Monthly_Report_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEnergyPlus/Get_Energy_Modeling_Space_Gains_Monthly_ReportResponse" message="tns:IEnergyPlus_Get_Energy_Modeling_Space_Gains_Monthly_Report_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="proc_insert_update_EnergyModeling_projects_equipments">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEnergyPlus/proc_insert_update_EnergyModeling_projects_equipments" message="tns:IEnergyPlus_proc_insert_update_EnergyModeling_projects_equipments_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEnergyPlus/proc_insert_update_EnergyModeling_projects_equipmentsResponse" message="tns:IEnergyPlus_proc_insert_update_EnergyModeling_projects_equipments_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Insert_Energy_Modeling_simulation_algorithm_record">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEnergyPlus/Insert_Energy_Modeling_simulation_algorithm_record" message="tns:IEnergyPlus_Insert_Energy_Modeling_simulation_algorithm_record_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEnergyPlus/Insert_Energy_Modeling_simulation_algorithm_recordResponse" message="tns:IEnergyPlus_Insert_Energy_Modeling_simulation_algorithm_record_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_Energy_Modeling_simulation_algorithm_record">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEnergyPlus/Get_Energy_Modeling_simulation_algorithm_record" message="tns:IEnergyPlus_Get_Energy_Modeling_simulation_algorithm_record_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEnergyPlus/Get_Energy_Modeling_simulation_algorithm_recordResponse" message="tns:IEnergyPlus_Get_Energy_Modeling_simulation_algorithm_record_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="proc_insert_update_EnergyModeling_projects_zonelist">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEnergyPlus/proc_insert_update_EnergyModeling_projects_zonelist" message="tns:IEnergyPlus_proc_insert_update_EnergyModeling_projects_zonelist_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEnergyPlus/proc_insert_update_EnergyModeling_projects_zonelistResponse" message="tns:IEnergyPlus_proc_insert_update_EnergyModeling_projects_zonelist_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="proc_update_energy_modeling_equipment_attributes">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEnergyPlus/proc_update_energy_modeling_equipment_attributes" message="tns:IEnergyPlus_proc_update_energy_modeling_equipment_attributes_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEnergyPlus/proc_update_energy_modeling_equipment_attributesResponse" message="tns:IEnergyPlus_proc_update_energy_modeling_equipment_attributes_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="proc_get_energymodeling_objects_for_equipment">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEnergyPlus/proc_get_energymodeling_objects_for_equipment" message="tns:IEnergyPlus_proc_get_energymodeling_objects_for_equipment_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEnergyPlus/proc_get_energymodeling_objects_for_equipmentResponse" message="tns:IEnergyPlus_proc_get_energymodeling_objects_for_equipment_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="proc_get_energy_modeling_equipment_attributes">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEnergyPlus/proc_get_energy_modeling_equipment_attributes" message="tns:IEnergyPlus_proc_get_energy_modeling_equipment_attributes_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEnergyPlus/proc_get_energy_modeling_equipment_attributesResponse" message="tns:IEnergyPlus_proc_get_energy_modeling_equipment_attributes_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="proc_get_energy_modeling_equipment">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEnergyPlus/proc_get_energy_modeling_equipment" message="tns:IEnergyPlus_proc_get_energy_modeling_equipment_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEnergyPlus/proc_get_energy_modeling_equipmentResponse" message="tns:IEnergyPlus_proc_get_energy_modeling_equipment_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="proc_update_energy_modeling_space_attributes">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEnergyPlus/proc_update_energy_modeling_space_attributes" message="tns:IEnergyPlus_proc_update_energy_modeling_space_attributes_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEnergyPlus/proc_update_energy_modeling_space_attributesResponse" message="tns:IEnergyPlus_proc_update_energy_modeling_space_attributes_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="proc_get_energymodeling_objects_for_space">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEnergyPlus/proc_get_energymodeling_objects_for_space" message="tns:IEnergyPlus_proc_get_energymodeling_objects_for_space_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEnergyPlus/proc_get_energymodeling_objects_for_spaceResponse" message="tns:IEnergyPlus_proc_get_energymodeling_objects_for_space_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="proc_get_energy_modeling_space_attributes">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEnergyPlus/proc_get_energy_modeling_space_attributes" message="tns:IEnergyPlus_proc_get_energy_modeling_space_attributes_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEnergyPlus/proc_get_energy_modeling_space_attributesResponse" message="tns:IEnergyPlus_proc_get_energy_modeling_space_attributes_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLastWeatherDataFile">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEnergyPlus/GetLastWeatherDataFile" message="tns:IEnergyPlus_GetLastWeatherDataFile_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEnergyPlus/GetLastWeatherDataFileResponse" message="tns:IEnergyPlus_GetLastWeatherDataFile_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="proc_get_energy_modeling_zones_for_dropdown">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEnergyPlus/proc_get_energy_modeling_zones_for_dropdown" message="tns:IEnergyPlus_proc_get_energy_modeling_zones_for_dropdown_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEnergyPlus/proc_get_energy_modeling_zones_for_dropdownResponse" message="tns:IEnergyPlus_proc_get_energy_modeling_zones_for_dropdown_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserProjects_NewUI">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEnergyPlus/GetUserProjects_NewUI" message="tns:IEnergyPlus_GetUserProjects_NewUI_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEnergyPlus/GetUserProjects_NewUIResponse" message="tns:IEnergyPlus_GetUserProjects_NewUI_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="proc_get_zone_list_NewUI">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEnergyPlus/proc_get_zone_list_NewUI" message="tns:IEnergyPlus_proc_get_zone_list_NewUI_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEnergyPlus/proc_get_zone_list_NewUIResponse" message="tns:IEnergyPlus_proc_get_zone_list_NewUI_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFacilitiesNewUI">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEnergyPlus/GetFacilitiesNewUI" message="tns:IEnergyPlus_GetFacilitiesNewUI_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEnergyPlus/GetFacilitiesNewUIResponse" message="tns:IEnergyPlus_GetFacilitiesNewUI_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_Energy_Modeling_Monthly_Summary_Report_Hierarchy">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEnergyPlus/Get_Energy_Modeling_Monthly_Summary_Report_Hierarchy" message="tns:IEnergyPlus_Get_Energy_Modeling_Monthly_Summary_Report_Hierarchy_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEnergyPlus/Get_Energy_Modeling_Monthly_Summary_Report_HierarchyResponse" message="tns:IEnergyPlus_Get_Energy_Modeling_Monthly_Summary_Report_Hierarchy_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_Billing_Statements">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEnergyPlus/Get_Billing_Statements" message="tns:IEnergyPlus_Get_Billing_Statements_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEnergyPlus/Get_Billing_StatementsResponse" message="tns:IEnergyPlus_Get_Billing_Statements_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_Simulation_Schedule_Limit">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEnergyPlus/Get_Simulation_Schedule_Limit" message="tns:IEnergyPlus_Get_Simulation_Schedule_Limit_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEnergyPlus/Get_Simulation_Schedule_LimitResponse" message="tns:IEnergyPlus_Get_Simulation_Schedule_Limit_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Insert_Update_Simulation_Schedule_Limit">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEnergyPlus/Insert_Update_Simulation_Schedule_Limit" message="tns:IEnergyPlus_Insert_Update_Simulation_Schedule_Limit_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEnergyPlus/Insert_Update_Simulation_Schedule_LimitResponse" message="tns:IEnergyPlus_Insert_Update_Simulation_Schedule_Limit_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Delete_Simulation_Schedule_Limit">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEnergyPlus/Delete_Simulation_Schedule_Limit" message="tns:IEnergyPlus_Delete_Simulation_Schedule_Limit_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEnergyPlus/Delete_Simulation_Schedule_LimitResponse" message="tns:IEnergyPlus_Delete_Simulation_Schedule_Limit_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Delete_EnergyModeling_Facility">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEnergyPlus/Delete_EnergyModeling_Facility" message="tns:IEnergyPlus_Delete_EnergyModeling_Facility_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEnergyPlus/Delete_EnergyModeling_FacilityResponse" message="tns:IEnergyPlus_Delete_EnergyModeling_Facility_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Insert_Update_Simulation_Schedule">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEnergyPlus/Insert_Update_Simulation_Schedule" message="tns:IEnergyPlus_Insert_Update_Simulation_Schedule_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEnergyPlus/Insert_Update_Simulation_ScheduleResponse" message="tns:IEnergyPlus_Insert_Update_Simulation_Schedule_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_Simulation_Type_Name">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEnergyPlus/Get_Simulation_Type_Name" message="tns:IEnergyPlus_Get_Simulation_Type_Name_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEnergyPlus/Get_Simulation_Type_NameResponse" message="tns:IEnergyPlus_Get_Simulation_Type_Name_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Delete_Simulation_Schedule">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEnergyPlus/Delete_Simulation_Schedule" message="tns:IEnergyPlus_Delete_Simulation_Schedule_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEnergyPlus/Delete_Simulation_ScheduleResponse" message="tns:IEnergyPlus_Delete_Simulation_Schedule_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_Simulation_Schedule_Data">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEnergyPlus/Get_Simulation_Schedule_Data" message="tns:IEnergyPlus_Get_Simulation_Schedule_Data_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEnergyPlus/Get_Simulation_Schedule_DataResponse" message="tns:IEnergyPlus_Get_Simulation_Schedule_Data_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Update_Flag_For_Schedules">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEnergyPlus/Update_Flag_For_Schedules" message="tns:IEnergyPlus_Update_Flag_For_Schedules_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEnergyPlus/Update_Flag_For_SchedulesResponse" message="tns:IEnergyPlus_Update_Flag_For_Schedules_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_Data_To_Generate_Simulation_IDF_File">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEnergyPlus/Get_Data_To_Generate_Simulation_IDF_File" message="tns:IEnergyPlus_Get_Data_To_Generate_Simulation_IDF_File_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEnergyPlus/Get_Data_To_Generate_Simulation_IDF_FileResponse" message="tns:IEnergyPlus_Get_Data_To_Generate_Simulation_IDF_File_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_Simulation_Schedule_Data_By_Name">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEnergyPlus/Get_Simulation_Schedule_Data_By_Name" message="tns:IEnergyPlus_Get_Simulation_Schedule_Data_By_Name_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEnergyPlus/Get_Simulation_Schedule_Data_By_NameResponse" message="tns:IEnergyPlus_Get_Simulation_Schedule_Data_By_Name_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_Simulation_Schedule_Names">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEnergyPlus/Get_Simulation_Schedule_Names" message="tns:IEnergyPlus_Get_Simulation_Schedule_Names_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEnergyPlus/Get_Simulation_Schedule_NamesResponse" message="tns:IEnergyPlus_Get_Simulation_Schedule_Names_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_Simulation_Week_Type">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEnergyPlus/Get_Simulation_Week_Type" message="tns:IEnergyPlus_Get_Simulation_Week_Type_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEnergyPlus/Get_Simulation_Week_TypeResponse" message="tns:IEnergyPlus_Get_Simulation_Week_Type_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Insert_Update_Space_Attribute_From_IDF_File">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEnergyPlus/Insert_Update_Space_Attribute_From_IDF_File" message="tns:IEnergyPlus_Insert_Update_Space_Attribute_From_IDF_File_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEnergyPlus/Insert_Update_Space_Attribute_From_IDF_FileResponse" message="tns:IEnergyPlus_Insert_Update_Space_Attribute_From_IDF_File_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Insert_update_energy_model_system_system_attribute">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEnergyPlus/Insert_update_energy_model_system_system_attribute" message="tns:IEnergyPlus_Insert_update_energy_model_system_system_attribute_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEnergyPlus/Insert_update_energy_model_system_system_attributeResponse" message="tns:IEnergyPlus_Insert_update_energy_model_system_system_attribute_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_Energy_modeling_Output_Class">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEnergyPlus/Get_Energy_modeling_Output_Class" message="tns:IEnergyPlus_Get_Energy_modeling_Output_Class_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEnergyPlus/Get_Energy_modeling_Output_ClassResponse" message="tns:IEnergyPlus_Get_Energy_modeling_Output_Class_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_Energy_modeling_Output_Object">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEnergyPlus/Get_Energy_modeling_Output_Object" message="tns:IEnergyPlus_Get_Energy_modeling_Output_Object_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEnergyPlus/Get_Energy_modeling_Output_ObjectResponse" message="tns:IEnergyPlus_Get_Energy_modeling_Output_Object_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_Energy_modeling_Output_Object_Fields">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEnergyPlus/Get_Energy_modeling_Output_Object_Fields" message="tns:IEnergyPlus_Get_Energy_modeling_Output_Object_Fields_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEnergyPlus/Get_Energy_modeling_Output_Object_FieldsResponse" message="tns:IEnergyPlus_Get_Energy_modeling_Output_Object_Fields_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Insert_Energy_modeling_simulation_control_parameter">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEnergyPlus/Insert_Energy_modeling_simulation_control_parameter" message="tns:IEnergyPlus_Insert_Energy_modeling_simulation_control_parameter_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEnergyPlus/Insert_Energy_modeling_simulation_control_parameterResponse" message="tns:IEnergyPlus_Insert_Energy_modeling_simulation_control_parameter_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Add_Simulation_File_Name">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEnergyPlus/Add_Simulation_File_Name" message="tns:IEnergyPlus_Add_Simulation_File_Name_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEnergyPlus/Add_Simulation_File_NameResponse" message="tns:IEnergyPlus_Add_Simulation_File_Name_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_Simulation_File_Name">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEnergyPlus/Get_Simulation_File_Name" message="tns:IEnergyPlus_Get_Simulation_File_Name_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEnergyPlus/Get_Simulation_File_NameResponse" message="tns:IEnergyPlus_Get_Simulation_File_Name_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Delete_Simulation_Import_Entries">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEnergyPlus/Delete_Simulation_Import_Entries" message="tns:IEnergyPlus_Delete_Simulation_Import_Entries_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEnergyPlus/Delete_Simulation_Import_EntriesResponse" message="tns:IEnergyPlus_Delete_Simulation_Import_Entries_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_Simulation_IDF_Object_ID">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEnergyPlus/Get_Simulation_IDF_Object_ID" message="tns:IEnergyPlus_Get_Simulation_IDF_Object_ID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEnergyPlus/Get_Simulation_IDF_Object_IDResponse" message="tns:IEnergyPlus_Get_Simulation_IDF_Object_ID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_Simulation_IDF_Object_Fields">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEnergyPlus/Get_Simulation_IDF_Object_Fields" message="tns:IEnergyPlus_Get_Simulation_IDF_Object_Fields_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEnergyPlus/Get_Simulation_IDF_Object_FieldsResponse" message="tns:IEnergyPlus_Get_Simulation_IDF_Object_Fields_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Insert_Simulation_File_Field_Value">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEnergyPlus/Insert_Simulation_File_Field_Value" message="tns:IEnergyPlus_Insert_Simulation_File_Field_Value_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEnergyPlus/Insert_Simulation_File_Field_ValueResponse" message="tns:IEnergyPlus_Insert_Simulation_File_Field_Value_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Update_simulation_weather_flag">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEnergyPlus/Update_simulation_weather_flag" message="tns:IEnergyPlus_Update_simulation_weather_flag_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEnergyPlus/Update_simulation_weather_flagResponse" message="tns:IEnergyPlus_Update_simulation_weather_flag_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Update_simulation_weather_file">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEnergyPlus/Update_simulation_weather_file" message="tns:IEnergyPlus_Update_simulation_weather_file_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEnergyPlus/Update_simulation_weather_fileResponse" message="tns:IEnergyPlus_Update_simulation_weather_file_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_Simulation_Object_Validation_Count">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEnergyPlus/Get_Simulation_Object_Validation_Count" message="tns:IEnergyPlus_Get_Simulation_Object_Validation_Count_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEnergyPlus/Get_Simulation_Object_Validation_CountResponse" message="tns:IEnergyPlus_Get_Simulation_Object_Validation_Count_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_Simulation_Multi_Occurance_Object_Validation_Count">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEnergyPlus/Get_Simulation_Multi_Occurance_Object_Validation_Count" message="tns:IEnergyPlus_Get_Simulation_Multi_Occurance_Object_Validation_Count_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEnergyPlus/Get_Simulation_Multi_Occurance_Object_Validation_CountResponse" message="tns:IEnergyPlus_Get_Simulation_Multi_Occurance_Object_Validation_Count_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_Simulation_Building_Validation_Details">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEnergyPlus/Get_Simulation_Building_Validation_Details" message="tns:IEnergyPlus_Get_Simulation_Building_Validation_Details_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEnergyPlus/Get_Simulation_Building_Validation_DetailsResponse" message="tns:IEnergyPlus_Get_Simulation_Building_Validation_Details_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_Simulation_Zonelist_Validation_Details">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEnergyPlus/Get_Simulation_Zonelist_Validation_Details" message="tns:IEnergyPlus_Get_Simulation_Zonelist_Validation_Details_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEnergyPlus/Get_Simulation_Zonelist_Validation_DetailsResponse" message="tns:IEnergyPlus_Get_Simulation_Zonelist_Validation_Details_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_Simulation_Zone_Validation_Details">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEnergyPlus/Get_Simulation_Zone_Validation_Details" message="tns:IEnergyPlus_Get_Simulation_Zone_Validation_Details_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEnergyPlus/Get_Simulation_Zone_Validation_DetailsResponse" message="tns:IEnergyPlus_Get_Simulation_Zone_Validation_Details_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="proc_get_simulation_schedule">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEnergyPlus/proc_get_simulation_schedule" message="tns:IEnergyPlus_proc_get_simulation_schedule_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEnergyPlus/proc_get_simulation_scheduleResponse" message="tns:IEnergyPlus_proc_get_simulation_schedule_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="proc_get_limit_schedule">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEnergyPlus/proc_get_limit_schedule" message="tns:IEnergyPlus_proc_get_limit_schedule_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEnergyPlus/proc_get_limit_scheduleResponse" message="tns:IEnergyPlus_proc_get_limit_schedule_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="proc_get_simulation_value_schedule">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEnergyPlus/proc_get_simulation_value_schedule" message="tns:IEnergyPlus_proc_get_simulation_value_schedule_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEnergyPlus/proc_get_simulation_value_scheduleResponse" message="tns:IEnergyPlus_proc_get_simulation_value_schedule_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_Energy_Modeling_Facilities">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEnergyPlus/Get_Energy_Modeling_Facilities" message="tns:IEnergyPlus_Get_Energy_Modeling_Facilities_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEnergyPlus/Get_Energy_Modeling_FacilitiesResponse" message="tns:IEnergyPlus_Get_Energy_Modeling_Facilities_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_All_Attribute_Template">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEnergyPlus/Get_All_Attribute_Template" message="tns:IEnergyPlus_Get_All_Attribute_Template_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEnergyPlus/Get_All_Attribute_TemplateResponse" message="tns:IEnergyPlus_Get_All_Attribute_Template_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_Template_Groups">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEnergyPlus/Get_Template_Groups" message="tns:IEnergyPlus_Get_Template_Groups_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEnergyPlus/Get_Template_GroupsResponse" message="tns:IEnergyPlus_Get_Template_Groups_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_Energy_Plus_Details">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEnergyPlus/Get_Energy_Plus_Details" message="tns:IEnergyPlus_Get_Energy_Plus_Details_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEnergyPlus/Get_Energy_Plus_DetailsResponse" message="tns:IEnergyPlus_Get_Energy_Plus_Details_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_Modeling_Class">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEnergyPlus/Get_Modeling_Class" message="tns:IEnergyPlus_Get_Modeling_Class_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEnergyPlus/Get_Modeling_ClassResponse" message="tns:IEnergyPlus_Get_Modeling_Class_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_Modeling_Objects_By_Class">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEnergyPlus/Get_Modeling_Objects_By_Class" message="tns:IEnergyPlus_Get_Modeling_Objects_By_Class_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEnergyPlus/Get_Modeling_Objects_By_ClassResponse" message="tns:IEnergyPlus_Get_Modeling_Objects_By_Class_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Insert_Update_Energy_Modeling_Facility">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEnergyPlus/Insert_Update_Energy_Modeling_Facility" message="tns:IEnergyPlus_Insert_Update_Energy_Modeling_Facility_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEnergyPlus/Insert_Update_Energy_Modeling_FacilityResponse" message="tns:IEnergyPlus_Insert_Update_Energy_Modeling_Facility_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Insert_Update_Facility_Attribute_Template_Linkup">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEnergyPlus/Insert_Update_Facility_Attribute_Template_Linkup" message="tns:IEnergyPlus_Insert_Update_Facility_Attribute_Template_Linkup_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEnergyPlus/Insert_Update_Facility_Attribute_Template_LinkupResponse" message="tns:IEnergyPlus_Insert_Update_Facility_Attribute_Template_Linkup_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_Modeling_Object_Fields">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEnergyPlus/Get_Modeling_Object_Fields" message="tns:IEnergyPlus_Get_Modeling_Object_Fields_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEnergyPlus/Get_Modeling_Object_FieldsResponse" message="tns:IEnergyPlus_Get_Modeling_Object_Fields_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Insert_Update_EM_Simulation_Profile">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEnergyPlus/Insert_Update_EM_Simulation_Profile" message="tns:IEnergyPlus_Insert_Update_EM_Simulation_Profile_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEnergyPlus/Insert_Update_EM_Simulation_ProfileResponse" message="tns:IEnergyPlus_Insert_Update_EM_Simulation_Profile_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_EM_Simulation_Control_Data">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEnergyPlus/Get_EM_Simulation_Control_Data" message="tns:IEnergyPlus_Get_EM_Simulation_Control_Data_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEnergyPlus/Get_EM_Simulation_Control_DataResponse" message="tns:IEnergyPlus_Get_EM_Simulation_Control_Data_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Update_EM_Simulation_Control_Attribute_Value">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEnergyPlus/Update_EM_Simulation_Control_Attribute_Value" message="tns:IEnergyPlus_Update_EM_Simulation_Control_Attribute_Value_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEnergyPlus/Update_EM_Simulation_Control_Attribute_ValueResponse" message="tns:IEnergyPlus_Update_EM_Simulation_Control_Attribute_Value_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_Energy_Modeling_IDF_File_Name_Of_Facility">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEnergyPlus/Get_Energy_Modeling_IDF_File_Name_Of_Facility" message="tns:IEnergyPlus_Get_Energy_Modeling_IDF_File_Name_Of_Facility_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEnergyPlus/Get_Energy_Modeling_IDF_File_Name_Of_FacilityResponse" message="tns:IEnergyPlus_Get_Energy_Modeling_IDF_File_Name_Of_Facility_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Update_Modeling_Obj_Filed">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEnergyPlus/Update_Modeling_Obj_Filed" message="tns:IEnergyPlus_Update_Modeling_Obj_Filed_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEnergyPlus/Update_Modeling_Obj_FiledResponse" message="tns:IEnergyPlus_Update_Modeling_Obj_Filed_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_EM_Space_Attribute">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEnergyPlus/Get_EM_Space_Attribute" message="tns:IEnergyPlus_Get_EM_Space_Attribute_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEnergyPlus/Get_EM_Space_AttributeResponse" message="tns:IEnergyPlus_Get_EM_Space_Attribute_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Insert_Update_Energy_Modeling_Simulation_Control_Parameter">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEnergyPlus/Insert_Update_Energy_Modeling_Simulation_Control_Parameter" message="tns:IEnergyPlus_Insert_Update_Energy_Modeling_Simulation_Control_Parameter_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEnergyPlus/Insert_Update_Energy_Modeling_Simulation_Control_ParameterResponse" message="tns:IEnergyPlus_Insert_Update_Energy_Modeling_Simulation_Control_Parameter_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_Energy_Modeling_Simulation_Control_Parameter">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEnergyPlus/Get_Energy_Modeling_Simulation_Control_Parameter" message="tns:IEnergyPlus_Get_Energy_Modeling_Simulation_Control_Parameter_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEnergyPlus/Get_Energy_Modeling_Simulation_Control_ParameterResponse" message="tns:IEnergyPlus_Get_Energy_Modeling_Simulation_Control_Parameter_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_Energy_Modeling_ZoneList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEnergyPlus/Get_Energy_Modeling_ZoneList" message="tns:IEnergyPlus_Get_Energy_Modeling_ZoneList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEnergyPlus/Get_Energy_Modeling_ZoneListResponse" message="tns:IEnergyPlus_Get_Energy_Modeling_ZoneList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_Energy_Modeling_Space_Attribute">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEnergyPlus/Get_Energy_Modeling_Space_Attribute" message="tns:IEnergyPlus_Get_Energy_Modeling_Space_Attribute_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEnergyPlus/Get_Energy_Modeling_Space_AttributeResponse" message="tns:IEnergyPlus_Get_Energy_Modeling_Space_Attribute_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_Energy_Modeling_Equipment_Attribute">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEnergyPlus/Get_Energy_Modeling_Equipment_Attribute" message="tns:IEnergyPlus_Get_Energy_Modeling_Equipment_Attribute_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEnergyPlus/Get_Energy_Modeling_Equipment_AttributeResponse" message="tns:IEnergyPlus_Get_Energy_Modeling_Equipment_Attribute_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_Energy_Modeling_Project_Simulation_Data">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEnergyPlus/Get_Energy_Modeling_Project_Simulation_Data" message="tns:IEnergyPlus_Get_Energy_Modeling_Project_Simulation_Data_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEnergyPlus/Get_Energy_Modeling_Project_Simulation_DataResponse" message="tns:IEnergyPlus_Get_Energy_Modeling_Project_Simulation_Data_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_Connection_String">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEnergyPlus/Get_Connection_String" message="tns:IEnergyPlus_Get_Connection_String_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEnergyPlus/Get_Connection_StringResponse" message="tns:IEnergyPlus_Get_Connection_String_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_Energy_Modeling_Enable_Facility_Attribute">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEnergyPlus/Get_Energy_Modeling_Enable_Facility_Attribute" message="tns:IEnergyPlus_Get_Energy_Modeling_Enable_Facility_Attribute_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEnergyPlus/Get_Energy_Modeling_Enable_Facility_AttributeResponse" message="tns:IEnergyPlus_Get_Energy_Modeling_Enable_Facility_Attribute_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_Energy_Modeling_Project_Profile">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEnergyPlus/Get_Energy_Modeling_Project_Profile" message="tns:IEnergyPlus_Get_Energy_Modeling_Project_Profile_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEnergyPlus/Get_Energy_Modeling_Project_ProfileResponse" message="tns:IEnergyPlus_Get_Energy_Modeling_Project_Profile_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_Energy_Modeling_Spatial_Hierarchy">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEnergyPlus/Get_Energy_Modeling_Spatial_Hierarchy" message="tns:IEnergyPlus_Get_Energy_Modeling_Spatial_Hierarchy_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEnergyPlus/Get_Energy_Modeling_Spatial_HierarchyResponse" message="tns:IEnergyPlus_Get_Energy_Modeling_Spatial_Hierarchy_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_Simulation_BAS_Attribute_Series">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEnergyPlus/Get_Simulation_BAS_Attribute_Series" message="tns:IEnergyPlus_Get_Simulation_BAS_Attribute_Series_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEnergyPlus/Get_Simulation_BAS_Attribute_SeriesResponse" message="tns:IEnergyPlus_Get_Simulation_BAS_Attribute_Series_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_Energy_Modeling_HVAC_Hierarchy">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEnergyPlus/Get_Energy_Modeling_HVAC_Hierarchy" message="tns:IEnergyPlus_Get_Energy_Modeling_HVAC_Hierarchy_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEnergyPlus/Get_Energy_Modeling_HVAC_HierarchyResponse" message="tns:IEnergyPlus_Get_Energy_Modeling_HVAC_Hierarchy_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Insert_Update_Energy_Modeling_Simulation_Request">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEnergyPlus/Insert_Update_Energy_Modeling_Simulation_Request" message="tns:IEnergyPlus_Insert_Update_Energy_Modeling_Simulation_Request_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEnergyPlus/Insert_Update_Energy_Modeling_Simulation_RequestResponse" message="tns:IEnergyPlus_Insert_Update_Energy_Modeling_Simulation_Request_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_Energy_Modeling_Schedule">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEnergyPlus/Get_Energy_Modeling_Schedule" message="tns:IEnergyPlus_Get_Energy_Modeling_Schedule_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEnergyPlus/Get_Energy_Modeling_ScheduleResponse" message="tns:IEnergyPlus_Get_Energy_Modeling_Schedule_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Insert_Update_Energy_Modeling_Facility_Project_Schedules">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEnergyPlus/Insert_Update_Energy_Modeling_Facility_Project_Schedules" message="tns:IEnergyPlus_Insert_Update_Energy_Modeling_Facility_Project_Schedules_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEnergyPlus/Insert_Update_Energy_Modeling_Facility_Project_SchedulesResponse" message="tns:IEnergyPlus_Insert_Update_Energy_Modeling_Facility_Project_Schedules_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IEnergyPlus" type="tns:IEnergyPlus">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Get_energy_modeling_facility_project_schedules">
+      <soap:operation soapAction="http://tempuri.org/IEnergyPlus/Get_energy_modeling_facility_project_schedules" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Delete_Energy_Modeling_Unselected_Schedules">
+      <soap:operation soapAction="http://tempuri.org/IEnergyPlus/Delete_Energy_Modeling_Unselected_Schedules" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Energy_Modeling_Compact_Schedules">
+      <soap:operation soapAction="http://tempuri.org/IEnergyPlus/Get_Energy_Modeling_Compact_Schedules" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Insert_Update_Energy_Modeling_Compact_Schedule">
+      <soap:operation soapAction="http://tempuri.org/IEnergyPlus/Insert_Update_Energy_Modeling_Compact_Schedule" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Update_Energy_Modeling_Compact_Schedule_Week_Type_Flag">
+      <soap:operation soapAction="http://tempuri.org/IEnergyPlus/Update_Energy_Modeling_Compact_Schedule_Week_Type_Flag" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Insert_update_facility_utility_data">
+      <soap:operation soapAction="http://tempuri.org/IEnergyPlus/Insert_update_facility_utility_data" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Energy_Modeling_Unassigned_Compact_Schedule">
+      <soap:operation soapAction="http://tempuri.org/IEnergyPlus/Get_Energy_Modeling_Unassigned_Compact_Schedule" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Insert_Update_Energy_Modeling_Entity_Schedule_Linkup">
+      <soap:operation soapAction="http://tempuri.org/IEnergyPlus/Insert_Update_Energy_Modeling_Entity_Schedule_Linkup" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Energy_Modeling_Utility_data_Profile">
+      <soap:operation soapAction="http://tempuri.org/IEnergyPlus/Get_Energy_Modeling_Utility_data_Profile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Energy_Modeling_Compact_Schedule_Types">
+      <soap:operation soapAction="http://tempuri.org/IEnergyPlus/Get_Energy_Modeling_Compact_Schedule_Types" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Energy_Modeling_Schedule_For_Update">
+      <soap:operation soapAction="http://tempuri.org/IEnergyPlus/Get_Energy_Modeling_Schedule_For_Update" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Delete_Energy_Modeling_Schedule">
+      <soap:operation soapAction="http://tempuri.org/IEnergyPlus/Delete_Energy_Modeling_Schedule" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Insert_Update_Energy_Modeling_IDF_File_Data">
+      <soap:operation soapAction="http://tempuri.org/IEnergyPlus/Insert_Update_Energy_Modeling_IDF_File_Data" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Insert_Update_Energy_Modeling_Zone_Attribute">
+      <soap:operation soapAction="http://tempuri.org/IEnergyPlus/Insert_Update_Energy_Modeling_Zone_Attribute" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Energy_Modeling_File_List_For_Facility">
+      <soap:operation soapAction="http://tempuri.org/IEnergyPlus/Get_Energy_Modeling_File_List_For_Facility" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_energy_modeling_object_fields">
+      <soap:operation soapAction="http://tempuri.org/IEnergyPlus/Get_energy_modeling_object_fields" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Insert_update_energy_model_zone_zone_attribute">
+      <soap:operation soapAction="http://tempuri.org/IEnergyPlus/Insert_update_energy_model_zone_zone_attribute" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_energy_modeling_entity_validation_details">
+      <soap:operation soapAction="http://tempuri.org/IEnergyPlus/Get_energy_modeling_entity_validation_details" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_energy_modeling_entity_details">
+      <soap:operation soapAction="http://tempuri.org/IEnergyPlus/Get_energy_modeling_entity_details" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Insert_update_energy_modeling_zonelist_zone">
+      <soap:operation soapAction="http://tempuri.org/IEnergyPlus/Insert_update_energy_modeling_zonelist_zone" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_simulation_energymodeling_zone_attribute_series">
+      <soap:operation soapAction="http://tempuri.org/IEnergyPlus/Get_simulation_energymodeling_zone_attribute_series" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_energy_modeling_zone_list">
+      <soap:operation soapAction="http://tempuri.org/IEnergyPlus/Get_energy_modeling_zone_list" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_energy_modeling_Zones_zonelist">
+      <soap:operation soapAction="http://tempuri.org/IEnergyPlus/Get_energy_modeling_Zones_zonelist" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Energy_Modeling_Project_Zonelist_Zones">
+      <soap:operation soapAction="http://tempuri.org/IEnergyPlus/Get_Energy_Modeling_Project_Zonelist_Zones" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Energy_Modeling_Project_Zone_Equipment">
+      <soap:operation soapAction="http://tempuri.org/IEnergyPlus/Get_Energy_Modeling_Project_Zone_Equipment" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Insert_Zones_for_Zonelist">
+      <soap:operation soapAction="http://tempuri.org/IEnergyPlus/Insert_Zones_for_Zonelist" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_energymodeling_weather_sources">
+      <soap:operation soapAction="http://tempuri.org/IEnergyPlus/Get_energymodeling_weather_sources" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_energy_modeling_weather_series">
+      <soap:operation soapAction="http://tempuri.org/IEnergyPlus/Get_energy_modeling_weather_series" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Insert_Zones_List_Energy_Modeling">
+      <soap:operation soapAction="http://tempuri.org/IEnergyPlus/Insert_Zones_List_Energy_Modeling" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Insert_energy_modeling_object">
+      <soap:operation soapAction="http://tempuri.org/IEnergyPlus/Insert_energy_modeling_object" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Energy_Modeling_Project_Attributes">
+      <soap:operation soapAction="http://tempuri.org/IEnergyPlus/Get_Energy_Modeling_Project_Attributes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Insert_New_Energy_Modeling_Object">
+      <soap:operation soapAction="http://tempuri.org/IEnergyPlus/Insert_New_Energy_Modeling_Object" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Insert_Update_Energy_Modeling_Project_Attribute_Value">
+      <soap:operation soapAction="http://tempuri.org/IEnergyPlus/Insert_Update_Energy_Modeling_Project_Attribute_Value" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_energy_modeling_object_details">
+      <soap:operation soapAction="http://tempuri.org/IEnergyPlus/Get_energy_modeling_object_details" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Delete_energy_modeling_objects_and_objects_fields">
+      <soap:operation soapAction="http://tempuri.org/IEnergyPlus/Delete_energy_modeling_objects_and_objects_fields" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_energy_modeling_objects">
+      <soap:operation soapAction="http://tempuri.org/IEnergyPlus/Get_energy_modeling_objects" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_energy_modeling_all_objects_fields">
+      <soap:operation soapAction="http://tempuri.org/IEnergyPlus/Get_energy_modeling_all_objects_fields" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Energy_Modeling_Object_Attributes">
+      <soap:operation soapAction="http://tempuri.org/IEnergyPlus/Get_Energy_Modeling_Object_Attributes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Insert_Update_Energy_Modeling_Simulation_AAS">
+      <soap:operation soapAction="http://tempuri.org/IEnergyPlus/Insert_Update_Energy_Modeling_Simulation_AAS" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Energy_Modeling_AAS_Data">
+      <soap:operation soapAction="http://tempuri.org/IEnergyPlus/Get_Energy_Modeling_AAS_Data" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Energy_Modeling_Object_And_Object_Attributes">
+      <soap:operation soapAction="http://tempuri.org/IEnergyPlus/Get_Energy_Modeling_Object_And_Object_Attributes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_simulation_energymodeling_meter_attribute_series">
+      <soap:operation soapAction="http://tempuri.org/IEnergyPlus/Get_simulation_energymodeling_meter_attribute_series" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Delete_Energy_Modeling_AAS_Data">
+      <soap:operation soapAction="http://tempuri.org/IEnergyPlus/Delete_Energy_Modeling_AAS_Data" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Energy_Modeling_Object_Fields_Key_Values">
+      <soap:operation soapAction="http://tempuri.org/IEnergyPlus/Get_Energy_Modeling_Object_Fields_Key_Values" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="proc_get_energy_modeling_import_objects_count">
+      <soap:operation soapAction="http://tempuri.org/IEnergyPlus/proc_get_energy_modeling_import_objects_count" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Delete_Energy_Modeling_Object_And_Object_Value">
+      <soap:operation soapAction="http://tempuri.org/IEnergyPlus/Delete_Energy_Modeling_Object_And_Object_Value" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Energy_Modeling_Performance_Hierarchy">
+      <soap:operation soapAction="http://tempuri.org/IEnergyPlus/Get_Energy_Modeling_Performance_Hierarchy" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Energy_Modeling_Simulation_Status">
+      <soap:operation soapAction="http://tempuri.org/IEnergyPlus/Get_Energy_Modeling_Simulation_Status" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DoWork">
+      <soap:operation soapAction="http://tempuri.org/IEnergyPlus/DoWork" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Energy_Modeling_Space_Gains_Monthly_Report">
+      <soap:operation soapAction="http://tempuri.org/IEnergyPlus/Get_Energy_Modeling_Space_Gains_Monthly_Report" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="proc_insert_update_EnergyModeling_projects_equipments">
+      <soap:operation soapAction="http://tempuri.org/IEnergyPlus/proc_insert_update_EnergyModeling_projects_equipments" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Insert_Energy_Modeling_simulation_algorithm_record">
+      <soap:operation soapAction="http://tempuri.org/IEnergyPlus/Insert_Energy_Modeling_simulation_algorithm_record" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Energy_Modeling_simulation_algorithm_record">
+      <soap:operation soapAction="http://tempuri.org/IEnergyPlus/Get_Energy_Modeling_simulation_algorithm_record" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="proc_insert_update_EnergyModeling_projects_zonelist">
+      <soap:operation soapAction="http://tempuri.org/IEnergyPlus/proc_insert_update_EnergyModeling_projects_zonelist" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="proc_update_energy_modeling_equipment_attributes">
+      <soap:operation soapAction="http://tempuri.org/IEnergyPlus/proc_update_energy_modeling_equipment_attributes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="proc_get_energymodeling_objects_for_equipment">
+      <soap:operation soapAction="http://tempuri.org/IEnergyPlus/proc_get_energymodeling_objects_for_equipment" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="proc_get_energy_modeling_equipment_attributes">
+      <soap:operation soapAction="http://tempuri.org/IEnergyPlus/proc_get_energy_modeling_equipment_attributes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="proc_get_energy_modeling_equipment">
+      <soap:operation soapAction="http://tempuri.org/IEnergyPlus/proc_get_energy_modeling_equipment" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="proc_update_energy_modeling_space_attributes">
+      <soap:operation soapAction="http://tempuri.org/IEnergyPlus/proc_update_energy_modeling_space_attributes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="proc_get_energymodeling_objects_for_space">
+      <soap:operation soapAction="http://tempuri.org/IEnergyPlus/proc_get_energymodeling_objects_for_space" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="proc_get_energy_modeling_space_attributes">
+      <soap:operation soapAction="http://tempuri.org/IEnergyPlus/proc_get_energy_modeling_space_attributes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLastWeatherDataFile">
+      <soap:operation soapAction="http://tempuri.org/IEnergyPlus/GetLastWeatherDataFile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="proc_get_energy_modeling_zones_for_dropdown">
+      <soap:operation soapAction="http://tempuri.org/IEnergyPlus/proc_get_energy_modeling_zones_for_dropdown" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserProjects_NewUI">
+      <soap:operation soapAction="http://tempuri.org/IEnergyPlus/GetUserProjects_NewUI" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="proc_get_zone_list_NewUI">
+      <soap:operation soapAction="http://tempuri.org/IEnergyPlus/proc_get_zone_list_NewUI" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFacilitiesNewUI">
+      <soap:operation soapAction="http://tempuri.org/IEnergyPlus/GetFacilitiesNewUI" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Energy_Modeling_Monthly_Summary_Report_Hierarchy">
+      <soap:operation soapAction="http://tempuri.org/IEnergyPlus/Get_Energy_Modeling_Monthly_Summary_Report_Hierarchy" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Billing_Statements">
+      <soap:operation soapAction="http://tempuri.org/IEnergyPlus/Get_Billing_Statements" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Simulation_Schedule_Limit">
+      <soap:operation soapAction="http://tempuri.org/IEnergyPlus/Get_Simulation_Schedule_Limit" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Insert_Update_Simulation_Schedule_Limit">
+      <soap:operation soapAction="http://tempuri.org/IEnergyPlus/Insert_Update_Simulation_Schedule_Limit" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Delete_Simulation_Schedule_Limit">
+      <soap:operation soapAction="http://tempuri.org/IEnergyPlus/Delete_Simulation_Schedule_Limit" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Delete_EnergyModeling_Facility">
+      <soap:operation soapAction="http://tempuri.org/IEnergyPlus/Delete_EnergyModeling_Facility" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Insert_Update_Simulation_Schedule">
+      <soap:operation soapAction="http://tempuri.org/IEnergyPlus/Insert_Update_Simulation_Schedule" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Simulation_Type_Name">
+      <soap:operation soapAction="http://tempuri.org/IEnergyPlus/Get_Simulation_Type_Name" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Delete_Simulation_Schedule">
+      <soap:operation soapAction="http://tempuri.org/IEnergyPlus/Delete_Simulation_Schedule" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Simulation_Schedule_Data">
+      <soap:operation soapAction="http://tempuri.org/IEnergyPlus/Get_Simulation_Schedule_Data" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Update_Flag_For_Schedules">
+      <soap:operation soapAction="http://tempuri.org/IEnergyPlus/Update_Flag_For_Schedules" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Data_To_Generate_Simulation_IDF_File">
+      <soap:operation soapAction="http://tempuri.org/IEnergyPlus/Get_Data_To_Generate_Simulation_IDF_File" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Simulation_Schedule_Data_By_Name">
+      <soap:operation soapAction="http://tempuri.org/IEnergyPlus/Get_Simulation_Schedule_Data_By_Name" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Simulation_Schedule_Names">
+      <soap:operation soapAction="http://tempuri.org/IEnergyPlus/Get_Simulation_Schedule_Names" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Simulation_Week_Type">
+      <soap:operation soapAction="http://tempuri.org/IEnergyPlus/Get_Simulation_Week_Type" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Insert_Update_Space_Attribute_From_IDF_File">
+      <soap:operation soapAction="http://tempuri.org/IEnergyPlus/Insert_Update_Space_Attribute_From_IDF_File" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Insert_update_energy_model_system_system_attribute">
+      <soap:operation soapAction="http://tempuri.org/IEnergyPlus/Insert_update_energy_model_system_system_attribute" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Energy_modeling_Output_Class">
+      <soap:operation soapAction="http://tempuri.org/IEnergyPlus/Get_Energy_modeling_Output_Class" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Energy_modeling_Output_Object">
+      <soap:operation soapAction="http://tempuri.org/IEnergyPlus/Get_Energy_modeling_Output_Object" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Energy_modeling_Output_Object_Fields">
+      <soap:operation soapAction="http://tempuri.org/IEnergyPlus/Get_Energy_modeling_Output_Object_Fields" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Insert_Energy_modeling_simulation_control_parameter">
+      <soap:operation soapAction="http://tempuri.org/IEnergyPlus/Insert_Energy_modeling_simulation_control_parameter" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Add_Simulation_File_Name">
+      <soap:operation soapAction="http://tempuri.org/IEnergyPlus/Add_Simulation_File_Name" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Simulation_File_Name">
+      <soap:operation soapAction="http://tempuri.org/IEnergyPlus/Get_Simulation_File_Name" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Delete_Simulation_Import_Entries">
+      <soap:operation soapAction="http://tempuri.org/IEnergyPlus/Delete_Simulation_Import_Entries" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Simulation_IDF_Object_ID">
+      <soap:operation soapAction="http://tempuri.org/IEnergyPlus/Get_Simulation_IDF_Object_ID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Simulation_IDF_Object_Fields">
+      <soap:operation soapAction="http://tempuri.org/IEnergyPlus/Get_Simulation_IDF_Object_Fields" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Insert_Simulation_File_Field_Value">
+      <soap:operation soapAction="http://tempuri.org/IEnergyPlus/Insert_Simulation_File_Field_Value" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Update_simulation_weather_flag">
+      <soap:operation soapAction="http://tempuri.org/IEnergyPlus/Update_simulation_weather_flag" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Update_simulation_weather_file">
+      <soap:operation soapAction="http://tempuri.org/IEnergyPlus/Update_simulation_weather_file" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Simulation_Object_Validation_Count">
+      <soap:operation soapAction="http://tempuri.org/IEnergyPlus/Get_Simulation_Object_Validation_Count" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Simulation_Multi_Occurance_Object_Validation_Count">
+      <soap:operation soapAction="http://tempuri.org/IEnergyPlus/Get_Simulation_Multi_Occurance_Object_Validation_Count" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Simulation_Building_Validation_Details">
+      <soap:operation soapAction="http://tempuri.org/IEnergyPlus/Get_Simulation_Building_Validation_Details" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Simulation_Zonelist_Validation_Details">
+      <soap:operation soapAction="http://tempuri.org/IEnergyPlus/Get_Simulation_Zonelist_Validation_Details" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Simulation_Zone_Validation_Details">
+      <soap:operation soapAction="http://tempuri.org/IEnergyPlus/Get_Simulation_Zone_Validation_Details" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="proc_get_simulation_schedule">
+      <soap:operation soapAction="http://tempuri.org/IEnergyPlus/proc_get_simulation_schedule" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="proc_get_limit_schedule">
+      <soap:operation soapAction="http://tempuri.org/IEnergyPlus/proc_get_limit_schedule" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="proc_get_simulation_value_schedule">
+      <soap:operation soapAction="http://tempuri.org/IEnergyPlus/proc_get_simulation_value_schedule" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Energy_Modeling_Facilities">
+      <soap:operation soapAction="http://tempuri.org/IEnergyPlus/Get_Energy_Modeling_Facilities" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_All_Attribute_Template">
+      <soap:operation soapAction="http://tempuri.org/IEnergyPlus/Get_All_Attribute_Template" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Template_Groups">
+      <soap:operation soapAction="http://tempuri.org/IEnergyPlus/Get_Template_Groups" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Energy_Plus_Details">
+      <soap:operation soapAction="http://tempuri.org/IEnergyPlus/Get_Energy_Plus_Details" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Modeling_Class">
+      <soap:operation soapAction="http://tempuri.org/IEnergyPlus/Get_Modeling_Class" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Modeling_Objects_By_Class">
+      <soap:operation soapAction="http://tempuri.org/IEnergyPlus/Get_Modeling_Objects_By_Class" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Insert_Update_Energy_Modeling_Facility">
+      <soap:operation soapAction="http://tempuri.org/IEnergyPlus/Insert_Update_Energy_Modeling_Facility" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Insert_Update_Facility_Attribute_Template_Linkup">
+      <soap:operation soapAction="http://tempuri.org/IEnergyPlus/Insert_Update_Facility_Attribute_Template_Linkup" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Modeling_Object_Fields">
+      <soap:operation soapAction="http://tempuri.org/IEnergyPlus/Get_Modeling_Object_Fields" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Insert_Update_EM_Simulation_Profile">
+      <soap:operation soapAction="http://tempuri.org/IEnergyPlus/Insert_Update_EM_Simulation_Profile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_EM_Simulation_Control_Data">
+      <soap:operation soapAction="http://tempuri.org/IEnergyPlus/Get_EM_Simulation_Control_Data" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Update_EM_Simulation_Control_Attribute_Value">
+      <soap:operation soapAction="http://tempuri.org/IEnergyPlus/Update_EM_Simulation_Control_Attribute_Value" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Energy_Modeling_IDF_File_Name_Of_Facility">
+      <soap:operation soapAction="http://tempuri.org/IEnergyPlus/Get_Energy_Modeling_IDF_File_Name_Of_Facility" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Update_Modeling_Obj_Filed">
+      <soap:operation soapAction="http://tempuri.org/IEnergyPlus/Update_Modeling_Obj_Filed" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_EM_Space_Attribute">
+      <soap:operation soapAction="http://tempuri.org/IEnergyPlus/Get_EM_Space_Attribute" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Insert_Update_Energy_Modeling_Simulation_Control_Parameter">
+      <soap:operation soapAction="http://tempuri.org/IEnergyPlus/Insert_Update_Energy_Modeling_Simulation_Control_Parameter" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Energy_Modeling_Simulation_Control_Parameter">
+      <soap:operation soapAction="http://tempuri.org/IEnergyPlus/Get_Energy_Modeling_Simulation_Control_Parameter" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Energy_Modeling_ZoneList">
+      <soap:operation soapAction="http://tempuri.org/IEnergyPlus/Get_Energy_Modeling_ZoneList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Energy_Modeling_Space_Attribute">
+      <soap:operation soapAction="http://tempuri.org/IEnergyPlus/Get_Energy_Modeling_Space_Attribute" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Energy_Modeling_Equipment_Attribute">
+      <soap:operation soapAction="http://tempuri.org/IEnergyPlus/Get_Energy_Modeling_Equipment_Attribute" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Energy_Modeling_Project_Simulation_Data">
+      <soap:operation soapAction="http://tempuri.org/IEnergyPlus/Get_Energy_Modeling_Project_Simulation_Data" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Connection_String">
+      <soap:operation soapAction="http://tempuri.org/IEnergyPlus/Get_Connection_String" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Energy_Modeling_Enable_Facility_Attribute">
+      <soap:operation soapAction="http://tempuri.org/IEnergyPlus/Get_Energy_Modeling_Enable_Facility_Attribute" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Energy_Modeling_Project_Profile">
+      <soap:operation soapAction="http://tempuri.org/IEnergyPlus/Get_Energy_Modeling_Project_Profile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Energy_Modeling_Spatial_Hierarchy">
+      <soap:operation soapAction="http://tempuri.org/IEnergyPlus/Get_Energy_Modeling_Spatial_Hierarchy" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Simulation_BAS_Attribute_Series">
+      <soap:operation soapAction="http://tempuri.org/IEnergyPlus/Get_Simulation_BAS_Attribute_Series" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Energy_Modeling_HVAC_Hierarchy">
+      <soap:operation soapAction="http://tempuri.org/IEnergyPlus/Get_Energy_Modeling_HVAC_Hierarchy" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Insert_Update_Energy_Modeling_Simulation_Request">
+      <soap:operation soapAction="http://tempuri.org/IEnergyPlus/Insert_Update_Energy_Modeling_Simulation_Request" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Energy_Modeling_Schedule">
+      <soap:operation soapAction="http://tempuri.org/IEnergyPlus/Get_Energy_Modeling_Schedule" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Insert_Update_Energy_Modeling_Facility_Project_Schedules">
+      <soap:operation soapAction="http://tempuri.org/IEnergyPlus/Insert_Update_Energy_Modeling_Facility_Project_Schedules" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="EnergyPlus">
+    <wsdl:port name="BasicHttpBinding_IEnergyPlus" binding="tns:BasicHttpBinding_IEnergyPlus">
+      <soap:address location="http://services.ecodomus.com/ClientPM/EnergyPlus.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

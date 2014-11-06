@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.datacontract.org/2004/07/EcoDomus.LocationsHierarchy" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/EcoDomus.LocationsHierarchy" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:4444/Client WCF/LocationHierarchy.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="LocationHierrachyModel">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Hierarchy_Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Organization_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="custom_hierarchy_data_name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="fk_level_id" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="fk_organization_id" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="hierarchy_data_text" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="latitude" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="longitude" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="pk_custom_hierarchy_data_id" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="pk_hierarchy_table_id" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="table_name" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="LocationHierrachyModel" nillable="true" type="tns:LocationHierrachyModel" />
+</xs:schema>

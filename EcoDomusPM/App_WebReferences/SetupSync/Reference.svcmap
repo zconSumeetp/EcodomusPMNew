@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="71cb9505-f495-416d-9873-5324badfb34b" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>false</ReferenceAllAssemblies>
+    <ReferencedAssemblies>
+      <ReferencedAssembly AssemblyName="System" />
+      <ReferencedAssembly AssemblyName="System.Core" />
+      <ReferencedAssembly AssemblyName="System.Data" />
+      <ReferencedAssembly AssemblyName="System.Xml" />
+      <ReferencedAssembly AssemblyName="System.Xml.Linq" />
+    </ReferencedAssemblies>
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:4444/Client%20WCF/SetupSync.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="SetupSync.xsd" MetadataType="Schema" ID="d080af79-40fc-4df3-968b-5bed54aaa985" SourceId="1" SourceUrl="http://localhost:4444/Client WCF/SetupSync.svc?xsd=xsd1" />
+    <MetadataFile FileName="SetupSync1.xsd" MetadataType="Schema" ID="3b4a7377-0540-411c-b0b1-bb69b6181050" SourceId="1" SourceUrl="http://localhost:4444/Client WCF/SetupSync.svc?xsd=xsd0" />
+    <MetadataFile FileName="SetupSync.wsdl" MetadataType="Wsdl" ID="39581440-0e8f-42a9-a0e0-cbced911da8e" SourceId="1" SourceUrl="http://localhost:4444/Client WCF/SetupSync.svc?wsdl" />
+    <MetadataFile FileName="SetupSync2.xsd" MetadataType="Schema" ID="2bc6a814-e9ce-4dcc-bb0b-3f4c98e89c3e" SourceId="1" SourceUrl="http://localhost:4444/Client WCF/SetupSync.svc?xsd=xsd3" />
+    <MetadataFile FileName="SetupSync.disco" MetadataType="Disco" ID="5c6b3cad-4213-4e28-ae1c-5650038db418" SourceId="1" SourceUrl="http://localhost:4444/Client WCF/SetupSync.svc?disco" />
+    <MetadataFile FileName="SetupSync3.xsd" MetadataType="Schema" ID="c400f672-eda3-4f6f-97c5-07afaa1ba883" SourceId="1" SourceUrl="http://localhost:4444/Client WCF/SetupSync.svc?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

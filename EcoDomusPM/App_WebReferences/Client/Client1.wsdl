@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Client" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:3333/Central WCF PM/Client.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:3333/Central WCF PM/Client.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:3333/Central WCF PM/Client.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Ecodomus.Client" />
+      <xsd:import schemaLocation="http://localhost:3333/Central WCF PM/Client.svc?xsd=xsd3" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IClient_proc_get_organizations_client_InputMessage">
+    <wsdl:part name="parameters" element="tns:proc_get_organizations_client" />
+  </wsdl:message>
+  <wsdl:message name="IClient_proc_get_organizations_client_OutputMessage">
+    <wsdl:part name="parameters" element="tns:proc_get_organizations_clientResponse" />
+  </wsdl:message>
+  <wsdl:message name="IClient_BindOrganization_InputMessage">
+    <wsdl:part name="parameters" element="tns:BindOrganization" />
+  </wsdl:message>
+  <wsdl:message name="IClient_BindOrganization_OutputMessage">
+    <wsdl:part name="parameters" element="tns:BindOrganizationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IClient_GetSystemRoles_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSystemRoles" />
+  </wsdl:message>
+  <wsdl:message name="IClient_GetSystemRoles_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSystemRolesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IClient_GetSystemAdmins_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSystemAdmins" />
+  </wsdl:message>
+  <wsdl:message name="IClient_GetSystemAdmins_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSystemAdminsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IClient_DeleteClient_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteClient" />
+  </wsdl:message>
+  <wsdl:message name="IClient_DeleteClient_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteClientResponse" />
+  </wsdl:message>
+  <wsdl:message name="IClient_InsertNewClient_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertNewClient" />
+  </wsdl:message>
+  <wsdl:message name="IClient_InsertNewClient_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertNewClientResponse" />
+  </wsdl:message>
+  <wsdl:message name="IClient_CreateNewClientDB_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateNewClientDB" />
+  </wsdl:message>
+  <wsdl:message name="IClient_CreateNewClientDB_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateNewClientDBResponse" />
+  </wsdl:message>
+  <wsdl:message name="IClient_GetClientDetail_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetClientDetail" />
+  </wsdl:message>
+  <wsdl:message name="IClient_GetClientDetail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetClientDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="IClient_GetAllClients_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllClients" />
+  </wsdl:message>
+  <wsdl:message name="IClient_GetAllClients_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllClientsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IClient_GetOwnerOrg_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetOwnerOrg" />
+  </wsdl:message>
+  <wsdl:message name="IClient_GetOwnerOrg_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetOwnerOrgResponse" />
+  </wsdl:message>
+  <wsdl:message name="IClient_InsertCobieExportRequest_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertCobieExportRequest" />
+  </wsdl:message>
+  <wsdl:message name="IClient_InsertCobieExportRequest_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertCobieExportRequestResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IClient">
+    <wsdl:operation name="proc_get_organizations_client">
+      <wsdl:input wsaw:Action="http://tempuri.org/IClient/proc_get_organizations_client" message="tns:IClient_proc_get_organizations_client_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IClient/proc_get_organizations_clientResponse" message="tns:IClient_proc_get_organizations_client_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BindOrganization">
+      <wsdl:input wsaw:Action="http://tempuri.org/IClient/BindOrganization" message="tns:IClient_BindOrganization_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IClient/BindOrganizationResponse" message="tns:IClient_BindOrganization_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSystemRoles">
+      <wsdl:input wsaw:Action="http://tempuri.org/IClient/GetSystemRoles" message="tns:IClient_GetSystemRoles_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IClient/GetSystemRolesResponse" message="tns:IClient_GetSystemRoles_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSystemAdmins">
+      <wsdl:input wsaw:Action="http://tempuri.org/IClient/GetSystemAdmins" message="tns:IClient_GetSystemAdmins_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IClient/GetSystemAdminsResponse" message="tns:IClient_GetSystemAdmins_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteClient">
+      <wsdl:input wsaw:Action="http://tempuri.org/IClient/DeleteClient" message="tns:IClient_DeleteClient_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IClient/DeleteClientResponse" message="tns:IClient_DeleteClient_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertNewClient">
+      <wsdl:input wsaw:Action="http://tempuri.org/IClient/InsertNewClient" message="tns:IClient_InsertNewClient_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IClient/InsertNewClientResponse" message="tns:IClient_InsertNewClient_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateNewClientDB">
+      <wsdl:input wsaw:Action="http://tempuri.org/IClient/CreateNewClientDB" message="tns:IClient_CreateNewClientDB_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IClient/CreateNewClientDBResponse" message="tns:IClient_CreateNewClientDB_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetClientDetail">
+      <wsdl:input wsaw:Action="http://tempuri.org/IClient/GetClientDetail" message="tns:IClient_GetClientDetail_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IClient/GetClientDetailResponse" message="tns:IClient_GetClientDetail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllClients">
+      <wsdl:input wsaw:Action="http://tempuri.org/IClient/GetAllClients" message="tns:IClient_GetAllClients_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IClient/GetAllClientsResponse" message="tns:IClient_GetAllClients_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOwnerOrg">
+      <wsdl:input wsaw:Action="http://tempuri.org/IClient/GetOwnerOrg" message="tns:IClient_GetOwnerOrg_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IClient/GetOwnerOrgResponse" message="tns:IClient_GetOwnerOrg_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertCobieExportRequest">
+      <wsdl:input wsaw:Action="http://tempuri.org/IClient/InsertCobieExportRequest" message="tns:IClient_InsertCobieExportRequest_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IClient/InsertCobieExportRequestResponse" message="tns:IClient_InsertCobieExportRequest_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IClient" type="tns:IClient">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="proc_get_organizations_client">
+      <soap:operation soapAction="http://tempuri.org/IClient/proc_get_organizations_client" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BindOrganization">
+      <soap:operation soapAction="http://tempuri.org/IClient/BindOrganization" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSystemRoles">
+      <soap:operation soapAction="http://tempuri.org/IClient/GetSystemRoles" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSystemAdmins">
+      <soap:operation soapAction="http://tempuri.org/IClient/GetSystemAdmins" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteClient">
+      <soap:operation soapAction="http://tempuri.org/IClient/DeleteClient" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertNewClient">
+      <soap:operation soapAction="http://tempuri.org/IClient/InsertNewClient" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateNewClientDB">
+      <soap:operation soapAction="http://tempuri.org/IClient/CreateNewClientDB" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetClientDetail">
+      <soap:operation soapAction="http://tempuri.org/IClient/GetClientDetail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllClients">
+      <soap:operation soapAction="http://tempuri.org/IClient/GetAllClients" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOwnerOrg">
+      <soap:operation soapAction="http://tempuri.org/IClient/GetOwnerOrg" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertCobieExportRequest">
+      <soap:operation soapAction="http://tempuri.org/IClient/InsertCobieExportRequest" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Client">
+    <wsdl:port name="BasicHttpBinding_IClient" binding="tns:BasicHttpBinding_IClient">
+      <soap:address location="http://localhost:3333/Central WCF PM/Client.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

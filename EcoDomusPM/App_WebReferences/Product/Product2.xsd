@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.datacontract.org/2004/07/Ecodomus.Product" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Ecodomus.Product" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:3333/Central WCF/Product.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="ProductModel">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Asset_type_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Attribute_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Attribute_name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Attribute_value" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Category" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Category_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Client_Id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Culture" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DocumentName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Document_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Entity_name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Existingflag" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Expected_life" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FileName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Flag" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Group_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Long_name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Model_number" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Navigateurl" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OmniClassId" type="ser:guid" />
+      <xs:element minOccurs="0" name="OrganizationId" type="ser:guid" />
+      <xs:element minOccurs="0" name="Part_number" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Path" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ProductId" type="ser:guid" />
+      <xs:element minOccurs="0" name="Replacement_cost" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Searchstring" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Short_name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Stage_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Standard_name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SystemRole" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Uniformat_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Unit_of_measurement_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Warranty_description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Warranty_duration_labor" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Warranty_duration_parts" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Warranty_duration_unit" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Warranty_guarantor_labor_id" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Warranty_guarantor_parts_id" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ProductModel" nillable="true" type="tns:ProductModel" />
+</xs:schema>

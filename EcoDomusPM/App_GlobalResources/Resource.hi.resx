@@ -1,0 +1,1800 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Abbreviation" xml:space="preserve">
+    <value>संक्षिप्तीकरण</value>
+  </data>
+  <data name="Access_View" xml:space="preserve">
+    <value>देखें पहुंच</value>
+  </data>
+  <data name="Action" xml:space="preserve">
+    <value>कार्रवाई</value>
+  </data>
+  <data name="Active_Days" xml:space="preserve">
+    <value>सक्रिय दिन</value>
+  </data>
+  <data name="Activity_Id" xml:space="preserve">
+    <value>गतिविधि आईडी</value>
+  </data>
+  <data name="Add" xml:space="preserve">
+    <value>जोड़ना</value>
+  </data>
+  <data name="Add_Attribute" xml:space="preserve">
+    <value>गुण जोड़ें</value>
+  </data>
+  <data name="Add_By_Model_Number" xml:space="preserve">
+    <value>मॉडल संख्या तक में जोड़ें</value>
+  </data>
+  <data name="Add_Category" xml:space="preserve">
+    <value>श्रेणी जोड़ें</value>
+  </data>
+  <data name="Add_Component" xml:space="preserve">
+    <value>घटक जोड़ें</value>
+  </data>
+  <data name="Add_Constraints" xml:space="preserve">
+    <value>प्रतिबन्ध जोड़ें</value>
+  </data>
+  <data name="Add_Document" xml:space="preserve">
+    <value>दस्तावेज़ जोड़ें</value>
+  </data>
+  <data name="Add_Edit_Document" xml:space="preserve">
+    <value>दस्तावेज़ को संपादित करने में जोड़ें</value>
+  </data>
+  <data name="Add_Edit_Name" xml:space="preserve">
+    <value>नाम संपादित करें में जोड़ें</value>
+  </data>
+  <data name="Add_Facility" xml:space="preserve">
+    <value>सुविधा जोड़ें</value>
+  </data>
+  <data name="Add_Floor" xml:space="preserve">
+    <value>तल में जोड़ें</value>
+  </data>
+  <data name="Add_Issue" xml:space="preserve">
+    <value>अंक जोड़ें</value>
+  </data>
+  <data name="Add_New_Crew" xml:space="preserve">
+    <value>नई क्रू जोड़ें</value>
+  </data>
+  <data name="Add_New_Organization" xml:space="preserve">
+    <value>नया संगठन जोड़ें</value>
+  </data>
+  <data name="Add_New_Project" xml:space="preserve">
+    <value>नई परियोजना जोड़ें</value>
+  </data>
+  <data name="Add_New_Role" xml:space="preserve">
+    <value>नई भूमिका जोड़ें</value>
+  </data>
+  <data name="Add_New_Task" xml:space="preserve">
+    <value>नया कार्य जोड़ें</value>
+  </data>
+  <data name="Add_New_User" xml:space="preserve">
+    <value>नया उपयोगकर्ता जोड़ें</value>
+  </data>
+  <data name="Add_Organization_To_Project" xml:space="preserve">
+    <value>परियोजना के लिए संगठन में जोड़ें</value>
+  </data>
+  <data name="Add_Provider" xml:space="preserve">
+    <value>प्रदाता जोड़ें</value>
+  </data>
+  <data name="Add_Space" xml:space="preserve">
+    <value>अंतरिक्ष में जोड़ें</value>
+  </data>
+  <data name="Add_Subsystem" xml:space="preserve">
+    <value>सबसिस्टम जोड़ें</value>
+  </data>
+  <data name="Add_Systems" xml:space="preserve">
+    <value>सिस्टम जोड़ें</value>
+  </data>
+  <data name="Add_Task" xml:space="preserve">
+    <value>कार्य जोड़ें</value>
+  </data>
+  <data name="Add_Type" xml:space="preserve">
+    <value>प्रकार जोड़ें</value>
+  </data>
+  <data name="Add_Zone" xml:space="preserve">
+    <value>क्षेत्र जोड़ें</value>
+  </data>
+  <data name="Address_1" xml:space="preserve">
+    <value>पता 1</value>
+  </data>
+  <data name="Address_2" xml:space="preserve">
+    <value>2 पता</value>
+  </data>
+  <data name="Address_Country" xml:space="preserve">
+    <value>पता देश</value>
+  </data>
+  <data name="Address_State_Region" xml:space="preserve">
+    <value>पता राज्य क्षेत्र</value>
+  </data>
+  <data name="Address_Street" xml:space="preserve">
+    <value>पता स्ट्रीट</value>
+  </data>
+  <data name="Address_Town" xml:space="preserve">
+    <value>पता टाउन</value>
+  </data>
+  <data name="Administrative_Controls" xml:space="preserve">
+    <value>प्रशासनिक नियंत्रण</value>
+  </data>
+  <data name="Affected_Task" xml:space="preserve">
+    <value>प्रभावित टास्क</value>
+  </data>
+  <data name="Alerts" xml:space="preserve">
+    <value>सूचनाएं और अलर्ट</value>
+  </data>
+  <data name="All_My_Task" xml:space="preserve">
+    <value>मेरे सभी टास्क</value>
+  </data>
+  <data name="Approval_By" xml:space="preserve">
+    <value>द्वारा अनुमोदन</value>
+  </data>
+  <data name="Area_Measurement" xml:space="preserve">
+    <value>क्षेत्र मापन</value>
+  </data>
+  <data name="Area_Units" xml:space="preserve">
+    <value>क्षेत्र इकाइयों</value>
+  </data>
+  <data name="Asset_Type" xml:space="preserve">
+    <value>एसेट प्रकार</value>
+  </data>
+  <data name="Assign" xml:space="preserve">
+    <value>असाइन करें</value>
+  </data>
+  <data name="Assign_As_Major" xml:space="preserve">
+    <value>मेजर के रूप में असाइन करें</value>
+  </data>
+  <data name="Assign_As_Project_Contact" xml:space="preserve">
+    <value>परियोजना संपर्क के रूप में असाइन करें</value>
+  </data>
+  <data name="Assign_Contacts_To_The_Project" xml:space="preserve">
+    <value>परियोजना के लिए संपर्क असाइन करें</value>
+  </data>
+  <data name="Assign_Omniclass" xml:space="preserve">
+    <value>Omniclass असाइन करें</value>
+  </data>
+  <data name="Assign_Organization" xml:space="preserve">
+    <value>संगठन असाइन करें</value>
+  </data>
+  <data name="Assigned_To" xml:space="preserve">
+    <value>करने के लिए निरुपित</value>
+  </data>
+  <data name="Attribute_Name" xml:space="preserve">
+    <value>विशेषता का नाम</value>
+  </data>
+  <data name="Attribute_Template" xml:space="preserve">
+    <value>ऐट्रिब्यूट टेम्पलेट</value>
+  </data>
+  <data name="Attributes" xml:space="preserve">
+    <value>विशेषताएँ</value>
+  </data>
+  <data name="Average_PPC" xml:space="preserve">
+    <value>औसत पीपीसी</value>
+  </data>
+  <data name="Barcode" xml:space="preserve">
+    <value>बारकोड</value>
+  </data>
+  <data name="BIM" xml:space="preserve">
+    <value>BIM</value>
+  </data>
+  <data name="BIM_Connector_Installer" xml:space="preserve">
+    <value>BIM कनेक्टर इंस्टालर</value>
+  </data>
+  <data name="BIM_Model_Server" xml:space="preserve">
+    <value>BIM मॉडल सर्वर</value>
+  </data>
+  <data name="BIM_Use_Case" xml:space="preserve">
+    <value>BIM का प्रयोग करें प्रकरण</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>रद्द करना</value>
+  </data>
+  <data name="Category" xml:space="preserve">
+    <value>श्रेणी</value>
+  </data>
+  <data name="Chance" xml:space="preserve">
+    <value>अवसर</value>
+  </data>
+  <data name="Changed_By" xml:space="preserve">
+    <value>द्वारा परिवर्तित</value>
+  </data>
+  <data name="Check_All_Boxes" xml:space="preserve">
+    <value>सभी बक्से की जाँच करें</value>
+  </data>
+  <data name="City_State" xml:space="preserve">
+    <value>सिटीस्टैट</value>
+  </data>
+  <data name="Clear" xml:space="preserve">
+    <value>स्पष्ट</value>
+  </data>
+  <data name="Clone" xml:space="preserve">
+    <value>क्लोन</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>पास</value>
+  </data>
+  <data name="Close_Window" xml:space="preserve">
+    <value>विंडो बंद करें</value>
+  </data>
+  <data name="CO_ASI" xml:space="preserve">
+    <value>/ सीओ एएसआई</value>
+  </data>
+  <data name="COBie" xml:space="preserve">
+    <value>कोबी</value>
+  </data>
+  <data name="COBie_Data_Quality_Control" xml:space="preserve">
+    <value>कोबी डाटा गुणवत्ता नियंत्रण</value>
+  </data>
+  <data name="COBie_QC" xml:space="preserve">
+    <value>कोबी QC</value>
+  </data>
+  <data name="Collapse" xml:space="preserve">
+    <value>संक्षिप्त करें</value>
+  </data>
+  <data name="Commitment_Status" xml:space="preserve">
+    <value>प्रतिबद्धता स्थिति</value>
+  </data>
+  <data name="Company" xml:space="preserve">
+    <value>कंपनी</value>
+  </data>
+  <data name="Component_Name" xml:space="preserve">
+    <value>घटक नाम</value>
+  </data>
+  <data name="Components" xml:space="preserve">
+    <value>अवयव</value>
+  </data>
+  <data name="Constraint" xml:space="preserve">
+    <value>बाधा</value>
+  </data>
+  <data name="Constraint_Log" xml:space="preserve">
+    <value>बाधा प्रवेश करें</value>
+  </data>
+  <data name="Constraints" xml:space="preserve">
+    <value>प्रतिबन्ध</value>
+  </data>
+  <data name="Contact_Email" xml:space="preserve">
+    <value>ईमेल से संपर्क करें</value>
+  </data>
+  <data name="Contacts" xml:space="preserve">
+    <value>संपर्क</value>
+  </data>
+  <data name="Contains" xml:space="preserve">
+    <value>शामिल</value>
+  </data>
+  <data name="Contractor" xml:space="preserve">
+    <value>ठेकेदार</value>
+  </data>
+  <data name="Count" xml:space="preserve">
+    <value>गणना</value>
+  </data>
+  <data name="Country" xml:space="preserve">
+    <value>देश</value>
+  </data>
+  <data name="Created_By" xml:space="preserve">
+    <value>द्वारा बनाया गया</value>
+  </data>
+  <data name="Created_On" xml:space="preserve">
+    <value>में बनाया गया</value>
+  </data>
+  <data name="Crew_Leader" xml:space="preserve">
+    <value>क्रू नेता</value>
+  </data>
+  <data name="Crew_Profile" xml:space="preserve">
+    <value>क्रू प्रोफ़ाइल</value>
+  </data>
+  <data name="Crews" xml:space="preserve">
+    <value>कैमरों</value>
+  </data>
+  <data name="Criteria" xml:space="preserve">
+    <value>मापदंड</value>
+  </data>
+  <data name="Currency_Units" xml:space="preserve">
+    <value>मुद्रा इकाइयों</value>
+  </data>
+  <data name="Dashboard" xml:space="preserve">
+    <value>डैशबोर्ड</value>
+  </data>
+  <data name="Date" xml:space="preserve">
+    <value>तारीख</value>
+  </data>
+  <data name="Days" xml:space="preserve">
+    <value>दिन</value>
+  </data>
+  <data name="Deadline" xml:space="preserve">
+    <value>समय सीमा</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>हटाना</value>
+  </data>
+  <data name="Delete_File" xml:space="preserve">
+    <value>फ़ाइलमिटाएँ</value>
+  </data>
+  <data name="Demand_Response" xml:space="preserve">
+    <value>मांग रिस्पांस</value>
+  </data>
+  <data name="Department" xml:space="preserve">
+    <value>विभाग</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>विवरण</value>
+  </data>
+  <data name="Designer" xml:space="preserve">
+    <value>डिज़ाइनर</value>
+  </data>
+  <data name="Desktop_Client_Installer" xml:space="preserve">
+    <value>डेस्कटॉप क्लाइंट इंस्टालर</value>
+  </data>
+  <data name="Details" xml:space="preserve">
+    <value>विवरण</value>
+  </data>
+  <data name="Directory_Name" xml:space="preserve">
+    <value>निर्देशिका का नाम</value>
+  </data>
+  <data name="Document" xml:space="preserve">
+    <value>दस्तावेज़</value>
+  </data>
+  <data name="Document_Checklist" xml:space="preserve">
+    <value>दस्तावेज़ चेकलिस्ट</value>
+  </data>
+  <data name="Document_Name" xml:space="preserve">
+    <value>दस्तावेज़ का नाम</value>
+  </data>
+  <data name="Document_Profile" xml:space="preserve">
+    <value>दस्तावेज़ प्रोफ़ाइल</value>
+  </data>
+  <data name="Documents" xml:space="preserve">
+    <value>दस्तावेज़</value>
+  </data>
+  <data name="Download" xml:space="preserve">
+    <value>डाउनलोड</value>
+  </data>
+  <data name="Download_Sample_COBie_File" xml:space="preserve">
+    <value>डाउनलोड नमूना कोबी फ़ाइल</value>
+  </data>
+  <data name="Due_Date" xml:space="preserve">
+    <value>नियत तारीख</value>
+  </data>
+  <data name="Duration" xml:space="preserve">
+    <value>अवधि</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>संपादित करें</value>
+  </data>
+  <data name="Edit_Master_Format" xml:space="preserve">
+    <value>संपादन मास्टर स्वरूप</value>
+  </data>
+  <data name="Edit_Omniclass" xml:space="preserve">
+    <value>Omniclass संपादित करें</value>
+  </data>
+  <data name="Edit_Uni_Format" xml:space="preserve">
+    <value>संपादन विश्वविद्यालय स्वरूप</value>
+  </data>
+  <data name="Elevation" xml:space="preserve">
+    <value>ऊंचाई</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>ईमेल</value>
+  </data>
+  <data name="Enabled" xml:space="preserve">
+    <value>सक्रिय</value>
+  </data>
+  <data name="End" xml:space="preserve">
+    <value>अंत</value>
+  </data>
+  <data name="Engineering_Controls" xml:space="preserve">
+    <value>इंजीनियरिंग नियंत्रण</value>
+  </data>
+  <data name="Equal_To" xml:space="preserve">
+    <value>इसके बराबर</value>
+  </data>
+  <data name="Equipment" xml:space="preserve">
+    <value>उपकरण</value>
+  </data>
+  <data name="Equipment_Id" xml:space="preserve">
+    <value>उपकरण आईडी</value>
+  </data>
+  <data name="Errors" xml:space="preserve">
+    <value>त्रुटियाँ</value>
+  </data>
+  <data name="Expected_Life" xml:space="preserve">
+    <value>उम्मीद लाइफ</value>
+  </data>
+  <data name="Export_Component" xml:space="preserve">
+    <value>निर्यात घटक</value>
+  </data>
+  <data name="Export_Data" xml:space="preserve">
+    <value>निर्यात डाटा</value>
+  </data>
+  <data name="Export_Documents" xml:space="preserve">
+    <value>निर्यात दस्तावेजों</value>
+  </data>
+  <data name="Export_Project_Contacts" xml:space="preserve">
+    <value>परियोजना संपर्क निर्यात करें</value>
+  </data>
+  <data name="Export_To_Excel" xml:space="preserve">
+    <value>एक्सेल के लिए निर्यात</value>
+  </data>
+  <data name="Export_To_PDF" xml:space="preserve">
+    <value>पीडीएफ निर्यात</value>
+  </data>
+  <data name="Ext_System_Site" xml:space="preserve">
+    <value>Ext.System साइट</value>
+  </data>
+  <data name="External_System_Integration" xml:space="preserve">
+    <value>बाहरी सिस्टम इंटीग्रेशन</value>
+  </data>
+  <data name="Facility" xml:space="preserve">
+    <value>सुविधा</value>
+  </data>
+  <data name="Facility_Name" xml:space="preserve">
+    <value>सुविधा नाम</value>
+  </data>
+  <data name="Facility_Profile" xml:space="preserve">
+    <value>सुविधा का प्रोफ़ाइल</value>
+  </data>
+  <data name="Family_Name" xml:space="preserve">
+    <value>पारिवारिक नाम</value>
+  </data>
+  <data name="File" xml:space="preserve">
+    <value>फ़ाइल</value>
+  </data>
+  <data name="File_Size" xml:space="preserve">
+    <value>फ़ाइल का आकार</value>
+  </data>
+  <data name="Finish" xml:space="preserve">
+    <value>समाप्त</value>
+  </data>
+  <data name="Finish_Time" xml:space="preserve">
+    <value>समय समाप्त</value>
+  </data>
+  <data name="First_Name" xml:space="preserve">
+    <value>प्रथम नाम</value>
+  </data>
+  <data name="Floor_Name" xml:space="preserve">
+    <value>तल नाम</value>
+  </data>
+  <data name="Floor_Profile" xml:space="preserve">
+    <value>तल का प्रोफ़ाइल</value>
+  </data>
+  <data name="Floors" xml:space="preserve">
+    <value>फर्श</value>
+  </data>
+  <data name="Floor_Spaces" xml:space="preserve">
+    <value>FloorSpaces</value>
+  </data>
+  <data name="From" xml:space="preserve">
+    <value>से</value>
+  </data>
+  <data name="Functional_Area" xml:space="preserve">
+    <value>कार्यात्मक क्षेत्र</value>
+  </data>
+  <data name="Generate_Barcode" xml:space="preserve">
+    <value>बारकोड उत्पन्न</value>
+  </data>
+  <data name="Export_COBie_File" xml:space="preserve">
+    <value>निर्यात कोबी फ़ाइल</value>
+  </data>
+  <data name="Generate_Report" xml:space="preserve">
+    <value>रिपोर्ट उत्पन्न</value>
+  </data>
+  <data name="Generated_Files" xml:space="preserve">
+    <value>उत्पन्न फ़ाइलों</value>
+  </data>
+  <data name="Given_Name" xml:space="preserve">
+    <value>को देखते हुए नाम</value>
+  </data>
+  <data name="Greater_Than" xml:space="preserve">
+    <value>से अधिक</value>
+  </data>
+  <data name="Gross_Area" xml:space="preserve">
+    <value>सकल क्षेत्र</value>
+  </data>
+  <data name="Hazard" xml:space="preserve">
+    <value>खतरा</value>
+  </data>
+  <data name="Height" xml:space="preserve">
+    <value>ऊंचाई</value>
+  </data>
+  <data name="Impact" xml:space="preserve">
+    <value>प्रभाव:</value>
+  </data>
+  <data name="Implementation" xml:space="preserve">
+    <value>कार्यान्वयन</value>
+  </data>
+  <data name="Import_Data" xml:space="preserve">
+    <value>डेटा आयात करें</value>
+  </data>
+  <data name="Import_Export" xml:space="preserve">
+    <value>आयात / निर्यात</value>
+  </data>
+  <data name="Inbox" xml:space="preserve">
+    <value>इनबॉक्स</value>
+  </data>
+  <data name="Initial_Sync" xml:space="preserve">
+    <value>प्रारंभिक तुल्यकालित</value>
+  </data>
+  <data name="Installation_Date" xml:space="preserve">
+    <value>अधिष्ठापन तिथि</value>
+  </data>
+  <data name="Integration" xml:space="preserve">
+    <value>एकीकरण</value>
+  </data>
+  <data name="Issue_Name" xml:space="preserve">
+    <value>अंक नाम</value>
+  </data>
+  <data name="Issue_Type" xml:space="preserve">
+    <value>समस्या प्रकार</value>
+  </data>
+  <data name="Issues" xml:space="preserve">
+    <value>मुद्दे</value>
+  </data>
+  <data name="JSN" xml:space="preserve">
+    <value>JSN</value>
+  </data>
+  <data name="JSN_Name" xml:space="preserve">
+    <value>JSN नाम</value>
+  </data>
+  <data name="Last_Name" xml:space="preserve">
+    <value>अंतिम नाम</value>
+  </data>
+  <data name="Lead_Organization" xml:space="preserve">
+    <value>संगठन लीड</value>
+  </data>
+  <data name="Less_Than" xml:space="preserve">
+    <value>से कम</value>
+  </data>
+  <data name="Level_Of_Details" xml:space="preserve">
+    <value>विवरण के स्तर</value>
+  </data>
+  <data name="Likelihood" xml:space="preserve">
+    <value>संभावना</value>
+  </data>
+  <data name="Linear_Units" xml:space="preserve">
+    <value>रैखिक इकाइयों</value>
+  </data>
+  <data name="Live" xml:space="preserve">
+    <value>जीना</value>
+  </data>
+  <data name="Location" xml:space="preserve">
+    <value>स्थान</value>
+  </data>
+  <data name="Locations" xml:space="preserve">
+    <value>स्थान</value>
+  </data>
+  <data name="LOD_name" xml:space="preserve">
+    <value>LOD नाम</value>
+  </data>
+  <data name="LOD_QC" xml:space="preserve">
+    <value>LOD QC</value>
+  </data>
+  <data name="Manufacturer" xml:space="preserve">
+    <value>निर्माता</value>
+  </data>
+  <data name="Master_Format" xml:space="preserve">
+    <value>मास्टर स्वरूप</value>
+  </data>
+  <data name="Missing_attributes" xml:space="preserve">
+    <value>गुम विशेषताएँ</value>
+  </data>
+  <data name="Mitigation" xml:space="preserve">
+    <value>शमन</value>
+  </data>
+  <data name="Model_Number" xml:space="preserve">
+    <value>मॉडल संख्या</value>
+  </data>
+  <data name="Model_Server" xml:space="preserve">
+    <value>मॉडल सर्वर</value>
+  </data>
+  <data name="Months" xml:space="preserve">
+    <value>महीने</value>
+  </data>
+  <data name="Move_To_System" xml:space="preserve">
+    <value>सिस्टम जाएँ</value>
+  </data>
+  <data name="My_Current_Week_Tasks" xml:space="preserve">
+    <value>मेरा वर्तमान सप्ताह कार्य</value>
+  </data>
+  <data name="My_Profile" xml:space="preserve">
+    <value>मेरा प्रोफ़ाइल</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>नाम</value>
+  </data>
+  <data name="Naming_Convention" xml:space="preserve">
+    <value>कन्वेंशन नामकरण</value>
+  </data>
+  <data name="Net_Area" xml:space="preserve">
+    <value>नेट एरिया</value>
+  </data>
+  <data name="Nevisworks_Version" xml:space="preserve">
+    <value>Nevisworks संस्करण</value>
+  </data>
+  <data name="No_Filter" xml:space="preserve">
+    <value>कोई फ़िल्टर</value>
+  </data>
+  <data name="No_Of_Users" xml:space="preserve">
+    <value>प्रयोक्ताओं की संख्या</value>
+  </data>
+  <data name="No_schedule_is_available_for_this_project_yet" xml:space="preserve">
+    <value>कोई समय इस परियोजना के लिए अभी तक उपलब्ध है.</value>
+  </data>
+  <data name="Non_conformance_Reasons" xml:space="preserve">
+    <value>गैर - अनुरूपता कारण</value>
+  </data>
+  <data name="Non_conformance_Reasons_Report" xml:space="preserve">
+    <value>गैर अनुरूपता कारणों की रिपोर्ट</value>
+  </data>
+  <data name="Notification_Time" xml:space="preserve">
+    <value>अधिसूचना समय</value>
+  </data>
+  <data name="Notify" xml:space="preserve">
+    <value>सूचित करना</value>
+  </data>
+  <data name="Object" xml:space="preserve">
+    <value>वस्तु</value>
+  </data>
+  <data name="Office_Name" xml:space="preserve">
+    <value>कार्यालय का नाम</value>
+  </data>
+  <data name="OmniClass" xml:space="preserve">
+    <value>OmniClass</value>
+  </data>
+  <data name="OmniClass_Type" xml:space="preserve">
+    <value>OmniClass प्रकार</value>
+  </data>
+  <data name="OmniClass_version" xml:space="preserve">
+    <value>OmniClass संस्करण</value>
+  </data>
+  <data name="Organization" xml:space="preserve">
+    <value>संगठन</value>
+  </data>
+  <data name="Organization_ID" xml:space="preserve">
+    <value>संगठन आईडी</value>
+  </data>
+  <data name="Organization_Profile" xml:space="preserve">
+    <value>संगठन प्रोफाइल</value>
+  </data>
+  <data name="Organization_Type" xml:space="preserve">
+    <value>संगठन प्रकार</value>
+  </data>
+  <data name="Organizations" xml:space="preserve">
+    <value>संगठन</value>
+  </data>
+  <data name="Overall_Impact" xml:space="preserve">
+    <value>समग्र प्रभाव</value>
+  </data>
+  <data name="Owner" xml:space="preserve">
+    <value>मालिक</value>
+  </data>
+  <data name="Owner_Organization" xml:space="preserve">
+    <value>स्वामी संगठन</value>
+  </data>
+  <data name="Page_Title" xml:space="preserve">
+    <value>पृष्ठ शीर्षक</value>
+  </data>
+  <data name="Parent" xml:space="preserve">
+    <value>माता - पिता</value>
+  </data>
+  <data name="Part_Number" xml:space="preserve">
+    <value>भाग संख्या</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>पासवर्ड</value>
+  </data>
+  <data name="PDF_Output_Format" xml:space="preserve">
+    <value>पीडीएफ आउटपुट स्वरूप</value>
+  </data>
+  <data name="Percent_Count" xml:space="preserve">
+    <value>प्रतिशत गणना</value>
+  </data>
+  <data name="Percent_Plan_Complete" xml:space="preserve">
+    <value>प्रतिशत पूरा प्लान</value>
+  </data>
+  <data name="Percent_Plan_Complete_(PPC)_Report" xml:space="preserve">
+    <value>प्रतिशत योजना पूर्ण रिपोर्ट (पीपीसी)</value>
+  </data>
+  <data name="Personal_Protective_equipment" xml:space="preserve">
+    <value>व्यक्तिगत सुरक्षा उपकरणों</value>
+  </data>
+  <data name="Phase" xml:space="preserve">
+    <value>चरण</value>
+  </data>
+  <data name="Phone" xml:space="preserve">
+    <value>फ़ोन</value>
+  </data>
+  <data name="Postal_Code" xml:space="preserve">
+    <value>पोस्टल कोड</value>
+  </data>
+  <data name="Postal_Code/Zip" xml:space="preserve">
+    <value>पोस्टल कोड / ज़िप</value>
+  </data>
+  <data name="Price" xml:space="preserve">
+    <value>मूल्य</value>
+  </data>
+  <data name="Primary_Contact" xml:space="preserve">
+    <value>प्राथमिक संपर्क</value>
+  </data>
+  <data name="Products" xml:space="preserve">
+    <value>उत्पाद</value>
+  </data>
+  <data name="Profile" xml:space="preserve">
+    <value>रूपरेखा</value>
+  </data>
+  <data name="Program_file" xml:space="preserve">
+    <value>प्रोग्राम फ़ाइल</value>
+  </data>
+  <data name="Program_QC" xml:space="preserve">
+    <value>कार्यक्रम QC</value>
+  </data>
+  <data name="Program_QC_For_Equipment" xml:space="preserve">
+    <value>उपकरण के लिए कार्यक्रम QC</value>
+  </data>
+  <data name="Program_QC_for_Spaces" xml:space="preserve">
+    <value>Spaces के लिए कार्यक्रम QC</value>
+  </data>
+  <data name="Project_Contact" xml:space="preserve">
+    <value>परियोजना संपर्क करें</value>
+  </data>
+  <data name="Project_Data" xml:space="preserve">
+    <value>परियोजना डेटा</value>
+  </data>
+  <data name="Project_Facilities" xml:space="preserve">
+    <value>परियोजना सुविधाएं</value>
+  </data>
+  <data name="Project_Id" xml:space="preserve">
+    <value>परियोजना आईडी</value>
+  </data>
+  <data name="Project_Name" xml:space="preserve">
+    <value>परियोजना के नाम</value>
+  </data>
+  <data name="Project_Number" xml:space="preserve">
+    <value>प्रोजेक्ट संख्या</value>
+  </data>
+  <data name="Project_Role" xml:space="preserve">
+    <value>परियोजना भूमिका</value>
+  </data>
+  <data name="Project_Role_Permission" xml:space="preserve">
+    <value>परियोजना भूमिका अनुमति</value>
+  </data>
+  <data name="Project_Roles" xml:space="preserve">
+    <value>परियोजना भूमिकाओं</value>
+  </data>
+  <data name="Projects" xml:space="preserve">
+    <value>परियोजनाओं</value>
+  </data>
+  <data name="Promise_Date" xml:space="preserve">
+    <value>वादा तिथि</value>
+  </data>
+  <data name="Providers" xml:space="preserve">
+    <value>प्रदाता</value>
+  </data>
+  <data name="Recent_Facilities" xml:space="preserve">
+    <value>हाल ही सुविधाएं</value>
+  </data>
+  <data name="Reference" xml:space="preserve">
+    <value>संदर्भ</value>
+  </data>
+  <data name="Remove" xml:space="preserve">
+    <value>हटाना</value>
+  </data>
+  <data name="Removed" xml:space="preserve">
+    <value>हटाया</value>
+  </data>
+  <data name="Replace_File" xml:space="preserve">
+    <value>फ़ाइल बदलें</value>
+  </data>
+  <data name="Replacement_Cost" xml:space="preserve">
+    <value>प्रतिस्थापन लागत</value>
+  </data>
+  <data name="Requested_By" xml:space="preserve">
+    <value>द्वारा अनुरोध</value>
+  </data>
+  <data name="Requested_Date" xml:space="preserve">
+    <value>अनुरोधित तिथि</value>
+  </data>
+  <data name="Required_Attributes" xml:space="preserve">
+    <value>आवश्यक विशेषताएँ</value>
+  </data>
+  <data name="Required_Documents" xml:space="preserve">
+    <value>आवश्यक दस्तावेज</value>
+  </data>
+  <data name="Reset" xml:space="preserve">
+    <value>रीसेट करें</value>
+  </data>
+  <data name="Responsible" xml:space="preserve">
+    <value>जिम्मेदार</value>
+  </data>
+  <data name="RFI" xml:space="preserve">
+    <value>RFI</value>
+  </data>
+  <data name="Risk" xml:space="preserve">
+    <value>जोखिम</value>
+  </data>
+  <data name="Role" xml:space="preserve">
+    <value>भूमिका</value>
+  </data>
+  <data name="Role_Description" xml:space="preserve">
+    <value>भूमिका वर्णन</value>
+  </data>
+  <data name="Role_Name" xml:space="preserve">
+    <value>भूमिका नाम</value>
+  </data>
+  <data name="Roles" xml:space="preserve">
+    <value>भूमिकाएँ</value>
+  </data>
+  <data name="Room_Code" xml:space="preserve">
+    <value>कक्ष कोड</value>
+  </data>
+  <data name="Room_Id" xml:space="preserve">
+    <value>कक्ष आईडी</value>
+  </data>
+  <data name="Room_Name" xml:space="preserve">
+    <value>कक्ष नाम</value>
+  </data>
+  <data name="Room_Tag" xml:space="preserve">
+    <value>कक्ष टैग</value>
+  </data>
+  <data name="Root_Cause_Analysis" xml:space="preserve">
+    <value>मूल कारण विश्लेषण</value>
+  </data>
+  <data name="Root_Cause_Analysis_Report" xml:space="preserve">
+    <value>मूल कारण विश्लेषण रिपोर्ट</value>
+  </data>
+  <data name="Row" xml:space="preserve">
+    <value>पंक्ति</value>
+  </data>
+  <data name="Row_Name" xml:space="preserve">
+    <value>पंक्ति नाम</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>बचाना</value>
+  </data>
+  <data name="Save_And_Clone" xml:space="preserve">
+    <value>सहेजें और क्लोन</value>
+  </data>
+  <data name="Save_Layout" xml:space="preserve">
+    <value>लेआउट सहेजें</value>
+  </data>
+  <data name="Schedule" xml:space="preserve">
+    <value>अनुसूची</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>खोज</value>
+  </data>
+  <data name="Search_By" xml:space="preserve">
+    <value>से खोजें</value>
+  </data>
+  <data name="Select" xml:space="preserve">
+    <value>चयन</value>
+  </data>
+  <data name="Select_Component" xml:space="preserve">
+    <value>घटक का चयन करें</value>
+  </data>
+  <data name="Select_File" xml:space="preserve">
+    <value>फ़ाइलचुनें</value>
+  </data>
+  <data name="Select_File_To_Upload" xml:space="preserve">
+    <value>का चयन करें फाइल अपलोड करने के</value>
+  </data>
+  <data name="Select_Master_Format" xml:space="preserve">
+    <value>चुनें मास्टर स्वरूप</value>
+  </data>
+  <data name="Select_Project_Role" xml:space="preserve">
+    <value>परियोजना भूमिका का चयन करें</value>
+  </data>
+  <data name="Select_Sub_Assemblies" xml:space="preserve">
+    <value>उप विधानसभाओं का चयन करें</value>
+  </data>
+  <data name="Select_Task" xml:space="preserve">
+    <value>टास्क का चयन करें</value>
+  </data>
+  <data name="Select_Uni_Format" xml:space="preserve">
+    <value>चुनें विश्वविद्यालय स्वरूप</value>
+  </data>
+  <data name="Selected_Master_Format" xml:space="preserve">
+    <value>चयनित मास्टर स्वरूप</value>
+  </data>
+  <data name="Serial_Number" xml:space="preserve">
+    <value>क्रम संख्या</value>
+  </data>
+  <data name="Set" xml:space="preserve">
+    <value>सेट</value>
+  </data>
+  <data name="Severity" xml:space="preserve">
+    <value>तीव्रता</value>
+  </data>
+  <data name="Sheet" xml:space="preserve">
+    <value>चादर</value>
+  </data>
+  <data name="Sheet_Name" xml:space="preserve">
+    <value>शीट का नाम</value>
+  </data>
+  <data name="Show" xml:space="preserve">
+    <value>दिखाना</value>
+  </data>
+  <data name="Show_All" xml:space="preserve">
+    <value>सभी दिखाएँ</value>
+  </data>
+  <data name="Show_All_Issues" xml:space="preserve">
+    <value>सभी मुद्दे दिखाएँ</value>
+  </data>
+  <data name="Show_Report" xml:space="preserve">
+    <value>रिपोर्ट दिखाएँ</value>
+  </data>
+  <data name="Site_Description" xml:space="preserve">
+    <value>साइट विवरण</value>
+  </data>
+  <data name="Site_Name" xml:space="preserve">
+    <value>साइट नाम</value>
+  </data>
+  <data name="Space_Name" xml:space="preserve">
+    <value>अंतरिक्ष नाम</value>
+  </data>
+  <data name="Space_Profile" xml:space="preserve">
+    <value>अंतरिक्ष प्रोफ़ाइल</value>
+  </data>
+  <data name="Stage" xml:space="preserve">
+    <value>मंच</value>
+  </data>
+  <data name="Start" xml:space="preserve">
+    <value>प्रारंभ</value>
+  </data>
+  <data name="Start_Date" xml:space="preserve">
+    <value>प्रारंभ दिनांक</value>
+  </data>
+  <data name="Start_Time" xml:space="preserve">
+    <value>प्रारंभ समय</value>
+  </data>
+  <data name="State_Region" xml:space="preserve">
+    <value>राज्य क्षेत्र</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>हैसियत</value>
+  </data>
+  <data name="Street" xml:space="preserve">
+    <value>सड़क</value>
+  </data>
+  <data name="Sub_assemblies" xml:space="preserve">
+    <value>उप विधानसभाओं</value>
+  </data>
+  <data name="Sub_assembly_Name" xml:space="preserve">
+    <value>उप विधानसभा का नाम</value>
+  </data>
+  <data name="Submit" xml:space="preserve">
+    <value>सबमिट</value>
+  </data>
+  <data name="Subsystem" xml:space="preserve">
+    <value>सबसिस्टम</value>
+  </data>
+  <data name="Subsystem_Name" xml:space="preserve">
+    <value>सबसिस्टम नाम</value>
+  </data>
+  <data name="Synchronization" xml:space="preserve">
+    <value>तुल्यकालन</value>
+  </data>
+  <data name="Synchronization_filters" xml:space="preserve">
+    <value>सिंक्रनाइज़ेशन फ़िल्टर</value>
+  </data>
+  <data name="System" xml:space="preserve">
+    <value>प्रणाली</value>
+  </data>
+  <data name="System_File_Name" xml:space="preserve">
+    <value>सिस्टम फ़ाइल का नाम</value>
+  </data>
+  <data name="System_Profile" xml:space="preserve">
+    <value>सिस्टम प्रोफाइल</value>
+  </data>
+  <data name="System_Role" xml:space="preserve">
+    <value>सिस्टम भूमिका</value>
+  </data>
+  <data name="Systems" xml:space="preserve">
+    <value>सिस्टम</value>
+  </data>
+  <data name="Tag_number" xml:space="preserve">
+    <value>टैग संख्या</value>
+  </data>
+  <data name="Task_Name" xml:space="preserve">
+    <value>टास्क नाम</value>
+  </data>
+  <data name="Tasks" xml:space="preserve">
+    <value>कार्य</value>
+  </data>
+  <data name="Time_Zone" xml:space="preserve">
+    <value>समय क्षेत्र</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>शीर्षक</value>
+  </data>
+  <data name="Town" xml:space="preserve">
+    <value>शहर</value>
+  </data>
+  <data name="Trend" xml:space="preserve">
+    <value>प्रवृत्ति</value>
+  </data>
+  <data name="Type" xml:space="preserve">
+    <value>टाइप</value>
+  </data>
+  <data name="Type_Name" xml:space="preserve">
+    <value>प्रकार का नाम</value>
+  </data>
+  <data name="Unassign" xml:space="preserve">
+    <value>Unassign</value>
+  </data>
+  <data name="Unassigned_Items" xml:space="preserve">
+    <value>असाइन नहीं की गई आइटम</value>
+  </data>
+  <data name="Uni_Format" xml:space="preserve">
+    <value>विश्वविद्यालय स्वरूप</value>
+  </data>
+  <data name="Update_Names" xml:space="preserve">
+    <value>अद्यतन नाम</value>
+  </data>
+  <data name="Upload" xml:space="preserve">
+    <value>अपलोड</value>
+  </data>
+  <data name="Upload_File" xml:space="preserve">
+    <value>फ़ाइल अपलोड करें</value>
+  </data>
+  <data name="Uploaded_By" xml:space="preserve">
+    <value>द्वारा अपलोड की</value>
+  </data>
+  <data name="Uploaded_File_Name" xml:space="preserve">
+    <value>अपलोड की गई फ़ाइल नाम</value>
+  </data>
+  <data name="Uploaded_Files" xml:space="preserve">
+    <value>अपलोड की गई फ़ाइल</value>
+  </data>
+  <data name="Uploaded_On" xml:space="preserve">
+    <value>अपलोड</value>
+  </data>
+  <data name="Usable_Height" xml:space="preserve">
+    <value>प्रयोग करने योग्य ऊँचाई</value>
+  </data>
+  <data name="User_Id" xml:space="preserve">
+    <value>प्रयोक्ता आईडी</value>
+  </data>
+  <data name="Username" xml:space="preserve">
+    <value>प्रयोक्ता नाम</value>
+  </data>
+  <data name="Users" xml:space="preserve">
+    <value>उपयोगकर्ता</value>
+  </data>
+  <data name="Value" xml:space="preserve">
+    <value>मूल्य</value>
+  </data>
+  <data name="Volume_Units" xml:space="preserve">
+    <value>वॉल्यूम इकाइयों</value>
+  </data>
+  <data name="Warranty_Description" xml:space="preserve">
+    <value>वारंटी विवरण</value>
+  </data>
+  <data name="Warranty_Duration_Labor" xml:space="preserve">
+    <value>वारंटी अवधि श्रम</value>
+  </data>
+  <data name="Warranty_Duration_Parts" xml:space="preserve">
+    <value>वारंटी अवधि के कलपुर्जे</value>
+  </data>
+  <data name="Warranty_Duration_Unit" xml:space="preserve">
+    <value>वारंटी अवधि यूनिट</value>
+  </data>
+  <data name="Warranty_Guarantor_Labor" xml:space="preserve">
+    <value>वारंटी ज़ामिनदार श्रम</value>
+  </data>
+  <data name="Warranty_Guarantor_Parts" xml:space="preserve">
+    <value>वारंटी ज़ामिनदार पार्ट्स</value>
+  </data>
+  <data name="Warranty_Start_Date" xml:space="preserve">
+    <value>वारंटी प्रारंभ तिथि</value>
+  </data>
+  <data name="Website" xml:space="preserve">
+    <value>वेबसाइट</value>
+  </data>
+  <data name="Weeks" xml:space="preserve">
+    <value>सप्ताह</value>
+  </data>
+  <data name="Work_Hours" xml:space="preserve">
+    <value>काम के घंटे</value>
+  </data>
+  <data name="Work_Orders" xml:space="preserve">
+    <value>कार्य आदेश</value>
+  </data>
+  <data name="Work_Plan" xml:space="preserve">
+    <value>कार्य योजना</value>
+  </data>
+  <data name="Workable_Backlog" xml:space="preserve">
+    <value>व्यावहारिक बकाया</value>
+  </data>
+  <data name="Zones" xml:space="preserve">
+    <value>जोन</value>
+  </data>
+  <data name="Work_Order_No" xml:space="preserve">
+    <value>आदेश कार्य नहीं</value>
+  </data>
+  <data name="Add_Asset" xml:space="preserve">
+    <value>एसेट जोड़ें</value>
+  </data>
+  <data name="Add_Inspection" xml:space="preserve">
+    <value>निरीक्षण में जोड़ें</value>
+  </data>
+  <data name="Add_Manufacturer" xml:space="preserve">
+    <value>निर्माता जोड़ें</value>
+  </data>
+  <data name="Add_Subsystems" xml:space="preserve">
+    <value>उपप्रणालियाँ जोड़ें</value>
+  </data>
+  <data name="Add_System" xml:space="preserve">
+    <value>सिस्टम जोड़ें</value>
+  </data>
+  <data name="Add_Work_Order" xml:space="preserve">
+    <value>कार्य आदेश जोड़ें</value>
+  </data>
+  <data name="Asset" xml:space="preserve">
+    <value>संपत्ति</value>
+  </data>
+  <data name="Asset_Identifier" xml:space="preserve">
+    <value>एसेट पहचानकर्ता</value>
+  </data>
+  <data name="Asset_Name" xml:space="preserve">
+    <value>एसेट नाम</value>
+  </data>
+  <data name="Asset_Profile" xml:space="preserve">
+    <value>एसेट का प्रोफ़ाइल</value>
+  </data>
+  <data name="Assign_Asset" xml:space="preserve">
+    <value>एसेट असाइन करें</value>
+  </data>
+  <data name="Assign_Product" xml:space="preserve">
+    <value>उत्पाद असाइन करें</value>
+  </data>
+  <data name="Assign_Subsystem" xml:space="preserve">
+    <value>सबसिस्टम असाइन करें</value>
+  </data>
+  <data name="Assign_System" xml:space="preserve">
+    <value>सिस्टम असाइन करें</value>
+  </data>
+  <data name="Assign_To" xml:space="preserve">
+    <value>को असाइन किए जा</value>
+  </data>
+  <data name="Back" xml:space="preserve">
+    <value>वापस</value>
+  </data>
+  <data name="End_Date" xml:space="preserve">
+    <value>अन्त तिथि</value>
+  </data>
+  <data name="External_System" xml:space="preserve">
+    <value>बाहरी प्रणाली</value>
+  </data>
+  <data name="Find_Asset" xml:space="preserve">
+    <value>एसेट खोजें</value>
+  </data>
+  <data name="Group" xml:space="preserve">
+    <value>समूह</value>
+  </data>
+  <data name="Inspection_Profile" xml:space="preserve">
+    <value>निरीक्षण का प्रोफ़ाइल</value>
+  </data>
+  <data name="Inspections" xml:space="preserve">
+    <value>निरीक्षण</value>
+  </data>
+  <data name="Issue_Report" xml:space="preserve">
+    <value>समस्या रिपोर्ट</value>
+  </data>
+  <data name="Issue_Status" xml:space="preserve">
+    <value>अंक स्थिति</value>
+  </data>
+  <data name="Major" xml:space="preserve">
+    <value>प्रमुख</value>
+  </data>
+  <data name="Product_Description" xml:space="preserve">
+    <value>उत्पाद विवरण</value>
+  </data>
+  <data name="Request_Pending" xml:space="preserve">
+    <value>अनुरोध लंबित</value>
+  </data>
+  <data name="Resolved" xml:space="preserve">
+    <value>संकल्प</value>
+  </data>
+  <data name="Select_Facility" xml:space="preserve">
+    <value>सुविधा का चयन करें</value>
+  </data>
+  <data name="Space" xml:space="preserve">
+    <value>अंतरिक्ष</value>
+  </data>
+  <data name="Space_Names" xml:space="preserve">
+    <value>क्षेत्र सेवित</value>
+  </data>
+  <data name="Sync_Assets" xml:space="preserve">
+    <value>सिंक एसेट्स</value>
+  </data>
+  <data name="Synchronize" xml:space="preserve">
+    <value>सिंक्रनाइज़ करें</value>
+  </data>
+  <data name="System_Name" xml:space="preserve">
+    <value>सिस्टम नाम</value>
+  </data>
+  <data name="To" xml:space="preserve">
+    <value>से</value>
+  </data>
+  <data name="Type_Profile" xml:space="preserve">
+    <value>प्रकार का प्रोफ़ाइल</value>
+  </data>
+  <data name="Unassign_Asset" xml:space="preserve">
+    <value>एसेट Unassign</value>
+  </data>
+  <data name="Unassign_Subsystem" xml:space="preserve">
+    <value>Unassign सबसिस्टम</value>
+  </data>
+  <data name="Unassign_System" xml:space="preserve">
+    <value>सिस्टम Unassign</value>
+  </data>
+  <data name="Unit" xml:space="preserve">
+    <value>इकाई</value>
+  </data>
+  <data name="Work_Order_Number" xml:space="preserve">
+    <value>कार्य आदेश संख्या</value>
+  </data>
+  <data name="Work_Order_Profile" xml:space="preserve">
+    <value>कार्य आदेश का प्रोफ़ाइल</value>
+  </data>
+  <data name="Floor_Name_Grid" xml:space="preserve">
+    <value>फर्श नाम ग्रिड</value>
+  </data>
+  <data name="Address1" xml:space="preserve">
+    <value>पता 1</value>
+  </data>
+  <data name="Address2" xml:space="preserve">
+    <value>पता 2</value>
+  </data>
+  <data name="Assign_Space" xml:space="preserve">
+    <value>अंतरिक्ष असाइन करें</value>
+  </data>
+  <data name="Edit_Location_Hierarchy" xml:space="preserve">
+    <value>स्थान पदानुक्रम संपादित करें</value>
+  </data>
+  <data name="Ext_System_Facility" xml:space="preserve">
+    <value>एक्सटेंशन प्रणाली सुविधा</value>
+  </data>
+  <data name="Find_Location" xml:space="preserve">
+    <value>स्थान का पता लगाएं</value>
+  </data>
+  <data name="Latitude" xml:space="preserve">
+    <value>अक्षांश</value>
+  </data>
+  <data name="Location_Hierarchy" xml:space="preserve">
+    <value>स्थान पदानुक्रम</value>
+  </data>
+  <data name="Longitude" xml:space="preserve">
+    <value>देशान्तर</value>
+  </data>
+  <data name="Save_Document" xml:space="preserve">
+    <value>दस्तावेज़ को सहेजें</value>
+  </data>
+  <data name="Save_Hierarchy" xml:space="preserve">
+    <value>पदानुक्रम सहेजें</value>
+  </data>
+  <data name="Spaces" xml:space="preserve">
+    <value>Spaces</value>
+  </data>
+  <data name="Zip_Postal_Code" xml:space="preserve">
+    <value>पिन कोड</value>
+  </data>
+  <data name="Zone_Name" xml:space="preserve">
+    <value>अंचल नाम</value>
+  </data>
+  <data name="Zone_Name_Grid" xml:space="preserve">
+    <value>क्षेत्र का नाम ग्रिड</value>
+  </data>
+  <data name="Zone_Profile" xml:space="preserve">
+    <value>जोन प्रोफाइल</value>
+  </data>
+  <data name="Navigation" xml:space="preserve">
+    <value>नेविगेशन</value>
+  </data>
+  <data name="Accept" xml:space="preserve">
+    <value>स्वीकार करना</value>
+  </data>
+  <data name="Add_Custom_Data" xml:space="preserve">
+    <value>कस्टम डेटा जोड़ें</value>
+  </data>
+  <data name="Add_Edit_Custom_Data" xml:space="preserve">
+    <value>संपादित करें कस्टम डेटा जोड़ें</value>
+  </data>
+  <data name="Add_Hierarchy" xml:space="preserve">
+    <value>पदानुक्रम में जोड़ें</value>
+  </data>
+  <data name="Add_New" xml:space="preserve">
+    <value>नई जोड़ें</value>
+  </data>
+  <data name="Add_New_City" xml:space="preserve">
+    <value>नई सिटी जोड़ें</value>
+  </data>
+  <data name="Add_New_Country" xml:space="preserve">
+    <value>नया देश में जोड़ें</value>
+  </data>
+  <data name="Add_New_State" xml:space="preserve">
+    <value>नया राज्य में जोड़ें</value>
+  </data>
+  <data name="Add_Product" xml:space="preserve">
+    <value>उत्पाद जोड़ें</value>
+  </data>
+  <data name="Add_Product_Attribute" xml:space="preserve">
+    <value>उत्पाद गुण जोड़ें</value>
+  </data>
+  <data name="Assign_Facility" xml:space="preserve">
+    <value>सुविधा असाइन करें</value>
+  </data>
+  <data name="City" xml:space="preserve">
+    <value>शहर</value>
+  </data>
+  <data name="Custom_Data" xml:space="preserve">
+    <value>कस्टम डेटा</value>
+  </data>
+  <data name="Custom_Hierarchy_Name" xml:space="preserve">
+    <value>कस्टम पदानुक्रम नाम</value>
+  </data>
+  <data name="Deny" xml:space="preserve">
+    <value>इंकार</value>
+  </data>
+  <data name="Facilities" xml:space="preserve">
+    <value>सुविधाएं</value>
+  </data>
+  <data name="Hierarchy" xml:space="preserve">
+    <value>अनुक्रम</value>
+  </data>
+  <data name="ID" xml:space="preserve">
+    <value>आईडी</value>
+  </data>
+  <data name="Levels" xml:space="preserve">
+    <value>स्तर</value>
+  </data>
+  <data name="Locations_Hierarchy" xml:space="preserve">
+    <value>स्थान पदानुक्रम</value>
+  </data>
+  <data name="Long_Name" xml:space="preserve">
+    <value>लंबे नाम</value>
+  </data>
+  <data name="Omni_Class_Type" xml:space="preserve">
+    <value>OmniClass प्रकार</value>
+  </data>
+  <data name="Organization_Acceptance" xml:space="preserve">
+    <value>संगठन स्वीकृति</value>
+  </data>
+  <data name="Phone_Number" xml:space="preserve">
+    <value>फ़ोन नंबर</value>
+  </data>
+  <data name="Product" xml:space="preserve">
+    <value>उत्पाद</value>
+  </data>
+  <data name="Product_Manufacturer" xml:space="preserve">
+    <value>उत्पाद निर्माता</value>
+  </data>
+  <data name="Product_Name" xml:space="preserve">
+    <value>उत्पाद का नाम</value>
+  </data>
+  <data name="Rename" xml:space="preserve">
+    <value>नाम बदलें</value>
+  </data>
+  <data name="Request_To_Add_New_Organization" xml:space="preserve">
+    <value>अनुरोध करें नया संगठन जोड़ें</value>
+  </data>
+  <data name="Short_Name" xml:space="preserve">
+    <value>संक्षिप्त नाम</value>
+  </data>
+  <data name="State" xml:space="preserve">
+    <value>राज्य</value>
+  </data>
+  <data name="Uniformat" xml:space="preserve">
+    <value>Uniformat</value>
+  </data>
+  <data name="User_Profile" xml:space="preserve">
+    <value>उपयोगकर्ता प्रोफ़ाइल</value>
+  </data>
+  <data name="Add_New_Client" xml:space="preserve">
+    <value>नई ग्राहकों जोड़ें</value>
+  </data>
+  <data name="Client_Name" xml:space="preserve">
+    <value>ग्राहक का नाम</value>
+  </data>
+  <data name="Database_Name" xml:space="preserve">
+    <value>डेटाबेस नाम</value>
+  </data>
+  <data name="Ok" xml:space="preserve">
+    <value>ठीक</value>
+  </data>
+  <data name="Organization_Name" xml:space="preserve">
+    <value>संगठन का नाम</value>
+  </data>
+  <data name="Language" xml:space="preserve">
+    <value>भाषा</value>
+  </data>
+  <data name="Log_In" xml:space="preserve">
+    <value>लॉगिन</value>
+  </data>
+  <data name="Assets" xml:space="preserve">
+    <value>संपत्ति</value>
+  </data>
+  <data name="Recent" xml:space="preserve">
+    <value>हाल ही में</value>
+  </data>
+  <data name="Add_BAS_Server" xml:space="preserve">
+    <value>जोड़ें बास सर्वर</value>
+  </data>
+  <data name="Add_Weather_Station" xml:space="preserve">
+    <value>केंद्र जोड़ें</value>
+  </data>
+  <data name="Altitude" xml:space="preserve">
+    <value>ऊंचाई</value>
+  </data>
+  <data name="Building_Automation_System_Server" xml:space="preserve">
+    <value>बिल्डिंग स्वचालन प्रणाली सर्वर</value>
+  </data>
+  <data name="Data_Provider" xml:space="preserve">
+    <value>डेटा प्रदाता</value>
+  </data>
+  <data name="Protocol" xml:space="preserve">
+    <value>प्रोटोकॉल</value>
+  </data>
+  <data name="Server_Name" xml:space="preserve">
+    <value>सर्वर का नाम</value>
+  </data>
+  <data name="Station_Name" xml:space="preserve">
+    <value>स्टेशन का नाम</value>
+  </data>
+  <data name="URL" xml:space="preserve">
+    <value>यूआरएल</value>
+  </data>
+  <data name="Weather_Station" xml:space="preserve">
+    <value>मौसम स्टेशन</value>
+  </data>
+  <data name="Last_Sync_Date" xml:space="preserve">
+    <value>अंतिम तुल्यकालित तिथि</value>
+  </data>
+  <data name="City_State_1" xml:space="preserve">
+    <value>शहर, राज्य</value>
+  </data>
+  <data name="Recent_Projects" xml:space="preserve">
+    <value>हाल ही में परियोजनाओं</value>
+  </data>
+  <data name="Versioning" xml:space="preserve">
+    <value>संस्करण</value>
+  </data>
+  <data name="Issue_Profile" xml:space="preserve">
+    <value>मुद्दा प्रोफ़ाइल</value>
+  </data>
+  <data name="Entity" xml:space="preserve">
+    <value>अस्तित्व</value>
+  </data>
+  <data name="Entity_Name" xml:space="preserve">
+    <value>इकाई नाम</value>
+  </data>
+  <data name="Area" xml:space="preserve">
+    <value>क्षेत्र</value>
+  </data>
+  <data name="Add_Template" xml:space="preserve">
+    <value>खाका जोड़ें</value>
+  </data>
+  <data name="File_Name" xml:space="preserve">
+    <value>फ़ाइल का नाम</value>
+  </data>
+  <data name="OmniClass_2006" xml:space="preserve">
+    <value>2006 OmniClass</value>
+  </data>
+  <data name="OmniClass_2010" xml:space="preserve">
+    <value>2010 OmniClass</value>
+  </data>
+  <data name="Add_Edit_Required_Attributes" xml:space="preserve">
+    <value>जोड़ें / आवश्यक गुण संपादित करें</value>
+  </data>
+  <data name="Missing_Attributes_Report" xml:space="preserve">
+    <value>लापता गुण रिपोर्ट</value>
+  </data>
+  <data name="Upload_Document" xml:space="preserve">
+    <value>दस्तावेज़ अपलोड करें</value>
+  </data>
+  <data name="Version" xml:space="preserve">
+    <value>संस्करण</value>
+  </data>
+  <data name="Component" xml:space="preserve">
+    <value>घटक</value>
+  </data>
+  <data name="Zone" xml:space="preserve">
+    <value>क्षेत्र</value>
+  </data>
+  <data name="Phase Name" xml:space="preserve">
+    <value>चरण नाम</value>
+  </data>
+  <data name="Floor" xml:space="preserve">
+    <value>मंजिल</value>
+  </data>
+  <data name="Created_By_1" xml:space="preserve">
+    <value>बनाया गया:</value>
+  </data>
+  <data name="Created_On_1" xml:space="preserve">
+    <value>में बनाया गया:</value>
+  </data>
+  <data name="Assign_Component" xml:space="preserve">
+    <value>घटक असाइन करें</value>
+  </data>
+  <data name="Unassign_Component" xml:space="preserve">
+    <value>घटक को मिटाने</value>
+  </data>
+  <data name="Imported_by" xml:space="preserve">
+    <value>द्वारा आयातित</value>
+  </data>
+  <data name="Imported_on" xml:space="preserve">
+    <value>पर आयातित</value>
+  </data>
+  <data name="ExportedOn" xml:space="preserve">
+    <value>में निर्यात</value>
+  </data>
+  <data name="ExportedBy" xml:space="preserve">
+    <value>द्वारा निर्यात</value>
+  </data>
+  <data name="filesize" xml:space="preserve">
+    <value>फ़ाइल का आकार</value>
+  </data>
+  <data name="filepath" xml:space="preserve">
+    <value>फ़ाइल पथ</value>
+  </data>
+  <data name="Assign_Manufacturer" xml:space="preserve">
+    <value>निर्माता असाइन करें</value>
+  </data>
+  <data name="Assign_Contacts_to_Project" xml:space="preserve">
+    <value>परियोजना के लिए संपर्क असाइन करें</value>
+  </data>
+  <data name="Assign_Project_roles_to_Contacts" xml:space="preserve">
+    <value>संपर्क में परियोजना भूमिकाएँ असाइन</value>
+  </data>
+  <data name="Replace" xml:space="preserve">
+    <value>बदलें</value>
+  </data>
+  <data name="message" xml:space="preserve">
+    <value>संदेश</value>
+  </data>
+  <data name="Parent_System" xml:space="preserve">
+    <value>जनक सिस्टम</value>
+  </data>
+  <data name="Condition_type" xml:space="preserve">
+    <value>शर्त के प्रकार</value>
+  </data>
+  <data name="Image" xml:space="preserve">
+    <value>छवि</value>
+  </data>
+  <data name="Add_Required_Attributes" xml:space="preserve">
+    <value>आवश्यक गुण जोड़ें</value>
+  </data>
+  <data name="Add_Required_Documents" xml:space="preserve">
+    <value>आवश्यक दस्तावेज जोड़ें</value>
+  </data>
+  <data name="Add_Naming_Convention" xml:space="preserve">
+    <value>कन्वेंशन नामकरण जोड़ें</value>
+  </data>
+  <data name="Show_Model" xml:space="preserve">
+    <value>मॉडल दिखाएँ</value>
+  </data>
+  <data name="Viewpoints" xml:space="preserve">
+    <value>दृष्टिकोण</value>
+  </data>
+  <data name="Back_To_Model_Server" xml:space="preserve">
+    <value>वापस मॉडल सर्वर</value>
+  </data>
+  <data name="BAS_Information" xml:space="preserve">
+    <value>बास सूचना</value>
+  </data>
+  <data name="Find" xml:space="preserve">
+    <value>खोज</value>
+  </data>
+  <data name="Link_to_Data" xml:space="preserve">
+    <value>डेटा के लिए लिंक</value>
+  </data>
+  <data name="Parameter" xml:space="preserve">
+    <value>प्राचल</value>
+  </data>
+  <data name="Properties" xml:space="preserve">
+    <value>गुण</value>
+  </data>
+  <data name="Room_Data_Sheet" xml:space="preserve">
+    <value>कक्ष डाटा शीट</value>
+  </data>
+  <data name="Search_Asset" xml:space="preserve">
+    <value>खोज एसेट</value>
+  </data>
+  <data name="Search_Space" xml:space="preserve">
+    <value>खोज अंतरिक्ष</value>
+  </data>
+  <data name="System_Asset" xml:space="preserve">
+    <value>प्रणाली एसेट</value>
+  </data>
+  <data name="Update" xml:space="preserve">
+    <value>अद्यतन</value>
+  </data>
+  <data name="COBieDataQualityControl" xml:space="preserve">
+    <value>कोबी डाटा गुणवत्ता नियंत्रण</value>
+  </data>
+  <data name="Assign_Existing_Facilities" xml:space="preserve">
+    <value>मौजूदा सुविधाओं असाइन</value>
+  </data>
+  <data name="Add_Existing_Facility" xml:space="preserve">
+    <value>मौजूदा सुविधा जोड़ें</value>
+  </data>
+  <data name="Provide_New_Name" xml:space="preserve">
+    <value>नया नाम प्रदान करें</value>
+  </data>
+  <data name="Update_Component_Name" xml:space="preserve">
+    <value>अद्यतन घटक नाम</value>
+  </data>
+  <data name="Update_Type_Name" xml:space="preserve">
+    <value>अद्यतन प्रकार का नाम</value>
+  </data>
+  <data name="Use_Attribute_Template" xml:space="preserve">
+    <value>गुण टेम्पलेट का उपयोग करें</value>
+  </data>
+  <data name="Generate_COBie_File" xml:space="preserve">
+    <value>कोबी फ़ाइल उत्पन्न</value>
+  </data>
+  <data name="master_file" xml:space="preserve">
+    <value>मुख्य फ़ाइल</value>
+  </data>
+  <data name="File_name_format" xml:space="preserve">
+    <value>फ़ाइल नाम स्वरूप</value>
+  </data>
+  <data name="Auto_map_documents" xml:space="preserve">
+    <value>ऑटो मानचित्र दस्तावेजों</value>
+  </data>
+  <data name="Please_select_at_least_one_document" xml:space="preserve">
+    <value>कम से कम एक दस्तावेज़ का चयन करें !!</value>
+  </data>
+  <data name="Please_select_entity_from_the_dropdown" xml:space="preserve">
+    <value>लटकती से इकाई का चयन करें</value>
+  </data>
+  <data name="Document_type_not_found" xml:space="preserve">
+    <value>दस्तावेज़ प्रकार नहीं मिला</value>
+  </data>
+  <data name="Stage_not_found" xml:space="preserve">
+    <value>स्टेज नहीं मिला</value>
+  </data>
+  <data name="ApprovalBy_not_found" xml:space="preserve">
+    <value>नहीं मिला द्वारा अनुमोदन</value>
+  </data>
+  <data name="Please_type_a_file_name_pattern" xml:space="preserve">
+    <value>एक फ़ाइल नाम पैटर्न टाइप करें</value>
+  </data>
+  <data name="Document_type_not_defined" xml:space="preserve">
+    <value>दस्तावेज़ प्रकार परिभाषित नहीं</value>
+  </data>
+  <data name="Stage_not_defined" xml:space="preserve">
+    <value>स्टेज परिभाषित नहीं</value>
+  </data>
+  <data name="ApprovalBy_not_defined" xml:space="preserve">
+    <value>परिभाषित नहीं द्वारा अनुमोदन</value>
+  </data>
+  <data name="Invalid_pattern" xml:space="preserve">
+    <value>अवैध पैटर्न</value>
+  </data>
+  <data name="The_document_name_does_not_match_the_pattern" xml:space="preserve">
+    <value>दस्तावेज़ नाम पैटर्न से मेल नहीं खाता</value>
+  </data>
+  <data name="Unknown_entity" xml:space="preserve">
+    <value>अज्ञात इकाई</value>
+  </data>
+  <data name="SortBy" xml:space="preserve">
+    <value>क्रमबद्ध करें</value>
+  </data>
+  <data name="Merge" xml:space="preserve">
+    <value>मर्ज</value>
+  </data>
+</root>

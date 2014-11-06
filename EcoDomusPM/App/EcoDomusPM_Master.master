@@ -1,0 +1,200 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="EcoDomusPM_Master.master.cs"
+    Inherits="App_Sample_master" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<%@ Register Assembly="Telerik.Web.UI" Namespace="Telerik.Web.UI" TagPrefix="telerik" %>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=7" />
+    <title>EcoDomus</title>
+    <link rel="Stylesheet" type="text/css" href="../../App_Themes/EcoDomus/style_new_1.css" />
+    <link href="../../App_Themes/EcoDomus/radmenu.css" rel="stylesheet" type="text/css" />
+    <script language="javascript" type="text/javascript">
+
+        function project_validate() {
+            alert('Please select the project in Settings -> Projects.\\nIf you do not have any projects assigned,\\ncontact your System Administrator.');
+            window.location = '../Settings/Project.aspx';
+            return false;
+        }
+
+        function windowresize() {
+            if (screen.width <= 1024) {
+                document.getElementById("tblmaster").style.width = screen.width;
+            }
+        }
+        function showMenu(e) {
+
+            var contextMenu = $find("<%= rad_panel_setting.ClientID %>");
+
+            if ((!e.relatedTarget) || (!$telerik.isDescendantOrSelf(contextMenu.get_element(), e.relatedTarget))) {
+                contextMenu.show(e);
+            }
+
+            $telerik.cancelRawEvent(e);
+        }
+
+        
+
+    </script>
+    <style type="text/css">
+        .style1
+        {
+            height: 40px;
+        }
+        .style2
+        {
+            width: 5%;
+            height: 25px;
+        }
+        .style3
+        {
+            width: 20px;
+            height: 25px;
+        }
+        .style4
+        {
+            width: 25%;
+            height: 25px;
+        }
+        .style5
+        {
+            height: 25px;
+        }
+    </style> 
+</head>
+<body onload="windowresize();">
+    <form id="form1" runat="server" method="Post" target="_self">
+    <%--  <asp:ScriptManager ID="ScriptManager1" runat="server">
+    </asp:ScriptManager>--%>
+    <telerik:RadScriptManager ID="ScriptManager1" runat="server" AsyncPostBackTimeout="360000">
+        <Scripts>
+            <asp:ScriptReference Assembly="Telerik.Web.UI" Name="Telerik.Web.UI.Common.Core.js" />
+            <asp:ScriptReference Assembly="Telerik.Web.UI" Name="Telerik.Web.UI.Common.jQuery.js" />
+            <asp:ScriptReference Assembly="Telerik.Web.UI" Name="Telerik.Web.UI.Common.jQueryInclude.js" />
+        </Scripts> 
+    </telerik:RadScriptManager>
+    <div>
+        <telerik:RadFormDecorator ID="rdfAll" DecoratedControls="Scrollbars,Buttons" Skin="Vista"
+            runat="server" />
+        <table id="tblmaster" class="tableHeader" border="0" width="100%" cellpadding="0"
+            cellspacing="0">
+            <tr style="margin-left: 700px;">
+                <td style="height: 20px">
+                    <table border="0">
+                        <tr>
+                            <td align="left" valign="top" style="width: 25%; height: 20px">
+                                <img alt="EcoDomus logo" src="../../App/Images/EcoDomus_logo.jpg" style="height: 25px;
+                                    width: 100px" />
+                            </td>
+                            <td class="style5">
+                                <table>
+                                    <tr>
+                                        <td style="vertical-align: top; width: 200px; padding-left: 10px" align="left">
+                                            <asp:Label ID="lbl_user" runat="server" Width="650px"></asp:Label>
+                                        </td>
+                                        <td style="vertical-align: top; padding-left: 150px" align="right">
+                                            <%--<telerik:radmenu id="rad_panel_setting" runat="server" skin="Default" enableembeddedskins="false" >
+                                        </telerik:radmenu>--%>
+                                            <telerik:RadContextMenu ID="rad_panel_setting" runat="server" Skin="Hay" EnableRoundedCorners="true"
+                                                EnableShadows="false" EnableImageSprites="true" EnableScreenBoundaryDetection="true"
+                                                EnableTheming="true" ForeColor="White">
+                                            </telerik:RadContextMenu>
+                                            <%--<img src="/App/Images/setting.gif" onmouseover="showMenu(event)" alt="SettingsMenu" width="60" height="50" />--%>
+                                            <a href="#" onmouseover="showMenu(event)">
+                                                <asp:Label ID="Label1" runat="server" Text="<%$Resources:Resource,Settings%>"></asp:Label>
+                                            </a>&nbsp;&nbsp;&nbsp;| &nbsp;
+                                            <%--<a href="#" title="settings" onmouseover="openWin();window.focus();" onmouseout="ShowWin.close();">Settings</a>--%>
+                                        </td>
+                                        <td style="vertical-align: top" align="right" class="style3">
+                                            <%--<asp:ImageButton ID="divHelp" runat="server" ImageUrl="~/App/Images/Buttons/newhelp.gif" />--%>
+                                            <asp:LinkButton ID="lnkbtnHelp" runat="server" Text="<%$Resources:Resource,Help%>"></asp:LinkButton>
+                                        </td>
+                                        <td style="width: 10px">
+                                        </td>
+                                        <td style="vertical-align: top" align="right" class="style3">
+                                            <%--<asp:ImageButton ID="lnkbtnLogOut" runat="server" CausesValidation="false" ImageUrl="~/App/Images/Buttons/LogOut.gif"  OnClick="lnkbtnLogOut_Click" />--%>
+                                            <asp:LinkButton ID="lnkbtnLogout" runat="server" Text="<%$Resources:Resource,Logout%>"
+                                                CausesValidation="false" OnClick="lnkbtnLogOut_Click"></asp:LinkButton>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td align="left" valign="top">
+                    <div style="margin: 10px 0px 10px 0px" id="divsitemap">
+                        <asp:SiteMapPath ID="SiteMapPath1" runat="server" CssClass="ChangeColor">
+                            <PathSeparatorTemplate>
+                                <asp:Image ID="imgBrdcrmsLogo" runat="server" ImageUrl="~/App/Images/arrow-brdcrms.gif" />
+                            </PathSeparatorTemplate>
+                        </asp:SiteMapPath>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table>
+                        <tr>
+                            <td valign="top">
+                                <telerik:RadPanelBar runat="server" ID="RadPanelBar1" Width="150px" Skin="Hay" PersistStateInCookie="true"
+                                    ExpandMode="SingleExpandedItem" Style="float: left" AllowCollapseAllItems="true">
+                                </telerik:RadPanelBar>
+                            </td>
+                            <td style="width: 2%">
+                            </td>
+                            <td align="left" width="90%" valign="top">
+                                <div>
+                                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                                    </asp:ContentPlaceHolder>
+                                    <asp:ContentPlaceHolder ID="cphHead" runat="server">
+                                    </asp:ContentPlaceHolder>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        <table class="tableHeader">
+            <tr>
+                <td>
+                    <div id="footer">
+                        <table width="100%">
+                            <tr>
+                                <td>
+                                    <asp:Label runat="server" ID="lbl_license_msg" Text="" ForeColor="Red" Style="vertical-align: middle;" />
+                                </td>
+                                <td align="right">
+                                    &copy; Copyright 2008-2013. EcoDomus, Inc.
+                                    <asp:Image ID="imgSmallLogo" runat="server" ImageUrl="~/App/Images/small logo.jpg"
+                                        Height="35px" Width="35px" />
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <%--<div style="display:none">
+       <asp:Button ID="btnbindRadmenu" runat="server"  OnClick="btnbindRadmenu_click"/></div>--%>
+        <asp:HiddenField ID="hffacilityId" runat="server" />
+    </div>
+    <telerik:RadAjaxManager ID="RadAjaxManager1" runat="server">
+    </telerik:RadAjaxManager>
+    <%-- <AjaxSettings>
+        <telerik:AjaxSetting AjaxControlID="RadPanelBar1">
+            <UpdatedControls>
+                <telerik:AjaxUpdatedControl ControlID="ContentPlaceHolder1" LoadingPanelID="loadingPanel1" />
+            </UpdatedControls>
+        </telerik:AjaxSetting>
+    </AjaxSettings>--%>
+    <%-- <telerik:RadAjaxLoadingPanel ID="loadingPanel1" runat="server" Height="75px" Width="75px">
+        <img alt="Loading..." src='<%= RadAjaxLoadingPanel.GetWebResourceUrl(Page, "Telerik.Web.UI.Skins.Default.Ajax.loading.gif") %>'
+            style="border: 0px;" />
+    </telerik:RadAjaxLoadingPanel>--%>
+    </form>
+</body>
+</html>

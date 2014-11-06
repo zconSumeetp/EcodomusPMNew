@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="1a4026cd-a182-4144-9631-e267de054099" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>false</ReferenceAllAssemblies>
+    <ReferencedAssemblies>
+      <ReferencedAssembly AssemblyName="System" />
+      <ReferencedAssembly AssemblyName="System.Core" />
+      <ReferencedAssembly AssemblyName="System.Data" />
+      <ReferencedAssembly AssemblyName="System.Xml" />
+      <ReferencedAssembly AssemblyName="System.Xml.Linq" />
+    </ReferencedAssemblies>
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://services.ecodomus.com/ClientPM/Attributes.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="Attributes1.xsd" MetadataType="Schema" ID="45746f05-4eb1-4ac4-afa4-1e9116d5eacd" SourceId="1" SourceUrl="http://services.ecodomus.com/ClientPM/Attributes.svc?xsd=xsd10" />
+    <MetadataFile FileName="Attributes12.xsd" MetadataType="Schema" ID="5205de0d-5f4a-46fb-97db-f048bfcd8227" SourceId="1" SourceUrl="http://services.ecodomus.com/ClientPM/Attributes.svc?xsd=xsd9" />
+    <MetadataFile FileName="Attributes13.xsd" MetadataType="Schema" ID="7ec30448-cae6-4608-a5bb-038179021b8d" SourceId="1" SourceUrl="http://services.ecodomus.com/ClientPM/Attributes.svc?xsd=xsd8" />
+    <MetadataFile FileName="Attributes14.xsd" MetadataType="Schema" ID="11bed13d-4142-4622-ba07-ab4837176eba" SourceId="1" SourceUrl="http://services.ecodomus.com/ClientPM/Attributes.svc?xsd=xsd1" />
+    <MetadataFile FileName="Attributes15.xsd" MetadataType="Schema" ID="69964a16-d9d8-4478-b896-54d206209189" SourceId="1" SourceUrl="http://services.ecodomus.com/ClientPM/Attributes.svc?xsd=xsd0" />
+    <MetadataFile FileName="Attributes16.xsd" MetadataType="Schema" ID="d02eee97-c931-4671-898f-32a2e556d381" SourceId="1" SourceUrl="http://services.ecodomus.com/ClientPM/Attributes.svc?xsd=xsd3" />
+    <MetadataFile FileName="Attributes17.xsd" MetadataType="Schema" ID="0ccb9328-881c-4853-ae49-929ba175a1d0" SourceId="1" SourceUrl="http://services.ecodomus.com/ClientPM/Attributes.svc?xsd=xsd2" />
+    <MetadataFile FileName="Attributes18.xsd" MetadataType="Schema" ID="374f0f61-2033-4bde-b4e7-8c639172b360" SourceId="1" SourceUrl="http://services.ecodomus.com/ClientPM/Attributes.svc?xsd=xsd5" />
+    <MetadataFile FileName="Attributes19.xsd" MetadataType="Schema" ID="608d8f17-6ea5-43e0-ad7e-a6829501d7db" SourceId="1" SourceUrl="http://services.ecodomus.com/ClientPM/Attributes.svc?xsd=xsd4" />
+    <MetadataFile FileName="Attributes110.xsd" MetadataType="Schema" ID="bd94f992-b942-4137-9937-7c3064325104" SourceId="1" SourceUrl="http://services.ecodomus.com/ClientPM/Attributes.svc?xsd=xsd7" />
+    <MetadataFile FileName="Attributes111.xsd" MetadataType="Schema" ID="2f4c63f8-edfe-48b4-86ad-e5971312e661" SourceId="1" SourceUrl="http://services.ecodomus.com/ClientPM/Attributes.svc?xsd=xsd6" />
+    <MetadataFile FileName="Attributes2.disco" MetadataType="Disco" ID="63db3bf9-ea7f-4f98-b801-d1096bba15e8" SourceId="1" SourceUrl="http://services.ecodomus.com/ClientPM/Attributes.svc?disco" />
+    <MetadataFile FileName="Attribute1.wsdl" MetadataType="Wsdl" ID="b3896ade-22c3-44f5-8987-b8b694e20a65" SourceId="1" SourceUrl="http://services.ecodomus.com/ClientPM/Attributes.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

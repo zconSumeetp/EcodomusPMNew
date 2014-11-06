@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.datacontract.org/2004/07/" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://services.ecodomus.com/ClientPM/Attributes.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="AttributeModel">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AttributeDescription" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Attribute_created_by" type="ser:guid" />
+      <xs:element minOccurs="0" name="Attribute_created_on" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Attribute_flag" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Attribute_group" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Attribute_group_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Attribute_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Attribute_ids" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Attribute_name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Attribute_read_only_flag" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Attribute_stage_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Attribute_stage_name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Attribute_unit" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Attribute_uom_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Attribute_value" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Bas_enabled" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Bas_tag_name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Entiy" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Entiy_data_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Fk_bas_server_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Fk_organizatoin_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Fk_recording_type_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Is_delete_for_all" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Project_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="SearchText" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Txt_search" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="URL_link" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="User_id" type="ser:guid" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="AttributeModel" nillable="true" type="tns:AttributeModel" />
+</xs:schema>

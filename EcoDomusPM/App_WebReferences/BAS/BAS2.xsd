@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.datacontract.org/2004/07/" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:4444/Client WCF/BAS.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="BASmodel">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Bas_server_url" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Fk_bas_server_protocol_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Login_user_name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Login_user_password" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Pk_bas_server_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Searchtext" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BASmodel" nillable="true" type="tns:BASmodel" />
+</xs:schema>

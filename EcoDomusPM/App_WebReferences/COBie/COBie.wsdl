@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="COBie" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:4444/Client WCF/COBie.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:4444/Client WCF/COBie.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:4444/Client WCF/COBie.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/" />
+      <xsd:import schemaLocation="http://localhost:4444/Client WCF/COBie.svc?xsd=xsd3" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ICOBie_get_status_for_uploaded_file_InputMessage">
+    <wsdl:part name="parameters" element="tns:get_status_for_uploaded_file" />
+  </wsdl:message>
+  <wsdl:message name="ICOBie_get_status_for_uploaded_file_OutputMessage">
+    <wsdl:part name="parameters" element="tns:get_status_for_uploaded_fileResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICOBie_get_imported_cobie_files_InputMessage">
+    <wsdl:part name="parameters" element="tns:get_imported_cobie_files" />
+  </wsdl:message>
+  <wsdl:message name="ICOBie_get_imported_cobie_files_OutputMessage">
+    <wsdl:part name="parameters" element="tns:get_imported_cobie_filesResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICOBie_proc_delete_imported_file_InputMessage">
+    <wsdl:part name="parameters" element="tns:proc_delete_imported_file" />
+  </wsdl:message>
+  <wsdl:message name="ICOBie_proc_delete_imported_file_OutputMessage">
+    <wsdl:part name="parameters" element="tns:proc_delete_imported_fileResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICOBie_insert_excel_import_request_InputMessage">
+    <wsdl:part name="parameters" element="tns:insert_excel_import_request" />
+  </wsdl:message>
+  <wsdl:message name="ICOBie_insert_excel_import_request_OutputMessage">
+    <wsdl:part name="parameters" element="tns:insert_excel_import_requestResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICOBie_proc_insert_contacts_from_intermediate_InputMessage">
+    <wsdl:part name="parameters" element="tns:proc_insert_contacts_from_intermediate" />
+  </wsdl:message>
+  <wsdl:message name="ICOBie_proc_insert_contacts_from_intermediate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:proc_insert_contacts_from_intermediateResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICOBie_proc_insert_facility_from_intermediate_InputMessage">
+    <wsdl:part name="parameters" element="tns:proc_insert_facility_from_intermediate" />
+  </wsdl:message>
+  <wsdl:message name="ICOBie_proc_insert_facility_from_intermediate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:proc_insert_facility_from_intermediateResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICOBie_proc_insert_floor_from_intermediate_InputMessage">
+    <wsdl:part name="parameters" element="tns:proc_insert_floor_from_intermediate" />
+  </wsdl:message>
+  <wsdl:message name="ICOBie_proc_insert_floor_from_intermediate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:proc_insert_floor_from_intermediateResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICOBie_proc_insert_space_from_intermediate_InputMessage">
+    <wsdl:part name="parameters" element="tns:proc_insert_space_from_intermediate" />
+  </wsdl:message>
+  <wsdl:message name="ICOBie_proc_insert_space_from_intermediate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:proc_insert_space_from_intermediateResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICOBie_proc_insert_from_intermediate_tables_InputMessage">
+    <wsdl:part name="parameters" element="tns:proc_insert_from_intermediate_tables" />
+  </wsdl:message>
+  <wsdl:message name="ICOBie_proc_insert_from_intermediate_tables_OutputMessage">
+    <wsdl:part name="parameters" element="tns:proc_insert_from_intermediate_tablesResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICOBie_proc_bind_type_organization_filter_tree_InputMessage">
+    <wsdl:part name="parameters" element="tns:proc_bind_type_organization_filter_tree" />
+  </wsdl:message>
+  <wsdl:message name="ICOBie_proc_bind_type_organization_filter_tree_OutputMessage">
+    <wsdl:part name="parameters" element="tns:proc_bind_type_organization_filter_treeResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICOBie_proc_get_facility_dropdown_InputMessage">
+    <wsdl:part name="parameters" element="tns:proc_get_facility_dropdown" />
+  </wsdl:message>
+  <wsdl:message name="ICOBie_proc_get_facility_dropdown_OutputMessage">
+    <wsdl:part name="parameters" element="tns:proc_get_facility_dropdownResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICOBie_proc_get_exportedfile_InputMessage">
+    <wsdl:part name="parameters" element="tns:proc_get_exportedfile" />
+  </wsdl:message>
+  <wsdl:message name="ICOBie_proc_get_exportedfile_OutputMessage">
+    <wsdl:part name="parameters" element="tns:proc_get_exportedfileResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICOBie_proc_DeleteFile_InputMessage">
+    <wsdl:part name="parameters" element="tns:proc_DeleteFile" />
+  </wsdl:message>
+  <wsdl:message name="ICOBie_proc_DeleteFile_OutputMessage">
+    <wsdl:part name="parameters" element="tns:proc_DeleteFileResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICOBie_proc_get_designer_contractor_export_InputMessage">
+    <wsdl:part name="parameters" element="tns:proc_get_designer_contractor_export" />
+  </wsdl:message>
+  <wsdl:message name="ICOBie_proc_get_designer_contractor_export_OutputMessage">
+    <wsdl:part name="parameters" element="tns:proc_get_designer_contractor_exportResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ICOBie">
+    <wsdl:operation name="get_status_for_uploaded_file">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICOBie/get_status_for_uploaded_file" message="tns:ICOBie_get_status_for_uploaded_file_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICOBie/get_status_for_uploaded_fileResponse" message="tns:ICOBie_get_status_for_uploaded_file_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="get_imported_cobie_files">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICOBie/get_imported_cobie_files" message="tns:ICOBie_get_imported_cobie_files_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICOBie/get_imported_cobie_filesResponse" message="tns:ICOBie_get_imported_cobie_files_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="proc_delete_imported_file">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICOBie/proc_delete_imported_file" message="tns:ICOBie_proc_delete_imported_file_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICOBie/proc_delete_imported_fileResponse" message="tns:ICOBie_proc_delete_imported_file_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="insert_excel_import_request">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICOBie/insert_excel_import_request" message="tns:ICOBie_insert_excel_import_request_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICOBie/insert_excel_import_requestResponse" message="tns:ICOBie_insert_excel_import_request_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="proc_insert_contacts_from_intermediate">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICOBie/proc_insert_contacts_from_intermediate" message="tns:ICOBie_proc_insert_contacts_from_intermediate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICOBie/proc_insert_contacts_from_intermediateResponse" message="tns:ICOBie_proc_insert_contacts_from_intermediate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="proc_insert_facility_from_intermediate">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICOBie/proc_insert_facility_from_intermediate" message="tns:ICOBie_proc_insert_facility_from_intermediate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICOBie/proc_insert_facility_from_intermediateResponse" message="tns:ICOBie_proc_insert_facility_from_intermediate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="proc_insert_floor_from_intermediate">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICOBie/proc_insert_floor_from_intermediate" message="tns:ICOBie_proc_insert_floor_from_intermediate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICOBie/proc_insert_floor_from_intermediateResponse" message="tns:ICOBie_proc_insert_floor_from_intermediate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="proc_insert_space_from_intermediate">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICOBie/proc_insert_space_from_intermediate" message="tns:ICOBie_proc_insert_space_from_intermediate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICOBie/proc_insert_space_from_intermediateResponse" message="tns:ICOBie_proc_insert_space_from_intermediate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="proc_insert_from_intermediate_tables">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICOBie/proc_insert_from_intermediate_tables" message="tns:ICOBie_proc_insert_from_intermediate_tables_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICOBie/proc_insert_from_intermediate_tablesResponse" message="tns:ICOBie_proc_insert_from_intermediate_tables_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="proc_bind_type_organization_filter_tree">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICOBie/proc_bind_type_organization_filter_tree" message="tns:ICOBie_proc_bind_type_organization_filter_tree_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICOBie/proc_bind_type_organization_filter_treeResponse" message="tns:ICOBie_proc_bind_type_organization_filter_tree_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="proc_get_facility_dropdown">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICOBie/proc_get_facility_dropdown" message="tns:ICOBie_proc_get_facility_dropdown_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICOBie/proc_get_facility_dropdownResponse" message="tns:ICOBie_proc_get_facility_dropdown_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="proc_get_exportedfile">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICOBie/proc_get_exportedfile" message="tns:ICOBie_proc_get_exportedfile_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICOBie/proc_get_exportedfileResponse" message="tns:ICOBie_proc_get_exportedfile_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="proc_DeleteFile">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICOBie/proc_DeleteFile" message="tns:ICOBie_proc_DeleteFile_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICOBie/proc_DeleteFileResponse" message="tns:ICOBie_proc_DeleteFile_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="proc_get_designer_contractor_export">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICOBie/proc_get_designer_contractor_export" message="tns:ICOBie_proc_get_designer_contractor_export_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICOBie/proc_get_designer_contractor_exportResponse" message="tns:ICOBie_proc_get_designer_contractor_export_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_ICOBie" type="tns:ICOBie">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="get_status_for_uploaded_file">
+      <soap:operation soapAction="http://tempuri.org/ICOBie/get_status_for_uploaded_file" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="get_imported_cobie_files">
+      <soap:operation soapAction="http://tempuri.org/ICOBie/get_imported_cobie_files" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="proc_delete_imported_file">
+      <soap:operation soapAction="http://tempuri.org/ICOBie/proc_delete_imported_file" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="insert_excel_import_request">
+      <soap:operation soapAction="http://tempuri.org/ICOBie/insert_excel_import_request" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="proc_insert_contacts_from_intermediate">
+      <soap:operation soapAction="http://tempuri.org/ICOBie/proc_insert_contacts_from_intermediate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="proc_insert_facility_from_intermediate">
+      <soap:operation soapAction="http://tempuri.org/ICOBie/proc_insert_facility_from_intermediate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="proc_insert_floor_from_intermediate">
+      <soap:operation soapAction="http://tempuri.org/ICOBie/proc_insert_floor_from_intermediate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="proc_insert_space_from_intermediate">
+      <soap:operation soapAction="http://tempuri.org/ICOBie/proc_insert_space_from_intermediate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="proc_insert_from_intermediate_tables">
+      <soap:operation soapAction="http://tempuri.org/ICOBie/proc_insert_from_intermediate_tables" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="proc_bind_type_organization_filter_tree">
+      <soap:operation soapAction="http://tempuri.org/ICOBie/proc_bind_type_organization_filter_tree" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="proc_get_facility_dropdown">
+      <soap:operation soapAction="http://tempuri.org/ICOBie/proc_get_facility_dropdown" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="proc_get_exportedfile">
+      <soap:operation soapAction="http://tempuri.org/ICOBie/proc_get_exportedfile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="proc_DeleteFile">
+      <soap:operation soapAction="http://tempuri.org/ICOBie/proc_DeleteFile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="proc_get_designer_contractor_export">
+      <soap:operation soapAction="http://tempuri.org/ICOBie/proc_get_designer_contractor_export" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="COBie">
+    <wsdl:port name="BasicHttpBinding_ICOBie" binding="tns:BasicHttpBinding_ICOBie">
+      <soap:address location="http://localhost:4444/Client%20WCF/COBie.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

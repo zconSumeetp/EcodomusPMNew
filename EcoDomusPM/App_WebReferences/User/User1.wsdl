@@ -1,0 +1,497 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="User" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://services.ecodomus.com/CentralPM/User.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://services.ecodomus.com/CentralPM/User.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://services.ecodomus.com/CentralPM/User.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/" />
+      <xsd:import schemaLocation="http://services.ecodomus.com/CentralPM/User.svc?xsd=xsd3" />
+      <xsd:import schemaLocation="http://services.ecodomus.com/CentralPM/User.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/Central.App.Dtos" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IUser_GetUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUser" />
+  </wsdl:message>
+  <wsdl:message name="IUser_GetUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUser_GetUserDetails_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserDetails" />
+  </wsdl:message>
+  <wsdl:message name="IUser_GetUserDetails_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUser_bindState_InputMessage">
+    <wsdl:part name="parameters" element="tns:bindState" />
+  </wsdl:message>
+  <wsdl:message name="IUser_bindState_OutputMessage">
+    <wsdl:part name="parameters" element="tns:bindStateResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUser_GetCountry_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCountry" />
+  </wsdl:message>
+  <wsdl:message name="IUser_GetCountry_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCountryResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUser_GetCity_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCity" />
+  </wsdl:message>
+  <wsdl:message name="IUser_GetCity_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCityResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUser_GetSystemRoles_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSystemRoles" />
+  </wsdl:message>
+  <wsdl:message name="IUser_GetSystemRoles_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSystemRolesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUser_ChangePassword_InputMessage">
+    <wsdl:part name="parameters" element="tns:ChangePassword" />
+  </wsdl:message>
+  <wsdl:message name="IUser_ChangePassword_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ChangePasswordResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUser_InsertUpdateUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertUpdateUser" />
+  </wsdl:message>
+  <wsdl:message name="IUser_InsertUpdateUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertUpdateUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUser_bindOrganization_InputMessage">
+    <wsdl:part name="parameters" element="tns:bindOrganization" />
+  </wsdl:message>
+  <wsdl:message name="IUser_bindOrganization_OutputMessage">
+    <wsdl:part name="parameters" element="tns:bindOrganizationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUser_GetOmniclassTypes_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetOmniclassTypes" />
+  </wsdl:message>
+  <wsdl:message name="IUser_GetOmniclassTypes_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetOmniclassTypesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUser_get_omniclass_type_for_user_organization_InputMessage">
+    <wsdl:part name="parameters" element="tns:get_omniclass_type_for_user_organization" />
+  </wsdl:message>
+  <wsdl:message name="IUser_get_omniclass_type_for_user_organization_OutputMessage">
+    <wsdl:part name="parameters" element="tns:get_omniclass_type_for_user_organizationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUser_DeleteUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteUser" />
+  </wsdl:message>
+  <wsdl:message name="IUser_DeleteUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUser_GetSettingsMenuItemsForUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSettingsMenuItemsForUser" />
+  </wsdl:message>
+  <wsdl:message name="IUser_GetSettingsMenuItemsForUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSettingsMenuItemsForUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUser_getUserAddress_InputMessage">
+    <wsdl:part name="parameters" element="tns:getUserAddress" />
+  </wsdl:message>
+  <wsdl:message name="IUser_getUserAddress_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getUserAddressResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUser_UpdateUserManufacturer_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateUserManufacturer" />
+  </wsdl:message>
+  <wsdl:message name="IUser_UpdateUserManufacturer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateUserManufacturerResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUser_BindUserViewer_InputMessage">
+    <wsdl:part name="parameters" element="tns:BindUserViewer" />
+  </wsdl:message>
+  <wsdl:message name="IUser_BindUserViewer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:BindUserViewerResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUser_get_user_details_from_username_InputMessage">
+    <wsdl:part name="parameters" element="tns:get_user_details_from_username" />
+  </wsdl:message>
+  <wsdl:message name="IUser_get_user_details_from_username_OutputMessage">
+    <wsdl:part name="parameters" element="tns:get_user_details_from_usernameResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUser_proc_enable_user_InputMessage">
+    <wsdl:part name="parameters" element="tns:proc_enable_user" />
+  </wsdl:message>
+  <wsdl:message name="IUser_proc_enable_user_OutputMessage">
+    <wsdl:part name="parameters" element="tns:proc_enable_userResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUser_proc_get_recent_data_InputMessage">
+    <wsdl:part name="parameters" element="tns:proc_get_recent_data" />
+  </wsdl:message>
+  <wsdl:message name="IUser_proc_get_recent_data_OutputMessage">
+    <wsdl:part name="parameters" element="tns:proc_get_recent_dataResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUser_GetTimeZones_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTimeZones" />
+  </wsdl:message>
+  <wsdl:message name="IUser_GetTimeZones_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTimeZonesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUser_GetTimeZoneInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTimeZoneInfo" />
+  </wsdl:message>
+  <wsdl:message name="IUser_GetTimeZoneInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTimeZoneInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUser_GetSystemRoles_PM_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSystemRoles_PM" />
+  </wsdl:message>
+  <wsdl:message name="IUser_GetSystemRoles_PM_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSystemRoles_PMResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUser_CheckEcoDomusUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:CheckEcoDomusUser" />
+  </wsdl:message>
+  <wsdl:message name="IUser_CheckEcoDomusUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CheckEcoDomusUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUser_GetRecentData_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetRecentData" />
+  </wsdl:message>
+  <wsdl:message name="IUser_GetRecentData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetRecentDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUser_InsertUpdateRecentEntities_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertUpdateRecentEntities" />
+  </wsdl:message>
+  <wsdl:message name="IUser_InsertUpdateRecentEntities_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertUpdateRecentEntitiesResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IUser">
+    <wsdl:operation name="GetUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUser/GetUser" message="tns:IUser_GetUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUser/GetUserResponse" message="tns:IUser_GetUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserDetails">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUser/GetUserDetails" message="tns:IUser_GetUserDetails_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUser/GetUserDetailsResponse" message="tns:IUser_GetUserDetails_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="bindState">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUser/bindState" message="tns:IUser_bindState_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUser/bindStateResponse" message="tns:IUser_bindState_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCountry">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUser/GetCountry" message="tns:IUser_GetCountry_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUser/GetCountryResponse" message="tns:IUser_GetCountry_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCity">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUser/GetCity" message="tns:IUser_GetCity_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUser/GetCityResponse" message="tns:IUser_GetCity_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSystemRoles">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUser/GetSystemRoles" message="tns:IUser_GetSystemRoles_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUser/GetSystemRolesResponse" message="tns:IUser_GetSystemRoles_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ChangePassword">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUser/ChangePassword" message="tns:IUser_ChangePassword_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUser/ChangePasswordResponse" message="tns:IUser_ChangePassword_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertUpdateUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUser/InsertUpdateUser" message="tns:IUser_InsertUpdateUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUser/InsertUpdateUserResponse" message="tns:IUser_InsertUpdateUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="bindOrganization">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUser/bindOrganization" message="tns:IUser_bindOrganization_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUser/bindOrganizationResponse" message="tns:IUser_bindOrganization_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOmniclassTypes">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUser/GetOmniclassTypes" message="tns:IUser_GetOmniclassTypes_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUser/GetOmniclassTypesResponse" message="tns:IUser_GetOmniclassTypes_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="get_omniclass_type_for_user_organization">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUser/get_omniclass_type_for_user_organization" message="tns:IUser_get_omniclass_type_for_user_organization_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUser/get_omniclass_type_for_user_organizationResponse" message="tns:IUser_get_omniclass_type_for_user_organization_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUser/DeleteUser" message="tns:IUser_DeleteUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUser/DeleteUserResponse" message="tns:IUser_DeleteUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSettingsMenuItemsForUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUser/GetSettingsMenuItemsForUser" message="tns:IUser_GetSettingsMenuItemsForUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUser/GetSettingsMenuItemsForUserResponse" message="tns:IUser_GetSettingsMenuItemsForUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getUserAddress">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUser/getUserAddress" message="tns:IUser_getUserAddress_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUser/getUserAddressResponse" message="tns:IUser_getUserAddress_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateUserManufacturer">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUser/UpdateUserManufacturer" message="tns:IUser_UpdateUserManufacturer_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUser/UpdateUserManufacturerResponse" message="tns:IUser_UpdateUserManufacturer_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BindUserViewer">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUser/BindUserViewer" message="tns:IUser_BindUserViewer_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUser/BindUserViewerResponse" message="tns:IUser_BindUserViewer_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="get_user_details_from_username">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUser/get_user_details_from_username" message="tns:IUser_get_user_details_from_username_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUser/get_user_details_from_usernameResponse" message="tns:IUser_get_user_details_from_username_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="proc_enable_user">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUser/proc_enable_user" message="tns:IUser_proc_enable_user_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUser/proc_enable_userResponse" message="tns:IUser_proc_enable_user_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="proc_get_recent_data">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUser/proc_get_recent_data" message="tns:IUser_proc_get_recent_data_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUser/proc_get_recent_dataResponse" message="tns:IUser_proc_get_recent_data_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTimeZones">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUser/GetTimeZones" message="tns:IUser_GetTimeZones_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUser/GetTimeZonesResponse" message="tns:IUser_GetTimeZones_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTimeZoneInfo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUser/GetTimeZoneInfo" message="tns:IUser_GetTimeZoneInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUser/GetTimeZoneInfoResponse" message="tns:IUser_GetTimeZoneInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSystemRoles_PM">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUser/GetSystemRoles_PM" message="tns:IUser_GetSystemRoles_PM_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUser/GetSystemRoles_PMResponse" message="tns:IUser_GetSystemRoles_PM_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckEcoDomusUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUser/CheckEcoDomusUser" message="tns:IUser_CheckEcoDomusUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUser/CheckEcoDomusUserResponse" message="tns:IUser_CheckEcoDomusUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRecentData">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUser/GetRecentData" message="tns:IUser_GetRecentData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUser/GetRecentDataResponse" message="tns:IUser_GetRecentData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertUpdateRecentEntities">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUser/InsertUpdateRecentEntities" message="tns:IUser_InsertUpdateRecentEntities_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUser/InsertUpdateRecentEntitiesResponse" message="tns:IUser_InsertUpdateRecentEntities_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IUser" type="tns:IUser">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetUser">
+      <soap:operation soapAction="http://tempuri.org/IUser/GetUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserDetails">
+      <soap:operation soapAction="http://tempuri.org/IUser/GetUserDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="bindState">
+      <soap:operation soapAction="http://tempuri.org/IUser/bindState" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCountry">
+      <soap:operation soapAction="http://tempuri.org/IUser/GetCountry" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCity">
+      <soap:operation soapAction="http://tempuri.org/IUser/GetCity" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSystemRoles">
+      <soap:operation soapAction="http://tempuri.org/IUser/GetSystemRoles" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ChangePassword">
+      <soap:operation soapAction="http://tempuri.org/IUser/ChangePassword" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertUpdateUser">
+      <soap:operation soapAction="http://tempuri.org/IUser/InsertUpdateUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="bindOrganization">
+      <soap:operation soapAction="http://tempuri.org/IUser/bindOrganization" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOmniclassTypes">
+      <soap:operation soapAction="http://tempuri.org/IUser/GetOmniclassTypes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="get_omniclass_type_for_user_organization">
+      <soap:operation soapAction="http://tempuri.org/IUser/get_omniclass_type_for_user_organization" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteUser">
+      <soap:operation soapAction="http://tempuri.org/IUser/DeleteUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSettingsMenuItemsForUser">
+      <soap:operation soapAction="http://tempuri.org/IUser/GetSettingsMenuItemsForUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getUserAddress">
+      <soap:operation soapAction="http://tempuri.org/IUser/getUserAddress" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateUserManufacturer">
+      <soap:operation soapAction="http://tempuri.org/IUser/UpdateUserManufacturer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BindUserViewer">
+      <soap:operation soapAction="http://tempuri.org/IUser/BindUserViewer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="get_user_details_from_username">
+      <soap:operation soapAction="http://tempuri.org/IUser/get_user_details_from_username" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="proc_enable_user">
+      <soap:operation soapAction="http://tempuri.org/IUser/proc_enable_user" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="proc_get_recent_data">
+      <soap:operation soapAction="http://tempuri.org/IUser/proc_get_recent_data" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTimeZones">
+      <soap:operation soapAction="http://tempuri.org/IUser/GetTimeZones" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTimeZoneInfo">
+      <soap:operation soapAction="http://tempuri.org/IUser/GetTimeZoneInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSystemRoles_PM">
+      <soap:operation soapAction="http://tempuri.org/IUser/GetSystemRoles_PM" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckEcoDomusUser">
+      <soap:operation soapAction="http://tempuri.org/IUser/CheckEcoDomusUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRecentData">
+      <soap:operation soapAction="http://tempuri.org/IUser/GetRecentData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertUpdateRecentEntities">
+      <soap:operation soapAction="http://tempuri.org/IUser/InsertUpdateRecentEntities" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="User">
+    <wsdl:port name="BasicHttpBinding_IUser" binding="tns:BasicHttpBinding_IUser">
+      <soap:address location="http://services.ecodomus.com/CentralPM/User.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Systems" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:4444/Client WCF/Systems.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:4444/Client WCF/Systems.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:4444/Client WCF/Systems.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/EcoDomus.Systems" />
+      <xsd:import schemaLocation="http://localhost:4444/Client WCF/Systems.svc?xsd=xsd3" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ISystems_GetSystems_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSystems" />
+  </wsdl:message>
+  <wsdl:message name="ISystems_GetSystems_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSystemsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISystems_GetSystemProfile_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSystemProfile" />
+  </wsdl:message>
+  <wsdl:message name="ISystems_GetSystemProfile_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSystemProfileResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISystems_InsertUpdateSystem_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertUpdateSystem" />
+  </wsdl:message>
+  <wsdl:message name="ISystems_InsertUpdateSystem_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertUpdateSystemResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISystems_GetSubSystems_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSubSystems" />
+  </wsdl:message>
+  <wsdl:message name="ISystems_GetSubSystems_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSubSystemsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISystems_GetSubSystemsToAssign_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSubSystemsToAssign" />
+  </wsdl:message>
+  <wsdl:message name="ISystems_GetSubSystemsToAssign_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSubSystemsToAssignResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISystems_AssignSubSystems_InputMessage">
+    <wsdl:part name="parameters" element="tns:AssignSubSystems" />
+  </wsdl:message>
+  <wsdl:message name="ISystems_AssignSubSystems_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AssignSubSystemsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISystems_UnassignSubSystems_InputMessage">
+    <wsdl:part name="parameters" element="tns:UnassignSubSystems" />
+  </wsdl:message>
+  <wsdl:message name="ISystems_UnassignSubSystems_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UnassignSubSystemsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISystems_GetMenuForSystem_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMenuForSystem" />
+  </wsdl:message>
+  <wsdl:message name="ISystems_GetMenuForSystem_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMenuForSystemResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISystems_DeleteSystems_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteSystems" />
+  </wsdl:message>
+  <wsdl:message name="ISystems_DeleteSystems_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteSystemsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISystems_GetSubSystemsToAssign_underproject_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSubSystemsToAssign_underproject" />
+  </wsdl:message>
+  <wsdl:message name="ISystems_GetSubSystemsToAssign_underproject_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSubSystemsToAssign_underprojectResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISystems_GetParentSystem_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetParentSystem" />
+  </wsdl:message>
+  <wsdl:message name="ISystems_GetParentSystem_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetParentSystemResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ISystems">
+    <wsdl:operation name="GetSystems">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISystems/GetSystems" message="tns:ISystems_GetSystems_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISystems/GetSystemsResponse" message="tns:ISystems_GetSystems_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSystemProfile">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISystems/GetSystemProfile" message="tns:ISystems_GetSystemProfile_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISystems/GetSystemProfileResponse" message="tns:ISystems_GetSystemProfile_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertUpdateSystem">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISystems/InsertUpdateSystem" message="tns:ISystems_InsertUpdateSystem_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISystems/InsertUpdateSystemResponse" message="tns:ISystems_InsertUpdateSystem_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSubSystems">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISystems/GetSubSystems" message="tns:ISystems_GetSubSystems_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISystems/GetSubSystemsResponse" message="tns:ISystems_GetSubSystems_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSubSystemsToAssign">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISystems/GetSubSystemsToAssign" message="tns:ISystems_GetSubSystemsToAssign_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISystems/GetSubSystemsToAssignResponse" message="tns:ISystems_GetSubSystemsToAssign_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AssignSubSystems">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISystems/AssignSubSystems" message="tns:ISystems_AssignSubSystems_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISystems/AssignSubSystemsResponse" message="tns:ISystems_AssignSubSystems_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UnassignSubSystems">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISystems/UnassignSubSystems" message="tns:ISystems_UnassignSubSystems_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISystems/UnassignSubSystemsResponse" message="tns:ISystems_UnassignSubSystems_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMenuForSystem">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISystems/GetMenuForSystem" message="tns:ISystems_GetMenuForSystem_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISystems/GetMenuForSystemResponse" message="tns:ISystems_GetMenuForSystem_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteSystems">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISystems/DeleteSystems" message="tns:ISystems_DeleteSystems_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISystems/DeleteSystemsResponse" message="tns:ISystems_DeleteSystems_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSubSystemsToAssign_underproject">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISystems/GetSubSystemsToAssign_underproject" message="tns:ISystems_GetSubSystemsToAssign_underproject_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISystems/GetSubSystemsToAssign_underprojectResponse" message="tns:ISystems_GetSubSystemsToAssign_underproject_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetParentSystem">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISystems/GetParentSystem" message="tns:ISystems_GetParentSystem_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISystems/GetParentSystemResponse" message="tns:ISystems_GetParentSystem_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_ISystems" type="tns:ISystems">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetSystems">
+      <soap:operation soapAction="http://tempuri.org/ISystems/GetSystems" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSystemProfile">
+      <soap:operation soapAction="http://tempuri.org/ISystems/GetSystemProfile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertUpdateSystem">
+      <soap:operation soapAction="http://tempuri.org/ISystems/InsertUpdateSystem" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSubSystems">
+      <soap:operation soapAction="http://tempuri.org/ISystems/GetSubSystems" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSubSystemsToAssign">
+      <soap:operation soapAction="http://tempuri.org/ISystems/GetSubSystemsToAssign" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AssignSubSystems">
+      <soap:operation soapAction="http://tempuri.org/ISystems/AssignSubSystems" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UnassignSubSystems">
+      <soap:operation soapAction="http://tempuri.org/ISystems/UnassignSubSystems" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMenuForSystem">
+      <soap:operation soapAction="http://tempuri.org/ISystems/GetMenuForSystem" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteSystems">
+      <soap:operation soapAction="http://tempuri.org/ISystems/DeleteSystems" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSubSystemsToAssign_underproject">
+      <soap:operation soapAction="http://tempuri.org/ISystems/GetSubSystemsToAssign_underproject" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetParentSystem">
+      <soap:operation soapAction="http://tempuri.org/ISystems/GetParentSystem" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Systems">
+    <wsdl:port name="BasicHttpBinding_ISystems" binding="tns:BasicHttpBinding_ISystems">
+      <soap:address location="http://localhost:4444/Client%20WCF/Systems.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

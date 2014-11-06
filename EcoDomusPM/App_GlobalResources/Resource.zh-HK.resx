@@ -1,0 +1,3111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="BIM_Model_Server" xml:space="preserve">
+    <value>BIM模型服务器</value>
+  </data>
+  <data name="ID" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="Omni_Class_Type" xml:space="preserve">
+    <value>OmniClass 类型</value>
+  </data>
+  <data name="Uniformat" xml:space="preserve">
+    <value>Uniformat</value>
+  </data>
+  <data name="UOM" xml:space="preserve">
+    <value>UOM</value>
+  </data>
+  <data name="UOM_Mapping" xml:space="preserve">
+    <value>UOM映射</value>
+  </data>
+  <data name="Save_Hierarchy" xml:space="preserve">
+    <value>保存层级</value>
+  </data>
+  <data name="Save_Document" xml:space="preserve">
+    <value>保存文档</value>
+  </data>
+  <data name="Save_Impact" xml:space="preserve">
+    <value>保存影响</value>
+  </data>
+  <data name="Edit_Location_Hierarchy" xml:space="preserve">
+    <value>编辑地理空间层级</value>
+  </data>
+  <data name="Hierarchy" xml:space="preserve">
+    <value>层级</value>
+  </data>
+  <data name="Find_Location" xml:space="preserve">
+    <value>查找地点</value>
+  </data>
+  <data name="Find_Asset" xml:space="preserve">
+    <value>查找资产</value>
+  </data>
+  <data name="Product" xml:space="preserve">
+    <value>产品</value>
+  </data>
+  <data name="Product_Manufacturer" xml:space="preserve">
+    <value>产品供应商</value>
+  </data>
+  <data name="Product_Description" xml:space="preserve">
+    <value>产品描述</value>
+  </data>
+  <data name="Product_Name" xml:space="preserve">
+    <value>产品名称</value>
+  </data>
+  <data name="City" xml:space="preserve">
+    <value>城市</value>
+  </data>
+  <data name="Request_Pending" xml:space="preserve">
+    <value>待定的请求</value>
+  </data>
+  <data name="Unit" xml:space="preserve">
+    <value>单位</value>
+  </data>
+  <data name="Export" xml:space="preserve">
+    <value>导出</value>
+  </data>
+  <data name="Export_COBie_File" xml:space="preserve">
+    <value>导出COBie文件</value>
+  </data>
+  <data name="Navigation" xml:space="preserve">
+    <value>导航</value>
+  </data>
+  <data name="Import" xml:space="preserve">
+    <value>导入</value>
+  </data>
+  <data name="To" xml:space="preserve">
+    <value>到</value>
+  </data>
+  <data name="Log_In" xml:space="preserve">
+    <value>登录</value>
+  </data>
+  <data name="Levels" xml:space="preserve">
+    <value>等级</value>
+  </data>
+  <data name="Locations" xml:space="preserve">
+    <value>地点</value>
+  </data>
+  <data name="Location_Hierarchy" xml:space="preserve">
+    <value>地理空间层级结构</value>
+  </data>
+  <data name="Locations_Hierarchy" xml:space="preserve">
+    <value>地理空间层级结构</value>
+  </data>
+  <data name="Phone_Number" xml:space="preserve">
+    <value>电话号码</value>
+  </data>
+  <data name="Custom_Hierarchy_Name" xml:space="preserve">
+    <value>定制层级名称</value>
+  </data>
+  <data name="Custom_Data" xml:space="preserve">
+    <value>定制数据</value>
+  </data>
+  <data name="Short_Name" xml:space="preserve">
+    <value>短名称</value>
+  </data>
+  <data name="Back" xml:space="preserve">
+    <value>返回</value>
+  </data>
+  <data name="Assign_DesignerContractor" xml:space="preserve">
+    <value>指定设计师/承包商</value>
+  </data>
+  <data name="Assign_Product" xml:space="preserve">
+    <value>分配产品</value>
+  </data>
+  <data name="Assign_To" xml:space="preserve">
+    <value>分配到</value>
+  </data>
+  <data name="Assigned_To" xml:space="preserve">
+    <value>分配到</value>
+  </data>
+  <data name="Assign_Space" xml:space="preserve">
+    <value>分配空间</value>
+  </data>
+  <data name="Assign_Facility" xml:space="preserve">
+    <value>分配设施</value>
+  </data>
+  <data name="Assign_System" xml:space="preserve">
+    <value>分配系统</value>
+  </data>
+  <data name="Assign_Asset" xml:space="preserve">
+    <value>分配资产</value>
+  </data>
+  <data name="Service_Client" xml:space="preserve">
+    <value>服务客户</value>
+  </data>
+  <data name="Service_Authentication_URL" xml:space="preserve">
+    <value>服务身份验证网址</value>
+  </data>
+  <data name="Service_URL" xml:space="preserve">
+    <value>服务网址</value>
+  </data>
+  <data name="Parent_System" xml:space="preserve">
+    <value>父系统</value>
+  </data>
+  <data name="Update" xml:space="preserve">
+    <value>更新</value>
+  </data>
+  <data name="Work_Order_No" xml:space="preserve">
+    <value>工作单编号</value>
+  </data>
+  <data name="Work_Order_Number" xml:space="preserve">
+    <value>工作单编号</value>
+  </data>
+  <data name="Work_Order_Profile" xml:space="preserve">
+    <value>工作单概要</value>
+  </data>
+  <data name="Manufacturer_Name" xml:space="preserve">
+    <value>供应商名称</value>
+  </data>
+  <data name="Manufacturer_Mapping" xml:space="preserve">
+    <value>供应商映射</value>
+  </data>
+  <data name="Component_Name" xml:space="preserve">
+    <value>构件名称</value>
+  </data>
+  <data name="Scheduler" xml:space="preserve">
+    <value>计划员</value>
+  </data>
+  <data name="Inspections" xml:space="preserve">
+    <value>检查</value>
+  </data>
+  <data name="Inspection_Profile" xml:space="preserve">
+    <value>检查概要</value>
+  </data>
+  <data name="Facilities" xml:space="preserve">
+    <value>建筑设施</value>
+  </data>
+  <data name="Facility_Mapping" xml:space="preserve">
+    <value>建筑设施映射</value>
+  </data>
+  <data name="Accept" xml:space="preserve">
+    <value>接受</value>
+  </data>
+  <data name="End_Date" xml:space="preserve">
+    <value>结束日期</value>
+  </data>
+  <data name="Altitude" xml:space="preserve">
+    <value>经度</value>
+  </data>
+  <data name="Deny" xml:space="preserve">
+    <value>拒绝</value>
+  </data>
+  <data name="Client_Name" xml:space="preserve">
+    <value>客户名称</value>
+  </data>
+  <data name="Space" xml:space="preserve">
+    <value>空间</value>
+  </data>
+  <data name="Spaces" xml:space="preserve">
+    <value>空间</value>
+  </data>
+  <data name="Space_Type" xml:space="preserve">
+    <value>空间类型</value>
+  </data>
+  <data name="Space_Names" xml:space="preserve">
+    <value>空间名称</value>
+  </data>
+  <data name="Type_Profile" xml:space="preserve">
+    <value>类型概要</value>
+  </data>
+  <data name="Connection_String" xml:space="preserve">
+    <value>联机字符串</value>
+  </data>
+  <data name="Links" xml:space="preserve">
+    <value>链接</value>
+  </data>
+  <data name="Floor" xml:space="preserve">
+    <value>楼层</value>
+  </data>
+  <data name="Floors" xml:space="preserve">
+    <value>楼层</value>
+  </data>
+  <data name="Floor_Profile" xml:space="preserve">
+    <value>楼层概要</value>
+  </data>
+  <data name="Floor_Name" xml:space="preserve">
+    <value>楼层名称</value>
+  </data>
+  <data name="Floor_Name_Grid" xml:space="preserve">
+    <value>楼层名称列表</value>
+  </data>
+  <data name="Building_Automation_System_Server" xml:space="preserve">
+    <value>楼宇自控系统服务器</value>
+  </data>
+  <data name="Area" xml:space="preserve">
+    <value>面积</value>
+  </data>
+  <data name="Configuration_Name" xml:space="preserve">
+    <value>配置名称</value>
+  </data>
+  <data name="Average_PPC" xml:space="preserve">
+    <value>平均PPC</value>
+  </data>
+  <data name="Weather_Station" xml:space="preserve">
+    <value>气象站</value>
+  </data>
+  <data name="Station_Name" xml:space="preserve">
+    <value>气象站名称</value>
+  </data>
+  <data name="Request_To_Add_New_Organization" xml:space="preserve">
+    <value>请求添加新的组织机构</value>
+  </data>
+  <data name="Zone" xml:space="preserve">
+    <value>区域</value>
+  </data>
+  <data name="Zone_Profile" xml:space="preserve">
+    <value>区域概要</value>
+  </data>
+  <data name="Zone_Name" xml:space="preserve">
+    <value>区域名称</value>
+  </data>
+  <data name="Zone_Name_Grid" xml:space="preserve">
+    <value>区域名称列表</value>
+  </data>
+  <data name="Ok" xml:space="preserve">
+    <value>确认</value>
+  </data>
+  <data name="Day" xml:space="preserve">
+    <value>日期</value>
+  </data>
+  <data name="Last_Sync_Date" xml:space="preserve">
+    <value>上次更新日期</value>
+  </data>
+  <data name="Settings" xml:space="preserve">
+    <value>设置</value>
+  </data>
+  <data name="Setup_Sync_Wizard" xml:space="preserve">
+    <value>设置同步步骤</value>
+  </data>
+  <data name="Setup_Sync_Configuration" xml:space="preserve">
+    <value>设置同步配置</value>
+  </data>
+  <data name="State" xml:space="preserve">
+    <value>省份</value>
+  </data>
+  <data name="Items_Remaining" xml:space="preserve">
+    <value>剩下的条目</value>
+  </data>
+  <data name="Items_Failed" xml:space="preserve">
+    <value>失败的条目</value>
+  </data>
+  <data name="Entity" xml:space="preserve">
+    <value>实体</value>
+  </data>
+  <data name="Attribute" xml:space="preserve">
+    <value>属性</value>
+  </data>
+  <data name="Attributes" xml:space="preserve">
+    <value>属性</value>
+  </data>
+  <data name="Attribute_Template" xml:space="preserve">
+    <value>属性模板</value>
+  </data>
+  <data name="Database_Name" xml:space="preserve">
+    <value>数据库名称</value>
+  </data>
+  <data name="Data_Provider" xml:space="preserve">
+    <value>数据提供者</value>
+  </data>
+  <data name="Replace" xml:space="preserve">
+    <value>替换</value>
+  </data>
+  <data name="Add_BAS_Server" xml:space="preserve">
+    <value>添加BA系统服务器</value>
+  </data>
+  <data name="Add_Edit_Custom_Data" xml:space="preserve">
+    <value>添加编辑定制化数据</value>
+  </data>
+  <data name="Add_Hierarchy" xml:space="preserve">
+    <value>添加层级</value>
+  </data>
+  <data name="Add_Product" xml:space="preserve">
+    <value>添加产品</value>
+  </data>
+  <data name="Add_Product_Attribute" xml:space="preserve">
+    <value>添加产品属性</value>
+  </data>
+  <data name="Add_Custom_Data" xml:space="preserve">
+    <value>添加定制化数据</value>
+  </data>
+  <data name="Add_Work_Order" xml:space="preserve">
+    <value>添加工作单</value>
+  </data>
+  <data name="Add_Inspection" xml:space="preserve">
+    <value>添加检查</value>
+  </data>
+  <data name="Add_Configuration" xml:space="preserve">
+    <value>添加配置</value>
+  </data>
+  <data name="Add_Weather_Station" xml:space="preserve">
+    <value>添加气象站</value>
+  </data>
+  <data name="Add_System" xml:space="preserve">
+    <value>添加系统</value>
+  </data>
+  <data name="Add_New" xml:space="preserve">
+    <value>添加新的</value>
+  </data>
+  <data name="Add_New_City" xml:space="preserve">
+    <value>添加新的城市</value>
+  </data>
+  <data name="Add_New_Country" xml:space="preserve">
+    <value>添加新的地区</value>
+  </data>
+  <data name="Add_New_Client" xml:space="preserve">
+    <value>添加新的客户</value>
+  </data>
+  <data name="Add_New_State" xml:space="preserve">
+    <value>添加新的省份</value>
+  </data>
+  <data name="Add_New_Impact" xml:space="preserve">
+    <value>添加新的影响</value>
+  </data>
+  <data name="Add_Impact" xml:space="preserve">
+    <value>添加影响</value>
+  </data>
+  <data name="Add_Manufacturer" xml:space="preserve">
+    <value>添加制造商</value>
+  </data>
+  <data name="Add_Asset" xml:space="preserve">
+    <value>添加资产</value>
+  </data>
+  <data name="Condition_type" xml:space="preserve">
+    <value>条件类型</value>
+  </data>
+  <data name="Synchronize" xml:space="preserve">
+    <value>同步</value>
+  </data>
+  <data name="Sync_Profile" xml:space="preserve">
+    <value>同步概要</value>
+  </data>
+  <data name="Synchronization_Result_For" xml:space="preserve">
+    <value>同步结果自</value>
+  </data>
+  <data name="Synchronization_Type" xml:space="preserve">
+    <value>同步类型</value>
+  </data>
+  <data name="Sync_Assets" xml:space="preserve">
+    <value>同步资产</value>
+  </data>
+  <data name="Image" xml:space="preserve">
+    <value>图片</value>
+  </data>
+  <data name="External_System" xml:space="preserve">
+    <value>外部系统</value>
+  </data>
+  <data name="External_System_Integration" xml:space="preserve">
+    <value>外部系统集成</value>
+  </data>
+  <data name="External_System_Name" xml:space="preserve">
+    <value>外部系统名称</value>
+  </data>
+  <data name="Ext_System_Facility" xml:space="preserve">
+    <value>外部系统设施</value>
+  </data>
+  <data name="Ext_System_Site" xml:space="preserve">
+    <value>外部系统站点</value>
+  </data>
+  <data name="Items_Completed" xml:space="preserve">
+    <value>完成的条目</value>
+  </data>
+  <data name="URL" xml:space="preserve">
+    <value>网址</value>
+  </data>
+  <data name="Latitude" xml:space="preserve">
+    <value>纬度</value>
+  </data>
+  <data name="Longitude" xml:space="preserve">
+    <value>纬度</value>
+  </data>
+  <data name="Unassign_System" xml:space="preserve">
+    <value>未分配的系统</value>
+  </data>
+  <data name="Unassign_Asset" xml:space="preserve">
+    <value>未分配的资产</value>
+  </data>
+  <data name="Unassign_Subsystem" xml:space="preserve">
+    <value>未分配的子系统</value>
+  </data>
+  <data name="filesize" xml:space="preserve">
+    <value>文件尺寸</value>
+  </data>
+  <data name="Issue_Report" xml:space="preserve">
+    <value>问题事项报告</value>
+  </data>
+  <data name="Issue_Profile" xml:space="preserve">
+    <value>问题事项概要</value>
+  </data>
+  <data name="Issue_Status" xml:space="preserve">
+    <value>问题事项状态</value>
+  </data>
+  <data name="System_Name" xml:space="preserve">
+    <value>系统名称</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>下一步</value>
+  </data>
+  <data name="Project_Profile" xml:space="preserve">
+    <value>项目概要</value>
+  </data>
+  <data name="Protocol" xml:space="preserve">
+    <value>协议</value>
+  </data>
+  <data name="Select_Facility" xml:space="preserve">
+    <value>选择建筑设施</value>
+  </data>
+  <data name="Server_Name" xml:space="preserve">
+    <value>选择名称</value>
+  </data>
+  <data name="Select_Date" xml:space="preserve">
+    <value>选择日期</value>
+  </data>
+  <data name="Select_Time" xml:space="preserve">
+    <value>选择时间</value>
+  </data>
+  <data name="Resolved" xml:space="preserve">
+    <value>已解决</value>
+  </data>
+  <data name="Impacts" xml:space="preserve">
+    <value>影响</value>
+  </data>
+  <data name="Map" xml:space="preserve">
+    <value>映射</value>
+  </data>
+  <data name="Map_Integration" xml:space="preserve">
+    <value>映射集成</value>
+  </data>
+  <data name="User" xml:space="preserve">
+    <value>用户</value>
+  </data>
+  <data name="User_Profile" xml:space="preserve">
+    <value>用户概要</value>
+  </data>
+  <data name="Username" xml:space="preserve">
+    <value>用户名</value>
+  </data>
+  <data name="User_Name" xml:space="preserve">
+    <value>用户名称</value>
+  </data>
+  <data name="Postal_Code_Zip" xml:space="preserve">
+    <value>邮政编码</value>
+  </data>
+  <data name="Language" xml:space="preserve">
+    <value>语言</value>
+  </data>
+  <data name="Months" xml:space="preserve">
+    <value>月份</value>
+  </data>
+  <data name="Long_Name" xml:space="preserve">
+    <value>长名称</value>
+  </data>
+  <data name="Rename" xml:space="preserve">
+    <value>重命名</value>
+  </data>
+  <data name="Tuesday" xml:space="preserve">
+    <value>周二</value>
+  </data>
+  <data name="Saturday" xml:space="preserve">
+    <value>周六</value>
+  </data>
+  <data name="Sunday" xml:space="preserve">
+    <value>周日</value>
+  </data>
+  <data name="Wednesday" xml:space="preserve">
+    <value>周三</value>
+  </data>
+  <data name="Thursday" xml:space="preserve">
+    <value>周四</value>
+  </data>
+  <data name="Friday" xml:space="preserve">
+    <value>周五</value>
+  </data>
+  <data name="Monday" xml:space="preserve">
+    <value>周一</value>
+  </data>
+  <data name="Major" xml:space="preserve">
+    <value>主要的</value>
+  </data>
+  <data name="Asset" xml:space="preserve">
+    <value>资产</value>
+  </data>
+  <data name="Assets" xml:space="preserve">
+    <value>资产</value>
+  </data>
+  <data name="Asset_Identifier" xml:space="preserve">
+    <value>资产标识符</value>
+  </data>
+  <data name="Asset_Profile" xml:space="preserve">
+    <value>资产概要</value>
+  </data>
+  <data name="Asset_Name" xml:space="preserve">
+    <value>资产名称</value>
+  </data>
+  <data name="Asset_Condition_Report" xml:space="preserve">
+    <value>资产条件报告</value>
+  </data>
+  <data name="Total_Exported_Data_Transfer" xml:space="preserve">
+    <value>总计导出的数据转换</value>
+  </data>
+  <data name="Total_Imported_Data_Transfer" xml:space="preserve">
+    <value>总计导入的数据转换</value>
+  </data>
+  <data name="Group" xml:space="preserve">
+    <value>组</value>
+  </data>
+  <data name="Component" xml:space="preserve">
+    <value>组件</value>
+  </data>
+  <data name="Organization_Acceptance" xml:space="preserve">
+    <value>组织机构接受</value>
+  </data>
+  <data name="Organization_Name" xml:space="preserve">
+    <value>组织机构名称</value>
+  </data>
+  <data name="Recent" xml:space="preserve">
+    <value>最近的</value>
+  </data>
+  <data name="Add_Edit_Required_Attributes" xml:space="preserve">
+    <value>添加/编辑所需的属性</value>
+  </data>
+  <data name="Add_Naming_Convention" xml:space="preserve">
+    <value>添加命名约定</value>
+  </data>
+  <data name="Add_Required_Attributes" xml:space="preserve">
+    <value>添加所需的属性</value>
+  </data>
+  <data name="Add_Required_Documents" xml:space="preserve">
+    <value>添加所需的文档</value>
+  </data>
+  <data name="Add_Subsystems" xml:space="preserve">
+    <value>添加子系统</value>
+  </data>
+  <data name="Add_Template" xml:space="preserve">
+    <value>添加模板</value>
+  </data>
+  <data name="Address1" xml:space="preserve">
+    <value>地址1</value>
+  </data>
+  <data name="Address2" xml:space="preserve">
+    <value>地址2</value>
+  </data>
+  <data name="Assign_Component" xml:space="preserve">
+    <value>指定组件</value>
+  </data>
+  <data name="Assign_Contacts_to_Project" xml:space="preserve">
+    <value>指定联系人到项目</value>
+  </data>
+  <data name="Assign_Manufacturer" xml:space="preserve">
+    <value>指定生产商</value>
+  </data>
+  <data name="Assign_MasterFormat" xml:space="preserve">
+    <value>指定MasterFormat</value>
+  </data>
+  <data name="Assign_Project_roles_to_Contacts" xml:space="preserve">
+    <value>指定项目角色到联系人</value>
+  </data>
+  <data name="Assign_Subsystem" xml:space="preserve">
+    <value>指定子系统</value>
+  </data>
+  <data name="Assign_UniFormat" xml:space="preserve">
+    <value>指定UniFormat</value>
+  </data>
+  <data name="Browse_By_Manufacturer" xml:space="preserve">
+    <value>按生产商浏览</value>
+  </data>
+  <data name="City_State_1" xml:space="preserve">
+    <value>城市 , 省份</value>
+  </data>
+  <data name="COBie_File_Export" xml:space="preserve">
+    <value>COBie标准文件导出</value>
+  </data>
+  <data name="Cobie_File_Import" xml:space="preserve">
+    <value>COBie标准文件导入</value>
+  </data>
+  <data name="Component_Profile" xml:space="preserve">
+    <value>组件概要</value>
+  </data>
+  <data name="Created_By_1" xml:space="preserve">
+    <value>创建自</value>
+  </data>
+  <data name="Created_On_1" xml:space="preserve">
+    <value>创建日期</value>
+  </data>
+  <data name="Custom_Name" xml:space="preserve">
+    <value>定制名称</value>
+  </data>
+  <data name="Display_Columns" xml:space="preserve">
+    <value>显示列</value>
+  </data>
+  <data name="Documnet_type" xml:space="preserve">
+    <value>文档类型</value>
+  </data>
+  <data name="Edit_Designer_Contractor" xml:space="preserve">
+    <value>编辑设计公司/承包商</value>
+  </data>
+  <data name="Edit_Impact" xml:space="preserve">
+    <value>编辑影响</value>
+  </data>
+  <data name="Edit_OmniClass_Masterformat_Uniformat" xml:space="preserve">
+    <value>编辑OmniClass/MasterFormat/UniFormat</value>
+  </data>
+  <data name="Entity_Name" xml:space="preserve">
+    <value>实体名称</value>
+  </data>
+  <data name="Export_Contact" xml:space="preserve">
+    <value>导出联系人</value>
+  </data>
+  <data name="ExportedBy" xml:space="preserve">
+    <value>导出自</value>
+  </data>
+  <data name="ExportedOn" xml:space="preserve">
+    <value>导出日期</value>
+  </data>
+  <data name="File_Name" xml:space="preserve">
+    <value>文件名</value>
+  </data>
+  <data name="filepath" xml:space="preserve">
+    <value>文件路径</value>
+  </data>
+  <data name="Get_Location" xml:space="preserve">
+    <value>获取地点</value>
+  </data>
+  <data name="Help" xml:space="preserve">
+    <value>帮助</value>
+  </data>
+  <data name="Imported_by" xml:space="preserve">
+    <value>导入自</value>
+  </data>
+  <data name="Imported_Files" xml:space="preserve">
+    <value>导入的文件</value>
+  </data>
+  <data name="Imported_on" xml:space="preserve">
+    <value>导入日期</value>
+  </data>
+  <data name="Logout" xml:space="preserve">
+    <value>退出登录</value>
+  </data>
+  <data name="Masterformat" xml:space="preserve">
+    <value>MasterFormat</value>
+  </data>
+  <data name="message" xml:space="preserve">
+    <value>消息</value>
+  </data>
+  <data name="Missing_Attribute" xml:space="preserve">
+    <value>丢失的属性</value>
+  </data>
+  <data name="Missing_Attributes_Report" xml:space="preserve">
+    <value>丢失属性报表</value>
+  </data>
+  <data name="OmniClas_2010" xml:space="preserve">
+    <value>OmniClass 2010</value>
+  </data>
+  <data name="OmniClass_2006" xml:space="preserve">
+    <value>OmniClass 2006</value>
+  </data>
+  <data name="Phase_Name" xml:space="preserve">
+    <value>阶段名称</value>
+  </data>
+  <data name="Project" xml:space="preserve">
+    <value>项目</value>
+  </data>
+  <data name="Recent_Projects" xml:space="preserve">
+    <value>最近打开的项目</value>
+  </data>
+  <data name="Refresh" xml:space="preserve">
+    <value>更新</value>
+  </data>
+  <data name="Select_Add" xml:space="preserve">
+    <value>选择/添加</value>
+  </data>
+  <data name="Select_Entity" xml:space="preserve">
+    <value>选择实体</value>
+  </data>
+  <data name="Select_Master_ormat" xml:space="preserve">
+    <value>选择MasterFormat</value>
+  </data>
+  <data name="Select_Uni_Format" xml:space="preserve">
+    <value>选择UniFormat</value>
+  </data>
+  <data name="Select_Uniformat" xml:space="preserve">
+    <value>选择UniFormat</value>
+  </data>
+  <data name="Selected_Masterformat" xml:space="preserve">
+    <value>已选择的MasterFormat</value>
+  </data>
+  <data name="Standard" xml:space="preserve">
+    <value>标准</value>
+  </data>
+  <data name="Template_Name" xml:space="preserve">
+    <value>模板名称</value>
+  </data>
+  <data name="Unassign_Component" xml:space="preserve">
+    <value>未指定的组件</value>
+  </data>
+  <data name="Upload_Document" xml:space="preserve">
+    <value>上传文档</value>
+  </data>
+  <data name="Uploaded_documents" xml:space="preserve">
+    <value>已上传的文档</value>
+  </data>
+  <data name="Version" xml:space="preserve">
+    <value>版本</value>
+  </data>
+  <data name="Versioning" xml:space="preserve">
+    <value>版本控制</value>
+  </data>
+  <data name="Zip_Postal_Code" xml:space="preserve">
+    <value>邮编/邮政编码</value>
+  </data>
+  <data name="BAS_Information" xml:space="preserve">
+    <value>BA系统信息</value>
+  </data>
+  <data name="Link_to_Data" xml:space="preserve">
+    <value>链接到数据</value>
+  </data>
+  <data name="Properties" xml:space="preserve">
+    <value>属性</value>
+  </data>
+  <data name="Room_Data_Sheet" xml:space="preserve">
+    <value>房间数据表</value>
+  </data>
+  <data name="Search_Asset" xml:space="preserve">
+    <value>搜索资产</value>
+  </data>
+  <data name="Search_Space" xml:space="preserve">
+    <value>搜索空间</value>
+  </data>
+  <data name="System_Asset" xml:space="preserve">
+    <value>系统资产</value>
+  </data>
+  <data name="Viewpoints" xml:space="preserve">
+    <value>视点</value>
+  </data>
+  <data name="BASServer" xml:space="preserve">
+    <value>BA系统服务器</value>
+  </data>
+  <data name="BIM_Server" xml:space="preserve">
+    <value>BIM模型服务器</value>
+  </data>
+  <data name="Custom Reports" xml:space="preserve">
+    <value>自定义报表</value>
+  </data>
+  <data name="Energy_Model" xml:space="preserve">
+    <value>能源模型</value>
+  </data>
+  <data name="Find_Data_Point" xml:space="preserve">
+    <value>查找数据点位</value>
+  </data>
+  <data name="Reports" xml:space="preserve">
+    <value>报表</value>
+  </data>
+  <data name="Service_History" xml:space="preserve">
+    <value>服务历史</value>
+  </data>
+  <data name="Sustainability" xml:space="preserve">
+    <value>可持续性</value>
+  </data>
+  <data name="Link_to_Asset" xml:space="preserve">
+    <value>链接到资产</value>
+  </data>
+  <data name="BAS_Attribute_History" xml:space="preserve">
+    <value>BA系统属性历史</value>
+  </data>
+  <data name="Parameter" xml:space="preserve">
+    <value>参数</value>
+  </data>
+  <data name="group_name" xml:space="preserve">
+    <value>组名称</value>
+  </data>
+  <data name="tbl_name" xml:space="preserve">
+    <value>TB1名称</value>
+  </data>
+  <data name="read_only_flag" xml:space="preserve">
+    <value>只读标记</value>
+  </data>
+  <data name="Find" xml:space="preserve">
+    <value>查找</value>
+  </data>
+  <data name="View_Name" xml:space="preserve">
+    <value>视图名称</value>
+  </data>
+  <data name="Start_Date_Time" xml:space="preserve">
+    <value>开始日期时间</value>
+  </data>
+  <data name="End_Date_Time" xml:space="preserve">
+    <value>结束日期时间</value>
+  </data>
+  <data name="AttributeName" xml:space="preserve">
+    <value>属性名称</value>
+  </data>
+  <data name="Assign_Organization_To_Client" xml:space="preserve">
+    <value>分配组织机构到客户</value>
+  </data>
+  <data name="Assign_Subsystems" xml:space="preserve">
+    <value>分配子系统</value>
+  </data>
+  <data name="Client" xml:space="preserve">
+    <value>客户</value>
+  </data>
+  <data name="Clients" xml:space="preserve">
+    <value>客户</value>
+  </data>
+  <data name="Condition" xml:space="preserve">
+    <value>条件</value>
+  </data>
+  <data name="Get_Updates" xml:space="preserve">
+    <value>获取更新</value>
+  </data>
+  <data name="Login_As" xml:space="preserve">
+    <value>登录为</value>
+  </data>
+  <data name="Month" xml:space="preserve">
+    <value>月</value>
+  </data>
+  <data name="Product_Document" xml:space="preserve">
+    <value>产品文档</value>
+  </data>
+  <data name="Product_Profile" xml:space="preserve">
+    <value>产品概要</value>
+  </data>
+  <data name="ProductAttribute" xml:space="preserve">
+    <value>产品属性</value>
+  </data>
+  <data name="Show_Model" xml:space="preserve">
+    <value>显示模型</value>
+  </data>
+  <data name="Recent_Facilities" xml:space="preserve">
+    <value>最近打开的设施</value>
+  </data>
+  <data name="Organization" xml:space="preserve">
+    <value>组织机构</value>
+  </data>
+  <data name="Organizations" xml:space="preserve">
+    <value>组织机构</value>
+  </data>
+  <data name="Sub_assembly_Name" xml:space="preserve">
+    <value>子装置名称</value>
+  </data>
+  <data name="Sub_assemblies" xml:space="preserve">
+    <value>子装置</value>
+  </data>
+  <data name="Subsystem_Name" xml:space="preserve">
+    <value>子系统名称</value>
+  </data>
+  <data name="Subsystem" xml:space="preserve">
+    <value>子系统</value>
+  </data>
+  <data name="Asset_Type" xml:space="preserve">
+    <value>资产类型</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>状态</value>
+  </data>
+  <data name="Lead_Organization" xml:space="preserve">
+    <value>主导机构</value>
+  </data>
+  <data name="Weeks" xml:space="preserve">
+    <value>周</value>
+  </data>
+  <data name="State_Region" xml:space="preserve">
+    <value>州区域</value>
+  </data>
+  <data name="Replacement_Cost" xml:space="preserve">
+    <value>重置成本</value>
+  </data>
+  <data name="Reset" xml:space="preserve">
+    <value>重置</value>
+  </data>
+  <data name="Given_Name" xml:space="preserve">
+    <value>指定的名称</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>职务</value>
+  </data>
+  <data name="Value" xml:space="preserve">
+    <value>值</value>
+  </data>
+  <data name="RFI" xml:space="preserve">
+    <value>征询函</value>
+  </data>
+  <data name="Town" xml:space="preserve">
+    <value>镇</value>
+  </data>
+  <data name="Due_Date" xml:space="preserve">
+    <value>责任日期</value>
+  </data>
+  <data name="Responsible" xml:space="preserve">
+    <value>责任人</value>
+  </data>
+  <data name="Postal_Code" xml:space="preserve">
+    <value>邮政编码</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>邮箱</value>
+  </data>
+  <data name="Approval_By" xml:space="preserve">
+    <value>由谁审批</value>
+  </data>
+  <data name="User_Id" xml:space="preserve">
+    <value>用户ID编号</value>
+  </data>
+  <data name="Users" xml:space="preserve">
+    <value>用户</value>
+  </data>
+  <data name="Impact" xml:space="preserve">
+    <value>影响</value>
+  </data>
+  <data name="Selected_Master_Format" xml:space="preserve">
+    <value>已选择的MasterFormat</value>
+  </data>
+  <data name="Generated_Files" xml:space="preserve">
+    <value>已生成的文件</value>
+  </data>
+  <data name="Move_To_System" xml:space="preserve">
+    <value>移动到系统</value>
+  </data>
+  <data name="Page_Title" xml:space="preserve">
+    <value>页码名称</value>
+  </data>
+  <data name="Owner_Organization" xml:space="preserve">
+    <value>业主组织机构</value>
+  </data>
+  <data name="Owner" xml:space="preserve">
+    <value>业主</value>
+  </data>
+  <data name="Severity" xml:space="preserve">
+    <value>严重性</value>
+  </data>
+  <data name="Select_Sub_Assemblies" xml:space="preserve">
+    <value>选择子装置</value>
+  </data>
+  <data name="Select_Project_Role" xml:space="preserve">
+    <value>选择项目角色</value>
+  </data>
+  <data name="Select_File_To_Upload" xml:space="preserve">
+    <value>选择文件上传</value>
+  </data>
+  <data name="Select_File" xml:space="preserve">
+    <value>选择文件</value>
+  </data>
+  <data name="Select_Task" xml:space="preserve">
+    <value>选择任务</value>
+  </data>
+  <data name="Select_Component" xml:space="preserve">
+    <value>选择构件</value>
+  </data>
+  <data name="Select_Master_Format" xml:space="preserve">
+    <value>选择MasterFormat</value>
+  </data>
+  <data name="Select" xml:space="preserve">
+    <value>选择</value>
+  </data>
+  <data name="Serial_Number" xml:space="preserve">
+    <value>序列号</value>
+  </data>
+  <data name="Required_Documents" xml:space="preserve">
+    <value>需要的文档</value>
+  </data>
+  <data name="Required_Attributes" xml:space="preserve">
+    <value>需要的属性</value>
+  </data>
+  <data name="Demand_Response" xml:space="preserve">
+    <value>需求响应</value>
+  </data>
+  <data name="Last_Name" xml:space="preserve">
+    <value>姓</value>
+  </data>
+  <data name="Project_Data" xml:space="preserve">
+    <value>项目数据</value>
+  </data>
+  <data name="Project_Facilities" xml:space="preserve">
+    <value>项目设施</value>
+  </data>
+  <data name="Project_Name" xml:space="preserve">
+    <value>项目名称</value>
+  </data>
+  <data name="Project_Contact" xml:space="preserve">
+    <value>项目联系人</value>
+  </data>
+  <data name="Project_Role_Permission" xml:space="preserve">
+    <value>项目角色授权</value>
+  </data>
+  <data name="Project_Role" xml:space="preserve">
+    <value>项目角色</value>
+  </data>
+  <data name="Project_Roles" xml:space="preserve">
+    <value>项目角色</value>
+  </data>
+  <data name="Project_Number" xml:space="preserve">
+    <value>项目编号</value>
+  </data>
+  <data name="Project_Id" xml:space="preserve">
+    <value>项目ID编号</value>
+  </data>
+  <data name="Projects" xml:space="preserve">
+    <value>项目</value>
+  </data>
+  <data name="Linear_Units" xml:space="preserve">
+    <value>线性单位</value>
+  </data>
+  <data name="Constraint_Log" xml:space="preserve">
+    <value>限制条件日志</value>
+  </data>
+  <data name="Constraint" xml:space="preserve">
+    <value>限制条件</value>
+  </data>
+  <data name="Constraints" xml:space="preserve">
+    <value>限制条件</value>
+  </data>
+  <data name="Show_All_Issues" xml:space="preserve">
+    <value>显示全部问题事项</value>
+  </data>
+  <data name="Show_All" xml:space="preserve">
+    <value>显示全部</value>
+  </data>
+  <data name="Show_Report" xml:space="preserve">
+    <value>显示报告</value>
+  </data>
+  <data name="Show" xml:space="preserve">
+    <value>显示</value>
+  </data>
+  <data name="Download_Sample_COBie_File" xml:space="preserve">
+    <value>下载COBie样板文件</value>
+  </data>
+  <data name="Download" xml:space="preserve">
+    <value>下载</value>
+  </data>
+  <data name="Details" xml:space="preserve">
+    <value>细节</value>
+  </data>
+  <data name="System_File_Name" xml:space="preserve">
+    <value>系统文件名称</value>
+  </data>
+  <data name="System_Role" xml:space="preserve">
+    <value>系统角色</value>
+  </data>
+  <data name="System_Profile" xml:space="preserve">
+    <value>系统概要</value>
+  </data>
+  <data name="System" xml:space="preserve">
+    <value>系统</value>
+  </data>
+  <data name="Systems" xml:space="preserve">
+    <value>系统</value>
+  </data>
+  <data name="No_Of_Users" xml:space="preserve">
+    <value>无用户</value>
+  </data>
+  <data name="No_Filter" xml:space="preserve">
+    <value>无过滤器</value>
+  </data>
+  <data name="My_Current_Week_Tasks" xml:space="preserve">
+    <value>我的周工作任务</value>
+  </data>
+  <data name="All_My_Task" xml:space="preserve">
+    <value>我的所有任务</value>
+  </data>
+  <data name="My_Profile" xml:space="preserve">
+    <value>我的概要</value>
+  </data>
+  <data name="Issue_Name" xml:space="preserve">
+    <value>问题事项名称</value>
+  </data>
+  <data name="Issue_Type" xml:space="preserve">
+    <value>问题事项类型</value>
+  </data>
+  <data name="Issues" xml:space="preserve">
+    <value>问题事项</value>
+  </data>
+  <data name="File_Size" xml:space="preserve">
+    <value>文件尺寸</value>
+  </data>
+  <data name="File" xml:space="preserve">
+    <value>文件</value>
+  </data>
+  <data name="Document_Name" xml:space="preserve">
+    <value>文档名称</value>
+  </data>
+  <data name="Document_Profile" xml:space="preserve">
+    <value>文档概要</value>
+  </data>
+  <data name="Document_Checklist" xml:space="preserve">
+    <value>文档检查清单</value>
+  </data>
+  <data name="Document" xml:space="preserve">
+    <value>文档</value>
+  </data>
+  <data name="Documents" xml:space="preserve">
+    <value>文档</value>
+  </data>
+  <data name="Unassigned_Items" xml:space="preserve">
+    <value>未分配的条目</value>
+  </data>
+  <data name="Unassign" xml:space="preserve">
+    <value>未分配</value>
+  </data>
+  <data name="Add_Organization_To_Project" xml:space="preserve">
+    <value>为项目添加机构</value>
+  </data>
+  <data name="Hazard" xml:space="preserve">
+    <value>危险</value>
+  </data>
+  <data name="Website" xml:space="preserve">
+    <value>网站</value>
+  </data>
+  <data name="Finish_Time" xml:space="preserve">
+    <value>完成时间</value>
+  </data>
+  <data name="Finish" xml:space="preserve">
+    <value>完成</value>
+  </data>
+  <data name="Remove" xml:space="preserve">
+    <value>退出</value>
+  </data>
+  <data name="Removed" xml:space="preserve">
+    <value>推出的</value>
+  </data>
+  <data name="Crew_Profile" xml:space="preserve">
+    <value>团队概要</value>
+  </data>
+  <data name="Crew_Leader" xml:space="preserve">
+    <value>团队负责人</value>
+  </data>
+  <data name="Crews" xml:space="preserve">
+    <value>团队</value>
+  </data>
+  <data name="Synchronization_filters" xml:space="preserve">
+    <value>同步过滤器</value>
+  </data>
+  <data name="Synchronization" xml:space="preserve">
+    <value>同步</value>
+  </data>
+  <data name="Notification_Time" xml:space="preserve">
+    <value>通知时间</value>
+  </data>
+  <data name="Notify" xml:space="preserve">
+    <value>通知</value>
+  </data>
+  <data name="Barcode" xml:space="preserve">
+    <value>条形码</value>
+  </data>
+  <data name="Add_Subsystem" xml:space="preserve">
+    <value>添加子系统</value>
+  </data>
+  <data name="Add_Constraints" xml:space="preserve">
+    <value>添加约束条件</value>
+  </data>
+  <data name="Add_New_User" xml:space="preserve">
+    <value>添加新的用户</value>
+  </data>
+  <data name="Add_New_Project" xml:space="preserve">
+    <value>添加新的项目</value>
+  </data>
+  <data name="Add_New_Crew" xml:space="preserve">
+    <value>添加新的团队</value>
+  </data>
+  <data name="Add_New_Task" xml:space="preserve">
+    <value>添加新的任务</value>
+  </data>
+  <data name="Add_New_Role" xml:space="preserve">
+    <value>添加新的角色</value>
+  </data>
+  <data name="Add_New_Organization" xml:space="preserve">
+    <value>添加新的机构</value>
+  </data>
+  <data name="Add_Systems" xml:space="preserve">
+    <value>添加系统</value>
+  </data>
+  <data name="Add_Issue" xml:space="preserve">
+    <value>添加问题事项</value>
+  </data>
+  <data name="Add_Document" xml:space="preserve">
+    <value>添加文档</value>
+  </data>
+  <data name="Add_Attribute" xml:space="preserve">
+    <value>添加属性</value>
+  </data>
+  <data name="Add_Task" xml:space="preserve">
+    <value>添加任务</value>
+  </data>
+  <data name="Add_Zones" xml:space="preserve">
+    <value>添加区域</value>
+  </data>
+  <data name="Add_Floor" xml:space="preserve">
+    <value>添加楼层</value>
+  </data>
+  <data name="Add_Type" xml:space="preserve">
+    <value>添加类型</value>
+  </data>
+  <data name="Add_Category" xml:space="preserve">
+    <value>添加类别</value>
+  </data>
+  <data name="Add_Space" xml:space="preserve">
+    <value>添加空间面积</value>
+  </data>
+  <data name="Add_Facility" xml:space="preserve">
+    <value>添加建筑设施</value>
+  </data>
+  <data name="Add_Component" xml:space="preserve">
+    <value>添加构件</value>
+  </data>
+  <data name="Add_Provider" xml:space="preserve">
+    <value>添加供应商</value>
+  </data>
+  <data name="Add_Edit_Name" xml:space="preserve">
+    <value>添加编辑姓名</value>
+  </data>
+  <data name="Add_Edit_Document" xml:space="preserve">
+    <value>添加编辑文档</value>
+  </data>
+  <data name="Add" xml:space="preserve">
+    <value>添加</value>
+  </data>
+  <data name="Days" xml:space="preserve">
+    <value>天数</value>
+  </data>
+  <data name="Replace_File" xml:space="preserve">
+    <value>替换文件</value>
+  </data>
+  <data name="Volume_Units" xml:space="preserve">
+    <value>体积单位</value>
+  </data>
+  <data name="Alerts" xml:space="preserve">
+    <value>提醒</value>
+  </data>
+  <data name="Submit" xml:space="preserve">
+    <value>提交</value>
+  </data>
+  <data name="Abbreviation" xml:space="preserve">
+    <value>缩写</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>搜索</value>
+  </data>
+  <data name="Attribute_Name" xml:space="preserve">
+    <value>属性名称</value>
+  </data>
+  <data name="Affected_Task" xml:space="preserve">
+    <value>受影响的任务</value>
+  </data>
+  <data name="Primary_Contact" xml:space="preserve">
+    <value>首要联系人</value>
+  </data>
+  <data name="Inbox" xml:space="preserve">
+    <value>收件箱</value>
+  </data>
+  <data name="Live" xml:space="preserve">
+    <value>实时</value>
+  </data>
+  <data name="Implementation" xml:space="preserve">
+    <value>实施</value>
+  </data>
+  <data name="Time_Zone" xml:space="preserve">
+    <value>时区</value>
+  </data>
+  <data name="Generate_Barcode" xml:space="preserve">
+    <value>生成条形码</value>
+  </data>
+  <data name="Generate_Report" xml:space="preserve">
+    <value>生成报告</value>
+  </data>
+  <data name="Manufacturer" xml:space="preserve">
+    <value>生产商</value>
+  </data>
+  <data name="Set" xml:space="preserve">
+    <value>设置</value>
+  </data>
+  <data name="Facility_Name" xml:space="preserve">
+    <value>设施名称</value>
+  </data>
+  <data name="Family_Name" xml:space="preserve">
+    <value>设施名称</value>
+  </data>
+  <data name="Facility_Profile" xml:space="preserve">
+    <value>设施概要</value>
+  </data>
+  <data name="Designer" xml:space="preserve">
+    <value>设计师</value>
+  </data>
+  <data name="Program_QC_For_Equipment" xml:space="preserve">
+    <value>设备的程序质量控制</value>
+  </data>
+  <data name="Equipment_Id" xml:space="preserve">
+    <value>设备ID编号</value>
+  </data>
+  <data name="Equipment" xml:space="preserve">
+    <value>设备</value>
+  </data>
+  <data name="Less_Than" xml:space="preserve">
+    <value>少于</value>
+  </data>
+  <data name="Parent" xml:space="preserve">
+    <value>上一层</value>
+  </data>
+  <data name="Uploaded_By" xml:space="preserve">
+    <value>上传自</value>
+  </data>
+  <data name="Upload_File" xml:space="preserve">
+    <value>上传文件</value>
+  </data>
+  <data name="Uploaded_File_Name" xml:space="preserve">
+    <value>上传的文件名称</value>
+  </data>
+  <data name="Uploaded_Files" xml:space="preserve">
+    <value>上传的文件</value>
+  </data>
+  <data name="Uploaded_On" xml:space="preserve">
+    <value>上传打开</value>
+  </data>
+  <data name="Upload" xml:space="preserve">
+    <value>上传</value>
+  </data>
+  <data name="Delete_File" xml:space="preserve">
+    <value>删除文件</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>删除</value>
+  </data>
+  <data name="Date" xml:space="preserve">
+    <value>日期</value>
+  </data>
+  <data name="Task_Name" xml:space="preserve">
+    <value>任务名称</value>
+  </data>
+  <data name="Tasks" xml:space="preserve">
+    <value>任务名称</value>
+  </data>
+  <data name="Overall_Impact" xml:space="preserve">
+    <value>全局影响</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="Trend" xml:space="preserve">
+    <value>趋势</value>
+  </data>
+  <data name="Zones" xml:space="preserve">
+    <value>区域</value>
+  </data>
+  <data name="Requested_By" xml:space="preserve">
+    <value>请求自</value>
+  </data>
+  <data name="Requested_Date" xml:space="preserve">
+    <value>请求日期</value>
+  </data>
+  <data name="Clear" xml:space="preserve">
+    <value>清除</value>
+  </data>
+  <data name="Enabled" xml:space="preserve">
+    <value>启用</value>
+  </data>
+  <data name="Expected_Life" xml:space="preserve">
+    <value>期望寿命</value>
+  </data>
+  <data name="Collapse" xml:space="preserve">
+    <value>碰撞</value>
+  </data>
+  <data name="Row_Name" xml:space="preserve">
+    <value>排名称</value>
+  </data>
+  <data name="Row" xml:space="preserve">
+    <value>排</value>
+  </data>
+  <data name="Directory_Name" xml:space="preserve">
+    <value>目录名称</value>
+  </data>
+  <data name="Model_Server" xml:space="preserve">
+    <value>模型服务器</value>
+  </data>
+  <data name="Model_Number" xml:space="preserve">
+    <value>模型编号</value>
+  </data>
+  <data name="Naming_Convention" xml:space="preserve">
+    <value>命名规则</value>
+  </data>
+  <data name="First_Name" xml:space="preserve">
+    <value>名字</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>名称</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>描述</value>
+  </data>
+  <data name="Area_Units" xml:space="preserve">
+    <value>面积单位</value>
+  </data>
+  <data name="Area_Measurement" xml:space="preserve">
+    <value>面积测量</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>密码</value>
+  </data>
+  <data name="Gross_Area" xml:space="preserve">
+    <value>毛面积</value>
+  </data>
+  <data name="Floor_Spaces" xml:space="preserve">
+    <value>楼层面积</value>
+  </data>
+  <data name="Part_Number" xml:space="preserve">
+    <value>零件编号</value>
+  </data>
+  <data name="Contact_Email" xml:space="preserve">
+    <value>联系人邮箱</value>
+  </data>
+  <data name="Contacts" xml:space="preserve">
+    <value>联系人</value>
+  </data>
+  <data name="Elevation" xml:space="preserve">
+    <value>立面</value>
+  </data>
+  <data name="Type_Name" xml:space="preserve">
+    <value>类型名称</value>
+  </data>
+  <data name="Type" xml:space="preserve">
+    <value>类型</value>
+  </data>
+  <data name="Category" xml:space="preserve">
+    <value>类别</value>
+  </data>
+  <data name="Dashboard" xml:space="preserve">
+    <value>控制面板</value>
+  </data>
+  <data name="Space_Name" xml:space="preserve">
+    <value>空间名称</value>
+  </data>
+  <data name="Space_Profile" xml:space="preserve">
+    <value>空间概要</value>
+  </data>
+  <data name="Program_QC_for_Spaces" xml:space="preserve">
+    <value>空间的程序质量控制</value>
+  </data>
+  <data name="Desktop_Client_Installer" xml:space="preserve">
+    <value>客户端安装包</value>
+  </data>
+  <data name="Usable_Height" xml:space="preserve">
+    <value>可用高度</value>
+  </data>
+  <data name="Likelihood" xml:space="preserve">
+    <value>可能性</value>
+  </data>
+  <data name="Start_Time" xml:space="preserve">
+    <value>开始时间</value>
+  </data>
+  <data name="Start_Date" xml:space="preserve">
+    <value>开始日期</value>
+  </data>
+  <data name="Start" xml:space="preserve">
+    <value>开始</value>
+  </data>
+  <data name="Net_Area" xml:space="preserve">
+    <value>净面积</value>
+  </data>
+  <data name="Deadline" xml:space="preserve">
+    <value>截止日期</value>
+  </data>
+  <data name="End" xml:space="preserve">
+    <value>结束</value>
+  </data>
+  <data name="Street" xml:space="preserve">
+    <value>街道</value>
+  </data>
+  <data name="Phase" xml:space="preserve">
+    <value>阶段</value>
+  </data>
+  <data name="Stage" xml:space="preserve">
+    <value>阶段</value>
+  </data>
+  <data name="Role_Name" xml:space="preserve">
+    <value>角色名称</value>
+  </data>
+  <data name="Role_Description" xml:space="preserve">
+    <value>角色描述</value>
+  </data>
+  <data name="Role" xml:space="preserve">
+    <value>角色</value>
+  </data>
+  <data name="Roles" xml:space="preserve">
+    <value>角色</value>
+  </data>
+  <data name="Facility" xml:space="preserve">
+    <value>建筑设施</value>
+  </data>
+  <data name="Profile" xml:space="preserve">
+    <value>概要</value>
+  </data>
+  <data name="Mitigation" xml:space="preserve">
+    <value>减轻</value>
+  </data>
+  <data name="Check_All_Boxes" xml:space="preserve">
+    <value>检查所有内容</value>
+  </data>
+  <data name="Price" xml:space="preserve">
+    <value>价格</value>
+  </data>
+  <data name="Count" xml:space="preserve">
+    <value>计算</value>
+  </data>
+  <data name="Percent_Plan_Complete" xml:space="preserve">
+    <value>计划完成百分比（PPC）</value>
+  </data>
+  <data name="Schedule" xml:space="preserve">
+    <value>计划</value>
+  </data>
+  <data name="Integration" xml:space="preserve">
+    <value>集成</value>
+  </data>
+  <data name="Site_Name" xml:space="preserve">
+    <value>基地名称</value>
+  </data>
+  <data name="Site_Description" xml:space="preserve">
+    <value>基地</value>
+  </data>
+  <data name="Workable_Backlog" xml:space="preserve">
+    <value>积压的工作</value>
+  </data>
+  <data name="Chance" xml:space="preserve">
+    <value>机会</value>
+  </data>
+  <data name="Organization_Type" xml:space="preserve">
+    <value>机构类型</value>
+  </data>
+  <data name="Organization_Profile" xml:space="preserve">
+    <value>机构概要</value>
+  </data>
+  <data name="Organization_ID" xml:space="preserve">
+    <value>机构ID编号</value>
+  </data>
+  <data name="Currency_Units" xml:space="preserve">
+    <value>货币单位</value>
+  </data>
+  <data name="Active_Days" xml:space="preserve">
+    <value>活动天数</value>
+  </data>
+  <data name="Activity_Id" xml:space="preserve">
+    <value>活动编号</value>
+  </data>
+  <data name="Country" xml:space="preserve">
+    <value>国家</value>
+  </data>
+  <data name="Administrative_Controls" xml:space="preserve">
+    <value>管理控制台</value>
+  </data>
+  <data name="Close_Window" xml:space="preserve">
+    <value>关闭窗口</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>关闭</value>
+  </data>
+  <data name="Components" xml:space="preserve">
+    <value>构件</value>
+  </data>
+  <data name="Providers" xml:space="preserve">
+    <value>供应商</value>
+  </data>
+  <data name="Functional_Area" xml:space="preserve">
+    <value>功能区域</value>
+  </data>
+  <data name="Company" xml:space="preserve">
+    <value>公司</value>
+  </data>
+  <data name="Work_Plan" xml:space="preserve">
+    <value>工作计划</value>
+  </data>
+  <data name="Work_Orders" xml:space="preserve">
+    <value>工作单</value>
+  </data>
+  <data name="Work_Hours" xml:space="preserve">
+    <value>工时</value>
+  </data>
+  <data name="Engineering_Controls" xml:space="preserve">
+    <value>工程控制</value>
+  </data>
+  <data name="Update_Names" xml:space="preserve">
+    <value>更新名称</value>
+  </data>
+  <data name="Root_Cause_Analysis_Report" xml:space="preserve">
+    <value>根本原因分析报告</value>
+  </data>
+  <data name="Root_Cause_Analysis" xml:space="preserve">
+    <value>根本原因分析</value>
+  </data>
+  <data name="Personal_Protective_equipment" xml:space="preserve">
+    <value>个人保护的设备</value>
+  </data>
+  <data name="Height" xml:space="preserve">
+    <value>高度</value>
+  </data>
+  <data name="Clone" xml:space="preserve">
+    <value>复制</value>
+  </data>
+  <data name="Risk" xml:space="preserve">
+    <value>风险</value>
+  </data>
+  <data name="Assign_Organization" xml:space="preserve">
+    <value>分配组织机构</value>
+  </data>
+  <data name="Assign_As_Major" xml:space="preserve">
+    <value>分配为重要的</value>
+  </data>
+  <data name="Assign_As_Project_Contact" xml:space="preserve">
+    <value>分配为项目联系人</value>
+  </data>
+  <data name="Assign_Contacts_To_The_Project" xml:space="preserve">
+    <value>分配联系人到项目</value>
+  </data>
+  <data name="Assign_Omniclass" xml:space="preserve">
+    <value>分配Omniclass</value>
+  </data>
+  <data name="Assign" xml:space="preserve">
+    <value>分配</value>
+  </data>
+  <data name="Access_View" xml:space="preserve">
+    <value>访问视图</value>
+  </data>
+  <data name="Room_Name" xml:space="preserve">
+    <value>房间名称</value>
+  </data>
+  <data name="Room_Code" xml:space="preserve">
+    <value>房间代码</value>
+  </data>
+  <data name="Room_Tag" xml:space="preserve">
+    <value>房间标签</value>
+  </data>
+  <data name="Room_Id" xml:space="preserve">
+    <value>房间ID编号</value>
+  </data>
+  <data name="Object" xml:space="preserve">
+    <value>对象</value>
+  </data>
+  <data name="Action" xml:space="preserve">
+    <value>动作</value>
+  </data>
+  <data name="Missing_attributes" xml:space="preserve">
+    <value>丢失的属性</value>
+  </data>
+  <data name="Phone" xml:space="preserve">
+    <value>电话</value>
+  </data>
+  <data name="Address_State_Region" xml:space="preserve">
+    <value>地址-省</value>
+  </data>
+  <data name="Address_Street" xml:space="preserve">
+    <value>地址-街道</value>
+  </data>
+  <data name="Address_Country" xml:space="preserve">
+    <value>地址-国家</value>
+  </data>
+  <data name="Address_Town" xml:space="preserve">
+    <value>地址-城市</value>
+  </data>
+  <data name="Address_2" xml:space="preserve">
+    <value>地址2</value>
+  </data>
+  <data name="Address_1" xml:space="preserve">
+    <value>地址1</value>
+  </data>
+  <data name="Location" xml:space="preserve">
+    <value>地点</value>
+  </data>
+  <data name="Equal_To" xml:space="preserve">
+    <value>等于</value>
+  </data>
+  <data name="Import_Data" xml:space="preserve">
+    <value>导入数据</value>
+  </data>
+  <data name="Import_Export" xml:space="preserve">
+    <value>导入/导出</value>
+  </data>
+  <data name="Export_Project_Contacts" xml:space="preserve">
+    <value>导出项目联系人</value>
+  </data>
+  <data name="Export_Documents" xml:space="preserve">
+    <value>导出文档</value>
+  </data>
+  <data name="Export_Data" xml:space="preserve">
+    <value>导出数据</value>
+  </data>
+  <data name="Export_Component" xml:space="preserve">
+    <value>导出构件</value>
+  </data>
+  <data name="Export_To_PDF" xml:space="preserve">
+    <value>导出到PDF文件</value>
+  </data>
+  <data name="Export_To_Excel" xml:space="preserve">
+    <value>导出到Excel</value>
+  </data>
+  <data name="Errors" xml:space="preserve">
+    <value>错误</value>
+  </data>
+  <data name="From" xml:space="preserve">
+    <value>从</value>
+  </data>
+  <data name="Created_By" xml:space="preserve">
+    <value>创建自</value>
+  </data>
+  <data name="Created_On" xml:space="preserve">
+    <value>创建在</value>
+  </data>
+  <data name="Initial_Sync" xml:space="preserve">
+    <value>初始化同步</value>
+  </data>
+  <data name="Duration" xml:space="preserve">
+    <value>持续时间</value>
+  </data>
+  <data name="Program_QC" xml:space="preserve">
+    <value>程序质量控制</value>
+  </data>
+  <data name="Program_file" xml:space="preserve">
+    <value>程序文件</value>
+  </data>
+  <data name="City_State" xml:space="preserve">
+    <value>城市</value>
+  </data>
+  <data name="Commitment_Status" xml:space="preserve">
+    <value>承诺状态</value>
+  </data>
+  <data name="Promise_Date" xml:space="preserve">
+    <value>承诺日期</value>
+  </data>
+  <data name="Contractor" xml:space="preserve">
+    <value>承包商</value>
+  </data>
+  <data name="Products" xml:space="preserve">
+    <value>产品</value>
+  </data>
+  <data name="Reference" xml:space="preserve">
+    <value>参考</value>
+  </data>
+  <data name="Department" xml:space="preserve">
+    <value>部门</value>
+  </data>
+  <data name="Non_conformance_Reasons_Report" xml:space="preserve">
+    <value>不一致原因报告</value>
+  </data>
+  <data name="Non_conformance_Reasons" xml:space="preserve">
+    <value>不一致的原因</value>
+  </data>
+  <data name="Sheet_Name" xml:space="preserve">
+    <value>表格名称</value>
+  </data>
+  <data name="Sheet" xml:space="preserve">
+    <value>表格</value>
+  </data>
+  <data name="Criteria" xml:space="preserve">
+    <value>标准</value>
+  </data>
+  <data name="Tag_Number" xml:space="preserve">
+    <value>标签编号</value>
+  </data>
+  <data name="Changed_By" xml:space="preserve">
+    <value>变更自</value>
+  </data>
+  <data name="Edit_Uni_Format" xml:space="preserve">
+    <value>编辑UniFormat</value>
+  </data>
+  <data name="Edit_Omniclass" xml:space="preserve">
+    <value>编辑Omniclass</value>
+  </data>
+  <data name="Edit_Master_Format" xml:space="preserve">
+    <value>编辑MasterFormat</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>编辑</value>
+  </data>
+  <data name="Greater_Than" xml:space="preserve">
+    <value>比…更大</value>
+  </data>
+  <data name="No_schedule_is_available_for_this_project_yet" xml:space="preserve">
+    <value>本项目尚无计划可用</value>
+  </data>
+  <data name="Warranty_Duration_Labor" xml:space="preserve">
+    <value>保修期人工</value>
+  </data>
+  <data name="Warranty_Duration_Parts" xml:space="preserve">
+    <value>保修期配件</value>
+  </data>
+  <data name="Warranty_Duration_Unit" xml:space="preserve">
+    <value>保修期单位</value>
+  </data>
+  <data name="Warranty_Description" xml:space="preserve">
+    <value>保修描述</value>
+  </data>
+  <data name="Warranty_Start_Date" xml:space="preserve">
+    <value>保修开始日期</value>
+  </data>
+  <data name="Warranty_Guarantor_Labor" xml:space="preserve">
+    <value>保修承诺人工</value>
+  </data>
+  <data name="Warranty_Guarantor_Parts" xml:space="preserve">
+    <value>保修承诺配件</value>
+  </data>
+  <data name="Save_Layout" xml:space="preserve">
+    <value>保存布局</value>
+  </data>
+  <data name="Save_And_Clone" xml:space="preserve">
+    <value>保存并关闭</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>保存</value>
+  </data>
+  <data name="Contains" xml:space="preserve">
+    <value>包含</value>
+  </data>
+  <data name="Office_Name" xml:space="preserve">
+    <value>办公室名称</value>
+  </data>
+  <data name="Percent_Count" xml:space="preserve">
+    <value>百分比计算</value>
+  </data>
+  <data name="Add_By_Model_Number" xml:space="preserve">
+    <value>按模型编号添加</value>
+  </data>
+  <data name="Search_By" xml:space="preserve">
+    <value>按…搜索</value>
+  </data>
+  <data name="Installation_Date" xml:space="preserve">
+    <value>安装日期</value>
+  </data>
+  <data name="Uni_Format" xml:space="preserve">
+    <value>Uni Format</value>
+  </data>
+  <data name="Percent_Plan_Complete_Report" xml:space="preserve">
+    <value>PPC报告</value>
+  </data>
+  <data name="PDF_Output_Format" xml:space="preserve">
+    <value>PDF输出格式</value>
+  </data>
+  <data name="OmniClass_Type" xml:space="preserve">
+    <value>OmniClass 类型</value>
+  </data>
+  <data name="OmniClass_version" xml:space="preserve">
+    <value>OmniClass 版本号</value>
+  </data>
+  <data name="OmniClass" xml:space="preserve">
+    <value>OmniClass</value>
+  </data>
+  <data name="Nevisworks_Version" xml:space="preserve">
+    <value>Navisworks版本号</value>
+  </data>
+  <data name="Master_Format" xml:space="preserve">
+    <value>Master Format</value>
+  </data>
+  <data name="LOD_QC" xml:space="preserve">
+    <value>LOD质量控制</value>
+  </data>
+  <data name="Level_Of_Details" xml:space="preserve">
+    <value>LOD详细程度等级</value>
+  </data>
+  <data name="LOD_name" xml:space="preserve">
+    <value>LOD名称</value>
+  </data>
+  <data name="JSN_Name" xml:space="preserve">
+    <value>JSN名称</value>
+  </data>
+  <data name="JSN" xml:space="preserve">
+    <value>JSN</value>
+  </data>
+  <data name="COBie_QC" xml:space="preserve">
+    <value>COBie 质量控制</value>
+  </data>
+  <data name="COBie_Data_Quality_Control" xml:space="preserve">
+    <value>COBie 数据质量控制</value>
+  </data>
+  <data name="COBie" xml:space="preserve">
+    <value>COBie</value>
+  </data>
+  <data name="CO_ASI" xml:space="preserve">
+    <value>CO/ASI</value>
+  </data>
+  <data name="BIM_Use_Case" xml:space="preserve">
+    <value>BIM应用实例</value>
+  </data>
+  <data name="BIM_Connector_Installer" xml:space="preserve">
+    <value>BIM连接器安装包</value>
+  </data>
+  <data name="BIM" xml:space="preserve">
+    <value>BIM</value>
+  </data>
+  <data name="Add_New_Facility" xml:space="preserve">
+    <value>添加新的建筑设施</value>
+  </data>
+  <data name="Add_Zone" xml:space="preserve">
+    <value>添加新的区域</value>
+  </data>
+  <data name="Please_enter_number" xml:space="preserve">
+    <value>请输入数字</value>
+  </data>
+  <data name="Add_Document_to" xml:space="preserve">
+    <value>添加文件</value>
+  </data>
+  <data name="Unassign_Space" xml:space="preserve">
+    <value>取消分配空间</value>
+  </data>
+  <data name="COBieDataQualityControl" xml:space="preserve">
+    <value>COBie数据质量控制</value>
+  </data>
+  <data name="Assign_Existing_Facilities" xml:space="preserve">
+    <value>分配现有设施</value>
+  </data>
+  <data name="Add_Existing_Facility" xml:space="preserve">
+    <value>添加现有设施</value>
+  </data>
+  <data name="Provide_New_Name" xml:space="preserve">
+    <value>提供新的名称</value>
+  </data>
+  <data name="Update_Component_Name" xml:space="preserve">
+    <value>更新组件名称</value>
+  </data>
+  <data name="Update_Type_Name" xml:space="preserve">
+    <value>更新类型名称</value>
+  </data>
+  <data name="Use_Attribute_Template" xml:space="preserve">
+    <value>使用属性模板</value>
+  </data>
+  <data name="Assign_Project_Role" xml:space="preserve">
+    <value>分配项目角色</value>
+  </data>
+  <data name="Master_Files" xml:space="preserve">
+    <value>主文件</value>
+  </data>
+  <data name="Elapsed_Time" xml:space="preserve">
+    <value>经过时间</value>
+  </data>
+  <data name="Estimated_Time" xml:space="preserve">
+    <value>估计时间</value>
+  </data>
+  <data name="Total" xml:space="preserve">
+    <value>总</value>
+  </data>
+  <data name="Total_Files" xml:space="preserve">
+    <value>总文件</value>
+  </data>
+  <data name="Transfer_Speed" xml:space="preserve">
+    <value>传输速度</value>
+  </data>
+  <data name="Uploaded" xml:space="preserve">
+    <value>上传</value>
+  </data>
+  <data name="Uploading_File" xml:space="preserve">
+    <value>上传文件</value>
+  </data>
+  <data name="Generate_COBie_File" xml:space="preserve">
+    <value>產生COBie文件</value>
+  </data>
+  <data name="Add_Edit_Names" xml:space="preserve">
+    <value>添加/编辑姓名</value>
+  </data>
+  <data name="Add_Contractor" xml:space="preserve">
+    <value>添加承包商</value>
+  </data>
+  <data name="Add_Designer" xml:space="preserve">
+    <value>加入设计师</value>
+  </data>
+  <data name="Activities" xml:space="preserve">
+    <value>活动</value>
+  </data>
+  <data name="Product_Attributes" xml:space="preserve">
+    <value>产品属性</value>
+  </data>
+  <data name="Product_Documents" xml:space="preserve">
+    <value>产品文档</value>
+  </data>
+  <data name="Project_Setup" xml:space="preserve">
+    <value>项目设置</value>
+  </data>
+  <data name="Role_Details" xml:space="preserve">
+    <value>角色的详细信息</value>
+  </data>
+  <data name="Schedule_Limits" xml:space="preserve">
+    <value>附表限制</value>
+  </data>
+  <data name="Interpolate" xml:space="preserve">
+    <value>插</value>
+  </data>
+  <data name="Lower_Limit_min" xml:space="preserve">
+    <value>下限(分钟)</value>
+  </data>
+  <data name="Numeric_Type" xml:space="preserve">
+    <value>数字类型</value>
+  </data>
+  <data name="Unit_Type" xml:space="preserve">
+    <value>单位类型</value>
+  </data>
+  <data name="Upper_Limit_max" xml:space="preserve">
+    <value>上限(最大值）</value>
+  </data>
+  <data name="Schedules" xml:space="preserve">
+    <value>附表</value>
+  </data>
+  <data name="Create_Attribute_Group" xml:space="preserve">
+    <value>创建属性组</value>
+  </data>
+  <data name="Add_Existing_Attributes" xml:space="preserve">
+    <value>添加现有属性</value>
+  </data>
+  <data name="Add_New_Attribute" xml:space="preserve">
+    <value>添加新的属性</value>
+  </data>
+  <data name="Attribute_Description" xml:space="preserve">
+    <value>属性说明</value>
+  </data>
+  <data name="Attribute_Group_List" xml:space="preserve">
+    <value>属性组列表</value>
+  </data>
+  <data name="Add_Attribute_Group" xml:space="preserve">
+    <value>添加属性组</value>
+  </data>
+  <data name="Attribute_Group_Name" xml:space="preserve">
+    <value>属性组的名称</value>
+  </data>
+  <data name="Create_Required_Attribute_Group" xml:space="preserve">
+    <value>创建所需的属性组</value>
+  </data>
+  <data name="Done" xml:space="preserve">
+    <value>完成</value>
+  </data>
+  <data name="Number_of_Components" xml:space="preserve">
+    <value>组件数量</value>
+  </data>
+  <data name="Link_To_Space" xml:space="preserve">
+    <value>链接到的步伐</value>
+  </data>
+  <data name="Energy_Simulation" xml:space="preserve">
+    <value>能耗模拟</value>
+  </data>
+  <data name="Link_to_Component" xml:space="preserve">
+    <value>链接到资产</value>
+  </data>
+  <data name="Show_All_work_order" xml:space="preserve">
+    <value>显示所有工单</value>
+  </data>
+  <data name="Work_Order_Name" xml:space="preserve">
+    <value>工作订单名称</value>
+  </data>
+  <data name="Work_Order_Type" xml:space="preserve">
+    <value>工单类型</value>
+  </data>
+  <data name="Work_order_Status" xml:space="preserve">
+    <value>Work Order Status</value>
+  </data>
+  <data name="Priority" xml:space="preserve">
+    <value>优先</value>
+  </data>
+  <data name="Create_Clones" xml:space="preserve">
+    <value>创建克隆</value>
+  </data>
+  <data name="Number_Of_Clones_To_Be_Created" xml:space="preserve">
+    <value>要创建的克隆数</value>
+  </data>
+  <data name="Work_Order_Report" xml:space="preserve">
+    <value>工作订单报告</value>
+  </data>
+  <data name="Show_Open_Work_Order" xml:space="preserve">
+    <value>显示打开工单</value>
+  </data>
+  <data name="Open" xml:space="preserve">
+    <value>打开</value>
+  </data>
+  <data name="Attribute_Details" xml:space="preserve">
+    <value>属性的详细信息</value>
+  </data>
+  <data name="Attribute_Group" xml:space="preserve">
+    <value>属性组</value>
+  </data>
+  <data name="Classification" xml:space="preserve">
+    <value>分类</value>
+  </data>
+  <data name="Classifications" xml:space="preserve">
+    <value>分类</value>
+  </data>
+  <data name="Link_Status" xml:space="preserve">
+    <value>链接状态</value>
+  </data>
+  <data name="Applied_Group_Name" xml:space="preserve">
+    <value>应用组名称</value>
+  </data>
+  <data name="Delete_Attribute" xml:space="preserve">
+    <value>删除属性</value>
+  </data>
+  <data name="Permissions" xml:space="preserve">
+    <value>权限</value>
+  </data>
+  <data name="Add_Details" xml:space="preserve">
+    <value>添加细节</value>
+  </data>
+  <data name="Add_Role" xml:space="preserve">
+    <value>添加角色“</value>
+  </data>
+  <data name="Default_Value" xml:space="preserve">
+    <value>默认值</value>
+  </data>
+  <data name="Required_Optional" xml:space="preserve">
+    <value>必需/可选</value>
+  </data>
+  <data name="Value_Range_Choices" xml:space="preserve">
+    <value>数值范围/选择</value>
+  </data>
+  <data name="Description_Comments" xml:space="preserve">
+    <value>说明/意见</value>
+  </data>
+  <data name="Assign_SubAssembly" xml:space="preserve">
+    <value>分配子组件</value>
+  </data>
+  <data name="Unassign_SubAssembly" xml:space="preserve">
+    <value>取消分配子组件</value>
+  </data>
+  <data name="SubAssembly" xml:space="preserve">
+    <value>子组件</value>
+  </data>
+  <data name="SubAssemblies" xml:space="preserve">
+    <value>子组件</value>
+  </data>
+  <data name="Generate_Excel_File" xml:space="preserve">
+    <value>生成Excel文件</value>
+  </data>
+  <data name="Generate_Component_Analysis_Report" xml:space="preserve">
+    <value>生成成分分析报告</value>
+  </data>
+  <data name="Jobs" xml:space="preserve">
+    <value>招聘信息</value>
+  </data>
+  <data name="Resources" xml:space="preserve">
+    <value>资源</value>
+  </data>
+  <data name="Spares" xml:space="preserve">
+    <value>备件</value>
+  </data>
+  <data name="Resource_Name" xml:space="preserve">
+    <value>资源名称</value>
+  </data>
+  <data name="Add_Spare" xml:space="preserve">
+    <value>添加备用</value>
+  </data>
+  <data name="Spare_Name" xml:space="preserve">
+    <value>备件名称</value>
+  </data>
+  <data name="Supplier" xml:space="preserve">
+    <value>提供者</value>
+  </data>
+  <data name="Add_Resource" xml:space="preserve">
+    <value>添加资源</value>
+  </data>
+  <data name="Job" xml:space="preserve">
+    <value>工作</value>
+  </data>
+  <data name="Set_Number" xml:space="preserve">
+    <value>设置数量</value>
+  </data>
+  <data name="Add_Type_Spare" xml:space="preserve">
+    <value>添加类型的备用</value>
+  </data>
+  <data name="Logo" xml:space="preserve">
+    <value>标志</value>
+  </data>
+  <data name="Document_Type" xml:space="preserve">
+    <value>文件类型</value>
+  </data>
+  <data name="Add_missing_attributes_to_model" xml:space="preserve">
+    <value>添加缺少的属性模型</value>
+  </data>
+  <data name="Work_Order_Log" xml:space="preserve">
+    <value>工单记录</value>
+  </data>
+  <data name="Subsystems" xml:space="preserve">
+    <value>分系统</value>
+  </data>
+  <data name="Updated_By" xml:space="preserve">
+    <value>更新人</value>
+  </data>
+  <data name="Updated_On" xml:space="preserve">
+    <value>更新于</value>
+  </data>
+  <data name="Updated" xml:space="preserve">
+    <value>更新</value>
+  </data>
+  <data name="Viewer" xml:space="preserve">
+    <value>浏览器</value>
+  </data>
+  <data name="LogIn" xml:space="preserve">
+    <value>登录</value>
+  </data>
+  <data name="Linked_In_BIM" xml:space="preserve">
+    <value>挂在BIM？ :</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>没有</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>是</value>
+  </data>
+  <data name="Show_Open_Issue" xml:space="preserve">
+    <value>显示打开的问题</value>
+  </data>
+  <data name="Issue_Number" xml:space="preserve">
+    <value>发行编号</value>
+  </data>
+  <data name="Issue_Log" xml:space="preserve">
+    <value>问题日志</value>
+  </data>
+  <data name="Assign_Supplier" xml:space="preserve">
+    <value>指定供应商</value>
+  </data>
+  <data name="Assign_Contractor" xml:space="preserve">
+    <value>指定承包商</value>
+  </data>
+  <data name="Assign_Designer" xml:space="preserve">
+    <value>指定设计师</value>
+  </data>
+  <data name="Assign_UniClass" xml:space="preserve">
+    <value>分配佑霖</value>
+  </data>
+  <data name="UniClass" xml:space="preserve">
+    <value>佑霖</value>
+  </data>
+  <data name="Edit_Classification" xml:space="preserve">
+    <value>编辑分类</value>
+  </data>
+  <data name="Duration_Unit" xml:space="preserve">
+    <value>时间单位</value>
+  </data>
+  <data name="Frequency" xml:space="preserve">
+    <value>频率</value>
+  </data>
+  <data name="Frequency_Unit" xml:space="preserve">
+    <value>频率单位</value>
+  </data>
+  <data name="Priors" xml:space="preserve">
+    <value>先验的</value>
+  </data>
+  <data name="Start_Unit" xml:space="preserve">
+    <value>开始单位</value>
+  </data>
+  <data name="Task_Number" xml:space="preserve">
+    <value>任务编号</value>
+  </data>
+  <data name="Assign_Category" xml:space="preserve">
+    <value>指定类别</value>
+  </data>
+  <data name="Change_Password" xml:space="preserve">
+    <value>更改密码</value>
+  </data>
+  <data name="Confirm_Password" xml:space="preserve">
+    <value>确认密码</value>
+  </data>
+  <data name="Current_Password" xml:space="preserve">
+    <value>当前密码</value>
+  </data>
+  <data name="New_Password" xml:space="preserve">
+    <value>新密码</value>
+  </data>
+  <data name="Forgot_Password" xml:space="preserve">
+    <value>忘记密码</value>
+  </data>
+  <data name="Password_Rule_1" xml:space="preserve">
+    <value>密码必须</value>
+  </data>
+  <data name="Password_Rule_10" xml:space="preserve">
+    <value>选择的密码必须不</value>
+  </data>
+  <data name="Password_Rule_11" xml:space="preserve">
+    <value>包含一个共同的正确的名称，登录ID，电子邮件地址，缩写，第一，中间或姓氏</value>
+  </data>
+  <data name="Password_Rule_12" xml:space="preserve">
+    <value>已在去年或过去三个密码，以较大者为准</value>
+  </data>
+  <data name="Password_Rule_13" xml:space="preserve">
+    <value>我们强烈建议，</value>
+  </data>
+  <data name="Password_Rule_14" xml:space="preserve">
+    <value>每年两次密码更改（例如，在春季和秋季时，时钟调整）</value>
+  </data>
+  <data name="Password_Rule_15" xml:space="preserve">
+    <value>每个密码的选择是新的，不同的</value>
+  </data>
+  <data name="Password_Rule_2" xml:space="preserve">
+    <value>争取一个最低的八（8）个字符的长度</value>
+  </data>
+  <data name="Password_Rule_3" xml:space="preserve">
+    <value>不应以一个数字号码</value>
+  </data>
+  <data name="Password_Rule_4" xml:space="preserve">
+    <value>记忆;如果密码写下来，它必须是安全的</value>
+  </data>
+  <data name="Password_Rule_5" xml:space="preserve">
+    <value>三（3）下列类别至少包含一个字符（1）</value>
+  </data>
+  <data name="Password_Rule_6" xml:space="preserve">
+    <value>大写字母（A-Z）</value>
+  </data>
+  <data name="Password_Rule_7" xml:space="preserve">
+    <value>小写字母（a-z）</value>
+  </data>
+  <data name="Password_Rule_8" xml:space="preserve">
+    <value>数字（0-9）</value>
+  </data>
+  <data name="Password_Rule_9" xml:space="preserve">
+    <value>私人</value>
+  </data>
+  <data name="Forgot_password_message_1" xml:space="preserve">
+    <value>请输入您的电子邮件地址和用户名，然后单击“提交”</value>
+  </data>
+  <data name="Forgot_password_message_2" xml:space="preserve">
+    <value>EcoDomus将发送一封电子邮件给你的密码信息</value>
+  </data>
+  <data name="Authentication_error" xml:space="preserve">
+    <value>验证错误</value>
+  </data>
+  <data name="Error_sending_Email" xml:space="preserve">
+    <value>错误发送电子邮件</value>
+  </data>
+  <data name="Password_change_message" xml:space="preserve">
+    <value>密码不匹配！</value>
+  </data>
+  <data name="Password_Rule_16" xml:space="preserve">
+    <value>新密码必须不同于当前密码</value>
+  </data>
+  <data name="IAgree" xml:space="preserve">
+    <value>我同意</value>
+  </data>
+  <data name="IDecline" xml:space="preserve">
+    <value>我拒绝</value>
+  </data>
+  <data name="Street_Address" xml:space="preserve">
+    <value>街道地址</value>
+  </data>
+  <data name="Configuration" xml:space="preserve">
+    <value>组态</value>
+  </data>
+  <data name="Save_Schedule" xml:space="preserve">
+    <value>保存时间表</value>
+  </data>
+  <data name="Sync_Bottom_Line" xml:space="preserve">
+    <value>同步底线</value>
+  </data>
+  <data name="Add_Required_Attributes_to_Model" xml:space="preserve">
+    <value>添加必要的属性到模型</value>
+  </data>
+  <data name="Designer_Contractor" xml:space="preserve">
+    <value>设计师承包商</value>
+  </data>
+  <data name="Entity_Names" xml:space="preserve">
+    <value>实体名称</value>
+  </data>
+  <data name="Missing_Information_Report" xml:space="preserve">
+    <value>缺少信息报告</value>
+  </data>
+  <data name="Missing_Information_Report_Types" xml:space="preserve">
+    <value>缺少信息报告类型</value>
+  </data>
+  <data name="Report" xml:space="preserve">
+    <value>报告</value>
+  </data>
+  <data name="master_file" xml:space="preserve">
+    <value>主文件</value>
+  </data>
+  <data name="View" xml:space="preserve">
+    <value>视图</value>
+  </data>
+  <data name="Show_change_log" xml:space="preserve">
+    <value>显示更改日志</value>
+  </data>
+  <data name="History" xml:space="preserve">
+    <value>历史</value>
+  </data>
+  <data name="Total_gross_area" xml:space="preserve">
+    <value>总建筑面积</value>
+  </data>
+  <data name="Total_net_area" xml:space="preserve">
+    <value>总净面积</value>
+  </data>
+  <data name="COBie_QualityControl" xml:space="preserve">
+    <value>COBie质量控制设置</value>
+  </data>
+  <data name="Items_In" xml:space="preserve">
+    <value>在项目</value>
+  </data>
+  <data name="Map_Document" xml:space="preserve">
+    <value>地图文件</value>
+  </data>
+  <data name="Map_Documents" xml:space="preserve">
+    <value>地图文件</value>
+  </data>
+  <data name="Select_Subsystems" xml:space="preserve">
+    <value>选择子系统</value>
+  </data>
+  <data name="Add_New_Line" xml:space="preserve">
+    <value>添加新线</value>
+  </data>
+  <data name="Select_Field" xml:space="preserve">
+    <value>选择字段</value>
+  </data>
+  <data name="Select_Symbol" xml:space="preserve">
+    <value>选择符号</value>
+  </data>
+  <data name="Barcode_Height" xml:space="preserve">
+    <value>条码高度</value>
+  </data>
+  <data name="Barcode_Per_Page" xml:space="preserve">
+    <value>条码每页</value>
+  </data>
+  <data name="Barcode_Preview" xml:space="preserve">
+    <value>条码预览</value>
+  </data>
+  <data name="Barcode_Print_Option" xml:space="preserve">
+    <value>条码打印选项</value>
+  </data>
+  <data name="Barcode_Sample" xml:space="preserve">
+    <value>条码样品</value>
+  </data>
+  <data name="Barcode_type" xml:space="preserve">
+    <value>条码类型</value>
+  </data>
+  <data name="Barcode_Width" xml:space="preserve">
+    <value>条码宽度</value>
+  </data>
+  <data name="Barcode_Without_Data" xml:space="preserve">
+    <value>条码数据不</value>
+  </data>
+  <data name="Barcode_With_Data" xml:space="preserve">
+    <value>条形码与数据</value>
+  </data>
+  <data name="Document_Template" xml:space="preserve">
+    <value>文档模板</value>
+  </data>
+  <data name="Preview" xml:space="preserve">
+    <value>预览</value>
+  </data>
+  <data name="Randomization_Length" xml:space="preserve">
+    <value>随机长度</value>
+  </data>
+  <data name="Symbol" xml:space="preserve">
+    <value>符号</value>
+  </data>
+  <data name="Field" xml:space="preserve">
+    <value>场</value>
+  </data>
+  <data name="Delete_Attributes" xml:space="preserve">
+    <value>删除属性</value>
+  </data>
+  <data name="Attribute_Version" xml:space="preserve">
+    <value>属性版本</value>
+  </data>
+  <data name="Add_Classification" xml:space="preserve">
+    <value>添加分类</value>
+  </data>
+  <data name="Add_Classification_Details" xml:space="preserve">
+    <value>添加详细的分类</value>
+  </data>
+  <data name="Assigned_Classifications" xml:space="preserve">
+    <value>分类分配</value>
+  </data>
+  <data name="Classification_Detail_Code" xml:space="preserve">
+    <value>分类详细代码</value>
+  </data>
+  <data name="Classification_Detail_Name" xml:space="preserve">
+    <value>分类详细名称</value>
+  </data>
+  <data name="Color" xml:space="preserve">
+    <value>颜色</value>
+  </data>
+  <data name="Types" xml:space="preserve">
+    <value>类型</value>
+  </data>
+  <data name="Add_Job" xml:space="preserve">
+    <value>添加作业</value>
+  </data>
+  <data name="test" xml:space="preserve">
+    <value>test</value>
+  </data>
+  <data name="File_name_format" xml:space="preserve">
+    <value>文件名的格式</value>
+  </data>
+  <data name="Auto_map_documents" xml:space="preserve">
+    <value>自動映射文件</value>
+  </data>
+  <data name="Please_select_at_least_one_document" xml:space="preserve">
+    <value>請至少選擇一個文件！</value>
+  </data>
+  <data name="Please_select_entity_from_the_dropdown" xml:space="preserve">
+    <value>請從下拉菜單中選擇實體</value>
+  </data>
+  <data name="Document_type_not_found" xml:space="preserve">
+    <value>文件類型沒有發現</value>
+  </data>
+  <data name="Stage_not_found" xml:space="preserve">
+    <value>現階段未發現</value>
+  </data>
+  <data name="ApprovalBy_not_found" xml:space="preserve">
+    <value>審批未找到</value>
+  </data>
+  <data name="Please_type_a_file_name_pattern" xml:space="preserve">
+    <value>請鍵入文件名模式</value>
+  </data>
+  <data name="Document_type_not_defined" xml:space="preserve">
+    <value>文檔類型定義不</value>
+  </data>
+  <data name="Stage_not_defined" xml:space="preserve">
+    <value>舞台沒有定義</value>
+  </data>
+  <data name="ApprovalBy_not_defined" xml:space="preserve">
+    <value>批准沒有定義</value>
+  </data>
+  <data name="Invalid_pattern" xml:space="preserve">
+    <value>無效的模式</value>
+  </data>
+  <data name="The_document_name_does_not_match_the_pattern" xml:space="preserve">
+    <value>該文件名不匹配模式</value>
+  </data>
+  <data name="Unknown_entity" xml:space="preserve">
+    <value>未知實體</value>
+  </data>
+  <data name="Job_Template" xml:space="preserve">
+    <value>作业模板</value>
+  </data>
+  <data name="PM_jobs" xml:space="preserve">
+    <value>下午职位</value>
+  </data>
+  <data name="SortBy" xml:space="preserve">
+    <value>排序方式</value>
+  </data>
+  <data name="Merge" xml:space="preserve">
+    <value>合併</value>
+  </data>
+  <data name="DUT_ACRES" xml:space="preserve">
+    <value>畝</value>
+  </data>
+  <data name="DUT_ACRES_SHORT" xml:space="preserve">
+    <value>ac</value>
+  </data>
+  <data name="DUT_CENTIMETERS" xml:space="preserve">
+    <value>厘米</value>
+  </data>
+  <data name="DUT_CENTIMETERS_SHORT" xml:space="preserve">
+    <value>cm</value>
+  </data>
+  <data name="DUT_CUBIC_CENTIMETERS" xml:space="preserve">
+    <value>立方厘米</value>
+  </data>
+  <data name="DUT_CUBIC_CENTIMETERS_SHORT" xml:space="preserve">
+    <value>cm³</value>
+  </data>
+  <data name="DUT_CUBIC_FEET" xml:space="preserve">
+    <value>立方英尺</value>
+  </data>
+  <data name="DUT_CUBIC_FEET_SHORT" xml:space="preserve">
+    <value>CF</value>
+  </data>
+  <data name="DUT_CUBIC_INCHES" xml:space="preserve">
+    <value>立方英寸</value>
+  </data>
+  <data name="DUT_CUBIC_INCHES_SHORT" xml:space="preserve">
+    <value>in³</value>
+  </data>
+  <data name="DUT_CUBIC_METERS" xml:space="preserve">
+    <value>立方米</value>
+  </data>
+  <data name="DUT_CUBIC_METERS_SHORT" xml:space="preserve">
+    <value>m³</value>
+  </data>
+  <data name="DUT_CUBIC_MILLIMETERS" xml:space="preserve">
+    <value>立方毫米</value>
+  </data>
+  <data name="DUT_CUBIC_MILLIMETERS_SHORT" xml:space="preserve">
+    <value>mm³</value>
+  </data>
+  <data name="DUT_CUBIC_YARDS" xml:space="preserve">
+    <value>立方碼</value>
+  </data>
+  <data name="DUT_CUBIC_YARDS_SHORT" xml:space="preserve">
+    <value>CY</value>
+  </data>
+  <data name="DUT_CURRENCY" xml:space="preserve">
+    <value>貨幣</value>
+  </data>
+  <data name="DUT_CURRENCY_SHORT" xml:space="preserve">
+    <value />
+  </data>
+  <data name="DUT_DECANEWTONS" xml:space="preserve">
+    <value>十牛頓</value>
+  </data>
+  <data name="DUT_DECANEWTONS_PER_METER" xml:space="preserve">
+    <value>每米十牛頓</value>
+  </data>
+  <data name="DUT_DECANEWTONS_PER_METER_SHORT" xml:space="preserve">
+    <value>daN/m</value>
+  </data>
+  <data name="DUT_DECANEWTONS_PER_SQUARE_METER" xml:space="preserve">
+    <value>每平方米十牛頓</value>
+  </data>
+  <data name="DUT_DECANEWTONS_PER_SQUARE_METER_SHORT" xml:space="preserve">
+    <value>daN/m²</value>
+  </data>
+  <data name="DUT_DECANEWTONS_SHORT" xml:space="preserve">
+    <value>daN</value>
+  </data>
+  <data name="DUT_DECANEWTON_METERS" xml:space="preserve">
+    <value>decanewton米</value>
+  </data>
+  <data name="DUT_DECANEWTON_METERS_SHORT" xml:space="preserve">
+    <value>daN·m</value>
+  </data>
+  <data name="DUT_DECIMETERS" xml:space="preserve">
+    <value>分米</value>
+  </data>
+  <data name="DUT_DECIMETERS_SHORT" xml:space="preserve">
+    <value>dm</value>
+  </data>
+  <data name="DUT_DEGREES" xml:space="preserve">
+    <value>度</value>
+  </data>
+  <data name="DUT_DEGREES_AND_MINUTES" xml:space="preserve">
+    <value>度和分</value>
+  </data>
+  <data name="DUT_DEGREES_AND_MINUTES_SHORT" xml:space="preserve">
+    <value />
+  </data>
+  <data name="DUT_DEGREES_SHORT" xml:space="preserve">
+    <value>°</value>
+  </data>
+  <data name="DUT_FEET" xml:space="preserve">
+    <value>腳</value>
+  </data>
+  <data name="DUT_FEET_FRACTIONAL_INCHES" xml:space="preserve">
+    <value>英尺和分數英寸</value>
+  </data>
+  <data name="DUT_FEET_FRACTIONAL_INCHES_SHORT" xml:space="preserve">
+    <value />
+  </data>
+  <data name="DUT_FEET_SHORT" xml:space="preserve">
+    <value>ft</value>
+  </data>
+  <data name="DUT_FRACTIONAL_INCHES" xml:space="preserve">
+    <value>分數英寸</value>
+  </data>
+  <data name="DUT_FRACTIONAL_INCHES_SHORT" xml:space="preserve">
+    <value />
+  </data>
+  <data name="DUT_GALLONS_US" xml:space="preserve">
+    <value>加侖（美國）</value>
+  </data>
+  <data name="DUT_GALLONS_US_SHORT" xml:space="preserve">
+    <value>gal</value>
+  </data>
+  <data name="DUT_GRADS" xml:space="preserve">
+    <value>畢業生</value>
+  </data>
+  <data name="DUT_GRADS_SHORT" xml:space="preserve">
+    <value>grad</value>
+  </data>
+  <data name="DUT_HECTARES" xml:space="preserve">
+    <value>公頃</value>
+  </data>
+  <data name="DUT_HECTARES_SHORT" xml:space="preserve">
+    <value>ha</value>
+  </data>
+  <data name="DUT_HOURS" xml:space="preserve">
+    <value>小時</value>
+  </data>
+  <data name="DUT_HOURS_SHORT" xml:space="preserve">
+    <value>h</value>
+  </data>
+  <data name="DUT_INCHES" xml:space="preserve">
+    <value>英寸</value>
+  </data>
+  <data name="DUT_INCHES_SHORT" xml:space="preserve">
+    <value>in</value>
+  </data>
+  <data name="DUT_KILOGRAMS_FORCE" xml:space="preserve">
+    <value>千克力</value>
+  </data>
+  <data name="DUT_KILOGRAMS_FORCE_PER_METER" xml:space="preserve">
+    <value>每米千克力</value>
+  </data>
+  <data name="DUT_KILOGRAMS_FORCE_PER_METER_SHORT" xml:space="preserve">
+    <value>kgf/m</value>
+  </data>
+  <data name="DUT_KILOGRAMS_FORCE_PER_SQUARE_METER" xml:space="preserve">
+    <value>每平方米公斤力</value>
+  </data>
+  <data name="DUT_KILOGRAMS_FORCE_PER_SQUARE_METER_SHORT" xml:space="preserve">
+    <value>kgf/m²</value>
+  </data>
+  <data name="DUT_KILOGRAMS_FORCE_SHORT" xml:space="preserve">
+    <value>kgf</value>
+  </data>
+  <data name="DUT_KILOGRAMS_MASS" xml:space="preserve">
+    <value>公斤</value>
+  </data>
+  <data name="DUT_KILOGRAMS_MASS_SHORT" xml:space="preserve">
+    <value>kg</value>
+  </data>
+  <data name="DUT_KILOGRAMS_PER_CUBIC_METER" xml:space="preserve">
+    <value>每立方米千克</value>
+  </data>
+  <data name="DUT_KILOGRAMS_PER_CUBIC_METER_SHORT" xml:space="preserve">
+    <value>kg/m³</value>
+  </data>
+  <data name="DUT_KILOGRAM_FORCE_METERS" xml:space="preserve">
+    <value>千克力米</value>
+  </data>
+  <data name="DUT_KILOGRAM_FORCE_METERS_SHORT" xml:space="preserve">
+    <value>kgf·m</value>
+  </data>
+  <data name="DUT_KILONEWTONS" xml:space="preserve">
+    <value>千牛頓</value>
+  </data>
+  <data name="DUT_KILONEWTONS_PER_METER" xml:space="preserve">
+    <value>每千牛頓米</value>
+  </data>
+  <data name="DUT_KILONEWTONS_PER_METER_SHORT" xml:space="preserve">
+    <value>kN/m</value>
+  </data>
+  <data name="DUT_KILONEWTONS_PER_SQUARE_METER" xml:space="preserve">
+    <value>每平方米千牛頓</value>
+  </data>
+  <data name="DUT_KILONEWTONS_PER_SQUARE_METER_SHORT" xml:space="preserve">
+    <value>kN/m²</value>
+  </data>
+  <data name="DUT_KILONEWTONS_SHORT" xml:space="preserve">
+    <value>kN</value>
+  </data>
+  <data name="DUT_KILONEWTON_METERS" xml:space="preserve">
+    <value>千牛頓米</value>
+  </data>
+  <data name="DUT_KILONEWTON_METERS_SHORT" xml:space="preserve">
+    <value>kN·m</value>
+  </data>
+  <data name="DUT_KIPS" xml:space="preserve">
+    <value>基普</value>
+  </data>
+  <data name="DUT_KIPS_PER_FOOT" xml:space="preserve">
+    <value>每英尺基普</value>
+  </data>
+  <data name="DUT_KIPS_PER_FOOT_SHORT" xml:space="preserve">
+    <value>kip/ft</value>
+  </data>
+  <data name="DUT_KIPS_PER_INCH" xml:space="preserve">
+    <value>每英寸基普</value>
+  </data>
+  <data name="DUT_KIPS_PER_INCH_SHORT" xml:space="preserve">
+    <value>kip/in</value>
+  </data>
+  <data name="DUT_KIPS_PER_SQUARE_FOOT" xml:space="preserve">
+    <value>每平方英尺基普</value>
+  </data>
+  <data name="DUT_KIPS_PER_SQUARE_FOOT_SHORT" xml:space="preserve">
+    <value>kip/SF</value>
+  </data>
+  <data name="DUT_KIPS_SHORT" xml:space="preserve">
+    <value>kip</value>
+  </data>
+  <data name="DUT_KIP_FEET" xml:space="preserve">
+    <value>千磅 - 英尺</value>
+  </data>
+  <data name="DUT_KIP_FEET_SHORT" xml:space="preserve">
+    <value>kip·ft</value>
+  </data>
+  <data name="DUT_LITERS" xml:space="preserve">
+    <value>升</value>
+  </data>
+  <data name="DUT_LITERS_SHORT" xml:space="preserve">
+    <value>l</value>
+  </data>
+  <data name="DUT_MEGANEWTONS" xml:space="preserve">
+    <value>meganewtons</value>
+  </data>
+  <data name="DUT_MEGANEWTONS_PER_METER" xml:space="preserve">
+    <value>每米meganewtons</value>
+  </data>
+  <data name="DUT_MEGANEWTONS_PER_METER_SHORT" xml:space="preserve">
+    <value>MN/m</value>
+  </data>
+  <data name="DUT_MEGANEWTONS_PER_SQUARE_METER" xml:space="preserve">
+    <value>每平方米meganewtons</value>
+  </data>
+  <data name="DUT_MEGANEWTONS_PER_SQUARE_METER_SHORT" xml:space="preserve">
+    <value>MN/m²</value>
+  </data>
+  <data name="DUT_MEGANEWTONS_SHORT" xml:space="preserve">
+    <value>MN</value>
+  </data>
+  <data name="DUT_MEGANEWTON_METERS" xml:space="preserve">
+    <value>meganewtons米</value>
+  </data>
+  <data name="DUT_MEGANEWTON_METERS_SHORT" xml:space="preserve">
+    <value>MN·m</value>
+  </data>
+  <data name="DUT_METERS" xml:space="preserve">
+    <value>米</value>
+  </data>
+  <data name="DUT_METERS_SHORT" xml:space="preserve">
+    <value>m</value>
+  </data>
+  <data name="DUT_MILISECONDS" xml:space="preserve">
+    <value>毫秒</value>
+  </data>
+  <data name="DUT_MILISECONDS_SHORT" xml:space="preserve">
+    <value>ms</value>
+  </data>
+  <data name="DUT_MILLIMETERS" xml:space="preserve">
+    <value>毫米</value>
+  </data>
+  <data name="DUT_MILLIMETERS_SHORT" xml:space="preserve">
+    <value>mm</value>
+  </data>
+  <data name="DUT_MINUTES" xml:space="preserve">
+    <value>分鐘</value>
+  </data>
+  <data name="DUT_MINUTES_SHORT" xml:space="preserve">
+    <value>min</value>
+  </data>
+  <data name="DUT_NEWTONS" xml:space="preserve">
+    <value>牛頓</value>
+  </data>
+  <data name="DUT_NEWTONS_PER_METER" xml:space="preserve">
+    <value>每米牛頓</value>
+  </data>
+  <data name="DUT_NEWTONS_PER_METER_SHORT" xml:space="preserve">
+    <value>N/m</value>
+  </data>
+  <data name="DUT_NEWTONS_PER_SQUARE_METER" xml:space="preserve">
+    <value>每平方米牛頓</value>
+  </data>
+  <data name="DUT_NEWTONS_PER_SQUARE_METER_SHORT" xml:space="preserve">
+    <value>N/m²</value>
+  </data>
+  <data name="DUT_NEWTONS_SHORT" xml:space="preserve">
+    <value>N</value>
+  </data>
+  <data name="DUT_NEWTON_METERS" xml:space="preserve">
+    <value>牛頓米</value>
+  </data>
+  <data name="DUT_NEWTON_METERS_SHORT" xml:space="preserve">
+    <value>N·m</value>
+  </data>
+  <data name="DUT_POUNDS_FORCE" xml:space="preserve">
+    <value>磅力</value>
+  </data>
+  <data name="DUT_POUNDS_FORCE_PER_FOOT" xml:space="preserve">
+    <value>每英尺磅力</value>
+  </data>
+  <data name="DUT_POUNDS_FORCE_PER_FOOT_SHORT" xml:space="preserve">
+    <value>lbf/ft</value>
+  </data>
+  <data name="DUT_POUNDS_FORCE_PER_SQUARE_FOOT" xml:space="preserve">
+    <value>每平方尺磅力</value>
+  </data>
+  <data name="DUT_POUNDS_FORCE_PER_SQUARE_FOOT_SHORT" xml:space="preserve">
+    <value>lbf/SF</value>
+  </data>
+  <data name="DUT_POUNDS_FORCE_SHORT" xml:space="preserve">
+    <value>lbf</value>
+  </data>
+  <data name="DUT_POUNDS_MASS" xml:space="preserve">
+    <value>英鎊</value>
+  </data>
+  <data name="DUT_POUNDS_MASS_PER_CUBIC_FOOT" xml:space="preserve">
+    <value>每立方英尺磅</value>
+  </data>
+  <data name="DUT_POUNDS_MASS_PER_CUBIC_FOOT_SHORT" xml:space="preserve">
+    <value>lb/CF</value>
+  </data>
+  <data name="DUT_POUNDS_MASS_SHORT" xml:space="preserve">
+    <value>lb</value>
+  </data>
+  <data name="DUT_POUND_FORCE_FEET" xml:space="preserve">
+    <value>磅力英尺</value>
+  </data>
+  <data name="DUT_POUND_FORCE_FEET_SHORT" xml:space="preserve">
+    <value>lbf·ft</value>
+  </data>
+  <data name="DUT_RADIANS" xml:space="preserve">
+    <value>弧度</value>
+  </data>
+  <data name="DUT_RADIANS_SHORT" xml:space="preserve">
+    <value>rad</value>
+  </data>
+  <data name="DUT_SECONDS" xml:space="preserve">
+    <value>秒</value>
+  </data>
+  <data name="DUT_SECONDS_SHORT" xml:space="preserve">
+    <value>s</value>
+  </data>
+  <data name="DUT_SQUARE_CENTIMETERS" xml:space="preserve">
+    <value>平方厘米</value>
+  </data>
+  <data name="DUT_SQUARE_CENTIMETERS_SHORT" xml:space="preserve">
+    <value>cm²</value>
+  </data>
+  <data name="DUT_SQUARE_FEET" xml:space="preserve">
+    <value>平方尺</value>
+  </data>
+  <data name="DUT_SQUARE_FEET_SHORT" xml:space="preserve">
+    <value>SF</value>
+  </data>
+  <data name="DUT_SQUARE_INCHES" xml:space="preserve">
+    <value>平方英寸</value>
+  </data>
+  <data name="DUT_SQUARE_INCHES_SHORT" xml:space="preserve">
+    <value>in²</value>
+  </data>
+  <data name="DUT_SQUARE_METERS" xml:space="preserve">
+    <value>平方米</value>
+  </data>
+  <data name="DUT_SQUARE_METERS_SHORT" xml:space="preserve">
+    <value>m²</value>
+  </data>
+  <data name="DUT_SQUARE_MILLIMETERS" xml:space="preserve">
+    <value>平方毫米</value>
+  </data>
+  <data name="DUT_SQUARE_MILLIMETERS_SHORT" xml:space="preserve">
+    <value>mm²</value>
+  </data>
+  <data name="DUT_TONNES_FORCE" xml:space="preserve">
+    <value>噸力</value>
+  </data>
+  <data name="DUT_TONNES_FORCE_PER_METER" xml:space="preserve">
+    <value>每米噸力</value>
+  </data>
+  <data name="DUT_TONNES_FORCE_PER_METER_SHORT" xml:space="preserve">
+    <value>tf/m</value>
+  </data>
+  <data name="DUT_TONNES_FORCE_PER_SQUARE_METER" xml:space="preserve">
+    <value>每平方米噸力</value>
+  </data>
+  <data name="DUT_TONNES_FORCE_PER_SQUARE_METER_SHORT" xml:space="preserve">
+    <value>tf/m²</value>
+  </data>
+  <data name="DUT_TONNES_FORCE_SHORT" xml:space="preserve">
+    <value>tf</value>
+  </data>
+  <data name="DUT_TONNES_MASS" xml:space="preserve">
+    <value>噸</value>
+  </data>
+  <data name="DUT_TONNES_MASS_SHORT" xml:space="preserve">
+    <value>t</value>
+  </data>
+  <data name="DUT_TONNE_FORCE_METERS" xml:space="preserve">
+    <value>噸力計</value>
+  </data>
+  <data name="DUT_TONNE_FORCE_METERS_SHORT" xml:space="preserve">
+    <value>tf·m</value>
+  </data>
+</root>

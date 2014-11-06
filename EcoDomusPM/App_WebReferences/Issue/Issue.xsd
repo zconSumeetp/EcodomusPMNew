@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.datacontract.org/2004/07/" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:4444/Client WCF/Issue.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="IssueModel">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ClientId" type="ser:guid" />
+      <xs:element minOccurs="0" name="Column_name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Column_value" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Deadline" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Dlltype" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Document_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Document_name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Entity" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Existsflag" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FacilityID" type="ser:guid" />
+      <xs:element minOccurs="0" name="Facilityids" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="File_path" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Fk_asset_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Fk_chance_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Fk_impact_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Fk_issue_type_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Fk_location_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Fk_priority_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Fk_risk_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Fk_row_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Fk_status_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Fk_system_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Fk_uploaded_file_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Fk_user_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Frmdate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Inspection" type="ser:guid" />
+      <xs:element minOccurs="0" name="Issue_name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Issue_status" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Location" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Mitigation" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="New_document_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Orderby" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Owner" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Pageindex" type="xs:int" />
+      <xs:element minOccurs="0" name="Pagesize" type="xs:int" />
+      <xs:element minOccurs="0" name="Parameter" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Pk_issues_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Project_ID" type="ser:guid" />
+      <xs:element minOccurs="0" name="Querydata" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Requested_by" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Returned_pk_issues_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Search_text" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Start_date" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Status" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="System_role" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Todate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="UserId" type="ser:guid" />
+      <xs:element minOccurs="0" name="Work_order_number" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="IssueModel" nillable="true" type="tns:IssueModel" />
+</xs:schema>

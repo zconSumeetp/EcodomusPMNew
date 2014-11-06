@@ -1,0 +1,1204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="AttributeTemplate" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:4444/Client WCF/AttributeTemplate.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:4444/Client WCF/AttributeTemplate.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:4444/Client WCF/AttributeTemplate.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/EcoDomus.AttributeTemplate" />
+      <xsd:import schemaLocation="http://localhost:4444/Client WCF/AttributeTemplate.svc?xsd=xsd3" />
+      <xsd:import schemaLocation="http://localhost:4444/Client WCF/AttributeTemplate.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/Client.App.Model" />
+      <xsd:import schemaLocation="http://localhost:4444/Client WCF/AttributeTemplate.svc?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/Client.App.Dtos" />
+      <xsd:import schemaLocation="http://localhost:4444/Client WCF/AttributeTemplate.svc?xsd=xsd6" namespace="http://schemas.datacontract.org/2004/07/EcoDomus.UnitUtils" />
+      <xsd:import schemaLocation="http://localhost:4444/Client WCF/AttributeTemplate.svc?xsd=xsd7" namespace="http://schemas.datacontract.org/2004/07/Client.App_Code.App.Model" />
+      <xsd:import schemaLocation="http://localhost:4444/Client WCF/AttributeTemplate.svc?xsd=xsd8" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IAttributeTemplate_DoWork_InputMessage">
+    <wsdl:part name="parameters" element="tns:DoWork" />
+  </wsdl:message>
+  <wsdl:message name="IAttributeTemplate_DoWork_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DoWorkResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAttributeTemplate_GetAttributeTemplate_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAttributeTemplate" />
+  </wsdl:message>
+  <wsdl:message name="IAttributeTemplate_GetAttributeTemplate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAttributeTemplateResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAttributeTemplate_InsertUpdateAttributeTemplate_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertUpdateAttributeTemplate" />
+  </wsdl:message>
+  <wsdl:message name="IAttributeTemplate_InsertUpdateAttributeTemplate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertUpdateAttributeTemplateResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAttributeTemplate_CloneattributeTemplate_InputMessage">
+    <wsdl:part name="parameters" element="tns:CloneattributeTemplate" />
+  </wsdl:message>
+  <wsdl:message name="IAttributeTemplate_CloneattributeTemplate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CloneattributeTemplateResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAttributeTemplate_DeleteattributeTemplate_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteattributeTemplate" />
+  </wsdl:message>
+  <wsdl:message name="IAttributeTemplate_DeleteattributeTemplate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteattributeTemplateResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAttributeTemplate_BindEntity_InputMessage">
+    <wsdl:part name="parameters" element="tns:BindEntity" />
+  </wsdl:message>
+  <wsdl:message name="IAttributeTemplate_BindEntity_OutputMessage">
+    <wsdl:part name="parameters" element="tns:BindEntityResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAttributeTemplate_BindRequiredAttributeTemplateValues_InputMessage">
+    <wsdl:part name="parameters" element="tns:BindRequiredAttributeTemplateValues" />
+  </wsdl:message>
+  <wsdl:message name="IAttributeTemplate_BindRequiredAttributeTemplateValues_OutputMessage">
+    <wsdl:part name="parameters" element="tns:BindRequiredAttributeTemplateValuesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAttributeTemplate_GetEditableAttributeFields_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetEditableAttributeFields" />
+  </wsdl:message>
+  <wsdl:message name="IAttributeTemplate_GetEditableAttributeFields_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetEditableAttributeFieldsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAttributeTemplate_BindUOM_InputMessage">
+    <wsdl:part name="parameters" element="tns:BindUOM" />
+  </wsdl:message>
+  <wsdl:message name="IAttributeTemplate_BindUOM_OutputMessage">
+    <wsdl:part name="parameters" element="tns:BindUOMResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAttributeTemplate_GetRequiredAttributesByAttributeGroupId_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetRequiredAttributesByAttributeGroupId" />
+  </wsdl:message>
+  <wsdl:message name="IAttributeTemplate_GetRequiredAttributesByAttributeGroupId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetRequiredAttributesByAttributeGroupIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAttributeTemplate_AddUpdateAttribute_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddUpdateAttribute" />
+  </wsdl:message>
+  <wsdl:message name="IAttributeTemplate_AddUpdateAttribute_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddUpdateAttributeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAttributeTemplate_InsertRequiredAttribute_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertRequiredAttribute" />
+  </wsdl:message>
+  <wsdl:message name="IAttributeTemplate_InsertRequiredAttribute_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertRequiredAttributeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAttributeTemplate_BindRequiredAttributeValues_InputMessage">
+    <wsdl:part name="parameters" element="tns:BindRequiredAttributeValues" />
+  </wsdl:message>
+  <wsdl:message name="IAttributeTemplate_BindRequiredAttributeValues_OutputMessage">
+    <wsdl:part name="parameters" element="tns:BindRequiredAttributeValuesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAttributeTemplate_DeleteRequiredttribute_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteRequiredttribute" />
+  </wsdl:message>
+  <wsdl:message name="IAttributeTemplate_DeleteRequiredttribute_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteRequiredttributeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAttributeTemplate_GetRequiredAttributeId_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetRequiredAttributeId" />
+  </wsdl:message>
+  <wsdl:message name="IAttributeTemplate_GetRequiredAttributeId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetRequiredAttributeIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAttributeTemplate_InsertRequiredDocument_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertRequiredDocument" />
+  </wsdl:message>
+  <wsdl:message name="IAttributeTemplate_InsertRequiredDocument_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertRequiredDocumentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAttributeTemplate_BindRequiredDocument_InputMessage">
+    <wsdl:part name="parameters" element="tns:BindRequiredDocument" />
+  </wsdl:message>
+  <wsdl:message name="IAttributeTemplate_BindRequiredDocument_OutputMessage">
+    <wsdl:part name="parameters" element="tns:BindRequiredDocumentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAttributeTemplate_DeleteRequiredDocument_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteRequiredDocument" />
+  </wsdl:message>
+  <wsdl:message name="IAttributeTemplate_DeleteRequiredDocument_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteRequiredDocumentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAttributeTemplate_InsertUpdateNamingConvention_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertUpdateNamingConvention" />
+  </wsdl:message>
+  <wsdl:message name="IAttributeTemplate_InsertUpdateNamingConvention_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertUpdateNamingConventionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAttributeTemplate_Get_omniclass_names_for_naming_convention_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_omniclass_names_for_naming_convention" />
+  </wsdl:message>
+  <wsdl:message name="IAttributeTemplate_Get_omniclass_names_for_naming_convention_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_omniclass_names_for_naming_conventionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAttributeTemplate_Get_omniclass_names_for_document_checklist_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_omniclass_names_for_document_checklist" />
+  </wsdl:message>
+  <wsdl:message name="IAttributeTemplate_Get_omniclass_names_for_document_checklist_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_omniclass_names_for_document_checklistResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAttributeTemplate_Get_get_omniclass_entity_list_document_checklist_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_get_omniclass_entity_list_document_checklist" />
+  </wsdl:message>
+  <wsdl:message name="IAttributeTemplate_Get_get_omniclass_entity_list_document_checklist_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_get_omniclass_entity_list_document_checklistResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAttributeTemplate_Get_get_doc_type_list_document_checklist_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_get_doc_type_list_document_checklist" />
+  </wsdl:message>
+  <wsdl:message name="IAttributeTemplate_Get_get_doc_type_list_document_checklist_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_get_doc_type_list_document_checklistResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAttributeTemplate_Bind_doc_type_dropdown_document_checklist_InputMessage">
+    <wsdl:part name="parameters" element="tns:Bind_doc_type_dropdown_document_checklist" />
+  </wsdl:message>
+  <wsdl:message name="IAttributeTemplate_Bind_doc_type_dropdown_document_checklist_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Bind_doc_type_dropdown_document_checklistResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAttributeTemplate_Bind_approval_by_dropdown_document_checklist_InputMessage">
+    <wsdl:part name="parameters" element="tns:Bind_approval_by_dropdown_document_checklist" />
+  </wsdl:message>
+  <wsdl:message name="IAttributeTemplate_Bind_approval_by_dropdown_document_checklist_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Bind_approval_by_dropdown_document_checklistResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAttributeTemplate_Bind_stage_dropdown_document_checklist_InputMessage">
+    <wsdl:part name="parameters" element="tns:Bind_stage_dropdown_document_checklist" />
+  </wsdl:message>
+  <wsdl:message name="IAttributeTemplate_Bind_stage_dropdown_document_checklist_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Bind_stage_dropdown_document_checklistResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAttributeTemplate_GetDocumentsDocumentsChecklist_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDocumentsDocumentsChecklist" />
+  </wsdl:message>
+  <wsdl:message name="IAttributeTemplate_GetDocumentsDocumentsChecklist_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDocumentsDocumentsChecklistResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAttributeTemplate_Delete_document_doc_checklist_InputMessage">
+    <wsdl:part name="parameters" element="tns:Delete_document_doc_checklist" />
+  </wsdl:message>
+  <wsdl:message name="IAttributeTemplate_Delete_document_doc_checklist_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Delete_document_doc_checklistResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAttributeTemplate_GetDocumentsDetailsDocumentsChecklist_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDocumentsDetailsDocumentsChecklist" />
+  </wsdl:message>
+  <wsdl:message name="IAttributeTemplate_GetDocumentsDetailsDocumentsChecklist_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDocumentsDetailsDocumentsChecklistResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAttributeTemplate_GetAttributeTemplateProfile_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAttributeTemplateProfile" />
+  </wsdl:message>
+  <wsdl:message name="IAttributeTemplate_GetAttributeTemplateProfile_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAttributeTemplateProfileResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAttributeTemplate_GetFacilityNamesForTemplate_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetFacilityNamesForTemplate" />
+  </wsdl:message>
+  <wsdl:message name="IAttributeTemplate_GetFacilityNamesForTemplate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFacilityNamesForTemplateResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAttributeTemplate_GetFacilitiesForTemplate_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetFacilitiesForTemplate" />
+  </wsdl:message>
+  <wsdl:message name="IAttributeTemplate_GetFacilitiesForTemplate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFacilitiesForTemplateResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAttributeTemplate_GetRequiredAttributeGroups_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetRequiredAttributeGroups" />
+  </wsdl:message>
+  <wsdl:message name="IAttributeTemplate_GetRequiredAttributeGroups_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetRequiredAttributeGroupsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAttributeTemplate_GetRequiredAttributesUnderGroup_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetRequiredAttributesUnderGroup" />
+  </wsdl:message>
+  <wsdl:message name="IAttributeTemplate_GetRequiredAttributesUnderGroup_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetRequiredAttributesUnderGroupResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAttributeTemplate_InsertUpdateAttributeGroup_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertUpdateAttributeGroup" />
+  </wsdl:message>
+  <wsdl:message name="IAttributeTemplate_InsertUpdateAttributeGroup_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertUpdateAttributeGroupResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAttributeTemplate_DeleteRequiredAttributeGroup_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteRequiredAttributeGroup" />
+  </wsdl:message>
+  <wsdl:message name="IAttributeTemplate_DeleteRequiredAttributeGroup_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteRequiredAttributeGroupResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAttributeTemplate_InsertRequiredAttributeUnderGroup_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertRequiredAttributeUnderGroup" />
+  </wsdl:message>
+  <wsdl:message name="IAttributeTemplate_InsertRequiredAttributeUnderGroup_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertRequiredAttributeUnderGroupResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAttributeTemplate_DeleteRequiredttributeUnderGroup_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteRequiredttributeUnderGroup" />
+  </wsdl:message>
+  <wsdl:message name="IAttributeTemplate_DeleteRequiredttributeUnderGroup_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteRequiredttributeUnderGroupResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAttributeTemplate_AssignAttributeGroupToTemplate_InputMessage">
+    <wsdl:part name="parameters" element="tns:AssignAttributeGroupToTemplate" />
+  </wsdl:message>
+  <wsdl:message name="IAttributeTemplate_AssignAttributeGroupToTemplate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AssignAttributeGroupToTemplateResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAttributeTemplate_UpdateRequiredAttributeTableForGroup_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateRequiredAttributeTableForGroup" />
+  </wsdl:message>
+  <wsdl:message name="IAttributeTemplate_UpdateRequiredAttributeTableForGroup_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateRequiredAttributeTableForGroupResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAttributeTemplate_GetTypesIds_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTypesIds" />
+  </wsdl:message>
+  <wsdl:message name="IAttributeTemplate_GetTypesIds_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTypesIdsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAttributeTemplate_InsertAttributeToEntity_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertAttributeToEntity" />
+  </wsdl:message>
+  <wsdl:message name="IAttributeTemplate_InsertAttributeToEntity_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertAttributeToEntityResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAttributeTemplate_UpdateFaciltiyAttributeTemplateLinkup_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateFaciltiyAttributeTemplateLinkup" />
+  </wsdl:message>
+  <wsdl:message name="IAttributeTemplate_UpdateFaciltiyAttributeTemplateLinkup_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateFaciltiyAttributeTemplateLinkupResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAttributeTemplate_UpdateGroupAttributeFileds_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateGroupAttributeFileds" />
+  </wsdl:message>
+  <wsdl:message name="IAttributeTemplate_UpdateGroupAttributeFileds_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateGroupAttributeFiledsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAttributeTemplate_GetGroupAttributeValues_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetGroupAttributeValues" />
+  </wsdl:message>
+  <wsdl:message name="IAttributeTemplate_GetGroupAttributeValues_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetGroupAttributeValuesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAttributeTemplate_GetValuesListForAttribute_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetValuesListForAttribute" />
+  </wsdl:message>
+  <wsdl:message name="IAttributeTemplate_GetValuesListForAttribute_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetValuesListForAttributeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAttributeTemplate_UnassignAttributesFromEntities_InputMessage">
+    <wsdl:part name="parameters" element="tns:UnassignAttributesFromEntities" />
+  </wsdl:message>
+  <wsdl:message name="IAttributeTemplate_UnassignAttributesFromEntities_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UnassignAttributesFromEntitiesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAttributeTemplate_UnassignGroupAttributesFromRequiredAttributes_InputMessage">
+    <wsdl:part name="parameters" element="tns:UnassignGroupAttributesFromRequiredAttributes" />
+  </wsdl:message>
+  <wsdl:message name="IAttributeTemplate_UnassignGroupAttributesFromRequiredAttributes_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UnassignGroupAttributesFromRequiredAttributesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAttributeTemplate_InsertUpdateAttributeTemplate_V1_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertUpdateAttributeTemplate_V1" />
+  </wsdl:message>
+  <wsdl:message name="IAttributeTemplate_InsertUpdateAttributeTemplate_V1_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertUpdateAttributeTemplate_V1Response" />
+  </wsdl:message>
+  <wsdl:message name="IAttributeTemplate_Get_owner_organization_id_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_owner_organization_id" />
+  </wsdl:message>
+  <wsdl:message name="IAttributeTemplate_Get_owner_organization_id_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_owner_organization_idResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAttributeTemplate_Get_classes_list_for_template_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_classes_list_for_template" />
+  </wsdl:message>
+  <wsdl:message name="IAttributeTemplate_Get_classes_list_for_template_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_classes_list_for_templateResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAttributeTemplate_Get_customize_standard_details_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_customize_standard_details" />
+  </wsdl:message>
+  <wsdl:message name="IAttributeTemplate_Get_customize_standard_details_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_customize_standard_detailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAttributeTemplate_GetJobTemplates_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetJobTemplates" />
+  </wsdl:message>
+  <wsdl:message name="IAttributeTemplate_GetJobTemplates_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetJobTemplatesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAttributeTemplate_GetJobTemplate_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetJobTemplate" />
+  </wsdl:message>
+  <wsdl:message name="IAttributeTemplate_GetJobTemplate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetJobTemplateResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAttributeTemplate_SaveJobTemplate_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveJobTemplate" />
+  </wsdl:message>
+  <wsdl:message name="IAttributeTemplate_SaveJobTemplate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveJobTemplateResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAttributeTemplate_DeleteJobTemplate_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteJobTemplate" />
+  </wsdl:message>
+  <wsdl:message name="IAttributeTemplate_DeleteJobTemplate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteJobTemplateResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAttributeTemplate_GetJobTemplateTasks_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetJobTemplateTasks" />
+  </wsdl:message>
+  <wsdl:message name="IAttributeTemplate_GetJobTemplateTasks_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetJobTemplateTasksResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAttributeTemplate_SaveJobTemplateTask_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveJobTemplateTask" />
+  </wsdl:message>
+  <wsdl:message name="IAttributeTemplate_SaveJobTemplateTask_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveJobTemplateTaskResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAttributeTemplate_DeleteJobTemplateTask_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteJobTemplateTask" />
+  </wsdl:message>
+  <wsdl:message name="IAttributeTemplate_DeleteJobTemplateTask_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteJobTemplateTaskResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAttributeTemplate_JobTemplateLinkupDeleteAll_InputMessage">
+    <wsdl:part name="parameters" element="tns:JobTemplateLinkupDeleteAll" />
+  </wsdl:message>
+  <wsdl:message name="IAttributeTemplate_JobTemplateLinkupDeleteAll_OutputMessage">
+    <wsdl:part name="parameters" element="tns:JobTemplateLinkupDeleteAllResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAttributeTemplate_JobTemplateLinkupDelete_InputMessage">
+    <wsdl:part name="parameters" element="tns:JobTemplateLinkupDelete" />
+  </wsdl:message>
+  <wsdl:message name="IAttributeTemplate_JobTemplateLinkupDelete_OutputMessage">
+    <wsdl:part name="parameters" element="tns:JobTemplateLinkupDeleteResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAttributeTemplate_JobTemplateLinkupAdd_InputMessage">
+    <wsdl:part name="parameters" element="tns:JobTemplateLinkupAdd" />
+  </wsdl:message>
+  <wsdl:message name="IAttributeTemplate_JobTemplateLinkupAdd_OutputMessage">
+    <wsdl:part name="parameters" element="tns:JobTemplateLinkupAddResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IAttributeTemplate">
+    <wsdl:operation name="DoWork">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAttributeTemplate/DoWork" message="tns:IAttributeTemplate_DoWork_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAttributeTemplate/DoWorkResponse" message="tns:IAttributeTemplate_DoWork_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAttributeTemplate">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAttributeTemplate/GetAttributeTemplate" message="tns:IAttributeTemplate_GetAttributeTemplate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAttributeTemplate/GetAttributeTemplateResponse" message="tns:IAttributeTemplate_GetAttributeTemplate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertUpdateAttributeTemplate">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAttributeTemplate/InsertUpdateAttributeTemplate" message="tns:IAttributeTemplate_InsertUpdateAttributeTemplate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAttributeTemplate/InsertUpdateAttributeTemplateResponse" message="tns:IAttributeTemplate_InsertUpdateAttributeTemplate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CloneattributeTemplate">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAttributeTemplate/CloneattributeTemplate" message="tns:IAttributeTemplate_CloneattributeTemplate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAttributeTemplate/CloneattributeTemplateResponse" message="tns:IAttributeTemplate_CloneattributeTemplate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteattributeTemplate">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAttributeTemplate/DeleteattributeTemplate" message="tns:IAttributeTemplate_DeleteattributeTemplate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAttributeTemplate/DeleteattributeTemplateResponse" message="tns:IAttributeTemplate_DeleteattributeTemplate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BindEntity">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAttributeTemplate/BindEntity" message="tns:IAttributeTemplate_BindEntity_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAttributeTemplate/BindEntityResponse" message="tns:IAttributeTemplate_BindEntity_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BindRequiredAttributeTemplateValues">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAttributeTemplate/BindRequiredAttributeTemplateValues" message="tns:IAttributeTemplate_BindRequiredAttributeTemplateValues_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAttributeTemplate/BindRequiredAttributeTemplateValuesResponse" message="tns:IAttributeTemplate_BindRequiredAttributeTemplateValues_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEditableAttributeFields">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAttributeTemplate/GetEditableAttributeFields" message="tns:IAttributeTemplate_GetEditableAttributeFields_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAttributeTemplate/GetEditableAttributeFieldsResponse" message="tns:IAttributeTemplate_GetEditableAttributeFields_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BindUOM">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAttributeTemplate/BindUOM" message="tns:IAttributeTemplate_BindUOM_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAttributeTemplate/BindUOMResponse" message="tns:IAttributeTemplate_BindUOM_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRequiredAttributesByAttributeGroupId">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAttributeTemplate/GetRequiredAttributesByAttributeGroupId" message="tns:IAttributeTemplate_GetRequiredAttributesByAttributeGroupId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAttributeTemplate/GetRequiredAttributesByAttributeGroupIdResponse" message="tns:IAttributeTemplate_GetRequiredAttributesByAttributeGroupId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddUpdateAttribute">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAttributeTemplate/AddUpdateAttribute" message="tns:IAttributeTemplate_AddUpdateAttribute_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAttributeTemplate/AddUpdateAttributeResponse" message="tns:IAttributeTemplate_AddUpdateAttribute_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertRequiredAttribute">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAttributeTemplate/InsertRequiredAttribute" message="tns:IAttributeTemplate_InsertRequiredAttribute_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAttributeTemplate/InsertRequiredAttributeResponse" message="tns:IAttributeTemplate_InsertRequiredAttribute_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BindRequiredAttributeValues">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAttributeTemplate/BindRequiredAttributeValues" message="tns:IAttributeTemplate_BindRequiredAttributeValues_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAttributeTemplate/BindRequiredAttributeValuesResponse" message="tns:IAttributeTemplate_BindRequiredAttributeValues_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteRequiredttribute">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAttributeTemplate/DeleteRequiredttribute" message="tns:IAttributeTemplate_DeleteRequiredttribute_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAttributeTemplate/DeleteRequiredttributeResponse" message="tns:IAttributeTemplate_DeleteRequiredttribute_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRequiredAttributeId">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAttributeTemplate/GetRequiredAttributeId" message="tns:IAttributeTemplate_GetRequiredAttributeId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAttributeTemplate/GetRequiredAttributeIdResponse" message="tns:IAttributeTemplate_GetRequiredAttributeId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertRequiredDocument">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAttributeTemplate/InsertRequiredDocument" message="tns:IAttributeTemplate_InsertRequiredDocument_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAttributeTemplate/InsertRequiredDocumentResponse" message="tns:IAttributeTemplate_InsertRequiredDocument_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BindRequiredDocument">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAttributeTemplate/BindRequiredDocument" message="tns:IAttributeTemplate_BindRequiredDocument_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAttributeTemplate/BindRequiredDocumentResponse" message="tns:IAttributeTemplate_BindRequiredDocument_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteRequiredDocument">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAttributeTemplate/DeleteRequiredDocument" message="tns:IAttributeTemplate_DeleteRequiredDocument_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAttributeTemplate/DeleteRequiredDocumentResponse" message="tns:IAttributeTemplate_DeleteRequiredDocument_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertUpdateNamingConvention">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAttributeTemplate/InsertUpdateNamingConvention" message="tns:IAttributeTemplate_InsertUpdateNamingConvention_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAttributeTemplate/InsertUpdateNamingConventionResponse" message="tns:IAttributeTemplate_InsertUpdateNamingConvention_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_omniclass_names_for_naming_convention">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAttributeTemplate/Get_omniclass_names_for_naming_convention" message="tns:IAttributeTemplate_Get_omniclass_names_for_naming_convention_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAttributeTemplate/Get_omniclass_names_for_naming_conventionResponse" message="tns:IAttributeTemplate_Get_omniclass_names_for_naming_convention_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_omniclass_names_for_document_checklist">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAttributeTemplate/Get_omniclass_names_for_document_checklist" message="tns:IAttributeTemplate_Get_omniclass_names_for_document_checklist_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAttributeTemplate/Get_omniclass_names_for_document_checklistResponse" message="tns:IAttributeTemplate_Get_omniclass_names_for_document_checklist_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_get_omniclass_entity_list_document_checklist">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAttributeTemplate/Get_get_omniclass_entity_list_document_checklist" message="tns:IAttributeTemplate_Get_get_omniclass_entity_list_document_checklist_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAttributeTemplate/Get_get_omniclass_entity_list_document_checklistResponse" message="tns:IAttributeTemplate_Get_get_omniclass_entity_list_document_checklist_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_get_doc_type_list_document_checklist">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAttributeTemplate/Get_get_doc_type_list_document_checklist" message="tns:IAttributeTemplate_Get_get_doc_type_list_document_checklist_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAttributeTemplate/Get_get_doc_type_list_document_checklistResponse" message="tns:IAttributeTemplate_Get_get_doc_type_list_document_checklist_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Bind_doc_type_dropdown_document_checklist">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAttributeTemplate/Bind_doc_type_dropdown_document_checklist" message="tns:IAttributeTemplate_Bind_doc_type_dropdown_document_checklist_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAttributeTemplate/Bind_doc_type_dropdown_document_checklistResponse" message="tns:IAttributeTemplate_Bind_doc_type_dropdown_document_checklist_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Bind_approval_by_dropdown_document_checklist">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAttributeTemplate/Bind_approval_by_dropdown_document_checklist" message="tns:IAttributeTemplate_Bind_approval_by_dropdown_document_checklist_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAttributeTemplate/Bind_approval_by_dropdown_document_checklistResponse" message="tns:IAttributeTemplate_Bind_approval_by_dropdown_document_checklist_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Bind_stage_dropdown_document_checklist">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAttributeTemplate/Bind_stage_dropdown_document_checklist" message="tns:IAttributeTemplate_Bind_stage_dropdown_document_checklist_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAttributeTemplate/Bind_stage_dropdown_document_checklistResponse" message="tns:IAttributeTemplate_Bind_stage_dropdown_document_checklist_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDocumentsDocumentsChecklist">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAttributeTemplate/GetDocumentsDocumentsChecklist" message="tns:IAttributeTemplate_GetDocumentsDocumentsChecklist_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAttributeTemplate/GetDocumentsDocumentsChecklistResponse" message="tns:IAttributeTemplate_GetDocumentsDocumentsChecklist_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Delete_document_doc_checklist">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAttributeTemplate/Delete_document_doc_checklist" message="tns:IAttributeTemplate_Delete_document_doc_checklist_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAttributeTemplate/Delete_document_doc_checklistResponse" message="tns:IAttributeTemplate_Delete_document_doc_checklist_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDocumentsDetailsDocumentsChecklist">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAttributeTemplate/GetDocumentsDetailsDocumentsChecklist" message="tns:IAttributeTemplate_GetDocumentsDetailsDocumentsChecklist_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAttributeTemplate/GetDocumentsDetailsDocumentsChecklistResponse" message="tns:IAttributeTemplate_GetDocumentsDetailsDocumentsChecklist_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAttributeTemplateProfile">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAttributeTemplate/GetAttributeTemplateProfile" message="tns:IAttributeTemplate_GetAttributeTemplateProfile_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAttributeTemplate/GetAttributeTemplateProfileResponse" message="tns:IAttributeTemplate_GetAttributeTemplateProfile_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFacilityNamesForTemplate">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAttributeTemplate/GetFacilityNamesForTemplate" message="tns:IAttributeTemplate_GetFacilityNamesForTemplate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAttributeTemplate/GetFacilityNamesForTemplateResponse" message="tns:IAttributeTemplate_GetFacilityNamesForTemplate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFacilitiesForTemplate">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAttributeTemplate/GetFacilitiesForTemplate" message="tns:IAttributeTemplate_GetFacilitiesForTemplate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAttributeTemplate/GetFacilitiesForTemplateResponse" message="tns:IAttributeTemplate_GetFacilitiesForTemplate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRequiredAttributeGroups">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAttributeTemplate/GetRequiredAttributeGroups" message="tns:IAttributeTemplate_GetRequiredAttributeGroups_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAttributeTemplate/GetRequiredAttributeGroupsResponse" message="tns:IAttributeTemplate_GetRequiredAttributeGroups_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRequiredAttributesUnderGroup">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAttributeTemplate/GetRequiredAttributesUnderGroup" message="tns:IAttributeTemplate_GetRequiredAttributesUnderGroup_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAttributeTemplate/GetRequiredAttributesUnderGroupResponse" message="tns:IAttributeTemplate_GetRequiredAttributesUnderGroup_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertUpdateAttributeGroup">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAttributeTemplate/InsertUpdateAttributeGroup" message="tns:IAttributeTemplate_InsertUpdateAttributeGroup_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAttributeTemplate/InsertUpdateAttributeGroupResponse" message="tns:IAttributeTemplate_InsertUpdateAttributeGroup_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteRequiredAttributeGroup">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAttributeTemplate/DeleteRequiredAttributeGroup" message="tns:IAttributeTemplate_DeleteRequiredAttributeGroup_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAttributeTemplate/DeleteRequiredAttributeGroupResponse" message="tns:IAttributeTemplate_DeleteRequiredAttributeGroup_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertRequiredAttributeUnderGroup">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAttributeTemplate/InsertRequiredAttributeUnderGroup" message="tns:IAttributeTemplate_InsertRequiredAttributeUnderGroup_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAttributeTemplate/InsertRequiredAttributeUnderGroupResponse" message="tns:IAttributeTemplate_InsertRequiredAttributeUnderGroup_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteRequiredttributeUnderGroup">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAttributeTemplate/DeleteRequiredttributeUnderGroup" message="tns:IAttributeTemplate_DeleteRequiredttributeUnderGroup_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAttributeTemplate/DeleteRequiredttributeUnderGroupResponse" message="tns:IAttributeTemplate_DeleteRequiredttributeUnderGroup_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AssignAttributeGroupToTemplate">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAttributeTemplate/AssignAttributeGroupToTemplate" message="tns:IAttributeTemplate_AssignAttributeGroupToTemplate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAttributeTemplate/AssignAttributeGroupToTemplateResponse" message="tns:IAttributeTemplate_AssignAttributeGroupToTemplate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateRequiredAttributeTableForGroup">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAttributeTemplate/UpdateRequiredAttributeTableForGroup" message="tns:IAttributeTemplate_UpdateRequiredAttributeTableForGroup_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAttributeTemplate/UpdateRequiredAttributeTableForGroupResponse" message="tns:IAttributeTemplate_UpdateRequiredAttributeTableForGroup_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTypesIds">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAttributeTemplate/GetTypesIds" message="tns:IAttributeTemplate_GetTypesIds_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAttributeTemplate/GetTypesIdsResponse" message="tns:IAttributeTemplate_GetTypesIds_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertAttributeToEntity">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAttributeTemplate/InsertAttributeToEntity" message="tns:IAttributeTemplate_InsertAttributeToEntity_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAttributeTemplate/InsertAttributeToEntityResponse" message="tns:IAttributeTemplate_InsertAttributeToEntity_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateFaciltiyAttributeTemplateLinkup">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAttributeTemplate/UpdateFaciltiyAttributeTemplateLinkup" message="tns:IAttributeTemplate_UpdateFaciltiyAttributeTemplateLinkup_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAttributeTemplate/UpdateFaciltiyAttributeTemplateLinkupResponse" message="tns:IAttributeTemplate_UpdateFaciltiyAttributeTemplateLinkup_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateGroupAttributeFileds">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAttributeTemplate/UpdateGroupAttributeFileds" message="tns:IAttributeTemplate_UpdateGroupAttributeFileds_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAttributeTemplate/UpdateGroupAttributeFiledsResponse" message="tns:IAttributeTemplate_UpdateGroupAttributeFileds_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetGroupAttributeValues">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAttributeTemplate/GetGroupAttributeValues" message="tns:IAttributeTemplate_GetGroupAttributeValues_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAttributeTemplate/GetGroupAttributeValuesResponse" message="tns:IAttributeTemplate_GetGroupAttributeValues_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetValuesListForAttribute">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAttributeTemplate/GetValuesListForAttribute" message="tns:IAttributeTemplate_GetValuesListForAttribute_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAttributeTemplate/GetValuesListForAttributeResponse" message="tns:IAttributeTemplate_GetValuesListForAttribute_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UnassignAttributesFromEntities">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAttributeTemplate/UnassignAttributesFromEntities" message="tns:IAttributeTemplate_UnassignAttributesFromEntities_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAttributeTemplate/UnassignAttributesFromEntitiesResponse" message="tns:IAttributeTemplate_UnassignAttributesFromEntities_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UnassignGroupAttributesFromRequiredAttributes">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAttributeTemplate/UnassignGroupAttributesFromRequiredAttributes" message="tns:IAttributeTemplate_UnassignGroupAttributesFromRequiredAttributes_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAttributeTemplate/UnassignGroupAttributesFromRequiredAttributesResponse" message="tns:IAttributeTemplate_UnassignGroupAttributesFromRequiredAttributes_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertUpdateAttributeTemplate_V1">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAttributeTemplate/InsertUpdateAttributeTemplate_V1" message="tns:IAttributeTemplate_InsertUpdateAttributeTemplate_V1_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAttributeTemplate/InsertUpdateAttributeTemplate_V1Response" message="tns:IAttributeTemplate_InsertUpdateAttributeTemplate_V1_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_owner_organization_id">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAttributeTemplate/Get_owner_organization_id" message="tns:IAttributeTemplate_Get_owner_organization_id_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAttributeTemplate/Get_owner_organization_idResponse" message="tns:IAttributeTemplate_Get_owner_organization_id_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_classes_list_for_template">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAttributeTemplate/Get_classes_list_for_template" message="tns:IAttributeTemplate_Get_classes_list_for_template_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAttributeTemplate/Get_classes_list_for_templateResponse" message="tns:IAttributeTemplate_Get_classes_list_for_template_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_customize_standard_details">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAttributeTemplate/Get_customize_standard_details" message="tns:IAttributeTemplate_Get_customize_standard_details_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAttributeTemplate/Get_customize_standard_detailsResponse" message="tns:IAttributeTemplate_Get_customize_standard_details_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetJobTemplates">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAttributeTemplate/GetJobTemplates" message="tns:IAttributeTemplate_GetJobTemplates_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAttributeTemplate/GetJobTemplatesResponse" message="tns:IAttributeTemplate_GetJobTemplates_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetJobTemplate">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAttributeTemplate/GetJobTemplate" message="tns:IAttributeTemplate_GetJobTemplate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAttributeTemplate/GetJobTemplateResponse" message="tns:IAttributeTemplate_GetJobTemplate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveJobTemplate">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAttributeTemplate/SaveJobTemplate" message="tns:IAttributeTemplate_SaveJobTemplate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAttributeTemplate/SaveJobTemplateResponse" message="tns:IAttributeTemplate_SaveJobTemplate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteJobTemplate">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAttributeTemplate/DeleteJobTemplate" message="tns:IAttributeTemplate_DeleteJobTemplate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAttributeTemplate/DeleteJobTemplateResponse" message="tns:IAttributeTemplate_DeleteJobTemplate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetJobTemplateTasks">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAttributeTemplate/GetJobTemplateTasks" message="tns:IAttributeTemplate_GetJobTemplateTasks_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAttributeTemplate/GetJobTemplateTasksResponse" message="tns:IAttributeTemplate_GetJobTemplateTasks_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveJobTemplateTask">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAttributeTemplate/SaveJobTemplateTask" message="tns:IAttributeTemplate_SaveJobTemplateTask_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAttributeTemplate/SaveJobTemplateTaskResponse" message="tns:IAttributeTemplate_SaveJobTemplateTask_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteJobTemplateTask">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAttributeTemplate/DeleteJobTemplateTask" message="tns:IAttributeTemplate_DeleteJobTemplateTask_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAttributeTemplate/DeleteJobTemplateTaskResponse" message="tns:IAttributeTemplate_DeleteJobTemplateTask_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="JobTemplateLinkupDeleteAll">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAttributeTemplate/JobTemplateLinkupDeleteAll" message="tns:IAttributeTemplate_JobTemplateLinkupDeleteAll_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAttributeTemplate/JobTemplateLinkupDeleteAllResponse" message="tns:IAttributeTemplate_JobTemplateLinkupDeleteAll_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="JobTemplateLinkupDelete">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAttributeTemplate/JobTemplateLinkupDelete" message="tns:IAttributeTemplate_JobTemplateLinkupDelete_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAttributeTemplate/JobTemplateLinkupDeleteResponse" message="tns:IAttributeTemplate_JobTemplateLinkupDelete_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="JobTemplateLinkupAdd">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAttributeTemplate/JobTemplateLinkupAdd" message="tns:IAttributeTemplate_JobTemplateLinkupAdd_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAttributeTemplate/JobTemplateLinkupAddResponse" message="tns:IAttributeTemplate_JobTemplateLinkupAdd_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IAttributeTemplate" type="tns:IAttributeTemplate">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="DoWork">
+      <soap:operation soapAction="http://tempuri.org/IAttributeTemplate/DoWork" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAttributeTemplate">
+      <soap:operation soapAction="http://tempuri.org/IAttributeTemplate/GetAttributeTemplate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertUpdateAttributeTemplate">
+      <soap:operation soapAction="http://tempuri.org/IAttributeTemplate/InsertUpdateAttributeTemplate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CloneattributeTemplate">
+      <soap:operation soapAction="http://tempuri.org/IAttributeTemplate/CloneattributeTemplate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteattributeTemplate">
+      <soap:operation soapAction="http://tempuri.org/IAttributeTemplate/DeleteattributeTemplate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BindEntity">
+      <soap:operation soapAction="http://tempuri.org/IAttributeTemplate/BindEntity" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BindRequiredAttributeTemplateValues">
+      <soap:operation soapAction="http://tempuri.org/IAttributeTemplate/BindRequiredAttributeTemplateValues" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEditableAttributeFields">
+      <soap:operation soapAction="http://tempuri.org/IAttributeTemplate/GetEditableAttributeFields" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BindUOM">
+      <soap:operation soapAction="http://tempuri.org/IAttributeTemplate/BindUOM" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRequiredAttributesByAttributeGroupId">
+      <soap:operation soapAction="http://tempuri.org/IAttributeTemplate/GetRequiredAttributesByAttributeGroupId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddUpdateAttribute">
+      <soap:operation soapAction="http://tempuri.org/IAttributeTemplate/AddUpdateAttribute" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertRequiredAttribute">
+      <soap:operation soapAction="http://tempuri.org/IAttributeTemplate/InsertRequiredAttribute" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BindRequiredAttributeValues">
+      <soap:operation soapAction="http://tempuri.org/IAttributeTemplate/BindRequiredAttributeValues" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteRequiredttribute">
+      <soap:operation soapAction="http://tempuri.org/IAttributeTemplate/DeleteRequiredttribute" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRequiredAttributeId">
+      <soap:operation soapAction="http://tempuri.org/IAttributeTemplate/GetRequiredAttributeId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertRequiredDocument">
+      <soap:operation soapAction="http://tempuri.org/IAttributeTemplate/InsertRequiredDocument" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BindRequiredDocument">
+      <soap:operation soapAction="http://tempuri.org/IAttributeTemplate/BindRequiredDocument" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteRequiredDocument">
+      <soap:operation soapAction="http://tempuri.org/IAttributeTemplate/DeleteRequiredDocument" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertUpdateNamingConvention">
+      <soap:operation soapAction="http://tempuri.org/IAttributeTemplate/InsertUpdateNamingConvention" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_omniclass_names_for_naming_convention">
+      <soap:operation soapAction="http://tempuri.org/IAttributeTemplate/Get_omniclass_names_for_naming_convention" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_omniclass_names_for_document_checklist">
+      <soap:operation soapAction="http://tempuri.org/IAttributeTemplate/Get_omniclass_names_for_document_checklist" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_get_omniclass_entity_list_document_checklist">
+      <soap:operation soapAction="http://tempuri.org/IAttributeTemplate/Get_get_omniclass_entity_list_document_checklist" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_get_doc_type_list_document_checklist">
+      <soap:operation soapAction="http://tempuri.org/IAttributeTemplate/Get_get_doc_type_list_document_checklist" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Bind_doc_type_dropdown_document_checklist">
+      <soap:operation soapAction="http://tempuri.org/IAttributeTemplate/Bind_doc_type_dropdown_document_checklist" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Bind_approval_by_dropdown_document_checklist">
+      <soap:operation soapAction="http://tempuri.org/IAttributeTemplate/Bind_approval_by_dropdown_document_checklist" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Bind_stage_dropdown_document_checklist">
+      <soap:operation soapAction="http://tempuri.org/IAttributeTemplate/Bind_stage_dropdown_document_checklist" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDocumentsDocumentsChecklist">
+      <soap:operation soapAction="http://tempuri.org/IAttributeTemplate/GetDocumentsDocumentsChecklist" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Delete_document_doc_checklist">
+      <soap:operation soapAction="http://tempuri.org/IAttributeTemplate/Delete_document_doc_checklist" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDocumentsDetailsDocumentsChecklist">
+      <soap:operation soapAction="http://tempuri.org/IAttributeTemplate/GetDocumentsDetailsDocumentsChecklist" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAttributeTemplateProfile">
+      <soap:operation soapAction="http://tempuri.org/IAttributeTemplate/GetAttributeTemplateProfile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFacilityNamesForTemplate">
+      <soap:operation soapAction="http://tempuri.org/IAttributeTemplate/GetFacilityNamesForTemplate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFacilitiesForTemplate">
+      <soap:operation soapAction="http://tempuri.org/IAttributeTemplate/GetFacilitiesForTemplate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRequiredAttributeGroups">
+      <soap:operation soapAction="http://tempuri.org/IAttributeTemplate/GetRequiredAttributeGroups" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRequiredAttributesUnderGroup">
+      <soap:operation soapAction="http://tempuri.org/IAttributeTemplate/GetRequiredAttributesUnderGroup" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertUpdateAttributeGroup">
+      <soap:operation soapAction="http://tempuri.org/IAttributeTemplate/InsertUpdateAttributeGroup" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteRequiredAttributeGroup">
+      <soap:operation soapAction="http://tempuri.org/IAttributeTemplate/DeleteRequiredAttributeGroup" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertRequiredAttributeUnderGroup">
+      <soap:operation soapAction="http://tempuri.org/IAttributeTemplate/InsertRequiredAttributeUnderGroup" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteRequiredttributeUnderGroup">
+      <soap:operation soapAction="http://tempuri.org/IAttributeTemplate/DeleteRequiredttributeUnderGroup" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AssignAttributeGroupToTemplate">
+      <soap:operation soapAction="http://tempuri.org/IAttributeTemplate/AssignAttributeGroupToTemplate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateRequiredAttributeTableForGroup">
+      <soap:operation soapAction="http://tempuri.org/IAttributeTemplate/UpdateRequiredAttributeTableForGroup" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTypesIds">
+      <soap:operation soapAction="http://tempuri.org/IAttributeTemplate/GetTypesIds" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertAttributeToEntity">
+      <soap:operation soapAction="http://tempuri.org/IAttributeTemplate/InsertAttributeToEntity" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateFaciltiyAttributeTemplateLinkup">
+      <soap:operation soapAction="http://tempuri.org/IAttributeTemplate/UpdateFaciltiyAttributeTemplateLinkup" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateGroupAttributeFileds">
+      <soap:operation soapAction="http://tempuri.org/IAttributeTemplate/UpdateGroupAttributeFileds" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGroupAttributeValues">
+      <soap:operation soapAction="http://tempuri.org/IAttributeTemplate/GetGroupAttributeValues" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetValuesListForAttribute">
+      <soap:operation soapAction="http://tempuri.org/IAttributeTemplate/GetValuesListForAttribute" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UnassignAttributesFromEntities">
+      <soap:operation soapAction="http://tempuri.org/IAttributeTemplate/UnassignAttributesFromEntities" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UnassignGroupAttributesFromRequiredAttributes">
+      <soap:operation soapAction="http://tempuri.org/IAttributeTemplate/UnassignGroupAttributesFromRequiredAttributes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertUpdateAttributeTemplate_V1">
+      <soap:operation soapAction="http://tempuri.org/IAttributeTemplate/InsertUpdateAttributeTemplate_V1" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_owner_organization_id">
+      <soap:operation soapAction="http://tempuri.org/IAttributeTemplate/Get_owner_organization_id" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_classes_list_for_template">
+      <soap:operation soapAction="http://tempuri.org/IAttributeTemplate/Get_classes_list_for_template" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_customize_standard_details">
+      <soap:operation soapAction="http://tempuri.org/IAttributeTemplate/Get_customize_standard_details" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetJobTemplates">
+      <soap:operation soapAction="http://tempuri.org/IAttributeTemplate/GetJobTemplates" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetJobTemplate">
+      <soap:operation soapAction="http://tempuri.org/IAttributeTemplate/GetJobTemplate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveJobTemplate">
+      <soap:operation soapAction="http://tempuri.org/IAttributeTemplate/SaveJobTemplate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteJobTemplate">
+      <soap:operation soapAction="http://tempuri.org/IAttributeTemplate/DeleteJobTemplate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetJobTemplateTasks">
+      <soap:operation soapAction="http://tempuri.org/IAttributeTemplate/GetJobTemplateTasks" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveJobTemplateTask">
+      <soap:operation soapAction="http://tempuri.org/IAttributeTemplate/SaveJobTemplateTask" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteJobTemplateTask">
+      <soap:operation soapAction="http://tempuri.org/IAttributeTemplate/DeleteJobTemplateTask" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="JobTemplateLinkupDeleteAll">
+      <soap:operation soapAction="http://tempuri.org/IAttributeTemplate/JobTemplateLinkupDeleteAll" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="JobTemplateLinkupDelete">
+      <soap:operation soapAction="http://tempuri.org/IAttributeTemplate/JobTemplateLinkupDelete" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="JobTemplateLinkupAdd">
+      <soap:operation soapAction="http://tempuri.org/IAttributeTemplate/JobTemplateLinkupAdd" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="AttributeTemplate">
+    <wsdl:port name="BasicHttpBinding_IAttributeTemplate" binding="tns:BasicHttpBinding_IAttributeTemplate">
+      <soap:address location="http://localhost:4444/Client%20WCF/AttributeTemplate.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

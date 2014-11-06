@@ -1,0 +1,34 @@
+﻿/* ComboBox */
+.ComboBox {
+    height: 26px !important;
+}
+.ComboBox .rcbInputCell,
+.ComboBox .rcbArrowCell {
+    height: 26px !important;  
+    background-image: url("../Images/ComboBoxBackground.png") !important;  
+}
+.ComboBox .rcbArrowCell {
+    background-position-y: -104px !important;
+}
+.ComboBox .rcbFocused .rcbReadOnly td.rcbInputCellLeft {
+    background-position-y: -52px !important;
+}
+.ComboBox .rcbHovered .rcbReadOnly td.rcbInputCellLeft {
+    background-position-y: -26px !important;
+}
+.ComboBox .rcbDisabled td.rcbInputCellLeft {
+    background-position-y: -78px !important;    
+}
+.ComboBox .rcbInputCell .rcbInput {
+    color: #303030 !important;
+    font-family: "Segoe UI", Arial, sans-serif !important;
+    font-size: 14px !important;
+    font-weight: 500 !important;   
+}
+/* RadComboBoxDropDown */
+.ComboBoxDropDown {
+    color: #303030 !important;
+    font-family: "Segoe UI", Arial, sans-serif !important;
+    font-size: 14px !important;
+    font-weight: 500 !important;    
+}

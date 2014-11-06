@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="a7e350bc-066b-445f-93e5-6fae611346e2" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>false</ReferenceAllAssemblies>
+    <ReferencedAssemblies>
+      <ReferencedAssembly AssemblyName="System" />
+      <ReferencedAssembly AssemblyName="System.Core" />
+      <ReferencedAssembly AssemblyName="System.Data" />
+      <ReferencedAssembly AssemblyName="System.Xml" />
+      <ReferencedAssembly AssemblyName="System.Xml.Linq" />
+    </ReferencedAssemblies>  
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:3333/Central%20WCF%20PM/Client.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="Client1.wsdl" MetadataType="Wsdl" ID="332f9e05-9989-4018-96c9-6779ee48da73" SourceId="1" SourceUrl="http://localhost:3333/Central WCF PM/Client.svc?wsdl" />
+    <MetadataFile FileName="Client4.xsd" MetadataType="Schema" ID="b5034145-d9ba-4f2e-a1cd-6b35efc2bbdb" SourceId="1" SourceUrl="http://localhost:3333/Central WCF PM/Client.svc?xsd=xsd2" />
+    <MetadataFile FileName="Client42.xsd" MetadataType="Schema" ID="b07ca1d9-d42b-4a6f-869a-1bf4e9a94fb2" SourceId="1" SourceUrl="http://localhost:3333/Central WCF PM/Client.svc?xsd=xsd1" />
+    <MetadataFile FileName="Client1.disco" MetadataType="Disco" ID="86e4ba1a-d650-4ede-8bdc-45e83f5c0144" SourceId="1" SourceUrl="http://localhost:3333/Central WCF PM/Client.svc?disco" />
+    <MetadataFile FileName="Client43.xsd" MetadataType="Schema" ID="f7f66dac-5172-4812-b187-e383183d1d19" SourceId="1" SourceUrl="http://localhost:3333/Central WCF PM/Client.svc?xsd=xsd3" />
+    <MetadataFile FileName="Client44.xsd" MetadataType="Schema" ID="9abc3d72-e73e-4f47-aa80-8bf63d200cb4" SourceId="1" SourceUrl="http://localhost:3333/Central WCF PM/Client.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

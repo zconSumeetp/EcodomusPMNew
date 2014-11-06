@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="e5f961d3-5bdf-4314-b98d-35821ecee7a6" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>false</ReferenceAllAssemblies>
+    <ReferencedAssemblies>
+      <ReferencedAssembly AssemblyName="System" />
+      <ReferencedAssembly AssemblyName="System.Core" />
+      <ReferencedAssembly AssemblyName="System.Data" />
+      <ReferencedAssembly AssemblyName="System.Xml" />
+      <ReferencedAssembly AssemblyName="System.Xml.Linq" />
+    </ReferencedAssemblies>
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:4444/Client%20WCF/Weather.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="Weather.disco" MetadataType="Disco" ID="d6751b21-90d0-43b9-a6e0-a5aafa88afd3" SourceId="1" SourceUrl="http://localhost:4444/Client WCF/Weather.svc?disco" />
+    <MetadataFile FileName="Weather.xsd" MetadataType="Schema" ID="2fb96fea-c613-4222-9a8b-fe690e47ca00" SourceId="1" SourceUrl="http://localhost:4444/Client WCF/Weather.svc?xsd=xsd1" />
+    <MetadataFile FileName="Weather1.xsd" MetadataType="Schema" ID="f0f3f68a-7726-4151-9183-667f0917e01b" SourceId="1" SourceUrl="http://localhost:4444/Client WCF/Weather.svc?xsd=xsd0" />
+    <MetadataFile FileName="Weather2.xsd" MetadataType="Schema" ID="4d04a869-c387-4812-ae2c-dee2e3fc9f54" SourceId="1" SourceUrl="http://localhost:4444/Client WCF/Weather.svc?xsd=xsd3" />
+    <MetadataFile FileName="Weather3.xsd" MetadataType="Schema" ID="1c2f578f-6f43-4a0c-a93b-6a1a690d2070" SourceId="1" SourceUrl="http://localhost:4444/Client WCF/Weather.svc?xsd=xsd2" />
+    <MetadataFile FileName="Weather.wsdl" MetadataType="Wsdl" ID="3aa215c0-4888-421f-9024-d855e92cda30" SourceId="1" SourceUrl="http://localhost:4444/Client WCF/Weather.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

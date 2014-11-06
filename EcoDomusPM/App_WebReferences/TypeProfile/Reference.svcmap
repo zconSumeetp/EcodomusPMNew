@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="2378ce0f-c881-4a43-8468-0d8d5776fab7" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>false</ReferenceAllAssemblies>
+    <ReferencedAssemblies>
+      <ReferencedAssembly AssemblyName="System" />
+      <ReferencedAssembly AssemblyName="System.Core" />
+      <ReferencedAssembly AssemblyName="System.Data" />
+      <ReferencedAssembly AssemblyName="System.Xml" />
+      <ReferencedAssembly AssemblyName="System.Xml.Linq" />
+    </ReferencedAssemblies>
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://devservices.ecodomus.com/ClientPM/TypeProfile.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="TypeProfile.xsd" MetadataType="Schema" ID="1efed678-ecf4-46f8-8c0a-27ff98dde56b" SourceId="1" SourceUrl="http://devservices.ecodomus.com/ClientPM/TypeProfile.svc?xsd=xsd3" />
+    <MetadataFile FileName="TypeProfile.disco" MetadataType="Disco" ID="13d61127-ded7-445b-b100-db7ea588da32" SourceId="1" SourceUrl="http://devservices.ecodomus.com/ClientPM/TypeProfile.svc?disco" />
+    <MetadataFile FileName="TypeProfile1.xsd" MetadataType="Schema" ID="fe2f7243-866b-42bc-b43d-63739f584c8f" SourceId="1" SourceUrl="http://devservices.ecodomus.com/ClientPM/TypeProfile.svc?xsd=xsd4" />
+    <MetadataFile FileName="TypeProfile.wsdl" MetadataType="Wsdl" ID="d21b3aa0-65ec-432d-93f1-00cd2a5a8ea6" SourceId="1" SourceUrl="http://devservices.ecodomus.com/ClientPM/TypeProfile.svc?wsdl" />
+    <MetadataFile FileName="TypeProfile2.xsd" MetadataType="Schema" ID="56200fb6-2849-4855-b058-feadc6ee85a4" SourceId="1" SourceUrl="http://devservices.ecodomus.com/ClientPM/TypeProfile.svc?xsd=xsd0" />
+    <MetadataFile FileName="TypeProfile3.xsd" MetadataType="Schema" ID="05c61dc4-bad3-491e-9510-b7d51fc4e89d" SourceId="1" SourceUrl="http://devservices.ecodomus.com/ClientPM/TypeProfile.svc?xsd=xsd1" />
+    <MetadataFile FileName="TypeProfile5.xsd" MetadataType="Schema" ID="bf2cb0fa-1d0b-4490-8725-ba5ca04b32b2" SourceId="1" SourceUrl="http://devservices.ecodomus.com/ClientPM/TypeProfile.svc?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

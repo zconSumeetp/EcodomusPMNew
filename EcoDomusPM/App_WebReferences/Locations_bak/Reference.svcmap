@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="d77f8fa6-9208-4907-9bb7-2c2a3487a9b8" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>false</ReferenceAllAssemblies>
+    <ReferencedAssemblies>
+      <ReferencedAssembly AssemblyName="System" />
+      <ReferencedAssembly AssemblyName="System.Core" />
+      <ReferencedAssembly AssemblyName="System.Data" />
+      <ReferencedAssembly AssemblyName="System.Xml" />
+      <ReferencedAssembly AssemblyName="System.Xml.Linq" />
+    </ReferencedAssemblies>
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:4444/Client%20WCF/Locations.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="Locations.xsd" MetadataType="Schema" ID="f688d261-1d4d-41c9-9453-0d0fbb2398ea" SourceId="1" SourceUrl="http://localhost:4444/Client WCF/Locations.svc?xsd=xsd1" />
+    <MetadataFile FileName="Locations.wsdl" MetadataType="Wsdl" ID="8a9f88fe-fd1b-40ad-a156-0c8b8ca9975e" SourceId="1" SourceUrl="http://localhost:4444/Client WCF/Locations.svc?wsdl" />
+    <MetadataFile FileName="Locations1.xsd" MetadataType="Schema" ID="078f2a7f-a4e4-4c7e-940d-07c2ddb44475" SourceId="1" SourceUrl="http://localhost:4444/Client WCF/Locations.svc?xsd=xsd0" />
+    <MetadataFile FileName="Locations3.xsd" MetadataType="Schema" ID="9c1a86ad-4c68-4cae-beae-e11781522096" SourceId="1" SourceUrl="http://localhost:4444/Client WCF/Locations.svc?xsd=xsd2" />
+    <MetadataFile FileName="Locations.disco" MetadataType="Disco" ID="6f094c4b-5fef-48b3-9c9c-3dbc73a2fe4e" SourceId="1" SourceUrl="http://localhost:4444/Client WCF/Locations.svc?disco" />
+    <MetadataFile FileName="Locations2.xsd" MetadataType="Schema" ID="dfbaa08d-3c61-40b1-9072-fd984072b2ad" SourceId="1" SourceUrl="http://localhost:4444/Client WCF/Locations.svc?xsd=xsd3" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

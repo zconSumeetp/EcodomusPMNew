@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.datacontract.org/2004/07/EcoDomus.Systems" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/EcoDomus.Systems" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://devservices.ecodomus.com/ClientPM/Systems.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="SystemsModel">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Culture" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EntityName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FacilityIds" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NavigateUrl" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NewSystemId" type="ser:guid" />
+      <xs:element minOccurs="0" name="OmniclassId" type="ser:guid" />
+      <xs:element minOccurs="0" name="Orderby" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Pageindex" type="xs:int" />
+      <xs:element minOccurs="0" name="Pagesize" type="xs:int" />
+      <xs:element minOccurs="0" name="Project_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="SearchText" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SubSystemIds" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SystemId" type="ser:guid" />
+      <xs:element minOccurs="0" name="SystemIds" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SystemName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UniclassId" type="ser:guid" />
+      <xs:element minOccurs="0" name="UserId" type="ser:guid" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SystemsModel" nillable="true" type="tns:SystemsModel" />
+</xs:schema>

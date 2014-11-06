@@ -1,0 +1,629 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Issue" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:4444/Client WCF/Issue.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:4444/Client WCF/Issue.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:4444/Client WCF/Issue.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/" />
+      <xsd:import schemaLocation="http://localhost:4444/Client WCF/Issue.svc?xsd=xsd3" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IIssue_Get_assets_for_workorder_Count_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_assets_for_workorder_Count" />
+  </wsdl:message>
+  <wsdl:message name="IIssue_Get_assets_for_workorder_Count_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_assets_for_workorder_CountResponse" />
+  </wsdl:message>
+  <wsdl:message name="IIssue_Get_Default_Values_For_Workorder_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Default_Values_For_Workorder" />
+  </wsdl:message>
+  <wsdl:message name="IIssue_Get_Default_Values_For_Workorder_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Default_Values_For_WorkorderResponse" />
+  </wsdl:message>
+  <wsdl:message name="IIssue_GetWorkOrderLog_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetWorkOrderLog" />
+  </wsdl:message>
+  <wsdl:message name="IIssue_GetWorkOrderLog_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetWorkOrderLogResponse" />
+  </wsdl:message>
+  <wsdl:message name="IIssue_InsertWorkOrderLog_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertWorkOrderLog" />
+  </wsdl:message>
+  <wsdl:message name="IIssue_InsertWorkOrderLog_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertWorkOrderLogResponse" />
+  </wsdl:message>
+  <wsdl:message name="IIssue_DoWork_InputMessage">
+    <wsdl:part name="parameters" element="tns:DoWork" />
+  </wsdl:message>
+  <wsdl:message name="IIssue_DoWork_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DoWorkResponse" />
+  </wsdl:message>
+  <wsdl:message name="IIssue_IssueType_InputMessage">
+    <wsdl:part name="parameters" element="tns:IssueType" />
+  </wsdl:message>
+  <wsdl:message name="IIssue_IssueType_OutputMessage">
+    <wsdl:part name="parameters" element="tns:IssueTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IIssue_GetRiskChanceImpact_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetRiskChanceImpact" />
+  </wsdl:message>
+  <wsdl:message name="IIssue_GetRiskChanceImpact_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetRiskChanceImpactResponse" />
+  </wsdl:message>
+  <wsdl:message name="IIssue_InsertUpdateIssues_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertUpdateIssues" />
+  </wsdl:message>
+  <wsdl:message name="IIssue_InsertUpdateIssues_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertUpdateIssuesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IIssue_GetIssueProfile_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetIssueProfile" />
+  </wsdl:message>
+  <wsdl:message name="IIssue_GetIssueProfile_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetIssueProfileResponse" />
+  </wsdl:message>
+  <wsdl:message name="IIssue_GetStatusForIssue_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetStatusForIssue" />
+  </wsdl:message>
+  <wsdl:message name="IIssue_GetStatusForIssue_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetStatusForIssueResponse" />
+  </wsdl:message>
+  <wsdl:message name="IIssue_UpdateIssueStatus_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateIssueStatus" />
+  </wsdl:message>
+  <wsdl:message name="IIssue_UpdateIssueStatus_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateIssueStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="IIssue_DeleteIssue_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteIssue" />
+  </wsdl:message>
+  <wsdl:message name="IIssue_DeleteIssue_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteIssueResponse" />
+  </wsdl:message>
+  <wsdl:message name="IIssue_GetIssueAssign_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetIssueAssign" />
+  </wsdl:message>
+  <wsdl:message name="IIssue_GetIssueAssign_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetIssueAssignResponse" />
+  </wsdl:message>
+  <wsdl:message name="IIssue_GetIssueLocations_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetIssueLocations" />
+  </wsdl:message>
+  <wsdl:message name="IIssue_GetIssueLocations_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetIssueLocationsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IIssue_GetFacilityAssets_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetFacilityAssets" />
+  </wsdl:message>
+  <wsdl:message name="IIssue_GetFacilityAssets_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFacilityAssetsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IIssue_GetIssueOwner_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetIssueOwner" />
+  </wsdl:message>
+  <wsdl:message name="IIssue_GetIssueOwner_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetIssueOwnerResponse" />
+  </wsdl:message>
+  <wsdl:message name="IIssue_GetAllIssues_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllIssues" />
+  </wsdl:message>
+  <wsdl:message name="IIssue_GetAllIssues_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllIssuesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IIssue_GetAllIssuesPM_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllIssuesPM" />
+  </wsdl:message>
+  <wsdl:message name="IIssue_GetAllIssuesPM_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllIssuesPMResponse" />
+  </wsdl:message>
+  <wsdl:message name="IIssue_GetAllIssuesGIS_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllIssuesGIS" />
+  </wsdl:message>
+  <wsdl:message name="IIssue_GetAllIssuesGIS_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllIssuesGISResponse" />
+  </wsdl:message>
+  <wsdl:message name="IIssue_GetAssetsIssues_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAssetsIssues" />
+  </wsdl:message>
+  <wsdl:message name="IIssue_GetAssetsIssues_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAssetsIssuesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IIssue_GetAssetsIssuesPM_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAssetsIssuesPM" />
+  </wsdl:message>
+  <wsdl:message name="IIssue_GetAssetsIssuesPM_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAssetsIssuesPMResponse" />
+  </wsdl:message>
+  <wsdl:message name="IIssue_InsertUpdateIssuesDocument_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertUpdateIssuesDocument" />
+  </wsdl:message>
+  <wsdl:message name="IIssue_InsertUpdateIssuesDocument_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertUpdateIssuesDocumentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IIssue_GetInspections_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetInspections" />
+  </wsdl:message>
+  <wsdl:message name="IIssue_GetInspections_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetInspectionsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IIssue_GetFacilityAssetsPM_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetFacilityAssetsPM" />
+  </wsdl:message>
+  <wsdl:message name="IIssue_GetFacilityAssetsPM_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFacilityAssetsPMResponse" />
+  </wsdl:message>
+  <wsdl:message name="IIssue_GetFacilityAssets_PM_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetFacilityAssets_PM" />
+  </wsdl:message>
+  <wsdl:message name="IIssue_GetFacilityAssets_PM_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFacilityAssets_PMResponse" />
+  </wsdl:message>
+  <wsdl:message name="IIssue_GetFacilityAssetsForSpace_PM_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetFacilityAssetsForSpace_PM" />
+  </wsdl:message>
+  <wsdl:message name="IIssue_GetFacilityAssetsForSpace_PM_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFacilityAssetsForSpace_PMResponse" />
+  </wsdl:message>
+  <wsdl:message name="IIssue_GetAllWorkOrders_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllWorkOrders" />
+  </wsdl:message>
+  <wsdl:message name="IIssue_GetAllWorkOrders_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllWorkOrdersResponse" />
+  </wsdl:message>
+  <wsdl:message name="IIssue_GetAllWorkOrdersCountV2_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllWorkOrdersCountV2" />
+  </wsdl:message>
+  <wsdl:message name="IIssue_GetAllWorkOrdersCountV2_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllWorkOrdersCountV2Response" />
+  </wsdl:message>
+  <wsdl:message name="IIssue_GetAllWorkOrdersV2_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllWorkOrdersV2" />
+  </wsdl:message>
+  <wsdl:message name="IIssue_GetAllWorkOrdersV2_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllWorkOrdersV2Response" />
+  </wsdl:message>
+  <wsdl:message name="IIssue_GetFacilityAssetsV1_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetFacilityAssetsV1" />
+  </wsdl:message>
+  <wsdl:message name="IIssue_GetFacilityAssetsV1_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFacilityAssetsV1Response" />
+  </wsdl:message>
+  <wsdl:message name="IIssue_Get_assets_for_system_Count_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_assets_for_system_Count" />
+  </wsdl:message>
+  <wsdl:message name="IIssue_Get_assets_for_system_Count_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_assets_for_system_CountResponse" />
+  </wsdl:message>
+  <wsdl:message name="IIssue_Get_assets_for_space_Count_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_assets_for_space_Count" />
+  </wsdl:message>
+  <wsdl:message name="IIssue_Get_assets_for_space_Count_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_assets_for_space_CountResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IIssue">
+    <wsdl:operation name="Get_assets_for_workorder_Count">
+      <wsdl:input wsaw:Action="http://tempuri.org/IIssue/Get_assets_for_workorder_Count" message="tns:IIssue_Get_assets_for_workorder_Count_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IIssue/Get_assets_for_workorder_CountResponse" message="tns:IIssue_Get_assets_for_workorder_Count_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_Default_Values_For_Workorder">
+      <wsdl:input wsaw:Action="http://tempuri.org/IIssue/Get_Default_Values_For_Workorder" message="tns:IIssue_Get_Default_Values_For_Workorder_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IIssue/Get_Default_Values_For_WorkorderResponse" message="tns:IIssue_Get_Default_Values_For_Workorder_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetWorkOrderLog">
+      <wsdl:input wsaw:Action="http://tempuri.org/IIssue/GetWorkOrderLog" message="tns:IIssue_GetWorkOrderLog_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IIssue/GetWorkOrderLogResponse" message="tns:IIssue_GetWorkOrderLog_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertWorkOrderLog">
+      <wsdl:input wsaw:Action="http://tempuri.org/IIssue/InsertWorkOrderLog" message="tns:IIssue_InsertWorkOrderLog_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IIssue/InsertWorkOrderLogResponse" message="tns:IIssue_InsertWorkOrderLog_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DoWork">
+      <wsdl:input wsaw:Action="http://tempuri.org/IIssue/DoWork" message="tns:IIssue_DoWork_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IIssue/DoWorkResponse" message="tns:IIssue_DoWork_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="IssueType">
+      <wsdl:input wsaw:Action="http://tempuri.org/IIssue/IssueType" message="tns:IIssue_IssueType_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IIssue/IssueTypeResponse" message="tns:IIssue_IssueType_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRiskChanceImpact">
+      <wsdl:input wsaw:Action="http://tempuri.org/IIssue/GetRiskChanceImpact" message="tns:IIssue_GetRiskChanceImpact_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IIssue/GetRiskChanceImpactResponse" message="tns:IIssue_GetRiskChanceImpact_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertUpdateIssues">
+      <wsdl:input wsaw:Action="http://tempuri.org/IIssue/InsertUpdateIssues" message="tns:IIssue_InsertUpdateIssues_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IIssue/InsertUpdateIssuesResponse" message="tns:IIssue_InsertUpdateIssues_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetIssueProfile">
+      <wsdl:input wsaw:Action="http://tempuri.org/IIssue/GetIssueProfile" message="tns:IIssue_GetIssueProfile_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IIssue/GetIssueProfileResponse" message="tns:IIssue_GetIssueProfile_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetStatusForIssue">
+      <wsdl:input wsaw:Action="http://tempuri.org/IIssue/GetStatusForIssue" message="tns:IIssue_GetStatusForIssue_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IIssue/GetStatusForIssueResponse" message="tns:IIssue_GetStatusForIssue_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateIssueStatus">
+      <wsdl:input wsaw:Action="http://tempuri.org/IIssue/UpdateIssueStatus" message="tns:IIssue_UpdateIssueStatus_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IIssue/UpdateIssueStatusResponse" message="tns:IIssue_UpdateIssueStatus_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteIssue">
+      <wsdl:input wsaw:Action="http://tempuri.org/IIssue/DeleteIssue" message="tns:IIssue_DeleteIssue_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IIssue/DeleteIssueResponse" message="tns:IIssue_DeleteIssue_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetIssueAssign">
+      <wsdl:input wsaw:Action="http://tempuri.org/IIssue/GetIssueAssign" message="tns:IIssue_GetIssueAssign_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IIssue/GetIssueAssignResponse" message="tns:IIssue_GetIssueAssign_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetIssueLocations">
+      <wsdl:input wsaw:Action="http://tempuri.org/IIssue/GetIssueLocations" message="tns:IIssue_GetIssueLocations_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IIssue/GetIssueLocationsResponse" message="tns:IIssue_GetIssueLocations_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFacilityAssets">
+      <wsdl:input wsaw:Action="http://tempuri.org/IIssue/GetFacilityAssets" message="tns:IIssue_GetFacilityAssets_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IIssue/GetFacilityAssetsResponse" message="tns:IIssue_GetFacilityAssets_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetIssueOwner">
+      <wsdl:input wsaw:Action="http://tempuri.org/IIssue/GetIssueOwner" message="tns:IIssue_GetIssueOwner_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IIssue/GetIssueOwnerResponse" message="tns:IIssue_GetIssueOwner_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllIssues">
+      <wsdl:input wsaw:Action="http://tempuri.org/IIssue/GetAllIssues" message="tns:IIssue_GetAllIssues_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IIssue/GetAllIssuesResponse" message="tns:IIssue_GetAllIssues_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllIssuesPM">
+      <wsdl:input wsaw:Action="http://tempuri.org/IIssue/GetAllIssuesPM" message="tns:IIssue_GetAllIssuesPM_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IIssue/GetAllIssuesPMResponse" message="tns:IIssue_GetAllIssuesPM_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllIssuesGIS">
+      <wsdl:input wsaw:Action="http://tempuri.org/IIssue/GetAllIssuesGIS" message="tns:IIssue_GetAllIssuesGIS_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IIssue/GetAllIssuesGISResponse" message="tns:IIssue_GetAllIssuesGIS_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAssetsIssues">
+      <wsdl:input wsaw:Action="http://tempuri.org/IIssue/GetAssetsIssues" message="tns:IIssue_GetAssetsIssues_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IIssue/GetAssetsIssuesResponse" message="tns:IIssue_GetAssetsIssues_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAssetsIssuesPM">
+      <wsdl:input wsaw:Action="http://tempuri.org/IIssue/GetAssetsIssuesPM" message="tns:IIssue_GetAssetsIssuesPM_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IIssue/GetAssetsIssuesPMResponse" message="tns:IIssue_GetAssetsIssuesPM_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertUpdateIssuesDocument">
+      <wsdl:input wsaw:Action="http://tempuri.org/IIssue/InsertUpdateIssuesDocument" message="tns:IIssue_InsertUpdateIssuesDocument_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IIssue/InsertUpdateIssuesDocumentResponse" message="tns:IIssue_InsertUpdateIssuesDocument_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetInspections">
+      <wsdl:input wsaw:Action="http://tempuri.org/IIssue/GetInspections" message="tns:IIssue_GetInspections_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IIssue/GetInspectionsResponse" message="tns:IIssue_GetInspections_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFacilityAssetsPM">
+      <wsdl:input wsaw:Action="http://tempuri.org/IIssue/GetFacilityAssetsPM" message="tns:IIssue_GetFacilityAssetsPM_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IIssue/GetFacilityAssetsPMResponse" message="tns:IIssue_GetFacilityAssetsPM_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFacilityAssets_PM">
+      <wsdl:input wsaw:Action="http://tempuri.org/IIssue/GetFacilityAssets_PM" message="tns:IIssue_GetFacilityAssets_PM_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IIssue/GetFacilityAssets_PMResponse" message="tns:IIssue_GetFacilityAssets_PM_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFacilityAssetsForSpace_PM">
+      <wsdl:input wsaw:Action="http://tempuri.org/IIssue/GetFacilityAssetsForSpace_PM" message="tns:IIssue_GetFacilityAssetsForSpace_PM_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IIssue/GetFacilityAssetsForSpace_PMResponse" message="tns:IIssue_GetFacilityAssetsForSpace_PM_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllWorkOrders">
+      <wsdl:input wsaw:Action="http://tempuri.org/IIssue/GetAllWorkOrders" message="tns:IIssue_GetAllWorkOrders_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IIssue/GetAllWorkOrdersResponse" message="tns:IIssue_GetAllWorkOrders_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllWorkOrdersCountV2">
+      <wsdl:input wsaw:Action="http://tempuri.org/IIssue/GetAllWorkOrdersCountV2" message="tns:IIssue_GetAllWorkOrdersCountV2_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IIssue/GetAllWorkOrdersCountV2Response" message="tns:IIssue_GetAllWorkOrdersCountV2_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllWorkOrdersV2">
+      <wsdl:input wsaw:Action="http://tempuri.org/IIssue/GetAllWorkOrdersV2" message="tns:IIssue_GetAllWorkOrdersV2_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IIssue/GetAllWorkOrdersV2Response" message="tns:IIssue_GetAllWorkOrdersV2_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFacilityAssetsV1">
+      <wsdl:input wsaw:Action="http://tempuri.org/IIssue/GetFacilityAssetsV1" message="tns:IIssue_GetFacilityAssetsV1_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IIssue/GetFacilityAssetsV1Response" message="tns:IIssue_GetFacilityAssetsV1_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_assets_for_system_Count">
+      <wsdl:input wsaw:Action="http://tempuri.org/IIssue/Get_assets_for_system_Count" message="tns:IIssue_Get_assets_for_system_Count_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IIssue/Get_assets_for_system_CountResponse" message="tns:IIssue_Get_assets_for_system_Count_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_assets_for_space_Count">
+      <wsdl:input wsaw:Action="http://tempuri.org/IIssue/Get_assets_for_space_Count" message="tns:IIssue_Get_assets_for_space_Count_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IIssue/Get_assets_for_space_CountResponse" message="tns:IIssue_Get_assets_for_space_Count_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IIssue" type="tns:IIssue">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Get_assets_for_workorder_Count">
+      <soap:operation soapAction="http://tempuri.org/IIssue/Get_assets_for_workorder_Count" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Default_Values_For_Workorder">
+      <soap:operation soapAction="http://tempuri.org/IIssue/Get_Default_Values_For_Workorder" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWorkOrderLog">
+      <soap:operation soapAction="http://tempuri.org/IIssue/GetWorkOrderLog" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertWorkOrderLog">
+      <soap:operation soapAction="http://tempuri.org/IIssue/InsertWorkOrderLog" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DoWork">
+      <soap:operation soapAction="http://tempuri.org/IIssue/DoWork" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IssueType">
+      <soap:operation soapAction="http://tempuri.org/IIssue/IssueType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRiskChanceImpact">
+      <soap:operation soapAction="http://tempuri.org/IIssue/GetRiskChanceImpact" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertUpdateIssues">
+      <soap:operation soapAction="http://tempuri.org/IIssue/InsertUpdateIssues" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetIssueProfile">
+      <soap:operation soapAction="http://tempuri.org/IIssue/GetIssueProfile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStatusForIssue">
+      <soap:operation soapAction="http://tempuri.org/IIssue/GetStatusForIssue" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateIssueStatus">
+      <soap:operation soapAction="http://tempuri.org/IIssue/UpdateIssueStatus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteIssue">
+      <soap:operation soapAction="http://tempuri.org/IIssue/DeleteIssue" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetIssueAssign">
+      <soap:operation soapAction="http://tempuri.org/IIssue/GetIssueAssign" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetIssueLocations">
+      <soap:operation soapAction="http://tempuri.org/IIssue/GetIssueLocations" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFacilityAssets">
+      <soap:operation soapAction="http://tempuri.org/IIssue/GetFacilityAssets" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetIssueOwner">
+      <soap:operation soapAction="http://tempuri.org/IIssue/GetIssueOwner" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllIssues">
+      <soap:operation soapAction="http://tempuri.org/IIssue/GetAllIssues" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllIssuesPM">
+      <soap:operation soapAction="http://tempuri.org/IIssue/GetAllIssuesPM" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllIssuesGIS">
+      <soap:operation soapAction="http://tempuri.org/IIssue/GetAllIssuesGIS" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAssetsIssues">
+      <soap:operation soapAction="http://tempuri.org/IIssue/GetAssetsIssues" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAssetsIssuesPM">
+      <soap:operation soapAction="http://tempuri.org/IIssue/GetAssetsIssuesPM" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertUpdateIssuesDocument">
+      <soap:operation soapAction="http://tempuri.org/IIssue/InsertUpdateIssuesDocument" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetInspections">
+      <soap:operation soapAction="http://tempuri.org/IIssue/GetInspections" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFacilityAssetsPM">
+      <soap:operation soapAction="http://tempuri.org/IIssue/GetFacilityAssetsPM" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFacilityAssets_PM">
+      <soap:operation soapAction="http://tempuri.org/IIssue/GetFacilityAssets_PM" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFacilityAssetsForSpace_PM">
+      <soap:operation soapAction="http://tempuri.org/IIssue/GetFacilityAssetsForSpace_PM" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllWorkOrders">
+      <soap:operation soapAction="http://tempuri.org/IIssue/GetAllWorkOrders" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllWorkOrdersCountV2">
+      <soap:operation soapAction="http://tempuri.org/IIssue/GetAllWorkOrdersCountV2" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllWorkOrdersV2">
+      <soap:operation soapAction="http://tempuri.org/IIssue/GetAllWorkOrdersV2" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFacilityAssetsV1">
+      <soap:operation soapAction="http://tempuri.org/IIssue/GetFacilityAssetsV1" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_assets_for_system_Count">
+      <soap:operation soapAction="http://tempuri.org/IIssue/Get_assets_for_system_Count" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_assets_for_space_Count">
+      <soap:operation soapAction="http://tempuri.org/IIssue/Get_assets_for_space_Count" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Issue">
+    <wsdl:port name="BasicHttpBinding_IIssue" binding="tns:BasicHttpBinding_IIssue">
+      <soap:address location="http://localhost:4444/Client%20WCF/Issue.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

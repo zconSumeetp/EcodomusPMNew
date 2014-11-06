@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.datacontract.org/2004/07/" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:4444/Client WCF/AssetSync.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="AssetSyncModel">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Ext_sys_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="History_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Import_export_flag" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Pk_configuration_Id" type="ser:guid" />
+      <xs:element minOccurs="0" name="RecurrenceRuleText1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Sync_history_entity_detail_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Txt_search" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="AssetSyncModel" nillable="true" type="tns:AssetSyncModel" />
+</xs:schema>

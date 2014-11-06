@@ -1,0 +1,882 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="~/App/EcoDomus_PM_New.master.cs"
+    Inherits="App_EcoDomus_PM_New" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<%@ Register Assembly="Telerik.Web.UI" Namespace="Telerik.Web.UI" TagPrefix="telerik" %>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>EcoDomus</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=7 " />
+    <link href="../App_Themes/EcoDomus/style_new_ui_pm.css" rel="stylesheet" type="text/css" />
+    <link href="../App_Themes/EcoDomus/New_UI_Panelbar.css" rel="stylesheet" type="text/css" />
+    <link href="../App_Themes/EcoDomus/NEWUI_Grid.css" rel="stylesheet" type="text/css" />
+    <link rel="Stylesheet" type="text/css" href="../App_Themes/EcoDomus/style_new_1.css" />
+    
+    <style type="text/css">
+        .RadPanelBar .rpText
+        {
+            padding-left:7px;
+        }
+    </style>
+
+    <telerik:RadCodeBlock ID="RadCodeBlock1" runat="server">
+        <script src=<%= ResolveUrl("../App_Themes/EcoDomus/jquery-1.8.3.js") %> type="text/javascript"></script>
+        <script type="text/javascript" language="javascript">
+
+            function set_NiceScrollToPanel() {
+               
+                $("#div_contentPlaceHolder").css('height', (parseInt($(window).height()) - 58));
+                var screenhtg = parseInt($(window).height() - 58);
+
+//                document.getElementById('<%= hfPageSize.ClientID %>').value = parseInt((screenhtg - 130) / 40);
+//                document.getElementById('<%= btnclick.ClientID %>').click();
+                return screenhtg;
+            }
+            function set_Height() {
+                $("#div_contentPlaceHolder").css('height', (parseInt($(window).height()) - 58));
+                
+            }
+
+
+            function nevigateToProjectProfile(param) {
+
+                if (param == 'Projects')
+                    location.href = '../Settings/Project.aspx';
+                return false;
+
+            }
+
+            function ShowVersionInfo() {
+                var rtip_Version_info = $find("<%=rtip_Version_info.ClientID %>");
+                if (rtip_Version_info != null) {
+                    rtip_Version_info.show();
+                }
+                return false;
+            }
+
+            function showMenu(e) {
+
+                var contextMenu = $find("<%= RadPanelBar1.ClientID %>");
+
+                if ((!e.relatedTarget) || (!$telerik.isDescendantOrSelf(contextMenu.get_element(), e.relatedTarget))) {
+                    contextMenu.show(e);
+                }
+
+                $telerik.cancelRawEvent(e);
+            }
+
+            function ShowUserInfo() {
+                var rtip_User_info = $find("<%=rtip_User_info.ClientID %>");
+                if (rtip_User_info != null) {
+                    rtip_User_info.show();
+                }
+                return false;
+            }
+            function ShowSettingInfo() {
+                var rtip_setting_info = $find("<%=rtip_setting_info.ClientID %>");
+                if (rtip_setting_info != null) {
+                    rtip_setting_info.show();
+                }
+                return false;
+            }
+
+            function ShowSearchEntityInfo() {
+                var rtip_setting_info = $find("<%=rtip_search_entity_info.ClientID %>");
+                if (rtip_setting_info != null) {
+                    rtip_setting_info.show();
+                }
+                return false;
+            }
+
+            function HideAllTooltip() {
+                var tooltip = Telerik.Web.UI.RadToolTip.getCurrent();
+                if (tooltip) tooltip.hide();
+                return false;
+            }
+            //xxxx
+            function ShowSearchEntity(entity) {
+
+                //  var temp = document.getElementById("lbl_search_entity");
+                //var lblTxt = document.getElementById("lbl_search_entity").innerHTML = entity;
+                var radToolTip = $find("<%=rdTipSearchId.ClientID%>");
+                var n = 0;
+                if ($('#chk_projects').is(':checked'))
+                    n++;
+                if ($('#chk_facilities').is(':checked'))
+                    n++;
+                if ($('#chk_Component').is(':checked'))
+                    n++;
+                if ($('#chk_locations').is(':checked'))
+                    n++;
+
+                var countChecked = function () {
+                    //var n = $("input:checked").length;
+
+                    if (n == 0) {
+                        var lblTxt = document.getElementById("lbl_search_entity").innerHTML = $('#lblProjectId').text(); // "Projects"
+
+                    }
+                    radToolTip.set_text($('#lblProjectId').text());
+                    //radToolTip.show();
+                };
+                countChecked();
+                $("input[type=checkbox]").on("click", countChecked);
+
+
+                var countChecked = function () {
+
+                    //var n = $("input:checked").length;
+                    var temp = "";
+
+                    if (n > 1) {
+                        //This Function Design For Showing Multiple Selection Of Check Boxes for different functionality of search 
+                        // chk_locations chk_equipment  chk_facilities chk_projects
+                        if ($('#chk_projects').is(':checked')) {
+                            temp = temp + ($('#lblProjectId').text()).toString() + ",";
+                            //this following code is used for truncate the character from letter which we shown in tool tip.
+                            //((temp.toString()).length > 7) ? (temp = temp.substr(0, 7)) : (temp = temp + ($('#lblProjectId').text()).toString() + ",");
+                            //((($('#lblProjectId').text()).toString()).length > 7) ? (temp = temp.substr(0, 8)): (temp = temp)) + ","; // "Project,";
+                        }
+                        if ($('#chk_facilities').is(':checked')) {
+                            temp = temp + ($('#lblFacilityId').text()).toString() + ",";
+                        }
+
+                        if ($('#chk_Component').is(':checked')) {
+                            temp = temp + ($('#lblComponentId').text()).toString() + ",";
+                            //this following code shows truncation of character from labels
+                            //((temp.toString()).length > 7) ? (temp = (temp.substr(0, 7)) + ",") : (temp = temp + ($('#lblEquipmentId').text()).toString() + ",");
+                        }
+
+                        if ($('#chk_locations').is(':checked')) {
+                            temp = temp + ($('#lblLocationId').text()).toString() + ",";
+                        }
+
+
+                        radToolTip.set_text(temp.substr(0, (temp.length - 1)));
+                        //radToolTip.show();
+                        document.getElementById("lbl_search_entity").innerHTML = temp.substr(0, 12) + "...";
+                    }
+                };
+                countChecked();
+                $("input[type=checkbox]").on("click", countChecked);
+
+                var countChecked = function () {
+                    //var n = $("input:checked").length;
+                    if (n == 1) {
+
+                        if ($('#chk_projects').is(':checked')) {
+                            document.getElementById("lbl_search_entity").innerHTML = $('#lblProjectId').text(); // "Projects";
+
+                            radToolTip.set_text($('#lblProjectId').text());
+                        }
+
+                        if ($('#chk_facilities').is(':checked')) {
+                            document.getElementById("lbl_search_entity").innerHTML = $('#lblFacilityId').text(); // "Facilities";
+                            radToolTip.set_text($('#lblFacilityId').text());
+                            //radToolTip.set_text("Facilities");
+                        }
+
+                        if ($('#chk_Component').is(':checked')) {
+                            document.getElementById("lbl_search_entity").innerHTML = $('#lblComponentId').text(); // "Equipment";
+                            //radToolTip.set_text("Equipment");
+                            radToolTip.set_text($('#lblComponentId').text());
+                        }
+
+                        if ($('#chk_locations').is(':checked')) {
+                            document.getElementById("lbl_search_entity").innerHTML = $('#lblLocationId').text(); // "Location";
+                            //radToolTip.set_text("Location");
+                            radToolTip.set_text($('#lblLocationId').text());
+
+                        }
+
+                    }
+                };
+                countChecked();
+                $("input[type=checkbox]").on("click", countChecked);
+
+            }
+
+            function setHeightValues() {
+
+                if ($("#dvSearchControl").is(":visible")) {
+                    //document.getElementById('divmenubar').style.height = Math.ceil((screen.height) * 0.65);
+                }
+                else
+                    document.getElementById('divmenubar').style.height = Math.ceil((screen.height) * 0.65) + 50;
+                if (screen.height > 1000) {
+                    document.getElementById('divmenubar').style.height = Math.ceil((screen.height) * 0.75);
+                    document.getElementById('tdVersion').style.height = Math.ceil((screen.height) * 0.07);
+                    document.getElementById('tdSitePath1').style.height = Math.ceil((screen.height) * 0.03);
+                    document.getElementById('tdFooterId').style.height = Math.ceil((screen.height) * 0.09);
+                }
+            }
+
+            //to record logout time when browser is closed: Kongkun 
+            window.onbeforeunload = function () {
+                if ((window.event.clientX < 0) || (window.event.clientY < 0) || window.event.clientY < -80) {
+                    UpdateSession();
+                }
+            };
+            function UpdateSession() {
+                $.ajax({
+                    type: "POST",
+                    async: false,
+                    url: "../SessionOut.asmx/UpdateSessionOutTime",
+                    data: "{}",
+                    contentType: "application/json; charset=utf-8",
+                    dataType: "json"});
+            }
+
+            $(document).ready(
+
+              function () {
+
+                  $("html").niceScroll();
+
+              }
+
+            );
+
+            
+        </script>
+    </telerik:RadCodeBlock>
+    <style runat="server" type="text/css" id="styleTabId">
+        div.outerdiv
+        {
+            overflow: auto;
+            table-layout: fixed;
+            display: inline-block;
+            width: 100%;
+        }
+        
+        .RadPanelBar .rpText
+        {
+            padding-left:07px;
+        }
+        ast{
+            color: Gray;
+            font-family: "Arial" ;
+            font-weight:normal;
+            font-style:normal;
+            font-size:12px;
+         }
+        .style1
+        {
+            background-image: url('Images/asset_zebra-bkgrd_gray2.PNG');
+            width: 40%;
+            table-layout: fixed;
+        }
+    </style>
+    <asp:ContentPlaceHolder ID="Head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body style="padding: 0px 0px 0px 0px; background: White; width: 100%; height: 100%;"
+    class="">
+    <form id="form1" runat="server" method="Post" style="width: 100%; height: 100%; background-color: White;"
+    class="" target="_self">
+    <telerik:RadScriptManager ID="RadScriptManager1" runat="server" AsyncPostBackTimeout="360000">
+        <Scripts>
+            <telerik:RadScriptReference Assembly="Telerik.Web.UI" Name="Telerik.Web.UI.Common.Core.js" />
+            <telerik:RadScriptReference Assembly="Telerik.Web.UI" Name="Telerik.Web.UI.Common.jQuery.js" />
+            <telerik:RadScriptReference Assembly="Telerik.Web.UI" Name="Telerik.Web.UI.Common.jQueryInclude.js" />
+        </Scripts>
+        <%--For ActivityLogReport: To register a webservice--%>
+        <Services>
+            <asp:ServiceReference Path="~/App/SessionOut.asmx" />
+        </Services>
+    </telerik:RadScriptManager>
+    <script src="<%= ResolveUrl("../App_Themes/EcoDomus/jquery.nicescroll.js") %>" type="text/javascript"></script>
+    <telerik:RadFormDecorator ID="rdfAll" DecoratedControls="Scrollbars,Buttons" Skin="Vista"
+        runat="server" />
+    <div id="dvContents" style="height: 100%" runat="server">
+        <div id="dvMainId" style="height: 100%" runat="server" class="">
+            <table id="tblmaster" class="tableHeader" width="100%" style="height: 100%" cellpadding="0"
+                cellspacing="0">
+                <tr id="trHeaderId" style="height: 15%">
+                    <td id="tdVersion" valign="middle" runat="server" style="width: 10%; display: block;
+                        table-layout: fixed; padding-bottom: 0px; height: 30px;" bgcolor="#707070">
+                        <table class="tableHeader" cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td style="width: 100%; padding-left: 0px; padding-right: 0px" align="center">
+                                    <asp:Image ImageUrl="~/App/Images/Icons/ecodomus-logo-158x30-707070bg.gif" runat="server"
+                                        ID="imgLogo" />
+                                </td>
+                                <%--<td valign="bottom"  align="center" style="padding-left:0px; width: 15%;  padding-right: 0px;">
+                                   <asp:LinkButton ID="lbtnVersion" Text="v1.5" runat="server" CssClass="VersionHead" Width="100%"
+                                        OnClientClick="return ShowVersionInfo();"></asp:LinkButton>
+                                </td>--%>
+                            </tr>
+                        </table>
+                    </td>
+                    <td class="tdZebraDarkkGrayNew" style="width: 90%; height: 30px; table-layout: fixed;
+                        display: block; padding-top: 1px; padding-left: 0px;" bgcolor="#F0F0EA">
+                        <table class="tableHeader" cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td style="width: 30%; border-collapse: collapse; overflow: hidden; height: 40px;
+                                    vertical-align: bottom;" align="left">
+                                    <div class="MainPath" style="vertical-align: bottom; width: 100%; overflow: hidden;
+                                        table-layout: fixed; padding-left: 05px;">
+                                        <asp:Label ID="lblSitemapRootV1" runat="server" Text="PM"></asp:Label>
+                                        <%--<div id="divsitemap">--%>
+                                        <asp:SiteMapPath ID="SiteMapPath1" runat="server" RootNodeStyle-CssClass="ChangeColorV1"
+                                            CurrentNodeStyle-CssClass="ChangeColorV1" CssClass="ChangeColor">
+                                            <PathSeparatorTemplate>
+                                                <asp:Image ID="imgBrdcrmsLogo" runat="server" Height="13" Width="15" ImageUrl="~/App/Images/Icons/asset_carrot_right.png" />
+                                            </PathSeparatorTemplate>
+                                        </asp:SiteMapPath>
+                                        <%-- </div>--%>
+                                    </div>
+                                </td>
+                                <td style="width: 35%; height: 30px; border-collapse: collapse; overflow: hidden;
+                                    vertical-align: top; padding-right: 0px; white-space: nowrap;"  align="right">
+                                    <div id="divMainProfile"  class="MainProfileV1">
+                                        <table class="" cellpadding="0" style="background-color: White; height: 20px;" cellspacing="0">
+                                            <tr valign="bottom">
+                                                <td  align="right" class="lblToolTip">
+                                                    <asp:Label ID="dummyName" CssClass="LogoutBtnV1" runat="server"></asp:Label>
+                                                    <asp:Label ID="lbl_user" CssClass="LogoutBtnV1" runat="server"></asp:Label>
+                                                </td>
+                                                <td align="right" class="lblToolTip">
+                                                    <asp:Label ID="lblDash1" CssClass="LogoutBtnV1" runat="server" Text="-"></asp:Label>
+                                                </td>
+                                                <td align="right" class="lblToolTip">
+                                                    <asp:Label ID="lbl_orgnization_name" CssClass="LogoutBtnV1" runat="server" ></asp:Label>
+                                                </td>
+                                                <td align="right" class="lblToolTip">
+                                                    <asp:Label ID="lblDash2" CssClass="LogoutBtnV1" runat="server" Text="-"></asp:Label>
+                                                </td>
+                                                
+                                                <td align="right" class="lblToolTip">
+                                                    <asp:Label ID="lbl_project_name" CssClass="LogoutBtnV1" runat="server" Text="Project Name"></asp:Label>
+                                                </td>
+                                                <td align="right" onmouseover="ShowUserInfo();" >
+                                                    <asp:ImageButton ID="btnProfile" Visible="false" Width="10px" CssClass="bottomAlignment" runat="server" ImageUrl="~/App/Images/Icons/asset_arrow_lg.png"
+                                                        OnClientClick="return ShowUserInfo();" />
+                                                </td>
+                                                <td align="right" style="height:16px;padding:2px 1px 2px 1px;" >
+                                                    <asp:ImageButton ID="btnHelp" CssClass="bottomAlignment" style="height:15px;"  
+                                                        runat="server" ImageUrl="../App/Images/Icons/icon_help_sm.png" 
+                                                       onclick="btnHelp_Click" />
+                                                </td>
+                                                <td align="right"  class="lblToolTip" style="height:16px;padding:0px 0px 2px 0px;" onmouseover="ShowSettingInfo()">
+                                                    <asp:ImageButton ID="btnSettings" CssClass="btnSettingsMenu bottomAlignment" style="height:16px;padding:0px;" runat="server" ImageUrl="~/App/Images/Icons/icon_settings_sm.png" />
+                                                     </td>
+                                                <td align="left" onmouseover="ShowSettingInfo()" style="padding-bottom:1px;">
+                                                    <asp:ImageButton ID="btnSettingsExpand" Width="10px" CssClass="bottomAlignment" runat="server" ImageUrl="~/App/Images/Icons/asset_arrow_lg.png"
+                                                        OnClientClick="return ShowSettingInfo();" />
+                                                </td>
+                                                <td align="right" style="padding-right:0px; vertical-align:bottom; " >
+                                                    <telerik:RadButton ID="btnLogout" runat="server" Text="<%$Resources:Resource,Logout%>" 
+                                                        HoveredCssClass="LogoutBtnHover" CssClass="LogoutBtn " ButtonType="LinkButton" Height="20" Font-Names="Arial" 
+                                                        BackColor="White" BorderStyle="None"  Skin="" OnClick="btnLogout_OnClick"> 
+                                                        <Icon SecondaryIconUrl="~/App/Images/Icons/logout.png"  SecondaryIconRight="12" SecondaryIconTop="1">
+                                                        </Icon>
+                                                    </telerik:RadButton>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr id="trMiddleMainId" style="height: 70%">
+                    <td class="tdZebraLightGray" valign="top" style="width: 7%; table-layout: fixed;
+                        border-top: 1px solid #000000;">
+                        <div class="" runat="server" id="divPanelControl">
+                            <table class="tableHeader" cellpadding="0" cellspacing="0">
+                                <tr>
+                                    <td class="tdZebraDarkkGray" align="center">
+                                        <div id="dvSearchControl" runat="server" >
+                                            <table class="tableHeader" style="height:2%;" cellpadding="0" cellspacing="0">
+                                                <tr>
+                                                    <td align="left" valign="top" style="padding-left: 07px;padding-top:03px;">
+                                                        <asp:Label ID="lblSearch" Text="<%$Resources:Resource, Search%>" CssClass="lblGray"
+                                                            runat="server"></asp:Label>
+                                                    </td>
+                                                    <td align="right" valign="top" style="">
+                                                        <table>
+                                                            <tr>
+                                                                <td valign="top">
+                                                                    <asp:Label ID="lbl_search_entity" Text="<%$Resources:Resource, Projects%>" CssClass="lblGray"
+                                                                        runat="server"></asp:Label>
+                                                                </td>
+                                                                <td valign="top">
+                                                                    <div style="width: 100%; height: 13px;" onmouseover="ShowSearchEntityInfo()">
+                                                                        <asp:ImageButton ImageUrl="~/App/Images/Icons/asset_arrow_sm.png" runat="server"
+                                                                            ID="ImageButton1" Width="100%" OnClientClick="return ShowSearchEntityInfo();" />
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="2"  align="center" style="table-layout: fixed;vertical-align:top;padding-bottom:4px; width: auto">
+                                                        <table cellpadding="0px" cellspacing="0px" class="">
+                                                            <tr>
+                                                                <td align="center" width="100%" rowspan="0px" style="padding-bottom: 0px;padding-left:0px;">
+                                                                    <div id="div_search" style="width: 170px;">
+                                                                        <asp:Panel ID="pnlSearchBtnContol" runat="server" DefaultButton="btnSearchMaster">
+                                                                            <div style="width: 155px; background-color: #FFFFCC;" class="txtboxHeight1">
+                                                                                <table>
+                                                                                    <tr>
+                                                                                        <td style="background-color: #FFFFCC">
+                                                                                            <telerik:RadTextBox CssClass="" ClientIDMode="Static" runat="server"
+                                                                                                BorderWidth="0px" Height="20px" EmptyMessage="" BackColor="#FFFFCC" BorderColor="#FFFFCC"
+                                                                                                ID="txtcriteriaMtr" Width="120px">
+                                                                                            </telerik:RadTextBox>
+                                                                                        </td>
+                                                                                        <td style="background-color: #FFFFCC">
+                                                                                            <asp:ImageButton ClientIDMode="Static" ID="btnSearchMaster" runat="server" ImageUrl="~/App/Images/Icons/icon_search_sm.png"
+                                                                                                OnClick="btnSearch_ClickMaster" Style="height: 13px" />
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                            </div>
+                                                                        </asp:Panel>
+                                                                    </div>
+                                                                    <%--<div>
+                                                <div style="background-color:#FFFFCC">
+                                                <telerik:RadTextBox ClientIDMode="Static" runat="server" BackColor="#FFFFCC"
+                                                        ID="txtcriteria" Width="80%" EmptyMessage="Search" LabelWidth="40%">
+                                                 </telerik:RadTextBox>
+                                                    <asp:ImageButton ClientIDMode="Static" ID="btnSearch" Height="13px" runat="server"
+                                                        ImageUrl="~/App/Images/Icons/icon_search_sm.png" />
+                                                    </div>
+                                                   </div>--%>
+                                                                </td>
+                                                                <%--<td align="left" rowspan="0px" width="10%" style="height: 14px; padding-bottom: 0px;">
+                                                    
+                                                </td>--%>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <%--<div id="dvShadow" runat="server" class="" style="height: 0px;" > </div>--%>
+                                    </td>
+                                </tr>
+                                <%--<tr>
+                                    <td>
+                                        <div id="dvSeperator" runat="server" style="width: 100%; height: 1px; background-color: #F7F7F7;">
+                                        </div>
+                                    </td>
+                                </tr>--%>
+                                <tr>
+                                    <td>
+                                        <table class=" tableHeader" width="100%" style="padding: 2px 2px 2px 2px;">
+                                            <%-- <tr>
+                                                <td class="" align="left" style="padding: 8px 12px 8px 12px; table-layout: fixed;">
+                                                    <asp:Label ID="lbcExplorer" Text="EXPLORER" CssClass="lblGrayLight lblGray" runat="server"></asp:Label>
+                                                </td>
+                                            </tr>--%>
+                                            <tr>
+                                                <td class="" align="left" style="padding: 02px 0px 0px 2px; height: 100%">
+                                                    <div id="divmenubar" style="overflow: auto; height: 100%;width:170px; table-layout: fixed;" runat="server"
+                                                        class=" ">
+                                                        <telerik:RadPanelBar runat="server" ID="RadPanelBar1" Width="100%" PersistStateInCookie="True"
+                                                            ExpandMode="SingleExpandedItem" Style="float: left;" AllowCollapseAllItems="True"
+                                                            CollapseDelay="0" OnLoad="setScrollBar" Skin="" CssClass="NewUIPanelbar" 
+                                                            CollapseAnimation-Duration="0" onitemdatabound="RadPanelBar1_ItemDataBound" 
+                                                            >
+                                                        </telerik:RadPanelBar>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <telerik:RadAjaxManager ID="RadAjaxManager1" runat="server">
+                                                    </telerik:RadAjaxManager>
+                                                    
+                                                    <telerik:RadAjaxManagerProxy ID="RadAjaxManagerProxyMaster" runat="server">
+                                                    <AjaxSettings>
+                                                        
+                                                         <telerik:AjaxSetting AjaxControlID="btnclick">
+                                                          <UpdatedControls>
+                                                                <telerik:AjaxUpdatedControl ControlID="btnclick" />
+                                                            </UpdatedControls>
+                                                          </telerik:AjaxSetting>
+                                                        
+                                                          <telerik:AjaxSetting AjaxControlID="chk_projects">
+                                                                <UpdatedControls>
+                                                                    <telerik:AjaxUpdatedControl ControlID="lblProjects" LoadingPanelID="loadingPanel11" />
+                                                                </UpdatedControls>
+                                                            </telerik:AjaxSetting>
+                                                            <telerik:AjaxSetting AjaxControlID="chk_facilities">
+                                                                <UpdatedControls>
+                                                                    <telerik:AjaxUpdatedControl ControlID="lblProjects" LoadingPanelID="loadingPanel11" />
+                                                                </UpdatedControls>
+                                                            </telerik:AjaxSetting>
+                                                            <telerik:AjaxSetting AjaxControlID="chk_equipment">
+                                                                <UpdatedControls>
+                                                                    <telerik:AjaxUpdatedControl ControlID="lblProjects" LoadingPanelID="loadingPanel11" />
+                                                                </UpdatedControls>
+                                                            </telerik:AjaxSetting>
+                                                            <telerik:AjaxSetting AjaxControlID="chk_locations">
+                                                                <UpdatedControls>
+                                                                    <telerik:AjaxUpdatedControl ControlID="lblProjects" LoadingPanelID="loadingPanel11" />
+                                                                </UpdatedControls>
+                                                            </telerik:AjaxSetting>
+                                                            <telerik:AjaxSetting AjaxControlID="RadPanelBar1">
+                                                                <UpdatedControls>
+                                                                    <telerik:AjaxUpdatedControl ControlID="RadPanelBar1" LoadingPanelID="loadingPanel11" />
+                                                                </UpdatedControls>
+                                                            </telerik:AjaxSetting>
+                                                        </AjaxSettings>
+                                                    </telerik:RadAjaxManagerProxy>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </td>
+                    <td id="td_contentPlaceHolder">
+                        <div id="div_contentPlaceHolderOuterMain" class="tdZebraLightGray">
+                            <div id="div_contentPlaceHolder" >
+                                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                                </asp:ContentPlaceHolder>
+                                <asp:ContentPlaceHolder ID="cphHead" runat="server">
+                                </asp:ContentPlaceHolder>
+                            </div>
+                            <div id="dvFooter" class="LogoutBtnV1">
+                                <span>&copy; Copyright. EcoDomus, Inc.</span>
+                            </div>
+                            <%--<table class="tableHeader" cellpadding="0" cellspacing="0">
+                                <tr>
+                                    <td colspan="2">
+                                        <div class="gradient1" style="height: 02px;">
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="" align="center" style="padding-top: 03px; padding-left: 02px;">
+                                        <div style="display: block; white-space: nowrap; overflow: hidden; margin: 0px; table-layout: fixed;">
+                                            
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>--%>
+                        </div>
+                    </td>
+                </tr>
+                <%--<tr id="trfooterId"style="height:10%">
+                    <td id="tdFooterId" class="" style="border-top: 0px solid Gray; padding: 3px 2px 3px 0px;
+                        padding-bottom: 0px; table-layout: fixed">
+                    </td>
+                    <td class="" style="margin-top: 0px; table-layout: fixed;">
+                        <table class="tableHeader ">
+                            <tr>
+                                <td colspan="2" style="border-top: 0px solid Gray; padding: 3px 2px 3px 0px;">
+                                    <table cellpadding="0" class="tableHeader " cellspacing="0">
+                                        <tr style="">
+                                            <td>
+                                                <asp:Label runat="server" ID="lbl_license_msg" Text="" ForeColor="Red" Style="vertical-align: middle;" />
+                                            </td>
+                                            <td align="right" style="width: 75%; table-layout: fixed; overflow: hidden;">
+                                                &copy; Copyright 2008-2011. EcoDomus, Inc.
+                                            </td>
+                                            <td style="padding: 0px 10px 0 10px; width: 5%; table-layout: fixed; overflow: hidden;">
+                                                <asp:Image ID="imgSmallLogo" runat="server" ImageUrl="~/App/Images/Icon-Small-50.png"
+                                                    Height="32px" Width="35px" />
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>--%>
+            </table>
+        </div>
+        <telerik:RadToolTip ID="rtip_Version_info" HideEvent="FromCode" ShowEvent="FromCode"
+            OffsetX="-12" ShowCallout="false" AutoCloseDelay="500000" RelativeTo="Element"
+            TargetControlID="tdVersion" Position="MiddleRight" Sticky="false" runat="server"
+            Skin="">
+            <table cellpadding="0" cellspacing="0" width="100%" style="background: #FFFFFF">
+                <tr>
+                    <td colspan="2">
+                        <table border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color: #F8F8F8">
+                            <tr>
+                                <td align="right" style="padding: 2px 8px 0px 0px;">
+                                    <asp:ImageButton ID="ibtn_close" runat="server" Width="22" Height="20" ImageUrl="~/App/Images/Icons/icon-close.png"
+                                        OnClientClick="return HideAllTooltip();" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding-left: 12px; padding-top: 2px;">
+                                    <asp:Label ID="lbl_title" runat="server" Text="Facility Data Management" ForeColor="#FE6E13"
+                                        Font-Bold="true" Font-Size="14"></asp:Label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding-left: 12px; padding-bottom: 4px;">
+                                    <asp:Label ID="lbl_version_no" runat="server" Font-Bold="true" ForeColor="Gray" Text="Version 1.5"></asp:Label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="right" style="padding-right: 12px;">
+                                    <asp:Label ID="Label1" runat="server" Text="@ EcoDomus, Inc." ForeColor="#848484"></asp:Label>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding: 15px 0 8px 12px;">
+                        <table cellpadding="0" cellspacing="0" style="border-collapse: collapse;">
+                            <tr>
+                                <td>
+                                    <asp:Label ID="lblVerionText" Text="Version#:" ForeColor="#848484" runat="server"></asp:Label>
+                                </td>
+                                <td style="padding-left: 4px;">
+                                    <asp:Label ID="lbl_version_info" runat="server" Text="1.5.003"></asp:Label>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td align="right" style="padding: 15px 12px 8px 0;">
+                        <telerik:RadButton ID="rbtn_update" runat="server" BorderStyle="None" Text="UPDATE">
+                        </telerik:RadButton>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="padding-left: 12px;">
+                        <div style="height: 2px; background-color: Orange;">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding: 8px 0 8px 12px;">
+                        <table cellpadding="0" cellspacing="0" style="border-collapse: collapse;" width="100%">
+                            <tr>
+                                <td>
+                                    <asp:Label ID="lbl_licenseText" runat="server" ForeColor="#848484" Text="License#:"></asp:Label>
+                                </td>
+                                <td style="padding-left: 4px;">
+                                    <asp:Label ID="lbl_license" runat="server" Text="ABC123"></asp:Label>
+                                </td>
+                                <td style="padding-left: 12px;">
+                                    <asp:Label ID="lbl_expiresText" runat="server" ForeColor="#848484" Text="Expires:"></asp:Label>
+                                </td>
+                                <td style="padding-left: 4px;">
+                                    <asp:Label ID="lbl_expires" runat="server" Text="7.1.2.6"></asp:Label>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td align="right" style="padding: 8px 12px 8px 0;">
+                        <telerik:RadButton ID="RadButton1" runat="server" Text="RENEW">
+                        </telerik:RadButton>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="padding-left: 12px;">
+                        <div style="height: 2px; background-color: Orange;">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding: 8px 12px 8px 12px;" colspan="2">
+                        <table cellpadding="0" cellspacing="0" style="border-collapse: collapse;" width="100%">
+                            <tr>
+                                <td>
+                                    <asp:Label ID="lbl_customer_supportText" runat="server" Text="Customer Support:"
+                                        ForeColor="#848484"></asp:Label>
+                                </td>
+                                <td style="padding-right: 12px; padding-left: 4px;">
+                                    <asp:Label ID="lbl_customer_support" runat="server" Text="support@ecodomus.com"></asp:Label>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="padding-left: 12px;">
+                        <div style="height: 2px; background-color: Orange;">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding: 8px 15px 8px 12px;" colspan="2">
+                        <table cellpadding="0" cellspacing="0" style="border-collapse: collapse;">
+                            <tr>
+                                <td>
+                                    <asp:Label ID="lbl_salesText" runat="server" Text="Sales:" ForeColor="#848484"></asp:Label>
+                                </td>
+                                <td style="padding-left: 12px; padding-right: 12px;">
+                                    <asp:Label ID="lbl_sales" runat="server" Text="sales@ecodomus.com"></asp:Label>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </telerik:RadToolTip>
+        <telerik:RadToolTip ID="rtip_User_info" HideEvent="ManualClose" ShowEvent="FromCode"
+            OffsetX="-18" OffsetY="-11" ShowCallout="false" AutoCloseDelay="50000" RelativeTo="Element"
+            TargetControlID="dummyName" Position="BottomRight" Sticky="false" runat="server" 
+            Width="320px" Skin="">
+                 <table border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color: #F8F8F8">
+                            <tr>
+                                <td align="right" colspan="2" style="padding: 0px 0px 0px 0px;">
+                                    <asp:ImageButton ID="ImageButton2" runat="server" Width="15" Height="15" ImageUrl="~/App/Images/Icons/icon-close.png"
+                                        OnClientClick="return HideAllTooltip();" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding-left:3px;"valign="middle">
+                                    <asp:LinkButton ID="lbtn_user_name" runat="server"  style="float:left;" Text="" Font-Underline="true" Font-Bold="true" Font-Size="14"
+                                        Font-Names="Sans-serif" ForeColor="#FE6E13"></asp:LinkButton>
+                                </td>
+                                <td valign="middle" align="right" style="padding-right:3px;">
+                                                                
+                                   <asp:Label ID="lbl_projectRole" runat="server"  Text="" Font-Bold="true" ForeColor="#8A8A8A"
+                                        Font-Names="Arial"></asp:Label>
+                                   
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding-left: 3px" valign="middle">
+                                   <asp:Label ID="lbtn_project_name" runat="server" style="float:left;white-space:nowrap;" Text="Projects"  Font-Names="Sans-serif"></asp:Label>
+                                </td>
+                                <td valign="middle" style="padding-right: 0px">
+                                    <table style="float:right">
+                                        <tr>
+                                            <td align="right">
+                                                <asp:Label ID="lblmyProject" runat="server" Style="float: right"  CssClass="LogoutBtnV1"
+                                                    Text="My Projects :"></asp:Label>
+                                            </td>
+                                            <td align="right">
+                                                <asp:Label ID="lblMyProjectCount" runat="server"   CssClass="LogoutBtnV1" Font-Names="Sans-serif" Style="float:right" Text="32"></asp:Label>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                  
+        </telerik:RadToolTip>
+        <telerik:RadToolTip ID="rtip_setting_info" HideEvent="ManualClose" ShowEvent="FromCode"
+            OffsetX="-21" OffsetY="-13" ShowCallout="false" AutoCloseDelay="50000" RelativeTo="Element" 
+            TargetControlID="btnSettingsExpand" Position="BottomLeft" Sticky="false" runat="server"
+            Width="160px" Skin="">
+            <asp:Table ID="tbl" runat="server" border="0" CellPadding="0" CellSpacing="0" Width="100%"
+                Style="background: #FFFFFF;" />
+        </telerik:RadToolTip>
+        <telerik:RadToolTip ID="rtip_search_entity_info" HideEvent="ManualClose" ShowEvent="FromCode"
+            OffsetX="-25" OffsetY="-18" ShowCallout="false" AutoCloseDelay="50000" RelativeTo="Element"
+            TargetControlID="ImageButton1" Position="BottomLeft" Sticky="False" runat="server"
+            Width="150px" Skin="">
+            <table border="0" cellpadding="0" cellspacing="0" width="100%" style="background: #FFFFFF;">
+                <tr>
+                    <td style="width: 20px; height: 25px; padding-left: 4px;">
+                        <asp:Image ID="Image6" runat="server" ImageUrl="~/App/Images/Icons/project_image.png" />
+                    </td>
+                    <td>
+                        <asp:Label ID="lblProjectId" runat="server" Text="<%$Resources:Resource, Projects%>"></asp:Label>
+                    </td>
+                    <td align="right" style="padding-right: 12px;">
+                        <asp:CheckBox ID="chk_projects" Checked="true" name="Projects" runat="server" OnClick="ShowSearchEntity('Projects')" />
+                        <%--<telerik:RadButton ID="chk_projects" runat="server" ToggleType="CheckBox" CommandName="Projects" 
+                        ButtonType="ToggleButton" Value="<%$Resources:Resource, Projects%>" 
+                        AutoPostBack="true" onclick="chk_projects_Click" ></telerik:RadButton>--%>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    </td>
+                    <td style="padding-left: 0px;" colspan="2">
+                        <div style="height: 1px; background-color: Orange;">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 20px; height: 25px; padding-left: 4px;">
+                        <asp:Image ID="Image7" runat="server" ImageUrl="~/App/Images/Icons/icon_facilities_sm.png" />
+                    </td>
+                    <td>
+                        <asp:Label ID="lblFacilityId" runat="server" Text="<%$Resources:Resource, Facilities%>"></asp:Label>
+                    </td>
+                    <td align="right" style="padding-right: 12px;">
+                        <asp:CheckBox ID="chk_facilities" name="Facilities" runat="server" OnClick="ShowSearchEntity('Facilities')" />
+                        <%--   <asp:CheckBox ID="chk_facilities" runat="server" />--%>
+                        <%--<telerik:RadButton ID="chk_facilities" runat="server" ToggleType="CheckBox" 
+                        ButtonType="ToggleButton" Value="<%$Resources:Resource, Facilities%>" 
+                        AutoPostBack="true" onclick="chk_facilities_Click"  ></telerik:RadButton>--%>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    </td>
+                    <td style="padding-left: 0px;" colspan="2">
+                        <div style="height: 1px; background-color: Orange;">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 20px; height: 25px; padding-left: 4px;">
+                        <asp:Image ID="Image8" runat="server" ImageUrl="~/App/Images/Icons/icon_equipment_sm.png" />
+                    </td>
+                    <td>
+                        <asp:Label ID="lblComponentId" runat="server" Text="<%$resources:resource, Component%>"></asp:Label>
+                    </td>
+                    <td align="right" style="padding-right: 12px;">
+                        <asp:CheckBox ID="chk_Component" name="Component" runat="server" OnClick="ShowSearchEntity('Component')" />
+                        <%--<asp:CheckBox ID="chk_equipment" runat="server" />--%>
+                        <%-- <telerik:RadButton ID="chk_equipment" runat="server" ToggleType="CheckBox" 
+                        ButtonType="ToggleButton" Value="<%$Resources:Resource, Equipment%>" 
+                        AutoPostBack="true" onclick="chk_equipment_Click"  ></telerik:RadButton>--%>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    </td>
+                    <td style="padding-left: 0px;" colspan="2">
+                        <div style="height: 1px; background-color: Orange;">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 20px; height: 25px; padding-left: 4px;">
+                        <asp:Image ID="Image5" runat="server" ImageUrl="~/App/Images/Icons/icon_locations_sm.png" />
+                    </td>
+                    <td>
+                        <asp:Label ID="lblLocationId" runat="server" Text="<%$Resources:Resource, Locations%>"></asp:Label>
+                    </td>
+                    <td align="right" style="padding-right: 12px;">
+                        <asp:CheckBox ID="chk_locations" name="Location" runat="server" OnClick="ShowSearchEntity('Locations')" />
+                        <%--<telerik:RadButton ID="chk_locations" runat="server" ToggleType="CheckBox" 
+                        ButtonType="ToggleButton" Value="<%$Resources:Resource, Projects%>" 
+                        AutoPostBack="true" onclick="chk_locations_Click"  ></telerik:RadButton>--%>
+                    </td>
+                </tr>
+                
+            </table>
+        </telerik:RadToolTip>
+        <telerik:RadToolTip runat="server" ID="rdTipSearchId" Width="200px" ShowEvent="onmouseover"
+            RelativeTo="Element" Animation="none" TargetControlID="lbl_search_entity" IsClientID="true"
+            HideEvent="LeaveTargetAndToolTip" Position="TopRight" Text="<%$Resources:Resource, Projects%>">
+        </telerik:RadToolTip>
+        <telerik:RadToolTipManager runat="server" ID="RadToolTip5" Skin="Default" ShowDelay="200"
+            AutoCloseDelay="5000" Width="300px" Position="MiddleRight" RelativeTo="Element">
+            <TargetControls>
+                <telerik:ToolTipTargetControl TargetControlID="lbl_search_entity"></telerik:ToolTipTargetControl>
+            </TargetControls>
+        </telerik:RadToolTipManager>
+        <telerik:RadAjaxLoadingPanel ID="loadingPanel11" Skin="Default" runat="server" Width="50px">
+        </telerik:RadAjaxLoadingPanel>
+        <asp:HiddenField ID="hffUserIdValue" Value="200" runat="server" />
+        <asp:HiddenField ID="hffacilityId" runat="server" />
+        <asp:HiddenField ID="hfPageSize" runat="server" />
+        <div style="display:none;">
+         <asp:Button runat="server" ID="btnclick" Text="" BackColor="Transparent" OnClick="btnclick_Click" />
+         </div>
+    </div>
+    </form>
+</body>
+</html>

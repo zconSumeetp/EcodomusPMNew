@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="5091fedf-c282-4f1d-b9c4-e1d72fe00bdd" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>false</ReferenceAllAssemblies>
+    <ReferencedAssemblies>
+      <ReferencedAssembly AssemblyName="System" />
+      <ReferencedAssembly AssemblyName="System.Core" />
+      <ReferencedAssembly AssemblyName="System.Data" />
+      <ReferencedAssembly AssemblyName="System.Xml" />
+      <ReferencedAssembly AssemblyName="System.Xml.Linq" />
+    </ReferencedAssemblies>
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:4444/Client%20WCF/Inspections.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="Inspections.xsd" MetadataType="Schema" ID="f2313de4-6105-4f4d-90f0-182124420ffa" SourceId="1" SourceUrl="http://localhost:4444/Client WCF/Inspections.svc?xsd=xsd0" />
+    <MetadataFile FileName="Inspections1.xsd" MetadataType="Schema" ID="f6bfe9f8-de08-4049-beb0-06ef46a0136c" SourceId="1" SourceUrl="http://localhost:4444/Client WCF/Inspections.svc?xsd=xsd2" />
+    <MetadataFile FileName="Inspections2.xsd" MetadataType="Schema" ID="ef64b220-c6b4-40c4-a860-ff3ab1b45be3" SourceId="1" SourceUrl="http://localhost:4444/Client WCF/Inspections.svc?xsd=xsd3" />
+    <MetadataFile FileName="Inspections.disco" MetadataType="Disco" ID="69cdc4cc-b1c0-47f7-82aa-514758b43da4" SourceId="1" SourceUrl="http://localhost:4444/Client WCF/Inspections.svc?disco" />
+    <MetadataFile FileName="Inspections3.xsd" MetadataType="Schema" ID="dadccd20-27b8-4097-be9c-83f1d1dfd3da" SourceId="1" SourceUrl="http://localhost:4444/Client WCF/Inspections.svc?xsd=xsd1" />
+    <MetadataFile FileName="Inspections.wsdl" MetadataType="Wsdl" ID="b35c0155-65b4-4a0a-a287-870a8911c7f4" SourceId="1" SourceUrl="http://localhost:4444/Client WCF/Inspections.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

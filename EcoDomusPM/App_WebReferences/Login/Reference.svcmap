@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="23fe86d9-4173-4148-8ed6-2a7fa6058da8" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>false</ReferenceAllAssemblies>
+    <ReferencedAssemblies>
+      <ReferencedAssembly AssemblyName="Microsoft.CSharp" />
+      <ReferencedAssembly AssemblyName="System" />
+      <ReferencedAssembly AssemblyName="System.Activities" />
+      <ReferencedAssembly AssemblyName="System.ComponentModel.DataAnnotations" />
+      <ReferencedAssembly AssemblyName="System.Configuration" />
+      <ReferencedAssembly AssemblyName="System.Core" />
+      <ReferencedAssembly AssemblyName="System.Data" />
+      <ReferencedAssembly AssemblyName="System.Data.DataSetExtensions" />
+      <ReferencedAssembly AssemblyName="System.Data.SQLite" />
+      <ReferencedAssembly AssemblyName="System.Data.SQLite.Linq" />
+      <ReferencedAssembly AssemblyName="System.Drawing" />
+      <ReferencedAssembly AssemblyName="System.EnterpriseServices" />
+      <ReferencedAssembly AssemblyName="System.IdentityModel" />
+      <ReferencedAssembly AssemblyName="System.Runtime.Serialization" />
+      <ReferencedAssembly AssemblyName="System.ServiceModel" />
+      <ReferencedAssembly AssemblyName="System.ServiceModel.Activation" />
+      <ReferencedAssembly AssemblyName="System.ServiceModel.Activities" />
+      <ReferencedAssembly AssemblyName="System.ServiceModel.Web" />
+      <ReferencedAssembly AssemblyName="System.ServiceProcess" />
+      <ReferencedAssembly AssemblyName="System.Web" />
+      <ReferencedAssembly AssemblyName="System.Web.ApplicationServices" />
+      <ReferencedAssembly AssemblyName="System.Web.DataVisualization" />
+      <ReferencedAssembly AssemblyName="System.Web.DynamicData" />
+      <ReferencedAssembly AssemblyName="System.Web.Extensions" />
+      <ReferencedAssembly AssemblyName="System.Web.Services" />
+      <ReferencedAssembly AssemblyName="System.WorkflowServices" />
+      <ReferencedAssembly AssemblyName="System.Xml" />
+      <ReferencedAssembly AssemblyName="System.Xml.Linq" />
+    </ReferencedAssemblies>
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://devservices.ecodomus.com/CentralPM/Login.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="Login4.xsd" MetadataType="Schema" ID="36e30f69-0b2d-4220-b438-a6476b1ec3e2" SourceId="1" SourceUrl="http://devservices.ecodomus.com/CentralPM/Login.svc?xsd=xsd1" />
+    <MetadataFile FileName="Login5.xsd" MetadataType="Schema" ID="f36a5638-85a4-479f-a8ee-b21f5ca7c150" SourceId="1" SourceUrl="http://devservices.ecodomus.com/CentralPM/Login.svc?xsd=xsd3" />
+    <MetadataFile FileName="Login2.wsdl" MetadataType="Wsdl" ID="ad5682f6-a7bc-4bd5-9f0b-e539a8c451e3" SourceId="1" SourceUrl="http://devservices.ecodomus.com/CentralPM/Login.svc?wsdl" />
+    <MetadataFile FileName="Login6.xsd" MetadataType="Schema" ID="01f43d62-d922-4cf4-8dd9-4a61751f2db1" SourceId="1" SourceUrl="http://devservices.ecodomus.com/CentralPM/Login.svc?xsd=xsd4" />
+    <MetadataFile FileName="Login7.xsd" MetadataType="Schema" ID="368ea1d0-ceca-499f-8547-016df6b6fa1b" SourceId="1" SourceUrl="http://devservices.ecodomus.com/CentralPM/Login.svc?xsd=xsd0" />
+    <MetadataFile FileName="Login8.xsd" MetadataType="Schema" ID="707bb7ad-cce0-4503-bad3-fd4fe4b2d505" SourceId="1" SourceUrl="http://devservices.ecodomus.com/CentralPM/Login.svc?xsd=xsd2" />
+    <MetadataFile FileName="Login2.disco" MetadataType="Disco" ID="1028b70d-9f03-4149-8aee-e742a05edc24" SourceId="1" SourceUrl="http://devservices.ecodomus.com/CentralPM/Login.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

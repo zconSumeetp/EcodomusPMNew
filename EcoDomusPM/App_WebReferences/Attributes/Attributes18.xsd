@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Client.App" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Client.App" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:simpleType name="AttributeType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Angle" />
+      <xs:enumeration value="Area" />
+      <xs:enumeration value="Currency" />
+      <xs:enumeration value="DateTime" />
+      <xs:enumeration value="Force" />
+      <xs:enumeration value="Integer" />
+      <xs:enumeration value="Length" />
+      <xs:enumeration value="LinearForce" />
+      <xs:enumeration value="Mass" />
+      <xs:enumeration value="MassDensity" />
+      <xs:enumeration value="Moment" />
+      <xs:enumeration value="Number" />
+      <xs:enumeration value="Period" />
+      <xs:enumeration value="Text" />
+      <xs:enumeration value="URL" />
+      <xs:enumeration value="Volume" />
+      <xs:enumeration value="YesNo" />
+      <xs:enumeration value="List" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="AttributeType" nillable="true" type="tns:AttributeType" />
+  <xs:simpleType name="DataType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="DateTime" />
+      <xs:enumeration value="Double" />
+      <xs:enumeration value="Integer" />
+      <xs:enumeration value="String" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="DataType" nillable="true" type="tns:DataType" />
+</xs:schema>

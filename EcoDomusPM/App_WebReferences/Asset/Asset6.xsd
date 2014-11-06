@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.datacontract.org/2004/07/Client.App.Model" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Client.App.Model" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:4444/Client WCF/Asset.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="ArrayOfAssetViewModel">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="AssetViewModel" nillable="true" type="tns:AssetViewModel" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfAssetViewModel" nillable="true" type="tns:ArrayOfAssetViewModel" />
+  <xs:complexType name="AssetViewModel">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AssetDescription" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="AssetName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FacilityId" nillable="true" type="ser:guid" />
+      <xs:element minOccurs="0" name="FacilityName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Id" nillable="true" type="ser:guid" />
+      <xs:element minOccurs="0" name="SerialNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SpaceId" nillable="true" type="ser:guid" />
+      <xs:element minOccurs="0" name="SpaceName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Status" nillable="true" type="xs:boolean" />
+      <xs:element minOccurs="0" name="SystemId" nillable="true" type="ser:guid" />
+      <xs:element minOccurs="0" name="SystemName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TagNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TypeDescription" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TypeId" nillable="true" type="ser:guid" />
+      <xs:element minOccurs="0" name="TypeName" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="AssetViewModel" nillable="true" type="tns:AssetViewModel" />
+</xs:schema>

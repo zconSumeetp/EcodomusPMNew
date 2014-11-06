@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.datacontract.org/2004/07/" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:4444/Client WCF/COBie.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="COBieModel">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="BoolValue" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Excelfile" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Pk_request_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="clientid" type="ser:guid" />
+      <xs:element minOccurs="0" name="documentcontents" nillable="true" type="xs:base64Binary" />
+      <xs:element minOccurs="0" name="file_name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="filepath" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="filesize" type="xs:long" />
+      <xs:element minOccurs="0" name="pk_import_request_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="project_id" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="status" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="uploaded_fileid" type="ser:guid" />
+      <xs:element minOccurs="0" name="user_id" type="ser:guid" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="COBieModel" nillable="true" type="tns:COBieModel" />
+</xs:schema>

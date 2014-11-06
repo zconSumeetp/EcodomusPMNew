@@ -1,0 +1,3228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="BIM_Model_Server" xml:space="preserve">
+    <value>BIM modelo de servidor</value>
+  </data>
+  <data name="ID" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="Omni_Class_Type" xml:space="preserve">
+    <value>OmniClass Tipo</value>
+  </data>
+  <data name="Uniformat" xml:space="preserve">
+    <value>Uniformat</value>
+  </data>
+  <data name="UOM" xml:space="preserve">
+    <value>UOM</value>
+  </data>
+  <data name="UOM_Mapping" xml:space="preserve">
+    <value>Mapeo UOM</value>
+  </data>
+  <data name="Save_Hierarchy" xml:space="preserve">
+    <value>Guardar Jerarquía</value>
+  </data>
+  <data name="Save_Document" xml:space="preserve">
+    <value>Guardar documento</value>
+  </data>
+  <data name="Save_Impact" xml:space="preserve">
+    <value>Guardar Impacto</value>
+  </data>
+  <data name="Edit_Location_Hierarchy" xml:space="preserve">
+    <value>Editar Jerarquía Ubicación</value>
+  </data>
+  <data name="Hierarchy" xml:space="preserve">
+    <value>Jerarquía</value>
+  </data>
+  <data name="Find_Location" xml:space="preserve">
+    <value>Buscar ubicación</value>
+  </data>
+  <data name="Find_Asset" xml:space="preserve">
+    <value>Encontrar activos</value>
+  </data>
+  <data name="Product" xml:space="preserve">
+    <value>Producto</value>
+  </data>
+  <data name="Product_Manufacturer" xml:space="preserve">
+    <value>Productos Fabricante</value>
+  </data>
+  <data name="Product_Description" xml:space="preserve">
+    <value>Descripción del Producto</value>
+  </data>
+  <data name="Product_Name" xml:space="preserve">
+    <value>Nombre del producto</value>
+  </data>
+  <data name="City" xml:space="preserve">
+    <value>Ciudad</value>
+  </data>
+  <data name="Request_Pending" xml:space="preserve">
+    <value>Solicitud pendiente</value>
+  </data>
+  <data name="Unit" xml:space="preserve">
+    <value>Unidad</value>
+  </data>
+  <data name="Export" xml:space="preserve">
+    <value>Exportación</value>
+  </data>
+  <data name="Export_COBie_File" xml:space="preserve">
+    <value>Exportación Cobie archivo</value>
+  </data>
+  <data name="Navigation" xml:space="preserve">
+    <value>Navegación</value>
+  </data>
+  <data name="Import" xml:space="preserve">
+    <value>Importación</value>
+  </data>
+  <data name="To" xml:space="preserve">
+    <value>Para</value>
+  </data>
+  <data name="Log_In" xml:space="preserve">
+    <value>Iniciar sesión</value>
+  </data>
+  <data name="Levels" xml:space="preserve">
+    <value>Niveles</value>
+  </data>
+  <data name="Locations" xml:space="preserve">
+    <value>Ubicaciones</value>
+  </data>
+  <data name="Location_Hierarchy" xml:space="preserve">
+    <value>Ubicación Jerarquía</value>
+  </data>
+  <data name="Locations_Hierarchy" xml:space="preserve">
+    <value>Jerarquía Ubicaciones</value>
+  </data>
+  <data name="Phone_Number" xml:space="preserve">
+    <value>Número de teléfono</value>
+  </data>
+  <data name="Custom_Hierarchy_Name" xml:space="preserve">
+    <value>Nombre Jerarquía personalizada</value>
+  </data>
+  <data name="Custom_Data" xml:space="preserve">
+    <value>Datos personalizados</value>
+  </data>
+  <data name="Short_Name" xml:space="preserve">
+    <value>Nombre corto</value>
+  </data>
+  <data name="Back" xml:space="preserve">
+    <value>Volver</value>
+  </data>
+  <data name="Assign_DesignerContractor" xml:space="preserve">
+    <value>Asigne Diseñador / Contratista</value>
+  </data>
+  <data name="Assign_Product" xml:space="preserve">
+    <value>Asigne Producto</value>
+  </data>
+  <data name="Assign_To" xml:space="preserve">
+    <value>Asignar a</value>
+  </data>
+  <data name="Assigned_To" xml:space="preserve">
+    <value>Asignado a</value>
+  </data>
+  <data name="Assign_Space" xml:space="preserve">
+    <value>Asignar espacio</value>
+  </data>
+  <data name="Assign_Facility" xml:space="preserve">
+    <value>Fondo para Asignar</value>
+  </data>
+  <data name="Assign_System" xml:space="preserve">
+    <value>Asignar Sistema</value>
+  </data>
+  <data name="Assign_Asset" xml:space="preserve">
+    <value>Asignar activos</value>
+  </data>
+  <data name="Service_Client" xml:space="preserve">
+    <value>Cliente Servicio</value>
+  </data>
+  <data name="Service_Authentication_URL" xml:space="preserve">
+    <value>URL de servicio de autenticación</value>
+  </data>
+  <data name="Service_URL" xml:space="preserve">
+    <value>URL del servicio</value>
+  </data>
+  <data name="Parent_System" xml:space="preserve">
+    <value>Sistema de Padres</value>
+  </data>
+  <data name="Update" xml:space="preserve">
+    <value>Actualización</value>
+  </data>
+  <data name="Work_Order_No" xml:space="preserve">
+    <value>Orden de Trabajo No</value>
+  </data>
+  <data name="Work_Order_Number" xml:space="preserve">
+    <value>Trabajar Número de pedido</value>
+  </data>
+  <data name="Work_Order_Profile" xml:space="preserve">
+    <value>Orden de trabajo Perfil</value>
+  </data>
+  <data name="Manufacturer_Name" xml:space="preserve">
+    <value>Nombre del fabricante</value>
+  </data>
+  <data name="Manufacturer_Mapping" xml:space="preserve">
+    <value>Mapeo del fabricante</value>
+  </data>
+  <data name="Component_Name" xml:space="preserve">
+    <value>Nombre del Componente</value>
+  </data>
+  <data name="Scheduler" xml:space="preserve">
+    <value>Programador</value>
+  </data>
+  <data name="Inspections" xml:space="preserve">
+    <value>Inspecciones</value>
+  </data>
+  <data name="Inspection_Profile" xml:space="preserve">
+    <value>Inspección Perfil</value>
+  </data>
+  <data name="Facilities" xml:space="preserve">
+    <value>Instalaciones</value>
+  </data>
+  <data name="Facility_Mapping" xml:space="preserve">
+    <value>Mapeo Fondo</value>
+  </data>
+  <data name="Accept" xml:space="preserve">
+    <value>Aceptar</value>
+  </data>
+  <data name="End_Date" xml:space="preserve">
+    <value>Fecha de finalización</value>
+  </data>
+  <data name="Altitude" xml:space="preserve">
+    <value>Altitud</value>
+  </data>
+  <data name="Deny" xml:space="preserve">
+    <value>Denegar</value>
+  </data>
+  <data name="Client_Name" xml:space="preserve">
+    <value>Nombre del cliente</value>
+  </data>
+  <data name="Space" xml:space="preserve">
+    <value>Espacio</value>
+  </data>
+  <data name="Spaces" xml:space="preserve">
+    <value>Espacios</value>
+  </data>
+  <data name="Space_Type" xml:space="preserve">
+    <value>Tipo de espacio</value>
+  </data>
+  <data name="Space_Names" xml:space="preserve">
+    <value>Área Servida</value>
+  </data>
+  <data name="Type_Profile" xml:space="preserve">
+    <value>Tipo de perfil</value>
+  </data>
+  <data name="Connection_String" xml:space="preserve">
+    <value>Cadena de conexión</value>
+  </data>
+  <data name="Links" xml:space="preserve">
+    <value>Enlaces</value>
+  </data>
+  <data name="Floor" xml:space="preserve">
+    <value>Piso</value>
+  </data>
+  <data name="Floors" xml:space="preserve">
+    <value>Pisos</value>
+  </data>
+  <data name="Floor_Profile" xml:space="preserve">
+    <value>Planta Perfil</value>
+  </data>
+  <data name="Floor_Name" xml:space="preserve">
+    <value>Planta Nombre</value>
+  </data>
+  <data name="Floor_Name_Grid" xml:space="preserve">
+    <value>Planta Nombre de cuadrícula</value>
+  </data>
+  <data name="Building_Automation_System_Server" xml:space="preserve">
+    <value>Server Building Automation System</value>
+  </data>
+  <data name="Area" xml:space="preserve">
+    <value>Area</value>
+  </data>
+  <data name="Configuration_Name" xml:space="preserve">
+    <value>Nombre de la configuración</value>
+  </data>
+  <data name="Average_PPC" xml:space="preserve">
+    <value>PPC Promedio</value>
+  </data>
+  <data name="Weather_Station" xml:space="preserve">
+    <value>Estación meteorológica</value>
+  </data>
+  <data name="Station_Name" xml:space="preserve">
+    <value>Nombre de la estación</value>
+  </data>
+  <data name="Request_To_Add_New_Organization" xml:space="preserve">
+    <value>Solicitud para añadir nuevas Organización</value>
+  </data>
+  <data name="Zone" xml:space="preserve">
+    <value>Zona</value>
+  </data>
+  <data name="Zone_Profile" xml:space="preserve">
+    <value>Perfil de Zona</value>
+  </data>
+  <data name="Zone_Name" xml:space="preserve">
+    <value>Nombre de la zona</value>
+  </data>
+  <data name="Zone_Name_Grid" xml:space="preserve">
+    <value>Nombre de zona de cuadrícula</value>
+  </data>
+  <data name="Ok" xml:space="preserve">
+    <value>Okay</value>
+  </data>
+  <data name="Day" xml:space="preserve">
+    <value>Día</value>
+  </data>
+  <data name="Last_Sync_Date" xml:space="preserve">
+    <value>Última fecha de la sinc</value>
+  </data>
+  <data name="Settings" xml:space="preserve">
+    <value>Ajustes</value>
+  </data>
+  <data name="Setup_Sync_Wizard" xml:space="preserve">
+    <value>Asistente de configuración de sincronización</value>
+  </data>
+  <data name="Setup_Sync_Configuration" xml:space="preserve">
+    <value>Sincronizar configuración de la instalación</value>
+  </data>
+  <data name="State" xml:space="preserve">
+    <value>Estado</value>
+  </data>
+  <data name="Items_Remaining" xml:space="preserve">
+    <value>Los productos restantes</value>
+  </data>
+  <data name="Items_Failed" xml:space="preserve">
+    <value>Los productos que fracasaron</value>
+  </data>
+  <data name="Entity" xml:space="preserve">
+    <value>Entidad</value>
+  </data>
+  <data name="Attribute" xml:space="preserve">
+    <value>Atributo</value>
+  </data>
+  <data name="Attributes" xml:space="preserve">
+    <value>Atributos</value>
+  </data>
+  <data name="Attribute_Template" xml:space="preserve">
+    <value>Atributo Plantilla</value>
+  </data>
+  <data name="Database_Name" xml:space="preserve">
+    <value>Database Name</value>
+  </data>
+  <data name="Data_Provider" xml:space="preserve">
+    <value>Proveedor de datos</value>
+  </data>
+  <data name="Replace" xml:space="preserve">
+    <value>Reemplazar</value>
+  </data>
+  <data name="Add_BAS_Server" xml:space="preserve">
+    <value>Añadir BAS Servidor</value>
+  </data>
+  <data name="Add_Edit_Custom_Data" xml:space="preserve">
+    <value>Añadir Edit datos personalizados</value>
+  </data>
+  <data name="Add_Hierarchy" xml:space="preserve">
+    <value>Añadir Jerarquía</value>
+  </data>
+  <data name="Add_Product" xml:space="preserve">
+    <value>Añadir Producto</value>
+  </data>
+  <data name="Add_Product_Attribute" xml:space="preserve">
+    <value>Añadir los atributos del producto</value>
+  </data>
+  <data name="Add_Custom_Data" xml:space="preserve">
+    <value>Agregar datos personalizados</value>
+  </data>
+  <data name="Add_Work_Order" xml:space="preserve">
+    <value>Añadir Orden de Trabajo</value>
+  </data>
+  <data name="Add_Inspection" xml:space="preserve">
+    <value>Añadir Inspección</value>
+  </data>
+  <data name="Add_Configuration" xml:space="preserve">
+    <value>Agregar configuración</value>
+  </data>
+  <data name="Add_Weather_Station" xml:space="preserve">
+    <value>Añadir Estación Meteorológica</value>
+  </data>
+  <data name="Add_System" xml:space="preserve">
+    <value>Añadir sistema</value>
+  </data>
+  <data name="Add_New" xml:space="preserve">
+    <value>Crear Nuevo</value>
+  </data>
+  <data name="Add_New_City" xml:space="preserve">
+    <value>Añadir Nueva Ciudad</value>
+  </data>
+  <data name="Add_New_Country" xml:space="preserve">
+    <value>Crear Nuevo País</value>
+  </data>
+  <data name="Add_New_Client" xml:space="preserve">
+    <value>Crear Nuevo Cliente</value>
+  </data>
+  <data name="Add_New_State" xml:space="preserve">
+    <value>Crear Nuevo Estado</value>
+  </data>
+  <data name="Add_New_Impact" xml:space="preserve">
+    <value>Crear Nuevo Impacto</value>
+  </data>
+  <data name="Add_Impact" xml:space="preserve">
+    <value>Añadir Impacto</value>
+  </data>
+  <data name="Add_Manufacturer" xml:space="preserve">
+    <value>Añadir fabricante</value>
+  </data>
+  <data name="Add_Asset" xml:space="preserve">
+    <value>Añadir Activos</value>
+  </data>
+  <data name="Synchronize" xml:space="preserve">
+    <value>Sincronizar</value>
+  </data>
+  <data name="Sync_Profile" xml:space="preserve">
+    <value>Sincronización Perfil</value>
+  </data>
+  <data name="Synchronization_Result_For" xml:space="preserve">
+    <value>Sincronización resultado para</value>
+  </data>
+  <data name="Synchronization_Type" xml:space="preserve">
+    <value>Tipo de sincronización</value>
+  </data>
+  <data name="Sync_Assets" xml:space="preserve">
+    <value>Activos Sync</value>
+  </data>
+  <data name="Image" xml:space="preserve">
+    <value>Imagen</value>
+  </data>
+  <data name="External_System" xml:space="preserve">
+    <value>Sistema externo</value>
+  </data>
+  <data name="External_System_Integration" xml:space="preserve">
+    <value>Integración de sistemas externos</value>
+  </data>
+  <data name="External_System_Name" xml:space="preserve">
+    <value>Nombre del sistema externo</value>
+  </data>
+  <data name="Ext_System_Facility" xml:space="preserve">
+    <value>Instalación Sistema Ext</value>
+  </data>
+  <data name="Ext_System_Site" xml:space="preserve">
+    <value>Ext.System Sitio</value>
+  </data>
+  <data name="Items_Completed" xml:space="preserve">
+    <value>Artículos completado</value>
+  </data>
+  <data name="URL" xml:space="preserve">
+    <value>URL</value>
+  </data>
+  <data name="Latitude" xml:space="preserve">
+    <value>Latitud</value>
+  </data>
+  <data name="Longitude" xml:space="preserve">
+    <value>Longitud</value>
+  </data>
+  <data name="Unassign_System" xml:space="preserve">
+    <value>Sistema Unassign</value>
+  </data>
+  <data name="Unassign_Asset" xml:space="preserve">
+    <value>Activos Unassign</value>
+  </data>
+  <data name="Unassign_Subsystem" xml:space="preserve">
+    <value>Subsistema Unassign</value>
+  </data>
+  <data name="filesize" xml:space="preserve">
+    <value>Tamaño del archivo</value>
+  </data>
+  <data name="Issue_Report" xml:space="preserve">
+    <value>Informe de Cuestiones</value>
+  </data>
+  <data name="Issue_Profile" xml:space="preserve">
+    <value>Emisión Perfil</value>
+  </data>
+  <data name="Issue_Status" xml:space="preserve">
+    <value>Estado de emisión</value>
+  </data>
+  <data name="System_Name" xml:space="preserve">
+    <value>Nombre del sistema</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>Siguiente</value>
+  </data>
+  <data name="Project_Profile" xml:space="preserve">
+    <value>Perfil del Proyecto</value>
+  </data>
+  <data name="Protocol" xml:space="preserve">
+    <value>Protocolo</value>
+  </data>
+  <data name="Select_Facility" xml:space="preserve">
+    <value>Seleccione Fondo</value>
+  </data>
+  <data name="Server_Name" xml:space="preserve">
+    <value>Nombre del servidor</value>
+  </data>
+  <data name="Select_Date" xml:space="preserve">
+    <value>Seleccione Fecha</value>
+  </data>
+  <data name="Select_Time" xml:space="preserve">
+    <value>Seleccione Hora</value>
+  </data>
+  <data name="Resolved" xml:space="preserve">
+    <value>Resuelta</value>
+  </data>
+  <data name="Impacts" xml:space="preserve">
+    <value>Impactos</value>
+  </data>
+  <data name="Map" xml:space="preserve">
+    <value>Mapa</value>
+  </data>
+  <data name="Map_Integration" xml:space="preserve">
+    <value>Mapa Integración</value>
+  </data>
+  <data name="User" xml:space="preserve">
+    <value>Usuario</value>
+  </data>
+  <data name="User_Profile" xml:space="preserve">
+    <value>Perfil del usuario</value>
+  </data>
+  <data name="Username" xml:space="preserve">
+    <value>Nombre de usuario</value>
+  </data>
+  <data name="User_Name" xml:space="preserve">
+    <value>Nombre de Usuario</value>
+  </data>
+  <data name="Postal_Code_Zip" xml:space="preserve">
+    <value>Código Postal Zip</value>
+  </data>
+  <data name="Language" xml:space="preserve">
+    <value>Idioma</value>
+  </data>
+  <data name="Months" xml:space="preserve">
+    <value>Meses</value>
+  </data>
+  <data name="Long_Name" xml:space="preserve">
+    <value>Nombre largo</value>
+  </data>
+  <data name="Rename" xml:space="preserve">
+    <value>Cambiar el nombre de</value>
+  </data>
+  <data name="Tuesday" xml:space="preserve">
+    <value>Martes</value>
+  </data>
+  <data name="Saturday" xml:space="preserve">
+    <value>Sábado</value>
+  </data>
+  <data name="Sunday" xml:space="preserve">
+    <value>Domingo</value>
+  </data>
+  <data name="Wednesday" xml:space="preserve">
+    <value>Miércoles</value>
+  </data>
+  <data name="Thursday" xml:space="preserve">
+    <value>Jueves</value>
+  </data>
+  <data name="Friday" xml:space="preserve">
+    <value>Viernes</value>
+  </data>
+  <data name="Monday" xml:space="preserve">
+    <value>Lunes</value>
+  </data>
+  <data name="Major" xml:space="preserve">
+    <value>Major</value>
+  </data>
+  <data name="Asset" xml:space="preserve">
+    <value>Activos</value>
+  </data>
+  <data name="Assets" xml:space="preserve">
+    <value>Activos</value>
+  </data>
+  <data name="Asset_Identifier" xml:space="preserve">
+    <value>Activos Identificador</value>
+  </data>
+  <data name="Asset_Profile" xml:space="preserve">
+    <value>Perfil de Activos</value>
+  </data>
+  <data name="Asset_Name" xml:space="preserve">
+    <value>Nombre de Activos</value>
+  </data>
+  <data name="Asset_Condition_Report" xml:space="preserve">
+    <value>Activos Reporte de condición</value>
+  </data>
+  <data name="Total_Exported_Data_Transfer" xml:space="preserve">
+    <value>La transferencia de datos exportado total</value>
+  </data>
+  <data name="Total_Imported_Data_Transfer" xml:space="preserve">
+    <value>La transferencia de datos importada total</value>
+  </data>
+  <data name="Group" xml:space="preserve">
+    <value>Grupo</value>
+  </data>
+  <data name="Component" xml:space="preserve">
+    <value>Componente</value>
+  </data>
+  <data name="Organization_Acceptance" xml:space="preserve">
+    <value>Aceptación Organización</value>
+  </data>
+  <data name="Organization_Name" xml:space="preserve">
+    <value>Nombre de la Organización</value>
+  </data>
+  <data name="Recent" xml:space="preserve">
+    <value>Recientes</value>
+  </data>
+  <data name="Add_Edit_Required_Attributes" xml:space="preserve">
+    <value>Añadir Atributos / Editar Obligatorio</value>
+  </data>
+  <data name="Add_Naming_Convention" xml:space="preserve">
+    <value>Añadir convención de nomenclatura</value>
+  </data>
+  <data name="Add_Required_Attributes" xml:space="preserve">
+    <value>Añadir atributos requeridos</value>
+  </data>
+  <data name="Add_Required_Documents" xml:space="preserve">
+    <value>Añadir documentos requeridos</value>
+  </data>
+  <data name="Add_Subsystems" xml:space="preserve">
+    <value>Añadir subsistemas</value>
+  </data>
+  <data name="Add_Template" xml:space="preserve">
+    <value>Añadir plantilla</value>
+  </data>
+  <data name="Address1" xml:space="preserve">
+    <value>Dirección1</value>
+  </data>
+  <data name="Address2" xml:space="preserve">
+    <value>Dirección 2</value>
+  </data>
+  <data name="Assign_Component" xml:space="preserve">
+    <value>Asignar componentes</value>
+  </data>
+  <data name="Assign_Contacts_to_Project" xml:space="preserve">
+    <value>Asigne contactos a Project</value>
+  </data>
+  <data name="Assign_Manufacturer" xml:space="preserve">
+    <value>Asigne Fabricante</value>
+  </data>
+  <data name="Assign_MasterFormat" xml:space="preserve">
+    <value>Asigne MasterFormat</value>
+  </data>
+  <data name="Assign_Project_roles_to_Contacts" xml:space="preserve">
+    <value>Asignar roles de proyecto a Contactos</value>
+  </data>
+  <data name="Assign_Subsystem" xml:space="preserve">
+    <value>Asigne Subsistema</value>
+  </data>
+  <data name="Assign_UniFormat" xml:space="preserve">
+    <value>Asigne Uniformat</value>
+  </data>
+  <data name="Browse_By_Manufacturer" xml:space="preserve">
+    <value>Buscar por Fabricante</value>
+  </data>
+  <data name="City_State_1" xml:space="preserve">
+    <value>Ciudad, Estado</value>
+  </data>
+  <data name="COBie_File_Export" xml:space="preserve">
+    <value>Cobie archivo de exportación</value>
+  </data>
+  <data name="Cobie_File_Import" xml:space="preserve">
+    <value>Cobie Importar archivo</value>
+  </data>
+  <data name="Component_Profile" xml:space="preserve">
+    <value>Perfil de componentes</value>
+  </data>
+  <data name="Created_By_1" xml:space="preserve">
+    <value>Creado por:</value>
+  </data>
+  <data name="Created_On_1" xml:space="preserve">
+    <value>Creado en:</value>
+  </data>
+  <data name="Custom_Name" xml:space="preserve">
+    <value>Nombre de encargo</value>
+  </data>
+  <data name="Display_Columns" xml:space="preserve">
+    <value>Mostrar columnas</value>
+  </data>
+  <data name="Documnet_type" xml:space="preserve">
+    <value>Tipo de Documento</value>
+  </data>
+  <data name="Edit_Designer_Contractor" xml:space="preserve">
+    <value>Editar Diseñador / Contratista</value>
+  </data>
+  <data name="Edit_Impact" xml:space="preserve">
+    <value>Editar imapct</value>
+  </data>
+  <data name="Edit_OmniClass_Masterformat_Uniformat" xml:space="preserve">
+    <value>Editar OmniClass / MasterFormat / Uniformat</value>
+  </data>
+  <data name="Entity_Name" xml:space="preserve">
+    <value>Nombre Entidad</value>
+  </data>
+  <data name="Export_Contact" xml:space="preserve">
+    <value>Exportación Contacto</value>
+  </data>
+  <data name="ExportedBy" xml:space="preserve">
+    <value>Exportados por</value>
+  </data>
+  <data name="ExportedOn" xml:space="preserve">
+    <value>Exportados En</value>
+  </data>
+  <data name="File_Name" xml:space="preserve">
+    <value>Nombre del archivo</value>
+  </data>
+  <data name="filepath" xml:space="preserve">
+    <value>Ruta del archivo</value>
+  </data>
+  <data name="Get_Location" xml:space="preserve">
+    <value>Obtener Ubicación</value>
+  </data>
+  <data name="Help" xml:space="preserve">
+    <value>Ayuda</value>
+  </data>
+  <data name="Imported_by" xml:space="preserve">
+    <value>Importado por</value>
+  </data>
+  <data name="Imported_Files" xml:space="preserve">
+    <value>Archivos importados</value>
+  </data>
+  <data name="Imported_on" xml:space="preserve">
+    <value>Importado En</value>
+  </data>
+  <data name="Logout" xml:space="preserve">
+    <value>Salir</value>
+  </data>
+  <data name="Masterformat" xml:space="preserve">
+    <value>MasterFormat</value>
+  </data>
+  <data name="message" xml:space="preserve">
+    <value>Mensaje</value>
+  </data>
+  <data name="Missing_Attribute" xml:space="preserve">
+    <value>Missing Atributo</value>
+  </data>
+  <data name="Missing_Attributes_Report" xml:space="preserve">
+    <value>Missing Atributos Informe</value>
+  </data>
+  <data name="OmniClas_2010" xml:space="preserve">
+    <value>OmniClass 2010</value>
+  </data>
+  <data name="OmniClass_2006" xml:space="preserve">
+    <value>OmniClass 2006</value>
+  </data>
+  <data name="Phase_Name" xml:space="preserve">
+    <value>Fase Nombre</value>
+  </data>
+  <data name="Project" xml:space="preserve">
+    <value>Proyecto</value>
+  </data>
+  <data name="Recent_Projects" xml:space="preserve">
+    <value>Proyectos recientes</value>
+  </data>
+  <data name="Refresh" xml:space="preserve">
+    <value>Actualizar</value>
+  </data>
+  <data name="Select_Add" xml:space="preserve">
+    <value>Seleccionar / Añadir</value>
+  </data>
+  <data name="Select_Entity" xml:space="preserve">
+    <value>Seleccione Entidad</value>
+  </data>
+  <data name="Select_Master_ormat" xml:space="preserve">
+    <value>Seleccione MasterFormat</value>
+  </data>
+  <data name="Select_Uni_Format" xml:space="preserve">
+    <value>Seleccione Uniformat</value>
+  </data>
+  <data name="Select_Uniformat" xml:space="preserve">
+    <value>Seleccione Uniformat</value>
+  </data>
+  <data name="Selected_Masterformat" xml:space="preserve">
+    <value>MasterFormat Seleccionado</value>
+  </data>
+  <data name="Standard" xml:space="preserve">
+    <value>Estándar</value>
+  </data>
+  <data name="Template_Name" xml:space="preserve">
+    <value>Nombre de la plantilla</value>
+  </data>
+  <data name="Unassign_Component" xml:space="preserve">
+    <value>Componente Unassign</value>
+  </data>
+  <data name="Upload_Document" xml:space="preserve">
+    <value>Cargar documento</value>
+  </data>
+  <data name="Uploaded_documents" xml:space="preserve">
+    <value>Documentos cargados</value>
+  </data>
+  <data name="Version" xml:space="preserve">
+    <value>Version</value>
+  </data>
+  <data name="Versioning" xml:space="preserve">
+    <value>Versiones</value>
+  </data>
+  <data name="Zip_Postal_Code" xml:space="preserve">
+    <value>Código Postal</value>
+  </data>
+  <data name="BAS_Information" xml:space="preserve">
+    <value>Información BAS</value>
+  </data>
+  <data name="Link_to_Data" xml:space="preserve">
+    <value>Enlace a datos</value>
+  </data>
+  <data name="Properties" xml:space="preserve">
+    <value>Propiedades</value>
+  </data>
+  <data name="Room_Data_Sheet" xml:space="preserve">
+    <value>Habitación Hoja de Datos</value>
+  </data>
+  <data name="Search_Asset" xml:space="preserve">
+    <value>Búsqueda de Activos</value>
+  </data>
+  <data name="Search_Space" xml:space="preserve">
+    <value>Buscar Espacio</value>
+  </data>
+  <data name="System_Asset" xml:space="preserve">
+    <value>Sistema de Activos</value>
+  </data>
+  <data name="Viewpoints" xml:space="preserve">
+    <value>Puntos de Vista</value>
+  </data>
+  <data name="BASServer" xml:space="preserve">
+    <value>BAS Servidor</value>
+  </data>
+  <data name="BIM_Server" xml:space="preserve">
+    <value>Servidor BIM</value>
+  </data>
+  <data name="Custom_Reports" xml:space="preserve">
+    <value>Informes personalizados</value>
+  </data>
+  <data name="Energy_Model" xml:space="preserve">
+    <value>Modelo Energía</value>
+  </data>
+  <data name="Find_Data_Point" xml:space="preserve">
+    <value>Encuentra Punto de datos</value>
+  </data>
+  <data name="Reports" xml:space="preserve">
+    <value>Informes</value>
+  </data>
+  <data name="Service_History" xml:space="preserve">
+    <value>Historia Servicio</value>
+  </data>
+  <data name="Sustainability" xml:space="preserve">
+    <value>Sostenibilidad</value>
+  </data>
+  <data name="Link_to_Asset" xml:space="preserve">
+    <value>Enlace a activos</value>
+  </data>
+  <data name="BAS_Attribute_History" xml:space="preserve">
+    <value>BAS_Attribute_History</value>
+  </data>
+  <data name="Parameter" xml:space="preserve">
+    <value>Parámetro</value>
+  </data>
+  <data name="group_name" xml:space="preserve">
+    <value>Nombre del grupo</value>
+  </data>
+  <data name="tbl_name" xml:space="preserve">
+    <value>Nombre Tbl</value>
+  </data>
+  <data name="read_only_flag" xml:space="preserve">
+    <value>Leer única bandera</value>
+  </data>
+  <data name="Find" xml:space="preserve">
+    <value>Encontrar</value>
+  </data>
+  <data name="View_Name" xml:space="preserve">
+    <value>Nombre de vista</value>
+  </data>
+  <data name="Start_Date_Time" xml:space="preserve">
+    <value>Fecha de inicio Tiempo</value>
+  </data>
+  <data name="End_Date_Time" xml:space="preserve">
+    <value>End Fecha Hora</value>
+  </data>
+  <data name="AttributeName" xml:space="preserve">
+    <value>AttributeName</value>
+  </data>
+  <data name="Assign_Organization_To_Client" xml:space="preserve">
+    <value>Asigne Organización Para Cliente</value>
+  </data>
+  <data name="Assign_Subsystems" xml:space="preserve">
+    <value>Asignar subsistemas</value>
+  </data>
+  <data name="Client" xml:space="preserve">
+    <value>Cliente</value>
+  </data>
+  <data name="Clients" xml:space="preserve">
+    <value>Clientes</value>
+  </data>
+  <data name="Condition" xml:space="preserve">
+    <value>Condición</value>
+  </data>
+  <data name="Get_Updates" xml:space="preserve">
+    <value>Obtener actualizaciones</value>
+  </data>
+  <data name="Login_As" xml:space="preserve">
+    <value>Iniciar sesión como</value>
+  </data>
+  <data name="Month" xml:space="preserve">
+    <value>Mes</value>
+  </data>
+  <data name="Product_Document" xml:space="preserve">
+    <value>Documento del producto</value>
+  </data>
+  <data name="Product_Profile" xml:space="preserve">
+    <value>Perfil del producto</value>
+  </data>
+  <data name="ProductAttribute" xml:space="preserve">
+    <value>Los atributos del producto</value>
+  </data>
+  <data name="Show_Model" xml:space="preserve">
+    <value>Mostrar Modelo</value>
+  </data>
+  <data name="Recent_Facilities" xml:space="preserve">
+    <value>Instalaciones recientes</value>
+  </data>
+  <data name="Organization" xml:space="preserve">
+    <value>Organización</value>
+  </data>
+  <data name="Organizations" xml:space="preserve">
+    <value>Organizaciones</value>
+  </data>
+  <data name="Sub_assembly_Name" xml:space="preserve">
+    <value>Sub Nombre montaje</value>
+  </data>
+  <data name="Sub_assemblies" xml:space="preserve">
+    <value>Asambleas Sub</value>
+  </data>
+  <data name="Subsystem_Name" xml:space="preserve">
+    <value>Subsistema Nombre</value>
+  </data>
+  <data name="Subsystem" xml:space="preserve">
+    <value>Subsistema</value>
+  </data>
+  <data name="Asset_Type" xml:space="preserve">
+    <value>Tipo de activo</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>Estado</value>
+  </data>
+  <data name="Lead_Organization" xml:space="preserve">
+    <value>Organización líder</value>
+  </data>
+  <data name="Weeks" xml:space="preserve">
+    <value>Semanas</value>
+  </data>
+  <data name="State_Region" xml:space="preserve">
+    <value>Región Estado</value>
+  </data>
+  <data name="Replacement_Cost" xml:space="preserve">
+    <value>Costo de reemplazo</value>
+  </data>
+  <data name="Reset" xml:space="preserve">
+    <value>Restablecer</value>
+  </data>
+  <data name="Given_Name" xml:space="preserve">
+    <value>Nombre de pila</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>Título</value>
+  </data>
+  <data name="Value" xml:space="preserve">
+    <value>Valor</value>
+  </data>
+  <data name="RFI" xml:space="preserve">
+    <value>RFI</value>
+  </data>
+  <data name="Town" xml:space="preserve">
+    <value>Ciudad</value>
+  </data>
+  <data name="Due_Date" xml:space="preserve">
+    <value>Fecha de vencimiento</value>
+  </data>
+  <data name="Responsible" xml:space="preserve">
+    <value>Responsable</value>
+  </data>
+  <data name="Postal_Code" xml:space="preserve">
+    <value>Código Postal</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="Approval_By" xml:space="preserve">
+    <value>Aprobación Por</value>
+  </data>
+  <data name="User_Id" xml:space="preserve">
+    <value>ID (identificación) de usuario</value>
+  </data>
+  <data name="Users" xml:space="preserve">
+    <value>Usuarios</value>
+  </data>
+  <data name="Impact" xml:space="preserve">
+    <value>Impacto</value>
+  </data>
+  <data name="Selected_Master_Format" xml:space="preserve">
+    <value>Formato Maestro seleccionada</value>
+  </data>
+  <data name="Generated_Files" xml:space="preserve">
+    <value>Archivos generados</value>
+  </data>
+  <data name="Move_To_System" xml:space="preserve">
+    <value>Mover a Sistema</value>
+  </data>
+  <data name="Page_Title" xml:space="preserve">
+    <value>Título de la página</value>
+  </data>
+  <data name="Owner_Organization" xml:space="preserve">
+    <value>Organización Propietario</value>
+  </data>
+  <data name="Owner" xml:space="preserve">
+    <value>Propietario</value>
+  </data>
+  <data name="Severity" xml:space="preserve">
+    <value>Severidad</value>
+  </data>
+  <data name="Select_Sub_Assemblies" xml:space="preserve">
+    <value>Seleccione asambleas Sub</value>
+  </data>
+  <data name="Select_Project_Role" xml:space="preserve">
+    <value>Seleccione Proyecto Rol</value>
+  </data>
+  <data name="Select_File_To_Upload" xml:space="preserve">
+    <value>Seleccione un archivo para subir</value>
+  </data>
+  <data name="Select_File" xml:space="preserve">
+    <value>Seleccione Archivo</value>
+  </data>
+  <data name="Select_Task" xml:space="preserve">
+    <value>Seleccione Tarea</value>
+  </data>
+  <data name="Select_Component" xml:space="preserve">
+    <value>Seleccione Componente</value>
+  </data>
+  <data name="Select_Master_Format" xml:space="preserve">
+    <value>Seleccione MasterFormat</value>
+  </data>
+  <data name="Select" xml:space="preserve">
+    <value>Seleccione</value>
+  </data>
+  <data name="Serial_Number" xml:space="preserve">
+    <value>Número de serie</value>
+  </data>
+  <data name="Required_Documents" xml:space="preserve">
+    <value>Documentos necesarios</value>
+  </data>
+  <data name="Required_Attributes" xml:space="preserve">
+    <value>Atributos necesarios</value>
+  </data>
+  <data name="Demand_Response" xml:space="preserve">
+    <value>Respuesta a la Demanda</value>
+  </data>
+  <data name="Last_Name" xml:space="preserve">
+    <value>Apellido</value>
+  </data>
+  <data name="Project_Data" xml:space="preserve">
+    <value>Datos del Proyecto</value>
+  </data>
+  <data name="Project_Facilities" xml:space="preserve">
+    <value>Instalaciones del Proyecto</value>
+  </data>
+  <data name="Project_Name" xml:space="preserve">
+    <value>Nombre del proyecto</value>
+  </data>
+  <data name="Project_Contact" xml:space="preserve">
+    <value>Proyecto Contacto</value>
+  </data>
+  <data name="Project_Role_Permission" xml:space="preserve">
+    <value>Proyecto Papel Permiso</value>
+  </data>
+  <data name="Project_Role" xml:space="preserve">
+    <value>Proyecto Rol</value>
+  </data>
+  <data name="Project_Roles" xml:space="preserve">
+    <value>Roles de Proyecto</value>
+  </data>
+  <data name="Project_Number" xml:space="preserve">
+    <value>Número del Proyecto</value>
+  </data>
+  <data name="Project_Id" xml:space="preserve">
+    <value>Identificación del proyecto</value>
+  </data>
+  <data name="Projects" xml:space="preserve">
+    <value>Proyectos</value>
+  </data>
+  <data name="Linear_Units" xml:space="preserve">
+    <value>Unidades lineales</value>
+  </data>
+  <data name="Constraint_Log" xml:space="preserve">
+    <value>Restricción Conectarse</value>
+  </data>
+  <data name="Constraint" xml:space="preserve">
+    <value>Restricción</value>
+  </data>
+  <data name="Constraints" xml:space="preserve">
+    <value>Restricciones</value>
+  </data>
+  <data name="Show_All_Issues" xml:space="preserve">
+    <value>Mostrar todos los Temas</value>
+  </data>
+  <data name="Show_All" xml:space="preserve">
+    <value>Mostrar todo</value>
+  </data>
+  <data name="Show_Report" xml:space="preserve">
+    <value>Mostrar informe</value>
+  </data>
+  <data name="Show" xml:space="preserve">
+    <value>Mostrar</value>
+  </data>
+  <data name="Download_Sample_COBie_File" xml:space="preserve">
+    <value>Descargar ejemplo Cobie archivo</value>
+  </data>
+  <data name="Download" xml:space="preserve">
+    <value>Descargar</value>
+  </data>
+  <data name="Details" xml:space="preserve">
+    <value>Detalles</value>
+  </data>
+  <data name="System_File_Name" xml:space="preserve">
+    <value>Nombre del sistema de archivos</value>
+  </data>
+  <data name="System_Role" xml:space="preserve">
+    <value>Rol del Sistema</value>
+  </data>
+  <data name="System_Profile" xml:space="preserve">
+    <value>Perfil del sistema</value>
+  </data>
+  <data name="System" xml:space="preserve">
+    <value>Sistema</value>
+  </data>
+  <data name="Systems" xml:space="preserve">
+    <value>Sistemas</value>
+  </data>
+  <data name="No_Of_Users" xml:space="preserve">
+    <value>Número De Usuarios</value>
+  </data>
+  <data name="No_Filter" xml:space="preserve">
+    <value>Sin Filtros</value>
+  </data>
+  <data name="My_Current_Week_Tasks" xml:space="preserve">
+    <value>Mis tareas de la semana actuales</value>
+  </data>
+  <data name="All_My_Task" xml:space="preserve">
+    <value>All My Task</value>
+  </data>
+  <data name="My_Profile" xml:space="preserve">
+    <value>Mi Perfil</value>
+  </data>
+  <data name="Issue_Name" xml:space="preserve">
+    <value>Issue Nombre</value>
+  </data>
+  <data name="Issue_Type" xml:space="preserve">
+    <value>Tipo de problema</value>
+  </data>
+  <data name="Issues" xml:space="preserve">
+    <value>Cuestiones</value>
+  </data>
+  <data name="File_Size" xml:space="preserve">
+    <value>Tamaño del archivo</value>
+  </data>
+  <data name="File" xml:space="preserve">
+    <value>Archivo</value>
+  </data>
+  <data name="Document_Name" xml:space="preserve">
+    <value>Nombre del documento</value>
+  </data>
+  <data name="Document_Profile" xml:space="preserve">
+    <value>Perfil de documentos</value>
+  </data>
+  <data name="Document_Checklist" xml:space="preserve">
+    <value>Documento Checklist</value>
+  </data>
+  <data name="Document" xml:space="preserve">
+    <value>Documento</value>
+  </data>
+  <data name="Documents" xml:space="preserve">
+    <value>Documentos</value>
+  </data>
+  <data name="Unassigned_Items" xml:space="preserve">
+    <value>Los productos que no asignados</value>
+  </data>
+  <data name="Unassign" xml:space="preserve">
+    <value>Sin asignar</value>
+  </data>
+  <data name="Add_Organization_To_Project" xml:space="preserve">
+    <value>Agregar Organización Para Proyectar</value>
+  </data>
+  <data name="Hazard" xml:space="preserve">
+    <value>Peligro</value>
+  </data>
+  <data name="Website" xml:space="preserve">
+    <value>Sitio web</value>
+  </data>
+  <data name="Finish_Time" xml:space="preserve">
+    <value>Hora de finalización</value>
+  </data>
+  <data name="Finish" xml:space="preserve">
+    <value>Finalizar</value>
+  </data>
+  <data name="Remove" xml:space="preserve">
+    <value>Retire</value>
+  </data>
+  <data name="Removed" xml:space="preserve">
+    <value>Eliminado</value>
+  </data>
+  <data name="Crew_Profile" xml:space="preserve">
+    <value>Crew Perfil</value>
+  </data>
+  <data name="Crew_Leader" xml:space="preserve">
+    <value>Líder de Equipo</value>
+  </data>
+  <data name="Crews" xml:space="preserve">
+    <value>Crews</value>
+  </data>
+  <data name="Synchronization_filters" xml:space="preserve">
+    <value>Filtros de sincronización</value>
+  </data>
+  <data name="Synchronization" xml:space="preserve">
+    <value>Sincronización</value>
+  </data>
+  <data name="Notification_Time" xml:space="preserve">
+    <value>Tiempo de Notificación</value>
+  </data>
+  <data name="Notify" xml:space="preserve">
+    <value>Notifique</value>
+  </data>
+  <data name="Barcode" xml:space="preserve">
+    <value>Barcode</value>
+  </data>
+  <data name="Add_Subsystem" xml:space="preserve">
+    <value>Añadir Subsistema</value>
+  </data>
+  <data name="Add_Constraints" xml:space="preserve">
+    <value>Adición de restricciones</value>
+  </data>
+  <data name="Add_New_User" xml:space="preserve">
+    <value>Crear Nuevo Usuario</value>
+  </data>
+  <data name="Add_New_Project" xml:space="preserve">
+    <value>Agregar nuevo proyecto</value>
+  </data>
+  <data name="Add_New_Crew" xml:space="preserve">
+    <value>Crear Nuevo Crew</value>
+  </data>
+  <data name="Add_New_Task" xml:space="preserve">
+    <value>Añadir Nueva Tarea</value>
+  </data>
+  <data name="Add_New_Role" xml:space="preserve">
+    <value>Crear Nuevo Rol</value>
+  </data>
+  <data name="Add_New_Organization" xml:space="preserve">
+    <value>Añadir Nueva Organización</value>
+  </data>
+  <data name="Add_Systems" xml:space="preserve">
+    <value>Añadir Sistemas</value>
+  </data>
+  <data name="Add_Issue" xml:space="preserve">
+    <value>Añadir Issue</value>
+  </data>
+  <data name="Add_Document" xml:space="preserve">
+    <value>Añadir Documento</value>
+  </data>
+  <data name="Add_Attribute" xml:space="preserve">
+    <value>Agregar atributo</value>
+  </data>
+  <data name="Add_Task" xml:space="preserve">
+    <value>Agregar tarea</value>
+  </data>
+  <data name="Add_Zones" xml:space="preserve">
+    <value>Añadir Zonas</value>
+  </data>
+  <data name="Add_Floor" xml:space="preserve">
+    <value>Añadir Floor</value>
+  </data>
+  <data name="Add_Type" xml:space="preserve">
+    <value>Agregar tipo</value>
+  </data>
+  <data name="Add_Category" xml:space="preserve">
+    <value>Añadir categoría</value>
+  </data>
+  <data name="Add_Space" xml:space="preserve">
+    <value>Añadir Space</value>
+  </data>
+  <data name="Add_Facility" xml:space="preserve">
+    <value>Añadir Fondo</value>
+  </data>
+  <data name="Add_Component" xml:space="preserve">
+    <value>Agregar componente</value>
+  </data>
+  <data name="Add_Provider" xml:space="preserve">
+    <value>Agregar proveedor</value>
+  </data>
+  <data name="Add_Edit_Name" xml:space="preserve">
+    <value>Añadir Edit Name</value>
+  </data>
+  <data name="Add_Edit_Document" xml:space="preserve">
+    <value>Añadir Editar documento</value>
+  </data>
+  <data name="Add" xml:space="preserve">
+    <value>Añadir</value>
+  </data>
+  <data name="Days" xml:space="preserve">
+    <value>Días</value>
+  </data>
+  <data name="Replace_File" xml:space="preserve">
+    <value>Reemplazar archivo</value>
+  </data>
+  <data name="Volume_Units" xml:space="preserve">
+    <value>Unidades de volumen</value>
+  </data>
+  <data name="Alerts" xml:space="preserve">
+    <value>Alertas</value>
+  </data>
+  <data name="Submit" xml:space="preserve">
+    <value>Enviar</value>
+  </data>
+  <data name="Abbreviation" xml:space="preserve">
+    <value>Abreviatura</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>Búsqueda</value>
+  </data>
+  <data name="Attribute_Name" xml:space="preserve">
+    <value>Nombre del Atributo</value>
+  </data>
+  <data name="Affected_Task" xml:space="preserve">
+    <value>Tarea Afectada</value>
+  </data>
+  <data name="Primary_Contact" xml:space="preserve">
+    <value>Contacto principal</value>
+  </data>
+  <data name="Inbox" xml:space="preserve">
+    <value>Bandeja de entrada</value>
+  </data>
+  <data name="Live" xml:space="preserve">
+    <value>En vivo</value>
+  </data>
+  <data name="Implementation" xml:space="preserve">
+    <value>Implementación</value>
+  </data>
+  <data name="Time_Zone" xml:space="preserve">
+    <value>Zona Horaria</value>
+  </data>
+  <data name="Generate_Barcode" xml:space="preserve">
+    <value>Generar código de barras</value>
+  </data>
+  <data name="Generate_Report" xml:space="preserve">
+    <value>Generar informe</value>
+  </data>
+  <data name="Manufacturer" xml:space="preserve">
+    <value>Fabricante</value>
+  </data>
+  <data name="Set" xml:space="preserve">
+    <value>Set</value>
+  </data>
+  <data name="Facility_Name" xml:space="preserve">
+    <value>Nombre de la Instalación</value>
+  </data>
+  <data name="Family_Name" xml:space="preserve">
+    <value>Apellido</value>
+  </data>
+  <data name="Facility_Profile" xml:space="preserve">
+    <value>Fondo Perfil</value>
+  </data>
+  <data name="Designer" xml:space="preserve">
+    <value>Diseñador</value>
+  </data>
+  <data name="Program_QC_For_Equipment" xml:space="preserve">
+    <value>QC Programa Para Equipos</value>
+  </data>
+  <data name="Equipment_Id" xml:space="preserve">
+    <value>Equipo Id</value>
+  </data>
+  <data name="Equipment" xml:space="preserve">
+    <value>Equipos</value>
+  </data>
+  <data name="Less_Than" xml:space="preserve">
+    <value>Menos que</value>
+  </data>
+  <data name="Parent" xml:space="preserve">
+    <value>Padres</value>
+  </data>
+  <data name="Uploaded_By" xml:space="preserve">
+    <value>Cargado por</value>
+  </data>
+  <data name="Upload_File" xml:space="preserve">
+    <value>Subir archivo</value>
+  </data>
+  <data name="Uploaded_File_Name" xml:space="preserve">
+    <value>Subido Nombre del archivo</value>
+  </data>
+  <data name="Uploaded_Files" xml:space="preserve">
+    <value>Archivos subidos</value>
+  </data>
+  <data name="Uploaded_On" xml:space="preserve">
+    <value>Cargado el</value>
+  </data>
+  <data name="Upload" xml:space="preserve">
+    <value>Subir</value>
+  </data>
+  <data name="Delete_File" xml:space="preserve">
+    <value>Eliminar archivo</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Eliminar</value>
+  </data>
+  <data name="Date" xml:space="preserve">
+    <value>Fecha</value>
+  </data>
+  <data name="Task_Name" xml:space="preserve">
+    <value>Nombre de la tarea</value>
+  </data>
+  <data name="Tasks" xml:space="preserve">
+    <value>Tareas</value>
+  </data>
+  <data name="Overall_Impact" xml:space="preserve">
+    <value>Impacto general</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Cancelar</value>
+  </data>
+  <data name="Trend" xml:space="preserve">
+    <value>Tendencia</value>
+  </data>
+  <data name="Zones" xml:space="preserve">
+    <value>Zonas</value>
+  </data>
+  <data name="Requested_By" xml:space="preserve">
+    <value>Solicitado por</value>
+  </data>
+  <data name="Requested_Date" xml:space="preserve">
+    <value>Fecha de solicitud</value>
+  </data>
+  <data name="Clear" xml:space="preserve">
+    <value>Claro</value>
+  </data>
+  <data name="Enabled" xml:space="preserve">
+    <value>Activado</value>
+  </data>
+  <data name="Expected_Life" xml:space="preserve">
+    <value>La vida esperada</value>
+  </data>
+  <data name="Collapse" xml:space="preserve">
+    <value>Cerrar</value>
+  </data>
+  <data name="Row_Name" xml:space="preserve">
+    <value>Nombre Fila</value>
+  </data>
+  <data name="Row" xml:space="preserve">
+    <value>Fila</value>
+  </data>
+  <data name="Directory_Name" xml:space="preserve">
+    <value>Nombre de directorio</value>
+  </data>
+  <data name="Model_Server" xml:space="preserve">
+    <value>Modelo de servidor</value>
+  </data>
+  <data name="Model_Number" xml:space="preserve">
+    <value>Número de modelo</value>
+  </data>
+  <data name="Naming_Convention" xml:space="preserve">
+    <value>Convención de nomenclatura</value>
+  </data>
+  <data name="First_Name" xml:space="preserve">
+    <value>Nombre de pila</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Nombre</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>Descripción</value>
+  </data>
+  <data name="Area_Units" xml:space="preserve">
+    <value>Unidades de área</value>
+  </data>
+  <data name="Area_Measurement" xml:space="preserve">
+    <value>Área de medición</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>Contraseña</value>
+  </data>
+  <data name="Gross_Area" xml:space="preserve">
+    <value>Superficie total</value>
+  </data>
+  <data name="Floor_Spaces" xml:space="preserve">
+    <value>FloorSpaces</value>
+  </data>
+  <data name="Part_Number" xml:space="preserve">
+    <value>Número de pieza</value>
+  </data>
+  <data name="Contact_Email" xml:space="preserve">
+    <value>Correo electrónico de contacto</value>
+  </data>
+  <data name="Contacts" xml:space="preserve">
+    <value>Contactos</value>
+  </data>
+  <data name="Elevation" xml:space="preserve">
+    <value>Elevación</value>
+  </data>
+  <data name="Type_Name" xml:space="preserve">
+    <value>Tipo Nombre</value>
+  </data>
+  <data name="Type" xml:space="preserve">
+    <value>Tipo</value>
+  </data>
+  <data name="Category" xml:space="preserve">
+    <value>Categoría</value>
+  </data>
+  <data name="Dashboard" xml:space="preserve">
+    <value>Dashboard</value>
+  </data>
+  <data name="Space_Name" xml:space="preserve">
+    <value>Nombre Espacio</value>
+  </data>
+  <data name="Space_Profile" xml:space="preserve">
+    <value>Espacio Perfil</value>
+  </data>
+  <data name="Program_QC_for_Spaces" xml:space="preserve">
+    <value>QC Programa de Espacios</value>
+  </data>
+  <data name="Desktop_Client_Installer" xml:space="preserve">
+    <value>Desktop Client Instalador</value>
+  </data>
+  <data name="Usable_Height" xml:space="preserve">
+    <value>Utilizable Altura</value>
+  </data>
+  <data name="Likelihood" xml:space="preserve">
+    <value>Verosimilitud</value>
+  </data>
+  <data name="Start_Time" xml:space="preserve">
+    <value>Hora de inicio</value>
+  </data>
+  <data name="Start_Date" xml:space="preserve">
+    <value>Fecha de inicio</value>
+  </data>
+  <data name="Start" xml:space="preserve">
+    <value>Inicio</value>
+  </data>
+  <data name="Net_Area" xml:space="preserve">
+    <value>Area Net</value>
+  </data>
+  <data name="Deadline" xml:space="preserve">
+    <value>Fecha tope</value>
+  </data>
+  <data name="End" xml:space="preserve">
+    <value>Fin</value>
+  </data>
+  <data name="Street" xml:space="preserve">
+    <value>Calle</value>
+  </data>
+  <data name="Phase" xml:space="preserve">
+    <value>Fase</value>
+  </data>
+  <data name="Stage" xml:space="preserve">
+    <value>Etapa</value>
+  </data>
+  <data name="Role_Name" xml:space="preserve">
+    <value>Nombre de función</value>
+  </data>
+  <data name="Role_Description" xml:space="preserve">
+    <value>Descripción del papel</value>
+  </data>
+  <data name="Role" xml:space="preserve">
+    <value>Papel</value>
+  </data>
+  <data name="Roles" xml:space="preserve">
+    <value>Roles</value>
+  </data>
+  <data name="Facility" xml:space="preserve">
+    <value>Fondo</value>
+  </data>
+  <data name="Profile" xml:space="preserve">
+    <value>Perfil</value>
+  </data>
+  <data name="Mitigation" xml:space="preserve">
+    <value>Mitigación</value>
+  </data>
+  <data name="Check_All_Boxes" xml:space="preserve">
+    <value>Marque todas las casillas</value>
+  </data>
+  <data name="Price" xml:space="preserve">
+    <value>Precio</value>
+  </data>
+  <data name="Count" xml:space="preserve">
+    <value>Cuente</value>
+  </data>
+  <data name="Percent_Plan_Complete" xml:space="preserve">
+    <value>Plan de Porcentaje completado</value>
+  </data>
+  <data name="Schedule" xml:space="preserve">
+    <value>Horario</value>
+  </data>
+  <data name="Integration" xml:space="preserve">
+    <value>Integración</value>
+  </data>
+  <data name="Site_Name" xml:space="preserve">
+    <value>Nombre del sitio</value>
+  </data>
+  <data name="Site_Description" xml:space="preserve">
+    <value>Descripción del Sitio</value>
+  </data>
+  <data name="Workable_Backlog" xml:space="preserve">
+    <value>Cartera realizable</value>
+  </data>
+  <data name="Chance" xml:space="preserve">
+    <value>Probabilidad</value>
+  </data>
+  <data name="Organization_Type" xml:space="preserve">
+    <value>Tipo de Organización</value>
+  </data>
+  <data name="Organization_Profile" xml:space="preserve">
+    <value>Perfil de la organización</value>
+  </data>
+  <data name="Organization_ID" xml:space="preserve">
+    <value>Organización ID</value>
+  </data>
+  <data name="Currency_Units" xml:space="preserve">
+    <value>Unidades de Moneda</value>
+  </data>
+  <data name="Active_Days" xml:space="preserve">
+    <value>Días activos</value>
+  </data>
+  <data name="Activity_Id" xml:space="preserve">
+    <value>Actividad Id</value>
+  </data>
+  <data name="Country" xml:space="preserve">
+    <value>País</value>
+  </data>
+  <data name="Administrative_Controls" xml:space="preserve">
+    <value>Controles administrativos</value>
+  </data>
+  <data name="Close_Window" xml:space="preserve">
+    <value>Cerrar ventana</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>Cerrar</value>
+  </data>
+  <data name="Components" xml:space="preserve">
+    <value>Componentes</value>
+  </data>
+  <data name="Providers" xml:space="preserve">
+    <value>Proveedores</value>
+  </data>
+  <data name="Functional_Area" xml:space="preserve">
+    <value>Área funcional</value>
+  </data>
+  <data name="Company" xml:space="preserve">
+    <value>Empresa</value>
+  </data>
+  <data name="Work_Plan" xml:space="preserve">
+    <value>Plan de Trabajo</value>
+  </data>
+  <data name="Work_Orders" xml:space="preserve">
+    <value>Ordenes de Trabajo</value>
+  </data>
+  <data name="Work_Hours" xml:space="preserve">
+    <value>Horas de Trabajo</value>
+  </data>
+  <data name="Engineering_Controls" xml:space="preserve">
+    <value>Controles de ingeniería</value>
+  </data>
+  <data name="Update_Names" xml:space="preserve">
+    <value>Actualizar Nombres</value>
+  </data>
+  <data name="Root_Cause_Analysis_Report" xml:space="preserve">
+    <value>Root Cause Analysis Report</value>
+  </data>
+  <data name="Root_Cause_Analysis" xml:space="preserve">
+    <value>Análisis de Causa Raíz</value>
+  </data>
+  <data name="Personal_Protective_equipment" xml:space="preserve">
+    <value>Equipos de protección personal</value>
+  </data>
+  <data name="Height" xml:space="preserve">
+    <value>Altura</value>
+  </data>
+  <data name="Clone" xml:space="preserve">
+    <value>Clone</value>
+  </data>
+  <data name="Risk" xml:space="preserve">
+    <value>Riesgo</value>
+  </data>
+  <data name="Assign_Organization" xml:space="preserve">
+    <value>Asigne Organización</value>
+  </data>
+  <data name="Assign_As_Major" xml:space="preserve">
+    <value>Asignar Como Major</value>
+  </data>
+  <data name="Assign_As_Project_Contact" xml:space="preserve">
+    <value>Asignar Como Proyecto Contacto</value>
+  </data>
+  <data name="Assign_Contacts_To_The_Project" xml:space="preserve">
+    <value>Asigne contactos con el proyecto</value>
+  </data>
+  <data name="Assign_Omniclass" xml:space="preserve">
+    <value>Asigne OmniClass</value>
+  </data>
+  <data name="Assign" xml:space="preserve">
+    <value>Asignar</value>
+  </data>
+  <data name="Access_View" xml:space="preserve">
+    <value>Vista de acceso</value>
+  </data>
+  <data name="Room_Name" xml:space="preserve">
+    <value>Nombre de la sala</value>
+  </data>
+  <data name="Room_Code" xml:space="preserve">
+    <value>Código de la sala</value>
+  </data>
+  <data name="Room_Tag" xml:space="preserve">
+    <value>Tag Room</value>
+  </data>
+  <data name="Room_Id" xml:space="preserve">
+    <value>Sala de Id</value>
+  </data>
+  <data name="Object" xml:space="preserve">
+    <value>Objeto</value>
+  </data>
+  <data name="Action" xml:space="preserve">
+    <value>Acción</value>
+  </data>
+  <data name="Missing_attributes" xml:space="preserve">
+    <value>Atributos que faltan</value>
+  </data>
+  <data name="Phone" xml:space="preserve">
+    <value>Teléfono</value>
+  </data>
+  <data name="Address_State_Region" xml:space="preserve">
+    <value>Dirección Región Estado</value>
+  </data>
+  <data name="Address_Street" xml:space="preserve">
+    <value>Dirección Calle</value>
+  </data>
+  <data name="Address_Country" xml:space="preserve">
+    <value>Dirección País</value>
+  </data>
+  <data name="Address_Town" xml:space="preserve">
+    <value>Dirección Ciudad</value>
+  </data>
+  <data name="Address_2" xml:space="preserve">
+    <value>Dirección 2</value>
+  </data>
+  <data name="Address_1" xml:space="preserve">
+    <value>Dirección 1</value>
+  </data>
+  <data name="Location" xml:space="preserve">
+    <value>Ubicación</value>
+  </data>
+  <data name="Equal_To" xml:space="preserve">
+    <value>Igual a</value>
+  </data>
+  <data name="Import_Data" xml:space="preserve">
+    <value>Importar datos</value>
+  </data>
+  <data name="Import_Export" xml:space="preserve">
+    <value>Importar / Exportar</value>
+  </data>
+  <data name="Export_Project_Contacts" xml:space="preserve">
+    <value>Proyecto de Exportación Contactos</value>
+  </data>
+  <data name="Export_Documents" xml:space="preserve">
+    <value>Documentos de Exportación</value>
+  </data>
+  <data name="Export_Data" xml:space="preserve">
+    <value>Exportar datos</value>
+  </data>
+  <data name="Export_Component" xml:space="preserve">
+    <value>Componente Exportación</value>
+  </data>
+  <data name="Export_To_PDF" xml:space="preserve">
+    <value>Exportar a PDF</value>
+  </data>
+  <data name="Export_To_Excel" xml:space="preserve">
+    <value>Exportar a Excel</value>
+  </data>
+  <data name="Errors" xml:space="preserve">
+    <value>Errores</value>
+  </data>
+  <data name="From" xml:space="preserve">
+    <value>Desde</value>
+  </data>
+  <data name="Created_By" xml:space="preserve">
+    <value>Creado por</value>
+  </data>
+  <data name="Created_On" xml:space="preserve">
+    <value>Creado el</value>
+  </data>
+  <data name="Initial_Sync" xml:space="preserve">
+    <value>Sincronización inicial</value>
+  </data>
+  <data name="Duration" xml:space="preserve">
+    <value>Duración</value>
+  </data>
+  <data name="Program_QC" xml:space="preserve">
+    <value>Programa de control de calidad</value>
+  </data>
+  <data name="Program_file" xml:space="preserve">
+    <value>Archivo de programa</value>
+  </data>
+  <data name="City_State" xml:space="preserve">
+    <value>Ciudad Estado</value>
+  </data>
+  <data name="Commitment_Status" xml:space="preserve">
+    <value>Estado del Compromiso</value>
+  </data>
+  <data name="Promise_Date" xml:space="preserve">
+    <value>Promesa Fecha</value>
+  </data>
+  <data name="Contractor" xml:space="preserve">
+    <value>Contratista</value>
+  </data>
+  <data name="Products" xml:space="preserve">
+    <value>Productos</value>
+  </data>
+  <data name="Reference" xml:space="preserve">
+    <value>Referencia</value>
+  </data>
+  <data name="Department" xml:space="preserve">
+    <value>Departamento</value>
+  </data>
+  <data name="Non_conformance_Reasons_Report" xml:space="preserve">
+    <value>No conformidad Razones Informe</value>
+  </data>
+  <data name="Non_conformance_Reasons" xml:space="preserve">
+    <value>Conformidad Razones para no</value>
+  </data>
+  <data name="Sheet_Name" xml:space="preserve">
+    <value>Nombre de hoja</value>
+  </data>
+  <data name="Sheet" xml:space="preserve">
+    <value>Hoja</value>
+  </data>
+  <data name="Criteria" xml:space="preserve">
+    <value>Criterios</value>
+  </data>
+  <data name="Tag_Number" xml:space="preserve">
+    <value>Número Tag</value>
+  </data>
+  <data name="Changed_By" xml:space="preserve">
+    <value>Cambiado por</value>
+  </data>
+  <data name="Edit_Uni_Format" xml:space="preserve">
+    <value>Editar Uni Formato</value>
+  </data>
+  <data name="Edit_Omniclass" xml:space="preserve">
+    <value>Editar OmniClass</value>
+  </data>
+  <data name="Edit_Master_Format" xml:space="preserve">
+    <value>Editar formato Maestro</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>Editar</value>
+  </data>
+  <data name="Greater_Than" xml:space="preserve">
+    <value>Mayor que</value>
+  </data>
+  <data name="No_schedule_is_available_for_this_project_yet" xml:space="preserve">
+    <value>No hay horario disponible para este proyecto todavía.</value>
+  </data>
+  <data name="Warranty_Duration_Labor" xml:space="preserve">
+    <value>Duración de la garantía del Trabajo</value>
+  </data>
+  <data name="Warranty_Duration_Parts" xml:space="preserve">
+    <value>Piezas Garantía Duración</value>
+  </data>
+  <data name="Warranty_Duration_Unit" xml:space="preserve">
+    <value>Unidad de Garantía Duración</value>
+  </data>
+  <data name="Warranty_Description" xml:space="preserve">
+    <value>Descripción de la garantía</value>
+  </data>
+  <data name="Warranty_Start_Date" xml:space="preserve">
+    <value>Garantía Fecha de Inicio</value>
+  </data>
+  <data name="Warranty_Guarantor_Labor" xml:space="preserve">
+    <value>Garantía Garante Trabajo</value>
+  </data>
+  <data name="Warranty_Guarantor_Parts" xml:space="preserve">
+    <value>Piezas Garante Garantía</value>
+  </data>
+  <data name="Save_Layout" xml:space="preserve">
+    <value>Guardar diseño</value>
+  </data>
+  <data name="Save_And_Clone" xml:space="preserve">
+    <value>Ahorra Y Clone</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>Guardar</value>
+  </data>
+  <data name="Contains" xml:space="preserve">
+    <value>Contiene</value>
+  </data>
+  <data name="Office_Name" xml:space="preserve">
+    <value>Nombre de la oficina</value>
+  </data>
+  <data name="Percent_Count" xml:space="preserve">
+    <value>Recuento Porcentaje</value>
+  </data>
+  <data name="Add_By_Model_Number" xml:space="preserve">
+    <value>Añadir por número de modelo</value>
+  </data>
+  <data name="Search_By" xml:space="preserve">
+    <value>Búsqueda Por</value>
+  </data>
+  <data name="Installation_Date" xml:space="preserve">
+    <value>Fecha de instalación</value>
+  </data>
+  <data name="Uni_Format" xml:space="preserve">
+    <value>Uni Formato</value>
+  </data>
+  <data name="Percent_Plan_Complete_Report" xml:space="preserve">
+    <value>Informe Plan de porcentaje completado (PPC)</value>
+  </data>
+  <data name="PDF_Output_Format" xml:space="preserve">
+    <value>Formato de salida PDF</value>
+  </data>
+  <data name="OmniClass_Type" xml:space="preserve">
+    <value>OmniClass Tipo</value>
+  </data>
+  <data name="OmniClass_version" xml:space="preserve">
+    <value>Versión OmniClass</value>
+  </data>
+  <data name="OmniClass" xml:space="preserve">
+    <value>OmniClass</value>
+  </data>
+  <data name="Nevisworks_Version" xml:space="preserve">
+    <value>Nevisworks Version</value>
+  </data>
+  <data name="Master_Format" xml:space="preserve">
+    <value>Formato Maestro</value>
+  </data>
+  <data name="LOD_QC" xml:space="preserve">
+    <value>LOD QC</value>
+  </data>
+  <data name="Level_Of_Details" xml:space="preserve">
+    <value>El nivel de detalles</value>
+  </data>
+  <data name="LOD_name" xml:space="preserve">
+    <value>Nombre LOD</value>
+  </data>
+  <data name="JSN_Name" xml:space="preserve">
+    <value>Nombre JSN</value>
+  </data>
+  <data name="JSN" xml:space="preserve">
+    <value>JSN</value>
+  </data>
+  <data name="COBie_QC" xml:space="preserve">
+    <value>Cobie QC</value>
+  </data>
+  <data name="COBie_Data_Quality_Control" xml:space="preserve">
+    <value>Cobie Control de Calidad de los Datos</value>
+  </data>
+  <data name="COBie" xml:space="preserve">
+    <value>Cobie</value>
+  </data>
+  <data name="CO_ASI" xml:space="preserve">
+    <value>CO / ASI</value>
+  </data>
+  <data name="BIM_Use_Case" xml:space="preserve">
+    <value>Caso de Uso BIM</value>
+  </data>
+  <data name="BIM_Connector_Installer" xml:space="preserve">
+    <value>BIM Conector Instalador</value>
+  </data>
+  <data name="BIM" xml:space="preserve">
+    <value>BIM</value>
+  </data>
+  <data name="Add_New_Facility" xml:space="preserve">
+    <value>Crear Nuevo Fondo</value>
+  </data>
+  <data name="Add_Zone" xml:space="preserve">
+    <value>Añadir zona</value>
+  </data>
+  <data name="Please_enter_number" xml:space="preserve">
+    <value>Por favor, introduzca el número de</value>
+  </data>
+  <data name="Add_Document_to" xml:space="preserve">
+    <value>Añadir Documento A</value>
+  </data>
+  <data name="Unassign_Space" xml:space="preserve">
+    <value>Espacio Unassign</value>
+  </data>
+  <data name="COBieDataQualityControl" xml:space="preserve">
+    <value>Cobie Control de Calidad de los Datos</value>
+  </data>
+  <data name="Assign_Existing_Facilities" xml:space="preserve">
+    <value>Asigne Instalaciones Existentes</value>
+  </data>
+  <data name="Add_Existing_Facility" xml:space="preserve">
+    <value>Añadir instalación existente</value>
+  </data>
+  <data name="Provide_New_Name" xml:space="preserve">
+    <value>Proporcionar Nuevo Nombre</value>
+  </data>
+  <data name="Update_Component_Name" xml:space="preserve">
+    <value>Nombre componente de actualización</value>
+  </data>
+  <data name="Update_Type_Name" xml:space="preserve">
+    <value>Tipo Nombre de actualización</value>
+  </data>
+  <data name="Use_Attribute_Template" xml:space="preserve">
+    <value>Plantilla Uso Atributo</value>
+  </data>
+  <data name="Assign_Project_Role" xml:space="preserve">
+    <value>Asigne Proyecto Rol</value>
+  </data>
+  <data name="Master_Files" xml:space="preserve">
+    <value>Master Files</value>
+  </data>
+  <data name="Elapsed_Time" xml:space="preserve">
+    <value>Tiempo Transcurrido</value>
+  </data>
+  <data name="Estimated_Time" xml:space="preserve">
+    <value>Tiempo estimado</value>
+  </data>
+  <data name="Total" xml:space="preserve">
+    <value>Total</value>
+  </data>
+  <data name="Transfer_Speed" xml:space="preserve">
+    <value>Velocidad de transferencia</value>
+  </data>
+  <data name="Uploaded" xml:space="preserve">
+    <value>Subido</value>
+  </data>
+  <data name="Uploading_File" xml:space="preserve">
+    <value>La subida de archivos</value>
+  </data>
+  <data name="Generate_COBie_File" xml:space="preserve">
+    <value>Generar Cobie archivo</value>
+  </data>
+  <data name="Add_Edit_Names" xml:space="preserve">
+    <value>Añadir / Editar nombres</value>
+  </data>
+  <data name="Add_Contractor" xml:space="preserve">
+    <value>Añadir Contratista</value>
+  </data>
+  <data name="Add_Designer" xml:space="preserve">
+    <value>Agregar diseñador</value>
+  </data>
+  <data name="Password_Policy" xml:space="preserve">
+    <value>Directiva de contraseñas</value>
+  </data>
+  <data name="View_in_BIM" xml:space="preserve">
+    <value>Ver en BIM</value>
+  </data>
+  <data name="Subsystems" xml:space="preserve">
+    <value>Subsistemas</value>
+  </data>
+  <data name="Activities" xml:space="preserve">
+    <value>Actividades</value>
+  </data>
+  <data name="Product_Attributes" xml:space="preserve">
+    <value>Características del producto</value>
+  </data>
+  <data name="Product_Documents" xml:space="preserve">
+    <value>Documentos del producto</value>
+  </data>
+  <data name="Project_Setup" xml:space="preserve">
+    <value>Configuración del proyecto</value>
+  </data>
+  <data name="Role_Details" xml:space="preserve">
+    <value>Detalles de rol</value>
+  </data>
+  <data name="Schedule_Limits" xml:space="preserve">
+    <value>Límites Horario</value>
+  </data>
+  <data name="Interpolate" xml:space="preserve">
+    <value>Interpolar</value>
+  </data>
+  <data name="Lower_Limit_min" xml:space="preserve">
+    <value>Límite Inferior (min)</value>
+  </data>
+  <data name="Numeric_Type" xml:space="preserve">
+    <value>Tipo Numérico</value>
+  </data>
+  <data name="Unit_Type" xml:space="preserve">
+    <value>Tipo de Unidad</value>
+  </data>
+  <data name="Upper_Limit_max" xml:space="preserve">
+    <value>Límite Superior (max)</value>
+  </data>
+  <data name="Schedules" xml:space="preserve">
+    <value>Horarios</value>
+  </data>
+  <data name="Create_Attribute_Group" xml:space="preserve">
+    <value>Crear grupo de atributos</value>
+  </data>
+  <data name="Add_Existing_Attributes" xml:space="preserve">
+    <value>Añadir atributos existentes</value>
+  </data>
+  <data name="Add_New_Attribute" xml:space="preserve">
+    <value>Añadir nuevo atributo</value>
+  </data>
+  <data name="Attribute_Description" xml:space="preserve">
+    <value>Atributo Descripción</value>
+  </data>
+  <data name="Attribute_Group_List" xml:space="preserve">
+    <value>Atributo Lista de grupos</value>
+  </data>
+  <data name="Add_Attribute_Group" xml:space="preserve">
+    <value>Agregar grupo de atributos</value>
+  </data>
+  <data name="Attribute_Group_Name" xml:space="preserve">
+    <value>Atributo Nombre del grupo</value>
+  </data>
+  <data name="Create_Required_Attribute_Group" xml:space="preserve">
+    <value>Crear Obligatorio atributo de grupo</value>
+  </data>
+  <data name="Done" xml:space="preserve">
+    <value>Done</value>
+  </data>
+  <data name="Number_of_Components" xml:space="preserve">
+    <value>Número de componentes</value>
+  </data>
+  <data name="Link_To_Space" xml:space="preserve">
+    <value>Enlace al Espacio</value>
+  </data>
+  <data name="Energy_Simulation" xml:space="preserve">
+    <value>Simulación Energética</value>
+  </data>
+  <data name="Link_to_Component" xml:space="preserve">
+    <value>Enlace al Componente</value>
+  </data>
+  <data name="Show_All_work_order" xml:space="preserve">
+    <value>Mostrar todos los órdenes de trabajo</value>
+  </data>
+  <data name="Work_Order_Name" xml:space="preserve">
+    <value>Nombre Orden de Trabajo</value>
+  </data>
+  <data name="Work_Order_Type" xml:space="preserve">
+    <value>Orden de trabajo Tipo</value>
+  </data>
+  <data name="Work_order_Status" xml:space="preserve">
+    <value>Orden de Trabajo Estado</value>
+  </data>
+  <data name="Priority" xml:space="preserve">
+    <value>Prioridad</value>
+  </data>
+  <data name="Create_Clones" xml:space="preserve">
+    <value>Crear Clones</value>
+  </data>
+  <data name="Number_Of_Clones_To_Be_Created" xml:space="preserve">
+    <value>Número de clones que se cree</value>
+  </data>
+  <data name="Work_Order_Report" xml:space="preserve">
+    <value>Orden de Trabajo Informe</value>
+  </data>
+  <data name="Show_Open_Work_Order" xml:space="preserve">
+    <value>Mostrar Abrir Orden de Trabajo</value>
+  </data>
+  <data name="Open" xml:space="preserve">
+    <value>Abierta</value>
+  </data>
+  <data name="Attribute_Details" xml:space="preserve">
+    <value>Atributo Detalles</value>
+  </data>
+  <data name="Attribute_Group" xml:space="preserve">
+    <value>Grupo de atributos</value>
+  </data>
+  <data name="Classifications" xml:space="preserve">
+    <value>Clasificaciones</value>
+  </data>
+  <data name="Link_Status" xml:space="preserve">
+    <value>Estado del enlace</value>
+  </data>
+  <data name="Applied_Group_Name" xml:space="preserve">
+    <value>Nombre del grupo Aplicada</value>
+  </data>
+  <data name="Delete_Attribute" xml:space="preserve">
+    <value>Eliminar Atributo</value>
+  </data>
+  <data name="Permissions" xml:space="preserve">
+    <value>Permisos</value>
+  </data>
+  <data name="Add_Details" xml:space="preserve">
+    <value>Agregar detalles</value>
+  </data>
+  <data name="Add_Role" xml:space="preserve">
+    <value>Agregar rol</value>
+  </data>
+  <data name="Default_Value" xml:space="preserve">
+    <value>Valor predeterminado</value>
+  </data>
+  <data name="Description_Comments" xml:space="preserve">
+    <value>Descripción / Observaciones</value>
+  </data>
+  <data name="Required_Optional" xml:space="preserve">
+    <value>Requerido / opcional</value>
+  </data>
+  <data name="Value_Range_Choices" xml:space="preserve">
+    <value>Intervalo de valores / Alternativas</value>
+  </data>
+  <data name="Assign_SubAssembly" xml:space="preserve">
+    <value>Asigne subconjunto</value>
+  </data>
+  <data name="Unassign_SubAssembly" xml:space="preserve">
+    <value>Subconjunto Unassign</value>
+  </data>
+  <data name="SubAssembly" xml:space="preserve">
+    <value>Subconjunto</value>
+  </data>
+  <data name="SubAssemblies" xml:space="preserve">
+    <value>Subconjuntos</value>
+  </data>
+  <data name="Generate_Excel_File" xml:space="preserve">
+    <value>Generar archivo de Excel</value>
+  </data>
+  <data name="Generate_Component_Analysis_Report" xml:space="preserve">
+    <value>Generar Informe de Análisis de Componentes</value>
+  </data>
+  <data name="Jobs" xml:space="preserve">
+    <value>Empleos</value>
+  </data>
+  <data name="Resources" xml:space="preserve">
+    <value>Recursos</value>
+  </data>
+  <data name="Spares" xml:space="preserve">
+    <value>Repuestos</value>
+  </data>
+  <data name="Resource_Name" xml:space="preserve">
+    <value>Nombre del recurso</value>
+  </data>
+  <data name="Supplier" xml:space="preserve">
+    <value>Proveedor</value>
+  </data>
+  <data name="Add_Resource" xml:space="preserve">
+    <value>Agregar recurso</value>
+  </data>
+  <data name="Job" xml:space="preserve">
+    <value>Trabajo</value>
+  </data>
+  <data name="Spare_Name" xml:space="preserve">
+    <value>Nombre de repuesto</value>
+  </data>
+  <data name="Add_Spare" xml:space="preserve">
+    <value>Añadir repuesto</value>
+  </data>
+  <data name="Set_Number" xml:space="preserve">
+    <value>Número Set</value>
+  </data>
+  <data name="Add_Type_Spare" xml:space="preserve">
+    <value>Agregar tipo de repuesto</value>
+  </data>
+  <data name="Logo" xml:space="preserve">
+    <value>Logo</value>
+  </data>
+  <data name="Document_Type" xml:space="preserve">
+    <value>Tipo de Documento</value>
+  </data>
+  <data name="Add_missing_attributes_to_model" xml:space="preserve">
+    <value>Añadir atributos que faltan para modelar</value>
+  </data>
+  <data name="Work_Order_Log" xml:space="preserve">
+    <value>Trabajar pedido Entrar</value>
+  </data>
+  <data name="Updated_By" xml:space="preserve">
+    <value>Actualizado por</value>
+  </data>
+  <data name="Updated_On" xml:space="preserve">
+    <value>Actualizado el</value>
+  </data>
+  <data name="Updated" xml:space="preserve">
+    <value>Actualizado</value>
+  </data>
+  <data name="Viewer" xml:space="preserve">
+    <value>Visor</value>
+  </data>
+  <data name="LogIn" xml:space="preserve">
+    <value>Iniciar sesión</value>
+  </data>
+  <data name="Linked_In_BIM" xml:space="preserve">
+    <value>Linked In BIM?</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>Sí</value>
+  </data>
+  <data name="Issue_Log" xml:space="preserve">
+    <value>Issue Log</value>
+  </data>
+  <data name="Issue_Number" xml:space="preserve">
+    <value>Número de emisión</value>
+  </data>
+  <data name="Show_Open_Issue" xml:space="preserve">
+    <value>Mostrar Abrir Issue</value>
+  </data>
+  <data name="Assign_Supplier" xml:space="preserve">
+    <value>Asigne Proveedor</value>
+  </data>
+  <data name="Assign_Contractor" xml:space="preserve">
+    <value>Asigne Contratista</value>
+  </data>
+  <data name="Assign_Designer" xml:space="preserve">
+    <value>Asigne Diseñador</value>
+  </data>
+  <data name="Assign_UniClass" xml:space="preserve">
+    <value>Asigne Uniclass</value>
+  </data>
+  <data name="UniClass" xml:space="preserve">
+    <value>Uniclass</value>
+  </data>
+  <data name="Edit_Classification" xml:space="preserve">
+    <value>Editar Clasificación</value>
+  </data>
+  <data name="Duration_Unit" xml:space="preserve">
+    <value>Unidad Duración</value>
+  </data>
+  <data name="Frequency" xml:space="preserve">
+    <value>Frecuencia</value>
+  </data>
+  <data name="Frequency_Unit" xml:space="preserve">
+    <value>Unidad de frecuencia</value>
+  </data>
+  <data name="Priors" xml:space="preserve">
+    <value>Priores</value>
+  </data>
+  <data name="Start_Unit" xml:space="preserve">
+    <value>Inicio Unidad</value>
+  </data>
+  <data name="Task_Number" xml:space="preserve">
+    <value>Número de tareas</value>
+  </data>
+  <data name="Assign_Category" xml:space="preserve">
+    <value>Asigne Categoría</value>
+  </data>
+  <data name="Change_Password" xml:space="preserve">
+    <value>Cambiar la contraseña</value>
+  </data>
+  <data name="Confirm_Password" xml:space="preserve">
+    <value>Confirmar Contraseña</value>
+  </data>
+  <data name="Current_Password" xml:space="preserve">
+    <value>Contraseña actual</value>
+  </data>
+  <data name="New_Password" xml:space="preserve">
+    <value>Nueva contraseña</value>
+  </data>
+  <data name="Forgot_Password" xml:space="preserve">
+    <value>Olvidé mi contraseña</value>
+  </data>
+  <data name="Password_Rule_1" xml:space="preserve">
+    <value>Las contraseñas deben</value>
+  </data>
+  <data name="Password_Rule_10" xml:space="preserve">
+    <value>Contraseñas elegido no debe</value>
+  </data>
+  <data name="Password_Rule_11" xml:space="preserve">
+    <value>Contener un nombre común adecuado, identificación de acceso, dirección de correo electrónico, iniciales, primero, segundo nombre o la última</value>
+  </data>
+  <data name="Password_Rule_12" xml:space="preserve">
+    <value>Se han utilizado en el último año o los últimos tres contraseñas, lo que sea mayor</value>
+  </data>
+  <data name="Password_Rule_13" xml:space="preserve">
+    <value>Se recomienda encarecidamente que</value>
+  </data>
+  <data name="Password_Rule_14" xml:space="preserve">
+    <value>Las contraseñas se cambian dos veces por año (por ejemplo, cuando los relojes se ajustan en la primavera y otoño)</value>
+  </data>
+  <data name="Password_Rule_15" xml:space="preserve">
+    <value>Cada contraseña elegida es nuevo y diferente</value>
+  </data>
+  <data name="Password_Rule_2" xml:space="preserve">
+    <value>Sea un mínimo de ocho (8) caracteres de longitud</value>
+  </data>
+  <data name="Password_Rule_3" xml:space="preserve">
+    <value>No debe comenzar con un número numérico</value>
+  </data>
+  <data name="Password_Rule_4" xml:space="preserve">
+    <value>Sé memorizado;</value>
+  </data>
+  <data name="Password_Rule_5" xml:space="preserve">
+    <value>Contienen al menos un (1) carácter de tres (3) de las siguientes categorías</value>
+  </data>
+  <data name="Password_Rule_6" xml:space="preserve">
+    <value>Letra mayúscula (A-Z)</value>
+  </data>
+  <data name="Password_Rule_7" xml:space="preserve">
+    <value>Letra minúscula (a-z)</value>
+  </data>
+  <data name="Password_Rule_8" xml:space="preserve">
+    <value>Dígitos (0-9)</value>
+  </data>
+  <data name="Password_Rule_9" xml:space="preserve">
+    <value>Sé privado</value>
+  </data>
+  <data name="Forgot_password_message_1" xml:space="preserve">
+    <value>Introduzca su dirección de correo electrónico y nombre de usuario a continuación, haga clic en Enviar</value>
+  </data>
+  <data name="Forgot_password_message_2" xml:space="preserve">
+    <value>ECODOMUS enviará un email con la información de contraseña</value>
+  </data>
+  <data name="Authentication_error" xml:space="preserve">
+    <value>Error de autenticación</value>
+  </data>
+  <data name="Error_sending_Email" xml:space="preserve">
+    <value>Error al enviar el correo electrónico</value>
+  </data>
+  <data name="Password_change_message" xml:space="preserve">
+    <value>La contraseña no coincide !.</value>
+  </data>
+  <data name="Password_Rule_16" xml:space="preserve">
+    <value>La nueva contraseña debe ser diferente a la contraseña actual</value>
+  </data>
+  <data name="TestString" xml:space="preserve">
+    <value>Cadena de prueba</value>
+  </data>
+  <data name="TestOneMore" xml:space="preserve">
+    <value>Una de las pruebas más</value>
+  </data>
+  <data name="IAgree" xml:space="preserve">
+    <value>Estoy de acuerdo</value>
+  </data>
+  <data name="IDecline" xml:space="preserve">
+    <value>No acepto</value>
+  </data>
+  <data name="Street_Address" xml:space="preserve">
+    <value>Dirección</value>
+  </data>
+  <data name="Configuration" xml:space="preserve">
+    <value>Configuración</value>
+  </data>
+  <data name="Save_Schedule" xml:space="preserve">
+    <value>Guardar Horario</value>
+  </data>
+  <data name="Sync_Bottom_Line" xml:space="preserve">
+    <value>Nota: página se actualizará después de cada 30 segundos de forma automática</value>
+  </data>
+  <data name="Add_Required_Attributes_to_Model" xml:space="preserve">
+    <value>Añadir Requerido Atributos al Modelo</value>
+  </data>
+  <data name="Designer_Contractor" xml:space="preserve">
+    <value>Diseñador / Contratista</value>
+  </data>
+  <data name="Entity_Names" xml:space="preserve">
+    <value>Entidad Nombres</value>
+  </data>
+  <data name="Missing_Information_Report" xml:space="preserve">
+    <value>Falta información Informe</value>
+  </data>
+  <data name="Missing_Information_Report_Types" xml:space="preserve">
+    <value>Missing Tipos Información de informe</value>
+  </data>
+  <data name="Report" xml:space="preserve">
+    <value>Informe</value>
+  </data>
+  <data name="Master_File" xml:space="preserve">
+    <value>Maestra de archivos</value>
+  </data>
+  <data name="Upload_replace" xml:space="preserve">
+    <value>Subir / Reemplazar</value>
+  </data>
+  <data name="View" xml:space="preserve">
+    <value>Ver</value>
+  </data>
+  <data name="Show_change_log" xml:space="preserve">
+    <value>Mostrar Listado de cambios</value>
+  </data>
+  <data name="History" xml:space="preserve">
+    <value>Historia</value>
+  </data>
+  <data name="Total_gross_area" xml:space="preserve">
+    <value>Total de Superficie Bruta</value>
+  </data>
+  <data name="Total_net_area" xml:space="preserve">
+    <value>Área Total Neto</value>
+  </data>
+  <data name="COBie_QualityControl" xml:space="preserve">
+    <value>Cobie Calidad Ajustes de control para</value>
+  </data>
+  <data name="Items_In" xml:space="preserve">
+    <value>artículos en</value>
+  </data>
+  <data name="Map_Document" xml:space="preserve">
+    <value>Mapa del documento</value>
+  </data>
+  <data name="Map_Documents" xml:space="preserve">
+    <value>Documentos de mapas</value>
+  </data>
+  <data name="Select_Subsystems" xml:space="preserve">
+    <value>Seleccione subsistemas</value>
+  </data>
+  <data name="Add_New_Line" xml:space="preserve">
+    <value>Añadir New Line</value>
+  </data>
+  <data name="Select_Field" xml:space="preserve">
+    <value>Seleccionar campo</value>
+  </data>
+  <data name="Select_Symbol" xml:space="preserve">
+    <value>Seleccione Símbolo</value>
+  </data>
+  <data name="Barcode_Height" xml:space="preserve">
+    <value>Barcode Altura</value>
+  </data>
+  <data name="Barcode_Per_Page" xml:space="preserve">
+    <value>Barcode por Página</value>
+  </data>
+  <data name="Barcode_Preview" xml:space="preserve">
+    <value>Barcode Prevista</value>
+  </data>
+  <data name="Barcode_Print_Option" xml:space="preserve">
+    <value>Opción Barcode Imprimir</value>
+  </data>
+  <data name="Barcode_Sample" xml:space="preserve">
+    <value>Código de barras de la muestra</value>
+  </data>
+  <data name="Barcode_type" xml:space="preserve">
+    <value>Tipo de código de barras</value>
+  </data>
+  <data name="Barcode_Width" xml:space="preserve">
+    <value>Barcode Ancho</value>
+  </data>
+  <data name="Barcode_Without_Data" xml:space="preserve">
+    <value>Barcode sin datos</value>
+  </data>
+  <data name="Barcode_With_Data" xml:space="preserve">
+    <value>Código de barras con datos</value>
+  </data>
+  <data name="Document_Template" xml:space="preserve">
+    <value>Plantilla de documento</value>
+  </data>
+  <data name="Preview" xml:space="preserve">
+    <value>Prevista</value>
+  </data>
+  <data name="Randomization_Length" xml:space="preserve">
+    <value>La aleatorización Longitud</value>
+  </data>
+  <data name="String1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Delete_Attributes" xml:space="preserve">
+    <value>Atributos Borrar</value>
+  </data>
+  <data name="Field" xml:space="preserve">
+    <value>Campo</value>
+  </data>
+  <data name="Symbol" xml:space="preserve">
+    <value>Símbolo</value>
+  </data>
+  <data name="Attribute_Version" xml:space="preserve">
+    <value>Atributo Version</value>
+  </data>
+  <data name="Add_Classification" xml:space="preserve">
+    <value>Añadir Clasificación</value>
+  </data>
+  <data name="Add_Classification_Details" xml:space="preserve">
+    <value>Añadir Clasificación Detalles</value>
+  </data>
+  <data name="Assigned_Classifications" xml:space="preserve">
+    <value>Clasificaciones Asignados</value>
+  </data>
+  <data name="Classification_Detail_Code" xml:space="preserve">
+    <value>Código de Clasificación Detalle</value>
+  </data>
+  <data name="Classification_Detail_Name" xml:space="preserve">
+    <value>Clasificación Detalle Nombre</value>
+  </data>
+  <data name="Color" xml:space="preserve">
+    <value>Color</value>
+  </data>
+  <data name="Types" xml:space="preserve">
+    <value>Tipos</value>
+  </data>
+  <data name="Add_Job" xml:space="preserve">
+    <value>Añadir empleo</value>
+  </data>
+  <data name="test" xml:space="preserve">
+    <value>prueba</value>
+  </data>
+  <data name="File_name_format" xml:space="preserve">
+    <value>Formato del nombre del archivo</value>
+  </data>
+  <data name="Auto_map_documents" xml:space="preserve">
+    <value>Documentos de mapa automático</value>
+  </data>
+  <data name="Please_select_at_least_one_document" xml:space="preserve">
+    <value>Por favor, seleccione al menos un documento !!</value>
+  </data>
+  <data name="Please_select_entity_from_the_dropdown" xml:space="preserve">
+    <value>Por favor, seleccione la entidad en la lista desplegable</value>
+  </data>
+  <data name="Document_type_not_found" xml:space="preserve">
+    <value>Tipo de documento no encontrado</value>
+  </data>
+  <data name="Stage_not_found" xml:space="preserve">
+    <value>Etapa no encontrado</value>
+  </data>
+  <data name="ApprovalBy_not_found" xml:space="preserve">
+    <value>Aprobación Al no encontrado</value>
+  </data>
+  <data name="Please_type_a_file_name_pattern" xml:space="preserve">
+    <value>Por favor, escriba un patrón de nombre de archivo</value>
+  </data>
+  <data name="Document_type_not_defined" xml:space="preserve">
+    <value>Tipo de documento no define</value>
+  </data>
+  <data name="Stage_not_defined" xml:space="preserve">
+    <value>Etapa no define</value>
+  </data>
+  <data name="ApprovalBy_not_defined" xml:space="preserve">
+    <value>Aprobación Al no definido</value>
+  </data>
+  <data name="Invalid_pattern" xml:space="preserve">
+    <value>Patrón no válido</value>
+  </data>
+  <data name="The_document_name_does_not_match_the_pattern" xml:space="preserve">
+    <value>El nombre del documento no coincide con el patrón</value>
+  </data>
+  <data name="Unknown_entity" xml:space="preserve">
+    <value>Desconocido entidad</value>
+  </data>
+  <data name="Add_Required_Attributes_to_Model_for_all_Components" xml:space="preserve">
+    <value>Añadir Requerido Atributos de modelo para todos los componentes</value>
+  </data>
+  <data name="Add_Required_Attributes_to_Model_for_all_Facilities" xml:space="preserve">
+    <value>Añadir Requerido Atributos de modelo para todas las instalaciones</value>
+  </data>
+  <data name="Add_Required_Attributes_to_Model_for_all_Spaces" xml:space="preserve">
+    <value>Añadir Requerido Atributos de modelo para todos los espacios</value>
+  </data>
+  <data name="Add_Required_Attributes_to_Model_for_all_Systems" xml:space="preserve">
+    <value>Añadir Requerido Atributos de modelo para todos los sistemas</value>
+  </data>
+  <data name="Add_Required_Attributes_to_Model_for_all_Types" xml:space="preserve">
+    <value>Añadir Requerido Atributos de modelo para todos los tipos</value>
+  </data>
+  <data name="Are_you_sure_to_add_required_attributes_to_model_for_all_components" xml:space="preserve">
+    <value>¿Estás seguro de agregar atributos necesarios para modelar para todos los componentes?</value>
+  </data>
+  <data name="Are_you_sure_to_add_required_attributes_to_model_for_all_facilities" xml:space="preserve">
+    <value>¿Estás seguro de agregar atributos necesarios para modelar para todas las instalaciones?</value>
+  </data>
+  <data name="Are_you_sure_to_add_required_attributes_to_model_for_all_spaces" xml:space="preserve">
+    <value>¿Estás seguro de agregar atributos necesarios para modelar para todos los espacios?</value>
+  </data>
+  <data name="Are_you_sure_to_add_required_attributes_to_model_for_all_systems" xml:space="preserve">
+    <value>¿Estás seguro de agregar atributos necesarios para modelar para todos los sistemas?</value>
+  </data>
+  <data name="Are_you_sure_to_add_required_attributes_to_model_for_all_types" xml:space="preserve">
+    <value>¿Estás seguro de agregar atributos necesarios para modelar para todos los tipos?</value>
+  </data>
+  <data name="Attributes_added_successfully" xml:space="preserve">
+    <value>Atributos añadido con éxito</value>
+  </data>
+  <data name="Job_Template" xml:space="preserve">
+    <value>Plantilla de trabajo</value>
+  </data>
+  <data name="PM_jobs" xml:space="preserve">
+    <value>PM Jobs</value>
+  </data>
+  <data name="Back_To_Model_Server" xml:space="preserve">
+    <value>Volver al modelo de servidor</value>
+  </data>
+  <data name="BAS_Enabled" xml:space="preserve">
+    <value>BAS Activado</value>
+  </data>
+  <data name="BAS_Server" xml:space="preserve">
+    <value>BAS Servidor</value>
+  </data>
+  <data name="Classification" xml:space="preserve">
+    <value>Clasificación</value>
+  </data>
+  <data name="Condition_Type" xml:space="preserve">
+    <value>Para Estado</value>
+  </data>
+  <data name="Custom Reports" xml:space="preserve">
+    <value>Informes personalizados</value>
+  </data>
+  <data name="Energy_Performance" xml:space="preserve">
+    <value>Eficiencia Energética</value>
+  </data>
+  <data name="Find_Meter_Sensor" xml:space="preserve">
+    <value>Encuentra sensor Medidor</value>
+  </data>
+  <data name="First_Page" xml:space="preserve">
+    <value>Primera Página</value>
+  </data>
+  <data name="Last_Page" xml:space="preserve">
+    <value>Última Página</value>
+  </data>
+  <data name="Library" xml:space="preserve">
+    <value>Biblioteca</value>
+  </data>
+  <data name="Link" xml:space="preserve">
+    <value>Enlace</value>
+  </data>
+  <data name="Mapping_Done" xml:space="preserve">
+    <value>Mapeo de Hecho</value>
+  </data>
+  <data name="Next_Page" xml:space="preserve">
+    <value>Página siguiente</value>
+  </data>
+  <data name="of" xml:space="preserve">
+    <value>de</value>
+  </data>
+  <data name="OmniClass_2010" xml:space="preserve">
+    <value>OmniClass 2010</value>
+  </data>
+  <data name="Phase Name" xml:space="preserve">
+    <value>Fase Nombre</value>
+  </data>
+  <data name="Postal_Code/Zip" xml:space="preserve">
+    <value>Código Postal Zip</value>
+  </data>
+  <data name="Previous_Page" xml:space="preserve">
+    <value>Página Anterior</value>
+  </data>
+  <data name="Recording_Type" xml:space="preserve">
+    <value>Tipo de grabación</value>
+  </data>
+  <data name="Select_Client" xml:space="preserve">
+    <value>Seleccione Cliente</value>
+  </data>
+  <data name="Switch_Client" xml:space="preserve">
+    <value>Interruptor Cliente</value>
+  </data>
+  <data name="Sync_Asset" xml:space="preserve">
+    <value>Sincronización de Activos</value>
+  </data>
+  <data name="Total_Files" xml:space="preserve">
+    <value>Total Archivos</value>
+  </data>
+  <data name="Work_Order" xml:space="preserve">
+    <value>Orden de Trabajo</value>
+  </data>
+  <data name="SortBy" xml:space="preserve">
+    <value>Ordenar por</value>
+  </data>
+  <data name="DUT_ACRES" xml:space="preserve">
+    <value>acres</value>
+  </data>
+  <data name="DUT_ACRES_SHORT" xml:space="preserve">
+    <value>ac</value>
+  </data>
+  <data name="DUT_CENTIMETERS" xml:space="preserve">
+    <value>centímetros</value>
+  </data>
+  <data name="DUT_CENTIMETERS_SHORT" xml:space="preserve">
+    <value>cm</value>
+  </data>
+  <data name="DUT_CUBIC_CENTIMETERS" xml:space="preserve">
+    <value>centímetros cúbicos</value>
+  </data>
+  <data name="DUT_CUBIC_CENTIMETERS_SHORT" xml:space="preserve">
+    <value>cm³</value>
+  </data>
+  <data name="DUT_CUBIC_FEET" xml:space="preserve">
+    <value>pies cúbicos</value>
+  </data>
+  <data name="DUT_CUBIC_FEET_SHORT" xml:space="preserve">
+    <value>CF</value>
+  </data>
+  <data name="DUT_CUBIC_INCHES" xml:space="preserve">
+    <value>pulgadas cúbicas</value>
+  </data>
+  <data name="DUT_CUBIC_INCHES_SHORT" xml:space="preserve">
+    <value>in³</value>
+  </data>
+  <data name="DUT_CUBIC_METERS" xml:space="preserve">
+    <value>metros cúbicos</value>
+  </data>
+  <data name="DUT_CUBIC_METERS_SHORT" xml:space="preserve">
+    <value>m³</value>
+  </data>
+  <data name="DUT_CUBIC_MILLIMETERS" xml:space="preserve">
+    <value>milímetros cúbicos</value>
+  </data>
+  <data name="DUT_CUBIC_MILLIMETERS_SHORT" xml:space="preserve">
+    <value>mm³</value>
+  </data>
+  <data name="DUT_CUBIC_YARDS" xml:space="preserve">
+    <value>yardas cúbicas</value>
+  </data>
+  <data name="DUT_CUBIC_YARDS_SHORT" xml:space="preserve">
+    <value>CY</value>
+  </data>
+  <data name="DUT_CURRENCY" xml:space="preserve">
+    <value>moneda</value>
+  </data>
+  <data name="DUT_CURRENCY_SHORT" xml:space="preserve">
+    <value />
+  </data>
+  <data name="DUT_DECANEWTONS" xml:space="preserve">
+    <value>decanewtons</value>
+  </data>
+  <data name="DUT_DECANEWTONS_PER_METER" xml:space="preserve">
+    <value>decanewtons por metro</value>
+  </data>
+  <data name="DUT_DECANEWTONS_PER_METER_SHORT" xml:space="preserve">
+    <value>daN/m</value>
+  </data>
+  <data name="DUT_DECANEWTONS_PER_SQUARE_METER" xml:space="preserve">
+    <value>decanewtons por metro cuadrado</value>
+  </data>
+  <data name="DUT_DECANEWTONS_PER_SQUARE_METER_SHORT" xml:space="preserve">
+    <value>daN/m²</value>
+  </data>
+  <data name="DUT_DECANEWTONS_SHORT" xml:space="preserve">
+    <value>daN</value>
+  </data>
+  <data name="DUT_DECANEWTON_METERS" xml:space="preserve">
+    <value>decanewton-metro</value>
+  </data>
+  <data name="DUT_DECANEWTON_METERS_SHORT" xml:space="preserve">
+    <value>daN·m</value>
+  </data>
+  <data name="DUT_DECIMETERS" xml:space="preserve">
+    <value>decímetros</value>
+  </data>
+  <data name="DUT_DECIMETERS_SHORT" xml:space="preserve">
+    <value>dm</value>
+  </data>
+  <data name="DUT_DEGREES" xml:space="preserve">
+    <value>grados</value>
+  </data>
+  <data name="DUT_DEGREES_AND_MINUTES" xml:space="preserve">
+    <value>grados y minutos</value>
+  </data>
+  <data name="DUT_DEGREES_AND_MINUTES_SHORT" xml:space="preserve">
+    <value />
+  </data>
+  <data name="DUT_DEGREES_SHORT" xml:space="preserve">
+    <value>°</value>
+  </data>
+  <data name="DUT_FEET" xml:space="preserve">
+    <value>pies</value>
+  </data>
+  <data name="DUT_FEET_FRACTIONAL_INCHES" xml:space="preserve">
+    <value>pies y pulgadas fraccionales</value>
+  </data>
+  <data name="DUT_FEET_FRACTIONAL_INCHES_SHORT" xml:space="preserve">
+    <value />
+  </data>
+  <data name="DUT_FEET_SHORT" xml:space="preserve">
+    <value>ft</value>
+  </data>
+  <data name="DUT_FRACTIONAL_INCHES" xml:space="preserve">
+    <value>fracciones de pulgadas</value>
+  </data>
+  <data name="DUT_FRACTIONAL_INCHES_SHORT" xml:space="preserve">
+    <value />
+  </data>
+  <data name="DUT_GALLONS_US" xml:space="preserve">
+    <value>galones (Estados Unidos)</value>
+  </data>
+  <data name="DUT_GALLONS_US_SHORT" xml:space="preserve">
+    <value>gal</value>
+  </data>
+  <data name="DUT_GRADS" xml:space="preserve">
+    <value>graduados</value>
+  </data>
+  <data name="DUT_GRADS_SHORT" xml:space="preserve">
+    <value>grad</value>
+  </data>
+  <data name="DUT_HECTARES" xml:space="preserve">
+    <value>hectáreas</value>
+  </data>
+  <data name="DUT_HECTARES_SHORT" xml:space="preserve">
+    <value>ha</value>
+  </data>
+  <data name="DUT_HOURS" xml:space="preserve">
+    <value>horas</value>
+  </data>
+  <data name="DUT_HOURS_SHORT" xml:space="preserve">
+    <value>h</value>
+  </data>
+  <data name="DUT_INCHES" xml:space="preserve">
+    <value>pulgadas</value>
+  </data>
+  <data name="DUT_INCHES_SHORT" xml:space="preserve">
+    <value>in</value>
+  </data>
+  <data name="DUT_KILOGRAMS_FORCE" xml:space="preserve">
+    <value>kilogramo-fuerza</value>
+  </data>
+  <data name="DUT_KILOGRAMS_FORCE_PER_METER" xml:space="preserve">
+    <value>kilogramo-fuerza por metro</value>
+  </data>
+  <data name="DUT_KILOGRAMS_FORCE_PER_METER_SHORT" xml:space="preserve">
+    <value>kgf/m</value>
+  </data>
+  <data name="DUT_KILOGRAMS_FORCE_PER_SQUARE_METER" xml:space="preserve">
+    <value>kilogramo-fuerza por metro cuadrado</value>
+  </data>
+  <data name="DUT_KILOGRAMS_FORCE_PER_SQUARE_METER_SHORT" xml:space="preserve">
+    <value>kgf/m²</value>
+  </data>
+  <data name="DUT_KILOGRAMS_FORCE_SHORT" xml:space="preserve">
+    <value>kgf</value>
+  </data>
+  <data name="DUT_KILOGRAMS_MASS" xml:space="preserve">
+    <value>kilogramo</value>
+  </data>
+  <data name="DUT_KILOGRAMS_MASS_SHORT" xml:space="preserve">
+    <value>kg</value>
+  </data>
+  <data name="DUT_KILOGRAMS_PER_CUBIC_METER" xml:space="preserve">
+    <value>kilogramos por metro cúbico</value>
+  </data>
+  <data name="DUT_KILOGRAMS_PER_CUBIC_METER_SHORT" xml:space="preserve">
+    <value>kg/m³</value>
+  </data>
+  <data name="DUT_KILOGRAM_FORCE_METERS" xml:space="preserve">
+    <value>kilogramo-fuerza-metro</value>
+  </data>
+  <data name="DUT_KILOGRAM_FORCE_METERS_SHORT" xml:space="preserve">
+    <value>kgf·m</value>
+  </data>
+  <data name="DUT_KILONEWTONS" xml:space="preserve">
+    <value>kilonewtons</value>
+  </data>
+  <data name="DUT_KILONEWTONS_PER_METER" xml:space="preserve">
+    <value>kilonewtons por metro</value>
+  </data>
+  <data name="DUT_KILONEWTONS_PER_METER_SHORT" xml:space="preserve">
+    <value>kN/m</value>
+  </data>
+  <data name="DUT_KILONEWTONS_PER_SQUARE_METER" xml:space="preserve">
+    <value>kilonewtons por metro cuadrado</value>
+  </data>
+  <data name="DUT_KILONEWTONS_PER_SQUARE_METER_SHORT" xml:space="preserve">
+    <value>kN/m²</value>
+  </data>
+  <data name="DUT_KILONEWTONS_SHORT" xml:space="preserve">
+    <value>kN</value>
+  </data>
+  <data name="DUT_KILONEWTON_METERS" xml:space="preserve">
+    <value>kilonewtons-metro</value>
+  </data>
+  <data name="DUT_KILONEWTON_METERS_SHORT" xml:space="preserve">
+    <value>kN·m</value>
+  </data>
+  <data name="DUT_KIPS" xml:space="preserve">
+    <value>kips</value>
+  </data>
+  <data name="DUT_KIPS_PER_FOOT" xml:space="preserve">
+    <value>kips por pie</value>
+  </data>
+  <data name="DUT_KIPS_PER_FOOT_SHORT" xml:space="preserve">
+    <value>kip/ft</value>
+  </data>
+  <data name="DUT_KIPS_PER_INCH" xml:space="preserve">
+    <value>kips por pulgada</value>
+  </data>
+  <data name="DUT_KIPS_PER_INCH_SHORT" xml:space="preserve">
+    <value>kip/in</value>
+  </data>
+  <data name="DUT_KIPS_PER_SQUARE_FOOT" xml:space="preserve">
+    <value>kips por pie cuadrado</value>
+  </data>
+  <data name="DUT_KIPS_PER_SQUARE_FOOT_SHORT" xml:space="preserve">
+    <value>kip/SF</value>
+  </data>
+  <data name="DUT_KIPS_SHORT" xml:space="preserve">
+    <value>kip</value>
+  </data>
+  <data name="DUT_KIP_FEET" xml:space="preserve">
+    <value>kips pies</value>
+  </data>
+  <data name="DUT_KIP_FEET_SHORT" xml:space="preserve">
+    <value>kip·ft</value>
+  </data>
+  <data name="DUT_LITERS" xml:space="preserve">
+    <value>litros</value>
+  </data>
+  <data name="DUT_LITERS_SHORT" xml:space="preserve">
+    <value>l</value>
+  </data>
+  <data name="DUT_MEGANEWTONS" xml:space="preserve">
+    <value>meganewtons</value>
+  </data>
+  <data name="DUT_MEGANEWTONS_PER_METER" xml:space="preserve">
+    <value>meganewtons por metro</value>
+  </data>
+  <data name="DUT_MEGANEWTONS_PER_METER_SHORT" xml:space="preserve">
+    <value>MN/m</value>
+  </data>
+  <data name="DUT_MEGANEWTONS_PER_SQUARE_METER" xml:space="preserve">
+    <value>meganewtons por metro cuadrado</value>
+  </data>
+  <data name="DUT_MEGANEWTONS_PER_SQUARE_METER_SHORT" xml:space="preserve">
+    <value>MN/m²</value>
+  </data>
+  <data name="DUT_MEGANEWTONS_SHORT" xml:space="preserve">
+    <value>MN</value>
+  </data>
+  <data name="DUT_MEGANEWTON_METERS" xml:space="preserve">
+    <value>meganewtons-metro</value>
+  </data>
+  <data name="DUT_MEGANEWTON_METERS_SHORT" xml:space="preserve">
+    <value>MN·m</value>
+  </data>
+  <data name="DUT_METERS" xml:space="preserve">
+    <value>metros</value>
+  </data>
+  <data name="DUT_METERS_SHORT" xml:space="preserve">
+    <value>m</value>
+  </data>
+  <data name="DUT_MILISECONDS" xml:space="preserve">
+    <value>milisegundos</value>
+  </data>
+  <data name="DUT_MILISECONDS_SHORT" xml:space="preserve">
+    <value>ms</value>
+  </data>
+  <data name="DUT_MILLIMETERS" xml:space="preserve">
+    <value>milímetros</value>
+  </data>
+  <data name="DUT_MILLIMETERS_SHORT" xml:space="preserve">
+    <value>mm</value>
+  </data>
+  <data name="DUT_MINUTES" xml:space="preserve">
+    <value>minutos</value>
+  </data>
+  <data name="DUT_MINUTES_SHORT" xml:space="preserve">
+    <value>min</value>
+  </data>
+  <data name="DUT_NEWTONS" xml:space="preserve">
+    <value>newtons</value>
+  </data>
+  <data name="DUT_NEWTONS_PER_METER" xml:space="preserve">
+    <value>newtons por metro</value>
+  </data>
+  <data name="DUT_NEWTONS_PER_METER_SHORT" xml:space="preserve">
+    <value>N/m</value>
+  </data>
+  <data name="DUT_NEWTONS_PER_SQUARE_METER" xml:space="preserve">
+    <value>newtons por metro cuadrado</value>
+  </data>
+  <data name="DUT_NEWTONS_PER_SQUARE_METER_SHORT" xml:space="preserve">
+    <value>N/m²</value>
+  </data>
+  <data name="DUT_NEWTONS_SHORT" xml:space="preserve">
+    <value>N</value>
+  </data>
+  <data name="DUT_NEWTON_METERS" xml:space="preserve">
+    <value>newtons-metro</value>
+  </data>
+  <data name="DUT_NEWTON_METERS_SHORT" xml:space="preserve">
+    <value>N·m</value>
+  </data>
+  <data name="DUT_POUNDS_FORCE" xml:space="preserve">
+    <value>libra-fuerza</value>
+  </data>
+  <data name="DUT_POUNDS_FORCE_PER_FOOT" xml:space="preserve">
+    <value>libra-fuerza por pie</value>
+  </data>
+  <data name="DUT_POUNDS_FORCE_PER_FOOT_SHORT" xml:space="preserve">
+    <value>lbf/ft</value>
+  </data>
+  <data name="DUT_POUNDS_FORCE_PER_SQUARE_FOOT" xml:space="preserve">
+    <value>libra-fuerza por pie cuadrado</value>
+  </data>
+  <data name="DUT_POUNDS_FORCE_PER_SQUARE_FOOT_SHORT" xml:space="preserve">
+    <value>lbf/SF</value>
+  </data>
+  <data name="DUT_POUNDS_FORCE_SHORT" xml:space="preserve">
+    <value>lbf</value>
+  </data>
+  <data name="DUT_POUNDS_MASS" xml:space="preserve">
+    <value>libras</value>
+  </data>
+  <data name="DUT_POUNDS_MASS_PER_CUBIC_FOOT" xml:space="preserve">
+    <value>libras por pie cúbico</value>
+  </data>
+  <data name="DUT_POUNDS_MASS_PER_CUBIC_FOOT_SHORT" xml:space="preserve">
+    <value>lb/CF</value>
+  </data>
+  <data name="DUT_POUNDS_MASS_SHORT" xml:space="preserve">
+    <value>lb</value>
+  </data>
+  <data name="DUT_POUND_FORCE_FEET" xml:space="preserve">
+    <value>libra-fuerza-pie</value>
+  </data>
+  <data name="DUT_POUND_FORCE_FEET_SHORT" xml:space="preserve">
+    <value>lbf·ft</value>
+  </data>
+  <data name="DUT_RADIANS" xml:space="preserve">
+    <value>radianes</value>
+  </data>
+  <data name="DUT_RADIANS_SHORT" xml:space="preserve">
+    <value>rad</value>
+  </data>
+  <data name="DUT_SECONDS" xml:space="preserve">
+    <value>segundos</value>
+  </data>
+  <data name="DUT_SECONDS_SHORT" xml:space="preserve">
+    <value>s</value>
+  </data>
+  <data name="DUT_SQUARE_CENTIMETERS" xml:space="preserve">
+    <value>centímetros cuadrados</value>
+  </data>
+  <data name="DUT_SQUARE_CENTIMETERS_SHORT" xml:space="preserve">
+    <value>cm²</value>
+  </data>
+  <data name="DUT_SQUARE_FEET" xml:space="preserve">
+    <value>pies cuadrados</value>
+  </data>
+  <data name="DUT_SQUARE_FEET_SHORT" xml:space="preserve">
+    <value>SF</value>
+  </data>
+  <data name="DUT_SQUARE_INCHES" xml:space="preserve">
+    <value>pulgadas cuadradas</value>
+  </data>
+  <data name="DUT_SQUARE_INCHES_SHORT" xml:space="preserve">
+    <value>in²</value>
+  </data>
+  <data name="DUT_SQUARE_METERS" xml:space="preserve">
+    <value>metros cuadrados</value>
+  </data>
+  <data name="DUT_SQUARE_METERS_SHORT" xml:space="preserve">
+    <value>m²</value>
+  </data>
+  <data name="DUT_SQUARE_MILLIMETERS" xml:space="preserve">
+    <value>milímetros cuadrados</value>
+  </data>
+  <data name="DUT_SQUARE_MILLIMETERS_SHORT" xml:space="preserve">
+    <value>mm²</value>
+  </data>
+  <data name="DUT_TONNES_FORCE" xml:space="preserve">
+    <value>ton-force</value>
+  </data>
+  <data name="DUT_TONNES_FORCE_PER_METER" xml:space="preserve">
+    <value>tonelada-fuerza por metro</value>
+  </data>
+  <data name="DUT_TONNES_FORCE_PER_METER_SHORT" xml:space="preserve">
+    <value>tf/m</value>
+  </data>
+  <data name="DUT_TONNES_FORCE_PER_SQUARE_METER" xml:space="preserve">
+    <value>tonelada-fuerza por metro cuadrado</value>
+  </data>
+  <data name="DUT_TONNES_FORCE_PER_SQUARE_METER_SHORT" xml:space="preserve">
+    <value>tf/m²</value>
+  </data>
+  <data name="DUT_TONNES_FORCE_SHORT" xml:space="preserve">
+    <value>tf</value>
+  </data>
+  <data name="DUT_TONNES_MASS" xml:space="preserve">
+    <value>toneladas</value>
+  </data>
+  <data name="DUT_TONNES_MASS_SHORT" xml:space="preserve">
+    <value>t</value>
+  </data>
+  <data name="DUT_TONNE_FORCE_METERS" xml:space="preserve">
+    <value>ton-force-metro</value>
+  </data>
+  <data name="DUT_TONNE_FORCE_METERS_SHORT" xml:space="preserve">
+    <value>tf·m</value>
+  </data>
+  <data name="Merge" xml:space="preserve">
+    <value>Combinar</value>
+  </data>
+</root>

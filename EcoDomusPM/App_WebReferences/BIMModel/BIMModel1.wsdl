@@ -1,0 +1,1239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="BIMModel" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://services.ecodomus.com/ClientPM/BIMModel.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://services.ecodomus.com/ClientPM/BIMModel.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://services.ecodomus.com/ClientPM/BIMModel.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/" />
+      <xsd:import schemaLocation="http://services.ecodomus.com/ClientPM/BIMModel.svc?xsd=xsd3" />
+      <xsd:import schemaLocation="http://services.ecodomus.com/ClientPM/BIMModel.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/Client.App.Queries" />
+      <xsd:import schemaLocation="http://services.ecodomus.com/ClientPM/BIMModel.svc?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/Client.App.Dtos" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IBIMModel_DoWork_InputMessage">
+    <wsdl:part name="parameters" element="tns:DoWork" />
+  </wsdl:message>
+  <wsdl:message name="IBIMModel_DoWork_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DoWorkResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBIMModel_getviewbyfileid_ecodomusviewer_InputMessage">
+    <wsdl:part name="parameters" element="tns:getviewbyfileid_ecodomusviewer" />
+  </wsdl:message>
+  <wsdl:message name="IBIMModel_getviewbyfileid_ecodomusviewer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getviewbyfileid_ecodomusviewerResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBIMModel_InsertUpdateBIMModel_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertUpdateBIMModel" />
+  </wsdl:message>
+  <wsdl:message name="IBIMModel_InsertUpdateBIMModel_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertUpdateBIMModelResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBIMModel_getuploadedfiles_InputMessage">
+    <wsdl:part name="parameters" element="tns:getuploadedfiles" />
+  </wsdl:message>
+  <wsdl:message name="IBIMModel_getuploadedfiles_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getuploadedfilesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBIMModel_getuploadedfilesforfacility_InputMessage">
+    <wsdl:part name="parameters" element="tns:getuploadedfilesforfacility" />
+  </wsdl:message>
+  <wsdl:message name="IBIMModel_getuploadedfilesforfacility_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getuploadedfilesforfacilityResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBIMModel_getuploadedfileinformation_InputMessage">
+    <wsdl:part name="parameters" element="tns:getuploadedfileinformation" />
+  </wsdl:message>
+  <wsdl:message name="IBIMModel_getuploadedfileinformation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getuploadedfileinformationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBIMModel_getuploadedfileinformation_for_history_InputMessage">
+    <wsdl:part name="parameters" element="tns:getuploadedfileinformation_for_history" />
+  </wsdl:message>
+  <wsdl:message name="IBIMModel_getuploadedfileinformation_for_history_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getuploadedfileinformation_for_historyResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBIMModel_update_system_attribute_for_modelviewer_InputMessage">
+    <wsdl:part name="parameters" element="tns:update_system_attribute_for_modelviewer" />
+  </wsdl:message>
+  <wsdl:message name="IBIMModel_update_system_attribute_for_modelviewer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:update_system_attribute_for_modelviewerResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBIMModel_get_system_attributes_for_modelviewer_InputMessage">
+    <wsdl:part name="parameters" element="tns:get_system_attributes_for_modelviewer" />
+  </wsdl:message>
+  <wsdl:message name="IBIMModel_get_system_attributes_for_modelviewer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:get_system_attributes_for_modelviewerResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBIMModel_getviewbyfileid_InputMessage">
+    <wsdl:part name="parameters" element="tns:getviewbyfileid" />
+  </wsdl:message>
+  <wsdl:message name="IBIMModel_getviewbyfileid_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getviewbyfileidResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBIMModel_InsertviewPoints_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertviewPoints" />
+  </wsdl:message>
+  <wsdl:message name="IBIMModel_InsertviewPoints_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertviewPointsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBIMModel_InsertviewPointsV1_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertviewPointsV1" />
+  </wsdl:message>
+  <wsdl:message name="IBIMModel_InsertviewPointsV1_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertviewPointsV1Response" />
+  </wsdl:message>
+  <wsdl:message name="IBIMModel_getattributesformodelviewer_InputMessage">
+    <wsdl:part name="parameters" element="tns:getattributesformodelviewer" />
+  </wsdl:message>
+  <wsdl:message name="IBIMModel_getattributesformodelviewer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getattributesformodelviewerResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBIMModel_getsystemsformodelviewer_InputMessage">
+    <wsdl:part name="parameters" element="tns:getsystemsformodelviewer" />
+  </wsdl:message>
+  <wsdl:message name="IBIMModel_getsystemsformodelviewer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getsystemsformodelviewerResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBIMModel_getsystemsassetsformodelviewer_InputMessage">
+    <wsdl:part name="parameters" element="tns:getsystemsassetsformodelviewer" />
+  </wsdl:message>
+  <wsdl:message name="IBIMModel_getsystemsassetsformodelviewer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getsystemsassetsformodelviewerResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBIMModel_GetUploadedFileForAsset_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUploadedFileForAsset" />
+  </wsdl:message>
+  <wsdl:message name="IBIMModel_GetUploadedFileForAsset_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUploadedFileForAssetResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBIMModel_GetUploadedFileForSystem_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUploadedFileForSystem" />
+  </wsdl:message>
+  <wsdl:message name="IBIMModel_GetUploadedFileForSystem_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUploadedFileForSystemResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBIMModel_Get_asset_navis_viewer_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_asset_navis_viewer" />
+  </wsdl:message>
+  <wsdl:message name="IBIMModel_Get_asset_navis_viewer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_asset_navis_viewerResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBIMModel_GetSpaceForNavisViewer_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSpaceForNavisViewer" />
+  </wsdl:message>
+  <wsdl:message name="IBIMModel_GetSpaceForNavisViewer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSpaceForNavisViewerResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBIMModel_GetRoomDataSheet_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetRoomDataSheet" />
+  </wsdl:message>
+  <wsdl:message name="IBIMModel_GetRoomDataSheet_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetRoomDataSheetResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBIMModel_GetTypeAttributesModelViewer_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTypeAttributesModelViewer" />
+  </wsdl:message>
+  <wsdl:message name="IBIMModel_GetTypeAttributesModelViewer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTypeAttributesModelViewerResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBIMModel_GetSpaceAttributeForNavisViewer_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSpaceAttributeForNavisViewer" />
+  </wsdl:message>
+  <wsdl:message name="IBIMModel_GetSpaceAttributeForNavisViewer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSpaceAttributeForNavisViewerResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBIMModel_GetAssetAttributeHistoryForBAS_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAssetAttributeHistoryForBAS" />
+  </wsdl:message>
+  <wsdl:message name="IBIMModel_GetAssetAttributeHistoryForBAS_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAssetAttributeHistoryForBASResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBIMModel_GetEntityToSearchAssetModelViewer_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetEntityToSearchAssetModelViewer" />
+  </wsdl:message>
+  <wsdl:message name="IBIMModel_GetEntityToSearchAssetModelViewer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetEntityToSearchAssetModelViewerResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBIMModel_GetUploadedFileDetails_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUploadedFileDetails" />
+  </wsdl:message>
+  <wsdl:message name="IBIMModel_GetUploadedFileDetails_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUploadedFileDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBIMModel_DeleteUploadedFile_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteUploadedFile" />
+  </wsdl:message>
+  <wsdl:message name="IBIMModel_DeleteUploadedFile_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteUploadedFileResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBIMModel_InsertUpdateTypeAttributeForModelViewer_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertUpdateTypeAttributeForModelViewer" />
+  </wsdl:message>
+  <wsdl:message name="IBIMModel_InsertUpdateTypeAttributeForModelViewer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertUpdateTypeAttributeForModelViewerResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBIMModel_InsertUpdateAssetAttributeForModelViewer_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertUpdateAssetAttributeForModelViewer" />
+  </wsdl:message>
+  <wsdl:message name="IBIMModel_InsertUpdateAssetAttributeForModelViewer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertUpdateAssetAttributeForModelViewerResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBIMModel_InsertUpdateSpaceAttributeForModelViewer_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertUpdateSpaceAttributeForModelViewer" />
+  </wsdl:message>
+  <wsdl:message name="IBIMModel_InsertUpdateSpaceAttributeForModelViewer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertUpdateSpaceAttributeForModelViewerResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBIMModel_GetUploadedFilesModelServerPM_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUploadedFilesModelServerPM" />
+  </wsdl:message>
+  <wsdl:message name="IBIMModel_GetUploadedFilesModelServerPM_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUploadedFilesModelServerPMResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBIMModel_GetHistoryUploadedFilesModelServerPM_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetHistoryUploadedFilesModelServerPM" />
+  </wsdl:message>
+  <wsdl:message name="IBIMModel_GetHistoryUploadedFilesModelServerPM_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetHistoryUploadedFilesModelServerPMResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBIMModel_GetsingleUploadedFile_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetsingleUploadedFile" />
+  </wsdl:message>
+  <wsdl:message name="IBIMModel_GetsingleUploadedFile_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetsingleUploadedFileResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBIMModel_proc_get_attribute_series_InputMessage">
+    <wsdl:part name="parameters" element="tns:proc_get_attribute_series" />
+  </wsdl:message>
+  <wsdl:message name="IBIMModel_proc_get_attribute_series_OutputMessage">
+    <wsdl:part name="parameters" element="tns:proc_get_attribute_seriesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBIMModel_proc_get_facility_assets_for_bim_InputMessage">
+    <wsdl:part name="parameters" element="tns:proc_get_facility_assets_for_bim" />
+  </wsdl:message>
+  <wsdl:message name="IBIMModel_proc_get_facility_assets_for_bim_OutputMessage">
+    <wsdl:part name="parameters" element="tns:proc_get_facility_assets_for_bimResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBIMModel_proc_get_facility_spaces_for_bim_InputMessage">
+    <wsdl:part name="parameters" element="tns:proc_get_facility_spaces_for_bim" />
+  </wsdl:message>
+  <wsdl:message name="IBIMModel_proc_get_facility_spaces_for_bim_OutputMessage">
+    <wsdl:part name="parameters" element="tns:proc_get_facility_spaces_for_bimResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBIMModel_proc_assign_space_to_asset_for_bim_InputMessage">
+    <wsdl:part name="parameters" element="tns:proc_assign_space_to_asset_for_bim" />
+  </wsdl:message>
+  <wsdl:message name="IBIMModel_proc_assign_space_to_asset_for_bim_OutputMessage">
+    <wsdl:part name="parameters" element="tns:proc_assign_space_to_asset_for_bimResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBIMModel_proc_assign_asset_for_bim_InputMessage">
+    <wsdl:part name="parameters" element="tns:proc_assign_asset_for_bim" />
+  </wsdl:message>
+  <wsdl:message name="IBIMModel_proc_assign_asset_for_bim_OutputMessage">
+    <wsdl:part name="parameters" element="tns:proc_assign_asset_for_bimResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBIMModel_proc_get_file_path_by_id_InputMessage">
+    <wsdl:part name="parameters" element="tns:proc_get_file_path_by_id" />
+  </wsdl:message>
+  <wsdl:message name="IBIMModel_proc_get_file_path_by_id_OutputMessage">
+    <wsdl:part name="parameters" element="tns:proc_get_file_path_by_idResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBIMModel_proc_get_file_path_by_id_for_history_InputMessage">
+    <wsdl:part name="parameters" element="tns:proc_get_file_path_by_id_for_history" />
+  </wsdl:message>
+  <wsdl:message name="IBIMModel_proc_get_file_path_by_id_for_history_OutputMessage">
+    <wsdl:part name="parameters" element="tns:proc_get_file_path_by_id_for_historyResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBIMModel_GetDocumentModelViewer_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDocumentModelViewer" />
+  </wsdl:message>
+  <wsdl:message name="IBIMModel_GetDocumentModelViewer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDocumentModelViewerResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBIMModel_GetExternalSystemAssetId_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetExternalSystemAssetId" />
+  </wsdl:message>
+  <wsdl:message name="IBIMModel_GetExternalSystemAssetId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetExternalSystemAssetIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBIMModel_InsertUpdateViewEcoDomusViewer_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertUpdateViewEcoDomusViewer" />
+  </wsdl:message>
+  <wsdl:message name="IBIMModel_InsertUpdateViewEcoDomusViewer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertUpdateViewEcoDomusViewerResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBIMModel_EditDeleteViewEcoDomusViewer_InputMessage">
+    <wsdl:part name="parameters" element="tns:EditDeleteViewEcoDomusViewer" />
+  </wsdl:message>
+  <wsdl:message name="IBIMModel_EditDeleteViewEcoDomusViewer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EditDeleteViewEcoDomusViewerResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBIMModel_GetViewInfoEcoDomusViewer_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetViewInfoEcoDomusViewer" />
+  </wsdl:message>
+  <wsdl:message name="IBIMModel_GetViewInfoEcoDomusViewer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetViewInfoEcoDomusViewerResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBIMModel_Bind_parent_view_dropdown_ecodomus_viewer_InputMessage">
+    <wsdl:part name="parameters" element="tns:Bind_parent_view_dropdown_ecodomus_viewer" />
+  </wsdl:message>
+  <wsdl:message name="IBIMModel_Bind_parent_view_dropdown_ecodomus_viewer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Bind_parent_view_dropdown_ecodomus_viewerResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBIMModel_InsertUpdateViewEcoDomusViewer_xml_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertUpdateViewEcoDomusViewer_xml" />
+  </wsdl:message>
+  <wsdl:message name="IBIMModel_InsertUpdateViewEcoDomusViewer_xml_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertUpdateViewEcoDomusViewer_xmlResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBIMModel_proc_get_master_model_files_InputMessage">
+    <wsdl:part name="parameters" element="tns:proc_get_master_model_files" />
+  </wsdl:message>
+  <wsdl:message name="IBIMModel_proc_get_master_model_files_OutputMessage">
+    <wsdl:part name="parameters" element="tns:proc_get_master_model_filesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBIMModel_proc_get_facility_spaces_for_bim_linktospace_pm_InputMessage">
+    <wsdl:part name="parameters" element="tns:proc_get_facility_spaces_for_bim_linktospace_pm" />
+  </wsdl:message>
+  <wsdl:message name="IBIMModel_proc_get_facility_spaces_for_bim_linktospace_pm_OutputMessage">
+    <wsdl:part name="parameters" element="tns:proc_get_facility_spaces_for_bim_linktospace_pmResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBIMModel_proc_assign_space_for_bim_InputMessage">
+    <wsdl:part name="parameters" element="tns:proc_assign_space_for_bim" />
+  </wsdl:message>
+  <wsdl:message name="IBIMModel_proc_assign_space_for_bim_OutputMessage">
+    <wsdl:part name="parameters" element="tns:proc_assign_space_for_bimResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBIMModel_proc_replace_space_for_model_InputMessage">
+    <wsdl:part name="parameters" element="tns:proc_replace_space_for_model" />
+  </wsdl:message>
+  <wsdl:message name="IBIMModel_proc_replace_space_for_model_OutputMessage">
+    <wsdl:part name="parameters" element="tns:proc_replace_space_for_modelResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBIMModel_proc_merge_space_attribute_InputMessage">
+    <wsdl:part name="parameters" element="tns:proc_merge_space_attribute" />
+  </wsdl:message>
+  <wsdl:message name="IBIMModel_proc_merge_space_attribute_OutputMessage">
+    <wsdl:part name="parameters" element="tns:proc_merge_space_attributeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBIMModel_proc_get_asset_attribute_model_viewer_by_assetid_InputMessage">
+    <wsdl:part name="parameters" element="tns:proc_get_asset_attribute_model_viewer_by_assetid" />
+  </wsdl:message>
+  <wsdl:message name="IBIMModel_proc_get_asset_attribute_model_viewer_by_assetid_OutputMessage">
+    <wsdl:part name="parameters" element="tns:proc_get_asset_attribute_model_viewer_by_assetidResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBIMModel_proc_get_type_attribute_model_viewer_by_asset_id_InputMessage">
+    <wsdl:part name="parameters" element="tns:proc_get_type_attribute_model_viewer_by_asset_id" />
+  </wsdl:message>
+  <wsdl:message name="IBIMModel_proc_get_type_attribute_model_viewer_by_asset_id_OutputMessage">
+    <wsdl:part name="parameters" element="tns:proc_get_type_attribute_model_viewer_by_asset_idResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBIMModel_GetViewerForUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetViewerForUser" />
+  </wsdl:message>
+  <wsdl:message name="IBIMModel_GetViewerForUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetViewerForUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBIMModel_GetAssetsByDailySales_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAssetsByDailySales" />
+  </wsdl:message>
+  <wsdl:message name="IBIMModel_GetAssetsByDailySales_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAssetsByDailySalesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBIMModel_GetUploadedFileForspace_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUploadedFileForspace" />
+  </wsdl:message>
+  <wsdl:message name="IBIMModel_GetUploadedFileForspace_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUploadedFileForspaceResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBIMModel_proc_merge_type_attribute_InputMessage">
+    <wsdl:part name="parameters" element="tns:proc_merge_type_attribute" />
+  </wsdl:message>
+  <wsdl:message name="IBIMModel_proc_merge_type_attribute_OutputMessage">
+    <wsdl:part name="parameters" element="tns:proc_merge_type_attributeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBIMModel_proc_merge_asset_attribute_InputMessage">
+    <wsdl:part name="parameters" element="tns:proc_merge_asset_attribute" />
+  </wsdl:message>
+  <wsdl:message name="IBIMModel_proc_merge_asset_attribute_OutputMessage">
+    <wsdl:part name="parameters" element="tns:proc_merge_asset_attributeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBIMModel_proc_replace_asset_for_model_InputMessage">
+    <wsdl:part name="parameters" element="tns:proc_replace_asset_for_model" />
+  </wsdl:message>
+  <wsdl:message name="IBIMModel_proc_replace_asset_for_model_OutputMessage">
+    <wsdl:part name="parameters" element="tns:proc_replace_asset_for_modelResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBIMModel_proc_get_facility_assets_for_bim_count_v1_InputMessage">
+    <wsdl:part name="parameters" element="tns:proc_get_facility_assets_for_bim_count_v1" />
+  </wsdl:message>
+  <wsdl:message name="IBIMModel_proc_get_facility_assets_for_bim_count_v1_OutputMessage">
+    <wsdl:part name="parameters" element="tns:proc_get_facility_assets_for_bim_count_v1Response" />
+  </wsdl:message>
+  <wsdl:message name="IBIMModel_proc_get_facility_types_for_bim_InputMessage">
+    <wsdl:part name="parameters" element="tns:proc_get_facility_types_for_bim" />
+  </wsdl:message>
+  <wsdl:message name="IBIMModel_proc_get_facility_types_for_bim_OutputMessage">
+    <wsdl:part name="parameters" element="tns:proc_get_facility_types_for_bimResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBIMModel_GetColorcodeForZone_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetColorcodeForZone" />
+  </wsdl:message>
+  <wsdl:message name="IBIMModel_GetColorcodeForZone_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetColorcodeForZoneResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBIMModel_proc_insert_Bim_history_InputMessage">
+    <wsdl:part name="parameters" element="tns:proc_insert_Bim_history" />
+  </wsdl:message>
+  <wsdl:message name="IBIMModel_proc_insert_Bim_history_OutputMessage">
+    <wsdl:part name="parameters" element="tns:proc_insert_Bim_historyResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBIMModel_GetAssetsForLocation_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAssetsForLocation" />
+  </wsdl:message>
+  <wsdl:message name="IBIMModel_GetAssetsForLocation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAssetsForLocationResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IBIMModel">
+    <wsdl:operation name="DoWork">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBIMModel/DoWork" message="tns:IBIMModel_DoWork_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBIMModel/DoWorkResponse" message="tns:IBIMModel_DoWork_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getviewbyfileid_ecodomusviewer">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBIMModel/getviewbyfileid_ecodomusviewer" message="tns:IBIMModel_getviewbyfileid_ecodomusviewer_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBIMModel/getviewbyfileid_ecodomusviewerResponse" message="tns:IBIMModel_getviewbyfileid_ecodomusviewer_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertUpdateBIMModel">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBIMModel/InsertUpdateBIMModel" message="tns:IBIMModel_InsertUpdateBIMModel_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBIMModel/InsertUpdateBIMModelResponse" message="tns:IBIMModel_InsertUpdateBIMModel_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getuploadedfiles">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBIMModel/getuploadedfiles" message="tns:IBIMModel_getuploadedfiles_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBIMModel/getuploadedfilesResponse" message="tns:IBIMModel_getuploadedfiles_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getuploadedfilesforfacility">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBIMModel/getuploadedfilesforfacility" message="tns:IBIMModel_getuploadedfilesforfacility_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBIMModel/getuploadedfilesforfacilityResponse" message="tns:IBIMModel_getuploadedfilesforfacility_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getuploadedfileinformation">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBIMModel/getuploadedfileinformation" message="tns:IBIMModel_getuploadedfileinformation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBIMModel/getuploadedfileinformationResponse" message="tns:IBIMModel_getuploadedfileinformation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getuploadedfileinformation_for_history">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBIMModel/getuploadedfileinformation_for_history" message="tns:IBIMModel_getuploadedfileinformation_for_history_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBIMModel/getuploadedfileinformation_for_historyResponse" message="tns:IBIMModel_getuploadedfileinformation_for_history_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="update_system_attribute_for_modelviewer">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBIMModel/update_system_attribute_for_modelviewer" message="tns:IBIMModel_update_system_attribute_for_modelviewer_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBIMModel/update_system_attribute_for_modelviewerResponse" message="tns:IBIMModel_update_system_attribute_for_modelviewer_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="get_system_attributes_for_modelviewer">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBIMModel/get_system_attributes_for_modelviewer" message="tns:IBIMModel_get_system_attributes_for_modelviewer_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBIMModel/get_system_attributes_for_modelviewerResponse" message="tns:IBIMModel_get_system_attributes_for_modelviewer_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getviewbyfileid">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBIMModel/getviewbyfileid" message="tns:IBIMModel_getviewbyfileid_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBIMModel/getviewbyfileidResponse" message="tns:IBIMModel_getviewbyfileid_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertviewPoints">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBIMModel/InsertviewPoints" message="tns:IBIMModel_InsertviewPoints_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBIMModel/InsertviewPointsResponse" message="tns:IBIMModel_InsertviewPoints_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertviewPointsV1">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBIMModel/InsertviewPointsV1" message="tns:IBIMModel_InsertviewPointsV1_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBIMModel/InsertviewPointsV1Response" message="tns:IBIMModel_InsertviewPointsV1_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getattributesformodelviewer">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBIMModel/getattributesformodelviewer" message="tns:IBIMModel_getattributesformodelviewer_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBIMModel/getattributesformodelviewerResponse" message="tns:IBIMModel_getattributesformodelviewer_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getsystemsformodelviewer">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBIMModel/getsystemsformodelviewer" message="tns:IBIMModel_getsystemsformodelviewer_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBIMModel/getsystemsformodelviewerResponse" message="tns:IBIMModel_getsystemsformodelviewer_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getsystemsassetsformodelviewer">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBIMModel/getsystemsassetsformodelviewer" message="tns:IBIMModel_getsystemsassetsformodelviewer_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBIMModel/getsystemsassetsformodelviewerResponse" message="tns:IBIMModel_getsystemsassetsformodelviewer_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUploadedFileForAsset">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBIMModel/GetUploadedFileForAsset" message="tns:IBIMModel_GetUploadedFileForAsset_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBIMModel/GetUploadedFileForAssetResponse" message="tns:IBIMModel_GetUploadedFileForAsset_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUploadedFileForSystem">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBIMModel/GetUploadedFileForSystem" message="tns:IBIMModel_GetUploadedFileForSystem_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBIMModel/GetUploadedFileForSystemResponse" message="tns:IBIMModel_GetUploadedFileForSystem_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_asset_navis_viewer">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBIMModel/Get_asset_navis_viewer" message="tns:IBIMModel_Get_asset_navis_viewer_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBIMModel/Get_asset_navis_viewerResponse" message="tns:IBIMModel_Get_asset_navis_viewer_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSpaceForNavisViewer">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBIMModel/GetSpaceForNavisViewer" message="tns:IBIMModel_GetSpaceForNavisViewer_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBIMModel/GetSpaceForNavisViewerResponse" message="tns:IBIMModel_GetSpaceForNavisViewer_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRoomDataSheet">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBIMModel/GetRoomDataSheet" message="tns:IBIMModel_GetRoomDataSheet_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBIMModel/GetRoomDataSheetResponse" message="tns:IBIMModel_GetRoomDataSheet_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTypeAttributesModelViewer">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBIMModel/GetTypeAttributesModelViewer" message="tns:IBIMModel_GetTypeAttributesModelViewer_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBIMModel/GetTypeAttributesModelViewerResponse" message="tns:IBIMModel_GetTypeAttributesModelViewer_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSpaceAttributeForNavisViewer">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBIMModel/GetSpaceAttributeForNavisViewer" message="tns:IBIMModel_GetSpaceAttributeForNavisViewer_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBIMModel/GetSpaceAttributeForNavisViewerResponse" message="tns:IBIMModel_GetSpaceAttributeForNavisViewer_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAssetAttributeHistoryForBAS">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBIMModel/GetAssetAttributeHistoryForBAS" message="tns:IBIMModel_GetAssetAttributeHistoryForBAS_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBIMModel/GetAssetAttributeHistoryForBASResponse" message="tns:IBIMModel_GetAssetAttributeHistoryForBAS_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEntityToSearchAssetModelViewer">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBIMModel/GetEntityToSearchAssetModelViewer" message="tns:IBIMModel_GetEntityToSearchAssetModelViewer_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBIMModel/GetEntityToSearchAssetModelViewerResponse" message="tns:IBIMModel_GetEntityToSearchAssetModelViewer_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUploadedFileDetails">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBIMModel/GetUploadedFileDetails" message="tns:IBIMModel_GetUploadedFileDetails_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBIMModel/GetUploadedFileDetailsResponse" message="tns:IBIMModel_GetUploadedFileDetails_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteUploadedFile">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBIMModel/DeleteUploadedFile" message="tns:IBIMModel_DeleteUploadedFile_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBIMModel/DeleteUploadedFileResponse" message="tns:IBIMModel_DeleteUploadedFile_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertUpdateTypeAttributeForModelViewer">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBIMModel/InsertUpdateTypeAttributeForModelViewer" message="tns:IBIMModel_InsertUpdateTypeAttributeForModelViewer_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBIMModel/InsertUpdateTypeAttributeForModelViewerResponse" message="tns:IBIMModel_InsertUpdateTypeAttributeForModelViewer_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertUpdateAssetAttributeForModelViewer">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBIMModel/InsertUpdateAssetAttributeForModelViewer" message="tns:IBIMModel_InsertUpdateAssetAttributeForModelViewer_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBIMModel/InsertUpdateAssetAttributeForModelViewerResponse" message="tns:IBIMModel_InsertUpdateAssetAttributeForModelViewer_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertUpdateSpaceAttributeForModelViewer">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBIMModel/InsertUpdateSpaceAttributeForModelViewer" message="tns:IBIMModel_InsertUpdateSpaceAttributeForModelViewer_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBIMModel/InsertUpdateSpaceAttributeForModelViewerResponse" message="tns:IBIMModel_InsertUpdateSpaceAttributeForModelViewer_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUploadedFilesModelServerPM">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBIMModel/GetUploadedFilesModelServerPM" message="tns:IBIMModel_GetUploadedFilesModelServerPM_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBIMModel/GetUploadedFilesModelServerPMResponse" message="tns:IBIMModel_GetUploadedFilesModelServerPM_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetHistoryUploadedFilesModelServerPM">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBIMModel/GetHistoryUploadedFilesModelServerPM" message="tns:IBIMModel_GetHistoryUploadedFilesModelServerPM_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBIMModel/GetHistoryUploadedFilesModelServerPMResponse" message="tns:IBIMModel_GetHistoryUploadedFilesModelServerPM_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetsingleUploadedFile">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBIMModel/GetsingleUploadedFile" message="tns:IBIMModel_GetsingleUploadedFile_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBIMModel/GetsingleUploadedFileResponse" message="tns:IBIMModel_GetsingleUploadedFile_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="proc_get_attribute_series">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBIMModel/proc_get_attribute_series" message="tns:IBIMModel_proc_get_attribute_series_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBIMModel/proc_get_attribute_seriesResponse" message="tns:IBIMModel_proc_get_attribute_series_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="proc_get_facility_assets_for_bim">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBIMModel/proc_get_facility_assets_for_bim" message="tns:IBIMModel_proc_get_facility_assets_for_bim_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBIMModel/proc_get_facility_assets_for_bimResponse" message="tns:IBIMModel_proc_get_facility_assets_for_bim_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="proc_get_facility_spaces_for_bim">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBIMModel/proc_get_facility_spaces_for_bim" message="tns:IBIMModel_proc_get_facility_spaces_for_bim_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBIMModel/proc_get_facility_spaces_for_bimResponse" message="tns:IBIMModel_proc_get_facility_spaces_for_bim_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="proc_assign_space_to_asset_for_bim">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBIMModel/proc_assign_space_to_asset_for_bim" message="tns:IBIMModel_proc_assign_space_to_asset_for_bim_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBIMModel/proc_assign_space_to_asset_for_bimResponse" message="tns:IBIMModel_proc_assign_space_to_asset_for_bim_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="proc_assign_asset_for_bim">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBIMModel/proc_assign_asset_for_bim" message="tns:IBIMModel_proc_assign_asset_for_bim_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBIMModel/proc_assign_asset_for_bimResponse" message="tns:IBIMModel_proc_assign_asset_for_bim_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="proc_get_file_path_by_id">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBIMModel/proc_get_file_path_by_id" message="tns:IBIMModel_proc_get_file_path_by_id_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBIMModel/proc_get_file_path_by_idResponse" message="tns:IBIMModel_proc_get_file_path_by_id_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="proc_get_file_path_by_id_for_history">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBIMModel/proc_get_file_path_by_id_for_history" message="tns:IBIMModel_proc_get_file_path_by_id_for_history_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBIMModel/proc_get_file_path_by_id_for_historyResponse" message="tns:IBIMModel_proc_get_file_path_by_id_for_history_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDocumentModelViewer">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBIMModel/GetDocumentModelViewer" message="tns:IBIMModel_GetDocumentModelViewer_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBIMModel/GetDocumentModelViewerResponse" message="tns:IBIMModel_GetDocumentModelViewer_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetExternalSystemAssetId">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBIMModel/GetExternalSystemAssetId" message="tns:IBIMModel_GetExternalSystemAssetId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBIMModel/GetExternalSystemAssetIdResponse" message="tns:IBIMModel_GetExternalSystemAssetId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertUpdateViewEcoDomusViewer">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBIMModel/InsertUpdateViewEcoDomusViewer" message="tns:IBIMModel_InsertUpdateViewEcoDomusViewer_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBIMModel/InsertUpdateViewEcoDomusViewerResponse" message="tns:IBIMModel_InsertUpdateViewEcoDomusViewer_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EditDeleteViewEcoDomusViewer">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBIMModel/EditDeleteViewEcoDomusViewer" message="tns:IBIMModel_EditDeleteViewEcoDomusViewer_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBIMModel/EditDeleteViewEcoDomusViewerResponse" message="tns:IBIMModel_EditDeleteViewEcoDomusViewer_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetViewInfoEcoDomusViewer">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBIMModel/GetViewInfoEcoDomusViewer" message="tns:IBIMModel_GetViewInfoEcoDomusViewer_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBIMModel/GetViewInfoEcoDomusViewerResponse" message="tns:IBIMModel_GetViewInfoEcoDomusViewer_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Bind_parent_view_dropdown_ecodomus_viewer">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBIMModel/Bind_parent_view_dropdown_ecodomus_viewer" message="tns:IBIMModel_Bind_parent_view_dropdown_ecodomus_viewer_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBIMModel/Bind_parent_view_dropdown_ecodomus_viewerResponse" message="tns:IBIMModel_Bind_parent_view_dropdown_ecodomus_viewer_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertUpdateViewEcoDomusViewer_xml">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBIMModel/InsertUpdateViewEcoDomusViewer_xml" message="tns:IBIMModel_InsertUpdateViewEcoDomusViewer_xml_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBIMModel/InsertUpdateViewEcoDomusViewer_xmlResponse" message="tns:IBIMModel_InsertUpdateViewEcoDomusViewer_xml_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="proc_get_master_model_files">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBIMModel/proc_get_master_model_files" message="tns:IBIMModel_proc_get_master_model_files_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBIMModel/proc_get_master_model_filesResponse" message="tns:IBIMModel_proc_get_master_model_files_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="proc_get_facility_spaces_for_bim_linktospace_pm">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBIMModel/proc_get_facility_spaces_for_bim_linktospace_pm" message="tns:IBIMModel_proc_get_facility_spaces_for_bim_linktospace_pm_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBIMModel/proc_get_facility_spaces_for_bim_linktospace_pmResponse" message="tns:IBIMModel_proc_get_facility_spaces_for_bim_linktospace_pm_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="proc_assign_space_for_bim">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBIMModel/proc_assign_space_for_bim" message="tns:IBIMModel_proc_assign_space_for_bim_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBIMModel/proc_assign_space_for_bimResponse" message="tns:IBIMModel_proc_assign_space_for_bim_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="proc_replace_space_for_model">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBIMModel/proc_replace_space_for_model" message="tns:IBIMModel_proc_replace_space_for_model_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBIMModel/proc_replace_space_for_modelResponse" message="tns:IBIMModel_proc_replace_space_for_model_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="proc_merge_space_attribute">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBIMModel/proc_merge_space_attribute" message="tns:IBIMModel_proc_merge_space_attribute_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBIMModel/proc_merge_space_attributeResponse" message="tns:IBIMModel_proc_merge_space_attribute_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="proc_get_asset_attribute_model_viewer_by_assetid">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBIMModel/proc_get_asset_attribute_model_viewer_by_assetid" message="tns:IBIMModel_proc_get_asset_attribute_model_viewer_by_assetid_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBIMModel/proc_get_asset_attribute_model_viewer_by_assetidResponse" message="tns:IBIMModel_proc_get_asset_attribute_model_viewer_by_assetid_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="proc_get_type_attribute_model_viewer_by_asset_id">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBIMModel/proc_get_type_attribute_model_viewer_by_asset_id" message="tns:IBIMModel_proc_get_type_attribute_model_viewer_by_asset_id_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBIMModel/proc_get_type_attribute_model_viewer_by_asset_idResponse" message="tns:IBIMModel_proc_get_type_attribute_model_viewer_by_asset_id_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetViewerForUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBIMModel/GetViewerForUser" message="tns:IBIMModel_GetViewerForUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBIMModel/GetViewerForUserResponse" message="tns:IBIMModel_GetViewerForUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAssetsByDailySales">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBIMModel/GetAssetsByDailySales" message="tns:IBIMModel_GetAssetsByDailySales_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBIMModel/GetAssetsByDailySalesResponse" message="tns:IBIMModel_GetAssetsByDailySales_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUploadedFileForspace">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBIMModel/GetUploadedFileForspace" message="tns:IBIMModel_GetUploadedFileForspace_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBIMModel/GetUploadedFileForspaceResponse" message="tns:IBIMModel_GetUploadedFileForspace_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="proc_merge_type_attribute">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBIMModel/proc_merge_type_attribute" message="tns:IBIMModel_proc_merge_type_attribute_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBIMModel/proc_merge_type_attributeResponse" message="tns:IBIMModel_proc_merge_type_attribute_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="proc_merge_asset_attribute">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBIMModel/proc_merge_asset_attribute" message="tns:IBIMModel_proc_merge_asset_attribute_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBIMModel/proc_merge_asset_attributeResponse" message="tns:IBIMModel_proc_merge_asset_attribute_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="proc_replace_asset_for_model">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBIMModel/proc_replace_asset_for_model" message="tns:IBIMModel_proc_replace_asset_for_model_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBIMModel/proc_replace_asset_for_modelResponse" message="tns:IBIMModel_proc_replace_asset_for_model_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="proc_get_facility_assets_for_bim_count_v1">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBIMModel/proc_get_facility_assets_for_bim_count_v1" message="tns:IBIMModel_proc_get_facility_assets_for_bim_count_v1_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBIMModel/proc_get_facility_assets_for_bim_count_v1Response" message="tns:IBIMModel_proc_get_facility_assets_for_bim_count_v1_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="proc_get_facility_types_for_bim">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBIMModel/proc_get_facility_types_for_bim" message="tns:IBIMModel_proc_get_facility_types_for_bim_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBIMModel/proc_get_facility_types_for_bimResponse" message="tns:IBIMModel_proc_get_facility_types_for_bim_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetColorcodeForZone">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBIMModel/GetColorcodeForZone" message="tns:IBIMModel_GetColorcodeForZone_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBIMModel/GetColorcodeForZoneResponse" message="tns:IBIMModel_GetColorcodeForZone_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="proc_insert_Bim_history">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBIMModel/proc_insert_Bim_history" message="tns:IBIMModel_proc_insert_Bim_history_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBIMModel/proc_insert_Bim_historyResponse" message="tns:IBIMModel_proc_insert_Bim_history_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAssetsForLocation">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBIMModel/GetAssetsForLocation" message="tns:IBIMModel_GetAssetsForLocation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBIMModel/GetAssetsForLocationResponse" message="tns:IBIMModel_GetAssetsForLocation_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IBIMModel" type="tns:IBIMModel">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="DoWork">
+      <soap:operation soapAction="http://tempuri.org/IBIMModel/DoWork" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getviewbyfileid_ecodomusviewer">
+      <soap:operation soapAction="http://tempuri.org/IBIMModel/getviewbyfileid_ecodomusviewer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertUpdateBIMModel">
+      <soap:operation soapAction="http://tempuri.org/IBIMModel/InsertUpdateBIMModel" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getuploadedfiles">
+      <soap:operation soapAction="http://tempuri.org/IBIMModel/getuploadedfiles" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getuploadedfilesforfacility">
+      <soap:operation soapAction="http://tempuri.org/IBIMModel/getuploadedfilesforfacility" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getuploadedfileinformation">
+      <soap:operation soapAction="http://tempuri.org/IBIMModel/getuploadedfileinformation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getuploadedfileinformation_for_history">
+      <soap:operation soapAction="http://tempuri.org/IBIMModel/getuploadedfileinformation_for_history" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="update_system_attribute_for_modelviewer">
+      <soap:operation soapAction="http://tempuri.org/IBIMModel/update_system_attribute_for_modelviewer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="get_system_attributes_for_modelviewer">
+      <soap:operation soapAction="http://tempuri.org/IBIMModel/get_system_attributes_for_modelviewer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getviewbyfileid">
+      <soap:operation soapAction="http://tempuri.org/IBIMModel/getviewbyfileid" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertviewPoints">
+      <soap:operation soapAction="http://tempuri.org/IBIMModel/InsertviewPoints" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertviewPointsV1">
+      <soap:operation soapAction="http://tempuri.org/IBIMModel/InsertviewPointsV1" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getattributesformodelviewer">
+      <soap:operation soapAction="http://tempuri.org/IBIMModel/getattributesformodelviewer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getsystemsformodelviewer">
+      <soap:operation soapAction="http://tempuri.org/IBIMModel/getsystemsformodelviewer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getsystemsassetsformodelviewer">
+      <soap:operation soapAction="http://tempuri.org/IBIMModel/getsystemsassetsformodelviewer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUploadedFileForAsset">
+      <soap:operation soapAction="http://tempuri.org/IBIMModel/GetUploadedFileForAsset" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUploadedFileForSystem">
+      <soap:operation soapAction="http://tempuri.org/IBIMModel/GetUploadedFileForSystem" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_asset_navis_viewer">
+      <soap:operation soapAction="http://tempuri.org/IBIMModel/Get_asset_navis_viewer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSpaceForNavisViewer">
+      <soap:operation soapAction="http://tempuri.org/IBIMModel/GetSpaceForNavisViewer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRoomDataSheet">
+      <soap:operation soapAction="http://tempuri.org/IBIMModel/GetRoomDataSheet" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTypeAttributesModelViewer">
+      <soap:operation soapAction="http://tempuri.org/IBIMModel/GetTypeAttributesModelViewer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSpaceAttributeForNavisViewer">
+      <soap:operation soapAction="http://tempuri.org/IBIMModel/GetSpaceAttributeForNavisViewer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAssetAttributeHistoryForBAS">
+      <soap:operation soapAction="http://tempuri.org/IBIMModel/GetAssetAttributeHistoryForBAS" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEntityToSearchAssetModelViewer">
+      <soap:operation soapAction="http://tempuri.org/IBIMModel/GetEntityToSearchAssetModelViewer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUploadedFileDetails">
+      <soap:operation soapAction="http://tempuri.org/IBIMModel/GetUploadedFileDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteUploadedFile">
+      <soap:operation soapAction="http://tempuri.org/IBIMModel/DeleteUploadedFile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertUpdateTypeAttributeForModelViewer">
+      <soap:operation soapAction="http://tempuri.org/IBIMModel/InsertUpdateTypeAttributeForModelViewer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertUpdateAssetAttributeForModelViewer">
+      <soap:operation soapAction="http://tempuri.org/IBIMModel/InsertUpdateAssetAttributeForModelViewer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertUpdateSpaceAttributeForModelViewer">
+      <soap:operation soapAction="http://tempuri.org/IBIMModel/InsertUpdateSpaceAttributeForModelViewer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUploadedFilesModelServerPM">
+      <soap:operation soapAction="http://tempuri.org/IBIMModel/GetUploadedFilesModelServerPM" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetHistoryUploadedFilesModelServerPM">
+      <soap:operation soapAction="http://tempuri.org/IBIMModel/GetHistoryUploadedFilesModelServerPM" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetsingleUploadedFile">
+      <soap:operation soapAction="http://tempuri.org/IBIMModel/GetsingleUploadedFile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="proc_get_attribute_series">
+      <soap:operation soapAction="http://tempuri.org/IBIMModel/proc_get_attribute_series" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="proc_get_facility_assets_for_bim">
+      <soap:operation soapAction="http://tempuri.org/IBIMModel/proc_get_facility_assets_for_bim" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="proc_get_facility_spaces_for_bim">
+      <soap:operation soapAction="http://tempuri.org/IBIMModel/proc_get_facility_spaces_for_bim" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="proc_assign_space_to_asset_for_bim">
+      <soap:operation soapAction="http://tempuri.org/IBIMModel/proc_assign_space_to_asset_for_bim" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="proc_assign_asset_for_bim">
+      <soap:operation soapAction="http://tempuri.org/IBIMModel/proc_assign_asset_for_bim" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="proc_get_file_path_by_id">
+      <soap:operation soapAction="http://tempuri.org/IBIMModel/proc_get_file_path_by_id" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="proc_get_file_path_by_id_for_history">
+      <soap:operation soapAction="http://tempuri.org/IBIMModel/proc_get_file_path_by_id_for_history" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDocumentModelViewer">
+      <soap:operation soapAction="http://tempuri.org/IBIMModel/GetDocumentModelViewer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetExternalSystemAssetId">
+      <soap:operation soapAction="http://tempuri.org/IBIMModel/GetExternalSystemAssetId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertUpdateViewEcoDomusViewer">
+      <soap:operation soapAction="http://tempuri.org/IBIMModel/InsertUpdateViewEcoDomusViewer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditDeleteViewEcoDomusViewer">
+      <soap:operation soapAction="http://tempuri.org/IBIMModel/EditDeleteViewEcoDomusViewer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetViewInfoEcoDomusViewer">
+      <soap:operation soapAction="http://tempuri.org/IBIMModel/GetViewInfoEcoDomusViewer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Bind_parent_view_dropdown_ecodomus_viewer">
+      <soap:operation soapAction="http://tempuri.org/IBIMModel/Bind_parent_view_dropdown_ecodomus_viewer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertUpdateViewEcoDomusViewer_xml">
+      <soap:operation soapAction="http://tempuri.org/IBIMModel/InsertUpdateViewEcoDomusViewer_xml" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="proc_get_master_model_files">
+      <soap:operation soapAction="http://tempuri.org/IBIMModel/proc_get_master_model_files" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="proc_get_facility_spaces_for_bim_linktospace_pm">
+      <soap:operation soapAction="http://tempuri.org/IBIMModel/proc_get_facility_spaces_for_bim_linktospace_pm" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="proc_assign_space_for_bim">
+      <soap:operation soapAction="http://tempuri.org/IBIMModel/proc_assign_space_for_bim" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="proc_replace_space_for_model">
+      <soap:operation soapAction="http://tempuri.org/IBIMModel/proc_replace_space_for_model" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="proc_merge_space_attribute">
+      <soap:operation soapAction="http://tempuri.org/IBIMModel/proc_merge_space_attribute" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="proc_get_asset_attribute_model_viewer_by_assetid">
+      <soap:operation soapAction="http://tempuri.org/IBIMModel/proc_get_asset_attribute_model_viewer_by_assetid" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="proc_get_type_attribute_model_viewer_by_asset_id">
+      <soap:operation soapAction="http://tempuri.org/IBIMModel/proc_get_type_attribute_model_viewer_by_asset_id" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetViewerForUser">
+      <soap:operation soapAction="http://tempuri.org/IBIMModel/GetViewerForUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAssetsByDailySales">
+      <soap:operation soapAction="http://tempuri.org/IBIMModel/GetAssetsByDailySales" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUploadedFileForspace">
+      <soap:operation soapAction="http://tempuri.org/IBIMModel/GetUploadedFileForspace" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="proc_merge_type_attribute">
+      <soap:operation soapAction="http://tempuri.org/IBIMModel/proc_merge_type_attribute" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="proc_merge_asset_attribute">
+      <soap:operation soapAction="http://tempuri.org/IBIMModel/proc_merge_asset_attribute" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="proc_replace_asset_for_model">
+      <soap:operation soapAction="http://tempuri.org/IBIMModel/proc_replace_asset_for_model" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="proc_get_facility_assets_for_bim_count_v1">
+      <soap:operation soapAction="http://tempuri.org/IBIMModel/proc_get_facility_assets_for_bim_count_v1" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="proc_get_facility_types_for_bim">
+      <soap:operation soapAction="http://tempuri.org/IBIMModel/proc_get_facility_types_for_bim" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetColorcodeForZone">
+      <soap:operation soapAction="http://tempuri.org/IBIMModel/GetColorcodeForZone" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="proc_insert_Bim_history">
+      <soap:operation soapAction="http://tempuri.org/IBIMModel/proc_insert_Bim_history" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAssetsForLocation">
+      <soap:operation soapAction="http://tempuri.org/IBIMModel/GetAssetsForLocation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="BIMModel">
+    <wsdl:port name="BasicHttpBinding_IBIMModel" binding="tns:BasicHttpBinding_IBIMModel">
+      <soap:address location="http://services.ecodomus.com/ClientPM/BIMModel.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

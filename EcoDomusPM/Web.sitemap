@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<siteMap enableLocalization="true" >
+
+  <siteMapNode url="" title=""  description="" >
+    <siteMapNode url="~/App/Reports/dashboard_pm.aspx" title="$resources:Resource,Dashboard"  description="">
+      <siteMapNode url="~/App/Reports/Search.aspx" title="$resources:Resource,Search"  description=""/>
+    </siteMapNode>
+
+    <siteMapNode url="~/App/Settings/BIMServer.aspx" title="$resources:Resource,BIM_Server"  description="" />
+
+
+
+    <siteMapNode url="" title="Settings"  description="" >
+
+      <siteMapNode url="~/App/Settings/AttributeTemplate.aspx" title="$resources:Resource,Attribute_Template"  description="" >
+        <siteMapNode url="~/App/Settings/RequiredAttribute.aspx" title="$resources:Resource,Required_Attributes"  description="">
+        <siteMapNode url="~/App/Settings/AttributeGroup.aspx" title="Required Attribute Group"  description=""/>
+        </siteMapNode>
+      </siteMapNode>
+		<siteMapNode url="~/App/Settings/ScheduleLimits.aspx" title="$resources:Resource, Schedule_Limits" description=""/>
+        <siteMapNode url="~/App/Settings/RunSimulationPage.aspx" title="Run Simulation" description=""/>
+        <siteMapNode url="~/App/Settings/RunSimulation.aspx" title="Run Simulation" description="">
+        <siteMapNode url="~/App/Settings/EnergySimulation.aspx" title="$resources:Resource, Energy_Simulation" description=""/>
+        </siteMapNode>
+      <siteMapNode url="~/App/Settings/Project.aspx" title="$resources:Resource, Projects"  description="" >
+        <siteMapNode url="~/App/Settings/ProjectMenu.aspx" title="$resources:Resource,Project_Profile"  description=""/>
+      </siteMapNode>
+     
+      <!--<siteMapNode url="~/App/Settings/ClientOrganizations.aspx" title="Organizations"  description=""/>-->
+
+      <siteMapNode url="~/App/Settings/ClientUserProfile.aspx" title="$resources:Resource,My_Profile"  description="" />
+
+      <siteMapNode url="~/App/Settings/Hierarchy.aspx" title="$resources:Resource,Location_Hierarchy"  description="" />
+
+      <siteMapNode url="~/App/Settings/SetupSyncPage.aspx" title="$Resources:Resource,Setup_Sync_Configuration"  description="" />
+      <siteMapNode url="~/App/Settings/SetupSync.aspx" title="$Resources:Resource,Setup_Sync_Wizard"  description="" />
+
+      <siteMapNode url="~/App/Settings/Facility.aspx" title="$resources:Resource,Facility"  description="" >
+        <siteMapNode url="~/App/Settings/FacilityProfile.aspx" title="$resources:Resource,Facility_Profile"  description="" />
+      </siteMapNode>
+
+      <siteMapNode url="~/App/Settings/User.aspx" title="$resources:Resource,Users"  description="" >
+        <siteMapNode url="~/App/Settings/UserMenu.aspx" title="$resources:Resource,User_Profile"  description="" />
+      </siteMapNode>
+    </siteMapNode>
+
+    <siteMapNode url="" title="$resources:Resource,Project_Setup"  description="" >
+
+      <siteMapNode url="~/App/Settings/ClientOrganizations.aspx" title="$resources:Resource,Organizations"  description="">
+        <siteMapNode url="~/App/Settings/Product.aspx" title="$resources:Resource,Product"  description="">
+          <siteMapNode url="~/App/Settings/ProductProfile.aspx" title="$resources:Resource,Product_Profile"  description=""/>
+        </siteMapNode>
+        
+        <!--<siteMapNode url="~/App/Settings/Project.aspx" title="Projects"  description="" >
+          <siteMapNode url="~/App/Settings/ProjectMenu.aspx" title="Project Profile"  description=""/>
+        </siteMapNode>-->
+        <siteMapNode url="~/App/Settings/SettingMenu.aspx" title="$resources:Resource,Request_To_Add_New_Organization"  description="">
+       
+        </siteMapNode>
+        </siteMapNode>
+      
+      <siteMapNode url="~/App/Settings/contacts.aspx" title="$resources:Resource,Contacts"  description=""/>
+
+      <siteMapNode url="~/App/Settings/Roles.aspx" title="$resources:Resource,Roles"  description="">
+        <siteMapNode url="~/App/Settings/RolesMenu.aspx" title="$resources:Resource,Role_Details" description=""/>
+      </siteMapNode>
+
+
+    </siteMapNode>
+
+
+
+
+    <siteMapNode url="" title="Locations" description="">
+      <siteMapNode url="~/App/Locations/FindLocation.aspx" title="$resources:Resource,Find_Location" description="">
+        <siteMapNode url="~/App/Locations/FloorProfile.aspx" title="$resources:Resource,Floor_Profile" description=""/>
+        <siteMapNode url="~/App/Locations/SpaceProfile.aspx" title="$resources:Resource,Space_Profile" description=""/>
+      </siteMapNode>
+      <siteMapNode url="~/App/GIS/GIS.aspx" title="GIS" description=""/>
+    </siteMapNode>
+
+    <siteMapNode url="" title="Library"  description="" >
+      <siteMapNode url="~/App/Settings/Organizations.aspx" title="$resources:Resource,Organizations"  description="" />
+    </siteMapNode>
+ 
+        
+
+        <siteMapNode url="" title="$resources:Resource,Assets" description="">
+          <siteMapNode url="~/App/Asset/FindAsset.aspx" title="Find Component" description=""/>
+          <!--<siteMapNode url="~/App/Asset/AssetMenu.aspx" title="Component Profile" description=""/>-->
+          <siteMapNode url="~/App/Asset/Type.aspx" title="Type " description=""/>
+
+          <!--<siteMapNode url="~/App/Asset/System.aspx" title="Systems" description=""/>
+      <siteMapNode url="~/App/Asset/TypeProfileMenu.aspx" title="Type Profile" description=""/>-->
+          <siteMapNode url="~/App/Asset/Inspections.aspx" title="$resources:Resource,Inspections" description="">
+            <siteMapNode url="~/App/Asset/InspectionMenu.aspx" title="$resources:Resource,Inspection_Profile" description=""/>
+          </siteMapNode>
+        </siteMapNode>
+
+
+        <siteMapNode url="" title="$resources:Resource,Activities" description="">
+          <siteMapNode url="~/App/Asset/Issues.aspx" title="$resources:Resource,Issues" description=""/>
+          <siteMapNode url="~/App/Asset/IssueProfile.aspx" title="$resources:Resource,Issue_Profile" description=""/>
+
+
+          <siteMapNode url="~/App/Asset/WorkOrder.aspx" title="$resources:Resource,Issues" description=""/>
+          <siteMapNode url="~/App/Asset/WorkOrderProfile.aspx" title="$resources:Resource,Issue_Profile" description=""/>
+
+
+          <siteMapNode url="~/App/Asset/SyncAsset.aspx" title="$resources:Resource,Sync_Assets" description=""/>
+        </siteMapNode>
+
+        <siteMapNode url="" title="Sustainability" description="">
+          <siteMapNode url="~/App/Sustainability/FindSensor.aspx" title="Find Meter/Sensor" description=""/>
+          <siteMapNode url="~/App/Sustainability/FindDataPoint.aspx" title="$resources:Resource,Find_Data_Point" description=""/>
+          <siteMapNode url="~/App/Sustainability/EnergyModel.aspx" title="$resources:Resource,Energy_Model" description=""/>
+          <siteMapNode url="~/App/Sustainability/SetupBasAccess.aspx" title="$resources:Resource,BASServer" description=""/>
+          <siteMapNode url="~/App/Sustainability/WeatherStation.aspx" title="$resources:Resource,Weather_Station" description=""/>
+        </siteMapNode>
+
+        <siteMapNode url="" title="$resources:Resource,Reports" description="">
+          <siteMapNode url="~/App/Reports/COBieQc.aspx" title="$resources:Resource,COBie_QC" description=""/>
+          <siteMapNode url="~/App/Reports/MissingAttributes.aspx" title="$resources:Resource,Missing_attributes" description=""/>
+          <siteMapNode url="~/App/Reports/DocumentCheckList.aspx" title="$resources:Resource,Document_Checklist" description=""/>
+          <siteMapNode url="~/App/Reports/ServiceHistory.aspx" title="$resources:Resource,Service_History" description=""/>
+          <siteMapNode url="~/App/Reports/CustomReports.aspx" title="$resources:Resource,Custom_Reports" description=""/>
+        </siteMapNode>
+
+        <siteMapNode url="" title="$resources:Resource,COBie" description="">
+
+          <siteMapNode url="~/App/Asset/TypePM.aspx" title="$resources:Resource,Type" description="">
+            <siteMapNode url="~/App/Asset/TypeProfileMenu.aspx" title="$resources:Resource,Type_Profile" description=""/>
+            <siteMapNode url="~/App/Asset/TypeAttributes.aspx" title="Type Attributes" description=""/>
+          </siteMapNode>
+
+          <siteMapNode url="~/App/Asset/ComponentPM.aspx" title="$resources:Resource,Component" description="">
+            <siteMapNode url="~/App/Asset/AssetMenu.aspx" title="$resources:Resource,Component_Profile" description=""/>
+          </siteMapNode>
+          <siteMapNode url="~/App/Asset/Document.aspx" title="$resources:Resource,Document" description="">
+			<siteMapNode url="~/App/Asset/UploadDocumentWizard.aspx" title="Upload Bulk Documents" description=""/>
+            <siteMapNode url="~/App/Asset/MapDocuments.aspx" title="Map Documents" description=""/>
+            <siteMapNode url="~/App/Asset/DocumentProfile.aspx" title="$resources:Resource,Document_Profile" description=""/>
+          </siteMapNode>
+          <siteMapNode url="~/App/COBIE/COBieImportexportMenu.aspx" title="Import/Export" description=""/>
+          <siteMapNode url="~/App/Locations/FloorsPM.aspx" title="Floors" description=""/>
+
+
+          <siteMapNode url="~/App/Locations/FacilityPM.aspx" title="$resources:Resource,Facility" description="">
+            <siteMapNode url="~/App/Locations/ExistingFacilities.aspx" title="Existing Facility" description=""/>
+            <siteMapNode url="~/App/Locations/FacilityMenu.aspx" title="$resources:Resource,Facility_Profile" description=""/>
+          </siteMapNode>
+
+
+          <siteMapNode url="~/App/Asset/System.aspx" title="$resources:Resource,System" description=""/>
+          <siteMapNode url="~/App/Locations/SpacePM.aspx" title="$resources:Resource,Spaces" description=""/>
+          <siteMapNode url="~/App/Locations/ZonePM.aspx" title="$resources:Resource,Zones" description=""/>
+
+        </siteMapNode>
+
+
+
+
+
+
+        <siteMapNode url="~/App/Central/Client.aspx" title="$resources:Resource,Client"  description="" />
+
+
+      </siteMapNode>
+ 
+</siteMap>

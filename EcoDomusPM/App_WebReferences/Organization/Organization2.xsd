@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.datacontract.org/2004/07/Ecodomus.Organization" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Ecodomus.Organization" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:3333/Central WCF/Organization.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="OrganizationModel">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Abbreviation" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="City_Id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Cityname" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ClientId" type="ser:guid" />
+      <xs:element minOccurs="0" name="Country_Id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Created_by" type="ser:guid" />
+      <xs:element minOccurs="0" name="Document_Type_Id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Document_Type_Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Entity_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Error" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Flag" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Login_Id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NewOrganization_Id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Omniclass_Type_Id" type="ser:guid" />
+      <xs:element minOccurs="0" name="OrganizationType_Id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Organization_Id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Organization_name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Parent_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Phase_description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Phase_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Phase_name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Postal_Code" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Primary_Contact_Id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Standard_details_code" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Standard_details_name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Standard_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Standard_ids" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="StateId" type="ser:guid" />
+      <xs:element minOccurs="0" name="StrEntityid" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="StrField_id" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Uniclass_Type_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="User_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="abbrevation" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="address_line_1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="address_line_2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="email_address" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="existsflag" type="xs:boolean" />
+      <xs:element minOccurs="0" name="phone_number" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="strCity" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="txt_Search" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="web_address" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OrganizationModel" nillable="true" type="tns:OrganizationModel" />
+</xs:schema>

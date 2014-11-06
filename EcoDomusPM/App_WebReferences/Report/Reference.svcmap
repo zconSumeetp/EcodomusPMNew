@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="e2531f09-713a-4c6d-ab74-215aa545b0ab" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>false</ReferenceAllAssemblies>
+    <ReferencedAssemblies>
+      <ReferencedAssembly AssemblyName="System" />
+      <ReferencedAssembly AssemblyName="System.Core" />
+      <ReferencedAssembly AssemblyName="System.Data" />
+      <ReferencedAssembly AssemblyName="System.Xml" />
+      <ReferencedAssembly AssemblyName="System.Xml.Linq" />
+    </ReferencedAssemblies>
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:4444/Client%20WCF/Report.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="Report.xsd" MetadataType="Schema" ID="8e9c2d8a-0c29-4335-871d-c5535bcfe81f" SourceId="1" SourceUrl="http://localhost:4444/Client WCF/Report.svc?xsd=xsd3" />
+    <MetadataFile FileName="Report.wsdl" MetadataType="Wsdl" ID="a7e42a23-83be-47e7-a3b3-1e3f2fde0697" SourceId="1" SourceUrl="http://localhost:4444/Client WCF/Report.svc?wsdl" />
+    <MetadataFile FileName="Report1.xsd" MetadataType="Schema" ID="91522ce3-27eb-4e3c-8f3e-8963620f9bd9" SourceId="1" SourceUrl="http://localhost:4444/Client WCF/Report.svc?xsd=xsd0" />
+    <MetadataFile FileName="Report2.xsd" MetadataType="Schema" ID="ee909878-0d57-4315-ae8f-536fde906379" SourceId="1" SourceUrl="http://localhost:4444/Client WCF/Report.svc?xsd=xsd2" />
+    <MetadataFile FileName="Report.disco" MetadataType="Disco" ID="6c7b19c5-0f0e-44f5-9ff1-2d3b33500dac" SourceId="1" SourceUrl="http://localhost:4444/Client WCF/Report.svc?disco" />
+    <MetadataFile FileName="Report3.xsd" MetadataType="Schema" ID="e51f74f1-2f99-4885-bbb7-566c7e5c5ed9" SourceId="1" SourceUrl="http://localhost:4444/Client WCF/Report.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

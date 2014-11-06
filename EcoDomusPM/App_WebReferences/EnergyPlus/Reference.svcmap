@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="0e5c1fdc-2476-4dd9-922b-164e986aae92" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>false</ReferenceAllAssemblies>
+    <ReferencedAssemblies>
+      <ReferencedAssembly AssemblyName="System" />
+      <ReferencedAssembly AssemblyName="System.Core" />
+      <ReferencedAssembly AssemblyName="System.Data" />
+      <ReferencedAssembly AssemblyName="System.Xml" />
+      <ReferencedAssembly AssemblyName="System.Xml.Linq" />
+    </ReferencedAssemblies>
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://services.ecodomus.com/ClientPM/EnergyPlus.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="EnergyPlus4.xsd" MetadataType="Schema" ID="1588a469-a9dd-45d0-820a-188223a46f00" SourceId="1" SourceUrl="http://services.ecodomus.com/ClientPM/EnergyPlus.svc?xsd=xsd2" />
+    <MetadataFile FileName="EnergyPlus1.wsdl" MetadataType="Wsdl" ID="c348edb0-2289-4d07-a5a3-f6822bf5b08c" SourceId="1" SourceUrl="http://services.ecodomus.com/ClientPM/EnergyPlus.svc?wsdl" />
+    <MetadataFile FileName="EnergyPlus42.xsd" MetadataType="Schema" ID="1796799c-2067-437d-a589-841936fc80fa" SourceId="1" SourceUrl="http://services.ecodomus.com/ClientPM/EnergyPlus.svc?xsd=xsd1" />
+    <MetadataFile FileName="EnergyPlus43.xsd" MetadataType="Schema" ID="4a762c79-8cbd-4652-aa18-c1f38e1bdacc" SourceId="1" SourceUrl="http://services.ecodomus.com/ClientPM/EnergyPlus.svc?xsd=xsd0" />
+    <MetadataFile FileName="EnergyPlus44.xsd" MetadataType="Schema" ID="43b0c6c3-7500-4f5a-93d1-65747d15516a" SourceId="1" SourceUrl="http://services.ecodomus.com/ClientPM/EnergyPlus.svc?xsd=xsd3" />
+    <MetadataFile FileName="EnergyPlus1.disco" MetadataType="Disco" ID="a930dc80-4d90-4bba-9fa7-f19d94f02e92" SourceId="1" SourceUrl="http://services.ecodomus.com/ClientPM/EnergyPlus.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

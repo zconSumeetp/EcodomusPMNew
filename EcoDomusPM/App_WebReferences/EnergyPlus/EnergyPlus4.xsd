@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.datacontract.org/2004/07/" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://services.ecodomus.com/ClientPM/EnergyPlus.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="EnergyPlusModel">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="All_days" type="xs:int" />
+      <xs:element minOccurs="0" name="All_other_days" type="xs:int" />
+      <xs:element minOccurs="0" name="Amount" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Approximation" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Asset_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Assumption" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Attribute_name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="City_name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Client_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Col_name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Col_value" type="xs:int" />
+      <xs:element minOccurs="0" name="Comparision_operator" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Conn_string" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Created_by" type="ser:guid" />
+      <xs:element minOccurs="0" name="Current" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Custom_day_1" type="xs:int" />
+      <xs:element minOccurs="0" name="Custom_day_2" type="xs:int" />
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Doc_flag" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Field_name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Field_value" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="File_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="File_name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="File_path" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Fk_bas_weather_station_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Fk_em_facility_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Fk_entity_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Fk_facility_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Fk_object_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Fk_simulation_schedule_limit_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Fk_state_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Flag" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FrmTimeStmp" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Holiday" type="xs:int" />
+      <xs:element minOccurs="0" name="Impact" type="xs:float" />
+      <xs:element minOccurs="0" name="Impact_operator" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Interpolate" type="xs:int" />
+      <xs:element minOccurs="0" name="IsMeasurement" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsSimulation" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Is_enabled" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Lower_limit" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Message" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Meter" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ModelingObjName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Modeling_Obj_Id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Modeling_class_name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Modified_by" type="ser:guid" />
+      <xs:element minOccurs="0" name="Multiplier" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Numeric_type" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Obj_name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Object_group_name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Object_name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Omni_class" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Organization_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Pk_algorithm_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Pk_attribute_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Pk_energymodel_facility_billing_statements" type="ser:guid" />
+      <xs:element minOccurs="0" name="Pk_field_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Pk_file_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Pk_group_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Pk_proj_simulation_control_parameter_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Pk_project_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Pk_simulation_AAS_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Pk_simulation_object_ids" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Pk_simulation_schedule_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Pk_simulation_schedule_limit_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Pk_space_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Pk_template_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Previous" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Project_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Query_str" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Read_date" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Search_text_name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Sessionclient_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Simplification" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Simulation_request_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Simulation_schedule_ids" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Status" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Str_xml" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Summer_design_days" type="xs:int" />
+      <xs:element minOccurs="0" name="System_xml" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Through" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ToTimeStmp" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Tolerance" type="xs:float" />
+      <xs:element minOccurs="0" name="Tolerance_operator" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Type_of_service" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Unit" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Unit_type" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Unti3" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Until1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Until2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Until4" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Until5" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Until6" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Until7" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Until8" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Until9" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Uploaded_file_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Upper_limit" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Usage" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="User_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Value1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Value2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Value3" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Value4" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Value5" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Value6" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Value7" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Value8" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Value9" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Weather_data_values" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Weather_file_name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Weather_file_path" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Week_days" type="xs:int" />
+      <xs:element minOccurs="0" name="Week_ends" type="xs:int" />
+      <xs:element minOccurs="0" name="Week_type" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Winter_design_day" type="xs:int" />
+      <xs:element minOccurs="0" name="Wtb_Btw" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ZoneListDescription" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ZoneListName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Zone_xml" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Zonelist_xml" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="assetids" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="attributeids" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="attributevalues" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="classids" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="entityname" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="iDD_class" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="iDD_class_field" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="mdlObjDesc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="mdlObjValue" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="pk_asset_attribute_valueid" type="ser:guid" />
+      <xs:element minOccurs="0" name="pk_energymodel_zonelist_id" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="pk_profileid" type="ser:guid" />
+      <xs:element minOccurs="0" name="pk_required_group_attributeid" type="ser:guid" />
+      <xs:element minOccurs="0" name="spaceid" type="ser:guid" />
+      <xs:element minOccurs="0" name="spaceids" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="zoneid" type="ser:guid" />
+      <xs:element minOccurs="0" name="zoneids" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="EnergyPlusModel" nillable="true" type="tns:EnergyPlusModel" />
+  <xs:complexType name="SimulationFileModel">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="FILE_FIELD_VALUE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FK_FIELD_ID" type="ser:guid" />
+      <xs:element minOccurs="0" name="FK_FILE_ID" type="ser:guid" />
+      <xs:element minOccurs="0" name="From" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IDFOBJECTID" type="ser:guid" />
+      <xs:element minOccurs="0" name="IDFOBJECTNAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PK_FACILITY_ID" type="ser:guid" />
+      <xs:element minOccurs="0" name="PK_FILE_ID" type="ser:guid" />
+      <xs:element minOccurs="0" name="SIMULATIONFILENAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="To" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="USE_WEATHER_FILE" type="xs:int" />
+      <xs:element minOccurs="0" name="WEATHER_FILE_NAME" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SimulationFileModel" nillable="true" type="tns:SimulationFileModel" />
+</xs:schema>

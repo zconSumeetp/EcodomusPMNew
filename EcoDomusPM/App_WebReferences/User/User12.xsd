@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.datacontract.org/2004/07/Central.App.Dtos" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Central.App.Dtos" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://services.ecodomus.com/CentralPM/User.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="RecentEntities">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="RecentFacilies" nillable="true" type="tns:ArrayOfRecentFacility" />
+      <xs:element minOccurs="0" name="RecentProjects" nillable="true" type="tns:ArrayOfRecentProject" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="RecentEntities" nillable="true" type="tns:RecentEntities" />
+  <xs:complexType name="ArrayOfRecentFacility">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="RecentFacility" nillable="true" type="tns:RecentFacility" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfRecentFacility" nillable="true" type="tns:ArrayOfRecentFacility" />
+  <xs:complexType name="RecentFacility">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:FacilityBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CityState" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Project" nillable="true" type="tns:ProjectBase" />
+          <xs:element minOccurs="0" name="RecentEntityProperties" nillable="true" type="tns:RecentEntityProperties" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="RecentFacility" nillable="true" type="tns:RecentFacility" />
+  <xs:complexType name="FacilityBase">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:Entity">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="FacilityBase" nillable="true" type="tns:FacilityBase" />
+  <xs:complexType name="Entity">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Entity" nillable="true" type="tns:Entity" />
+  <xs:complexType name="ProjectBase">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:Entity">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ProjectBase" nillable="true" type="tns:ProjectBase" />
+  <xs:complexType name="RecentEntityProperties">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ClientId" type="ser:guid" />
+      <xs:element minOccurs="0" name="ConnectionString" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OrderNumber" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="RecentEntityProperties" nillable="true" type="tns:RecentEntityProperties" />
+  <xs:complexType name="ArrayOfRecentProject">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="RecentProject" nillable="true" type="tns:RecentProject" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfRecentProject" nillable="true" type="tns:ArrayOfRecentProject" />
+  <xs:complexType name="RecentProject">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ProjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CityState" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="LeadOrganizationName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="OwnerOrganizationName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="RecentEntityProperties" nillable="true" type="tns:RecentEntityProperties" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="RecentProject" nillable="true" type="tns:RecentProject" />
+  <xs:simpleType name="EntityType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Facility" />
+      <xs:enumeration value="Facilities" />
+      <xs:enumeration value="Asset" />
+      <xs:enumeration value="Zone" />
+      <xs:enumeration value="Space" />
+      <xs:enumeration value="Floor" />
+      <xs:enumeration value="System" />
+      <xs:enumeration value="Type" />
+      <xs:enumeration value="HierarchyTreeNode" />
+      <xs:enumeration value="Project" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="EntityType" nillable="true" type="tns:EntityType" />
+</xs:schema>

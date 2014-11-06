@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Dashboard" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:4444/Client WCF/Dashboard.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:4444/Client WCF/Dashboard.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:4444/Client WCF/Dashboard.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/EcoDomus.Dashboard" />
+      <xsd:import schemaLocation="http://localhost:4444/Client WCF/Dashboard.svc?xsd=xsd3" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IDashboard_GetRecentData_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetRecentData" />
+  </wsdl:message>
+  <wsdl:message name="IDashboard_GetRecentData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetRecentDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDashboard_GetNavigationData_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetNavigationData" />
+  </wsdl:message>
+  <wsdl:message name="IDashboard_GetNavigationData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetNavigationDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDashboard_GetSearchField_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSearchField" />
+  </wsdl:message>
+  <wsdl:message name="IDashboard_GetSearchField_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSearchFieldResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDashboard_GetNavigationChildNodeData_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetNavigationChildNodeData" />
+  </wsdl:message>
+  <wsdl:message name="IDashboard_GetNavigationChildNodeData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetNavigationChildNodeDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDashboard_GetSpaceData_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSpaceData" />
+  </wsdl:message>
+  <wsdl:message name="IDashboard_GetSpaceData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSpaceDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDashboard_GetAssetData_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAssetData" />
+  </wsdl:message>
+  <wsdl:message name="IDashboard_GetAssetData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAssetDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDashboard_GetRecentUSerDataPMFM_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetRecentUSerDataPMFM" />
+  </wsdl:message>
+  <wsdl:message name="IDashboard_GetRecentUSerDataPMFM_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetRecentUSerDataPMFMResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDashboard_GetAssetSpaceOnSearch_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAssetSpaceOnSearch" />
+  </wsdl:message>
+  <wsdl:message name="IDashboard_GetAssetSpaceOnSearch_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAssetSpaceOnSearchResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDashboard_GetUploadedFileID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUploadedFileID" />
+  </wsdl:message>
+  <wsdl:message name="IDashboard_GetUploadedFileID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUploadedFileIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDashboard_GetRecentProjectData_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetRecentProjectData" />
+  </wsdl:message>
+  <wsdl:message name="IDashboard_GetRecentProjectData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetRecentProjectDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDashboard_GetMenuForProjectRole_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMenuForProjectRole" />
+  </wsdl:message>
+  <wsdl:message name="IDashboard_GetMenuForProjectRole_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMenuForProjectRoleResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IDashboard">
+    <wsdl:operation name="GetRecentData">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDashboard/GetRecentData" message="tns:IDashboard_GetRecentData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDashboard/GetRecentDataResponse" message="tns:IDashboard_GetRecentData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetNavigationData">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDashboard/GetNavigationData" message="tns:IDashboard_GetNavigationData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDashboard/GetNavigationDataResponse" message="tns:IDashboard_GetNavigationData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSearchField">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDashboard/GetSearchField" message="tns:IDashboard_GetSearchField_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDashboard/GetSearchFieldResponse" message="tns:IDashboard_GetSearchField_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetNavigationChildNodeData">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDashboard/GetNavigationChildNodeData" message="tns:IDashboard_GetNavigationChildNodeData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDashboard/GetNavigationChildNodeDataResponse" message="tns:IDashboard_GetNavigationChildNodeData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSpaceData">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDashboard/GetSpaceData" message="tns:IDashboard_GetSpaceData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDashboard/GetSpaceDataResponse" message="tns:IDashboard_GetSpaceData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAssetData">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDashboard/GetAssetData" message="tns:IDashboard_GetAssetData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDashboard/GetAssetDataResponse" message="tns:IDashboard_GetAssetData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRecentUSerDataPMFM">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDashboard/GetRecentUSerDataPMFM" message="tns:IDashboard_GetRecentUSerDataPMFM_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDashboard/GetRecentUSerDataPMFMResponse" message="tns:IDashboard_GetRecentUSerDataPMFM_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAssetSpaceOnSearch">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDashboard/GetAssetSpaceOnSearch" message="tns:IDashboard_GetAssetSpaceOnSearch_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDashboard/GetAssetSpaceOnSearchResponse" message="tns:IDashboard_GetAssetSpaceOnSearch_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUploadedFileID">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDashboard/GetUploadedFileID" message="tns:IDashboard_GetUploadedFileID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDashboard/GetUploadedFileIDResponse" message="tns:IDashboard_GetUploadedFileID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRecentProjectData">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDashboard/GetRecentProjectData" message="tns:IDashboard_GetRecentProjectData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDashboard/GetRecentProjectDataResponse" message="tns:IDashboard_GetRecentProjectData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMenuForProjectRole">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDashboard/GetMenuForProjectRole" message="tns:IDashboard_GetMenuForProjectRole_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDashboard/GetMenuForProjectRoleResponse" message="tns:IDashboard_GetMenuForProjectRole_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IDashboard" type="tns:IDashboard">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetRecentData">
+      <soap:operation soapAction="http://tempuri.org/IDashboard/GetRecentData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetNavigationData">
+      <soap:operation soapAction="http://tempuri.org/IDashboard/GetNavigationData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSearchField">
+      <soap:operation soapAction="http://tempuri.org/IDashboard/GetSearchField" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetNavigationChildNodeData">
+      <soap:operation soapAction="http://tempuri.org/IDashboard/GetNavigationChildNodeData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSpaceData">
+      <soap:operation soapAction="http://tempuri.org/IDashboard/GetSpaceData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAssetData">
+      <soap:operation soapAction="http://tempuri.org/IDashboard/GetAssetData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRecentUSerDataPMFM">
+      <soap:operation soapAction="http://tempuri.org/IDashboard/GetRecentUSerDataPMFM" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAssetSpaceOnSearch">
+      <soap:operation soapAction="http://tempuri.org/IDashboard/GetAssetSpaceOnSearch" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUploadedFileID">
+      <soap:operation soapAction="http://tempuri.org/IDashboard/GetUploadedFileID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRecentProjectData">
+      <soap:operation soapAction="http://tempuri.org/IDashboard/GetRecentProjectData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMenuForProjectRole">
+      <soap:operation soapAction="http://tempuri.org/IDashboard/GetMenuForProjectRole" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Dashboard">
+    <wsdl:port name="BasicHttpBinding_IDashboard" binding="tns:BasicHttpBinding_IDashboard">
+      <soap:address location="http://localhost:4444/Client%20WCF/Dashboard.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

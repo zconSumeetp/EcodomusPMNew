@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="cddb1b4b-aa3d-4c73-bcb4-0d5177b9f086" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>false</ReferenceAllAssemblies>
+    <ReferencedAssemblies>
+      <ReferencedAssembly AssemblyName="System" />
+      <ReferencedAssembly AssemblyName="System.Core" />
+      <ReferencedAssembly AssemblyName="System.Data" />
+      <ReferencedAssembly AssemblyName="System.Xml" />
+      <ReferencedAssembly AssemblyName="System.Xml.Linq" />
+    </ReferencedAssemblies>
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:4444/Client%20WCF/AssetSync.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="AssetSync1.xsd" MetadataType="Schema" ID="3bf4bdf8-88f7-4da9-82b9-478b9f78e0cb" SourceId="1" SourceUrl="http://localhost:4444/Client WCF/AssetSync.svc?xsd=xsd2" />
+    <MetadataFile FileName="AssetSync.wsdl" MetadataType="Wsdl" ID="09149c9e-9aed-43c0-8194-4f3ecbe52f17" SourceId="1" SourceUrl="http://localhost:4444/Client WCF/AssetSync.svc?wsdl" />
+    <MetadataFile FileName="AssetSync.disco" MetadataType="Disco" ID="8f0b00fa-0ed9-4833-8cc6-4424f15d0fff" SourceId="1" SourceUrl="http://localhost:4444/Client WCF/AssetSync.svc?disco" />
+    <MetadataFile FileName="AssetSync2.xsd" MetadataType="Schema" ID="f4d1a0ae-2834-42a0-b3e8-78305dc4d07c" SourceId="1" SourceUrl="http://localhost:4444/Client WCF/AssetSync.svc?xsd=xsd1" />
+    <MetadataFile FileName="AssetSync.xsd" MetadataType="Schema" ID="e188d1fd-db91-405e-abf2-ccaada3bec8d" SourceId="1" SourceUrl="http://localhost:4444/Client WCF/AssetSync.svc?xsd=xsd0" />
+    <MetadataFile FileName="AssetSync3.xsd" MetadataType="Schema" ID="770c4de7-9509-4e61-89eb-f46dc2230571" SourceId="1" SourceUrl="http://localhost:4444/Client WCF/AssetSync.svc?xsd=xsd3" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

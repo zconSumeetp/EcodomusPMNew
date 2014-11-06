@@ -1,0 +1,3147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Abbreviation" xml:space="preserve">
+    <value>약어</value>
+  </data>
+  <data name="Accept" xml:space="preserve">
+    <value>수락</value>
+  </data>
+  <data name="Access_View" xml:space="preserve">
+    <value>액세스보기</value>
+  </data>
+  <data name="Action" xml:space="preserve">
+    <value>액션</value>
+  </data>
+  <data name="Active_Days" xml:space="preserve">
+    <value>활동 일</value>
+  </data>
+  <data name="Activities" xml:space="preserve">
+    <value>활동</value>
+  </data>
+  <data name="Activity_Id" xml:space="preserve">
+    <value>활동 이드</value>
+  </data>
+  <data name="Add" xml:space="preserve">
+    <value>추가</value>
+  </data>
+  <data name="Add_Affects" xml:space="preserve">
+    <value>영향을 추가</value>
+  </data>
+  <data name="Add_Asset" xml:space="preserve">
+    <value>자산 추가</value>
+  </data>
+  <data name="Add_Attribute" xml:space="preserve">
+    <value>속성 추가</value>
+  </data>
+  <data name="Add_Attribute_Group" xml:space="preserve">
+    <value>그룹 속성 추가</value>
+  </data>
+  <data name="Add_BAS_Server" xml:space="preserve">
+    <value>BAS 서버 추가</value>
+  </data>
+  <data name="Add_By_Model_Number" xml:space="preserve">
+    <value>모델 번호 추가</value>
+  </data>
+  <data name="Add_Category" xml:space="preserve">
+    <value>카테고리 추가</value>
+  </data>
+  <data name="Add_Classification" xml:space="preserve">
+    <value>분류 추가</value>
+  </data>
+  <data name="Add_Classification_Details" xml:space="preserve">
+    <value>분류 세부 사항을 추가</value>
+  </data>
+  <data name="Add_Component" xml:space="preserve">
+    <value>구성 요소 추가</value>
+  </data>
+  <data name="Add_Configuration" xml:space="preserve">
+    <value>구성 추가</value>
+  </data>
+  <data name="Add_Constraints" xml:space="preserve">
+    <value>제약 조건을 추가</value>
+  </data>
+  <data name="Add_Contractor" xml:space="preserve">
+    <value>계약자 추가</value>
+  </data>
+  <data name="Add_Custom_Data" xml:space="preserve">
+    <value>사용자 지정 데이터 추가</value>
+  </data>
+  <data name="Add_Designer" xml:space="preserve">
+    <value>디자이너 추가</value>
+  </data>
+  <data name="Add_Details" xml:space="preserve">
+    <value>세부 사항 추가</value>
+  </data>
+  <data name="Add_Document" xml:space="preserve">
+    <value>문서 추가</value>
+  </data>
+  <data name="Add_Document_to" xml:space="preserve">
+    <value>에 문서를 추가</value>
+  </data>
+  <data name="Add_Edit_Custom_Data" xml:space="preserve">
+    <value>편집 사용자 지정 데이터 추가</value>
+  </data>
+  <data name="Add_Edit_Document" xml:space="preserve">
+    <value>문서 편집 추가</value>
+  </data>
+  <data name="Add_Edit_Name" xml:space="preserve">
+    <value>편집 이름 추가</value>
+  </data>
+  <data name="Add_Existing_Attributes" xml:space="preserve">
+    <value>기존 속성 추가</value>
+  </data>
+  <data name="Add_Existing_Facility" xml:space="preserve">
+    <value>기존 시설 추가</value>
+  </data>
+  <data name="Add_Facility" xml:space="preserve">
+    <value>시설 추가</value>
+  </data>
+  <data name="Add_Floor" xml:space="preserve">
+    <value>층 추가</value>
+  </data>
+  <data name="Add_Hierarchy" xml:space="preserve">
+    <value>계층 구조를 추가</value>
+  </data>
+  <data name="Add_Impact" xml:space="preserve">
+    <value>충격 추가</value>
+  </data>
+  <data name="Add_Inspection" xml:space="preserve">
+    <value>검사 추가</value>
+  </data>
+  <data name="Add_Issue" xml:space="preserve">
+    <value>문제 추가</value>
+  </data>
+  <data name="Add_Job" xml:space="preserve">
+    <value>작업 추가</value>
+  </data>
+  <data name="Add_Manufacturer" xml:space="preserve">
+    <value>제조업체 추가</value>
+  </data>
+  <data name="Add_missing_attributes_to_model" xml:space="preserve">
+    <value>모델링하는 속성을 누락 추가</value>
+  </data>
+  <data name="Add_Naming_Convention" xml:space="preserve">
+    <value>명명 규칙 추가</value>
+  </data>
+  <data name="Add_New" xml:space="preserve">
+    <value>새로 추가</value>
+  </data>
+  <data name="Add_New_Attribute" xml:space="preserve">
+    <value>새 속성 추가</value>
+  </data>
+  <data name="Add_New_City" xml:space="preserve">
+    <value>신도시 추가</value>
+  </data>
+  <data name="Add_New_Client" xml:space="preserve">
+    <value>새 클라이언트를 추가</value>
+  </data>
+  <data name="Add_New_Country" xml:space="preserve">
+    <value>새로운 나라를 추가</value>
+  </data>
+  <data name="Add_New_Crew" xml:space="preserve">
+    <value>새로운 승무원을 추가</value>
+  </data>
+  <data name="Add_New_Facility" xml:space="preserve">
+    <value>새로운 시설을 추가</value>
+  </data>
+  <data name="Add_New_Impact" xml:space="preserve">
+    <value>새로운 충격 추가</value>
+  </data>
+  <data name="Add_New_Line" xml:space="preserve">
+    <value>새로운 라인을 추가</value>
+  </data>
+  <data name="Add_New_Organization" xml:space="preserve">
+    <value>새 조직 추가</value>
+  </data>
+  <data name="Add_New_Project" xml:space="preserve">
+    <value>새 프로젝트 추가</value>
+  </data>
+  <data name="Add_New_Role" xml:space="preserve">
+    <value>새 역할을 추가</value>
+  </data>
+  <data name="Add_New_State" xml:space="preserve">
+    <value>새로운 상태를 추가</value>
+  </data>
+  <data name="Add_New_Task" xml:space="preserve">
+    <value>새 작업을 추가</value>
+  </data>
+  <data name="Add_New_User" xml:space="preserve">
+    <value>새 사용자 추가</value>
+  </data>
+  <data name="Add_Organization_To_Project" xml:space="preserve">
+    <value>프로젝트에 조직 추가</value>
+  </data>
+  <data name="Add_Product" xml:space="preserve">
+    <value>제품 추가</value>
+  </data>
+  <data name="Add_Product_Attribute" xml:space="preserve">
+    <value>제품 속성 추가</value>
+  </data>
+  <data name="Add_Provider" xml:space="preserve">
+    <value>공급자 추가</value>
+  </data>
+  <data name="Add_Required_Attributes" xml:space="preserve">
+    <value>필수 속성 추가</value>
+  </data>
+  <data name="Add_Required_Attributes_to_Model" xml:space="preserve">
+    <value>필수 모델에 속성 추가</value>
+  </data>
+  <data name="Add_Required_Attributes_to_Model_for_all_Components" xml:space="preserve">
+    <value>필요한 모든 구성 요소에 대한 모델에 속성 추가</value>
+  </data>
+  <data name="Add_Required_Attributes_to_Model_for_all_Facilities" xml:space="preserve">
+    <value>필요한 모든 시설에 대한 모델에 속성 추가</value>
+  </data>
+  <data name="Add_Required_Attributes_to_Model_for_all_Spaces" xml:space="preserve">
+    <value>필요한 모든 공간에 대한 모델에 속성 추가</value>
+  </data>
+  <data name="Add_Required_Attributes_to_Model_for_all_Systems" xml:space="preserve">
+    <value>필요한 모든 시스템에 대한 모델에 속성 추가</value>
+  </data>
+  <data name="Add_Required_Attributes_to_Model_for_all_Types" xml:space="preserve">
+    <value>필수 모든 종류의 모델에 속성 추가</value>
+  </data>
+  <data name="Add_Required_Documents" xml:space="preserve">
+    <value>제출 서류 추가</value>
+  </data>
+  <data name="Add_Resource" xml:space="preserve">
+    <value>자원 추가</value>
+  </data>
+  <data name="Add_Role" xml:space="preserve">
+    <value>역할 추가</value>
+  </data>
+  <data name="Add_Space" xml:space="preserve">
+    <value>공간 추가</value>
+  </data>
+  <data name="Add_Spare" xml:space="preserve">
+    <value>예비 추가</value>
+  </data>
+  <data name="Add_Subsystem" xml:space="preserve">
+    <value>서브 시스템 추가</value>
+  </data>
+  <data name="Add_Subsystems" xml:space="preserve">
+    <value>서브 시스템 추가</value>
+  </data>
+  <data name="Add_System" xml:space="preserve">
+    <value>시스템 추가</value>
+  </data>
+  <data name="Add_Systems" xml:space="preserve">
+    <value>시스템 추가</value>
+  </data>
+  <data name="Add_Task" xml:space="preserve">
+    <value>작업 추가</value>
+  </data>
+  <data name="Add_Template" xml:space="preserve">
+    <value>템플릿 추가</value>
+  </data>
+  <data name="Add_Type" xml:space="preserve">
+    <value>형식 추가</value>
+  </data>
+  <data name="Add_Type_Spare" xml:space="preserve">
+    <value>형 예비 추가</value>
+  </data>
+  <data name="Add_Weather_Station" xml:space="preserve">
+    <value>날씨 역 추가</value>
+  </data>
+  <data name="Add_Work_Order" xml:space="preserve">
+    <value>작업 추가 주문</value>
+  </data>
+  <data name="Add_Zone" xml:space="preserve">
+    <value>영역 추가</value>
+  </data>
+  <data name="Add_Zones" xml:space="preserve">
+    <value>영역 추가</value>
+  </data>
+  <data name="Add_Edit_Names" xml:space="preserve">
+    <value>/ 편집 이름 추가</value>
+  </data>
+  <data name="Add_Edit_Required_Attributes" xml:space="preserve">
+    <value>/ 편집 필수 속성 추가</value>
+  </data>
+  <data name="Address_1" xml:space="preserve">
+    <value>주소 1</value>
+  </data>
+  <data name="Address_2" xml:space="preserve">
+    <value>주소 2</value>
+  </data>
+  <data name="Address_Country" xml:space="preserve">
+    <value>주소 나라</value>
+  </data>
+  <data name="Address_State_Region" xml:space="preserve">
+    <value>주 지역 주소</value>
+  </data>
+  <data name="Address_Street" xml:space="preserve">
+    <value>거리 주소</value>
+  </data>
+  <data name="Address_Town" xml:space="preserve">
+    <value>주소 타운</value>
+  </data>
+  <data name="Address1" xml:space="preserve">
+    <value>주소 1</value>
+  </data>
+  <data name="Address2" xml:space="preserve">
+    <value>주소 2</value>
+  </data>
+  <data name="Administrative_Controls" xml:space="preserve">
+    <value>관리 제어</value>
+  </data>
+  <data name="Affected_By" xml:space="preserve">
+    <value>에 의해 영향을받는</value>
+  </data>
+  <data name="Affected_Task" xml:space="preserve">
+    <value>영향을받는 작업</value>
+  </data>
+  <data name="Alerts" xml:space="preserve">
+    <value>경고</value>
+  </data>
+  <data name="All_My_Task" xml:space="preserve">
+    <value>내 모든 작업</value>
+  </data>
+  <data name="Altitude" xml:space="preserve">
+    <value>고도</value>
+  </data>
+  <data name="Applied_Group_Name" xml:space="preserve">
+    <value>적용된 그룹 이름</value>
+  </data>
+  <data name="Approval_By" xml:space="preserve">
+    <value>승인</value>
+  </data>
+  <data name="ApprovalBy_not_defined" xml:space="preserve">
+    <value>정의되지 승인</value>
+  </data>
+  <data name="ApprovalBy_not_found" xml:space="preserve">
+    <value>찾을 수 없습니다 승인</value>
+  </data>
+  <data name="Are_you_sure_to_add_required_attributes_to_model_for_all_components" xml:space="preserve">
+    <value>당신이 필요한 추가 하시겠습니까 모든 구성 요소에 대한 모델 속성?</value>
+  </data>
+  <data name="Are_you_sure_to_add_required_attributes_to_model_for_all_facilities" xml:space="preserve">
+    <value>당신이 필요한 추가 하시겠습니까 모든 시설 모델 속성?</value>
+  </data>
+  <data name="Are_you_sure_to_add_required_attributes_to_model_for_all_spaces" xml:space="preserve">
+    <value>당신이 필요한 추가 하시겠습니까 모든 공간에 대한 모델 속성?</value>
+  </data>
+  <data name="Are_you_sure_to_add_required_attributes_to_model_for_all_systems" xml:space="preserve">
+    <value>당신이 필요한 추가 하시겠습니까 모든 시스템에 대한 모델 속성?</value>
+  </data>
+  <data name="Are_you_sure_to_add_required_attributes_to_model_for_all_types" xml:space="preserve">
+    <value>당신이 필요한 추가 하시겠습니까는 모든 종류의 모델 속성?</value>
+  </data>
+  <data name="Area" xml:space="preserve">
+    <value>지역</value>
+  </data>
+  <data name="Area_Measurement" xml:space="preserve">
+    <value>지역 측정</value>
+  </data>
+  <data name="Space_Names" xml:space="preserve">
+    <value>지역 봉사</value>
+  </data>
+  <data name="Area_Units" xml:space="preserve">
+    <value>지역 단위</value>
+  </data>
+  <data name="Asset" xml:space="preserve">
+    <value>자산</value>
+  </data>
+  <data name="Asset_Condition_Report" xml:space="preserve">
+    <value>자산 상태 보고서</value>
+  </data>
+  <data name="Asset_Identifier" xml:space="preserve">
+    <value>자산 식별자</value>
+  </data>
+  <data name="Asset_Name" xml:space="preserve">
+    <value>자산 이름</value>
+  </data>
+  <data name="Asset_Profile" xml:space="preserve">
+    <value>자산 프로필</value>
+  </data>
+  <data name="Asset_Type" xml:space="preserve">
+    <value>자산 유형</value>
+  </data>
+  <data name="Assets" xml:space="preserve">
+    <value>자산</value>
+  </data>
+  <data name="Assign" xml:space="preserve">
+    <value>할당</value>
+  </data>
+  <data name="Assign_As_Major" xml:space="preserve">
+    <value>주요 지정</value>
+  </data>
+  <data name="Assign_As_Project_Contact" xml:space="preserve">
+    <value>로 프로젝트 연락 할당</value>
+  </data>
+  <data name="Assign_Asset" xml:space="preserve">
+    <value>자산 할당</value>
+  </data>
+  <data name="Assign_Category" xml:space="preserve">
+    <value>범주를 할당</value>
+  </data>
+  <data name="Assign_Component" xml:space="preserve">
+    <value>할당 구성 요소</value>
+  </data>
+  <data name="Assign_Contacts_to_Project" xml:space="preserve">
+    <value>로젝트에 연락처를 할당</value>
+  </data>
+  <data name="Assign_Contacts_To_The_Project" xml:space="preserve">
+    <value>프로젝트에 연락처를 할당</value>
+  </data>
+  <data name="Assign_Contractor" xml:space="preserve">
+    <value>계약자 지정</value>
+  </data>
+  <data name="Assign_Designer" xml:space="preserve">
+    <value>디자이너를 할당</value>
+  </data>
+  <data name="Assign_DesignerContractor" xml:space="preserve">
+    <value>디자이너 / 도급 업체 지정</value>
+  </data>
+  <data name="Assign_Existing_Facilities" xml:space="preserve">
+    <value>기존 시설 지정</value>
+  </data>
+  <data name="Assign_Facility" xml:space="preserve">
+    <value>지정 시설</value>
+  </data>
+  <data name="Assign_Manufacturer" xml:space="preserve">
+    <value>제조업체 지정</value>
+  </data>
+  <data name="Assign_MasterFormat" xml:space="preserve">
+    <value>MasterFormat 지정</value>
+  </data>
+  <data name="Assign_Omniclass" xml:space="preserve">
+    <value>하고 OmniClass 지정</value>
+  </data>
+  <data name="Assign_Organization" xml:space="preserve">
+    <value>조직을 할당</value>
+  </data>
+  <data name="Assign_Organization_To_Client" xml:space="preserve">
+    <value>클라이언트에 조직을 할당</value>
+  </data>
+  <data name="Assign_Product" xml:space="preserve">
+    <value>제품 지정</value>
+  </data>
+  <data name="Assign_Project_Role" xml:space="preserve">
+    <value>프로젝트 역할을 할당</value>
+  </data>
+  <data name="Assign_Project_roles_to_Contacts" xml:space="preserve">
+    <value>연락처에 프로젝트 역할을 지정</value>
+  </data>
+  <data name="Assign_Space" xml:space="preserve">
+    <value>공간을 할당</value>
+  </data>
+  <data name="Assign_SubAssembly" xml:space="preserve">
+    <value>서브 어셈블리를 할당</value>
+  </data>
+  <data name="Assign_Subsystem" xml:space="preserve">
+    <value>서브 시스템을 할당</value>
+  </data>
+  <data name="Assign_Subsystems" xml:space="preserve">
+    <value>할당 서브 시스템</value>
+  </data>
+  <data name="Assign_Supplier" xml:space="preserve">
+    <value>공급 업체 지정</value>
+  </data>
+  <data name="Assign_System" xml:space="preserve">
+    <value>시스템을 할당</value>
+  </data>
+  <data name="Assign_To" xml:space="preserve">
+    <value>으로 지정</value>
+  </data>
+  <data name="Assign_UniClass" xml:space="preserve">
+    <value>UniClass 지정</value>
+  </data>
+  <data name="Assign_UniFormat" xml:space="preserve">
+    <value>통합 식을 할당</value>
+  </data>
+  <data name="Assigned_Classifications" xml:space="preserve">
+    <value>할당 된 분류</value>
+  </data>
+  <data name="Assigned_To" xml:space="preserve">
+    <value>할당 대상</value>
+  </data>
+  <data name="Attribute" xml:space="preserve">
+    <value>속성</value>
+  </data>
+  <data name="Attribute_Description" xml:space="preserve">
+    <value>속성 설명</value>
+  </data>
+  <data name="Attribute_Details" xml:space="preserve">
+    <value>세부 속성</value>
+  </data>
+  <data name="Attribute_Group" xml:space="preserve">
+    <value>그룹 속성</value>
+  </data>
+  <data name="Attribute_Group_List" xml:space="preserve">
+    <value>그룹 목록 속성</value>
+  </data>
+  <data name="Attribute_Group_Name" xml:space="preserve">
+    <value>그룹 이름 속성</value>
+  </data>
+  <data name="Attribute_Name" xml:space="preserve">
+    <value>속성 이름</value>
+  </data>
+  <data name="Attribute_Template" xml:space="preserve">
+    <value>템플릿 속성</value>
+  </data>
+  <data name="Attribute_Version" xml:space="preserve">
+    <value>버전 속성</value>
+  </data>
+  <data name="AttributeName" xml:space="preserve">
+    <value>AttributeName에</value>
+  </data>
+  <data name="Attributes" xml:space="preserve">
+    <value>속성</value>
+  </data>
+  <data name="Attributes_added_successfully" xml:space="preserve">
+    <value>속성은 성공적으로 추가</value>
+  </data>
+  <data name="Authentication_error" xml:space="preserve">
+    <value>인증 오류</value>
+  </data>
+  <data name="Auto_map_documents" xml:space="preserve">
+    <value>자동지도 문서</value>
+  </data>
+  <data name="Average_PPC" xml:space="preserve">
+    <value>평균 PPC</value>
+  </data>
+  <data name="Back" xml:space="preserve">
+    <value>돌아 가기</value>
+  </data>
+  <data name="Barcode" xml:space="preserve">
+    <value>바코드</value>
+  </data>
+  <data name="Barcode_Height" xml:space="preserve">
+    <value>바코드 높이</value>
+  </data>
+  <data name="Barcode_Per_Page" xml:space="preserve">
+    <value>페이지 당 바코드</value>
+  </data>
+  <data name="Barcode_Preview" xml:space="preserve">
+    <value>바코드 미리보기</value>
+  </data>
+  <data name="Barcode_Print_Option" xml:space="preserve">
+    <value>바코드 인쇄 옵션</value>
+  </data>
+  <data name="Barcode_Sample" xml:space="preserve">
+    <value>바코드 샘플</value>
+  </data>
+  <data name="Barcode_type" xml:space="preserve">
+    <value>바코드 유형</value>
+  </data>
+  <data name="Barcode_Width" xml:space="preserve">
+    <value>바코드 폭</value>
+  </data>
+  <data name="Barcode_With_Data" xml:space="preserve">
+    <value>데이터와 바코드</value>
+  </data>
+  <data name="Barcode_Without_Data" xml:space="preserve">
+    <value>데이터없이 바코드</value>
+  </data>
+  <data name="BAS_Information" xml:space="preserve">
+    <value>BAS 정보</value>
+  </data>
+  <data name="BASServer" xml:space="preserve">
+    <value>BAS 서버</value>
+  </data>
+  <data name="BAS_Attribute_History" xml:space="preserve">
+    <value>BAS_Attribute_History</value>
+  </data>
+  <data name="Password_Rule_2" xml:space="preserve">
+    <value>길이가 여덟 (8) 문자의 최소 수</value>
+  </data>
+  <data name="Password_Rule_4" xml:space="preserve">
+    <value>기억은한다; </value>
+  </data>
+  <data name="Password_Rule_9" xml:space="preserve">
+    <value>개인 수</value>
+  </data>
+  <data name="BIM" xml:space="preserve">
+    <value>BIM</value>
+  </data>
+  <data name="BIM_Connector_Installer" xml:space="preserve">
+    <value>BIM 커넥터 설치</value>
+  </data>
+  <data name="BIM_Model_Server" xml:space="preserve">
+    <value>BIM 모델 서버</value>
+  </data>
+  <data name="BIM_Server" xml:space="preserve">
+    <value>BIM 서버</value>
+  </data>
+  <data name="BIM_Use_Case" xml:space="preserve">
+    <value>BIM 활용 사례</value>
+  </data>
+  <data name="Browse_By_Manufacturer" xml:space="preserve">
+    <value>제조사으로 검색</value>
+  </data>
+  <data name="Building_Automation_System_Server" xml:space="preserve">
+    <value>빌딩 자동화 시스템 서버</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>취소</value>
+  </data>
+  <data name="Category" xml:space="preserve">
+    <value>카테고리</value>
+  </data>
+  <data name="Chance" xml:space="preserve">
+    <value>기회</value>
+  </data>
+  <data name="Change_Password" xml:space="preserve">
+    <value>암호 변경</value>
+  </data>
+  <data name="Changed_By" xml:space="preserve">
+    <value>으로 변경</value>
+  </data>
+  <data name="Check_All_Boxes" xml:space="preserve">
+    <value>모든 상자를 확인</value>
+  </data>
+  <data name="City" xml:space="preserve">
+    <value>도시</value>
+  </data>
+  <data name="City_State" xml:space="preserve">
+    <value>도시 국가</value>
+  </data>
+  <data name="City_State_1" xml:space="preserve">
+    <value>시, 주</value>
+  </data>
+  <data name="Classification_Detail_Code" xml:space="preserve">
+    <value>분류 상세 코드</value>
+  </data>
+  <data name="Classification_Detail_Name" xml:space="preserve">
+    <value>분류 상세 명</value>
+  </data>
+  <data name="Classifications" xml:space="preserve">
+    <value>분류</value>
+  </data>
+  <data name="Clear" xml:space="preserve">
+    <value>지우기</value>
+  </data>
+  <data name="Client" xml:space="preserve">
+    <value>클라이언트</value>
+  </data>
+  <data name="Client_Name" xml:space="preserve">
+    <value>클라이언트 이름</value>
+  </data>
+  <data name="Clients" xml:space="preserve">
+    <value>클라이언트</value>
+  </data>
+  <data name="Clone" xml:space="preserve">
+    <value>복제</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>닫기</value>
+  </data>
+  <data name="Close_Window" xml:space="preserve">
+    <value>창 닫기</value>
+  </data>
+  <data name="CO_ASI" xml:space="preserve">
+    <value>CO / ASI</value>
+  </data>
+  <data name="COBie" xml:space="preserve">
+    <value>COBie</value>
+  </data>
+  <data name="COBie_Data_Quality_Control" xml:space="preserve">
+    <value>COBie 데이터 품질 관리</value>
+  </data>
+  <data name="COBieDataQualityControl" xml:space="preserve">
+    <value>COBie 데이터 품질 관리</value>
+  </data>
+  <data name="COBie_File_Export" xml:space="preserve">
+    <value>COBie 수출 파일</value>
+  </data>
+  <data name="Cobie_File_Import" xml:space="preserve">
+    <value>COBie 파일 가져 오기</value>
+  </data>
+  <data name="COBie_QC" xml:space="preserve">
+    <value>COBie QC</value>
+  </data>
+  <data name="COBie_QualityControl" xml:space="preserve">
+    <value>COBie 품질 관리 설정에 대한</value>
+  </data>
+  <data name="Collapse" xml:space="preserve">
+    <value>축소</value>
+  </data>
+  <data name="Color" xml:space="preserve">
+    <value>색상</value>
+  </data>
+  <data name="Commitment_Status" xml:space="preserve">
+    <value>약속 상태</value>
+  </data>
+  <data name="Company" xml:space="preserve">
+    <value>회사</value>
+  </data>
+  <data name="Component" xml:space="preserve">
+    <value>구성 요소</value>
+  </data>
+  <data name="Component_Name" xml:space="preserve">
+    <value>구성 요소 이름</value>
+  </data>
+  <data name="Component_Profile" xml:space="preserve">
+    <value>구성 요소 프로필</value>
+  </data>
+  <data name="Components" xml:space="preserve">
+    <value>구성 요소</value>
+  </data>
+  <data name="Condition" xml:space="preserve">
+    <value>조건</value>
+  </data>
+  <data name="Condition_type" xml:space="preserve">
+    <value>조건 유형</value>
+  </data>
+  <data name="Configuration" xml:space="preserve">
+    <value>구성</value>
+  </data>
+  <data name="Configuration_Name" xml:space="preserve">
+    <value>구성 이름</value>
+  </data>
+  <data name="Confirm_Password" xml:space="preserve">
+    <value>비밀번호 확인</value>
+  </data>
+  <data name="Connection_String" xml:space="preserve">
+    <value>연결 문자열</value>
+  </data>
+  <data name="Constraint" xml:space="preserve">
+    <value>제약</value>
+  </data>
+  <data name="Constraint_Log" xml:space="preserve">
+    <value>제약 로그인</value>
+  </data>
+  <data name="Constraints" xml:space="preserve">
+    <value>제약</value>
+  </data>
+  <data name="Contact_Email" xml:space="preserve">
+    <value>담당자 이메일</value>
+  </data>
+  <data name="Contacts" xml:space="preserve">
+    <value>연락처</value>
+  </data>
+  <data name="Password_Rule_11" xml:space="preserve">
+    <value>일반적인 적절한 이름, 로그인 ID, 이메일 주소, 이니셜, 이름, 중간 또는 마지막 이름을 포함</value>
+  </data>
+  <data name="Password_Rule_5" xml:space="preserve">
+    <value>세에서 적어도 1 개의 문자를 포함하는 (3)의 다음과 같은 범주</value>
+  </data>
+  <data name="Contains" xml:space="preserve">
+    <value>포함</value>
+  </data>
+  <data name="Contractor" xml:space="preserve">
+    <value>계약자</value>
+  </data>
+  <data name="Count" xml:space="preserve">
+    <value>카운트</value>
+  </data>
+  <data name="Country" xml:space="preserve">
+    <value>나라</value>
+  </data>
+  <data name="Create_Attribute_Group" xml:space="preserve">
+    <value>그룹 속성 만들기</value>
+  </data>
+  <data name="Create_Clones" xml:space="preserve">
+    <value>클론 만들기</value>
+  </data>
+  <data name="Create_Required_Attribute_Group" xml:space="preserve">
+    <value>필수 그룹 속성 만들기</value>
+  </data>
+  <data name="Created_By" xml:space="preserve">
+    <value>만든 사람</value>
+  </data>
+  <data name="Created_By_1" xml:space="preserve">
+    <value>만든이 :</value>
+  </data>
+  <data name="Created_On" xml:space="preserve">
+    <value>에서 만든</value>
+  </data>
+  <data name="Created_On_1" xml:space="preserve">
+    <value>에서 만든 :</value>
+  </data>
+  <data name="Crew_Leader" xml:space="preserve">
+    <value>크루 리더</value>
+  </data>
+  <data name="Crew_Profile" xml:space="preserve">
+    <value>승무원 프로필</value>
+  </data>
+  <data name="Crews" xml:space="preserve">
+    <value>대원</value>
+  </data>
+  <data name="Criteria" xml:space="preserve">
+    <value>기준</value>
+  </data>
+  <data name="Currency_Units" xml:space="preserve">
+    <value>통화 단위</value>
+  </data>
+  <data name="Current_Password" xml:space="preserve">
+    <value>현재 비밀번호</value>
+  </data>
+  <data name="Custom_Data" xml:space="preserve">
+    <value>사용자 지정 데이터</value>
+  </data>
+  <data name="Custom_Hierarchy_Name" xml:space="preserve">
+    <value>사용자 지정 계층 구조 이름</value>
+  </data>
+  <data name="Custom_Name" xml:space="preserve">
+    <value>사용자 이름</value>
+  </data>
+  <data name="Custom_Reports" xml:space="preserve">
+    <value>사용자 정의 보고서</value>
+  </data>
+  <data name="Dashboard" xml:space="preserve">
+    <value>대시 보드</value>
+  </data>
+  <data name="Data_Provider" xml:space="preserve">
+    <value>데이터 공급자</value>
+  </data>
+  <data name="Database_Name" xml:space="preserve">
+    <value>데이터베이스 이름</value>
+  </data>
+  <data name="Date" xml:space="preserve">
+    <value>날짜</value>
+  </data>
+  <data name="Day" xml:space="preserve">
+    <value>일</value>
+  </data>
+  <data name="Days" xml:space="preserve">
+    <value>일</value>
+  </data>
+  <data name="Deadline" xml:space="preserve">
+    <value>마감</value>
+  </data>
+  <data name="Default_Value" xml:space="preserve">
+    <value>기본값</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>삭제</value>
+  </data>
+  <data name="Delete_Attribute" xml:space="preserve">
+    <value>속성 삭제</value>
+  </data>
+  <data name="Delete_Attributes" xml:space="preserve">
+    <value>속성 삭제</value>
+  </data>
+  <data name="Delete_File" xml:space="preserve">
+    <value>파일 삭제</value>
+  </data>
+  <data name="Demand_Response" xml:space="preserve">
+    <value>수요 반응</value>
+  </data>
+  <data name="Deny" xml:space="preserve">
+    <value>거부</value>
+  </data>
+  <data name="Department" xml:space="preserve">
+    <value>부서</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>설명</value>
+  </data>
+  <data name="Description_Comments" xml:space="preserve">
+    <value>설명 / 댓글</value>
+  </data>
+  <data name="Designer" xml:space="preserve">
+    <value>디자이너</value>
+  </data>
+  <data name="Designer_Contractor" xml:space="preserve">
+    <value>디자이너 / 도급</value>
+  </data>
+  <data name="Desktop_Client_Installer" xml:space="preserve">
+    <value>데스크톱 클라이언트 설치</value>
+  </data>
+  <data name="Details" xml:space="preserve">
+    <value>자세한 사항</value>
+  </data>
+  <data name="Password_Rule_8" xml:space="preserve">
+    <value>숫자 (0 ~ 9)</value>
+  </data>
+  <data name="Directory_Name" xml:space="preserve">
+    <value>디렉토리 이름</value>
+  </data>
+  <data name="Display_Columns" xml:space="preserve">
+    <value>표시 열</value>
+  </data>
+  <data name="Document" xml:space="preserve">
+    <value>문서</value>
+  </data>
+  <data name="Document_Checklist" xml:space="preserve">
+    <value>문서 체크리스트</value>
+  </data>
+  <data name="Document_Name" xml:space="preserve">
+    <value>문서 이름</value>
+  </data>
+  <data name="Document_Profile" xml:space="preserve">
+    <value>문서 프로필</value>
+  </data>
+  <data name="Document_Template" xml:space="preserve">
+    <value>문서 서식</value>
+  </data>
+  <data name="Document_Type" xml:space="preserve">
+    <value>문서 형식</value>
+  </data>
+  <data name="Documnet_type" xml:space="preserve">
+    <value>문서 형식</value>
+  </data>
+  <data name="Document_type_not_defined" xml:space="preserve">
+    <value>문서 타입 정의되지</value>
+  </data>
+  <data name="Document_type_not_found" xml:space="preserve">
+    <value>문서 유형을 찾을 수 없습니다</value>
+  </data>
+  <data name="Documents" xml:space="preserve">
+    <value>문서</value>
+  </data>
+  <data name="Done" xml:space="preserve">
+    <value>완료</value>
+  </data>
+  <data name="Download" xml:space="preserve">
+    <value>다운로드</value>
+  </data>
+  <data name="Download_Sample_COBie_File" xml:space="preserve">
+    <value>다운로드 샘플 COBie 파일</value>
+  </data>
+  <data name="Due_Date" xml:space="preserve">
+    <value>마감일</value>
+  </data>
+  <data name="Duration" xml:space="preserve">
+    <value>시간</value>
+  </data>
+  <data name="Duration_Unit" xml:space="preserve">
+    <value>시간 단위</value>
+  </data>
+  <data name="Password_Rule_15" xml:space="preserve">
+    <value>선택한 각 암호는 새와 다르다</value>
+  </data>
+  <data name="Forgot_password_message_2" xml:space="preserve">
+    <value>EcoDomus 암호 정보로 당신에게 이메일을 보내드립니다</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>편집</value>
+  </data>
+  <data name="Edit_Classification" xml:space="preserve">
+    <value>편집 분류</value>
+  </data>
+  <data name="Edit_Designer_Contractor" xml:space="preserve">
+    <value>편집 디자이너 / 도급</value>
+  </data>
+  <data name="Edit_Impact" xml:space="preserve">
+    <value>편집 Imapct</value>
+  </data>
+  <data name="Edit_Location_Hierarchy" xml:space="preserve">
+    <value>편집 위치 계층 구조</value>
+  </data>
+  <data name="Edit_Master_Format" xml:space="preserve">
+    <value>편집 마스터 형식</value>
+  </data>
+  <data name="Edit_Omniclass" xml:space="preserve">
+    <value>편집하고 OmniClass</value>
+  </data>
+  <data name="Edit_OmniClass_Masterformat_Uniformat" xml:space="preserve">
+    <value>편집하고 OmniClass / MasterFormat / 통합 식</value>
+  </data>
+  <data name="Edit_Uni_Format" xml:space="preserve">
+    <value>편집 유니 형식</value>
+  </data>
+  <data name="Elapsed_Time" xml:space="preserve">
+    <value>경과 시간</value>
+  </data>
+  <data name="Elevation" xml:space="preserve">
+    <value>고도</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>이메일</value>
+  </data>
+  <data name="Enabled" xml:space="preserve">
+    <value>사용</value>
+  </data>
+  <data name="End" xml:space="preserve">
+    <value>끝</value>
+  </data>
+  <data name="End_Date" xml:space="preserve">
+    <value>종료 날짜</value>
+  </data>
+  <data name="End_Date_Time" xml:space="preserve">
+    <value>종료 날짜 시간</value>
+  </data>
+  <data name="Energy_Model" xml:space="preserve">
+    <value>에너지 모델</value>
+  </data>
+  <data name="Energy_Simulation" xml:space="preserve">
+    <value>에너지 시뮬레이션</value>
+  </data>
+  <data name="Engineering_Controls" xml:space="preserve">
+    <value>공학적 관리</value>
+  </data>
+  <data name="Forgot_password_message_1" xml:space="preserve">
+    <value>다음 제출을 클릭 이메일 주소와 사용자 이름을 입력</value>
+  </data>
+  <data name="Entity" xml:space="preserve">
+    <value>엔티티</value>
+  </data>
+  <data name="Entity_Name" xml:space="preserve">
+    <value>엔티티 이름</value>
+  </data>
+  <data name="Entity_Names" xml:space="preserve">
+    <value>엔티티 이름</value>
+  </data>
+  <data name="Equal_To" xml:space="preserve">
+    <value>같음</value>
+  </data>
+  <data name="Equipment" xml:space="preserve">
+    <value>장비</value>
+  </data>
+  <data name="Equipment_Id" xml:space="preserve">
+    <value>장비 이드</value>
+  </data>
+  <data name="Error_sending_Email" xml:space="preserve">
+    <value>이메일을 전송 오류</value>
+  </data>
+  <data name="Errors" xml:space="preserve">
+    <value>오류</value>
+  </data>
+  <data name="Estimated_Time" xml:space="preserve">
+    <value>예상 시간</value>
+  </data>
+  <data name="Expected_Life" xml:space="preserve">
+    <value>예상 수명</value>
+  </data>
+  <data name="Export" xml:space="preserve">
+    <value>수출</value>
+  </data>
+  <data name="Export_COBie_File" xml:space="preserve">
+    <value>수출 COBie 파일</value>
+  </data>
+  <data name="Export_Component" xml:space="preserve">
+    <value>수출 구성 요소</value>
+  </data>
+  <data name="Export_Contact" xml:space="preserve">
+    <value>연락처 내보내기</value>
+  </data>
+  <data name="Export_Data" xml:space="preserve">
+    <value>데이터 내보내기</value>
+  </data>
+  <data name="Export_Documents" xml:space="preserve">
+    <value>수출 문서</value>
+  </data>
+  <data name="Export_Project_Contacts" xml:space="preserve">
+    <value>수출 프로젝트 연락처</value>
+  </data>
+  <data name="Export_To_Excel" xml:space="preserve">
+    <value>Excel로 내보내기</value>
+  </data>
+  <data name="Export_To_PDF" xml:space="preserve">
+    <value>PDF로 내보내기</value>
+  </data>
+  <data name="ExportedBy" xml:space="preserve">
+    <value>으로 수출</value>
+  </data>
+  <data name="ExportedOn" xml:space="preserve">
+    <value>에 수출</value>
+  </data>
+  <data name="Ext_System_Facility" xml:space="preserve">
+    <value>내선 시스템 시설</value>
+  </data>
+  <data name="Ext_System_Site" xml:space="preserve">
+    <value>Ext.System 사이트</value>
+  </data>
+  <data name="External_System" xml:space="preserve">
+    <value>외부 시스템</value>
+  </data>
+  <data name="External_System_Integration" xml:space="preserve">
+    <value>외부 시스템 통합</value>
+  </data>
+  <data name="External_System_Name" xml:space="preserve">
+    <value>외부 시스템 이름</value>
+  </data>
+  <data name="Facilities" xml:space="preserve">
+    <value>시설</value>
+  </data>
+  <data name="Facility" xml:space="preserve">
+    <value>시설</value>
+  </data>
+  <data name="Facility_Mapping" xml:space="preserve">
+    <value>시설 매핑</value>
+  </data>
+  <data name="Facility_Name" xml:space="preserve">
+    <value>시설 명</value>
+  </data>
+  <data name="Facility_Profile" xml:space="preserve">
+    <value>시설 개요</value>
+  </data>
+  <data name="Family_Name" xml:space="preserve">
+    <value>가족 이름</value>
+  </data>
+  <data name="Field" xml:space="preserve">
+    <value>필드</value>
+  </data>
+  <data name="File" xml:space="preserve">
+    <value>파일</value>
+  </data>
+  <data name="File_Name" xml:space="preserve">
+    <value>파일 이름</value>
+  </data>
+  <data name="File_name_format" xml:space="preserve">
+    <value>파일 이름 형식</value>
+  </data>
+  <data name="filepath" xml:space="preserve">
+    <value>파일 경로</value>
+  </data>
+  <data name="File_Size" xml:space="preserve">
+    <value>파일 크기</value>
+  </data>
+  <data name="filesize" xml:space="preserve">
+    <value>파일 크기</value>
+  </data>
+  <data name="Find" xml:space="preserve">
+    <value>찾기</value>
+  </data>
+  <data name="Find_Asset" xml:space="preserve">
+    <value>자산 찾기</value>
+  </data>
+  <data name="Find_Data_Point" xml:space="preserve">
+    <value>데이터 포인트 찾기</value>
+  </data>
+  <data name="Find_Location" xml:space="preserve">
+    <value>위치 찾기</value>
+  </data>
+  <data name="Finish" xml:space="preserve">
+    <value>마침</value>
+  </data>
+  <data name="Finish_Time" xml:space="preserve">
+    <value>끝나는 시간</value>
+  </data>
+  <data name="First_Name" xml:space="preserve">
+    <value>이름</value>
+  </data>
+  <data name="Floor" xml:space="preserve">
+    <value>층</value>
+  </data>
+  <data name="Floor_Name" xml:space="preserve">
+    <value>바닥 이름</value>
+  </data>
+  <data name="Floor_Name_Grid" xml:space="preserve">
+    <value>바닥 이름 그리드</value>
+  </data>
+  <data name="Floor_Profile" xml:space="preserve">
+    <value>바닥 프로필</value>
+  </data>
+  <data name="Floors" xml:space="preserve">
+    <value>마루</value>
+  </data>
+  <data name="Floor_Spaces" xml:space="preserve">
+    <value>FloorSpaces</value>
+  </data>
+  <data name="Forgot_Password" xml:space="preserve">
+    <value>비밀번호 찾기</value>
+  </data>
+  <data name="Frequency" xml:space="preserve">
+    <value>주파수</value>
+  </data>
+  <data name="Frequency_Unit" xml:space="preserve">
+    <value>주파수 단위</value>
+  </data>
+  <data name="Friday" xml:space="preserve">
+    <value>금요일</value>
+  </data>
+  <data name="From" xml:space="preserve">
+    <value>에서</value>
+  </data>
+  <data name="Functional_Area" xml:space="preserve">
+    <value>기능 영역</value>
+  </data>
+  <data name="Generate_Barcode" xml:space="preserve">
+    <value>바코드를 생성</value>
+  </data>
+  <data name="Generate_COBie_File" xml:space="preserve">
+    <value>COBie 파일을 생성</value>
+  </data>
+  <data name="Generate_Component_Analysis_Report" xml:space="preserve">
+    <value>구성 요소 분석 보고서를 생성</value>
+  </data>
+  <data name="Generate_Excel_File" xml:space="preserve">
+    <value>엑셀 파일을 생성</value>
+  </data>
+  <data name="Generate_Report" xml:space="preserve">
+    <value>보고서 생성</value>
+  </data>
+  <data name="Generated_Files" xml:space="preserve">
+    <value>생성 된 파일</value>
+  </data>
+  <data name="Get_Location" xml:space="preserve">
+    <value>위치 가져 오기</value>
+  </data>
+  <data name="Get_Updates" xml:space="preserve">
+    <value>업데이트 받기</value>
+  </data>
+  <data name="Given_Name" xml:space="preserve">
+    <value>지정된 이름</value>
+  </data>
+  <data name="Greater_Than" xml:space="preserve">
+    <value>보다 큼</value>
+  </data>
+  <data name="Gross_Area" xml:space="preserve">
+    <value>연면적</value>
+  </data>
+  <data name="Group" xml:space="preserve">
+    <value>그룹</value>
+  </data>
+  <data name="group_name" xml:space="preserve">
+    <value>그룹 이름</value>
+  </data>
+  <data name="Password_Rule_12" xml:space="preserve">
+    <value>마지막 년 또는 마지막 세 암호에 사용 된, 양자 중 고액 (율)</value>
+  </data>
+  <data name="Hazard" xml:space="preserve">
+    <value>위험</value>
+  </data>
+  <data name="Height" xml:space="preserve">
+    <value>높이</value>
+  </data>
+  <data name="Help" xml:space="preserve">
+    <value>도움말</value>
+  </data>
+  <data name="Hierarchy" xml:space="preserve">
+    <value>계층 구조</value>
+  </data>
+  <data name="History" xml:space="preserve">
+    <value>역사</value>
+  </data>
+  <data name="IAgree" xml:space="preserve">
+    <value>나는 동의</value>
+  </data>
+  <data name="IDecline" xml:space="preserve">
+    <value>나는 거부</value>
+  </data>
+  <data name="ID" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="Image" xml:space="preserve">
+    <value>이미지</value>
+  </data>
+  <data name="Impact" xml:space="preserve">
+    <value>충격</value>
+  </data>
+  <data name="Impacts" xml:space="preserve">
+    <value>영향</value>
+  </data>
+  <data name="Implementation" xml:space="preserve">
+    <value>구현</value>
+  </data>
+  <data name="Import" xml:space="preserve">
+    <value>가져 오기</value>
+  </data>
+  <data name="Import_Data" xml:space="preserve">
+    <value>데이터 가져 오기</value>
+  </data>
+  <data name="Import_Export" xml:space="preserve">
+    <value>가져 오기 / 내보내기</value>
+  </data>
+  <data name="Imported_by" xml:space="preserve">
+    <value>수입</value>
+  </data>
+  <data name="Imported_Files" xml:space="preserve">
+    <value>가져온 파일</value>
+  </data>
+  <data name="Imported_on" xml:space="preserve">
+    <value>에 수입</value>
+  </data>
+  <data name="Inbox" xml:space="preserve">
+    <value>받은 편지함</value>
+  </data>
+  <data name="Initial_Sync" xml:space="preserve">
+    <value>초기 동기화</value>
+  </data>
+  <data name="Inspection_Profile" xml:space="preserve">
+    <value>검사 프로필</value>
+  </data>
+  <data name="Inspections" xml:space="preserve">
+    <value>검사</value>
+  </data>
+  <data name="Installation_Date" xml:space="preserve">
+    <value>설치 날짜</value>
+  </data>
+  <data name="Integration" xml:space="preserve">
+    <value>통합</value>
+  </data>
+  <data name="Interpolate" xml:space="preserve">
+    <value>보간</value>
+  </data>
+  <data name="Invalid_pattern" xml:space="preserve">
+    <value>잘못된 패턴</value>
+  </data>
+  <data name="Issue_Log" xml:space="preserve">
+    <value>문제 로그</value>
+  </data>
+  <data name="Issue_Name" xml:space="preserve">
+    <value>문제 이름</value>
+  </data>
+  <data name="Issue_Number" xml:space="preserve">
+    <value>문제 번호</value>
+  </data>
+  <data name="Issue_Profile" xml:space="preserve">
+    <value>문제 프로필</value>
+  </data>
+  <data name="Issue_Report" xml:space="preserve">
+    <value>문제 보고서</value>
+  </data>
+  <data name="Issue_Status" xml:space="preserve">
+    <value>문제 상태</value>
+  </data>
+  <data name="Issue_Type" xml:space="preserve">
+    <value>문제 유형</value>
+  </data>
+  <data name="Issues" xml:space="preserve">
+    <value>문제</value>
+  </data>
+  <data name="Password_Rule_13" xml:space="preserve">
+    <value>그것은 강력하게하는 것이 좋습니다</value>
+  </data>
+  <data name="Items_Completed" xml:space="preserve">
+    <value>항목 완료</value>
+  </data>
+  <data name="Items_Failed" xml:space="preserve">
+    <value>항목은 실패</value>
+  </data>
+  <data name="Items_In" xml:space="preserve">
+    <value>항목</value>
+  </data>
+  <data name="Items_Remaining" xml:space="preserve">
+    <value>나머지 항목</value>
+  </data>
+  <data name="Job" xml:space="preserve">
+    <value>작업</value>
+  </data>
+  <data name="Job_Template" xml:space="preserve">
+    <value>작업 템플릿</value>
+  </data>
+  <data name="Jobs" xml:space="preserve">
+    <value>채용</value>
+  </data>
+  <data name="JSN" xml:space="preserve">
+    <value>JSN</value>
+  </data>
+  <data name="JSN_Name" xml:space="preserve">
+    <value>JSN 이름</value>
+  </data>
+  <data name="Language" xml:space="preserve">
+    <value>언어</value>
+  </data>
+  <data name="Last_Name" xml:space="preserve">
+    <value>성 (姓)</value>
+  </data>
+  <data name="Last_Sync_Date" xml:space="preserve">
+    <value>마지막 동기화 날짜</value>
+  </data>
+  <data name="Latitude" xml:space="preserve">
+    <value>위도</value>
+  </data>
+  <data name="Lead_Organization" xml:space="preserve">
+    <value>리드 조직</value>
+  </data>
+  <data name="Less_Than" xml:space="preserve">
+    <value>보다 작음</value>
+  </data>
+  <data name="Level_Of_Details" xml:space="preserve">
+    <value>세부 사항의 수준</value>
+  </data>
+  <data name="Levels" xml:space="preserve">
+    <value>레벨</value>
+  </data>
+  <data name="Likelihood" xml:space="preserve">
+    <value>가능성</value>
+  </data>
+  <data name="Linear_Units" xml:space="preserve">
+    <value>선형 단위</value>
+  </data>
+  <data name="Link_Status" xml:space="preserve">
+    <value>링크 상태</value>
+  </data>
+  <data name="Link_to_Asset" xml:space="preserve">
+    <value>자산에 링크</value>
+  </data>
+  <data name="Link_to_Component" xml:space="preserve">
+    <value>구성 요소에 링크</value>
+  </data>
+  <data name="Link_to_Data" xml:space="preserve">
+    <value>데이터 링크</value>
+  </data>
+  <data name="Link_To_Space" xml:space="preserve">
+    <value>공간에 링크</value>
+  </data>
+  <data name="Linked_In_BIM" xml:space="preserve">
+    <value>BIM에 링크 된? </value>
+  </data>
+  <data name="Links" xml:space="preserve">
+    <value>링크</value>
+  </data>
+  <data name="Live" xml:space="preserve">
+    <value>라이브</value>
+  </data>
+  <data name="Location" xml:space="preserve">
+    <value>위치</value>
+  </data>
+  <data name="Location_Hierarchy" xml:space="preserve">
+    <value>위치 계층 구조</value>
+  </data>
+  <data name="Locations" xml:space="preserve">
+    <value>위치</value>
+  </data>
+  <data name="Locations_Hierarchy" xml:space="preserve">
+    <value>위치 계층 구조</value>
+  </data>
+  <data name="LOD_name" xml:space="preserve">
+    <value>LOD 이름</value>
+  </data>
+  <data name="LOD_QC" xml:space="preserve">
+    <value>LOD QC</value>
+  </data>
+  <data name="LogIn" xml:space="preserve">
+    <value>로그인</value>
+  </data>
+  <data name="Log_In" xml:space="preserve">
+    <value>로그인</value>
+  </data>
+  <data name="Login_As" xml:space="preserve">
+    <value>으로 로그인</value>
+  </data>
+  <data name="Logo" xml:space="preserve">
+    <value>로고</value>
+  </data>
+  <data name="Logout" xml:space="preserve">
+    <value>로그 아웃</value>
+  </data>
+  <data name="Long_Name" xml:space="preserve">
+    <value>긴 이름</value>
+  </data>
+  <data name="Longitude" xml:space="preserve">
+    <value>경도</value>
+  </data>
+  <data name="Lower_Limit_min" xml:space="preserve">
+    <value>하한 (분)</value>
+  </data>
+  <data name="Password_Rule_7" xml:space="preserve">
+    <value>소문자 (A-Z)</value>
+  </data>
+  <data name="Major" xml:space="preserve">
+    <value>주요</value>
+  </data>
+  <data name="Manufacturer" xml:space="preserve">
+    <value>제조업체</value>
+  </data>
+  <data name="Manufacturer_Mapping" xml:space="preserve">
+    <value>제조업체 매핑</value>
+  </data>
+  <data name="Manufacturer_Name" xml:space="preserve">
+    <value>제조업체 이름</value>
+  </data>
+  <data name="Map" xml:space="preserve">
+    <value>지도</value>
+  </data>
+  <data name="Map_Document" xml:space="preserve">
+    <value>지도 문서</value>
+  </data>
+  <data name="Map_Documents" xml:space="preserve">
+    <value>지도 문서</value>
+  </data>
+  <data name="Map_Integration" xml:space="preserve">
+    <value>지도 통합</value>
+  </data>
+  <data name="Master_File" xml:space="preserve">
+    <value>마스터 파일</value>
+  </data>
+  <data name="Master_Files" xml:space="preserve">
+    <value>마스터 파일</value>
+  </data>
+  <data name="Master_Format" xml:space="preserve">
+    <value>마스터 형식</value>
+  </data>
+  <data name="Masterformat" xml:space="preserve">
+    <value>MasterFormat</value>
+  </data>
+  <data name="message" xml:space="preserve">
+    <value>메시지</value>
+  </data>
+  <data name="Missing_Attribute" xml:space="preserve">
+    <value>누락 된 속성</value>
+  </data>
+  <data name="Missing_attributes" xml:space="preserve">
+    <value>누락 된 속성</value>
+  </data>
+  <data name="Missing_Attributes_Report" xml:space="preserve">
+    <value>누락 된 보고서 속성</value>
+  </data>
+  <data name="Missing_Information_Report" xml:space="preserve">
+    <value>정보 보고서를 누락</value>
+  </data>
+  <data name="Missing_Information_Report_Types" xml:space="preserve">
+    <value>정보 보고서 유형을 누락</value>
+  </data>
+  <data name="Mitigation" xml:space="preserve">
+    <value>완화</value>
+  </data>
+  <data name="Model_Number" xml:space="preserve">
+    <value>모델 번호</value>
+  </data>
+  <data name="Model_Server" xml:space="preserve">
+    <value>모델 서버</value>
+  </data>
+  <data name="Monday" xml:space="preserve">
+    <value>월요일</value>
+  </data>
+  <data name="Month" xml:space="preserve">
+    <value>월</value>
+  </data>
+  <data name="Months" xml:space="preserve">
+    <value>달</value>
+  </data>
+  <data name="Move_To_System" xml:space="preserve">
+    <value>시스템으로 이동</value>
+  </data>
+  <data name="My_Current_Week_Tasks" xml:space="preserve">
+    <value>내 현재 주 작업</value>
+  </data>
+  <data name="My_Profile" xml:space="preserve">
+    <value>내 프로필</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>이름</value>
+  </data>
+  <data name="Naming_Convention" xml:space="preserve">
+    <value>명명 규칙</value>
+  </data>
+  <data name="Navigation" xml:space="preserve">
+    <value>네비게이션</value>
+  </data>
+  <data name="Net_Area" xml:space="preserve">
+    <value>인터넷 영역</value>
+  </data>
+  <data name="Nevisworks_Version" xml:space="preserve">
+    <value>Nevisworks 버전</value>
+  </data>
+  <data name="New_Password" xml:space="preserve">
+    <value>새 암호</value>
+  </data>
+  <data name="Password_Rule_16" xml:space="preserve">
+    <value>새 암호가 현재 암호와 달라야합니다</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>다음</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>없음</value>
+  </data>
+  <data name="No_Filter" xml:space="preserve">
+    <value>어떤 필터가 없습니다</value>
+  </data>
+  <data name="No_Of_Users" xml:space="preserve">
+    <value>사용자의 없음</value>
+  </data>
+  <data name="No_schedule_is_available_for_this_project_yet" xml:space="preserve">
+    <value>어떤 일정은 아직이 프로젝트에 사용할 수 없습니다.</value>
+  </data>
+  <data name="Non_conformance_Reasons" xml:space="preserve">
+    <value>비 적합성 이유</value>
+  </data>
+  <data name="Non_conformance_Reasons_Report" xml:space="preserve">
+    <value>비 준수 보고서를 이유</value>
+  </data>
+  <data name="Sync_Bottom_Line" xml:space="preserve">
+    <value>참고 : 페이지가 자동으로 매 30 초 후 새로 고침됩니다</value>
+  </data>
+  <data name="Notification_Time" xml:space="preserve">
+    <value>알림 시간</value>
+  </data>
+  <data name="Notify" xml:space="preserve">
+    <value>알림</value>
+  </data>
+  <data name="Number_Of_Clones_To_Be_Created" xml:space="preserve">
+    <value>클론의 번호가 생성 될</value>
+  </data>
+  <data name="Number_of_Components" xml:space="preserve">
+    <value>구성 요소의 수</value>
+  </data>
+  <data name="Numeric_Type" xml:space="preserve">
+    <value>숫자 유형</value>
+  </data>
+  <data name="Object" xml:space="preserve">
+    <value>개체</value>
+  </data>
+  <data name="Office_Name" xml:space="preserve">
+    <value>사무실 이름</value>
+  </data>
+  <data name="Ok" xml:space="preserve">
+    <value>확인</value>
+  </data>
+  <data name="OmniClass" xml:space="preserve">
+    <value>하고 OmniClass</value>
+  </data>
+  <data name="OmniClass_2006" xml:space="preserve">
+    <value>하고 OmniClass 2006</value>
+  </data>
+  <data name="OmniClas_2010" xml:space="preserve">
+    <value>하고 OmniClass 2010</value>
+  </data>
+  <data name="Omni_Class_Type" xml:space="preserve">
+    <value>하고 OmniClass 유형</value>
+  </data>
+  <data name="OmniClass_Type" xml:space="preserve">
+    <value>하고 OmniClass 유형</value>
+  </data>
+  <data name="OmniClass_version" xml:space="preserve">
+    <value>하고 OmniClass 버전</value>
+  </data>
+  <data name="TestOneMore" xml:space="preserve">
+    <value>한 번 더 테스트</value>
+  </data>
+  <data name="Open" xml:space="preserve">
+    <value>열기</value>
+  </data>
+  <data name="Organization" xml:space="preserve">
+    <value>조직</value>
+  </data>
+  <data name="Organization_Acceptance" xml:space="preserve">
+    <value>조직의 수용</value>
+  </data>
+  <data name="Organization_ID" xml:space="preserve">
+    <value>조직 ID</value>
+  </data>
+  <data name="Organization_Name" xml:space="preserve">
+    <value>조직 이름</value>
+  </data>
+  <data name="Organization_Profile" xml:space="preserve">
+    <value>기업 프로필</value>
+  </data>
+  <data name="Organization_Type" xml:space="preserve">
+    <value>조직 유형</value>
+  </data>
+  <data name="Organizations" xml:space="preserve">
+    <value>조직</value>
+  </data>
+  <data name="Overall_Impact" xml:space="preserve">
+    <value>전반적으로 영향</value>
+  </data>
+  <data name="Owner" xml:space="preserve">
+    <value>소유자</value>
+  </data>
+  <data name="Owner_Organization" xml:space="preserve">
+    <value>소유자 조직</value>
+  </data>
+  <data name="Page_Title" xml:space="preserve">
+    <value>페이지 제목</value>
+  </data>
+  <data name="Parameter" xml:space="preserve">
+    <value>매개 변수</value>
+  </data>
+  <data name="Parent" xml:space="preserve">
+    <value>부모</value>
+  </data>
+  <data name="Parent_System" xml:space="preserve">
+    <value>상위 시스템</value>
+  </data>
+  <data name="Part_Number" xml:space="preserve">
+    <value>제품 번호</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>비밀번호</value>
+  </data>
+  <data name="Password_change_message" xml:space="preserve">
+    <value>비밀번호가 일치하지!</value>
+  </data>
+  <data name="Password_Policy" xml:space="preserve">
+    <value>암호 정책</value>
+  </data>
+  <data name="Password_Rule_14" xml:space="preserve">
+    <value>암호는 년에 두 번 변경 (예를 들어, 시계는 봄과 가을에 조정하는 경우)</value>
+  </data>
+  <data name="Password_Rule_10" xml:space="preserve">
+    <value>암호는 선택하지 않아야</value>
+  </data>
+  <data name="Password_Rule_1" xml:space="preserve">
+    <value>암호는 머스트</value>
+  </data>
+  <data name="PDF_Output_Format" xml:space="preserve">
+    <value>PDF 출력 형식</value>
+  </data>
+  <data name="Percent_Count" xml:space="preserve">
+    <value>비율 개수</value>
+  </data>
+  <data name="Percent_Plan_Complete" xml:space="preserve">
+    <value>비율 계획 전체보기</value>
+  </data>
+  <data name="Percent_Plan_Complete_Report" xml:space="preserve">
+    <value>비율 계획 완료 (PPC) 보고서</value>
+  </data>
+  <data name="Permissions" xml:space="preserve">
+    <value>권한</value>
+  </data>
+  <data name="Personal_Protective_equipment" xml:space="preserve">
+    <value>개인 보호 장비</value>
+  </data>
+  <data name="Phase" xml:space="preserve">
+    <value>단계</value>
+  </data>
+  <data name="Phase_Name" xml:space="preserve">
+    <value>상 이름</value>
+  </data>
+  <data name="Phone" xml:space="preserve">
+    <value>전화</value>
+  </data>
+  <data name="Phone_Number" xml:space="preserve">
+    <value>전화 번호</value>
+  </data>
+  <data name="Please_enter_number" xml:space="preserve">
+    <value>번호를 입력하세요</value>
+  </data>
+  <data name="Please_select_at_least_one_document" xml:space="preserve">
+    <value>적어도 하나의 문서를 선택하세요!</value>
+  </data>
+  <data name="Please_select_entity_from_the_dropdown" xml:space="preserve">
+    <value>드롭 다운에서 엔티티를 선택하세요</value>
+  </data>
+  <data name="Please_type_a_file_name_pattern" xml:space="preserve">
+    <value>, 파일 이름 패턴을 입력하세요</value>
+  </data>
+  <data name="PM_jobs" xml:space="preserve">
+    <value>PM 채용</value>
+  </data>
+  <data name="Postal_Code" xml:space="preserve">
+    <value>우편 번호</value>
+  </data>
+  <data name="Postal_Code_Zip" xml:space="preserve">
+    <value>우편 번호 우편 번호</value>
+  </data>
+  <data name="Preview" xml:space="preserve">
+    <value>미리보기</value>
+  </data>
+  <data name="Price" xml:space="preserve">
+    <value>가격</value>
+  </data>
+  <data name="Primary_Contact" xml:space="preserve">
+    <value>기본 연락처</value>
+  </data>
+  <data name="Priority" xml:space="preserve">
+    <value>우선 순위</value>
+  </data>
+  <data name="Priors" xml:space="preserve">
+    <value>사도</value>
+  </data>
+  <data name="Product" xml:space="preserve">
+    <value>제품</value>
+  </data>
+  <data name="ProductAttribute" xml:space="preserve">
+    <value>제품 속성</value>
+  </data>
+  <data name="Product_Attributes" xml:space="preserve">
+    <value>제품 속성</value>
+  </data>
+  <data name="Product_Description" xml:space="preserve">
+    <value>제품 설명</value>
+  </data>
+  <data name="Product_Document" xml:space="preserve">
+    <value>제품 문서</value>
+  </data>
+  <data name="Product_Documents" xml:space="preserve">
+    <value>제품 문서</value>
+  </data>
+  <data name="Product_Manufacturer" xml:space="preserve">
+    <value>제품 제조업체</value>
+  </data>
+  <data name="Product_Name" xml:space="preserve">
+    <value>제품 이름</value>
+  </data>
+  <data name="Product_Profile" xml:space="preserve">
+    <value>제품 소개</value>
+  </data>
+  <data name="Products" xml:space="preserve">
+    <value>제품</value>
+  </data>
+  <data name="Profile" xml:space="preserve">
+    <value>프로필</value>
+  </data>
+  <data name="Program_file" xml:space="preserve">
+    <value>프로그램 파일</value>
+  </data>
+  <data name="Program_QC" xml:space="preserve">
+    <value>프로그램 QC</value>
+  </data>
+  <data name="Program_QC_For_Equipment" xml:space="preserve">
+    <value>장비를위한 프로그램 QC</value>
+  </data>
+  <data name="Program_QC_for_Spaces" xml:space="preserve">
+    <value>공간에 대한 프로그램 QC</value>
+  </data>
+  <data name="Project" xml:space="preserve">
+    <value>프로젝트</value>
+  </data>
+  <data name="Project_Contact" xml:space="preserve">
+    <value>프로젝트위원회 위원</value>
+  </data>
+  <data name="Project_Data" xml:space="preserve">
+    <value>프로젝트 데이터</value>
+  </data>
+  <data name="Project_Facilities" xml:space="preserve">
+    <value>프로젝트 시설</value>
+  </data>
+  <data name="Project_Id" xml:space="preserve">
+    <value>프로젝트 ID</value>
+  </data>
+  <data name="Project_Name" xml:space="preserve">
+    <value>프로젝트 이름</value>
+  </data>
+  <data name="Project_Number" xml:space="preserve">
+    <value>프로젝트 번호</value>
+  </data>
+  <data name="Project_Profile" xml:space="preserve">
+    <value>프로젝트 소개</value>
+  </data>
+  <data name="Project_Role" xml:space="preserve">
+    <value>프로젝트 역할</value>
+  </data>
+  <data name="Project_Role_Permission" xml:space="preserve">
+    <value>프로젝트 역할 권한</value>
+  </data>
+  <data name="Project_Roles" xml:space="preserve">
+    <value>프로젝트 역할</value>
+  </data>
+  <data name="Project_Setup" xml:space="preserve">
+    <value>프로젝트 설정</value>
+  </data>
+  <data name="Projects" xml:space="preserve">
+    <value>프로젝트</value>
+  </data>
+  <data name="Promise_Date" xml:space="preserve">
+    <value>약속 날짜</value>
+  </data>
+  <data name="Properties" xml:space="preserve">
+    <value>등록</value>
+  </data>
+  <data name="Protocol" xml:space="preserve">
+    <value>프로토콜</value>
+  </data>
+  <data name="Provide_New_Name" xml:space="preserve">
+    <value>새 이름을 입력합니다</value>
+  </data>
+  <data name="Providers" xml:space="preserve">
+    <value>공급자</value>
+  </data>
+  <data name="Randomization_Length" xml:space="preserve">
+    <value>무작위 길이</value>
+  </data>
+  <data name="read_only_flag" xml:space="preserve">
+    <value>전용 플래그 읽기</value>
+  </data>
+  <data name="Recent" xml:space="preserve">
+    <value>최근</value>
+  </data>
+  <data name="Recent_Facilities" xml:space="preserve">
+    <value>최근 시설</value>
+  </data>
+  <data name="Recent_Projects" xml:space="preserve">
+    <value>최근 프로젝트</value>
+  </data>
+  <data name="Reference" xml:space="preserve">
+    <value>참조</value>
+  </data>
+  <data name="Refresh" xml:space="preserve">
+    <value>새로 고침</value>
+  </data>
+  <data name="Remove" xml:space="preserve">
+    <value>제거</value>
+  </data>
+  <data name="Removed" xml:space="preserve">
+    <value>제거</value>
+  </data>
+  <data name="Rename" xml:space="preserve">
+    <value>이름 바꾸기</value>
+  </data>
+  <data name="Replace" xml:space="preserve">
+    <value>교체</value>
+  </data>
+  <data name="Replace_File" xml:space="preserve">
+    <value>파일 바꾸기</value>
+  </data>
+  <data name="Replacement_Cost" xml:space="preserve">
+    <value>교체 비용</value>
+  </data>
+  <data name="Report" xml:space="preserve">
+    <value>보고서</value>
+  </data>
+  <data name="Reports" xml:space="preserve">
+    <value>보고서</value>
+  </data>
+  <data name="Request_Pending" xml:space="preserve">
+    <value>보류 요청</value>
+  </data>
+  <data name="Request_To_Add_New_Organization" xml:space="preserve">
+    <value>요청이 새 조직을 추가하는 방법</value>
+  </data>
+  <data name="Requested_By" xml:space="preserve">
+    <value>에 의해 요청</value>
+  </data>
+  <data name="Requested_Date" xml:space="preserve">
+    <value>요청 날짜</value>
+  </data>
+  <data name="Required_Attributes" xml:space="preserve">
+    <value>필수 속성</value>
+  </data>
+  <data name="Required_Documents" xml:space="preserve">
+    <value>구비 서류</value>
+  </data>
+  <data name="Required_Optional" xml:space="preserve">
+    <value>필수 / 선택</value>
+  </data>
+  <data name="Reset" xml:space="preserve">
+    <value>재설정</value>
+  </data>
+  <data name="Resolved" xml:space="preserve">
+    <value>해결</value>
+  </data>
+  <data name="Resource_Name" xml:space="preserve">
+    <value>자원 이름</value>
+  </data>
+  <data name="Resources" xml:space="preserve">
+    <value>자원</value>
+  </data>
+  <data name="Responsible" xml:space="preserve">
+    <value>책임</value>
+  </data>
+  <data name="RFI" xml:space="preserve">
+    <value>RFI</value>
+  </data>
+  <data name="Risk" xml:space="preserve">
+    <value>위험</value>
+  </data>
+  <data name="Role" xml:space="preserve">
+    <value>역할</value>
+  </data>
+  <data name="Role_Description" xml:space="preserve">
+    <value>역할 설명</value>
+  </data>
+  <data name="Role_Details" xml:space="preserve">
+    <value>역할 세부 사항</value>
+  </data>
+  <data name="Role_Name" xml:space="preserve">
+    <value>역할 이름</value>
+  </data>
+  <data name="Roles" xml:space="preserve">
+    <value>역할</value>
+  </data>
+  <data name="Room_Code" xml:space="preserve">
+    <value>룸 번호</value>
+  </data>
+  <data name="Room_Data_Sheet" xml:space="preserve">
+    <value>룸 데이터 시트</value>
+  </data>
+  <data name="Room_Id" xml:space="preserve">
+    <value>룸 이드</value>
+  </data>
+  <data name="Room_Name" xml:space="preserve">
+    <value>객실 이름</value>
+  </data>
+  <data name="Room_Tag" xml:space="preserve">
+    <value>룸 태그</value>
+  </data>
+  <data name="Root_Cause_Analysis" xml:space="preserve">
+    <value>근본 원인 분석</value>
+  </data>
+  <data name="Root_Cause_Analysis_Report" xml:space="preserve">
+    <value>근본 원인 분석 보고서</value>
+  </data>
+  <data name="Row" xml:space="preserve">
+    <value>행</value>
+  </data>
+  <data name="Row_Name" xml:space="preserve">
+    <value>행 이름</value>
+  </data>
+  <data name="Saturday" xml:space="preserve">
+    <value>토요일</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>저장</value>
+  </data>
+  <data name="Save_Affect" xml:space="preserve">
+    <value>에 영향을 미치는 저장</value>
+  </data>
+  <data name="Save_And_Clone" xml:space="preserve">
+    <value>저장 및 복제</value>
+  </data>
+  <data name="Save_Document" xml:space="preserve">
+    <value>문서 저장</value>
+  </data>
+  <data name="Save_Hierarchy" xml:space="preserve">
+    <value>저장 계층 구조</value>
+  </data>
+  <data name="Save_Impact" xml:space="preserve">
+    <value>저장 충격</value>
+  </data>
+  <data name="Save_Layout" xml:space="preserve">
+    <value>레이아웃 저장</value>
+  </data>
+  <data name="Save_Schedule" xml:space="preserve">
+    <value>저장 일정</value>
+  </data>
+  <data name="Schedule" xml:space="preserve">
+    <value>일정</value>
+  </data>
+  <data name="Schedule_Limits" xml:space="preserve">
+    <value>일정 한계</value>
+  </data>
+  <data name="Scheduler" xml:space="preserve">
+    <value>스케줄러</value>
+  </data>
+  <data name="Schedules" xml:space="preserve">
+    <value>스케줄</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>검색</value>
+  </data>
+  <data name="Search_Asset" xml:space="preserve">
+    <value>검색 자산</value>
+  </data>
+  <data name="Search_By" xml:space="preserve">
+    <value>으로 검색</value>
+  </data>
+  <data name="Search_Space" xml:space="preserve">
+    <value>검색 공간</value>
+  </data>
+  <data name="Select" xml:space="preserve">
+    <value>선택</value>
+  </data>
+  <data name="Select_Component" xml:space="preserve">
+    <value>구성 요소 선택</value>
+  </data>
+  <data name="Select_Date" xml:space="preserve">
+    <value>날짜 선택</value>
+  </data>
+  <data name="Select_Entity" xml:space="preserve">
+    <value>엔티티를 선택</value>
+  </data>
+  <data name="Select_Facility" xml:space="preserve">
+    <value>선택 시설</value>
+  </data>
+  <data name="Select_Field" xml:space="preserve">
+    <value>필드 선택</value>
+  </data>
+  <data name="Select_File" xml:space="preserve">
+    <value>[파일]</value>
+  </data>
+  <data name="Select_File_To_Upload" xml:space="preserve">
+    <value>업로드 할 파일을 선택합니다</value>
+  </data>
+  <data name="Select_Master_Format" xml:space="preserve">
+    <value>선택 MasterFormat</value>
+  </data>
+  <data name="Select_Master_ormat" xml:space="preserve">
+    <value>선택 MasterFormat</value>
+  </data>
+  <data name="Select_Project_Role" xml:space="preserve">
+    <value>프로젝트 역할을 선택</value>
+  </data>
+  <data name="Select_Sub_Assemblies" xml:space="preserve">
+    <value>하위 어셈블리를 선택</value>
+  </data>
+  <data name="Select_Subsystems" xml:space="preserve">
+    <value>선택 서브 시스템</value>
+  </data>
+  <data name="Select_Symbol" xml:space="preserve">
+    <value>기호를 선택</value>
+  </data>
+  <data name="Select_Task" xml:space="preserve">
+    <value>작업 선택</value>
+  </data>
+  <data name="Select_Time" xml:space="preserve">
+    <value>시간 선택</value>
+  </data>
+  <data name="Select_Uni_Format" xml:space="preserve">
+    <value>통합 식을 선택</value>
+  </data>
+  <data name="Select_Uniformat" xml:space="preserve">
+    <value>통합 식을 선택</value>
+  </data>
+  <data name="Select_Add" xml:space="preserve">
+    <value>선택 / 추가</value>
+  </data>
+  <data name="Selected_Master_Format" xml:space="preserve">
+    <value>선택한 마스터 형식</value>
+  </data>
+  <data name="Selected_Masterformat" xml:space="preserve">
+    <value>선정 MasterFormat</value>
+  </data>
+  <data name="Serial_Number" xml:space="preserve">
+    <value>일련 번호</value>
+  </data>
+  <data name="Server_Name" xml:space="preserve">
+    <value>서버 이름</value>
+  </data>
+  <data name="Service_Authentication_URL" xml:space="preserve">
+    <value>서비스 인증 URL</value>
+  </data>
+  <data name="Service_Client" xml:space="preserve">
+    <value>서비스 클라이언트</value>
+  </data>
+  <data name="Service_History" xml:space="preserve">
+    <value>서비스 역사</value>
+  </data>
+  <data name="Service_URL" xml:space="preserve">
+    <value>서비스 URL</value>
+  </data>
+  <data name="Set" xml:space="preserve">
+    <value>설정</value>
+  </data>
+  <data name="Set_Number" xml:space="preserve">
+    <value>설정 번호</value>
+  </data>
+  <data name="Settings" xml:space="preserve">
+    <value>설정</value>
+  </data>
+  <data name="Setup_Sync_Configuration" xml:space="preserve">
+    <value>설정 동기화 구성</value>
+  </data>
+  <data name="Setup_Sync_Wizard" xml:space="preserve">
+    <value>설정 동기화 마법사</value>
+  </data>
+  <data name="Severity" xml:space="preserve">
+    <value>심각도</value>
+  </data>
+  <data name="Sheet" xml:space="preserve">
+    <value>시트</value>
+  </data>
+  <data name="Sheet_Name" xml:space="preserve">
+    <value>시트 이름</value>
+  </data>
+  <data name="Short_Name" xml:space="preserve">
+    <value>짧은 이름</value>
+  </data>
+  <data name="Password_Rule_3" xml:space="preserve">
+    <value>숫자 숫자로 시작하지 않나요</value>
+  </data>
+  <data name="Show" xml:space="preserve">
+    <value>쇼</value>
+  </data>
+  <data name="Show_All" xml:space="preserve">
+    <value>모두보기</value>
+  </data>
+  <data name="Show_All_Issues" xml:space="preserve">
+    <value>모든 문제보기</value>
+  </data>
+  <data name="Show_All_work_order" xml:space="preserve">
+    <value>모든 작업 지시보기</value>
+  </data>
+  <data name="Show_change_log" xml:space="preserve">
+    <value>표시 변경 로그</value>
+  </data>
+  <data name="Show_Model" xml:space="preserve">
+    <value>쇼 모델</value>
+  </data>
+  <data name="Show_Open_Issue" xml:space="preserve">
+    <value>오픈 이슈보기</value>
+  </data>
+  <data name="Show_Open_Work_Order" xml:space="preserve">
+    <value>쇼 열기 작업 지시</value>
+  </data>
+  <data name="Show_Report" xml:space="preserve">
+    <value>결과 보고서</value>
+  </data>
+  <data name="Site_Description" xml:space="preserve">
+    <value>사이트 설명</value>
+  </data>
+  <data name="Site_Name" xml:space="preserve">
+    <value>사이트 이름</value>
+  </data>
+  <data name="SortBy" xml:space="preserve">
+    <value>정렬</value>
+  </data>
+  <data name="Space" xml:space="preserve">
+    <value>공간</value>
+  </data>
+  <data name="Space_Name" xml:space="preserve">
+    <value>공간의 이름</value>
+  </data>
+  <data name="Space_Profile" xml:space="preserve">
+    <value>공간 프로필</value>
+  </data>
+  <data name="Space_Type" xml:space="preserve">
+    <value>공간 유형</value>
+  </data>
+  <data name="Spaces" xml:space="preserve">
+    <value>공간</value>
+  </data>
+  <data name="Spare_Name" xml:space="preserve">
+    <value>예비 이름</value>
+  </data>
+  <data name="Spares" xml:space="preserve">
+    <value>스페어</value>
+  </data>
+  <data name="Stage" xml:space="preserve">
+    <value>무대</value>
+  </data>
+  <data name="Stage_not_defined" xml:space="preserve">
+    <value>스테이지는 정의되지</value>
+  </data>
+  <data name="Stage_not_found" xml:space="preserve">
+    <value>스테이지를 찾을 수 없습니다</value>
+  </data>
+  <data name="Standard" xml:space="preserve">
+    <value>표준</value>
+  </data>
+  <data name="Start" xml:space="preserve">
+    <value>시작</value>
+  </data>
+  <data name="Start_Date" xml:space="preserve">
+    <value>시작 날짜</value>
+  </data>
+  <data name="Start_Date_Time" xml:space="preserve">
+    <value>날짜 시간 시작</value>
+  </data>
+  <data name="Start_Time" xml:space="preserve">
+    <value>시작 시간</value>
+  </data>
+  <data name="Start_Unit" xml:space="preserve">
+    <value>시작 단위</value>
+  </data>
+  <data name="State" xml:space="preserve">
+    <value>주</value>
+  </data>
+  <data name="State_Region" xml:space="preserve">
+    <value>주 지역</value>
+  </data>
+  <data name="Station_Name" xml:space="preserve">
+    <value>역 이름</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>상태</value>
+  </data>
+  <data name="Street" xml:space="preserve">
+    <value>거리</value>
+  </data>
+  <data name="Street_Address" xml:space="preserve">
+    <value>번지</value>
+  </data>
+  <data name="Sub_assemblies" xml:space="preserve">
+    <value>서브 어셈블리</value>
+  </data>
+  <data name="Sub_assembly_Name" xml:space="preserve">
+    <value>서브 어셈블리 이름</value>
+  </data>
+  <data name="SubAssemblies" xml:space="preserve">
+    <value>서브 어셈블리</value>
+  </data>
+  <data name="SubAssembly" xml:space="preserve">
+    <value>서브 어셈블리</value>
+  </data>
+  <data name="Submit" xml:space="preserve">
+    <value>제출</value>
+  </data>
+  <data name="Subsystem" xml:space="preserve">
+    <value>서브 시스템</value>
+  </data>
+  <data name="Subsystem_Name" xml:space="preserve">
+    <value>서브 시스템 이름</value>
+  </data>
+  <data name="Subsystems" xml:space="preserve">
+    <value>서브 시스템</value>
+  </data>
+  <data name="Sunday" xml:space="preserve">
+    <value>일요일</value>
+  </data>
+  <data name="Supplier" xml:space="preserve">
+    <value>공급 업체</value>
+  </data>
+  <data name="Sustainability" xml:space="preserve">
+    <value>지속 가능성</value>
+  </data>
+  <data name="Symbol" xml:space="preserve">
+    <value>기호</value>
+  </data>
+  <data name="Sync_Assets" xml:space="preserve">
+    <value>동기화 자산</value>
+  </data>
+  <data name="Sync_Profile" xml:space="preserve">
+    <value>동기화 프로필</value>
+  </data>
+  <data name="Synchronization" xml:space="preserve">
+    <value>동기화</value>
+  </data>
+  <data name="Synchronization_filters" xml:space="preserve">
+    <value>동기화 필터</value>
+  </data>
+  <data name="Synchronization_Result_For" xml:space="preserve">
+    <value>용 동기화 결과</value>
+  </data>
+  <data name="Synchronization_Type" xml:space="preserve">
+    <value>동기화 유형</value>
+  </data>
+  <data name="Synchronize" xml:space="preserve">
+    <value>동기화</value>
+  </data>
+  <data name="System" xml:space="preserve">
+    <value>시스템</value>
+  </data>
+  <data name="System_Asset" xml:space="preserve">
+    <value>시스템 자산</value>
+  </data>
+  <data name="System_File_Name" xml:space="preserve">
+    <value>시스템 파일 이름</value>
+  </data>
+  <data name="System_Name" xml:space="preserve">
+    <value>시스템 이름</value>
+  </data>
+  <data name="System_Profile" xml:space="preserve">
+    <value>시스템 프로파일</value>
+  </data>
+  <data name="System_Role" xml:space="preserve">
+    <value>시스템 역할</value>
+  </data>
+  <data name="Systems" xml:space="preserve">
+    <value>시스템</value>
+  </data>
+  <data name="Tag_Number" xml:space="preserve">
+    <value>태그 번호</value>
+  </data>
+  <data name="Task_Name" xml:space="preserve">
+    <value>작업 이름</value>
+  </data>
+  <data name="Task_Number" xml:space="preserve">
+    <value>작업 번호</value>
+  </data>
+  <data name="Tasks" xml:space="preserve">
+    <value>작업</value>
+  </data>
+  <data name="tbl_name" xml:space="preserve">
+    <value>TBL 이름</value>
+  </data>
+  <data name="Template_Name" xml:space="preserve">
+    <value>템플릿 이름</value>
+  </data>
+  <data name="test" xml:space="preserve">
+    <value>테스트</value>
+  </data>
+  <data name="TestString" xml:space="preserve">
+    <value>테스트 문자열</value>
+  </data>
+  <data name="The_document_name_does_not_match_the_pattern" xml:space="preserve">
+    <value>문서 이름은 패턴과 일치하지 않습니다</value>
+  </data>
+  <data name="Thursday" xml:space="preserve">
+    <value>목요일</value>
+  </data>
+  <data name="Time_Zone" xml:space="preserve">
+    <value>시간대</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>제목</value>
+  </data>
+  <data name="To" xml:space="preserve">
+    <value>에</value>
+  </data>
+  <data name="Total" xml:space="preserve">
+    <value>전체</value>
+  </data>
+  <data name="Total_Exported_Data_Transfer" xml:space="preserve">
+    <value>총 보낸 데이터 전송</value>
+  </data>
+  <data name="Total_gross_area" xml:space="preserve">
+    <value>총 연면적</value>
+  </data>
+  <data name="Total_Imported_Data_Transfer" xml:space="preserve">
+    <value>전체 가져온 데이터 전송</value>
+  </data>
+  <data name="Total_net_area" xml:space="preserve">
+    <value>전체 순 면적</value>
+  </data>
+  <data name="Town" xml:space="preserve">
+    <value>타운</value>
+  </data>
+  <data name="Transfer_Speed" xml:space="preserve">
+    <value>전송 속도</value>
+  </data>
+  <data name="Trend" xml:space="preserve">
+    <value>트렌드</value>
+  </data>
+  <data name="Tuesday" xml:space="preserve">
+    <value>화요일</value>
+  </data>
+  <data name="Type" xml:space="preserve">
+    <value>유형</value>
+  </data>
+  <data name="Type_Name" xml:space="preserve">
+    <value>유형 이름</value>
+  </data>
+  <data name="Type_Profile" xml:space="preserve">
+    <value>유형 소개</value>
+  </data>
+  <data name="Types" xml:space="preserve">
+    <value>유형</value>
+  </data>
+  <data name="Unassign" xml:space="preserve">
+    <value>할당 해제</value>
+  </data>
+  <data name="Unassign_Asset" xml:space="preserve">
+    <value>할당 해제 자산</value>
+  </data>
+  <data name="Unassign_Component" xml:space="preserve">
+    <value>할당 해제 구성 요소</value>
+  </data>
+  <data name="Unassign_Space" xml:space="preserve">
+    <value>할당 해제 공간</value>
+  </data>
+  <data name="Unassign_SubAssembly" xml:space="preserve">
+    <value>할당 해제 서브 어셈블리</value>
+  </data>
+  <data name="Unassign_Subsystem" xml:space="preserve">
+    <value>할당 해제 서브 시스템</value>
+  </data>
+  <data name="Unassign_System" xml:space="preserve">
+    <value>할당 해제 시스템</value>
+  </data>
+  <data name="Unassigned_Items" xml:space="preserve">
+    <value>할당되지 않은 항목</value>
+  </data>
+  <data name="Uni_Format" xml:space="preserve">
+    <value>유니 형식</value>
+  </data>
+  <data name="UniClass" xml:space="preserve">
+    <value>UniClass</value>
+  </data>
+  <data name="Uniformat" xml:space="preserve">
+    <value>통합 식</value>
+  </data>
+  <data name="Unit" xml:space="preserve">
+    <value>단위</value>
+  </data>
+  <data name="Unit_Type" xml:space="preserve">
+    <value>단위 유형</value>
+  </data>
+  <data name="Unknown_entity" xml:space="preserve">
+    <value>알 수없는 실체</value>
+  </data>
+  <data name="UOM" xml:space="preserve">
+    <value>UOM</value>
+  </data>
+  <data name="UOM_Mapping" xml:space="preserve">
+    <value>UOM 매핑</value>
+  </data>
+  <data name="Update" xml:space="preserve">
+    <value>업데이트</value>
+  </data>
+  <data name="Update_Component_Name" xml:space="preserve">
+    <value>업데이트 구성 요소 이름</value>
+  </data>
+  <data name="Update_Names" xml:space="preserve">
+    <value>업데이트 이름</value>
+  </data>
+  <data name="Update_Type_Name" xml:space="preserve">
+    <value>업데이트 유형 이름</value>
+  </data>
+  <data name="Updated" xml:space="preserve">
+    <value>업데이트</value>
+  </data>
+  <data name="Updated_By" xml:space="preserve">
+    <value>으로 업데이트</value>
+  </data>
+  <data name="Updated_On" xml:space="preserve">
+    <value>업데이트</value>
+  </data>
+  <data name="Upload" xml:space="preserve">
+    <value>업로드</value>
+  </data>
+  <data name="Upload_Document" xml:space="preserve">
+    <value>문서 업로드</value>
+  </data>
+  <data name="Upload_File" xml:space="preserve">
+    <value>파일 업로드</value>
+  </data>
+  <data name="Upload_replace" xml:space="preserve">
+    <value>업로드 / 교체</value>
+  </data>
+  <data name="Uploaded" xml:space="preserve">
+    <value>업로드</value>
+  </data>
+  <data name="Uploaded_By" xml:space="preserve">
+    <value>업로드</value>
+  </data>
+  <data name="Uploaded_documents" xml:space="preserve">
+    <value>업로드 된 문서</value>
+  </data>
+  <data name="Uploaded_File_Name" xml:space="preserve">
+    <value>업로드 파일 이름</value>
+  </data>
+  <data name="Uploaded_Files" xml:space="preserve">
+    <value>업로드 파일</value>
+  </data>
+  <data name="Uploaded_On" xml:space="preserve">
+    <value>업로드에</value>
+  </data>
+  <data name="Uploading_File" xml:space="preserve">
+    <value>업로드 파일</value>
+  </data>
+  <data name="Upper_Limit_max" xml:space="preserve">
+    <value>상한 (최대)</value>
+  </data>
+  <data name="Password_Rule_6" xml:space="preserve">
+    <value>대문자 (A-Z)</value>
+  </data>
+  <data name="URL" xml:space="preserve">
+    <value>URL</value>
+  </data>
+  <data name="Usable_Height" xml:space="preserve">
+    <value>사용 가능한 높이</value>
+  </data>
+  <data name="Use_Attribute_Template" xml:space="preserve">
+    <value>사용 속성 템플릿</value>
+  </data>
+  <data name="User" xml:space="preserve">
+    <value>사용자</value>
+  </data>
+  <data name="User_Id" xml:space="preserve">
+    <value>사용자 ID</value>
+  </data>
+  <data name="User_Name" xml:space="preserve">
+    <value>사용자 이름</value>
+  </data>
+  <data name="User_Profile" xml:space="preserve">
+    <value>사용자 프로필</value>
+  </data>
+  <data name="Username" xml:space="preserve">
+    <value>아이디</value>
+  </data>
+  <data name="Users" xml:space="preserve">
+    <value>사용자</value>
+  </data>
+  <data name="Value" xml:space="preserve">
+    <value>값</value>
+  </data>
+  <data name="Value_Range_Choices" xml:space="preserve">
+    <value>값 범위 / 선택</value>
+  </data>
+  <data name="Version" xml:space="preserve">
+    <value>버전</value>
+  </data>
+  <data name="Versioning" xml:space="preserve">
+    <value>버전</value>
+  </data>
+  <data name="View" xml:space="preserve">
+    <value>보기</value>
+  </data>
+  <data name="View_in_BIM" xml:space="preserve">
+    <value>BIM에서보기</value>
+  </data>
+  <data name="View_Name" xml:space="preserve">
+    <value>보기 이름</value>
+  </data>
+  <data name="Viewer" xml:space="preserve">
+    <value>뷰어</value>
+  </data>
+  <data name="Viewpoints" xml:space="preserve">
+    <value>관점</value>
+  </data>
+  <data name="Volume_Units" xml:space="preserve">
+    <value>볼륨 단위</value>
+  </data>
+  <data name="Warranty_Description" xml:space="preserve">
+    <value>보증 설명</value>
+  </data>
+  <data name="Warranty_Duration_Labor" xml:space="preserve">
+    <value>보증 기간 노동</value>
+  </data>
+  <data name="Warranty_Duration_Parts" xml:space="preserve">
+    <value>보증 기간 부품</value>
+  </data>
+  <data name="Warranty_Duration_Unit" xml:space="preserve">
+    <value>보증 기간 단위</value>
+  </data>
+  <data name="Warranty_Guarantor_Labor" xml:space="preserve">
+    <value>보증 보증인 노동</value>
+  </data>
+  <data name="Warranty_Guarantor_Parts" xml:space="preserve">
+    <value>보증 보증인 부품</value>
+  </data>
+  <data name="Warranty_Start_Date" xml:space="preserve">
+    <value>보증 시작 날짜</value>
+  </data>
+  <data name="Weather_Station" xml:space="preserve">
+    <value>날씨 역</value>
+  </data>
+  <data name="Website" xml:space="preserve">
+    <value>웹 사이트</value>
+  </data>
+  <data name="Wednesday" xml:space="preserve">
+    <value>수요일</value>
+  </data>
+  <data name="Weeks" xml:space="preserve">
+    <value>주</value>
+  </data>
+  <data name="Work_Hours" xml:space="preserve">
+    <value>작업 시간</value>
+  </data>
+  <data name="Work_Order_Log" xml:space="preserve">
+    <value>주문 로그인 작업</value>
+  </data>
+  <data name="Work_Order_Name" xml:space="preserve">
+    <value>작업 지시 이름</value>
+  </data>
+  <data name="Work_Order_No" xml:space="preserve">
+    <value>주문 번호를 작업</value>
+  </data>
+  <data name="Work_Order_Number" xml:space="preserve">
+    <value>주문 번호를 작업</value>
+  </data>
+  <data name="Work_Order_Profile" xml:space="preserve">
+    <value>작업 지시 프로필</value>
+  </data>
+  <data name="Work_Order_Report" xml:space="preserve">
+    <value>주문 보고서를 작동</value>
+  </data>
+  <data name="Work_order_Status" xml:space="preserve">
+    <value>작업 주문 현황</value>
+  </data>
+  <data name="Work_Order_Type" xml:space="preserve">
+    <value>주문 유형을 작업</value>
+  </data>
+  <data name="Work_Orders" xml:space="preserve">
+    <value>작업 지시</value>
+  </data>
+  <data name="Work_Plan" xml:space="preserve">
+    <value>작업 계획</value>
+  </data>
+  <data name="Workable_Backlog" xml:space="preserve">
+    <value>동작 범위 수주 잔량</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>예</value>
+  </data>
+  <data name="Zip_Postal_Code" xml:space="preserve">
+    <value>우편 번호 / 우편 번호</value>
+  </data>
+  <data name="Zone" xml:space="preserve">
+    <value>영역</value>
+  </data>
+  <data name="Zone_Name" xml:space="preserve">
+    <value>영역 이름</value>
+  </data>
+  <data name="Zone_Name_Grid" xml:space="preserve">
+    <value>영역 이름 그리드</value>
+  </data>
+  <data name="Zone_Profile" xml:space="preserve">
+    <value>지역 프로필</value>
+  </data>
+  <data name="Zones" xml:space="preserve">
+    <value>영역</value>
+  </data>
+  <data name="Merge" xml:space="preserve">
+    <value>병합</value>
+  </data>
+  <data name="DUT_ACRES" xml:space="preserve">
+    <value>에이커</value>
+  </data>
+  <data name="DUT_ACRES_SHORT" xml:space="preserve">
+    <value>교류</value>
+  </data>
+  <data name="DUT_CENTIMETERS" xml:space="preserve">
+    <value>cm</value>
+  </data>
+  <data name="DUT_CENTIMETERS_SHORT" xml:space="preserve">
+    <value>cm</value>
+  </data>
+  <data name="DUT_CUBIC_CENTIMETERS" xml:space="preserve">
+    <value>세제곱</value>
+  </data>
+  <data name="DUT_CUBIC_CENTIMETERS_SHORT" xml:space="preserve">
+    <value>cmÂ³</value>
+  </data>
+  <data name="DUT_CUBIC_FEET" xml:space="preserve">
+    <value>입방피트</value>
+  </data>
+  <data name="DUT_CUBIC_FEET_SHORT" xml:space="preserve">
+    <value>CF</value>
+  </data>
+  <data name="DUT_CUBIC_INCHES" xml:space="preserve">
+    <value>입방 인치</value>
+  </data>
+  <data name="DUT_CUBIC_INCHES_SHORT" xml:space="preserve">
+    <value>inÂ³</value>
+  </data>
+  <data name="DUT_CUBIC_METERS" xml:space="preserve">
+    <value>입방 미터</value>
+  </data>
+  <data name="DUT_CUBIC_METERS_SHORT" xml:space="preserve">
+    <value>mÂ³</value>
+  </data>
+  <data name="DUT_CUBIC_MILLIMETERS" xml:space="preserve">
+    <value>입방 밀리미터</value>
+  </data>
+  <data name="DUT_CUBIC_MILLIMETERS_SHORT" xml:space="preserve">
+    <value>mmÂ³</value>
+  </data>
+  <data name="DUT_CUBIC_YARDS" xml:space="preserve">
+    <value>입방야드</value>
+  </data>
+  <data name="DUT_CUBIC_YARDS_SHORT" xml:space="preserve">
+    <value>CY</value>
+  </data>
+  <data name="DUT_CURRENCY" xml:space="preserve">
+    <value>통화</value>
+  </data>
+  <data name="DUT_DECANEWTONS" xml:space="preserve">
+    <value>decanewtons</value>
+  </data>
+  <data name="DUT_DECANEWTONS_PER_METER" xml:space="preserve">
+    <value>m 당 decanewtons</value>
+  </data>
+  <data name="DUT_DECANEWTONS_PER_METER_SHORT" xml:space="preserve">
+    <value>댄 / m</value>
+  </data>
+  <data name="DUT_DECANEWTONS_PER_SQUARE_METER" xml:space="preserve">
+    <value>평방 미터 당 decanewtons</value>
+  </data>
+  <data name="DUT_DECANEWTONS_PER_SQUARE_METER_SHORT" xml:space="preserve">
+    <value>댄 / 엄마 ²</value>
+  </data>
+  <data name="DUT_DECANEWTONS_SHORT" xml:space="preserve">
+    <value>댄</value>
+  </data>
+  <data name="DUT_DECANEWTON_METERS" xml:space="preserve">
+    <value>decanewton-m</value>
+  </data>
+  <data name="DUT_DECANEWTON_METERS_SHORT" xml:space="preserve">
+    <value>다나 · m</value>
+  </data>
+  <data name="DUT_DECIMETERS" xml:space="preserve">
+    <value>데시 미터</value>
+  </data>
+  <data name="DUT_DECIMETERS_SHORT" xml:space="preserve">
+    <value>DM</value>
+  </data>
+  <data name="DUT_DEGREES" xml:space="preserve">
+    <value>도</value>
+  </data>
+  <data name="DUT_DEGREES_AND_MINUTES" xml:space="preserve">
+    <value>도, 분</value>
+  </data>
+  <data name="DUT_FEET" xml:space="preserve">
+    <value>피트</value>
+  </data>
+  <data name="DUT_FEET_FRACTIONAL_INCHES" xml:space="preserve">
+    <value>피트 및 분수 인치</value>
+  </data>
+  <data name="DUT_FEET_SHORT" xml:space="preserve">
+    <value>피트</value>
+  </data>
+  <data name="DUT_FRACTIONAL_INCHES" xml:space="preserve">
+    <value>분수 인치</value>
+  </data>
+  <data name="DUT_GALLONS_US" xml:space="preserve">
+    <value>갤런 (미국)</value>
+  </data>
+  <data name="DUT_GALLONS_US_SHORT" xml:space="preserve">
+    <value>걸</value>
+  </data>
+  <data name="DUT_GRADS" xml:space="preserve">
+    <value>졸업생</value>
+  </data>
+  <data name="DUT_GRADS_SHORT" xml:space="preserve">
+    <value>대학원</value>
+  </data>
+  <data name="DUT_HECTARES" xml:space="preserve">
+    <value>헥타르</value>
+  </data>
+  <data name="DUT_HECTARES_SHORT" xml:space="preserve">
+    <value>하</value>
+  </data>
+  <data name="DUT_HOURS" xml:space="preserve">
+    <value>시간</value>
+  </data>
+  <data name="DUT_HOURS_SHORT" xml:space="preserve">
+    <value>시간</value>
+  </data>
+  <data name="DUT_INCHES" xml:space="preserve">
+    <value>인치</value>
+  </data>
+  <data name="DUT_INCHES_SHORT" xml:space="preserve">
+    <value>에서</value>
+  </data>
+  <data name="DUT_KILOGRAMS_FORCE" xml:space="preserve">
+    <value>킬로그램 힘</value>
+  </data>
+  <data name="DUT_KILOGRAMS_FORCE_PER_METER" xml:space="preserve">
+    <value>미터 당 킬로그램 힘</value>
+  </data>
+  <data name="DUT_KILOGRAMS_FORCE_PER_METER_SHORT" xml:space="preserve">
+    <value>KGF / m</value>
+  </data>
+  <data name="DUT_KILOGRAMS_FORCE_PER_SQUARE_METER" xml:space="preserve">
+    <value>평방 미터 당 킬로그램 힘</value>
+  </data>
+  <data name="DUT_KILOGRAMS_FORCE_PER_SQUARE_METER_SHORT" xml:space="preserve">
+    <value>KGF / 엄마 ²</value>
+  </data>
+  <data name="DUT_KILOGRAMS_FORCE_SHORT" xml:space="preserve">
+    <value>KGF</value>
+  </data>
+  <data name="DUT_KILOGRAMS_MASS" xml:space="preserve">
+    <value>kg</value>
+  </data>
+  <data name="DUT_KILOGRAMS_MASS_SHORT" xml:space="preserve">
+    <value>kg</value>
+  </data>
+  <data name="DUT_KILOGRAMS_PER_CUBIC_METER" xml:space="preserve">
+    <value>입방 미터 당 킬로그램</value>
+  </data>
+  <data name="DUT_KILOGRAMS_PER_CUBIC_METER_SHORT" xml:space="preserve">
+    <value>kg / mÂ³</value>
+  </data>
+  <data name="DUT_KILOGRAM_FORCE_METERS" xml:space="preserve">
+    <value>킬로그램 힘 미터</value>
+  </data>
+  <data name="DUT_KILOGRAM_FORCE_METERS_SHORT" xml:space="preserve">
+    <value>kgfÂ · m</value>
+  </data>
+  <data name="DUT_KILONEWTONS" xml:space="preserve">
+    <value>킬로 뉴톤</value>
+  </data>
+  <data name="DUT_KILONEWTONS_PER_METER" xml:space="preserve">
+    <value>m 당 킬로 뉴톤</value>
+  </data>
+  <data name="DUT_KILONEWTONS_PER_METER_SHORT" xml:space="preserve">
+    <value>KN / m</value>
+  </data>
+  <data name="DUT_KILONEWTONS_PER_SQUARE_METER" xml:space="preserve">
+    <value>평방 미터 당 킬로 뉴톤</value>
+  </data>
+  <data name="DUT_KILONEWTONS_PER_SQUARE_METER_SHORT" xml:space="preserve">
+    <value>KN / 엄마 ²</value>
+  </data>
+  <data name="DUT_KILONEWTONS_SHORT" xml:space="preserve">
+    <value>KN</value>
+  </data>
+  <data name="DUT_KILONEWTON_METERS" xml:space="preserve">
+    <value>킬로 뉴톤 미터</value>
+  </data>
+  <data name="DUT_KILONEWTON_METERS_SHORT" xml:space="preserve">
+    <value>KNA · m</value>
+  </data>
+  <data name="DUT_KIPS" xml:space="preserve">
+    <value>킵</value>
+  </data>
+  <data name="DUT_KIPS_PER_FOOT" xml:space="preserve">
+    <value>피트 당 킵</value>
+  </data>
+  <data name="DUT_KIPS_PER_FOOT_SHORT" xml:space="preserve">
+    <value>킵 / 피트</value>
+  </data>
+  <data name="DUT_KIPS_PER_INCH" xml:space="preserve">
+    <value>인치 당 킵</value>
+  </data>
+  <data name="DUT_KIPS_PER_INCH_SHORT" xml:space="preserve">
+    <value>킵 /에서</value>
+  </data>
+  <data name="DUT_KIPS_PER_SQUARE_FOOT" xml:space="preserve">
+    <value>평방 피트 당 킵</value>
+  </data>
+  <data name="DUT_KIPS_PER_SQUARE_FOOT_SHORT" xml:space="preserve">
+    <value>킵 / SF</value>
+  </data>
+  <data name="DUT_KIPS_SHORT" xml:space="preserve">
+    <value>킵</value>
+  </data>
+  <data name="DUT_KIP_FEET" xml:space="preserve">
+    <value>킵 피트</value>
+  </data>
+  <data name="DUT_KIP_FEET_SHORT" xml:space="preserve">
+    <value>KIPA · 피트</value>
+  </data>
+  <data name="DUT_LITERS" xml:space="preserve">
+    <value>리터</value>
+  </data>
+  <data name="DUT_LITERS_SHORT" xml:space="preserve">
+    <value>리터</value>
+  </data>
+  <data name="DUT_MEGANEWTONS" xml:space="preserve">
+    <value>meganewtons</value>
+  </data>
+  <data name="DUT_MEGANEWTONS_PER_METER" xml:space="preserve">
+    <value>m 당 meganewtons</value>
+  </data>
+  <data name="DUT_MEGANEWTONS_PER_METER_SHORT" xml:space="preserve">
+    <value>MN / m</value>
+  </data>
+  <data name="DUT_MEGANEWTONS_PER_SQUARE_METER" xml:space="preserve">
+    <value>평방 미터 당 meganewtons</value>
+  </data>
+  <data name="DUT_MEGANEWTONS_PER_SQUARE_METER_SHORT" xml:space="preserve">
+    <value>MN / 엄마 ²</value>
+  </data>
+  <data name="DUT_MEGANEWTONS_SHORT" xml:space="preserve">
+    <value>MN</value>
+  </data>
+  <data name="DUT_MEGANEWTON_METERS" xml:space="preserve">
+    <value>meganewtons-m</value>
+  </data>
+  <data name="DUT_MEGANEWTON_METERS_SHORT" xml:space="preserve">
+    <value>MNA · m</value>
+  </data>
+  <data name="DUT_METERS" xml:space="preserve">
+    <value>m</value>
+  </data>
+  <data name="DUT_METERS_SHORT" xml:space="preserve">
+    <value>m</value>
+  </data>
+  <data name="DUT_MILISECONDS" xml:space="preserve">
+    <value>밀리 초</value>
+  </data>
+  <data name="DUT_MILISECONDS_SHORT" xml:space="preserve">
+    <value>MS</value>
+  </data>
+  <data name="DUT_MILLIMETERS" xml:space="preserve">
+    <value>mm</value>
+  </data>
+  <data name="DUT_MILLIMETERS_SHORT" xml:space="preserve">
+    <value>mm</value>
+  </data>
+  <data name="DUT_MINUTES" xml:space="preserve">
+    <value>분</value>
+  </data>
+  <data name="DUT_MINUTES_SHORT" xml:space="preserve">
+    <value>분</value>
+  </data>
+  <data name="DUT_NEWTONS" xml:space="preserve">
+    <value>뉴턴</value>
+  </data>
+  <data name="DUT_NEWTONS_PER_METER" xml:space="preserve">
+    <value>미터 당 뉴턴</value>
+  </data>
+  <data name="DUT_NEWTONS_PER_METER_SHORT" xml:space="preserve">
+    <value>N / m</value>
+  </data>
+  <data name="DUT_NEWTONS_PER_SQUARE_METER" xml:space="preserve">
+    <value>평방 미터 당 뉴턴</value>
+  </data>
+  <data name="DUT_NEWTONS_PER_SQUARE_METER_SHORT" xml:space="preserve">
+    <value>N / 엄마 ²</value>
+  </data>
+  <data name="DUT_NEWTONS_SHORT" xml:space="preserve">
+    <value>N</value>
+  </data>
+  <data name="DUT_NEWTON_METERS" xml:space="preserve">
+    <value>뉴턴 미터</value>
+  </data>
+  <data name="DUT_NEWTON_METERS_SHORT" xml:space="preserve">
+    <value>NA · m</value>
+  </data>
+  <data name="DUT_POUNDS_FORCE" xml:space="preserve">
+    <value>파운드 - 힘</value>
+  </data>
+  <data name="DUT_POUNDS_FORCE_PER_FOOT" xml:space="preserve">
+    <value>피트 당 파운드 - 힘</value>
+  </data>
+  <data name="DUT_POUNDS_FORCE_PER_FOOT_SHORT" xml:space="preserve">
+    <value>LBF / 피트</value>
+  </data>
+  <data name="DUT_POUNDS_FORCE_PER_SQUARE_FOOT" xml:space="preserve">
+    <value>평방 피트 당 파운드 - 힘</value>
+  </data>
+  <data name="DUT_POUNDS_FORCE_PER_SQUARE_FOOT_SHORT" xml:space="preserve">
+    <value>LBF / SF</value>
+  </data>
+  <data name="DUT_POUNDS_FORCE_SHORT" xml:space="preserve">
+    <value>LBF</value>
+  </data>
+  <data name="DUT_POUNDS_MASS" xml:space="preserve">
+    <value>파운드</value>
+  </data>
+  <data name="DUT_POUNDS_MASS_PER_CUBIC_FOOT" xml:space="preserve">
+    <value>입방 피트 당 파운드</value>
+  </data>
+  <data name="DUT_POUNDS_MASS_PER_CUBIC_FOOT_SHORT" xml:space="preserve">
+    <value>파운드 / CF</value>
+  </data>
+  <data name="DUT_POUNDS_MASS_SHORT" xml:space="preserve">
+    <value>파운드</value>
+  </data>
+  <data name="DUT_POUND_FORCE_FEET" xml:space="preserve">
+    <value>파운드 - 힘 피트</value>
+  </data>
+  <data name="DUT_POUND_FORCE_FEET_SHORT" xml:space="preserve">
+    <value>lbfÂ · 피트</value>
+  </data>
+  <data name="DUT_RADIANS" xml:space="preserve">
+    <value>라디안</value>
+  </data>
+  <data name="DUT_RADIANS_SHORT" xml:space="preserve">
+    <value>RAD</value>
+  </data>
+  <data name="DUT_SECONDS" xml:space="preserve">
+    <value>초</value>
+  </data>
+  <data name="DUT_SECONDS_SHORT" xml:space="preserve">
+    <value>의</value>
+  </data>
+  <data name="DUT_SQUARE_CENTIMETERS" xml:space="preserve">
+    <value>cm2</value>
+  </data>
+  <data name="DUT_SQUARE_CENTIMETERS_SHORT" xml:space="preserve">
+    <value>cmÂ²</value>
+  </data>
+  <data name="DUT_SQUARE_FEET" xml:space="preserve">
+    <value>평방피트</value>
+  </data>
+  <data name="DUT_SQUARE_FEET_SHORT" xml:space="preserve">
+    <value>SF</value>
+  </data>
+  <data name="DUT_SQUARE_INCHES" xml:space="preserve">
+    <value>평방인치</value>
+  </data>
+  <data name="DUT_SQUARE_INCHES_SHORT" xml:space="preserve">
+    <value>inÂ²</value>
+  </data>
+  <data name="DUT_SQUARE_METERS" xml:space="preserve">
+    <value>평방 미터</value>
+  </data>
+  <data name="DUT_SQUARE_METERS_SHORT" xml:space="preserve">
+    <value>엄마 ²</value>
+  </data>
+  <data name="DUT_SQUARE_MILLIMETERS" xml:space="preserve">
+    <value>평방 mm</value>
+  </data>
+  <data name="DUT_SQUARE_MILLIMETERS_SHORT" xml:space="preserve">
+    <value>mmÂ²</value>
+  </data>
+  <data name="DUT_TONNES_FORCE" xml:space="preserve">
+    <value>t 힘</value>
+  </data>
+  <data name="DUT_TONNES_FORCE_PER_METER" xml:space="preserve">
+    <value>m 당 t 힘</value>
+  </data>
+  <data name="DUT_TONNES_FORCE_PER_METER_SHORT" xml:space="preserve">
+    <value>TF / m</value>
+  </data>
+  <data name="DUT_TONNES_FORCE_PER_SQUARE_METER" xml:space="preserve">
+    <value>평방 미터 당 t 힘</value>
+  </data>
+  <data name="DUT_TONNES_FORCE_PER_SQUARE_METER_SHORT" xml:space="preserve">
+    <value>TF / 엄마 ²</value>
+  </data>
+  <data name="DUT_TONNES_FORCE_SHORT" xml:space="preserve">
+    <value>TF</value>
+  </data>
+  <data name="DUT_TONNES_MASS" xml:space="preserve">
+    <value>t</value>
+  </data>
+  <data name="DUT_TONNES_MASS_SHORT" xml:space="preserve">
+    <value>t</value>
+  </data>
+  <data name="DUT_TONNE_FORCE_METERS" xml:space="preserve">
+    <value>t-힘 미터</value>
+  </data>
+  <data name="DUT_TONNE_FORCE_METERS_SHORT" xml:space="preserve">
+    <value>TFA · m</value>
+  </data>
+</root>

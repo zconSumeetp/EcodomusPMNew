@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Attribute" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://services.ecodomus.com/ClientPM/Attributes.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://services.ecodomus.com/ClientPM/Attributes.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://services.ecodomus.com/ClientPM/Attributes.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/" />
+      <xsd:import schemaLocation="http://services.ecodomus.com/ClientPM/Attributes.svc?xsd=xsd3" />
+      <xsd:import schemaLocation="http://services.ecodomus.com/ClientPM/Attributes.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/Client.App.Dtos" />
+      <xsd:import schemaLocation="http://services.ecodomus.com/ClientPM/Attributes.svc?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/Client.App" />
+      <xsd:import schemaLocation="http://services.ecodomus.com/ClientPM/Attributes.svc?xsd=xsd6" namespace="http://schemas.datacontract.org/2004/07/EcoDomus.UnitUtils" />
+      <xsd:import schemaLocation="http://services.ecodomus.com/ClientPM/Attributes.svc?xsd=xsd7" namespace="http://schemas.datacontract.org/2004/07/Client.App.Queries" />
+      <xsd:import schemaLocation="http://services.ecodomus.com/ClientPM/Attributes.svc?xsd=xsd8" namespace="http://schemas.datacontract.org/2004/07/Client.App.ViewModel" />
+      <xsd:import schemaLocation="http://services.ecodomus.com/ClientPM/Attributes.svc?xsd=xsd9" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import schemaLocation="http://services.ecodomus.com/ClientPM/Attributes.svc?xsd=xsd10" namespace="http://schemas.datacontract.org/2004/07/EcoDomus.Data.Model" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IAttribute_DoWork_InputMessage">
+    <wsdl:part name="parameters" element="tns:DoWork" />
+  </wsdl:message>
+  <wsdl:message name="IAttribute_DoWork_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DoWorkResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAttribute_GetAttribute_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAttribute" />
+  </wsdl:message>
+  <wsdl:message name="IAttribute_GetAttribute_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAttributeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAttribute_GetRoleBasedAttribute_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetRoleBasedAttribute" />
+  </wsdl:message>
+  <wsdl:message name="IAttribute_GetRoleBasedAttribute_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetRoleBasedAttributeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAttribute_GetAttributeHistory_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAttributeHistory" />
+  </wsdl:message>
+  <wsdl:message name="IAttribute_GetAttributeHistory_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAttributeHistoryResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAttribute_GetGroup_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetGroup" />
+  </wsdl:message>
+  <wsdl:message name="IAttribute_GetGroup_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetGroupResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAttribute_GetStage_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetStage" />
+  </wsdl:message>
+  <wsdl:message name="IAttribute_GetStage_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetStageResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAttribute_GetUnit_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUnit" />
+  </wsdl:message>
+  <wsdl:message name="IAttribute_GetUnit_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUnitResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAttribute_InsertUpdateAttribute_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertUpdateAttribute" />
+  </wsdl:message>
+  <wsdl:message name="IAttribute_InsertUpdateAttribute_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertUpdateAttributeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAttribute_DeleteAttribute_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteAttribute" />
+  </wsdl:message>
+  <wsdl:message name="IAttribute_DeleteAttribute_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteAttributeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAttribute_GetAttributeById_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAttributeById" />
+  </wsdl:message>
+  <wsdl:message name="IAttribute_GetAttributeById_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAttributeByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAttribute_GetAttributeHyperlink_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAttributeHyperlink" />
+  </wsdl:message>
+  <wsdl:message name="IAttribute_GetAttributeHyperlink_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAttributeHyperlinkResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAttribute_InsertUpdateAttributeHyperlink_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertUpdateAttributeHyperlink" />
+  </wsdl:message>
+  <wsdl:message name="IAttribute_InsertUpdateAttributeHyperlink_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertUpdateAttributeHyperlinkResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAttribute_DeleteAttributeHyaperlink_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteAttributeHyaperlink" />
+  </wsdl:message>
+  <wsdl:message name="IAttribute_DeleteAttributeHyaperlink_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteAttributeHyaperlinkResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAttribute_DeleteAttributes_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteAttributes" />
+  </wsdl:message>
+  <wsdl:message name="IAttribute_DeleteAttributes_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteAttributesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAttribute_GetAttributeType_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAttributeType" />
+  </wsdl:message>
+  <wsdl:message name="IAttribute_GetAttributeType_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAttributeTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAttribute_DeleteAttributesAll_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteAttributesAll" />
+  </wsdl:message>
+  <wsdl:message name="IAttribute_DeleteAttributesAll_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteAttributesAllResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAttribute_GetUnitsOfUnitType_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUnitsOfUnitType" />
+  </wsdl:message>
+  <wsdl:message name="IAttribute_GetUnitsOfUnitType_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUnitsOfUnitTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAttribute_GetEntityAttributes_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetEntityAttributes" />
+  </wsdl:message>
+  <wsdl:message name="IAttribute_GetEntityAttributes_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetEntityAttributesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAttribute_GetDisplayUnitType_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDisplayUnitType" />
+  </wsdl:message>
+  <wsdl:message name="IAttribute_GetDisplayUnitType_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDisplayUnitTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAttribute_GetAttributeValueParserRegularExpression_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAttributeValueParserRegularExpression" />
+  </wsdl:message>
+  <wsdl:message name="IAttribute_GetAttributeValueParserRegularExpression_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAttributeValueParserRegularExpressionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAttribute_GetAllValuesOfStringAttribute_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllValuesOfStringAttribute" />
+  </wsdl:message>
+  <wsdl:message name="IAttribute_GetAllValuesOfStringAttribute_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllValuesOfStringAttributeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAttribute_GetStages_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetStages" />
+  </wsdl:message>
+  <wsdl:message name="IAttribute_GetStages_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetStagesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAttribute_GetAllGroups_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllGroups" />
+  </wsdl:message>
+  <wsdl:message name="IAttribute_GetAllGroups_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllGroupsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAttribute_SaveEntityAttribute_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveEntityAttribute" />
+  </wsdl:message>
+  <wsdl:message name="IAttribute_SaveEntityAttribute_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveEntityAttributeResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IAttribute">
+    <wsdl:operation name="DoWork">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAttribute/DoWork" message="tns:IAttribute_DoWork_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAttribute/DoWorkResponse" message="tns:IAttribute_DoWork_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAttribute">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAttribute/GetAttribute" message="tns:IAttribute_GetAttribute_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAttribute/GetAttributeResponse" message="tns:IAttribute_GetAttribute_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRoleBasedAttribute">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAttribute/GetRoleBasedAttribute" message="tns:IAttribute_GetRoleBasedAttribute_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAttribute/GetRoleBasedAttributeResponse" message="tns:IAttribute_GetRoleBasedAttribute_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAttributeHistory">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAttribute/GetAttributeHistory" message="tns:IAttribute_GetAttributeHistory_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAttribute/GetAttributeHistoryResponse" message="tns:IAttribute_GetAttributeHistory_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetGroup">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAttribute/GetGroup" message="tns:IAttribute_GetGroup_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAttribute/GetGroupResponse" message="tns:IAttribute_GetGroup_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetStage">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAttribute/GetStage" message="tns:IAttribute_GetStage_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAttribute/GetStageResponse" message="tns:IAttribute_GetStage_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUnit">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAttribute/GetUnit" message="tns:IAttribute_GetUnit_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAttribute/GetUnitResponse" message="tns:IAttribute_GetUnit_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertUpdateAttribute">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAttribute/InsertUpdateAttribute" message="tns:IAttribute_InsertUpdateAttribute_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAttribute/InsertUpdateAttributeResponse" message="tns:IAttribute_InsertUpdateAttribute_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteAttribute">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAttribute/DeleteAttribute" message="tns:IAttribute_DeleteAttribute_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAttribute/DeleteAttributeResponse" message="tns:IAttribute_DeleteAttribute_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAttributeById">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAttribute/GetAttributeById" message="tns:IAttribute_GetAttributeById_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAttribute/GetAttributeByIdResponse" message="tns:IAttribute_GetAttributeById_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAttributeHyperlink">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAttribute/GetAttributeHyperlink" message="tns:IAttribute_GetAttributeHyperlink_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAttribute/GetAttributeHyperlinkResponse" message="tns:IAttribute_GetAttributeHyperlink_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertUpdateAttributeHyperlink">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAttribute/InsertUpdateAttributeHyperlink" message="tns:IAttribute_InsertUpdateAttributeHyperlink_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAttribute/InsertUpdateAttributeHyperlinkResponse" message="tns:IAttribute_InsertUpdateAttributeHyperlink_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteAttributeHyaperlink">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAttribute/DeleteAttributeHyaperlink" message="tns:IAttribute_DeleteAttributeHyaperlink_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAttribute/DeleteAttributeHyaperlinkResponse" message="tns:IAttribute_DeleteAttributeHyaperlink_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteAttributes">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAttribute/DeleteAttributes" message="tns:IAttribute_DeleteAttributes_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAttribute/DeleteAttributesResponse" message="tns:IAttribute_DeleteAttributes_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAttributeType">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAttribute/GetAttributeType" message="tns:IAttribute_GetAttributeType_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAttribute/GetAttributeTypeResponse" message="tns:IAttribute_GetAttributeType_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteAttributesAll">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAttribute/DeleteAttributesAll" message="tns:IAttribute_DeleteAttributesAll_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAttribute/DeleteAttributesAllResponse" message="tns:IAttribute_DeleteAttributesAll_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUnitsOfUnitType">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAttribute/GetUnitsOfUnitType" message="tns:IAttribute_GetUnitsOfUnitType_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAttribute/GetUnitsOfUnitTypeResponse" message="tns:IAttribute_GetUnitsOfUnitType_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEntityAttributes">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAttribute/GetEntityAttributes" message="tns:IAttribute_GetEntityAttributes_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAttribute/GetEntityAttributesResponse" message="tns:IAttribute_GetEntityAttributes_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDisplayUnitType">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAttribute/GetDisplayUnitType" message="tns:IAttribute_GetDisplayUnitType_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAttribute/GetDisplayUnitTypeResponse" message="tns:IAttribute_GetDisplayUnitType_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAttributeValueParserRegularExpression">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAttribute/GetAttributeValueParserRegularExpression" message="tns:IAttribute_GetAttributeValueParserRegularExpression_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAttribute/GetAttributeValueParserRegularExpressionResponse" message="tns:IAttribute_GetAttributeValueParserRegularExpression_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllValuesOfStringAttribute">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAttribute/GetAllValuesOfStringAttribute" message="tns:IAttribute_GetAllValuesOfStringAttribute_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAttribute/GetAllValuesOfStringAttributeResponse" message="tns:IAttribute_GetAllValuesOfStringAttribute_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetStages">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAttribute/GetStages" message="tns:IAttribute_GetStages_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAttribute/GetStagesResponse" message="tns:IAttribute_GetStages_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllGroups">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAttribute/GetAllGroups" message="tns:IAttribute_GetAllGroups_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAttribute/GetAllGroupsResponse" message="tns:IAttribute_GetAllGroups_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveEntityAttribute">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAttribute/SaveEntityAttribute" message="tns:IAttribute_SaveEntityAttribute_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAttribute/SaveEntityAttributeResponse" message="tns:IAttribute_SaveEntityAttribute_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IAttribute" type="tns:IAttribute">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="DoWork">
+      <soap:operation soapAction="http://tempuri.org/IAttribute/DoWork" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAttribute">
+      <soap:operation soapAction="http://tempuri.org/IAttribute/GetAttribute" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRoleBasedAttribute">
+      <soap:operation soapAction="http://tempuri.org/IAttribute/GetRoleBasedAttribute" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAttributeHistory">
+      <soap:operation soapAction="http://tempuri.org/IAttribute/GetAttributeHistory" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGroup">
+      <soap:operation soapAction="http://tempuri.org/IAttribute/GetGroup" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStage">
+      <soap:operation soapAction="http://tempuri.org/IAttribute/GetStage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUnit">
+      <soap:operation soapAction="http://tempuri.org/IAttribute/GetUnit" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertUpdateAttribute">
+      <soap:operation soapAction="http://tempuri.org/IAttribute/InsertUpdateAttribute" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteAttribute">
+      <soap:operation soapAction="http://tempuri.org/IAttribute/DeleteAttribute" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAttributeById">
+      <soap:operation soapAction="http://tempuri.org/IAttribute/GetAttributeById" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAttributeHyperlink">
+      <soap:operation soapAction="http://tempuri.org/IAttribute/GetAttributeHyperlink" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertUpdateAttributeHyperlink">
+      <soap:operation soapAction="http://tempuri.org/IAttribute/InsertUpdateAttributeHyperlink" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteAttributeHyaperlink">
+      <soap:operation soapAction="http://tempuri.org/IAttribute/DeleteAttributeHyaperlink" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteAttributes">
+      <soap:operation soapAction="http://tempuri.org/IAttribute/DeleteAttributes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAttributeType">
+      <soap:operation soapAction="http://tempuri.org/IAttribute/GetAttributeType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteAttributesAll">
+      <soap:operation soapAction="http://tempuri.org/IAttribute/DeleteAttributesAll" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUnitsOfUnitType">
+      <soap:operation soapAction="http://tempuri.org/IAttribute/GetUnitsOfUnitType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEntityAttributes">
+      <soap:operation soapAction="http://tempuri.org/IAttribute/GetEntityAttributes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDisplayUnitType">
+      <soap:operation soapAction="http://tempuri.org/IAttribute/GetDisplayUnitType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAttributeValueParserRegularExpression">
+      <soap:operation soapAction="http://tempuri.org/IAttribute/GetAttributeValueParserRegularExpression" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllValuesOfStringAttribute">
+      <soap:operation soapAction="http://tempuri.org/IAttribute/GetAllValuesOfStringAttribute" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStages">
+      <soap:operation soapAction="http://tempuri.org/IAttribute/GetStages" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllGroups">
+      <soap:operation soapAction="http://tempuri.org/IAttribute/GetAllGroups" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveEntityAttribute">
+      <soap:operation soapAction="http://tempuri.org/IAttribute/SaveEntityAttribute" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Attribute">
+    <wsdl:port name="BasicHttpBinding_IAttribute" binding="tns:BasicHttpBinding_IAttribute">
+      <soap:address location="http://services.ecodomus.com/ClientPM/Attributes.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

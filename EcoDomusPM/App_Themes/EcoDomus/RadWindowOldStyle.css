@@ -1,0 +1,63 @@
+﻿.RadWindowOldStyle {
+    clear: both !important;
+    font: normal 12px/24px "Segoe UI", Arial, sans-serif;
+}
+
+.RadWindowOldStyle .rwTopLeft, .RadWindowOldStyle .rwTopRight, .RadWindowOldStyle .rwTitlebarControls,
+.RadWindowOldStyle .rwTopResize {
+    background: gray !important;
+}
+
+.RadWindowOldStyle .rwIcon {
+    background: url("../../App/Images/scroll_icon.png") !important;
+    margin: 0 5px 0 0 !important;
+}
+
+.RadWindowOldStyle .rwTitlebarControls tbody tr td em{
+    font: normal 14px/24px "Segoe UI", Arial, sans-serif !important;
+    padding: 0px 0 0 5px !important;
+    
+    color: white !important;
+}
+
+.RadWindowOldStyle .rwBodyLeft, .RadWindowOldStyle .rwBodyRight {
+    background: white !important;
+}
+
+.RadWindowOldStyle .CropWindowsContent {
+    background: url("../../App/Images/scroll_icon.png") !important;
+}
+
+.RadWindowOldStyle .CropWindowContent {
+    margin: 0px;
+    padding: 18px 10px 10px 19px;
+}
+
+.RadScrollOrangeStyle .rslSelectedregion {
+    background:url("../../App/Images/asset_slider_3.png") !important;
+}
+
+.RadScrollOrangeStyle .rslTrack {
+    background:url("../../App/Images/asset_slider_1.png") !important;
+}
+
+.RadScrollOrangeStyle .rslDraghandle {
+    background:url("../../App/Images/asset_slider_2.png") !important;
+    width: 13px !important;
+    height: 12px !important;
+    margin-top: -3px !important;
+}
+
+.RadWindowOldStyle .rwFooterLeft, .RadWindowOldStyle .rwFooterRight, .RadWindowOldStyle .rwFooterCenter {
+    background: white !important;
+}
+
+#divViewer {
+    z-index: 10 !important;
+}
+
+.divViewerStable {
+    z-index: 11 !important;
+    
+}
+

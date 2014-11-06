@@ -1,0 +1,3156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Abbreviation" xml:space="preserve">
+    <value>Сокращение</value>
+  </data>
+  <data name="Accept" xml:space="preserve">
+    <value>Принимать</value>
+  </data>
+  <data name="Access_View" xml:space="preserve">
+    <value>Права доступа</value>
+  </data>
+  <data name="Action" xml:space="preserve">
+    <value>Действие</value>
+  </data>
+  <data name="Active_Days" xml:space="preserve">
+    <value>Рабочие дни</value>
+  </data>
+  <data name="Activity_Id" xml:space="preserve">
+    <value>Номер действия</value>
+  </data>
+  <data name="Add" xml:space="preserve">
+    <value>Добавить</value>
+  </data>
+  <data name="Add_Asset" xml:space="preserve">
+    <value>Добавить актив</value>
+  </data>
+  <data name="Add_Attribute" xml:space="preserve">
+    <value>Добавить атрибут</value>
+  </data>
+  <data name="Add_BAS_Server" xml:space="preserve">
+    <value>Добавить BAS сервер</value>
+  </data>
+  <data name="Add_By_Model_Number" xml:space="preserve">
+    <value>Добавить по номеру модели</value>
+  </data>
+  <data name="Add_Category" xml:space="preserve">
+    <value>Добавить категорию</value>
+  </data>
+  <data name="Add_Component" xml:space="preserve">
+    <value>Добавить компонент</value>
+  </data>
+  <data name="Add_Configuration" xml:space="preserve">
+    <value>Добавить конфигурацию</value>
+  </data>
+  <data name="Add_Constraints" xml:space="preserve">
+    <value>Добавить ограничение</value>
+  </data>
+  <data name="Add_Custom_Data" xml:space="preserve">
+    <value>Добавление пользовательских данных</value>
+  </data>
+  <data name="Add_Document" xml:space="preserve">
+    <value>Добавить документ</value>
+  </data>
+  <data name="Add_Document_To" xml:space="preserve">
+    <value>Добавить документ</value>
+  </data>
+  <data name="Add_Edit_Custom_Data" xml:space="preserve">
+    <value>Добавить/Изменить пользовательские данные</value>
+  </data>
+  <data name="Add_Edit_Document" xml:space="preserve">
+    <value>Добавить/Редактировать документ</value>
+  </data>
+  <data name="Add_Edit_Name" xml:space="preserve">
+    <value>Добавить/Изменить имя</value>
+  </data>
+  <data name="Add_Facility" xml:space="preserve">
+    <value>Добавить объект</value>
+  </data>
+  <data name="Add_Floor" xml:space="preserve">
+    <value>Добавить этаж</value>
+  </data>
+  <data name="Add_Hierarchy" xml:space="preserve">
+    <value>Добавить иерархию</value>
+  </data>
+  <data name="Add_Impact" xml:space="preserve">
+    <value>Добавить воздействие</value>
+  </data>
+  <data name="Add_Inspection" xml:space="preserve">
+    <value>Добавить инспекцию</value>
+  </data>
+  <data name="Add_Issue" xml:space="preserve">
+    <value>Добавить работу</value>
+  </data>
+  <data name="Add_Manufacturer" xml:space="preserve">
+    <value>Добавить производителя</value>
+  </data>
+  <data name="Add_New" xml:space="preserve">
+    <value>Добавить</value>
+  </data>
+  <data name="Add_New_City" xml:space="preserve">
+    <value>Добавить Город</value>
+  </data>
+  <data name="Add_New_Client" xml:space="preserve">
+    <value>Добавить Клиента</value>
+  </data>
+  <data name="Add_New_Country" xml:space="preserve">
+    <value>Добавить Страну</value>
+  </data>
+  <data name="Add_New_Crew" xml:space="preserve">
+    <value>Добавить новую команду</value>
+  </data>
+  <data name="Add_New_Facility" xml:space="preserve">
+    <value>Добавить Объект</value>
+  </data>
+  <data name="Add_New_Impact" xml:space="preserve">
+    <value>Добавить Воздействие</value>
+  </data>
+  <data name="Add_New_Organization" xml:space="preserve">
+    <value>Добавить Организацию</value>
+  </data>
+  <data name="Add_New_Project" xml:space="preserve">
+    <value>Добавить Проект</value>
+  </data>
+  <data name="Add_New_Role" xml:space="preserve">
+    <value>Добавить Роль</value>
+  </data>
+  <data name="Add_New_State" xml:space="preserve">
+    <value>Добавить Регион</value>
+  </data>
+  <data name="Add_New_Task" xml:space="preserve">
+    <value>Добавить Задание</value>
+  </data>
+  <data name="Add_New_User" xml:space="preserve">
+    <value>Добавить Пользователя</value>
+  </data>
+  <data name="Add_Organization_To_Project" xml:space="preserve">
+    <value>Добавить Организацию к Проекту</value>
+  </data>
+  <data name="Add_Product" xml:space="preserve">
+    <value>Добавить Продукт</value>
+  </data>
+  <data name="Add_Product_Attribute" xml:space="preserve">
+    <value>Добавить Атрибут Продукта</value>
+  </data>
+  <data name="Add_Provider" xml:space="preserve">
+    <value>Добавить Поставщика</value>
+  </data>
+  <data name="Add_Space" xml:space="preserve">
+    <value>Добавить пространство</value>
+  </data>
+  <data name="Add_Subsystem" xml:space="preserve">
+    <value>Добавить подсистему</value>
+  </data>
+  <data name="Add_Subsystems" xml:space="preserve">
+    <value>Подсистемы</value>
+  </data>
+  <data name="Add_System" xml:space="preserve">
+    <value>Добавить систему</value>
+  </data>
+  <data name="Add_Systems" xml:space="preserve">
+    <value>Добавить системы</value>
+  </data>
+  <data name="Add_Task" xml:space="preserve">
+    <value>Добавить задачу</value>
+  </data>
+  <data name="Add_Type" xml:space="preserve">
+    <value>Добавить тип</value>
+  </data>
+  <data name="Add_Weather_Station" xml:space="preserve">
+    <value>Добавить метеостанцию</value>
+  </data>
+  <data name="Add_Work_Order" xml:space="preserve">
+    <value>Добавить заказ на работу</value>
+  </data>
+  <data name="Add_Zone" xml:space="preserve">
+    <value>Добавить зону</value>
+  </data>
+  <data name="Add_Zones" xml:space="preserve">
+    <value>Добавить зоны</value>
+  </data>
+  <data name="Address_1" xml:space="preserve">
+    <value>Адрес 1</value>
+  </data>
+  <data name="Address_2" xml:space="preserve">
+    <value>Адрес 2</value>
+  </data>
+  <data name="Address_Country" xml:space="preserve">
+    <value>Страна</value>
+  </data>
+  <data name="Address_State_Region" xml:space="preserve">
+    <value>Регион</value>
+  </data>
+  <data name="Address_Street" xml:space="preserve">
+    <value>Улица</value>
+  </data>
+  <data name="Address_Town" xml:space="preserve">
+    <value>Город</value>
+  </data>
+  <data name="Address1" xml:space="preserve">
+    <value>Адрес 1</value>
+  </data>
+  <data name="Address2" xml:space="preserve">
+    <value>Адрес 2</value>
+  </data>
+  <data name="Administrative_Controls" xml:space="preserve">
+    <value>Административные средства</value>
+  </data>
+  <data name="Affected_Task" xml:space="preserve">
+    <value>Затронутая задача</value>
+  </data>
+  <data name="Alerts" xml:space="preserve">
+    <value>Предупреждения</value>
+  </data>
+  <data name="All_My_Task" xml:space="preserve">
+    <value>Мои задачи</value>
+  </data>
+  <data name="Altitude" xml:space="preserve">
+    <value>Высота</value>
+  </data>
+  <data name="Approval_By" xml:space="preserve">
+    <value>Утверждение</value>
+  </data>
+  <data name="Area" xml:space="preserve">
+    <value>Область</value>
+  </data>
+  <data name="Area_Measurement" xml:space="preserve">
+    <value>Площадь измерения</value>
+  </data>
+  <data name="Area_Units" xml:space="preserve">
+    <value>Территориальные единицы</value>
+  </data>
+  <data name="Asset" xml:space="preserve">
+    <value>Актив</value>
+  </data>
+  <data name="Asset_Condition_Report" xml:space="preserve">
+    <value>Состояние активов</value>
+  </data>
+  <data name="Asset_Identifier" xml:space="preserve">
+    <value>Идентификатор актива</value>
+  </data>
+  <data name="Asset_Name" xml:space="preserve">
+    <value>Имя актива</value>
+  </data>
+  <data name="Asset_Profile" xml:space="preserve">
+    <value>Профиль актива</value>
+  </data>
+  <data name="Asset_Type" xml:space="preserve">
+    <value>Тип актива</value>
+  </data>
+  <data name="Assets" xml:space="preserve">
+    <value>Активы</value>
+  </data>
+  <data name="Assign" xml:space="preserve">
+    <value>Назначать</value>
+  </data>
+  <data name="Assign_As_Major" xml:space="preserve">
+    <value>Назначить в качестве базового</value>
+  </data>
+  <data name="Assign_As_Project_Contact" xml:space="preserve">
+    <value>Назначить в качестве ведущего контакта</value>
+  </data>
+  <data name="Assign_Asset" xml:space="preserve">
+    <value>Присвоить Актив</value>
+  </data>
+  <data name="Assign_Contacts_To_The_Project" xml:space="preserve">
+    <value>Прикрепить Контакты к Проекту</value>
+  </data>
+  <data name="Assign_Facility" xml:space="preserve">
+    <value>Присвоить объект</value>
+  </data>
+  <data name="Assign_Manufacturer" xml:space="preserve">
+    <value>Присвоить производителя</value>
+  </data>
+  <data name="Assign_Omniclass" xml:space="preserve">
+    <value>Присвоить OmniClass</value>
+  </data>
+  <data name="Assign_Organization" xml:space="preserve">
+    <value>Прикрепить Организацию</value>
+  </data>
+  <data name="Assign_Organization_To_Client" xml:space="preserve">
+    <value>Создать Базу Клиента и Прикрепить Организацию</value>
+  </data>
+  <data name="Assign_Product" xml:space="preserve">
+    <value>Присвоить продукт</value>
+  </data>
+  <data name="Assign_Space" xml:space="preserve">
+    <value>Присвоить пространство</value>
+  </data>
+  <data name="Assign_Subsystems" xml:space="preserve">
+    <value>Присвоить Подсистемы</value>
+  </data>
+  <data name="Assign_System" xml:space="preserve">
+    <value>Присвоить Систему</value>
+  </data>
+  <data name="Assign_To" xml:space="preserve">
+    <value>Назначить</value>
+  </data>
+  <data name="Assigned_To" xml:space="preserve">
+    <value>Назначено</value>
+  </data>
+  <data name="Attribute" xml:space="preserve">
+    <value>Атрибут</value>
+  </data>
+  <data name="Attribute_Name" xml:space="preserve">
+    <value>Имя Атрибута</value>
+  </data>
+  <data name="Attribute_Template" xml:space="preserve">
+    <value>Шаблон Атрибутов</value>
+  </data>
+  <data name="AttributeName" xml:space="preserve">
+    <value>Имя Атрибута</value>
+  </data>
+  <data name="Attributes" xml:space="preserve">
+    <value>Атрибуты</value>
+  </data>
+  <data name="Average_PPC" xml:space="preserve">
+    <value>Средняя КПП</value>
+  </data>
+  <data name="Back" xml:space="preserve">
+    <value>Назад</value>
+  </data>
+  <data name="Barcode" xml:space="preserve">
+    <value>Штрих-код</value>
+  </data>
+  <data name="BAS_Attribute_History" xml:space="preserve">
+    <value>BAS история атрибутов</value>
+  </data>
+  <data name="BAS_Enabled" xml:space="preserve">
+    <value>BAS включен</value>
+  </data>
+  <data name="BAS_Information" xml:space="preserve">
+    <value>BAS информация</value>
+  </data>
+  <data name="BAS_Server" xml:space="preserve">
+    <value>BAS сервер</value>
+  </data>
+  <data name="BIM" xml:space="preserve">
+    <value>BIM</value>
+  </data>
+  <data name="BIM_Connector_Installer" xml:space="preserve">
+    <value>Установка BIM соединителя</value>
+  </data>
+  <data name="BIM_Model_Server" xml:space="preserve">
+    <value>BIM сервер</value>
+  </data>
+  <data name="BIM_Server" xml:space="preserve">
+    <value>BIM сервер</value>
+  </data>
+  <data name="BIM_Use_Case" xml:space="preserve">
+    <value>BIM образец использования</value>
+  </data>
+  <data name="Building_Automation_System_Server" xml:space="preserve">
+    <value>Building Automation System сервер</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Отменить</value>
+  </data>
+  <data name="Category" xml:space="preserve">
+    <value>Категория</value>
+  </data>
+  <data name="Chance" xml:space="preserve">
+    <value>Шанс</value>
+  </data>
+  <data name="Changed_By" xml:space="preserve">
+    <value>Изменено</value>
+  </data>
+  <data name="Check_All_Boxes" xml:space="preserve">
+    <value>Отметьте все</value>
+  </data>
+  <data name="City" xml:space="preserve">
+    <value>Город</value>
+  </data>
+  <data name="City_State" xml:space="preserve">
+    <value>Город и Регион</value>
+  </data>
+  <data name="Clear" xml:space="preserve">
+    <value>Очистить</value>
+  </data>
+  <data name="Client" xml:space="preserve">
+    <value>Клиент</value>
+  </data>
+  <data name="Client_Name" xml:space="preserve">
+    <value>Имя Клиента</value>
+  </data>
+  <data name="Clients" xml:space="preserve">
+    <value>Клиенты</value>
+  </data>
+  <data name="Clone" xml:space="preserve">
+    <value>Клонирование</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>Закрыть</value>
+  </data>
+  <data name="Close_Window" xml:space="preserve">
+    <value>Закрыть Окно</value>
+  </data>
+  <data name="CO_ASI" xml:space="preserve">
+    <value>CO / ASI</value>
+  </data>
+  <data name="COBie" xml:space="preserve">
+    <value>COBie</value>
+  </data>
+  <data name="COBie_Data_Quality_Control" xml:space="preserve">
+    <value>Контроль Качества COBie</value>
+  </data>
+  <data name="COBie_QC" xml:space="preserve">
+    <value>Контроль Качества COBie</value>
+  </data>
+  <data name="Collapse" xml:space="preserve">
+    <value>Свернуть</value>
+  </data>
+  <data name="Commitment_Status" xml:space="preserve">
+    <value>Приверженность статус</value>
+  </data>
+  <data name="Company" xml:space="preserve">
+    <value>Компания</value>
+  </data>
+  <data name="Component_Name" xml:space="preserve">
+    <value>Имя Актива</value>
+  </data>
+  <data name="Components" xml:space="preserve">
+    <value>Активы</value>
+  </data>
+  <data name="Condition" xml:space="preserve">
+    <value>Состояние</value>
+  </data>
+  <data name="Condition_Type" xml:space="preserve">
+    <value>Тип состояния</value>
+  </data>
+  <data name="Configuration_Name" xml:space="preserve">
+    <value>Название Конфигурации</value>
+  </data>
+  <data name="Connection_String" xml:space="preserve">
+    <value>Строка соединения</value>
+  </data>
+  <data name="Constraint" xml:space="preserve">
+    <value>Ограничение</value>
+  </data>
+  <data name="Constraint_Log" xml:space="preserve">
+    <value>Ограничение Войти</value>
+  </data>
+  <data name="Constraints" xml:space="preserve">
+    <value>Ограничения</value>
+  </data>
+  <data name="Contact_Email" xml:space="preserve">
+    <value>Адрес электронной почты</value>
+  </data>
+  <data name="Contacts" xml:space="preserve">
+    <value>Контакты</value>
+  </data>
+  <data name="Contains" xml:space="preserve">
+    <value>Содержит</value>
+  </data>
+  <data name="Contractor" xml:space="preserve">
+    <value>Подрядчик</value>
+  </data>
+  <data name="Count" xml:space="preserve">
+    <value>Количество</value>
+  </data>
+  <data name="Country" xml:space="preserve">
+    <value>Страна</value>
+  </data>
+  <data name="Created_By" xml:space="preserve">
+    <value>Создано</value>
+  </data>
+  <data name="Created_On" xml:space="preserve">
+    <value>Создано</value>
+  </data>
+  <data name="Crew_Leader" xml:space="preserve">
+    <value>Экипаж лидера</value>
+  </data>
+  <data name="Crew_Profile" xml:space="preserve">
+    <value>Экипаж профиля</value>
+  </data>
+  <data name="Crews" xml:space="preserve">
+    <value>Экипажи</value>
+  </data>
+  <data name="Criteria" xml:space="preserve">
+    <value>Критерии</value>
+  </data>
+  <data name="Currency_Units" xml:space="preserve">
+    <value>Денежные единицы</value>
+  </data>
+  <data name="Custom_Data" xml:space="preserve">
+    <value>Пользовательские данные</value>
+  </data>
+  <data name="Custom_Hierarchy_Name" xml:space="preserve">
+    <value>Пользовательское имя иерархии</value>
+  </data>
+  <data name="Custom_Reports" xml:space="preserve">
+    <value>Пользовательские отчеты</value>
+  </data>
+  <data name="Dashboard" xml:space="preserve">
+    <value>Приборная панель</value>
+  </data>
+  <data name="Data_Provider" xml:space="preserve">
+    <value>Поставщик данных</value>
+  </data>
+  <data name="Database_Name" xml:space="preserve">
+    <value>Имя базы данных</value>
+  </data>
+  <data name="Date" xml:space="preserve">
+    <value>Дата</value>
+  </data>
+  <data name="Day" xml:space="preserve">
+    <value>День</value>
+  </data>
+  <data name="Days" xml:space="preserve">
+    <value>Дней</value>
+  </data>
+  <data name="Deadline" xml:space="preserve">
+    <value>Крайний срок</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Удалить</value>
+  </data>
+  <data name="Delete_File" xml:space="preserve">
+    <value>Удалить файл</value>
+  </data>
+  <data name="Demand_Response" xml:space="preserve">
+    <value>Спрос ответ</value>
+  </data>
+  <data name="Deny" xml:space="preserve">
+    <value>Отрицать</value>
+  </data>
+  <data name="Department" xml:space="preserve">
+    <value>Отдел</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>Описание</value>
+  </data>
+  <data name="Designer" xml:space="preserve">
+    <value>Дизайнер</value>
+  </data>
+  <data name="Desktop_Client_Installer" xml:space="preserve">
+    <value>Установщик мобильного приложения</value>
+  </data>
+  <data name="Details" xml:space="preserve">
+    <value>Детали</value>
+  </data>
+  <data name="Directory_Name" xml:space="preserve">
+    <value>Имя каталога</value>
+  </data>
+  <data name="Document" xml:space="preserve">
+    <value>Документ</value>
+  </data>
+  <data name="Document_Checklist" xml:space="preserve">
+    <value>Перечень необходимых документов</value>
+  </data>
+  <data name="Document_Name" xml:space="preserve">
+    <value>Название документа</value>
+  </data>
+  <data name="Document_Profile" xml:space="preserve">
+    <value>Профиль документа</value>
+  </data>
+  <data name="Documents" xml:space="preserve">
+    <value>Документация</value>
+  </data>
+  <data name="Download" xml:space="preserve">
+    <value>Скачать</value>
+  </data>
+  <data name="Download_Sample_COBie_File" xml:space="preserve">
+    <value>Скачать файл Пример COBie</value>
+  </data>
+  <data name="Due_Date" xml:space="preserve">
+    <value>Закончить к дате</value>
+  </data>
+  <data name="Duration" xml:space="preserve">
+    <value>Продолжительность</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>Редактировать</value>
+  </data>
+  <data name="Edit_Location_Hierarchy" xml:space="preserve">
+    <value>Редактировать иерархию</value>
+  </data>
+  <data name="Edit_Master_Format" xml:space="preserve">
+    <value>Редактировать MasterFormat</value>
+  </data>
+  <data name="Edit_Omniclass" xml:space="preserve">
+    <value>Редактировать OmniClass</value>
+  </data>
+  <data name="Edit_Uni_Format" xml:space="preserve">
+    <value>Редактировать UniFormat</value>
+  </data>
+  <data name="Elapsed_Time" xml:space="preserve">
+    <value>Затраченное время</value>
+  </data>
+  <data name="Elevation" xml:space="preserve">
+    <value>Высота</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>E-mail</value>
+  </data>
+  <data name="Enabled" xml:space="preserve">
+    <value>Включено</value>
+  </data>
+  <data name="End" xml:space="preserve">
+    <value>Конец</value>
+  </data>
+  <data name="End_Date" xml:space="preserve">
+    <value>Дата окончания</value>
+  </data>
+  <data name="End_Date_Time" xml:space="preserve">
+    <value>Дата окончания</value>
+  </data>
+  <data name="Energy_Model" xml:space="preserve">
+    <value>Энергетическая модель</value>
+  </data>
+  <data name="Energy_Performance" xml:space="preserve">
+    <value>Энергетическая производительность</value>
+  </data>
+  <data name="Engineering_Controls" xml:space="preserve">
+    <value>Технологический контроль</value>
+  </data>
+  <data name="Entity" xml:space="preserve">
+    <value>Организация</value>
+  </data>
+  <data name="Equal_To" xml:space="preserve">
+    <value>Равно</value>
+  </data>
+  <data name="Equipment" xml:space="preserve">
+    <value>Оборудование</value>
+  </data>
+  <data name="Equipment_Id" xml:space="preserve">
+    <value>Идентификатор</value>
+  </data>
+  <data name="Errors" xml:space="preserve">
+    <value>Ошибки</value>
+  </data>
+  <data name="Estimated_Time" xml:space="preserve">
+    <value>Расчетное время</value>
+  </data>
+  <data name="Expected_Life" xml:space="preserve">
+    <value>Ожидаемый срок</value>
+  </data>
+  <data name="Export" xml:space="preserve">
+    <value>Экспорт</value>
+  </data>
+  <data name="Export_COBie_File" xml:space="preserve">
+    <value>Экспорт COBie файла</value>
+  </data>
+  <data name="Export_Component" xml:space="preserve">
+    <value>Экспорт компонентов</value>
+  </data>
+  <data name="Export_Data" xml:space="preserve">
+    <value>Экспорт Данных</value>
+  </data>
+  <data name="Export_Documents" xml:space="preserve">
+    <value>Экспорт Документации</value>
+  </data>
+  <data name="Export_Project_Contacts" xml:space="preserve">
+    <value>Экспорт Контактов</value>
+  </data>
+  <data name="Export_To_Excel" xml:space="preserve">
+    <value>Экспорт в Excel</value>
+  </data>
+  <data name="Export_To_PDF" xml:space="preserve">
+    <value>Экспорт в PDF</value>
+  </data>
+  <data name="Ext_System_Facility" xml:space="preserve">
+    <value>Внешний объект</value>
+  </data>
+  <data name="Ext_System_Site" xml:space="preserve">
+    <value>Внешняя площадка</value>
+  </data>
+  <data name="External_System" xml:space="preserve">
+    <value>Внешняя система</value>
+  </data>
+  <data name="External_System_Integration" xml:space="preserve">
+    <value>Интеграция с внешней системой</value>
+  </data>
+  <data name="External_System_Name" xml:space="preserve">
+    <value>Имя внешней системы</value>
+  </data>
+  <data name="Facilities" xml:space="preserve">
+    <value>Объекты</value>
+  </data>
+  <data name="Facility" xml:space="preserve">
+    <value>Объект</value>
+  </data>
+  <data name="Facility_Mapping" xml:space="preserve">
+    <value>Координация объектов</value>
+  </data>
+  <data name="Facility_Name" xml:space="preserve">
+    <value>Имя объекта</value>
+  </data>
+  <data name="Facility_Profile" xml:space="preserve">
+    <value>Профиль объекта</value>
+  </data>
+  <data name="Family_Name" xml:space="preserve">
+    <value>Фамилия</value>
+  </data>
+  <data name="File" xml:space="preserve">
+    <value>Файл</value>
+  </data>
+  <data name="File_Size" xml:space="preserve">
+    <value>Размер файла</value>
+  </data>
+  <data name="Find" xml:space="preserve">
+    <value>Находить</value>
+  </data>
+  <data name="Find_Asset" xml:space="preserve">
+    <value>Найти актив</value>
+  </data>
+  <data name="Find_Data_Point" xml:space="preserve">
+    <value>Найти точки данных</value>
+  </data>
+  <data name="Find_Location" xml:space="preserve">
+    <value>Найти место</value>
+  </data>
+  <data name="Find_Meter_Sensor" xml:space="preserve">
+    <value>Найти сенсоры</value>
+  </data>
+  <data name="Finish" xml:space="preserve">
+    <value>Закончить</value>
+  </data>
+  <data name="Finish_Time" xml:space="preserve">
+    <value>Время завершения</value>
+  </data>
+  <data name="First_Name" xml:space="preserve">
+    <value>Имя</value>
+  </data>
+  <data name="First_Page" xml:space="preserve">
+    <value>Первая страница</value>
+  </data>
+  <data name="Floor" xml:space="preserve">
+    <value>Этаж</value>
+  </data>
+  <data name="Floor_Name" xml:space="preserve">
+    <value>Имя этажа</value>
+  </data>
+  <data name="Floor_Name_Grid" xml:space="preserve">
+    <value>Этажи</value>
+  </data>
+  <data name="Floor_Profile" xml:space="preserve">
+    <value>Профиль этажа</value>
+  </data>
+  <data name="Floor_Spaces" xml:space="preserve">
+    <value>Пространства</value>
+  </data>
+  <data name="Floors" xml:space="preserve">
+    <value>Этажи</value>
+  </data>
+  <data name="Friday" xml:space="preserve">
+    <value>Пятница</value>
+  </data>
+  <data name="From" xml:space="preserve">
+    <value>От</value>
+  </data>
+  <data name="Functional_Area" xml:space="preserve">
+    <value>Функциональная область</value>
+  </data>
+  <data name="Generate_Barcode" xml:space="preserve">
+    <value>Создать Штрихкод</value>
+  </data>
+  <data name="Generate_Report" xml:space="preserve">
+    <value>Создать отчет</value>
+  </data>
+  <data name="Generated_Files" xml:space="preserve">
+    <value>Созданные файлы</value>
+  </data>
+  <data name="Get_Updates" xml:space="preserve">
+    <value>Загрузить обновления</value>
+  </data>
+  <data name="Given_Name" xml:space="preserve">
+    <value>Имя</value>
+  </data>
+  <data name="Greater_Than" xml:space="preserve">
+    <value>Больше</value>
+  </data>
+  <data name="Gross_Area" xml:space="preserve">
+    <value>Общая площадь</value>
+  </data>
+  <data name="Group" xml:space="preserve">
+    <value>Группа</value>
+  </data>
+  <data name="group_name" xml:space="preserve">
+    <value>Название группы</value>
+  </data>
+  <data name="Hazard" xml:space="preserve">
+    <value>Опасность</value>
+  </data>
+  <data name="Height" xml:space="preserve">
+    <value>Высота</value>
+  </data>
+  <data name="Hierarchy" xml:space="preserve">
+    <value>Иерархия</value>
+  </data>
+  <data name="ID" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="Image" xml:space="preserve">
+    <value>Изображение</value>
+  </data>
+  <data name="Impact" xml:space="preserve">
+    <value>Воздействие</value>
+  </data>
+  <data name="Impacts" xml:space="preserve">
+    <value>Воздействие</value>
+  </data>
+  <data name="Implementation" xml:space="preserve">
+    <value>Реализация</value>
+  </data>
+  <data name="Import" xml:space="preserve">
+    <value>Импортировать</value>
+  </data>
+  <data name="Import_Data" xml:space="preserve">
+    <value>Импорт данных</value>
+  </data>
+  <data name="Import_Export" xml:space="preserve">
+    <value>Импорт / Экспорт</value>
+  </data>
+  <data name="Inbox" xml:space="preserve">
+    <value>Входящие</value>
+  </data>
+  <data name="Initial_Sync" xml:space="preserve">
+    <value>Начальная синхронизация</value>
+  </data>
+  <data name="Inspection_Profile" xml:space="preserve">
+    <value>Профиль инспекции</value>
+  </data>
+  <data name="Inspections" xml:space="preserve">
+    <value>Инспекции</value>
+  </data>
+  <data name="Installation_Date" xml:space="preserve">
+    <value>Дата установки</value>
+  </data>
+  <data name="Integration" xml:space="preserve">
+    <value>Интеграция</value>
+  </data>
+  <data name="Issue_Name" xml:space="preserve">
+    <value>Имя запроса</value>
+  </data>
+  <data name="Issue_Profile" xml:space="preserve">
+    <value>Профиль запроса</value>
+  </data>
+  <data name="Issue_Report" xml:space="preserve">
+    <value>Отчет по запросам</value>
+  </data>
+  <data name="Issue_Status" xml:space="preserve">
+    <value>Статус запроса</value>
+  </data>
+  <data name="Issue_Type" xml:space="preserve">
+    <value>Тип запроса</value>
+  </data>
+  <data name="Issues" xml:space="preserve">
+    <value>Вопросы</value>
+  </data>
+  <data name="Items_Completed" xml:space="preserve">
+    <value>Закончены</value>
+  </data>
+  <data name="Items_Failed" xml:space="preserve">
+    <value>Неудачно закончились</value>
+  </data>
+  <data name="Items_Remaining" xml:space="preserve">
+    <value>Остальные элементы</value>
+  </data>
+  <data name="JSN" xml:space="preserve">
+    <value>what's that?</value>
+  </data>
+  <data name="JSN_Name" xml:space="preserve">
+    <value>what's that?</value>
+  </data>
+  <data name="Language" xml:space="preserve">
+    <value>Язык</value>
+  </data>
+  <data name="Last_Name" xml:space="preserve">
+    <value>Фамилия</value>
+  </data>
+  <data name="Last_Page" xml:space="preserve">
+    <value>Последняя страница</value>
+  </data>
+  <data name="Last_Sync_Date" xml:space="preserve">
+    <value>Дата последней синхронизации</value>
+  </data>
+  <data name="Latitude" xml:space="preserve">
+    <value>Широта</value>
+  </data>
+  <data name="Lead_Organization" xml:space="preserve">
+    <value>Ведущая организация</value>
+  </data>
+  <data name="Less_Than" xml:space="preserve">
+    <value>Меньше чем</value>
+  </data>
+  <data name="Level_Of_Details" xml:space="preserve">
+    <value>Уровень детализации</value>
+  </data>
+  <data name="Levels" xml:space="preserve">
+    <value>Уровни</value>
+  </data>
+  <data name="Library" xml:space="preserve">
+    <value>Библиотека</value>
+  </data>
+  <data name="Likelihood" xml:space="preserve">
+    <value>Вероятность</value>
+  </data>
+  <data name="Linear_Units" xml:space="preserve">
+    <value>Линейные единицы</value>
+  </data>
+  <data name="Link" xml:space="preserve">
+    <value>Ссылка</value>
+  </data>
+  <data name="Link_to_Data" xml:space="preserve">
+    <value>Ссылка на данные</value>
+  </data>
+  <data name="Links" xml:space="preserve">
+    <value>Ссылки</value>
+  </data>
+  <data name="Live" xml:space="preserve">
+    <value>Реальное время</value>
+  </data>
+  <data name="Location" xml:space="preserve">
+    <value>Место</value>
+  </data>
+  <data name="Location_Hierarchy" xml:space="preserve">
+    <value>Иерархия мест</value>
+  </data>
+  <data name="Locations" xml:space="preserve">
+    <value>Места</value>
+  </data>
+  <data name="Locations_Hierarchy" xml:space="preserve">
+    <value>Иерархия мест</value>
+  </data>
+  <data name="LOD_name" xml:space="preserve">
+    <value>LOD</value>
+  </data>
+  <data name="LOD_QC" xml:space="preserve">
+    <value>LOD QC</value>
+  </data>
+  <data name="Log_In" xml:space="preserve">
+    <value>Вход</value>
+  </data>
+  <data name="Login_As" xml:space="preserve">
+    <value>Войти как</value>
+  </data>
+  <data name="Logout_Img" xml:space="preserve">
+    <value>~/App/Images/Buttons/RusLOGOUT.png</value>
+  </data>
+  <data name="Long_Name" xml:space="preserve">
+    <value>Длинное имя</value>
+  </data>
+  <data name="Longitude" xml:space="preserve">
+    <value>Долгота</value>
+  </data>
+  <data name="Major" xml:space="preserve">
+    <value>Базовый</value>
+  </data>
+  <data name="Manufacturer" xml:space="preserve">
+    <value>Производитель</value>
+  </data>
+  <data name="Manufacturer_Mapping" xml:space="preserve">
+    <value>Синх. производителей</value>
+  </data>
+  <data name="Manufacturer_Name" xml:space="preserve">
+    <value>Имя производителя</value>
+  </data>
+  <data name="Map" xml:space="preserve">
+    <value>Карта</value>
+  </data>
+  <data name="Map_Integration" xml:space="preserve">
+    <value>Синхронизация</value>
+  </data>
+  <data name="Mapping_Done" xml:space="preserve">
+    <value>Синхронизация закончена</value>
+  </data>
+  <data name="Master_Files" xml:space="preserve">
+    <value>Мастер-файлы</value>
+  </data>
+  <data name="Master_Format" xml:space="preserve">
+    <value>MasterFormat</value>
+  </data>
+  <data name="MasterFormat" xml:space="preserve">
+    <value>MasterFormat</value>
+  </data>
+  <data name="Message" xml:space="preserve">
+    <value>Сообщение</value>
+  </data>
+  <data name="Missing_attributes" xml:space="preserve">
+    <value>Отсутствие атрибутов</value>
+  </data>
+  <data name="Mitigation" xml:space="preserve">
+    <value>Рекомендация</value>
+  </data>
+  <data name="Model_Number" xml:space="preserve">
+    <value>Номер модели</value>
+  </data>
+  <data name="Model_Server" xml:space="preserve">
+    <value>Сервер моделей</value>
+  </data>
+  <data name="Monday" xml:space="preserve">
+    <value>Понедельник</value>
+  </data>
+  <data name="Month" xml:space="preserve">
+    <value>Месяц</value>
+  </data>
+  <data name="Months" xml:space="preserve">
+    <value>Месяцы</value>
+  </data>
+  <data name="Move_To_System" xml:space="preserve">
+    <value>Переместить в систему</value>
+  </data>
+  <data name="My_Current_Week_Tasks" xml:space="preserve">
+    <value>Мой Текущие задачи неделю</value>
+  </data>
+  <data name="My_Profile" xml:space="preserve">
+    <value>Мой профиль</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Название</value>
+  </data>
+  <data name="Naming_Convention" xml:space="preserve">
+    <value>Стандартные имена</value>
+  </data>
+  <data name="Navigation" xml:space="preserve">
+    <value>Навигация</value>
+  </data>
+  <data name="Net_Area" xml:space="preserve">
+    <value>Чистая площадь</value>
+  </data>
+  <data name="Nevisworks_Version" xml:space="preserve">
+    <value>Navisworks версия</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>Следующий</value>
+  </data>
+  <data name="Next_Page" xml:space="preserve">
+    <value>Следующая страница</value>
+  </data>
+  <data name="No_Filter" xml:space="preserve">
+    <value>Нет фильтра</value>
+  </data>
+  <data name="No_Of_Users" xml:space="preserve">
+    <value>Количество пользователей</value>
+  </data>
+  <data name="No_schedule_is_available_for_this_project_yet" xml:space="preserve">
+    <value>Нет графика для этого проекта пока нет.</value>
+  </data>
+  <data name="Non_conformance_Reasons" xml:space="preserve">
+    <value>Причины, не соответствие</value>
+  </data>
+  <data name="Non_conformance_Reasons_Report" xml:space="preserve">
+    <value>Причины, не соответствие Сообщить</value>
+  </data>
+  <data name="Notification_Time" xml:space="preserve">
+    <value>Уведомление время</value>
+  </data>
+  <data name="Notify" xml:space="preserve">
+    <value>Уведомлять</value>
+  </data>
+  <data name="Object" xml:space="preserve">
+    <value>Объект</value>
+  </data>
+  <data name="of" xml:space="preserve">
+    <value>из</value>
+  </data>
+  <data name="Office_Name" xml:space="preserve">
+    <value>Имя офиса</value>
+  </data>
+  <data name="Ok" xml:space="preserve">
+    <value>Ok</value>
+  </data>
+  <data name="Omni_Class_Type" xml:space="preserve">
+    <value>OmniClass тип</value>
+  </data>
+  <data name="OmniClass" xml:space="preserve">
+    <value>OmniClass</value>
+  </data>
+  <data name="OmniClass_Type" xml:space="preserve">
+    <value>OmniClass тип</value>
+  </data>
+  <data name="OmniClass_version" xml:space="preserve">
+    <value>OmniClass версия</value>
+  </data>
+  <data name="Open" xml:space="preserve">
+    <value>Открыть</value>
+  </data>
+  <data name="Organization" xml:space="preserve">
+    <value>Организация</value>
+  </data>
+  <data name="Organization_Acceptance" xml:space="preserve">
+    <value>Принять организацию</value>
+  </data>
+  <data name="Organization_ID" xml:space="preserve">
+    <value>ID организации</value>
+  </data>
+  <data name="Organization_Name" xml:space="preserve">
+    <value>Название организации</value>
+  </data>
+  <data name="Organization_Profile" xml:space="preserve">
+    <value>Профиль организации</value>
+  </data>
+  <data name="Organization_Type" xml:space="preserve">
+    <value>Тип организации</value>
+  </data>
+  <data name="Organizations" xml:space="preserve">
+    <value>Организации</value>
+  </data>
+  <data name="Overall_Impact" xml:space="preserve">
+    <value>Общее воздействие</value>
+  </data>
+  <data name="Owner" xml:space="preserve">
+    <value>Владелец</value>
+  </data>
+  <data name="Owner_Organization" xml:space="preserve">
+    <value>Заказчик</value>
+  </data>
+  <data name="Page_Title" xml:space="preserve">
+    <value>Название страницы</value>
+  </data>
+  <data name="Parameter" xml:space="preserve">
+    <value>Параметр</value>
+  </data>
+  <data name="Parent" xml:space="preserve">
+    <value>Родитель</value>
+  </data>
+  <data name="Parent_System" xml:space="preserve">
+    <value>Родительская система</value>
+  </data>
+  <data name="Part_Number" xml:space="preserve">
+    <value>Номер детали</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>Пароль</value>
+  </data>
+  <data name="PDF_Output_Format" xml:space="preserve">
+    <value>Формат PDF</value>
+  </data>
+  <data name="Percent_Count" xml:space="preserve">
+    <value>Процент графа</value>
+  </data>
+  <data name="Percent_Plan_Complete" xml:space="preserve">
+    <value>Процент план Завершить</value>
+  </data>
+  <data name="Percent_Plan_Complete_Report" xml:space="preserve">
+    <value>Процент план Complete (КПП) доклад</value>
+  </data>
+  <data name="Personal_Protective_equipment" xml:space="preserve">
+    <value>Средства индивидуальной защиты</value>
+  </data>
+  <data name="Phase" xml:space="preserve">
+    <value>Фаза</value>
+  </data>
+  <data name="Phone" xml:space="preserve">
+    <value>Телефон</value>
+  </data>
+  <data name="Phone_Number" xml:space="preserve">
+    <value>Номер телефона</value>
+  </data>
+  <data name="Please_enter_number" xml:space="preserve">
+    <value>Пожалуйста, введите номер</value>
+  </data>
+  <data name="Postal_Code" xml:space="preserve">
+    <value>Почтовый код</value>
+  </data>
+  <data name="Postal_Code_Zip" xml:space="preserve">
+    <value>Почтовый индекс</value>
+  </data>
+  <data name="Previous_Page" xml:space="preserve">
+    <value>Предыдущая страница</value>
+  </data>
+  <data name="Price" xml:space="preserve">
+    <value>Цена</value>
+  </data>
+  <data name="Primary_Contact" xml:space="preserve">
+    <value>Основное контактное лицо</value>
+  </data>
+  <data name="Product" xml:space="preserve">
+    <value>Продукт</value>
+  </data>
+  <data name="Product_Description" xml:space="preserve">
+    <value>Описание продукта</value>
+  </data>
+  <data name="Product_Document" xml:space="preserve">
+    <value>Документы продукта</value>
+  </data>
+  <data name="Product_Manufacturer" xml:space="preserve">
+    <value>Производитель продукта</value>
+  </data>
+  <data name="Product_Name" xml:space="preserve">
+    <value>Наименование</value>
+  </data>
+  <data name="Product_Profile" xml:space="preserve">
+    <value>Профиль продукта</value>
+  </data>
+  <data name="ProductAttribute" xml:space="preserve">
+    <value>Атрибуты продукта</value>
+  </data>
+  <data name="Products" xml:space="preserve">
+    <value>Продукция</value>
+  </data>
+  <data name="Profile" xml:space="preserve">
+    <value>Профиль</value>
+  </data>
+  <data name="Program_file" xml:space="preserve">
+    <value>Файл</value>
+  </data>
+  <data name="Program_QC" xml:space="preserve">
+    <value>Контроля качества программы</value>
+  </data>
+  <data name="Program_QC_For_Equipment" xml:space="preserve">
+    <value>Программа контроля качества для оборудования</value>
+  </data>
+  <data name="Program_QC_for_Spaces" xml:space="preserve">
+    <value>Программа контроля качества для пространств</value>
+  </data>
+  <data name="Project_Contact" xml:space="preserve">
+    <value>Контакт проекта</value>
+  </data>
+  <data name="Project_Data" xml:space="preserve">
+    <value>Данные проекта</value>
+  </data>
+  <data name="Project_Facilities" xml:space="preserve">
+    <value>Объекты проекта</value>
+  </data>
+  <data name="Project_Id" xml:space="preserve">
+    <value>Идентификационный номер проекта</value>
+  </data>
+  <data name="Project_Name" xml:space="preserve">
+    <value>Название проекта</value>
+  </data>
+  <data name="Project_Number" xml:space="preserve">
+    <value>Номер проекта</value>
+  </data>
+  <data name="Project_Role" xml:space="preserve">
+    <value>Роль в проекте</value>
+  </data>
+  <data name="Project_Role_Permission" xml:space="preserve">
+    <value>Разрешения в проекте</value>
+  </data>
+  <data name="Project_Roles" xml:space="preserve">
+    <value>Роли в проекте</value>
+  </data>
+  <data name="Projects" xml:space="preserve">
+    <value>Проекты</value>
+  </data>
+  <data name="Promise_Date" xml:space="preserve">
+    <value>Обещание дате</value>
+  </data>
+  <data name="Properties" xml:space="preserve">
+    <value>Свойства</value>
+  </data>
+  <data name="Protocol" xml:space="preserve">
+    <value>Протокол</value>
+  </data>
+  <data name="Providers" xml:space="preserve">
+    <value>Провайдеры</value>
+  </data>
+  <data name="read_only_flag" xml:space="preserve">
+    <value>Только для чтения</value>
+  </data>
+  <data name="Recent" xml:space="preserve">
+    <value>Последний</value>
+  </data>
+  <data name="Recent_Facilities" xml:space="preserve">
+    <value>Недавние Объекты</value>
+  </data>
+  <data name="Recording_Type" xml:space="preserve">
+    <value>Тип записи</value>
+  </data>
+  <data name="Reference" xml:space="preserve">
+    <value>Ссылка</value>
+  </data>
+  <data name="Remove" xml:space="preserve">
+    <value>Удалить</value>
+  </data>
+  <data name="Removed" xml:space="preserve">
+    <value>Удаленный</value>
+  </data>
+  <data name="Rename" xml:space="preserve">
+    <value>Переименовать</value>
+  </data>
+  <data name="Replace" xml:space="preserve">
+    <value>Заменить</value>
+  </data>
+  <data name="Replace_File" xml:space="preserve">
+    <value>Замените файл</value>
+  </data>
+  <data name="Replacement_Cost" xml:space="preserve">
+    <value>Стоимость замещения</value>
+  </data>
+  <data name="Reports" xml:space="preserve">
+    <value>Отчеты</value>
+  </data>
+  <data name="Request_Pending" xml:space="preserve">
+    <value>Запрос ждет</value>
+  </data>
+  <data name="Request_To_Add_New_Organization" xml:space="preserve">
+    <value>Запрос на добавление новых организаций</value>
+  </data>
+  <data name="Requested_By" xml:space="preserve">
+    <value>Запрошено</value>
+  </data>
+  <data name="Requested_Date" xml:space="preserve">
+    <value>Дата запроса</value>
+  </data>
+  <data name="Required_Attributes" xml:space="preserve">
+    <value>Обязательные атрибуты</value>
+  </data>
+  <data name="Required_Documents" xml:space="preserve">
+    <value>Необходимые документы</value>
+  </data>
+  <data name="Reset" xml:space="preserve">
+    <value>Сброс</value>
+  </data>
+  <data name="Resolved" xml:space="preserve">
+    <value>Урегулированный</value>
+  </data>
+  <data name="Responsible" xml:space="preserve">
+    <value>Ответственный</value>
+  </data>
+  <data name="RFI" xml:space="preserve">
+    <value>RFI</value>
+  </data>
+  <data name="Risk" xml:space="preserve">
+    <value>Риск</value>
+  </data>
+  <data name="Role" xml:space="preserve">
+    <value>Роль</value>
+  </data>
+  <data name="Role_Description" xml:space="preserve">
+    <value>Описание роли</value>
+  </data>
+  <data name="Role_Name" xml:space="preserve">
+    <value>Имя роли</value>
+  </data>
+  <data name="Roles" xml:space="preserve">
+    <value>Роли</value>
+  </data>
+  <data name="Room_Code" xml:space="preserve">
+    <value>Код комнаты</value>
+  </data>
+  <data name="Room_Data_Sheet" xml:space="preserve">
+    <value>Список активов в пространстве</value>
+  </data>
+  <data name="Room_Id" xml:space="preserve">
+    <value>ID пространства</value>
+  </data>
+  <data name="Room_Name" xml:space="preserve">
+    <value>Название пространства</value>
+  </data>
+  <data name="Room_Tag" xml:space="preserve">
+    <value>Номер пространства</value>
+  </data>
+  <data name="Root_Cause_Analysis" xml:space="preserve">
+    <value>Анализа причин</value>
+  </data>
+  <data name="Root_Cause_Analysis_Report" xml:space="preserve">
+    <value>Основная причина отчет по анализу</value>
+  </data>
+  <data name="Row" xml:space="preserve">
+    <value>Ряд</value>
+  </data>
+  <data name="Row_Name" xml:space="preserve">
+    <value>Имя ряда</value>
+  </data>
+  <data name="Saturday" xml:space="preserve">
+    <value>Суббота</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>Сохранить</value>
+  </data>
+  <data name="Save_And_Clone" xml:space="preserve">
+    <value>Сохранить и клонировать</value>
+  </data>
+  <data name="Save_Document" xml:space="preserve">
+    <value>Сохранить документ</value>
+  </data>
+  <data name="Save_Hierarchy" xml:space="preserve">
+    <value>Сохранить иерархию</value>
+  </data>
+  <data name="Save_Impact" xml:space="preserve">
+    <value>Сохранить воздействие</value>
+  </data>
+  <data name="Save_Layout" xml:space="preserve">
+    <value>Сохранить дизайн</value>
+  </data>
+  <data name="Save_Schedule" xml:space="preserve">
+    <value>Сохранить расписание</value>
+  </data>
+  <data name="Schedule" xml:space="preserve">
+    <value>Расписание</value>
+  </data>
+  <data name="Scheduler" xml:space="preserve">
+    <value>Планировщик</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>Искать</value>
+  </data>
+  <data name="Search_Asset" xml:space="preserve">
+    <value>Искать актив</value>
+  </data>
+  <data name="Search_By" xml:space="preserve">
+    <value>Искать по</value>
+  </data>
+  <data name="Search_Space" xml:space="preserve">
+    <value>Искать пространство</value>
+  </data>
+  <data name="Select" xml:space="preserve">
+    <value>Выбрать</value>
+  </data>
+  <data name="Select_Client" xml:space="preserve">
+    <value>Выбрать клиента</value>
+  </data>
+  <data name="Select_Component" xml:space="preserve">
+    <value>Выбрать компонент</value>
+  </data>
+  <data name="Select_Date" xml:space="preserve">
+    <value>Выбрать дату</value>
+  </data>
+  <data name="Select_Facility" xml:space="preserve">
+    <value>Выбрать объект</value>
+  </data>
+  <data name="Select_File" xml:space="preserve">
+    <value>Выбрать файл</value>
+  </data>
+  <data name="Select_File_To_Upload" xml:space="preserve">
+    <value>Выбрать файл для загрузки</value>
+  </data>
+  <data name="Select_Master_Format" xml:space="preserve">
+    <value>Выбрать MasterFormat</value>
+  </data>
+  <data name="Select_Project_Role" xml:space="preserve">
+    <value>Выбрать роль в проекте</value>
+  </data>
+  <data name="Select_Sub_Assemblies" xml:space="preserve">
+    <value>Выбрать части</value>
+  </data>
+  <data name="Select_Task" xml:space="preserve">
+    <value>Выбрать задачу</value>
+  </data>
+  <data name="Select_Time" xml:space="preserve">
+    <value>Выбрать время</value>
+  </data>
+  <data name="Select_Uni_Format" xml:space="preserve">
+    <value>Выбрать UniFormat</value>
+  </data>
+  <data name="Selected_Master_Format" xml:space="preserve">
+    <value>Выбранный MasterFormat</value>
+  </data>
+  <data name="Serial_Number" xml:space="preserve">
+    <value>Серийный номер</value>
+  </data>
+  <data name="Server_Name" xml:space="preserve">
+    <value>Имя сервера</value>
+  </data>
+  <data name="Service_Authentication_URL" xml:space="preserve">
+    <value>URL службы проверки подлинности</value>
+  </data>
+  <data name="Service_Client" xml:space="preserve">
+    <value>Клиент службы</value>
+  </data>
+  <data name="Service_History" xml:space="preserve">
+    <value>Сервис история</value>
+  </data>
+  <data name="Service_URL" xml:space="preserve">
+    <value>URL-адрес службы</value>
+  </data>
+  <data name="Set" xml:space="preserve">
+    <value>Установить</value>
+  </data>
+  <data name="Settings" xml:space="preserve">
+    <value>Настройки</value>
+  </data>
+  <data name="Setup_Sync_Configuration" xml:space="preserve">
+    <value>Конфигурация настройки синхронизации</value>
+  </data>
+  <data name="Setup_Sync_Wizard" xml:space="preserve">
+    <value>Мастер настройки синхронизации</value>
+  </data>
+  <data name="Severity" xml:space="preserve">
+    <value>Строгость</value>
+  </data>
+  <data name="Sheet" xml:space="preserve">
+    <value>Лист</value>
+  </data>
+  <data name="Sheet_Name" xml:space="preserve">
+    <value>Имя листа</value>
+  </data>
+  <data name="Short_Name" xml:space="preserve">
+    <value>Краткое название</value>
+  </data>
+  <data name="Show" xml:space="preserve">
+    <value>Показывать</value>
+  </data>
+  <data name="Show_All" xml:space="preserve">
+    <value>Показать все</value>
+  </data>
+  <data name="Show_All_Issues" xml:space="preserve">
+    <value>Показать все вопросы</value>
+  </data>
+  <data name="Show_Model" xml:space="preserve">
+    <value>Показать модели</value>
+  </data>
+  <data name="Show_Report" xml:space="preserve">
+    <value>Показать отчет</value>
+  </data>
+  <data name="Site_Description" xml:space="preserve">
+    <value>Описание площадки</value>
+  </data>
+  <data name="Site_Name" xml:space="preserve">
+    <value>Название площадки</value>
+  </data>
+  <data name="Sort_Tool_Tip" xml:space="preserve">
+    <value>Нажмите здесь для сортировки</value>
+  </data>
+  <data name="Sorted_asc" xml:space="preserve">
+    <value>Сортировка по возрастанию</value>
+  </data>
+  <data name="Sorted_desc" xml:space="preserve">
+    <value>Сортировка по убыванию</value>
+  </data>
+  <data name="Space" xml:space="preserve">
+    <value>Пространство</value>
+  </data>
+  <data name="Space_Name" xml:space="preserve">
+    <value>Имя пространства</value>
+  </data>
+  <data name="Space_Names" xml:space="preserve">
+    <value>Имена пространств</value>
+  </data>
+  <data name="Space_Profile" xml:space="preserve">
+    <value>Профиль пространства</value>
+  </data>
+  <data name="Space_Type" xml:space="preserve">
+    <value>Тип пространства</value>
+  </data>
+  <data name="Spaces" xml:space="preserve">
+    <value>Пространства</value>
+  </data>
+  <data name="Stage" xml:space="preserve">
+    <value>Этап</value>
+  </data>
+  <data name="Start" xml:space="preserve">
+    <value>Начало</value>
+  </data>
+  <data name="Start_Date" xml:space="preserve">
+    <value>Дата начала</value>
+  </data>
+  <data name="Start_Date_Time" xml:space="preserve">
+    <value>Дата / время</value>
+  </data>
+  <data name="Start_Time" xml:space="preserve">
+    <value>Время начала</value>
+  </data>
+  <data name="State" xml:space="preserve">
+    <value>Регион</value>
+  </data>
+  <data name="State_Region" xml:space="preserve">
+    <value>Регион</value>
+  </data>
+  <data name="Station_Name" xml:space="preserve">
+    <value>Название станции</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>Статус</value>
+  </data>
+  <data name="Street" xml:space="preserve">
+    <value>Улица</value>
+  </data>
+  <data name="Sub_assemblies" xml:space="preserve">
+    <value>Части</value>
+  </data>
+  <data name="Sub_assembly_Name" xml:space="preserve">
+    <value>Имя части</value>
+  </data>
+  <data name="Submit" xml:space="preserve">
+    <value>Отправить</value>
+  </data>
+  <data name="Subsystem" xml:space="preserve">
+    <value>Подсистема</value>
+  </data>
+  <data name="Subsystem_Name" xml:space="preserve">
+    <value>Имя подсистемы</value>
+  </data>
+  <data name="Sunday" xml:space="preserve">
+    <value>Воскресенье</value>
+  </data>
+  <data name="Sustainability" xml:space="preserve">
+    <value>Экология</value>
+  </data>
+  <data name="Switch_Client" xml:space="preserve">
+    <value>Переключить клиента</value>
+  </data>
+  <data name="Sync_Asset" xml:space="preserve">
+    <value>Синхронизация активов</value>
+  </data>
+  <data name="Sync_Assets" xml:space="preserve">
+    <value>Синхронизация активов</value>
+  </data>
+  <data name="Sync_Bottom_Line" xml:space="preserve">
+    <value>Примечание: страница обновится каждые 30 секунд автоматически</value>
+  </data>
+  <data name="Sync_Profile" xml:space="preserve">
+    <value>Профиль синхронизации</value>
+  </data>
+  <data name="Synchronization" xml:space="preserve">
+    <value>Синхронизация</value>
+  </data>
+  <data name="Synchronization_filters" xml:space="preserve">
+    <value>Фильтры синхронизации</value>
+  </data>
+  <data name="Synchronization_Result_For" xml:space="preserve">
+    <value>Результат синхронизации</value>
+  </data>
+  <data name="Synchronization_Type" xml:space="preserve">
+    <value>Тип синхронизации</value>
+  </data>
+  <data name="Synchronize" xml:space="preserve">
+    <value>Синхронизировать</value>
+  </data>
+  <data name="System" xml:space="preserve">
+    <value>Система</value>
+  </data>
+  <data name="System_Asset" xml:space="preserve">
+    <value>Актив Системы</value>
+  </data>
+  <data name="System_File_Name" xml:space="preserve">
+    <value>Имя файловой системы</value>
+  </data>
+  <data name="System_Name" xml:space="preserve">
+    <value>Имя Системы</value>
+  </data>
+  <data name="System_Profile" xml:space="preserve">
+    <value>Профиль Системы</value>
+  </data>
+  <data name="System_Role" xml:space="preserve">
+    <value>Роль в Системе</value>
+  </data>
+  <data name="Systems" xml:space="preserve">
+    <value>Системы</value>
+  </data>
+  <data name="Tag_Number" xml:space="preserve">
+    <value>Тэг</value>
+  </data>
+  <data name="Task_Name" xml:space="preserve">
+    <value>Имя задачи</value>
+  </data>
+  <data name="Tasks" xml:space="preserve">
+    <value>Задачи</value>
+  </data>
+  <data name="tbl_name" xml:space="preserve">
+    <value>столовая ложка имя</value>
+  </data>
+  <data name="Thursday" xml:space="preserve">
+    <value>Четверг</value>
+  </data>
+  <data name="Time_Zone" xml:space="preserve">
+    <value>Часовой Пояс</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>Должность</value>
+  </data>
+  <data name="To" xml:space="preserve">
+    <value>К</value>
+  </data>
+  <data name="Total" xml:space="preserve">
+    <value>Всего</value>
+  </data>
+  <data name="Total_Exported_Data_Transfer" xml:space="preserve">
+    <value>Всего экспортировано данных</value>
+  </data>
+  <data name="Total_Files" xml:space="preserve">
+    <value>Всего файлов</value>
+  </data>
+  <data name="Total_Imported_Data_Transfer" xml:space="preserve">
+    <value>Всего импортировано данных</value>
+  </data>
+  <data name="Town" xml:space="preserve">
+    <value>Город</value>
+  </data>
+  <data name="Transfer_Speed" xml:space="preserve">
+    <value>Скорость передачи данных</value>
+  </data>
+  <data name="Trend" xml:space="preserve">
+    <value>Тенденция</value>
+  </data>
+  <data name="Tuesday" xml:space="preserve">
+    <value>Вторник</value>
+  </data>
+  <data name="Type" xml:space="preserve">
+    <value>Тип</value>
+  </data>
+  <data name="Type_Name" xml:space="preserve">
+    <value>Имя Типа</value>
+  </data>
+  <data name="Type_Profile" xml:space="preserve">
+    <value>Профиль Ттипа</value>
+  </data>
+  <data name="Unassign" xml:space="preserve">
+    <value>Отменить Назначение</value>
+  </data>
+  <data name="Unassign_Asset" xml:space="preserve">
+    <value>Отменить Назначение Активов</value>
+  </data>
+  <data name="Unassign_Space" xml:space="preserve">
+    <value>Отменить Назначение Помещения</value>
+  </data>
+  <data name="Unassign_Subsystem" xml:space="preserve">
+    <value>Отменить Назначение Подсистемы</value>
+  </data>
+  <data name="Unassign_System" xml:space="preserve">
+    <value>Отменить Назначение Системы</value>
+  </data>
+  <data name="Unassigned_Items" xml:space="preserve">
+    <value>Нераспределенные вещи</value>
+  </data>
+  <data name="Uni_Format" xml:space="preserve">
+    <value>Uniformat</value>
+  </data>
+  <data name="Uniformat" xml:space="preserve">
+    <value>Uniformat</value>
+  </data>
+  <data name="Unit" xml:space="preserve">
+    <value>Блок</value>
+  </data>
+  <data name="UOM" xml:space="preserve">
+    <value>Система Измерения</value>
+  </data>
+  <data name="UOM_Mapping" xml:space="preserve">
+    <value>Синх. Систем Измерения</value>
+  </data>
+  <data name="Update" xml:space="preserve">
+    <value>Обновить</value>
+  </data>
+  <data name="Update_Names" xml:space="preserve">
+    <value>Обновить Имена</value>
+  </data>
+  <data name="Upload" xml:space="preserve">
+    <value>Загрузить</value>
+  </data>
+  <data name="Upload_File" xml:space="preserve">
+    <value>Загрузить Файл</value>
+  </data>
+  <data name="Uploaded" xml:space="preserve">
+    <value>Загружено</value>
+  </data>
+  <data name="Uploaded_By" xml:space="preserve">
+    <value>Автор</value>
+  </data>
+  <data name="Uploaded_File_Name" xml:space="preserve">
+    <value>Название Загруженого Файла</value>
+  </data>
+  <data name="Uploaded_Files" xml:space="preserve">
+    <value>Загруженые Файлы</value>
+  </data>
+  <data name="Uploaded_On" xml:space="preserve">
+    <value>Загружено</value>
+  </data>
+  <data name="Uploading_File" xml:space="preserve">
+    <value>Загрузка Файлов</value>
+  </data>
+  <data name="URL" xml:space="preserve">
+    <value>URL</value>
+  </data>
+  <data name="Usable_Height" xml:space="preserve">
+    <value>Полезная Высота</value>
+  </data>
+  <data name="User" xml:space="preserve">
+    <value>Пользователь</value>
+  </data>
+  <data name="User_Id" xml:space="preserve">
+    <value>Идентификатор Пользователя</value>
+  </data>
+  <data name="User_Name" xml:space="preserve">
+    <value>Имя Пользователя</value>
+  </data>
+  <data name="User_Profile" xml:space="preserve">
+    <value>Профиль Пользователя</value>
+  </data>
+  <data name="Username" xml:space="preserve">
+    <value>Имя Пользователя</value>
+  </data>
+  <data name="Users" xml:space="preserve">
+    <value>Пользователи</value>
+  </data>
+  <data name="Value" xml:space="preserve">
+    <value>Значение</value>
+  </data>
+  <data name="Versioning" xml:space="preserve">
+    <value>Версии</value>
+  </data>
+  <data name="View_Name" xml:space="preserve">
+    <value>Имя Вида</value>
+  </data>
+  <data name="Viewpoints" xml:space="preserve">
+    <value>Виды</value>
+  </data>
+  <data name="Volume_Units" xml:space="preserve">
+    <value>Единицы Объема</value>
+  </data>
+  <data name="Warranty_Description" xml:space="preserve">
+    <value>Описание Гарантии</value>
+  </data>
+  <data name="Warranty_Duration_Labor" xml:space="preserve">
+    <value>Продолжительность Гарантии (работа)</value>
+  </data>
+  <data name="Warranty_Duration_Parts" xml:space="preserve">
+    <value>Продолжительность Гарантии (части)</value>
+  </data>
+  <data name="Warranty_Duration_Unit" xml:space="preserve">
+    <value>Продолжительность Гарантии (ед.)</value>
+  </data>
+  <data name="Warranty_Guarantor_Labor" xml:space="preserve">
+    <value>Обеспечитель Гарантии (работа)</value>
+  </data>
+  <data name="Warranty_Guarantor_Parts" xml:space="preserve">
+    <value>Обеспечитель Гарантии (части)</value>
+  </data>
+  <data name="Warranty_Start_Date" xml:space="preserve">
+    <value>Дата Начала Гарантии</value>
+  </data>
+  <data name="Weather_Station" xml:space="preserve">
+    <value>Метеорологическая Станция</value>
+  </data>
+  <data name="Website" xml:space="preserve">
+    <value>Веб-сайт</value>
+  </data>
+  <data name="Wednesday" xml:space="preserve">
+    <value>Среда</value>
+  </data>
+  <data name="Weeks" xml:space="preserve">
+    <value>Недели</value>
+  </data>
+  <data name="Work_Hours" xml:space="preserve">
+    <value>Часы Работы</value>
+  </data>
+  <data name="Work_Order" xml:space="preserve">
+    <value>Наряд на Работу</value>
+  </data>
+  <data name="Work_Order_No" xml:space="preserve">
+    <value>Номер Наряда на Работу</value>
+  </data>
+  <data name="Work_Order_Number" xml:space="preserve">
+    <value>Номер Наряда на Работу</value>
+  </data>
+  <data name="Work_Order_Profile" xml:space="preserve">
+    <value>Профиль Наряда на Работу</value>
+  </data>
+  <data name="Work_Orders" xml:space="preserve">
+    <value>Наряды на Работу</value>
+  </data>
+  <data name="Work_Plan" xml:space="preserve">
+    <value>План работы</value>
+  </data>
+  <data name="Workable_Backlog" xml:space="preserve">
+    <value>Работающие Отставание</value>
+  </data>
+  <data name="Zip_Postal_Code" xml:space="preserve">
+    <value>Почтовый индекс</value>
+  </data>
+  <data name="Zone_Name" xml:space="preserve">
+    <value>Имя Зоны</value>
+  </data>
+  <data name="Zone_Name_Grid" xml:space="preserve">
+    <value>Зоны</value>
+  </data>
+  <data name="Zone_Profile" xml:space="preserve">
+    <value>Профиль Зоны</value>
+  </data>
+  <data name="Zones" xml:space="preserve">
+    <value>Зоны</value>
+  </data>
+  <data name="Activities" xml:space="preserve">
+    <value>деятельность</value>
+  </data>
+  <data name="Add_Attribute_Group" xml:space="preserve">
+    <value>Добавить атрибутов группы</value>
+  </data>
+  <data name="Add_Contractor" xml:space="preserve">
+    <value>Добавить Подрядчик</value>
+  </data>
+  <data name="Add_Designer" xml:space="preserve">
+    <value>Добавить Designer</value>
+  </data>
+  <data name="Add_Edit_Names" xml:space="preserve">
+    <value>Добавить Редактировать имена</value>
+  </data>
+  <data name="Add_Edit_Required_Attributes" xml:space="preserve">
+    <value>Добавить Редактировать Обязательные атрибуты</value>
+  </data>
+  <data name="Add_Existing_Attributes" xml:space="preserve">
+    <value>Добавить существующие атрибуты</value>
+  </data>
+  <data name="Add_Existing_Facility" xml:space="preserve">
+    <value>Добавить существующий фонд</value>
+  </data>
+  <data name="Add_Naming_Convention" xml:space="preserve">
+    <value>Добавить именование</value>
+  </data>
+  <data name="Add_New_Attribute" xml:space="preserve">
+    <value>Добавить Атрибут</value>
+  </data>
+  <data name="Add_Required_Attributes" xml:space="preserve">
+    <value>Добавить Обязательные атрибуты</value>
+  </data>
+  <data name="Add_Required_Documents" xml:space="preserve">
+    <value>Добавить Необходимые документы</value>
+  </data>
+  <data name="Add_Template" xml:space="preserve">
+    <value>Добавить шаблон</value>
+  </data>
+  <data name="Assign_Component" xml:space="preserve">
+    <value>Присвоить Актив</value>
+  </data>
+  <data name="Assign_Contacts_to_Project" xml:space="preserve">
+    <value>Прикрепить Контакты к Проекту</value>
+  </data>
+  <data name="Assign_DesignerContractor" xml:space="preserve">
+    <value>Назначение Дизайнер / Подрядчика</value>
+  </data>
+  <data name="Assign_Existing_Facilities" xml:space="preserve">
+    <value>Назначить Существующие услуги</value>
+  </data>
+  <data name="Assign_MasterFormat" xml:space="preserve">
+    <value>Назначить MasterFormat</value>
+  </data>
+  <data name="Assign_Project_Role" xml:space="preserve">
+    <value>Присвоить Роль в Проекте</value>
+  </data>
+  <data name="Assign_Project_roles_to_Contacts" xml:space="preserve">
+    <value>Присвоить Контакту Роль в Проекте</value>
+  </data>
+  <data name="Assign_Subsystem" xml:space="preserve">
+    <value>Присвоить Подсистему</value>
+  </data>
+  <data name="Assign_UniFormat" xml:space="preserve">
+    <value>Назначить UniFormat</value>
+  </data>
+  <data name="Attribute_Description" xml:space="preserve">
+    <value>Описание Атрибута</value>
+  </data>
+  <data name="Attribute_Group_List" xml:space="preserve">
+    <value>Список Группы Атрибутов</value>
+  </data>
+  <data name="Attribute_Group_Name" xml:space="preserve">
+    <value>Имя Группы Атрибутов</value>
+  </data>
+  <data name="Browse_By_Manufacturer" xml:space="preserve">
+    <value>Поиск по Производителю</value>
+  </data>
+  <data name="City_State_1" xml:space="preserve">
+    <value>Город, Регион</value>
+  </data>
+  <data name="COBie_File_Export" xml:space="preserve">
+    <value>Экспорт Файла COBie</value>
+  </data>
+  <data name="Cobie_File_Import" xml:space="preserve">
+    <value>Импорт Файла COBie</value>
+  </data>
+  <data name="COBieDataQualityControl" xml:space="preserve">
+    <value>Контроль Качества COBie</value>
+  </data>
+  <data name="Component" xml:space="preserve">
+    <value>Актив</value>
+  </data>
+  <data name="Create_Attribute_Group" xml:space="preserve">
+    <value>Создать атрибут группы</value>
+  </data>
+  <data name="Create_Required_Attribute_Group" xml:space="preserve">
+    <value>Создать необходимые группы атрибутов</value>
+  </data>
+  <data name="Created_By_1" xml:space="preserve">
+    <value>Создано:</value>
+  </data>
+  <data name="Created_On_1" xml:space="preserve">
+    <value>Дата создания:</value>
+  </data>
+  <data name="Custom_Name" xml:space="preserve">
+    <value>Пользовательское имя</value>
+  </data>
+  <data name="Display_Columns" xml:space="preserve">
+    <value>отобразить столбцы</value>
+  </data>
+  <data name="document_type" xml:space="preserve">
+    <value>тип документа</value>
+  </data>
+  <data name="Done" xml:space="preserve">
+    <value>сделанный</value>
+  </data>
+  <data name="Edit_Designer_Contractor" xml:space="preserve">
+    <value>Редактировать Designer подрядчика</value>
+  </data>
+  <data name="Edit_Impact" xml:space="preserve">
+    <value>Редактировать воздействия</value>
+  </data>
+  <data name="Edit_OmniClass_Masterformat_Uniformat" xml:space="preserve">
+    <value>Редактировать OmniClass MasterFormat Uniformat</value>
+  </data>
+  <data name="Entity_Name" xml:space="preserve">
+    <value>Entity Name</value>
+  </data>
+  <data name="Export_Contact" xml:space="preserve">
+    <value>Экспорт Контакты</value>
+  </data>
+  <data name="ExportedBy" xml:space="preserve">
+    <value>ExportedBy</value>
+  </data>
+  <data name="ExportedOn" xml:space="preserve">
+    <value>ExportedOn</value>
+  </data>
+  <data name="File_Name" xml:space="preserve">
+    <value>Имя файла</value>
+  </data>
+  <data name="filepath" xml:space="preserve">
+    <value>путь_к_файлу</value>
+  </data>
+  <data name="filesize" xml:space="preserve">
+    <value>Размер файла</value>
+  </data>
+  <data name="Generate_COBie_File" xml:space="preserve">
+    <value>Создание Коби файла</value>
+  </data>
+  <data name="Help" xml:space="preserve">
+    <value>Инструкции</value>
+  </data>
+  <data name="Imported_by" xml:space="preserve">
+    <value>ввозимых</value>
+  </data>
+  <data name="Imported_Files" xml:space="preserve">
+    <value>Импортные файлов</value>
+  </data>
+  <data name="Imported_on" xml:space="preserve">
+    <value>ввозимых на</value>
+  </data>
+  <data name="Interpolate" xml:space="preserve">
+    <value>интерполировать</value>
+  </data>
+  <data name="Logout" xml:space="preserve">
+    <value>Выход</value>
+  </data>
+  <data name="Missing_Attribute" xml:space="preserve">
+    <value>Отсутствует атрибут</value>
+  </data>
+  <data name="Missing_Attributes_Report" xml:space="preserve">
+    <value>Сообщить об отсутствующих атрибутов</value>
+  </data>
+  <data name="Numeric_Type" xml:space="preserve">
+    <value>Числовой тип</value>
+  </data>
+  <data name="OmniClas_2010" xml:space="preserve">
+    <value>OmniClas 2010</value>
+  </data>
+  <data name="OmniClass_2006" xml:space="preserve">
+    <value>OmniClass 2006</value>
+  </data>
+  <data name="Phase_Name" xml:space="preserve">
+    <value>Имя фазы</value>
+  </data>
+  <data name="Product_Attributes" xml:space="preserve">
+    <value>Свойства товара</value>
+  </data>
+  <data name="Product_Documents" xml:space="preserve">
+    <value>Продукт документы</value>
+  </data>
+  <data name="Project_Profile" xml:space="preserve">
+    <value>Проект профиля</value>
+  </data>
+  <data name="Project_Setup" xml:space="preserve">
+    <value>Настройка проекта</value>
+  </data>
+  <data name="Project" xml:space="preserve">
+    <value>Проект</value>
+  </data>
+  <data name="Provide_New_Name" xml:space="preserve">
+    <value>Обеспечить новое имя</value>
+  </data>
+  <data name="Refresh" xml:space="preserve">
+    <value>обновление</value>
+  </data>
+  <data name="Role_Details" xml:space="preserve">
+    <value>Роль Подробнее</value>
+  </data>
+  <data name="Schedule_Limits" xml:space="preserve">
+    <value>Расписание ограничения</value>
+  </data>
+  <data name="Schedules" xml:space="preserve">
+    <value>Расписание</value>
+  </data>
+  <data name="Select_Add" xml:space="preserve">
+    <value>Выберите Добавить</value>
+  </data>
+  <data name="Select_Entity" xml:space="preserve">
+    <value>Выберите Entity</value>
+  </data>
+  <data name="Select_Master_ormat" xml:space="preserve">
+    <value>Выберите Мастер Ormat</value>
+  </data>
+  <data name="Selected_Masterformat" xml:space="preserve">
+    <value>Выбранный MasterFormat</value>
+  </data>
+  <data name="Standard" xml:space="preserve">
+    <value>стандарт</value>
+  </data>
+  <data name="Template_Name" xml:space="preserve">
+    <value>Имя шаблона</value>
+  </data>
+  <data name="Unassign_Component" xml:space="preserve">
+    <value>Отменить Назначение Актива</value>
+  </data>
+  <data name="Unit_Type" xml:space="preserve">
+    <value>Тип Блока</value>
+  </data>
+  <data name="Update_Component_Name" xml:space="preserve">
+    <value>Обновить Имя Компоненты</value>
+  </data>
+  <data name="Update_Type_Name" xml:space="preserve">
+    <value>Обновить Имя Типа</value>
+  </data>
+  <data name="Upload_Document" xml:space="preserve">
+    <value>Загрузить Документацию</value>
+  </data>
+  <data name="Uploaded_documents" xml:space="preserve">
+    <value>Загружено Документации</value>
+  </data>
+  <data name="Upper_Limit_max" xml:space="preserve">
+    <value>Верхний Предел</value>
+  </data>
+  <data name="Use_Attribute_Template" xml:space="preserve">
+    <value>Использование Атрибутов Шаблона</value>
+  </data>
+  <data name="Version" xml:space="preserve">
+    <value>Версия</value>
+  </data>
+  <data name="Zone" xml:space="preserve">
+    <value>Зона</value>
+  </data>
+  <data name="Number_of_Components" xml:space="preserve">
+    <value>Количество компонентов</value>
+  </data>
+  <data name="Link_To_Space" xml:space="preserve">
+    <value>Ссылка на пространство</value>
+  </data>
+  <data name="Energy_Simulation" xml:space="preserve">
+    <value>Энергия Моделирование</value>
+  </data>
+  <data name="Link_to_Component" xml:space="preserve">
+    <value>ссылка на компонент</value>
+  </data>
+  <data name="Show_All_work_order" xml:space="preserve">
+    <value>Показать Все работы Заказать</value>
+  </data>
+  <data name="Work_Order_Name" xml:space="preserve">
+    <value>Название Наряда на Работу</value>
+  </data>
+  <data name="Work_Order_Type" xml:space="preserve">
+    <value>Тип Наряда на Работу</value>
+  </data>
+  <data name="Work_order_Status" xml:space="preserve">
+    <value>Статус Наряда на Работу</value>
+  </data>
+  <data name="Priority" xml:space="preserve">
+    <value>приоритет</value>
+  </data>
+  <data name="Create_Clones" xml:space="preserve">
+    <value>Создание клонов</value>
+  </data>
+  <data name="Number_Of_Clones_To_Be_Created" xml:space="preserve">
+    <value>Количество клонов, чтобы быть создана</value>
+  </data>
+  <data name="Work_Order_Report" xml:space="preserve">
+    <value>Отчет о Нарядах на Работу</value>
+  </data>
+  <data name="Show_Open_Work_Order" xml:space="preserve">
+    <value>Показать Открытое порядок работы</value>
+  </data>
+  <data name="Attribute_Details" xml:space="preserve">
+    <value>Детали Атрибута</value>
+  </data>
+  <data name="Attribute_Group" xml:space="preserve">
+    <value>Группа Атрибутов</value>
+  </data>
+  <data name="Classification" xml:space="preserve">
+    <value>Классификация</value>
+  </data>
+  <data name="Classifications" xml:space="preserve">
+    <value>Классификации</value>
+  </data>
+  <data name="Link_Status" xml:space="preserve">
+    <value>Ссылка статус</value>
+  </data>
+  <data name="Applied_Group_Name" xml:space="preserve">
+    <value>Прикладная Имя группы</value>
+  </data>
+  <data name="Delete_Attribute" xml:space="preserve">
+    <value>Удалить атрибут</value>
+  </data>
+  <data name="Permissions" xml:space="preserve">
+    <value>Разрешения</value>
+  </data>
+  <data name="Add_Details" xml:space="preserve">
+    <value>Добавить Подробнее</value>
+  </data>
+  <data name="Add_Role" xml:space="preserve">
+    <value>Добавить роли</value>
+  </data>
+  <data name="Default_Value" xml:space="preserve">
+    <value>значение по умолчанию</value>
+  </data>
+  <data name="Description_Comments" xml:space="preserve">
+    <value>Описание / Комментарии</value>
+  </data>
+  <data name="Required_Optional" xml:space="preserve">
+    <value>Обязательный / Дополнительно</value>
+  </data>
+  <data name="Value_Range_Choices" xml:space="preserve">
+    <value>Диапазон Значений / Выбор</value>
+  </data>
+  <data name="Assign_SubAssembly" xml:space="preserve">
+    <value>Присвоить Сборку</value>
+  </data>
+  <data name="Unassign_SubAssembly" xml:space="preserve">
+    <value>Отменить Назначение Сборки</value>
+  </data>
+  <data name="SubAssembly" xml:space="preserve">
+    <value>узел</value>
+  </data>
+  <data name="SubAssemblies" xml:space="preserve">
+    <value>узлы</value>
+  </data>
+  <data name="Generate_Excel_File" xml:space="preserve">
+    <value>Создание файла Excel</value>
+  </data>
+  <data name="Generate_Component_Analysis_Report" xml:space="preserve">
+    <value>Создать отчет Анализ компонентов</value>
+  </data>
+  <data name="Jobs" xml:space="preserve">
+    <value>Вакансии</value>
+  </data>
+  <data name="Resources" xml:space="preserve">
+    <value>ресурсы</value>
+  </data>
+  <data name="Spares" xml:space="preserve">
+    <value>запчасти</value>
+  </data>
+  <data name="Resource_Name" xml:space="preserve">
+    <value>Имя ресурса</value>
+  </data>
+  <data name="Add_Spare" xml:space="preserve">
+    <value>Добавить Пощади</value>
+  </data>
+  <data name="Spare_Name" xml:space="preserve">
+    <value>Запасные Имя</value>
+  </data>
+  <data name="Supplier" xml:space="preserve">
+    <value>поставщик</value>
+  </data>
+  <data name="Add_Resource" xml:space="preserve">
+    <value>Добавить ресурс</value>
+  </data>
+  <data name="Job" xml:space="preserve">
+    <value>Иов</value>
+  </data>
+  <data name="Set_Number" xml:space="preserve">
+    <value>Установить номер</value>
+  </data>
+  <data name="Add_Type_Spare" xml:space="preserve">
+    <value>Добавить тип запасных</value>
+  </data>
+  <data name="Recent_Projects" xml:space="preserve">
+    <value>Последние проекты</value>
+  </data>
+  <data name="Add_missing_attributes_to_model" xml:space="preserve">
+    <value>Добавить отсутствующих атрибутов модели</value>
+  </data>
+  <data name="Work_Order_Log" xml:space="preserve">
+    <value>Заказ-наряд Войти</value>
+  </data>
+  <data name="Subsystems" xml:space="preserve">
+    <value>Подсистема</value>
+  </data>
+  <data name="Updated_By" xml:space="preserve">
+    <value>Обновил</value>
+  </data>
+  <data name="Updated_On" xml:space="preserve">
+    <value>Обновлено</value>
+  </data>
+  <data name="Updated" xml:space="preserve">
+    <value>обновленный</value>
+  </data>
+  <data name="Viewer" xml:space="preserve">
+    <value>зритель</value>
+  </data>
+  <data name="LogIn" xml:space="preserve">
+    <value>Вход</value>
+  </data>
+  <data name="Linked_In_BIM" xml:space="preserve">
+    <value>Связанный В BIM? :</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>нет</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>да</value>
+  </data>
+  <data name="Show_Open_Issue" xml:space="preserve">
+    <value>Показать открытого выпуска</value>
+  </data>
+  <data name="Issue_Number" xml:space="preserve">
+    <value>Редакция</value>
+  </data>
+  <data name="Issue_Log" xml:space="preserve">
+    <value>Выпуск журнала</value>
+  </data>
+  <data name="Assign_Supplier" xml:space="preserve">
+    <value>Назначение поставщиков</value>
+  </data>
+  <data name="Assign_Contractor" xml:space="preserve">
+    <value>Назначить Подрядчику</value>
+  </data>
+  <data name="Assign_Designer" xml:space="preserve">
+    <value>Назначение Designer</value>
+  </data>
+  <data name="Assign_UniClass" xml:space="preserve">
+    <value>Назначение UniClass</value>
+  </data>
+  <data name="UniClass" xml:space="preserve">
+    <value>UniClass</value>
+  </data>
+  <data name="Edit_Classification" xml:space="preserve">
+    <value>Изменить классификации</value>
+  </data>
+  <data name="Duration_Unit" xml:space="preserve">
+    <value>Продолжительность единицы</value>
+  </data>
+  <data name="Frequency" xml:space="preserve">
+    <value>частота</value>
+  </data>
+  <data name="Frequency_Unit" xml:space="preserve">
+    <value>Частота единицы</value>
+  </data>
+  <data name="Priors" xml:space="preserve">
+    <value>Priors</value>
+  </data>
+  <data name="Start_Unit" xml:space="preserve">
+    <value>Начало единицы</value>
+  </data>
+  <data name="Task_Number" xml:space="preserve">
+    <value>задача номер</value>
+  </data>
+  <data name="Assign_Category" xml:space="preserve">
+    <value>Назначение категории</value>
+  </data>
+  <data name="Logo" xml:space="preserve">
+    <value>лого</value>
+  </data>
+  <data name="Change_Password" xml:space="preserve">
+    <value>Изменить пароль</value>
+  </data>
+  <data name="Confirm_Password" xml:space="preserve">
+    <value>Подтверждение пароля</value>
+  </data>
+  <data name="Current_Password" xml:space="preserve">
+    <value>Текущий пароль</value>
+  </data>
+  <data name="New_Password" xml:space="preserve">
+    <value>Новый пароль</value>
+  </data>
+  <data name="Forgot_Password" xml:space="preserve">
+    <value>Забыли пароль</value>
+  </data>
+  <data name="Password_Rule_1" xml:space="preserve">
+    <value>Пароли должны</value>
+  </data>
+  <data name="Password_Rule_10" xml:space="preserve">
+    <value>Пароли не выбрано, должно</value>
+  </data>
+  <data name="Password_Rule_11" xml:space="preserve">
+    <value>Содержат общий собственное имя, логин ID, адрес электронной почты, инициалы, имена, отчества или фамилии</value>
+  </data>
+  <data name="Password_Rule_12" xml:space="preserve">
+    <value>Были использованы в последний год или последних трех паролей, что больше</value>
+  </data>
+  <data name="Password_Rule_13" xml:space="preserve">
+    <value>Настоятельно рекомендуется, чтобы</value>
+  </data>
+  <data name="Password_Rule_14" xml:space="preserve">
+    <value>Пароли меняются два раза в год (например, когда часы корректируются в весной и осенью)</value>
+  </data>
+  <data name="Password_Rule_15" xml:space="preserve">
+    <value>Каждый выбранный пароль является новым и различным</value>
+  </data>
+  <data name="Password_Rule_2" xml:space="preserve">
+    <value>Должен содержать как минимум восемь (8) символов</value>
+  </data>
+  <data name="Password_Rule_3" xml:space="preserve">
+    <value>Не должно начинаться с цифры числа</value>
+  </data>
+  <data name="Password_Rule_4" xml:space="preserve">
+    <value>Запоминается, если пароль записано оно должно быть безопасным</value>
+  </data>
+  <data name="Password_Rule_5" xml:space="preserve">
+    <value>Содержать как минимум одну (1) персонаж из 3 (трех) из следующих категорий</value>
+  </data>
+  <data name="Password_Rule_6" xml:space="preserve">
+    <value>Прописная буква (A-Z)</value>
+  </data>
+  <data name="Password_Rule_7" xml:space="preserve">
+    <value>Строчной буквы (a-z)</value>
+  </data>
+  <data name="Password_Rule_8" xml:space="preserve">
+    <value>Цифры (0-9)</value>
+  </data>
+  <data name="Password_Rule_9" xml:space="preserve">
+    <value>быть частными</value>
+  </data>
+  <data name="Forgot_password_message_1" xml:space="preserve">
+    <value>Введите адрес электронной почты и имя пользователя, затем нажмите кнопку Отправить</value>
+  </data>
+  <data name="Forgot_password_message_2" xml:space="preserve">
+    <value>EcoDomus будет отправить по электронной почте вам информацию о пароле</value>
+  </data>
+  <data name="Password_change_message" xml:space="preserve">
+    <value>Пароль не совпадает!.</value>
+  </data>
+  <data name="Authentication_error" xml:space="preserve">
+    <value>Ошибка аутентификации</value>
+  </data>
+  <data name="Error_sending_Email" xml:space="preserve">
+    <value>Ошибка при отправке e-mail</value>
+  </data>
+  <data name="Password_Rule_16" xml:space="preserve">
+    <value>Новый пароль должен отличаться от текущего пароля</value>
+  </data>
+  <data name="IAgree" xml:space="preserve">
+    <value>я согласен</value>
+  </data>
+  <data name="IDecline" xml:space="preserve">
+    <value>я отклоняю</value>
+  </data>
+  <data name="Street_Address" xml:space="preserve">
+    <value>Улица,</value>
+  </data>
+  <data name="Configuration" xml:space="preserve">
+    <value>конфигурация</value>
+  </data>
+  <data name="String1" xml:space="preserve">
+    <value>Сохранить расписание</value>
+  </data>
+  <data name="String2" xml:space="preserve">
+    <value>Примечание: страница обновится каждые 30 секунд автоматически</value>
+  </data>
+  <data name="Add_Required_Attributes_to_Model" xml:space="preserve">
+    <value>Добавить Обязательные атрибуты к модели</value>
+  </data>
+  <data name="Designer_Contractor" xml:space="preserve">
+    <value>Дизайнер Подрядчик</value>
+  </data>
+  <data name="Entity_Names" xml:space="preserve">
+    <value>Entity Имена</value>
+  </data>
+  <data name="Missing_Information_Report" xml:space="preserve">
+    <value>Отсутствует информация Сообщить</value>
+  </data>
+  <data name="Missing_Information_Report_Types" xml:space="preserve">
+    <value>Недостающие Виды доклад информацию</value>
+  </data>
+  <data name="Report" xml:space="preserve">
+    <value>отчет</value>
+  </data>
+  <data name="master_file" xml:space="preserve">
+    <value>справочный файл</value>
+  </data>
+  <data name="View" xml:space="preserve">
+    <value>вид</value>
+  </data>
+  <data name="Show_change_log" xml:space="preserve">
+    <value>Показать Изменения регистрации</value>
+  </data>
+  <data name="History" xml:space="preserve">
+    <value>история</value>
+  </data>
+  <data name="Total_gross_area" xml:space="preserve">
+    <value>Всего общая площадь</value>
+  </data>
+  <data name="Total_net_area" xml:space="preserve">
+    <value>Всего площадь нетто</value>
+  </data>
+  <data name="COBie_QualityControl" xml:space="preserve">
+    <value>Параметры управления Коби качеству</value>
+  </data>
+  <data name="Map_Document" xml:space="preserve">
+    <value>Схема документа</value>
+  </data>
+  <data name="Map_Documents" xml:space="preserve">
+    <value>Карта Документы</value>
+  </data>
+  <data name="Select_Subsystems" xml:space="preserve">
+    <value>Выберите Подсистемы</value>
+  </data>
+  <data name="Add_New_Line" xml:space="preserve">
+    <value>Добавить новую линию</value>
+  </data>
+  <data name="Select_Field" xml:space="preserve">
+    <value>Выберите поле</value>
+  </data>
+  <data name="Select_Symbol" xml:space="preserve">
+    <value>Выберите Символ</value>
+  </data>
+  <data name="Barcode_Height" xml:space="preserve">
+    <value>Штрих высота</value>
+  </data>
+  <data name="Barcode_Per_Page" xml:space="preserve">
+    <value>Штрих на странице</value>
+  </data>
+  <data name="Barcode_Preview" xml:space="preserve">
+    <value>Штрих Предварительный</value>
+  </data>
+  <data name="Barcode_Print_Option" xml:space="preserve">
+    <value>Штрих печати Вариант</value>
+  </data>
+  <data name="Barcode_Sample" xml:space="preserve">
+    <value>Штрих Образец</value>
+  </data>
+  <data name="Barcode_type" xml:space="preserve">
+    <value>Штрих Тип</value>
+  </data>
+  <data name="Barcode_Width" xml:space="preserve">
+    <value>Штрих Ширина</value>
+  </data>
+  <data name="Barcode_Without_Data" xml:space="preserve">
+    <value>Штрих без данных</value>
+  </data>
+  <data name="Barcode_With_Data" xml:space="preserve">
+    <value>Штрих-кода с данными</value>
+  </data>
+  <data name="Document_Template" xml:space="preserve">
+    <value>Шаблон документа</value>
+  </data>
+  <data name="Preview" xml:space="preserve">
+    <value>предварительный просмотр</value>
+  </data>
+  <data name="Randomization_Length" xml:space="preserve">
+    <value>рандомизации Длина</value>
+  </data>
+  <data name="Symbol" xml:space="preserve">
+    <value>символ</value>
+  </data>
+  <data name="Field" xml:space="preserve">
+    <value>поле</value>
+  </data>
+  <data name="Delete_Attributes" xml:space="preserve">
+    <value>Удалить атрибутов</value>
+  </data>
+  <data name="Attribute_Version" xml:space="preserve">
+    <value>атрибута версии</value>
+  </data>
+  <data name="Add_Classification" xml:space="preserve">
+    <value>Добавить Классификация</value>
+  </data>
+  <data name="Add_Classification_Details" xml:space="preserve">
+    <value>Добавить классификации домена</value>
+  </data>
+  <data name="Assigned_Classifications" xml:space="preserve">
+    <value>Назначенные Классификации</value>
+  </data>
+  <data name="Classification_Detail_Code" xml:space="preserve">
+    <value>Классификация Деталь Код</value>
+  </data>
+  <data name="Classification_Detail_Name" xml:space="preserve">
+    <value>Классификация Подробно Имя</value>
+  </data>
+  <data name="Color" xml:space="preserve">
+    <value>цвет</value>
+  </data>
+  <data name="Types" xml:space="preserve">
+    <value>Виды</value>
+  </data>
+  <data name="Add_Job" xml:space="preserve">
+    <value>Добавить работу</value>
+  </data>
+  <data name="test" xml:space="preserve">
+    <value>test</value>
+  </data>
+  <data name="File_name_format" xml:space="preserve">
+    <value>Формат имени файла</value>
+  </data>
+  <data name="Auto_map_documents" xml:space="preserve">
+    <value>Автоматическая привязка документов</value>
+  </data>
+  <data name="Please_select_at_least_one_document" xml:space="preserve">
+    <value>Пожайлуста, выберите хотя бы один документ!!</value>
+  </data>
+  <data name="Please_select_entity_from_the_dropdown" xml:space="preserve">
+    <value>Пожайлуста, выберите сущность</value>
+  </data>
+  <data name="Document_type_not_found" xml:space="preserve">
+    <value>Категория документа не найдена</value>
+  </data>
+  <data name="Stage_not_found" xml:space="preserve">
+    <value>Стадия не найдена</value>
+  </data>
+  <data name="ApprovalBy_not_found" xml:space="preserve">
+    <value>Утверждение не найдено</value>
+  </data>
+  <data name="Please_type_a_file_name_pattern" xml:space="preserve">
+    <value>Пожайлуста, введите шаблон имени файла</value>
+  </data>
+  <data name="Document_type_not_defined" xml:space="preserve">
+    <value>Категория документа не задана</value>
+  </data>
+  <data name="Stage_not_defined" xml:space="preserve">
+    <value>Стадия не задана</value>
+  </data>
+  <data name="ApprovalBy_not_defined" xml:space="preserve">
+    <value>Утверждение не задано</value>
+  </data>
+  <data name="Invalid_pattern" xml:space="preserve">
+    <value>Шаблон неверный</value>
+  </data>
+  <data name="The_document_name_does_not_match_the_pattern" xml:space="preserve">
+    <value>Имя документа не соответсвует шаблону</value>
+  </data>
+  <data name="Unknown_entity" xml:space="preserve">
+    <value>Неизвестная сущность</value>
+  </data>
+  <data name="Job_Template" xml:space="preserve">
+    <value>Работа шаблона</value>
+  </data>
+  <data name="PM_jobs" xml:space="preserve">
+    <value>PM Вакансии</value>
+  </data>
+  <data name="SortBy" xml:space="preserve">
+    <value>Сортировать</value>
+  </data>
+  <data name="Merge" xml:space="preserve">
+    <value>Соединить</value>
+  </data>
+  <data name="DUT_ACRES" xml:space="preserve">
+    <value>акры</value>
+  </data>
+  <data name="DUT_ACRES_SHORT" xml:space="preserve">
+    <value>акр</value>
+  </data>
+  <data name="DUT_CENTIMETERS" xml:space="preserve">
+    <value>сантиметры</value>
+  </data>
+  <data name="DUT_CENTIMETERS_SHORT" xml:space="preserve">
+    <value>см</value>
+  </data>
+  <data name="DUT_CUBIC_CENTIMETERS" xml:space="preserve">
+    <value>кубические сантиметры</value>
+  </data>
+  <data name="DUT_CUBIC_CENTIMETERS_SHORT" xml:space="preserve">
+    <value>см³</value>
+  </data>
+  <data name="DUT_CUBIC_FEET" xml:space="preserve">
+    <value>кубические футы</value>
+  </data>
+  <data name="DUT_CUBIC_FEET_SHORT" xml:space="preserve">
+    <value>CF</value>
+  </data>
+  <data name="DUT_CUBIC_INCHES" xml:space="preserve">
+    <value>кубические дюймы</value>
+  </data>
+  <data name="DUT_CUBIC_INCHES_SHORT" xml:space="preserve">
+    <value>in³</value>
+  </data>
+  <data name="DUT_CUBIC_METERS" xml:space="preserve">
+    <value>кубические метры</value>
+  </data>
+  <data name="DUT_CUBIC_METERS_SHORT" xml:space="preserve">
+    <value>м³</value>
+  </data>
+  <data name="DUT_CUBIC_MILLIMETERS" xml:space="preserve">
+    <value>кубические миллиметры</value>
+  </data>
+  <data name="DUT_CUBIC_MILLIMETERS_SHORT" xml:space="preserve">
+    <value>мм³</value>
+  </data>
+  <data name="DUT_CUBIC_YARDS" xml:space="preserve">
+    <value>кубические ярды</value>
+  </data>
+  <data name="DUT_CUBIC_YARDS_SHORT" xml:space="preserve">
+    <value>CY</value>
+  </data>
+  <data name="DUT_CURRENCY" xml:space="preserve">
+    <value>валюта</value>
+  </data>
+  <data name="DUT_CURRENCY_SHORT" xml:space="preserve">
+    <value />
+  </data>
+  <data name="DUT_DECANEWTONS" xml:space="preserve">
+    <value>деканьютоны</value>
+  </data>
+  <data name="DUT_DECANEWTONS_PER_METER" xml:space="preserve">
+    <value>деканьютоны на метр</value>
+  </data>
+  <data name="DUT_DECANEWTONS_PER_METER_SHORT" xml:space="preserve">
+    <value>даН/м</value>
+  </data>
+  <data name="DUT_DECANEWTONS_PER_SQUARE_METER" xml:space="preserve">
+    <value>деканьютоны на квадратный метр</value>
+  </data>
+  <data name="DUT_DECANEWTONS_PER_SQUARE_METER_SHORT" xml:space="preserve">
+    <value>даН/м²</value>
+  </data>
+  <data name="DUT_DECANEWTONS_SHORT" xml:space="preserve">
+    <value>даН</value>
+  </data>
+  <data name="DUT_DECANEWTON_METERS" xml:space="preserve">
+    <value>деканьютон-метр</value>
+  </data>
+  <data name="DUT_DECANEWTON_METERS_SHORT" xml:space="preserve">
+    <value>даН·м</value>
+  </data>
+  <data name="DUT_DECIMETERS" xml:space="preserve">
+    <value>дециметры</value>
+  </data>
+  <data name="DUT_DECIMETERS_SHORT" xml:space="preserve">
+    <value>дм</value>
+  </data>
+  <data name="DUT_DEGREES" xml:space="preserve">
+    <value>градусы</value>
+  </data>
+  <data name="DUT_DEGREES_AND_MINUTES" xml:space="preserve">
+    <value>градусы и минуты</value>
+  </data>
+  <data name="DUT_DEGREES_AND_MINUTES_SHORT" xml:space="preserve">
+    <value />
+  </data>
+  <data name="DUT_DEGREES_SHORT" xml:space="preserve">
+    <value>°</value>
+  </data>
+  <data name="DUT_FEET" xml:space="preserve">
+    <value>футы</value>
+  </data>
+  <data name="DUT_FEET_FRACTIONAL_INCHES" xml:space="preserve">
+    <value>футы и дробные дюймы</value>
+  </data>
+  <data name="DUT_FEET_FRACTIONAL_INCHES_SHORT" xml:space="preserve">
+    <value />
+  </data>
+  <data name="DUT_FEET_SHORT" xml:space="preserve">
+    <value>ft</value>
+  </data>
+  <data name="DUT_FRACTIONAL_INCHES" xml:space="preserve">
+    <value>дробные дюймы</value>
+  </data>
+  <data name="DUT_FRACTIONAL_INCHES_SHORT" xml:space="preserve">
+    <value />
+  </data>
+  <data name="DUT_GALLONS_US" xml:space="preserve">
+    <value>галлоны (США)</value>
+  </data>
+  <data name="DUT_GALLONS_US_SHORT" xml:space="preserve">
+    <value>гал</value>
+  </data>
+  <data name="DUT_GRADS" xml:space="preserve">
+    <value>грады</value>
+  </data>
+  <data name="DUT_GRADS_SHORT" xml:space="preserve">
+    <value>град</value>
+  </data>
+  <data name="DUT_HECTARES" xml:space="preserve">
+    <value>гектары</value>
+  </data>
+  <data name="DUT_HECTARES_SHORT" xml:space="preserve">
+    <value>г</value>
+  </data>
+  <data name="DUT_HOURS" xml:space="preserve">
+    <value>часы</value>
+  </data>
+  <data name="DUT_HOURS_SHORT" xml:space="preserve">
+    <value>ч</value>
+  </data>
+  <data name="DUT_INCHES" xml:space="preserve">
+    <value>дюймы</value>
+  </data>
+  <data name="DUT_INCHES_SHORT" xml:space="preserve">
+    <value>in</value>
+  </data>
+  <data name="DUT_KILOGRAMS_FORCE" xml:space="preserve">
+    <value>килограмм-сила</value>
+  </data>
+  <data name="DUT_KILOGRAMS_FORCE_PER_METER" xml:space="preserve">
+    <value>килограмм-сила на метр</value>
+  </data>
+  <data name="DUT_KILOGRAMS_FORCE_PER_METER_SHORT" xml:space="preserve">
+    <value>кгс/м</value>
+  </data>
+  <data name="DUT_KILOGRAMS_FORCE_PER_SQUARE_METER" xml:space="preserve">
+    <value>килограмм-сила на квадратный метр</value>
+  </data>
+  <data name="DUT_KILOGRAMS_FORCE_PER_SQUARE_METER_SHORT" xml:space="preserve">
+    <value>кгс/м²</value>
+  </data>
+  <data name="DUT_KILOGRAMS_FORCE_SHORT" xml:space="preserve">
+    <value>кгс</value>
+  </data>
+  <data name="DUT_KILOGRAMS_MASS" xml:space="preserve">
+    <value>килограммы</value>
+  </data>
+  <data name="DUT_KILOGRAMS_MASS_SHORT" xml:space="preserve">
+    <value>кг</value>
+  </data>
+  <data name="DUT_KILOGRAMS_PER_CUBIC_METER" xml:space="preserve">
+    <value>килограммы на кубический метр</value>
+  </data>
+  <data name="DUT_KILOGRAMS_PER_CUBIC_METER_SHORT" xml:space="preserve">
+    <value>кг/м³</value>
+  </data>
+  <data name="DUT_KILOGRAM_FORCE_METERS" xml:space="preserve">
+    <value>килограмм-сила-метр</value>
+  </data>
+  <data name="DUT_KILOGRAM_FORCE_METERS_SHORT" xml:space="preserve">
+    <value>кгс·м</value>
+  </data>
+  <data name="DUT_KILONEWTONS" xml:space="preserve">
+    <value>килоньютоны</value>
+  </data>
+  <data name="DUT_KILONEWTONS_PER_METER" xml:space="preserve">
+    <value>килоньютоны на метр</value>
+  </data>
+  <data name="DUT_KILONEWTONS_PER_METER_SHORT" xml:space="preserve">
+    <value>кН/м</value>
+  </data>
+  <data name="DUT_KILONEWTONS_PER_SQUARE_METER" xml:space="preserve">
+    <value>килоньютоны на квадратный метр</value>
+  </data>
+  <data name="DUT_KILONEWTONS_PER_SQUARE_METER_SHORT" xml:space="preserve">
+    <value>кН/м²</value>
+  </data>
+  <data name="DUT_KILONEWTONS_SHORT" xml:space="preserve">
+    <value>кН</value>
+  </data>
+  <data name="DUT_KILONEWTON_METERS" xml:space="preserve">
+    <value>килоньютон-метр</value>
+  </data>
+  <data name="DUT_KILONEWTON_METERS_SHORT" xml:space="preserve">
+    <value>кН·м</value>
+  </data>
+  <data name="DUT_KIPS" xml:space="preserve">
+    <value>кип-фут</value>
+  </data>
+  <data name="DUT_KIPS_PER_FOOT" xml:space="preserve">
+    <value>кипы на фут</value>
+  </data>
+  <data name="DUT_KIPS_PER_FOOT_SHORT" xml:space="preserve">
+    <value>кип/ft</value>
+  </data>
+  <data name="DUT_KIPS_PER_INCH" xml:space="preserve">
+    <value>кипы на дюйм</value>
+  </data>
+  <data name="DUT_KIPS_PER_INCH_SHORT" xml:space="preserve">
+    <value>кип/in</value>
+  </data>
+  <data name="DUT_KIPS_PER_SQUARE_FOOT" xml:space="preserve">
+    <value>кипы на квадратный фут</value>
+  </data>
+  <data name="DUT_KIPS_PER_SQUARE_FOOT_SHORT" xml:space="preserve">
+    <value>кип/SF</value>
+  </data>
+  <data name="DUT_KIPS_SHORT" xml:space="preserve">
+    <value>кип</value>
+  </data>
+  <data name="DUT_KIP_FEET" xml:space="preserve">
+    <value>кипы</value>
+  </data>
+  <data name="DUT_KIP_FEET_SHORT" xml:space="preserve">
+    <value>кип·м</value>
+  </data>
+  <data name="DUT_LITERS" xml:space="preserve">
+    <value>литры</value>
+  </data>
+  <data name="DUT_LITERS_SHORT" xml:space="preserve">
+    <value>л</value>
+  </data>
+  <data name="DUT_MEGANEWTONS" xml:space="preserve">
+    <value>меганьютоны</value>
+  </data>
+  <data name="DUT_MEGANEWTONS_PER_METER" xml:space="preserve">
+    <value>меганьютоны на метр</value>
+  </data>
+  <data name="DUT_MEGANEWTONS_PER_METER_SHORT" xml:space="preserve">
+    <value>МН/м</value>
+  </data>
+  <data name="DUT_MEGANEWTONS_PER_SQUARE_METER" xml:space="preserve">
+    <value>меганьютоны на квадратный метр</value>
+  </data>
+  <data name="DUT_MEGANEWTONS_PER_SQUARE_METER_SHORT" xml:space="preserve">
+    <value>МН/м²</value>
+  </data>
+  <data name="DUT_MEGANEWTONS_SHORT" xml:space="preserve">
+    <value>МН</value>
+  </data>
+  <data name="DUT_MEGANEWTON_METERS" xml:space="preserve">
+    <value>меганьютон-метр</value>
+  </data>
+  <data name="DUT_MEGANEWTON_METERS_SHORT" xml:space="preserve">
+    <value>МН·м</value>
+  </data>
+  <data name="DUT_METERS" xml:space="preserve">
+    <value>метры</value>
+  </data>
+  <data name="DUT_METERS_SHORT" xml:space="preserve">
+    <value>м</value>
+  </data>
+  <data name="DUT_MILISECONDS" xml:space="preserve">
+    <value>миллисекунды</value>
+  </data>
+  <data name="DUT_MILISECONDS_SHORT" xml:space="preserve">
+    <value>мс</value>
+  </data>
+  <data name="DUT_MILLIMETERS" xml:space="preserve">
+    <value>миллиметры</value>
+  </data>
+  <data name="DUT_MILLIMETERS_SHORT" xml:space="preserve">
+    <value>мм</value>
+  </data>
+  <data name="DUT_MINUTES" xml:space="preserve">
+    <value>минуты</value>
+  </data>
+  <data name="DUT_MINUTES_SHORT" xml:space="preserve">
+    <value>мин</value>
+  </data>
+  <data name="DUT_NEWTONS" xml:space="preserve">
+    <value>ньютоны</value>
+  </data>
+  <data name="DUT_NEWTONS_PER_METER" xml:space="preserve">
+    <value>ньютоны на метр</value>
+  </data>
+  <data name="DUT_NEWTONS_PER_METER_SHORT" xml:space="preserve">
+    <value>Н/м</value>
+  </data>
+  <data name="DUT_NEWTONS_PER_SQUARE_METER" xml:space="preserve">
+    <value>ньютоны на квадратный метр</value>
+  </data>
+  <data name="DUT_NEWTONS_PER_SQUARE_METER_SHORT" xml:space="preserve">
+    <value>Н/м²</value>
+  </data>
+  <data name="DUT_NEWTONS_SHORT" xml:space="preserve">
+    <value>Н</value>
+  </data>
+  <data name="DUT_NEWTON_METERS" xml:space="preserve">
+    <value>ньютон-метр</value>
+  </data>
+  <data name="DUT_NEWTON_METERS_SHORT" xml:space="preserve">
+    <value>Н·м</value>
+  </data>
+  <data name="DUT_POUNDS_FORCE" xml:space="preserve">
+    <value>фунт-сила</value>
+  </data>
+  <data name="DUT_POUNDS_FORCE_PER_FOOT" xml:space="preserve">
+    <value>фунт-сила на фут</value>
+  </data>
+  <data name="DUT_POUNDS_FORCE_PER_FOOT_SHORT" xml:space="preserve">
+    <value>lbf/ft</value>
+  </data>
+  <data name="DUT_POUNDS_FORCE_PER_SQUARE_FOOT" xml:space="preserve">
+    <value>фунт-сила на квадратный фут</value>
+  </data>
+  <data name="DUT_POUNDS_FORCE_PER_SQUARE_FOOT_SHORT" xml:space="preserve">
+    <value>lbf/SF</value>
+  </data>
+  <data name="DUT_POUNDS_FORCE_SHORT" xml:space="preserve">
+    <value>lbf</value>
+  </data>
+  <data name="DUT_POUNDS_MASS" xml:space="preserve">
+    <value>фунты</value>
+  </data>
+  <data name="DUT_POUNDS_MASS_PER_CUBIC_FOOT" xml:space="preserve">
+    <value>фунты на кубический фут</value>
+  </data>
+  <data name="DUT_POUNDS_MASS_PER_CUBIC_FOOT_SHORT" xml:space="preserve">
+    <value>lb/CF</value>
+  </data>
+  <data name="DUT_POUNDS_MASS_SHORT" xml:space="preserve">
+    <value>lb</value>
+  </data>
+  <data name="DUT_POUND_FORCE_FEET" xml:space="preserve">
+    <value>фунт-сила-фут</value>
+  </data>
+  <data name="DUT_POUND_FORCE_FEET_SHORT" xml:space="preserve">
+    <value>lbf·ft</value>
+  </data>
+  <data name="DUT_RADIANS" xml:space="preserve">
+    <value>радианы</value>
+  </data>
+  <data name="DUT_RADIANS_SHORT" xml:space="preserve">
+    <value>рад</value>
+  </data>
+  <data name="DUT_SECONDS" xml:space="preserve">
+    <value>секунды</value>
+  </data>
+  <data name="DUT_SECONDS_SHORT" xml:space="preserve">
+    <value>с</value>
+  </data>
+  <data name="DUT_SQUARE_CENTIMETERS" xml:space="preserve">
+    <value>квадратные сантиметры</value>
+  </data>
+  <data name="DUT_SQUARE_CENTIMETERS_SHORT" xml:space="preserve">
+    <value>см²</value>
+  </data>
+  <data name="DUT_SQUARE_FEET" xml:space="preserve">
+    <value>квадратные футы</value>
+  </data>
+  <data name="DUT_SQUARE_FEET_SHORT" xml:space="preserve">
+    <value>SF</value>
+  </data>
+  <data name="DUT_SQUARE_INCHES" xml:space="preserve">
+    <value>квадратные дюймы</value>
+  </data>
+  <data name="DUT_SQUARE_INCHES_SHORT" xml:space="preserve">
+    <value>in²</value>
+  </data>
+  <data name="DUT_SQUARE_METERS" xml:space="preserve">
+    <value>квадратные метры</value>
+  </data>
+  <data name="DUT_SQUARE_METERS_SHORT" xml:space="preserve">
+    <value>м²</value>
+  </data>
+  <data name="DUT_SQUARE_MILLIMETERS" xml:space="preserve">
+    <value>квадратные миллиметры</value>
+  </data>
+  <data name="DUT_SQUARE_MILLIMETERS_SHORT" xml:space="preserve">
+    <value>мм²</value>
+  </data>
+  <data name="DUT_TONNES_FORCE" xml:space="preserve">
+    <value>тонна-сила</value>
+  </data>
+  <data name="DUT_TONNES_FORCE_PER_METER" xml:space="preserve">
+    <value>тонна-сила на метр</value>
+  </data>
+  <data name="DUT_TONNES_FORCE_PER_METER_SHORT" xml:space="preserve">
+    <value>тс/м</value>
+  </data>
+  <data name="DUT_TONNES_FORCE_PER_SQUARE_METER" xml:space="preserve">
+    <value>тонна-сила на квадратный метр</value>
+  </data>
+  <data name="DUT_TONNES_FORCE_PER_SQUARE_METER_SHORT" xml:space="preserve">
+    <value>тс/м²</value>
+  </data>
+  <data name="DUT_TONNES_FORCE_SHORT" xml:space="preserve">
+    <value>тс</value>
+  </data>
+  <data name="DUT_TONNES_MASS" xml:space="preserve">
+    <value>тонны</value>
+  </data>
+  <data name="DUT_TONNES_MASS_SHORT" xml:space="preserve">
+    <value>т</value>
+  </data>
+  <data name="DUT_TONNE_FORCE_METERS" xml:space="preserve">
+    <value>тонна-сила-метр</value>
+  </data>
+  <data name="DUT_TONNE_FORCE_METERS_SHORT" xml:space="preserve">
+    <value>тс·м</value>
+  </data>
+</root>

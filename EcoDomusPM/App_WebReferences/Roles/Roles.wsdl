@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Roles" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:4444/Client WCF/Roles.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:4444/Client WCF/Roles.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:4444/Client WCF/Roles.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/" />
+      <xsd:import schemaLocation="http://localhost:4444/Client WCF/Roles.svc?xsd=xsd3" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IRoles_DoWork_InputMessage">
+    <wsdl:part name="parameters" element="tns:DoWork" />
+  </wsdl:message>
+  <wsdl:message name="IRoles_DoWork_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DoWorkResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRoles_Get_project_roles_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_project_roles" />
+  </wsdl:message>
+  <wsdl:message name="IRoles_Get_project_roles_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_project_rolesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRoles_Assign_project_roles_user_InputMessage">
+    <wsdl:part name="parameters" element="tns:Assign_project_roles_user" />
+  </wsdl:message>
+  <wsdl:message name="IRoles_Assign_project_roles_user_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Assign_project_roles_userResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRoles_get_customised_left_menu_InputMessage">
+    <wsdl:part name="parameters" element="tns:get_customised_left_menu" />
+  </wsdl:message>
+  <wsdl:message name="IRoles_get_customised_left_menu_OutputMessage">
+    <wsdl:part name="parameters" element="tns:get_customised_left_menuResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRoles_Insert_update_roles_InputMessage">
+    <wsdl:part name="parameters" element="tns:Insert_update_roles" />
+  </wsdl:message>
+  <wsdl:message name="IRoles_Insert_update_roles_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Insert_update_rolesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRoles_Get_COBie_pages_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_COBie_pages" />
+  </wsdl:message>
+  <wsdl:message name="IRoles_Get_COBie_pages_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_COBie_pagesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRoles_get_pages_fields_on_cobie_for_roles_InputMessage">
+    <wsdl:part name="parameters" element="tns:get_pages_fields_on_cobie_for_roles" />
+  </wsdl:message>
+  <wsdl:message name="IRoles_get_pages_fields_on_cobie_for_roles_OutputMessage">
+    <wsdl:part name="parameters" element="tns:get_pages_fields_on_cobie_for_rolesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRoles_Insert_update_project_roles_permissions_InputMessage">
+    <wsdl:part name="parameters" element="tns:Insert_update_project_roles_permissions" />
+  </wsdl:message>
+  <wsdl:message name="IRoles_Insert_update_project_roles_permissions_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Insert_update_project_roles_permissionsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRoles_Get_RoleProfile_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_RoleProfile" />
+  </wsdl:message>
+  <wsdl:message name="IRoles_Get_RoleProfile_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_RoleProfileResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRoles_GetPermissionsForProjectRole_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPermissionsForProjectRole" />
+  </wsdl:message>
+  <wsdl:message name="IRoles_GetPermissionsForProjectRole_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPermissionsForProjectRoleResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRoles_Delete_project_role_InputMessage">
+    <wsdl:part name="parameters" element="tns:Delete_project_role" />
+  </wsdl:message>
+  <wsdl:message name="IRoles_Delete_project_role_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Delete_project_roleResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRoles_Get_Verfiy_Role_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Verfiy_Role" />
+  </wsdl:message>
+  <wsdl:message name="IRoles_Get_Verfiy_Role_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Verfiy_RoleResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IRoles">
+    <wsdl:operation name="DoWork">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRoles/DoWork" message="tns:IRoles_DoWork_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRoles/DoWorkResponse" message="tns:IRoles_DoWork_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_project_roles">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRoles/Get_project_roles" message="tns:IRoles_Get_project_roles_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRoles/Get_project_rolesResponse" message="tns:IRoles_Get_project_roles_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Assign_project_roles_user">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRoles/Assign_project_roles_user" message="tns:IRoles_Assign_project_roles_user_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRoles/Assign_project_roles_userResponse" message="tns:IRoles_Assign_project_roles_user_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="get_customised_left_menu">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRoles/get_customised_left_menu" message="tns:IRoles_get_customised_left_menu_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRoles/get_customised_left_menuResponse" message="tns:IRoles_get_customised_left_menu_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Insert_update_roles">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRoles/Insert_update_roles" message="tns:IRoles_Insert_update_roles_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRoles/Insert_update_rolesResponse" message="tns:IRoles_Insert_update_roles_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_COBie_pages">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRoles/Get_COBie_pages" message="tns:IRoles_Get_COBie_pages_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRoles/Get_COBie_pagesResponse" message="tns:IRoles_Get_COBie_pages_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="get_pages_fields_on_cobie_for_roles">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRoles/get_pages_fields_on_cobie_for_roles" message="tns:IRoles_get_pages_fields_on_cobie_for_roles_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRoles/get_pages_fields_on_cobie_for_rolesResponse" message="tns:IRoles_get_pages_fields_on_cobie_for_roles_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Insert_update_project_roles_permissions">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRoles/Insert_update_project_roles_permissions" message="tns:IRoles_Insert_update_project_roles_permissions_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRoles/Insert_update_project_roles_permissionsResponse" message="tns:IRoles_Insert_update_project_roles_permissions_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_RoleProfile">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRoles/Get_RoleProfile" message="tns:IRoles_Get_RoleProfile_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRoles/Get_RoleProfileResponse" message="tns:IRoles_Get_RoleProfile_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPermissionsForProjectRole">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRoles/GetPermissionsForProjectRole" message="tns:IRoles_GetPermissionsForProjectRole_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRoles/GetPermissionsForProjectRoleResponse" message="tns:IRoles_GetPermissionsForProjectRole_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Delete_project_role">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRoles/Delete_project_role" message="tns:IRoles_Delete_project_role_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRoles/Delete_project_roleResponse" message="tns:IRoles_Delete_project_role_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_Verfiy_Role">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRoles/Get_Verfiy_Role" message="tns:IRoles_Get_Verfiy_Role_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRoles/Get_Verfiy_RoleResponse" message="tns:IRoles_Get_Verfiy_Role_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IRoles" type="tns:IRoles">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="DoWork">
+      <soap:operation soapAction="http://tempuri.org/IRoles/DoWork" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_project_roles">
+      <soap:operation soapAction="http://tempuri.org/IRoles/Get_project_roles" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Assign_project_roles_user">
+      <soap:operation soapAction="http://tempuri.org/IRoles/Assign_project_roles_user" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="get_customised_left_menu">
+      <soap:operation soapAction="http://tempuri.org/IRoles/get_customised_left_menu" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Insert_update_roles">
+      <soap:operation soapAction="http://tempuri.org/IRoles/Insert_update_roles" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_COBie_pages">
+      <soap:operation soapAction="http://tempuri.org/IRoles/Get_COBie_pages" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="get_pages_fields_on_cobie_for_roles">
+      <soap:operation soapAction="http://tempuri.org/IRoles/get_pages_fields_on_cobie_for_roles" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Insert_update_project_roles_permissions">
+      <soap:operation soapAction="http://tempuri.org/IRoles/Insert_update_project_roles_permissions" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_RoleProfile">
+      <soap:operation soapAction="http://tempuri.org/IRoles/Get_RoleProfile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPermissionsForProjectRole">
+      <soap:operation soapAction="http://tempuri.org/IRoles/GetPermissionsForProjectRole" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Delete_project_role">
+      <soap:operation soapAction="http://tempuri.org/IRoles/Delete_project_role" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Verfiy_Role">
+      <soap:operation soapAction="http://tempuri.org/IRoles/Get_Verfiy_Role" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Roles">
+    <wsdl:port name="BasicHttpBinding_IRoles" binding="tns:BasicHttpBinding_IRoles">
+      <soap:address location="http://localhost:4444/Client%20WCF/Roles.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

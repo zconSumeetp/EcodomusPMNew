@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="09d99989-02a2-4552-818e-69bf0e045c81" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>false</ReferenceAllAssemblies>
+    <ReferencedAssemblies>
+      <ReferencedAssembly AssemblyName="Microsoft.CSharp" />
+      <ReferencedAssembly AssemblyName="System" />
+      <ReferencedAssembly AssemblyName="System.Configuration" />
+      <ReferencedAssembly AssemblyName="System.Core" />
+      <ReferencedAssembly AssemblyName="System.Data" />
+      <ReferencedAssembly AssemblyName="System.Data.DataSetExtensions" />
+      <ReferencedAssembly AssemblyName="System.Data.SQLite" />
+      <ReferencedAssembly AssemblyName="System.Data.SQLite.Linq" />
+      <ReferencedAssembly AssemblyName="System.Drawing" />
+      <ReferencedAssembly AssemblyName="System.EnterpriseServices" />
+      <ReferencedAssembly AssemblyName="System.IdentityModel" />
+      <ReferencedAssembly AssemblyName="System.Runtime.Serialization" />
+      <ReferencedAssembly AssemblyName="System.ServiceModel" />
+      <ReferencedAssembly AssemblyName="System.ServiceModel.Activation" />
+      <ReferencedAssembly AssemblyName="System.ServiceModel.Activities" />
+      <ReferencedAssembly AssemblyName="System.ServiceModel.Web" />
+      <ReferencedAssembly AssemblyName="System.ServiceProcess" />
+      <ReferencedAssembly AssemblyName="System.Web" />
+      <ReferencedAssembly AssemblyName="System.Web.ApplicationServices" />
+      <ReferencedAssembly AssemblyName="System.Web.DataVisualization" />
+      <ReferencedAssembly AssemblyName="System.Web.DynamicData" />
+      <ReferencedAssembly AssemblyName="System.Web.Extensions" />
+      <ReferencedAssembly AssemblyName="System.Web.Services" />
+      <ReferencedAssembly AssemblyName="System.WorkflowServices" />
+      <ReferencedAssembly AssemblyName="System.Xml" />
+      <ReferencedAssembly AssemblyName="System.Xml.Linq" />
+    </ReferencedAssemblies>
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:3333/Central%20WCF/Product.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="Product.disco" MetadataType="Disco" ID="43c86ceb-bd6e-41e6-a996-2f9e87994a7b" SourceId="1" SourceUrl="http://localhost:3333/Central WCF/Product.svc?disco" />
+    <MetadataFile FileName="Product1.xsd" MetadataType="Schema" ID="f75347d1-a1eb-4698-b4dc-533cdf927ed2" SourceId="1" SourceUrl="http://localhost:3333/Central WCF/Product.svc?xsd=xsd4" />
+    <MetadataFile FileName="Product.xsd" MetadataType="Schema" ID="cc4bde4f-e590-4542-b458-c1785e299c06" SourceId="1" SourceUrl="http://localhost:3333/Central WCF/Product.svc?xsd=xsd3" />
+    <MetadataFile FileName="Product2.xsd" MetadataType="Schema" ID="9de652f2-74e1-4d42-bcc6-9c9837bcdd5f" SourceId="1" SourceUrl="http://localhost:3333/Central WCF/Product.svc?xsd=xsd2" />
+    <MetadataFile FileName="Product3.xsd" MetadataType="Schema" ID="5e6993c4-295d-4f8a-95a5-b25b73ae50f8" SourceId="1" SourceUrl="http://localhost:3333/Central WCF/Product.svc?xsd=xsd1" />
+    <MetadataFile FileName="Product4.xsd" MetadataType="Schema" ID="866ec50a-b75a-4dd6-8242-f178a3e01118" SourceId="1" SourceUrl="http://localhost:3333/Central WCF/Product.svc?xsd=xsd0" />
+    <MetadataFile FileName="Product.wsdl" MetadataType="Wsdl" ID="53510f58-908b-4e29-a73d-746542ce0ae2" SourceId="1" SourceUrl="http://localhost:3333/Central WCF/Product.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

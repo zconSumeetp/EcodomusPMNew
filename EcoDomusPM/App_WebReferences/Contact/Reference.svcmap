@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="e129031a-387e-46d1-9dbb-14ee6426ff2c" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>false</ReferenceAllAssemblies>
+    <ReferencedAssemblies>
+      <ReferencedAssembly AssemblyName="System" />
+      <ReferencedAssembly AssemblyName="System.Core" />
+      <ReferencedAssembly AssemblyName="System.Data" />
+      <ReferencedAssembly AssemblyName="System.Xml" />
+      <ReferencedAssembly AssemblyName="System.Xml.Linq" />
+    </ReferencedAssemblies>
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:4444/Client WCF/Contact.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="Contact1.xsd" MetadataType="Schema" ID="cb79affa-8aeb-4917-81d0-0866b63db3ad" SourceId="1" SourceUrl="http://localhost:4444/Client WCF/Contact.svc?xsd=xsd3" />
+    <MetadataFile FileName="Contact.xsd" MetadataType="Schema" ID="e01d04d9-0bfb-4c28-89ab-ddb2e736472c" SourceId="1" SourceUrl="http://localhost:4444/Client WCF/Contact.svc?xsd=xsd0" />
+    <MetadataFile FileName="Contact12.xsd" MetadataType="Schema" ID="2deef7e0-7bbc-45b7-8efa-c055203e4c1a" SourceId="1" SourceUrl="http://localhost:4444/Client WCF/Contact.svc?xsd=xsd1" />
+    <MetadataFile FileName="Contact.disco" MetadataType="Disco" ID="6aeb26cf-5e14-4f72-9366-2d906b92feda" SourceId="1" SourceUrl="http://localhost:4444/Client WCF/Contact.svc?disco" />
+    <MetadataFile FileName="Contact.wsdl" MetadataType="Wsdl" ID="3223c0bb-c2da-489a-86dd-7ff1cb558cf3" SourceId="1" SourceUrl="http://localhost:4444/Client WCF/Contact.svc?wsdl" />
+    <MetadataFile FileName="Contact13.xsd" MetadataType="Schema" ID="b37b7157-60cc-48e9-9b54-876acb9532fd" SourceId="1" SourceUrl="http://localhost:4444/Client WCF/Contact.svc?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

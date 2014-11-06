@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.datacontract.org/2004/07/Client.App_Code.App.Model" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Client.App_Code.App.Model" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:4444/Client WCF/AttributeTemplate.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:import schemaLocation="http://localhost:4444/Client WCF/AttributeTemplate.svc?xsd=xsd8" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:complexType name="ArrayOfJobTemplateModel">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="JobTemplateModel" nillable="true" type="tns:JobTemplateModel" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfJobTemplateModel" nillable="true" type="tns:ArrayOfJobTemplateModel" />
+  <xs:complexType name="JobTemplateModel">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CreatedBy" type="ser:guid" />
+      <xs:element minOccurs="0" name="Id" type="ser:guid" />
+      <xs:element minOccurs="0" name="JobCategoryId" nillable="true" type="ser:guid" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OrganizationId" nillable="true" type="ser:guid" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="JobTemplateModel" nillable="true" type="tns:JobTemplateModel" />
+  <xs:complexType name="ArrayOfJobTemplateTaskModel">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="JobTemplateTaskModel" nillable="true" type="tns:JobTemplateTaskModel" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfJobTemplateTaskModel" nillable="true" type="tns:ArrayOfJobTemplateTaskModel" />
+  <xs:complexType name="JobTemplateTaskModel">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CreatedBy" type="ser:guid" />
+      <xs:element minOccurs="0" name="Des" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Duration" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DurationUnit" type="ser:guid" />
+      <xs:element minOccurs="0" name="Frequency" type="xs:decimal" />
+      <xs:element minOccurs="0" name="FrequencyUnit" type="ser:guid" />
+      <xs:element minOccurs="0" name="Id" type="ser:guid" />
+      <xs:element minOccurs="0" name="JobTemplateId" type="ser:guid" />
+      <xs:element minOccurs="0" name="Priors" type="xs:decimal" />
+      <xs:element xmlns:q1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="ResourceIds" nillable="true" type="q1:ArrayOfguid" />
+      <xs:element minOccurs="0" name="Start" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="StartUnit" type="ser:guid" />
+      <xs:element minOccurs="0" name="StatusId" type="ser:guid" />
+      <xs:element minOccurs="0" name="TaskNumber" type="xs:decimal" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="JobTemplateTaskModel" nillable="true" type="tns:JobTemplateTaskModel" />
+</xs:schema>

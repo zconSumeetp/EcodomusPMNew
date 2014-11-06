@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.datacontract.org/2004/07/EcoDomus.Locations" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/EcoDomus.Locations" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:4444/Client WCF/Locations.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="LocationsModel">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AttributeValue" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Attribute_template_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Color_code" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CriteriaName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CriteriaText" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Document_Type_Id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Document_Type_Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Entity_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Entity_name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FacilityNames" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Facility_ids" type="ser:guid" />
+      <xs:element minOccurs="0" name="Fk_omniclass_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Fk_uploaded_file_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="LocationName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Location_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Omniclass_type" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OrganizationID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ProjectId" type="ser:guid" />
+      <xs:element minOccurs="0" name="Search_text" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Space_attribute_value" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Space_ids" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="User_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Zone_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="category_name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="existsflag" type="xs:boolean" />
+      <xs:element minOccurs="0" name="facility_ID" type="ser:guid" />
+      <xs:element minOccurs="0" name="floor_id" type="ser:guid" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="LocationsModel" nillable="true" type="tns:LocationsModel" />
+</xs:schema>

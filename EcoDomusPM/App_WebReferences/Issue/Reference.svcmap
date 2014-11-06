@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="572c0b15-8366-4566-ad50-324025855444" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>false</ReferenceAllAssemblies>
+    <ReferencedAssemblies>
+      <ReferencedAssembly AssemblyName="System" />
+      <ReferencedAssembly AssemblyName="System.Core" />
+      <ReferencedAssembly AssemblyName="System.Data" />
+      <ReferencedAssembly AssemblyName="System.Xml" />
+      <ReferencedAssembly AssemblyName="System.Xml.Linq" />
+    </ReferencedAssemblies>
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:4444/Client%20WCF/Issue.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="Issue.xsd" MetadataType="Schema" ID="b328085d-a456-4071-8900-afaa9eb6c6c1" SourceId="1" SourceUrl="http://localhost:4444/Client WCF/Issue.svc?xsd=xsd2" />
+    <MetadataFile FileName="Issue.wsdl" MetadataType="Wsdl" ID="df5276f6-1c03-4f35-8fd9-53f9574f107a" SourceId="1" SourceUrl="http://localhost:4444/Client WCF/Issue.svc?wsdl" />
+    <MetadataFile FileName="Issue1.xsd" MetadataType="Schema" ID="0870ba6e-ed23-4168-a00d-61c296d9291c" SourceId="1" SourceUrl="http://localhost:4444/Client WCF/Issue.svc?xsd=xsd0" />
+    <MetadataFile FileName="Issue2.xsd" MetadataType="Schema" ID="5264f7e2-59f7-42e1-8fbf-c56c542db3fb" SourceId="1" SourceUrl="http://localhost:4444/Client WCF/Issue.svc?xsd=xsd3" />
+    <MetadataFile FileName="Issue3.xsd" MetadataType="Schema" ID="867bae72-0e08-4c63-819e-48167af58c34" SourceId="1" SourceUrl="http://localhost:4444/Client WCF/Issue.svc?xsd=xsd1" />
+    <MetadataFile FileName="Issue.disco" MetadataType="Disco" ID="414b2f40-2fb6-438e-91cc-b3484bb6354d" SourceId="1" SourceUrl="http://localhost:4444/Client WCF/Issue.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

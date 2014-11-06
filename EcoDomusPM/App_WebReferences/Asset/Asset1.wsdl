@@ -1,0 +1,819 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Asset" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://devservices.ecodomus.com/ClientPM/Asset.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://devservices.ecodomus.com/ClientPM/Asset.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://devservices.ecodomus.com/ClientPM/Asset.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/EcoDomus.Asset" />
+      <xsd:import schemaLocation="http://devservices.ecodomus.com/ClientPM/Asset.svc?xsd=xsd3" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IAsset_DoWork_InputMessage">
+    <wsdl:part name="parameters" element="tns:DoWork" />
+  </wsdl:message>
+  <wsdl:message name="IAsset_DoWork_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DoWorkResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAsset_Insert_Update_Asset_InputMessage">
+    <wsdl:part name="parameters" element="tns:Insert_Update_Asset" />
+  </wsdl:message>
+  <wsdl:message name="IAsset_Insert_Update_Asset_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Insert_Update_AssetResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAsset_Get_AssetProfile_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_AssetProfile" />
+  </wsdl:message>
+  <wsdl:message name="IAsset_Get_AssetProfile_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_AssetProfileResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAsset_GetAssetTypes_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAssetTypes" />
+  </wsdl:message>
+  <wsdl:message name="IAsset_GetAssetTypes_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAssetTypesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAsset_Getentityforfindasset_InputMessage">
+    <wsdl:part name="parameters" element="tns:Getentityforfindasset" />
+  </wsdl:message>
+  <wsdl:message name="IAsset_Getentityforfindasset_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetentityforfindassetResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAsset_Search_Assets_InputMessage">
+    <wsdl:part name="parameters" element="tns:Search_Assets" />
+  </wsdl:message>
+  <wsdl:message name="IAsset_Search_Assets_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Search_AssetsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAsset_GetAssetLocations_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAssetLocations" />
+  </wsdl:message>
+  <wsdl:message name="IAsset_GetAssetLocations_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAssetLocationsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAsset_delete_Asset_InputMessage">
+    <wsdl:part name="parameters" element="tns:delete_Asset" />
+  </wsdl:message>
+  <wsdl:message name="IAsset_delete_Asset_OutputMessage">
+    <wsdl:part name="parameters" element="tns:delete_AssetResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAsset_Search_Assets_for_entity_InputMessage">
+    <wsdl:part name="parameters" element="tns:Search_Assets_for_entity" />
+  </wsdl:message>
+  <wsdl:message name="IAsset_Search_Assets_for_entity_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Search_Assets_for_entityResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAsset_Search_Assets_for_space_InputMessage">
+    <wsdl:part name="parameters" element="tns:Search_Assets_for_space" />
+  </wsdl:message>
+  <wsdl:message name="IAsset_Search_Assets_for_space_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Search_Assets_for_spaceResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAsset_get_systems_for_facility_InputMessage">
+    <wsdl:part name="parameters" element="tns:get_systems_for_facility" />
+  </wsdl:message>
+  <wsdl:message name="IAsset_get_systems_for_facility_OutputMessage">
+    <wsdl:part name="parameters" element="tns:get_systems_for_facilityResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAsset_assign_systems_to_asset_InputMessage">
+    <wsdl:part name="parameters" element="tns:assign_systems_to_asset" />
+  </wsdl:message>
+  <wsdl:message name="IAsset_assign_systems_to_asset_OutputMessage">
+    <wsdl:part name="parameters" element="tns:assign_systems_to_assetResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAsset_get_systems_for_asset_InputMessage">
+    <wsdl:part name="parameters" element="tns:get_systems_for_asset" />
+  </wsdl:message>
+  <wsdl:message name="IAsset_get_systems_for_asset_OutputMessage">
+    <wsdl:part name="parameters" element="tns:get_systems_for_assetResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAsset_get_customised_left_menu_InputMessage">
+    <wsdl:part name="parameters" element="tns:get_customised_left_menu" />
+  </wsdl:message>
+  <wsdl:message name="IAsset_get_customised_left_menu_OutputMessage">
+    <wsdl:part name="parameters" element="tns:get_customised_left_menuResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAsset_Assign_Assets_for_entity_InputMessage">
+    <wsdl:part name="parameters" element="tns:Assign_Assets_for_entity" />
+  </wsdl:message>
+  <wsdl:message name="IAsset_Assign_Assets_for_entity_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Assign_Assets_for_entityResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAsset_UnAssign_Assets_for_entity_InputMessage">
+    <wsdl:part name="parameters" element="tns:UnAssign_Assets_for_entity" />
+  </wsdl:message>
+  <wsdl:message name="IAsset_UnAssign_Assets_for_entity_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UnAssign_Assets_for_entityResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAsset_UnAssign_system_for_asset_InputMessage">
+    <wsdl:part name="parameters" element="tns:UnAssign_system_for_asset" />
+  </wsdl:message>
+  <wsdl:message name="IAsset_UnAssign_system_for_asset_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UnAssign_system_for_assetResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAsset_Get_Entity_For_Impact_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Entity_For_Impact" />
+  </wsdl:message>
+  <wsdl:message name="IAsset_Get_Entity_For_Impact_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Entity_For_ImpactResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAsset_Get_impact_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_impact" />
+  </wsdl:message>
+  <wsdl:message name="IAsset_Get_impact_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_impactResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAsset_get_rows_for_impact_InputMessage">
+    <wsdl:part name="parameters" element="tns:get_rows_for_impact" />
+  </wsdl:message>
+  <wsdl:message name="IAsset_get_rows_for_impact_OutputMessage">
+    <wsdl:part name="parameters" element="tns:get_rows_for_impactResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAsset_Insert_impact_InputMessage">
+    <wsdl:part name="parameters" element="tns:Insert_impact" />
+  </wsdl:message>
+  <wsdl:message name="IAsset_Insert_impact_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Insert_impactResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAsset_Delete_impact_InputMessage">
+    <wsdl:part name="parameters" element="tns:Delete_impact" />
+  </wsdl:message>
+  <wsdl:message name="IAsset_Delete_impact_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Delete_impactResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAsset_get_impact_for_edit_InputMessage">
+    <wsdl:part name="parameters" element="tns:get_impact_for_edit" />
+  </wsdl:message>
+  <wsdl:message name="IAsset_get_impact_for_edit_OutputMessage">
+    <wsdl:part name="parameters" element="tns:get_impact_for_editResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAsset_UpdateComponentNames_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateComponentNames" />
+  </wsdl:message>
+  <wsdl:message name="IAsset_UpdateComponentNames_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateComponentNamesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAsset_GetSubAssembly_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSubAssembly" />
+  </wsdl:message>
+  <wsdl:message name="IAsset_GetSubAssembly_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSubAssemblyResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAsset_GetUnassignSubAssembly_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUnassignSubAssembly" />
+  </wsdl:message>
+  <wsdl:message name="IAsset_GetUnassignSubAssembly_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUnassignSubAssemblyResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAsset_AssignSubAssemblyToComponent_InputMessage">
+    <wsdl:part name="parameters" element="tns:AssignSubAssemblyToComponent" />
+  </wsdl:message>
+  <wsdl:message name="IAsset_AssignSubAssemblyToComponent_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AssignSubAssemblyToComponentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAsset_UnassignSubAssemblyFromComponent_InputMessage">
+    <wsdl:part name="parameters" element="tns:UnassignSubAssemblyFromComponent" />
+  </wsdl:message>
+  <wsdl:message name="IAsset_UnassignSubAssemblyFromComponent_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UnassignSubAssemblyFromComponentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAsset_GetDocumetsForComponent_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDocumetsForComponent" />
+  </wsdl:message>
+  <wsdl:message name="IAsset_GetDocumetsForComponent_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDocumetsForComponentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAsset_GetComponentsForBulkUpload_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetComponentsForBulkUpload" />
+  </wsdl:message>
+  <wsdl:message name="IAsset_GetComponentsForBulkUpload_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetComponentsForBulkUploadResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAsset_GetSingleAssetByName_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSingleAssetByName" />
+  </wsdl:message>
+  <wsdl:message name="IAsset_GetSingleAssetByName_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSingleAssetByNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAsset_Search_PMComponents_InputMessage">
+    <wsdl:part name="parameters" element="tns:Search_PMComponents" />
+  </wsdl:message>
+  <wsdl:message name="IAsset_Search_PMComponents_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Search_PMComponentsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAsset_GetDefault_facility_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDefault_facility" />
+  </wsdl:message>
+  <wsdl:message name="IAsset_GetDefault_facility_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDefault_facilityResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAsset_get_systems_for_facility_under_project_InputMessage">
+    <wsdl:part name="parameters" element="tns:get_systems_for_facility_under_project" />
+  </wsdl:message>
+  <wsdl:message name="IAsset_get_systems_for_facility_under_project_OutputMessage">
+    <wsdl:part name="parameters" element="tns:get_systems_for_facility_under_projectResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAsset_Search_Assets_for_entity_pm_InputMessage">
+    <wsdl:part name="parameters" element="tns:Search_Assets_for_entity_pm" />
+  </wsdl:message>
+  <wsdl:message name="IAsset_Search_Assets_for_entity_pm_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Search_Assets_for_entity_pmResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAsset_get_rows_for_impact_pm_InputMessage">
+    <wsdl:part name="parameters" element="tns:get_rows_for_impact_pm" />
+  </wsdl:message>
+  <wsdl:message name="IAsset_get_rows_for_impact_pm_OutputMessage">
+    <wsdl:part name="parameters" element="tns:get_rows_for_impact_pmResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAsset_create_clone_component_InputMessage">
+    <wsdl:part name="parameters" element="tns:create_clone_component" />
+  </wsdl:message>
+  <wsdl:message name="IAsset_create_clone_component_OutputMessage">
+    <wsdl:part name="parameters" element="tns:create_clone_componentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAsset_Get_Component_Count_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Component_Count" />
+  </wsdl:message>
+  <wsdl:message name="IAsset_Get_Component_Count_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Component_CountResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAsset_proc_get_components_print_barcode_InputMessage">
+    <wsdl:part name="parameters" element="tns:proc_get_components_print_barcode" />
+  </wsdl:message>
+  <wsdl:message name="IAsset_proc_get_components_print_barcode_OutputMessage">
+    <wsdl:part name="parameters" element="tns:proc_get_components_print_barcodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAsset_Proc_get_barcode_structure_InputMessage">
+    <wsdl:part name="parameters" element="tns:Proc_get_barcode_structure" />
+  </wsdl:message>
+  <wsdl:message name="IAsset_Proc_get_barcode_structure_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Proc_get_barcode_structureResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAsset_proc_get_barcode_info_InputMessage">
+    <wsdl:part name="parameters" element="tns:proc_get_barcode_info" />
+  </wsdl:message>
+  <wsdl:message name="IAsset_proc_get_barcode_info_OutputMessage">
+    <wsdl:part name="parameters" element="tns:proc_get_barcode_infoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAsset_proc_get_components_energyplus_InputMessage">
+    <wsdl:part name="parameters" element="tns:proc_get_components_energyplus" />
+  </wsdl:message>
+  <wsdl:message name="IAsset_proc_get_components_energyplus_OutputMessage">
+    <wsdl:part name="parameters" element="tns:proc_get_components_energyplusResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IAsset">
+    <wsdl:operation name="DoWork">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAsset/DoWork" message="tns:IAsset_DoWork_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAsset/DoWorkResponse" message="tns:IAsset_DoWork_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Insert_Update_Asset">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAsset/Insert_Update_Asset" message="tns:IAsset_Insert_Update_Asset_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAsset/Insert_Update_AssetResponse" message="tns:IAsset_Insert_Update_Asset_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_AssetProfile">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAsset/Get_AssetProfile" message="tns:IAsset_Get_AssetProfile_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAsset/Get_AssetProfileResponse" message="tns:IAsset_Get_AssetProfile_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAssetTypes">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAsset/GetAssetTypes" message="tns:IAsset_GetAssetTypes_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAsset/GetAssetTypesResponse" message="tns:IAsset_GetAssetTypes_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Getentityforfindasset">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAsset/Getentityforfindasset" message="tns:IAsset_Getentityforfindasset_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAsset/GetentityforfindassetResponse" message="tns:IAsset_Getentityforfindasset_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Search_Assets">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAsset/Search_Assets" message="tns:IAsset_Search_Assets_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAsset/Search_AssetsResponse" message="tns:IAsset_Search_Assets_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAssetLocations">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAsset/GetAssetLocations" message="tns:IAsset_GetAssetLocations_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAsset/GetAssetLocationsResponse" message="tns:IAsset_GetAssetLocations_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="delete_Asset">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAsset/delete_Asset" message="tns:IAsset_delete_Asset_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAsset/delete_AssetResponse" message="tns:IAsset_delete_Asset_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Search_Assets_for_entity">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAsset/Search_Assets_for_entity" message="tns:IAsset_Search_Assets_for_entity_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAsset/Search_Assets_for_entityResponse" message="tns:IAsset_Search_Assets_for_entity_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Search_Assets_for_space">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAsset/Search_Assets_for_space" message="tns:IAsset_Search_Assets_for_space_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAsset/Search_Assets_for_spaceResponse" message="tns:IAsset_Search_Assets_for_space_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="get_systems_for_facility">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAsset/get_systems_for_facility" message="tns:IAsset_get_systems_for_facility_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAsset/get_systems_for_facilityResponse" message="tns:IAsset_get_systems_for_facility_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="assign_systems_to_asset">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAsset/assign_systems_to_asset" message="tns:IAsset_assign_systems_to_asset_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAsset/assign_systems_to_assetResponse" message="tns:IAsset_assign_systems_to_asset_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="get_systems_for_asset">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAsset/get_systems_for_asset" message="tns:IAsset_get_systems_for_asset_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAsset/get_systems_for_assetResponse" message="tns:IAsset_get_systems_for_asset_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="get_customised_left_menu">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAsset/get_customised_left_menu" message="tns:IAsset_get_customised_left_menu_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAsset/get_customised_left_menuResponse" message="tns:IAsset_get_customised_left_menu_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Assign_Assets_for_entity">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAsset/Assign_Assets_for_entity" message="tns:IAsset_Assign_Assets_for_entity_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAsset/Assign_Assets_for_entityResponse" message="tns:IAsset_Assign_Assets_for_entity_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UnAssign_Assets_for_entity">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAsset/UnAssign_Assets_for_entity" message="tns:IAsset_UnAssign_Assets_for_entity_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAsset/UnAssign_Assets_for_entityResponse" message="tns:IAsset_UnAssign_Assets_for_entity_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UnAssign_system_for_asset">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAsset/UnAssign_system_for_asset" message="tns:IAsset_UnAssign_system_for_asset_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAsset/UnAssign_system_for_assetResponse" message="tns:IAsset_UnAssign_system_for_asset_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_Entity_For_Impact">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAsset/Get_Entity_For_Impact" message="tns:IAsset_Get_Entity_For_Impact_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAsset/Get_Entity_For_ImpactResponse" message="tns:IAsset_Get_Entity_For_Impact_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_impact">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAsset/Get_impact" message="tns:IAsset_Get_impact_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAsset/Get_impactResponse" message="tns:IAsset_Get_impact_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="get_rows_for_impact">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAsset/get_rows_for_impact" message="tns:IAsset_get_rows_for_impact_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAsset/get_rows_for_impactResponse" message="tns:IAsset_get_rows_for_impact_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Insert_impact">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAsset/Insert_impact" message="tns:IAsset_Insert_impact_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAsset/Insert_impactResponse" message="tns:IAsset_Insert_impact_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Delete_impact">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAsset/Delete_impact" message="tns:IAsset_Delete_impact_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAsset/Delete_impactResponse" message="tns:IAsset_Delete_impact_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="get_impact_for_edit">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAsset/get_impact_for_edit" message="tns:IAsset_get_impact_for_edit_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAsset/get_impact_for_editResponse" message="tns:IAsset_get_impact_for_edit_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateComponentNames">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAsset/UpdateComponentNames" message="tns:IAsset_UpdateComponentNames_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAsset/UpdateComponentNamesResponse" message="tns:IAsset_UpdateComponentNames_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSubAssembly">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAsset/GetSubAssembly" message="tns:IAsset_GetSubAssembly_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAsset/GetSubAssemblyResponse" message="tns:IAsset_GetSubAssembly_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUnassignSubAssembly">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAsset/GetUnassignSubAssembly" message="tns:IAsset_GetUnassignSubAssembly_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAsset/GetUnassignSubAssemblyResponse" message="tns:IAsset_GetUnassignSubAssembly_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AssignSubAssemblyToComponent">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAsset/AssignSubAssemblyToComponent" message="tns:IAsset_AssignSubAssemblyToComponent_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAsset/AssignSubAssemblyToComponentResponse" message="tns:IAsset_AssignSubAssemblyToComponent_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UnassignSubAssemblyFromComponent">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAsset/UnassignSubAssemblyFromComponent" message="tns:IAsset_UnassignSubAssemblyFromComponent_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAsset/UnassignSubAssemblyFromComponentResponse" message="tns:IAsset_UnassignSubAssemblyFromComponent_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDocumetsForComponent">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAsset/GetDocumetsForComponent" message="tns:IAsset_GetDocumetsForComponent_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAsset/GetDocumetsForComponentResponse" message="tns:IAsset_GetDocumetsForComponent_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetComponentsForBulkUpload">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAsset/GetComponentsForBulkUpload" message="tns:IAsset_GetComponentsForBulkUpload_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAsset/GetComponentsForBulkUploadResponse" message="tns:IAsset_GetComponentsForBulkUpload_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSingleAssetByName">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAsset/GetSingleAssetByName" message="tns:IAsset_GetSingleAssetByName_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAsset/GetSingleAssetByNameResponse" message="tns:IAsset_GetSingleAssetByName_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Search_PMComponents">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAsset/Search_PMComponents" message="tns:IAsset_Search_PMComponents_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAsset/Search_PMComponentsResponse" message="tns:IAsset_Search_PMComponents_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDefault_facility">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAsset/GetDefault_facility" message="tns:IAsset_GetDefault_facility_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAsset/GetDefault_facilityResponse" message="tns:IAsset_GetDefault_facility_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="get_systems_for_facility_under_project">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAsset/get_systems_for_facility_under_project" message="tns:IAsset_get_systems_for_facility_under_project_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAsset/get_systems_for_facility_under_projectResponse" message="tns:IAsset_get_systems_for_facility_under_project_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Search_Assets_for_entity_pm">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAsset/Search_Assets_for_entity_pm" message="tns:IAsset_Search_Assets_for_entity_pm_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAsset/Search_Assets_for_entity_pmResponse" message="tns:IAsset_Search_Assets_for_entity_pm_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="get_rows_for_impact_pm">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAsset/get_rows_for_impact_pm" message="tns:IAsset_get_rows_for_impact_pm_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAsset/get_rows_for_impact_pmResponse" message="tns:IAsset_get_rows_for_impact_pm_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="create_clone_component">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAsset/create_clone_component" message="tns:IAsset_create_clone_component_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAsset/create_clone_componentResponse" message="tns:IAsset_create_clone_component_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_Component_Count">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAsset/Get_Component_Count" message="tns:IAsset_Get_Component_Count_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAsset/Get_Component_CountResponse" message="tns:IAsset_Get_Component_Count_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="proc_get_components_print_barcode">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAsset/proc_get_components_print_barcode" message="tns:IAsset_proc_get_components_print_barcode_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAsset/proc_get_components_print_barcodeResponse" message="tns:IAsset_proc_get_components_print_barcode_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Proc_get_barcode_structure">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAsset/Proc_get_barcode_structure" message="tns:IAsset_Proc_get_barcode_structure_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAsset/Proc_get_barcode_structureResponse" message="tns:IAsset_Proc_get_barcode_structure_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="proc_get_barcode_info">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAsset/proc_get_barcode_info" message="tns:IAsset_proc_get_barcode_info_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAsset/proc_get_barcode_infoResponse" message="tns:IAsset_proc_get_barcode_info_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="proc_get_components_energyplus">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAsset/proc_get_components_energyplus" message="tns:IAsset_proc_get_components_energyplus_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAsset/proc_get_components_energyplusResponse" message="tns:IAsset_proc_get_components_energyplus_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IAsset" type="tns:IAsset">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="DoWork">
+      <soap:operation soapAction="http://tempuri.org/IAsset/DoWork" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Insert_Update_Asset">
+      <soap:operation soapAction="http://tempuri.org/IAsset/Insert_Update_Asset" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_AssetProfile">
+      <soap:operation soapAction="http://tempuri.org/IAsset/Get_AssetProfile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAssetTypes">
+      <soap:operation soapAction="http://tempuri.org/IAsset/GetAssetTypes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Getentityforfindasset">
+      <soap:operation soapAction="http://tempuri.org/IAsset/Getentityforfindasset" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Search_Assets">
+      <soap:operation soapAction="http://tempuri.org/IAsset/Search_Assets" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAssetLocations">
+      <soap:operation soapAction="http://tempuri.org/IAsset/GetAssetLocations" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="delete_Asset">
+      <soap:operation soapAction="http://tempuri.org/IAsset/delete_Asset" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Search_Assets_for_entity">
+      <soap:operation soapAction="http://tempuri.org/IAsset/Search_Assets_for_entity" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Search_Assets_for_space">
+      <soap:operation soapAction="http://tempuri.org/IAsset/Search_Assets_for_space" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="get_systems_for_facility">
+      <soap:operation soapAction="http://tempuri.org/IAsset/get_systems_for_facility" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="assign_systems_to_asset">
+      <soap:operation soapAction="http://tempuri.org/IAsset/assign_systems_to_asset" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="get_systems_for_asset">
+      <soap:operation soapAction="http://tempuri.org/IAsset/get_systems_for_asset" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="get_customised_left_menu">
+      <soap:operation soapAction="http://tempuri.org/IAsset/get_customised_left_menu" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Assign_Assets_for_entity">
+      <soap:operation soapAction="http://tempuri.org/IAsset/Assign_Assets_for_entity" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UnAssign_Assets_for_entity">
+      <soap:operation soapAction="http://tempuri.org/IAsset/UnAssign_Assets_for_entity" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UnAssign_system_for_asset">
+      <soap:operation soapAction="http://tempuri.org/IAsset/UnAssign_system_for_asset" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Entity_For_Impact">
+      <soap:operation soapAction="http://tempuri.org/IAsset/Get_Entity_For_Impact" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_impact">
+      <soap:operation soapAction="http://tempuri.org/IAsset/Get_impact" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="get_rows_for_impact">
+      <soap:operation soapAction="http://tempuri.org/IAsset/get_rows_for_impact" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Insert_impact">
+      <soap:operation soapAction="http://tempuri.org/IAsset/Insert_impact" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Delete_impact">
+      <soap:operation soapAction="http://tempuri.org/IAsset/Delete_impact" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="get_impact_for_edit">
+      <soap:operation soapAction="http://tempuri.org/IAsset/get_impact_for_edit" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateComponentNames">
+      <soap:operation soapAction="http://tempuri.org/IAsset/UpdateComponentNames" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSubAssembly">
+      <soap:operation soapAction="http://tempuri.org/IAsset/GetSubAssembly" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUnassignSubAssembly">
+      <soap:operation soapAction="http://tempuri.org/IAsset/GetUnassignSubAssembly" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AssignSubAssemblyToComponent">
+      <soap:operation soapAction="http://tempuri.org/IAsset/AssignSubAssemblyToComponent" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UnassignSubAssemblyFromComponent">
+      <soap:operation soapAction="http://tempuri.org/IAsset/UnassignSubAssemblyFromComponent" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDocumetsForComponent">
+      <soap:operation soapAction="http://tempuri.org/IAsset/GetDocumetsForComponent" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetComponentsForBulkUpload">
+      <soap:operation soapAction="http://tempuri.org/IAsset/GetComponentsForBulkUpload" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSingleAssetByName">
+      <soap:operation soapAction="http://tempuri.org/IAsset/GetSingleAssetByName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Search_PMComponents">
+      <soap:operation soapAction="http://tempuri.org/IAsset/Search_PMComponents" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDefault_facility">
+      <soap:operation soapAction="http://tempuri.org/IAsset/GetDefault_facility" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="get_systems_for_facility_under_project">
+      <soap:operation soapAction="http://tempuri.org/IAsset/get_systems_for_facility_under_project" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Search_Assets_for_entity_pm">
+      <soap:operation soapAction="http://tempuri.org/IAsset/Search_Assets_for_entity_pm" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="get_rows_for_impact_pm">
+      <soap:operation soapAction="http://tempuri.org/IAsset/get_rows_for_impact_pm" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="create_clone_component">
+      <soap:operation soapAction="http://tempuri.org/IAsset/create_clone_component" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Component_Count">
+      <soap:operation soapAction="http://tempuri.org/IAsset/Get_Component_Count" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="proc_get_components_print_barcode">
+      <soap:operation soapAction="http://tempuri.org/IAsset/proc_get_components_print_barcode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Proc_get_barcode_structure">
+      <soap:operation soapAction="http://tempuri.org/IAsset/Proc_get_barcode_structure" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="proc_get_barcode_info">
+      <soap:operation soapAction="http://tempuri.org/IAsset/proc_get_barcode_info" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="proc_get_components_energyplus">
+      <soap:operation soapAction="http://tempuri.org/IAsset/proc_get_components_energyplus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Asset">
+    <wsdl:port name="BasicHttpBinding_IAsset" binding="tns:BasicHttpBinding_IAsset">
+      <soap:address location="http://devservices.ecodomus.com/ClientPM/Asset.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

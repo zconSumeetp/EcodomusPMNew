@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="915a4024-fa89-4bcf-ab69-9d12b0694aeb" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>false</ReferenceAllAssemblies>
+    <ReferencedAssemblies>
+      <ReferencedAssembly AssemblyName="System" />
+      <ReferencedAssembly AssemblyName="System.Core" />
+      <ReferencedAssembly AssemblyName="System.Data" />
+      <ReferencedAssembly AssemblyName="System.Xml" />
+      <ReferencedAssembly AssemblyName="System.Xml.Linq" />
+    </ReferencedAssemblies>
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:4444/Client%20WCF/Project.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="Project1.xsd" MetadataType="Schema" ID="6818dc51-2a02-4a4d-98a4-38e1fd73d49d" SourceId="1" SourceUrl="http://localhost:4444/Client WCF/Project.svc?xsd=xsd3" />
+    <MetadataFile FileName="Project.xsd" MetadataType="Schema" ID="3c1f3823-27c6-466b-acd0-2b5a4a6cf942" SourceId="1" SourceUrl="http://localhost:4444/Client WCF/Project.svc?xsd=xsd0" />
+    <MetadataFile FileName="Project12.xsd" MetadataType="Schema" ID="1610db49-9686-4af9-83d2-4e1108af2e6a" SourceId="1" SourceUrl="http://localhost:4444/Client WCF/Project.svc?xsd=xsd1" />
+    <MetadataFile FileName="Project.disco" MetadataType="Disco" ID="66521cb1-079d-4c76-888a-dc9f556b8149" SourceId="1" SourceUrl="http://localhost:4444/Client WCF/Project.svc?disco" />
+    <MetadataFile FileName="Project.wsdl" MetadataType="Wsdl" ID="745e0381-5c7e-473b-b1ca-7a9ff80f1d0d" SourceId="1" SourceUrl="http://localhost:4444/Client WCF/Project.svc?wsdl" />
+    <MetadataFile FileName="Project13.xsd" MetadataType="Schema" ID="fdc54e60-8cbf-4ff3-8781-6392e8aaa643" SourceId="1" SourceUrl="http://localhost:4444/Client WCF/Project.svc?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

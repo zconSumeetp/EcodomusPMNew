@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.datacontract.org/2004/07/Client.App.Dtos" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Client.App.Dtos" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://services.ecodomus.com/ClientPM/Attributes.svc?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/Client.App" />
+  <xs:import schemaLocation="http://services.ecodomus.com/ClientPM/Attributes.svc?xsd=xsd6" namespace="http://schemas.datacontract.org/2004/07/EcoDomus.UnitUtils" />
+  <xs:import schemaLocation="http://services.ecodomus.com/ClientPM/Attributes.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="ArrayOfAttributeTypeDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="AttributeTypeDto" nillable="true" type="tns:AttributeTypeDto" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfAttributeTypeDto" nillable="true" type="tns:ArrayOfAttributeTypeDto" />
+  <xs:complexType name="AttributeTypeDto">
+    <xs:sequence>
+      <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/Client.App" minOccurs="0" name="AttributeType" type="q1:AttributeType" />
+      <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/Client.App" minOccurs="0" name="DataType" type="q2:DataType" />
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/EcoDomus.UnitUtils" minOccurs="0" name="UnitType" nillable="true" type="q3:UnitType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="AttributeTypeDto" nillable="true" type="tns:AttributeTypeDto" />
+  <xs:simpleType name="EntityType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Facility" />
+      <xs:enumeration value="Facilities" />
+      <xs:enumeration value="Asset" />
+      <xs:enumeration value="Zone" />
+      <xs:enumeration value="Space" />
+      <xs:enumeration value="Floor" />
+      <xs:enumeration value="System" />
+      <xs:enumeration value="Type" />
+      <xs:enumeration value="HierarchyTreeNode" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="EntityType" nillable="true" type="tns:EntityType" />
+  <xs:complexType name="PagingOptions">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+      <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PagingOptions" nillable="true" type="tns:PagingOptions" />
+  <xs:complexType name="ArrayOfDisplayUnitTypeDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DisplayUnitTypeDto" nillable="true" type="tns:DisplayUnitTypeDto" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDisplayUnitTypeDto" nillable="true" type="tns:ArrayOfDisplayUnitTypeDto" />
+  <xs:complexType name="DisplayUnitTypeDto">
+    <xs:sequence>
+      <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/Client.App" minOccurs="0" name="DataType" nillable="true" type="q4:DataType" />
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/EcoDomus.UnitUtils" minOccurs="0" name="DisplayUnitType" type="q5:DisplayUnitType" />
+      <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/EcoDomus.UnitUtils" minOccurs="0" name="UnitType" type="q6:UnitType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DisplayUnitTypeDto" nillable="true" type="tns:DisplayUnitTypeDto" />
+  <xs:complexType name="EntityAttributeDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AttributeId" type="ser:guid" />
+      <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/Client.App" minOccurs="0" name="AttributeType" type="q7:AttributeType" />
+      <xs:element minOccurs="0" name="CreatedByUserId" nillable="true" type="ser:guid" />
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FkEntityId" type="ser:guid" />
+      <xs:element minOccurs="0" name="FkGroupNameId" nillable="true" type="ser:guid" />
+      <xs:element minOccurs="0" name="GroupName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ProfileNameCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ReadOnly" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="EntityAttributeDto" nillable="true" type="tns:EntityAttributeDto" />
+  <xs:complexType name="EntityAttributeValueDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AttributeId" type="ser:guid" />
+      <xs:element minOccurs="0" name="AttributeValueId" type="ser:guid" />
+      <xs:element minOccurs="0" name="DateTimeValue" nillable="true" type="xs:dateTime" />
+      <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/EcoDomus.UnitUtils" minOccurs="0" name="DisplayUnitType" nillable="true" type="q8:DisplayUnitType" />
+      <xs:element minOccurs="0" name="DoubleValue" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="FkStageId" type="ser:guid" />
+      <xs:element minOccurs="0" name="IntegerValue" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="StringValue" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="EntityAttributeValueDto" nillable="true" type="tns:EntityAttributeValueDto" />
+</xs:schema>

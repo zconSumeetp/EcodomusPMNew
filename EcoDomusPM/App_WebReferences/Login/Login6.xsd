@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.datacontract.org/2004/07/Central.App_Code.Model" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Central.App_Code.Model" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://devservices.ecodomus.com/CentralPM/Login.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="PageRequestResultOfLoginActivityModel">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="PageRequestResultOf{0}" Namespace="http://schemas.datacontract.org/2004/07/Central.App_Code.Model" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="LoginActivityModel" Namespace="http://schemas.datacontract.org/2004/07/Central.App_Code.Model" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Items" nillable="true" type="tns:ArrayOfLoginActivityModel" />
+      <xs:element minOccurs="0" name="TotalCount" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PageRequestResultOfLoginActivityModel" nillable="true" type="tns:PageRequestResultOfLoginActivityModel" />
+  <xs:complexType name="ArrayOfLoginActivityModel">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="LoginActivityModel" nillable="true" type="tns:LoginActivityModel" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfLoginActivityModel" nillable="true" type="tns:ArrayOfLoginActivityModel" />
+  <xs:complexType name="LoginActivityModel">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="OrganizationId" type="ser:guid" />
+      <xs:element minOccurs="0" name="OrganizationName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SessionInTime" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="SessionOutTime" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="UserFirstName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UserId" type="ser:guid" />
+      <xs:element minOccurs="0" name="UserLastName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UserName" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="LoginActivityModel" nillable="true" type="tns:LoginActivityModel" />
+</xs:schema>

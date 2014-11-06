@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Project" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:4444/Client WCF/Project.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:4444/Client WCF/Project.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:4444/Client WCF/Project.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/" />
+      <xsd:import schemaLocation="http://localhost:4444/Client WCF/Project.svc?xsd=xsd3" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IProject_DoWork_InputMessage">
+    <wsdl:part name="parameters" element="tns:DoWork" />
+  </wsdl:message>
+  <wsdl:message name="IProject_DoWork_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DoWorkResponse" />
+  </wsdl:message>
+  <wsdl:message name="IProject_proc_get_client_all_projects_InputMessage">
+    <wsdl:part name="parameters" element="tns:proc_get_client_all_projects" />
+  </wsdl:message>
+  <wsdl:message name="IProject_proc_get_client_all_projects_OutputMessage">
+    <wsdl:part name="parameters" element="tns:proc_get_client_all_projectsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IProject_getphase_InputMessage">
+    <wsdl:part name="parameters" element="tns:getphase" />
+  </wsdl:message>
+  <wsdl:message name="IProject_getphase_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getphaseResponse" />
+  </wsdl:message>
+  <wsdl:message name="IProject_GetUserProjects_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserProjects" />
+  </wsdl:message>
+  <wsdl:message name="IProject_GetUserProjects_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserProjectsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IProject_GetUserProjectsCount_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserProjectsCount" />
+  </wsdl:message>
+  <wsdl:message name="IProject_GetUserProjectsCount_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserProjectsCountResponse" />
+  </wsdl:message>
+  <wsdl:message name="IProject_GetOrganizationsForProjects_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetOrganizationsForProjects" />
+  </wsdl:message>
+  <wsdl:message name="IProject_GetOrganizationsForProjects_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetOrganizationsForProjectsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IProject_InsertUpdateProject_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertUpdateProject" />
+  </wsdl:message>
+  <wsdl:message name="IProject_InsertUpdateProject_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertUpdateProjectResponse" />
+  </wsdl:message>
+  <wsdl:message name="IProject_GetProjectDataById_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetProjectDataById" />
+  </wsdl:message>
+  <wsdl:message name="IProject_GetProjectDataById_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetProjectDataByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IProject_DeleteProject_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteProject" />
+  </wsdl:message>
+  <wsdl:message name="IProject_DeleteProject_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteProjectResponse" />
+  </wsdl:message>
+  <wsdl:message name="IProject_CloneProject_InputMessage">
+    <wsdl:part name="parameters" element="tns:CloneProject" />
+  </wsdl:message>
+  <wsdl:message name="IProject_CloneProject_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CloneProjectResponse" />
+  </wsdl:message>
+  <wsdl:message name="IProject_Save_Project_Logo_Path_InputMessage">
+    <wsdl:part name="parameters" element="tns:Save_Project_Logo_Path" />
+  </wsdl:message>
+  <wsdl:message name="IProject_Save_Project_Logo_Path_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Save_Project_Logo_PathResponse" />
+  </wsdl:message>
+  <wsdl:message name="IProject_GetProjectsOrganization_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetProjectsOrganization" />
+  </wsdl:message>
+  <wsdl:message name="IProject_GetProjectsOrganization_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetProjectsOrganizationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IProject_GetUserId_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserId" />
+  </wsdl:message>
+  <wsdl:message name="IProject_GetUserId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IProject_getStandards_InputMessage">
+    <wsdl:part name="parameters" element="tns:getStandards" />
+  </wsdl:message>
+  <wsdl:message name="IProject_getStandards_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getStandardsResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IProject">
+    <wsdl:operation name="DoWork">
+      <wsdl:input wsaw:Action="http://tempuri.org/IProject/DoWork" message="tns:IProject_DoWork_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IProject/DoWorkResponse" message="tns:IProject_DoWork_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="proc_get_client_all_projects">
+      <wsdl:input wsaw:Action="http://tempuri.org/IProject/proc_get_client_all_projects" message="tns:IProject_proc_get_client_all_projects_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IProject/proc_get_client_all_projectsResponse" message="tns:IProject_proc_get_client_all_projects_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getphase">
+      <wsdl:input wsaw:Action="http://tempuri.org/IProject/getphase" message="tns:IProject_getphase_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IProject/getphaseResponse" message="tns:IProject_getphase_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserProjects">
+      <wsdl:input wsaw:Action="http://tempuri.org/IProject/GetUserProjects" message="tns:IProject_GetUserProjects_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IProject/GetUserProjectsResponse" message="tns:IProject_GetUserProjects_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserProjectsCount">
+      <wsdl:input wsaw:Action="http://tempuri.org/IProject/GetUserProjectsCount" message="tns:IProject_GetUserProjectsCount_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IProject/GetUserProjectsCountResponse" message="tns:IProject_GetUserProjectsCount_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOrganizationsForProjects">
+      <wsdl:input wsaw:Action="http://tempuri.org/IProject/GetOrganizationsForProjects" message="tns:IProject_GetOrganizationsForProjects_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IProject/GetOrganizationsForProjectsResponse" message="tns:IProject_GetOrganizationsForProjects_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertUpdateProject">
+      <wsdl:input wsaw:Action="http://tempuri.org/IProject/InsertUpdateProject" message="tns:IProject_InsertUpdateProject_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IProject/InsertUpdateProjectResponse" message="tns:IProject_InsertUpdateProject_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProjectDataById">
+      <wsdl:input wsaw:Action="http://tempuri.org/IProject/GetProjectDataById" message="tns:IProject_GetProjectDataById_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IProject/GetProjectDataByIdResponse" message="tns:IProject_GetProjectDataById_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteProject">
+      <wsdl:input wsaw:Action="http://tempuri.org/IProject/DeleteProject" message="tns:IProject_DeleteProject_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IProject/DeleteProjectResponse" message="tns:IProject_DeleteProject_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CloneProject">
+      <wsdl:input wsaw:Action="http://tempuri.org/IProject/CloneProject" message="tns:IProject_CloneProject_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IProject/CloneProjectResponse" message="tns:IProject_CloneProject_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Save_Project_Logo_Path">
+      <wsdl:input wsaw:Action="http://tempuri.org/IProject/Save_Project_Logo_Path" message="tns:IProject_Save_Project_Logo_Path_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IProject/Save_Project_Logo_PathResponse" message="tns:IProject_Save_Project_Logo_Path_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProjectsOrganization">
+      <wsdl:input wsaw:Action="http://tempuri.org/IProject/GetProjectsOrganization" message="tns:IProject_GetProjectsOrganization_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IProject/GetProjectsOrganizationResponse" message="tns:IProject_GetProjectsOrganization_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserId">
+      <wsdl:input wsaw:Action="http://tempuri.org/IProject/GetUserId" message="tns:IProject_GetUserId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IProject/GetUserIdResponse" message="tns:IProject_GetUserId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getStandards">
+      <wsdl:input wsaw:Action="http://tempuri.org/IProject/getStandards" message="tns:IProject_getStandards_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IProject/getStandardsResponse" message="tns:IProject_getStandards_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IProject" type="tns:IProject">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="DoWork">
+      <soap:operation soapAction="http://tempuri.org/IProject/DoWork" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="proc_get_client_all_projects">
+      <soap:operation soapAction="http://tempuri.org/IProject/proc_get_client_all_projects" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getphase">
+      <soap:operation soapAction="http://tempuri.org/IProject/getphase" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserProjects">
+      <soap:operation soapAction="http://tempuri.org/IProject/GetUserProjects" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserProjectsCount">
+      <soap:operation soapAction="http://tempuri.org/IProject/GetUserProjectsCount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOrganizationsForProjects">
+      <soap:operation soapAction="http://tempuri.org/IProject/GetOrganizationsForProjects" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertUpdateProject">
+      <soap:operation soapAction="http://tempuri.org/IProject/InsertUpdateProject" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProjectDataById">
+      <soap:operation soapAction="http://tempuri.org/IProject/GetProjectDataById" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteProject">
+      <soap:operation soapAction="http://tempuri.org/IProject/DeleteProject" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CloneProject">
+      <soap:operation soapAction="http://tempuri.org/IProject/CloneProject" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Save_Project_Logo_Path">
+      <soap:operation soapAction="http://tempuri.org/IProject/Save_Project_Logo_Path" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProjectsOrganization">
+      <soap:operation soapAction="http://tempuri.org/IProject/GetProjectsOrganization" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserId">
+      <soap:operation soapAction="http://tempuri.org/IProject/GetUserId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getStandards">
+      <soap:operation soapAction="http://tempuri.org/IProject/getStandards" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Project">
+    <wsdl:port name="BasicHttpBinding_IProject" binding="tns:BasicHttpBinding_IProject">
+      <soap:address location="http://localhost:4444/Client%20WCF/Project.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

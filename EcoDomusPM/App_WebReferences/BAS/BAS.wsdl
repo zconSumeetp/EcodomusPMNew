@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="BAS" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:4444/Client WCF/BAS.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:4444/Client WCF/BAS.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:4444/Client WCF/BAS.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/" />
+      <xsd:import schemaLocation="http://localhost:4444/Client WCF/BAS.svc?xsd=xsd3" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IBAS_DoWork_InputMessage">
+    <wsdl:part name="parameters" element="tns:DoWork" />
+  </wsdl:message>
+  <wsdl:message name="IBAS_DoWork_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DoWorkResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBAS_InsertUpdateBASinformation_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertUpdateBASinformation" />
+  </wsdl:message>
+  <wsdl:message name="IBAS_InsertUpdateBASinformation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertUpdateBASinformationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBAS_getprotocollist_InputMessage">
+    <wsdl:part name="parameters" element="tns:getprotocollist" />
+  </wsdl:message>
+  <wsdl:message name="IBAS_getprotocollist_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getprotocollistResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBAS_getBASservers_InputMessage">
+    <wsdl:part name="parameters" element="tns:getBASservers" />
+  </wsdl:message>
+  <wsdl:message name="IBAS_getBASservers_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getBASserversResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBAS_DeleteBASservers_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteBASservers" />
+  </wsdl:message>
+  <wsdl:message name="IBAS_DeleteBASservers_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteBASserversResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBAS_GetRecordType_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetRecordType" />
+  </wsdl:message>
+  <wsdl:message name="IBAS_GetRecordType_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetRecordTypeResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IBAS">
+    <wsdl:operation name="DoWork">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBAS/DoWork" message="tns:IBAS_DoWork_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBAS/DoWorkResponse" message="tns:IBAS_DoWork_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertUpdateBASinformation">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBAS/InsertUpdateBASinformation" message="tns:IBAS_InsertUpdateBASinformation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBAS/InsertUpdateBASinformationResponse" message="tns:IBAS_InsertUpdateBASinformation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getprotocollist">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBAS/getprotocollist" message="tns:IBAS_getprotocollist_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBAS/getprotocollistResponse" message="tns:IBAS_getprotocollist_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getBASservers">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBAS/getBASservers" message="tns:IBAS_getBASservers_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBAS/getBASserversResponse" message="tns:IBAS_getBASservers_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteBASservers">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBAS/DeleteBASservers" message="tns:IBAS_DeleteBASservers_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBAS/DeleteBASserversResponse" message="tns:IBAS_DeleteBASservers_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRecordType">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBAS/GetRecordType" message="tns:IBAS_GetRecordType_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBAS/GetRecordTypeResponse" message="tns:IBAS_GetRecordType_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IBAS" type="tns:IBAS">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="DoWork">
+      <soap:operation soapAction="http://tempuri.org/IBAS/DoWork" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertUpdateBASinformation">
+      <soap:operation soapAction="http://tempuri.org/IBAS/InsertUpdateBASinformation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getprotocollist">
+      <soap:operation soapAction="http://tempuri.org/IBAS/getprotocollist" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getBASservers">
+      <soap:operation soapAction="http://tempuri.org/IBAS/getBASservers" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteBASservers">
+      <soap:operation soapAction="http://tempuri.org/IBAS/DeleteBASservers" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRecordType">
+      <soap:operation soapAction="http://tempuri.org/IBAS/GetRecordType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="BAS">
+    <wsdl:port name="BasicHttpBinding_IBAS" binding="tns:BasicHttpBinding_IBAS">
+      <soap:address location="http://localhost:4444/Client%20WCF/BAS.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

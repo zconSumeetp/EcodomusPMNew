@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<License>
+  <Data>
+    <LicensedTo>Oswal Group</LicensedTo>
+    <LicenseType>Developer Enterprise Subscription</LicenseType>
+    <LicenseNote>Limited to 1 developer.</LicenseNote>
+    <OrderID>110123231213</OrderID>
+    <OEM>This is not a non-redistributable license</OEM>
+    <Products>
+      <Product>Aspose.Words for .NET</Product>
+    </Products>
+    <EditionType>Enterprise</EditionType>
+    <SerialNumber>4daee325-aea6-4c90-a8bf-6faa36f0cc20</SerialNumber>
+    <SubscriptionExpiry>20120123</SubscriptionExpiry>
+    <LicenseExpiry>20110222</LicenseExpiry>
+    <ExpiryNote>This is a temporary license for non-commercial use only and it will expire on 2011-02-22.</ExpiryNote>
+    <LicenseVersion>2.2</LicenseVersion>
+  </Data>
+  <Signature>FXfbalaGLOpzkZOOlWk6pRP0gHqGQlKJHeqqt9z9Fot3uRupMs/AYsdpxXRFSDJ8FDpTswTJo+6tIPxU1YrdxQ/W4rPJWC1WkefqjhWm+csukmWB8vgnJv+zQvFZudNXiyvXUUBIzKt1yWZXF8PN1o6ogsyp6wnhkQfoikFiarY=</Signature>
+</License>

@@ -1,0 +1,515 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Locations" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:4444/Client WCF/Locations.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:4444/Client WCF/Locations.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:4444/Client WCF/Locations.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/EcoDomus.Locations" />
+      <xsd:import schemaLocation="http://localhost:4444/Client WCF/Locations.svc?xsd=xsd3" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ILocations_get_zones_for_project_InputMessage">
+    <wsdl:part name="parameters" element="tns:get_zones_for_project" />
+  </wsdl:message>
+  <wsdl:message name="ILocations_get_zones_for_project_OutputMessage">
+    <wsdl:part name="parameters" element="tns:get_zones_for_projectResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILocations_GetentityLocation_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetentityLocation" />
+  </wsdl:message>
+  <wsdl:message name="ILocations_GetentityLocation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetentityLocationResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILocations_Get_Facility_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Facility" />
+  </wsdl:message>
+  <wsdl:message name="ILocations_Get_Facility_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_FacilityResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILocations_Get_Location_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Location" />
+  </wsdl:message>
+  <wsdl:message name="ILocations_Get_Location_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_LocationResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILocations_Search_Location_InputMessage">
+    <wsdl:part name="parameters" element="tns:Search_Location" />
+  </wsdl:message>
+  <wsdl:message name="ILocations_Search_Location_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Search_LocationResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILocations_delete_Location_InputMessage">
+    <wsdl:part name="parameters" element="tns:delete_Location" />
+  </wsdl:message>
+  <wsdl:message name="ILocations_delete_Location_OutputMessage">
+    <wsdl:part name="parameters" element="tns:delete_LocationResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILocations_Get_Location_Facility_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Location_Facility" />
+  </wsdl:message>
+  <wsdl:message name="ILocations_Get_Location_Facility_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Location_FacilityResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILocations_Get_FacilityName_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_FacilityName" />
+  </wsdl:message>
+  <wsdl:message name="ILocations_Get_FacilityName_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_FacilityNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILocations_Get_FloorProfile_byID_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_FloorProfile_byID" />
+  </wsdl:message>
+  <wsdl:message name="ILocations_Get_FloorProfile_byID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_FloorProfile_byIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILocations_proc_insert_update_floor_profile_InputMessage">
+    <wsdl:part name="parameters" element="tns:proc_insert_update_floor_profile" />
+  </wsdl:message>
+  <wsdl:message name="ILocations_proc_insert_update_floor_profile_OutputMessage">
+    <wsdl:part name="parameters" element="tns:proc_insert_update_floor_profileResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILocations_Get_Floor_Category_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Floor_Category" />
+  </wsdl:message>
+  <wsdl:message name="ILocations_Get_Floor_Category_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Floor_CategoryResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILocations_Get_Floors_PM_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Floors_PM" />
+  </wsdl:message>
+  <wsdl:message name="ILocations_Get_Floors_PM_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Floors_PMResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILocations_Get_Spaces_PM_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Spaces_PM" />
+  </wsdl:message>
+  <wsdl:message name="ILocations_Get_Spaces_PM_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Spaces_PMResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILocations_Get_SpaceProfile_byID_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_SpaceProfile_byID" />
+  </wsdl:message>
+  <wsdl:message name="ILocations_Get_SpaceProfile_byID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_SpaceProfile_byIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILocations_get_omniclass_type_for_category_InputMessage">
+    <wsdl:part name="parameters" element="tns:get_omniclass_type_for_category" />
+  </wsdl:message>
+  <wsdl:message name="ILocations_get_omniclass_type_for_category_OutputMessage">
+    <wsdl:part name="parameters" element="tns:get_omniclass_type_for_categoryResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILocations_Get_Floors_by_FacilityID_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Floors_by_FacilityID" />
+  </wsdl:message>
+  <wsdl:message name="ILocations_Get_Floors_by_FacilityID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Floors_by_FacilityIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILocations_get_Space_documents_InputMessage">
+    <wsdl:part name="parameters" element="tns:get_Space_documents" />
+  </wsdl:message>
+  <wsdl:message name="ILocations_get_Space_documents_OutputMessage">
+    <wsdl:part name="parameters" element="tns:get_Space_documentsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILocations_get_document_type_InputMessage">
+    <wsdl:part name="parameters" element="tns:get_document_type" />
+  </wsdl:message>
+  <wsdl:message name="ILocations_get_document_type_OutputMessage">
+    <wsdl:part name="parameters" element="tns:get_document_typeResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILocations_get_stages_InputMessage">
+    <wsdl:part name="parameters" element="tns:get_stages" />
+  </wsdl:message>
+  <wsdl:message name="ILocations_get_stages_OutputMessage">
+    <wsdl:part name="parameters" element="tns:get_stagesResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILocations_get_approval_by_InputMessage">
+    <wsdl:part name="parameters" element="tns:get_approval_by" />
+  </wsdl:message>
+  <wsdl:message name="ILocations_get_approval_by_OutputMessage">
+    <wsdl:part name="parameters" element="tns:get_approval_byResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILocations_proc_insert_update_space_profile_InputMessage">
+    <wsdl:part name="parameters" element="tns:proc_insert_update_space_profile" />
+  </wsdl:message>
+  <wsdl:message name="ILocations_proc_insert_update_space_profile_OutputMessage">
+    <wsdl:part name="parameters" element="tns:proc_insert_update_space_profileResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILocations_Get_Zone_Profile_by_ID_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Zone_Profile_by_ID" />
+  </wsdl:message>
+  <wsdl:message name="ILocations_Get_Zone_Profile_by_ID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Zone_Profile_by_IDResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILocations_proc_insert_update_zone_profile_InputMessage">
+    <wsdl:part name="parameters" element="tns:proc_insert_update_zone_profile" />
+  </wsdl:message>
+  <wsdl:message name="ILocations_proc_insert_update_zone_profile_OutputMessage">
+    <wsdl:part name="parameters" element="tns:proc_insert_update_zone_profileResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILocations_get_spaces_for_zone_InputMessage">
+    <wsdl:part name="parameters" element="tns:get_spaces_for_zone" />
+  </wsdl:message>
+  <wsdl:message name="ILocations_get_spaces_for_zone_OutputMessage">
+    <wsdl:part name="parameters" element="tns:get_spaces_for_zoneResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILocations_assign_spaces_for_zone_InputMessage">
+    <wsdl:part name="parameters" element="tns:assign_spaces_for_zone" />
+  </wsdl:message>
+  <wsdl:message name="ILocations_assign_spaces_for_zone_OutputMessage">
+    <wsdl:part name="parameters" element="tns:assign_spaces_for_zoneResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILocations_Delete_Zone_InputMessage">
+    <wsdl:part name="parameters" element="tns:Delete_Zone" />
+  </wsdl:message>
+  <wsdl:message name="ILocations_Delete_Zone_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Delete_ZoneResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ILocations">
+    <wsdl:operation name="get_zones_for_project">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILocations/get_zones_for_project" message="tns:ILocations_get_zones_for_project_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILocations/get_zones_for_projectResponse" message="tns:ILocations_get_zones_for_project_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetentityLocation">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILocations/GetentityLocation" message="tns:ILocations_GetentityLocation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILocations/GetentityLocationResponse" message="tns:ILocations_GetentityLocation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_Facility">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILocations/Get_Facility" message="tns:ILocations_Get_Facility_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILocations/Get_FacilityResponse" message="tns:ILocations_Get_Facility_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_Location">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILocations/Get_Location" message="tns:ILocations_Get_Location_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILocations/Get_LocationResponse" message="tns:ILocations_Get_Location_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Search_Location">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILocations/Search_Location" message="tns:ILocations_Search_Location_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILocations/Search_LocationResponse" message="tns:ILocations_Search_Location_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="delete_Location">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILocations/delete_Location" message="tns:ILocations_delete_Location_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILocations/delete_LocationResponse" message="tns:ILocations_delete_Location_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_Location_Facility">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILocations/Get_Location_Facility" message="tns:ILocations_Get_Location_Facility_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILocations/Get_Location_FacilityResponse" message="tns:ILocations_Get_Location_Facility_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_FacilityName">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILocations/Get_FacilityName" message="tns:ILocations_Get_FacilityName_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILocations/Get_FacilityNameResponse" message="tns:ILocations_Get_FacilityName_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_FloorProfile_byID">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILocations/Get_FloorProfile_byID" message="tns:ILocations_Get_FloorProfile_byID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILocations/Get_FloorProfile_byIDResponse" message="tns:ILocations_Get_FloorProfile_byID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="proc_insert_update_floor_profile">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILocations/proc_insert_update_floor_profile" message="tns:ILocations_proc_insert_update_floor_profile_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILocations/proc_insert_update_floor_profileResponse" message="tns:ILocations_proc_insert_update_floor_profile_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_Floor_Category">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILocations/Get_Floor_Category" message="tns:ILocations_Get_Floor_Category_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILocations/Get_Floor_CategoryResponse" message="tns:ILocations_Get_Floor_Category_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_Floors_PM">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILocations/Get_Floors_PM" message="tns:ILocations_Get_Floors_PM_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILocations/Get_Floors_PMResponse" message="tns:ILocations_Get_Floors_PM_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_Spaces_PM">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILocations/Get_Spaces_PM" message="tns:ILocations_Get_Spaces_PM_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILocations/Get_Spaces_PMResponse" message="tns:ILocations_Get_Spaces_PM_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_SpaceProfile_byID">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILocations/Get_SpaceProfile_byID" message="tns:ILocations_Get_SpaceProfile_byID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILocations/Get_SpaceProfile_byIDResponse" message="tns:ILocations_Get_SpaceProfile_byID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="get_omniclass_type_for_category">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILocations/get_omniclass_type_for_category" message="tns:ILocations_get_omniclass_type_for_category_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILocations/get_omniclass_type_for_categoryResponse" message="tns:ILocations_get_omniclass_type_for_category_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_Floors_by_FacilityID">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILocations/Get_Floors_by_FacilityID" message="tns:ILocations_Get_Floors_by_FacilityID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILocations/Get_Floors_by_FacilityIDResponse" message="tns:ILocations_Get_Floors_by_FacilityID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="get_Space_documents">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILocations/get_Space_documents" message="tns:ILocations_get_Space_documents_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILocations/get_Space_documentsResponse" message="tns:ILocations_get_Space_documents_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="get_document_type">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILocations/get_document_type" message="tns:ILocations_get_document_type_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILocations/get_document_typeResponse" message="tns:ILocations_get_document_type_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="get_stages">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILocations/get_stages" message="tns:ILocations_get_stages_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILocations/get_stagesResponse" message="tns:ILocations_get_stages_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="get_approval_by">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILocations/get_approval_by" message="tns:ILocations_get_approval_by_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILocations/get_approval_byResponse" message="tns:ILocations_get_approval_by_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="proc_insert_update_space_profile">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILocations/proc_insert_update_space_profile" message="tns:ILocations_proc_insert_update_space_profile_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILocations/proc_insert_update_space_profileResponse" message="tns:ILocations_proc_insert_update_space_profile_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_Zone_Profile_by_ID">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILocations/Get_Zone_Profile_by_ID" message="tns:ILocations_Get_Zone_Profile_by_ID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILocations/Get_Zone_Profile_by_IDResponse" message="tns:ILocations_Get_Zone_Profile_by_ID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="proc_insert_update_zone_profile">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILocations/proc_insert_update_zone_profile" message="tns:ILocations_proc_insert_update_zone_profile_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILocations/proc_insert_update_zone_profileResponse" message="tns:ILocations_proc_insert_update_zone_profile_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="get_spaces_for_zone">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILocations/get_spaces_for_zone" message="tns:ILocations_get_spaces_for_zone_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILocations/get_spaces_for_zoneResponse" message="tns:ILocations_get_spaces_for_zone_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="assign_spaces_for_zone">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILocations/assign_spaces_for_zone" message="tns:ILocations_assign_spaces_for_zone_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILocations/assign_spaces_for_zoneResponse" message="tns:ILocations_assign_spaces_for_zone_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Delete_Zone">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILocations/Delete_Zone" message="tns:ILocations_Delete_Zone_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILocations/Delete_ZoneResponse" message="tns:ILocations_Delete_Zone_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_ILocations" type="tns:ILocations">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="get_zones_for_project">
+      <soap:operation soapAction="http://tempuri.org/ILocations/get_zones_for_project" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetentityLocation">
+      <soap:operation soapAction="http://tempuri.org/ILocations/GetentityLocation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Facility">
+      <soap:operation soapAction="http://tempuri.org/ILocations/Get_Facility" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Location">
+      <soap:operation soapAction="http://tempuri.org/ILocations/Get_Location" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Search_Location">
+      <soap:operation soapAction="http://tempuri.org/ILocations/Search_Location" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="delete_Location">
+      <soap:operation soapAction="http://tempuri.org/ILocations/delete_Location" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Location_Facility">
+      <soap:operation soapAction="http://tempuri.org/ILocations/Get_Location_Facility" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_FacilityName">
+      <soap:operation soapAction="http://tempuri.org/ILocations/Get_FacilityName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_FloorProfile_byID">
+      <soap:operation soapAction="http://tempuri.org/ILocations/Get_FloorProfile_byID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="proc_insert_update_floor_profile">
+      <soap:operation soapAction="http://tempuri.org/ILocations/proc_insert_update_floor_profile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Floor_Category">
+      <soap:operation soapAction="http://tempuri.org/ILocations/Get_Floor_Category" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Floors_PM">
+      <soap:operation soapAction="http://tempuri.org/ILocations/Get_Floors_PM" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Spaces_PM">
+      <soap:operation soapAction="http://tempuri.org/ILocations/Get_Spaces_PM" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_SpaceProfile_byID">
+      <soap:operation soapAction="http://tempuri.org/ILocations/Get_SpaceProfile_byID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="get_omniclass_type_for_category">
+      <soap:operation soapAction="http://tempuri.org/ILocations/get_omniclass_type_for_category" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Floors_by_FacilityID">
+      <soap:operation soapAction="http://tempuri.org/ILocations/Get_Floors_by_FacilityID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="get_Space_documents">
+      <soap:operation soapAction="http://tempuri.org/ILocations/get_Space_documents" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="get_document_type">
+      <soap:operation soapAction="http://tempuri.org/ILocations/get_document_type" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="get_stages">
+      <soap:operation soapAction="http://tempuri.org/ILocations/get_stages" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="get_approval_by">
+      <soap:operation soapAction="http://tempuri.org/ILocations/get_approval_by" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="proc_insert_update_space_profile">
+      <soap:operation soapAction="http://tempuri.org/ILocations/proc_insert_update_space_profile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Zone_Profile_by_ID">
+      <soap:operation soapAction="http://tempuri.org/ILocations/Get_Zone_Profile_by_ID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="proc_insert_update_zone_profile">
+      <soap:operation soapAction="http://tempuri.org/ILocations/proc_insert_update_zone_profile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="get_spaces_for_zone">
+      <soap:operation soapAction="http://tempuri.org/ILocations/get_spaces_for_zone" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="assign_spaces_for_zone">
+      <soap:operation soapAction="http://tempuri.org/ILocations/assign_spaces_for_zone" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Delete_Zone">
+      <soap:operation soapAction="http://tempuri.org/ILocations/Delete_Zone" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Locations">
+    <wsdl:port name="BasicHttpBinding_ILocations" binding="tns:BasicHttpBinding_ILocations">
+      <soap:address location="http://localhost:4444/Client%20WCF/Locations.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

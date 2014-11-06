@@ -1,0 +1,648 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Organization" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:3333/Central WCF/Organization.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:3333/Central WCF/Organization.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:3333/Central WCF/Organization.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Ecodomus.Organization" />
+      <xsd:import schemaLocation="http://localhost:3333/Central WCF/Organization.svc?xsd=xsd3" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IOrganization_Insert_Document_Type_for_Organization_InputMessage">
+    <wsdl:part name="parameters" element="tns:Insert_Document_Type_for_Organization" />
+  </wsdl:message>
+  <wsdl:message name="IOrganization_Insert_Document_Type_for_Organization_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Insert_Document_Type_for_OrganizationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrganization_Delete_Document_Type_for_Organization_InputMessage">
+    <wsdl:part name="parameters" element="tns:Delete_Document_Type_for_Organization" />
+  </wsdl:message>
+  <wsdl:message name="IOrganization_Delete_Document_Type_for_Organization_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Delete_Document_Type_for_OrganizationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrganization_Get_organization_standards_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_organization_standards" />
+  </wsdl:message>
+  <wsdl:message name="IOrganization_Get_organization_standards_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_organization_standardsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrganization_Insert_custom_standard_InputMessage">
+    <wsdl:part name="parameters" element="tns:Insert_custom_standard" />
+  </wsdl:message>
+  <wsdl:message name="IOrganization_Insert_custom_standard_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Insert_custom_standardResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrganization_Insert_custom_standard_details_InputMessage">
+    <wsdl:part name="parameters" element="tns:Insert_custom_standard_details" />
+  </wsdl:message>
+  <wsdl:message name="IOrganization_Insert_custom_standard_details_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Insert_custom_standard_detailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrganization_Delete_custom_standard_InputMessage">
+    <wsdl:part name="parameters" element="tns:Delete_custom_standard" />
+  </wsdl:message>
+  <wsdl:message name="IOrganization_Delete_custom_standard_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Delete_custom_standardResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrganization_Get_Custom_Standard_Details_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Custom_Standard_Details" />
+  </wsdl:message>
+  <wsdl:message name="IOrganization_Get_Custom_Standard_Details_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Custom_Standard_DetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrganization_Delete_Custom_Standard_Details_InputMessage">
+    <wsdl:part name="parameters" element="tns:Delete_Custom_Standard_Details" />
+  </wsdl:message>
+  <wsdl:message name="IOrganization_Delete_Custom_Standard_Details_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Delete_Custom_Standard_DetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrganization_getCountry_InputMessage">
+    <wsdl:part name="parameters" element="tns:getCountry" />
+  </wsdl:message>
+  <wsdl:message name="IOrganization_getCountry_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getCountryResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrganization_getState_InputMessage">
+    <wsdl:part name="parameters" element="tns:getState" />
+  </wsdl:message>
+  <wsdl:message name="IOrganization_getState_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getStateResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrganization_GetOrganization_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetOrganization" />
+  </wsdl:message>
+  <wsdl:message name="IOrganization_GetOrganization_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetOrganizationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrganization_GetOmniclassTypes_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetOmniclassTypes" />
+  </wsdl:message>
+  <wsdl:message name="IOrganization_GetOmniclassTypes_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetOmniclassTypesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrganization_GetOrganizationType_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetOrganizationType" />
+  </wsdl:message>
+  <wsdl:message name="IOrganization_GetOrganizationType_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetOrganizationTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrganization_GetCity_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCity" />
+  </wsdl:message>
+  <wsdl:message name="IOrganization_GetCity_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCityResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrganization_GetOranizationInformation_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetOranizationInformation" />
+  </wsdl:message>
+  <wsdl:message name="IOrganization_GetOranizationInformation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetOranizationInformationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrganization_GetOranizationInformation_v1_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetOranizationInformation_v1" />
+  </wsdl:message>
+  <wsdl:message name="IOrganization_GetOranizationInformation_v1_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetOranizationInformation_v1Response" />
+  </wsdl:message>
+  <wsdl:message name="IOrganization_GetOranizationPrimaryContact_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetOranizationPrimaryContact" />
+  </wsdl:message>
+  <wsdl:message name="IOrganization_GetOranizationPrimaryContact_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetOranizationPrimaryContactResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrganization_InsertUpdateOrganization_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertUpdateOrganization" />
+  </wsdl:message>
+  <wsdl:message name="IOrganization_InsertUpdateOrganization_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertUpdateOrganizationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrganization_InsertUpdateCityStateCountry_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertUpdateCityStateCountry" />
+  </wsdl:message>
+  <wsdl:message name="IOrganization_InsertUpdateCityStateCountry_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertUpdateCityStateCountryResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrganization_UpdateCityStateCountry_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateCityStateCountry" />
+  </wsdl:message>
+  <wsdl:message name="IOrganization_UpdateCityStateCountry_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateCityStateCountryResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrganization_DeleteOrganization_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteOrganization" />
+  </wsdl:message>
+  <wsdl:message name="IOrganization_DeleteOrganization_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteOrganizationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrganization_DeleteCityStateCountry_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteCityStateCountry" />
+  </wsdl:message>
+  <wsdl:message name="IOrganization_DeleteCityStateCountry_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteCityStateCountryResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrganization_GetClientOrganization_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetClientOrganization" />
+  </wsdl:message>
+  <wsdl:message name="IOrganization_GetClientOrganization_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetClientOrganizationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrganization_GetunassignedOrganizations_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetunassignedOrganizations" />
+  </wsdl:message>
+  <wsdl:message name="IOrganization_GetunassignedOrganizations_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetunassignedOrganizationsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrganization_GetUserSessionDetails_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserSessionDetails" />
+  </wsdl:message>
+  <wsdl:message name="IOrganization_GetUserSessionDetails_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserSessionDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrganization_GetPrimaryContactofOrganizationForAssigningUserFacility_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPrimaryContactofOrganizationForAssigningUserFacility" />
+  </wsdl:message>
+  <wsdl:message name="IOrganization_GetPrimaryContactofOrganizationForAssigningUserFacility_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPrimaryContactofOrganizationForAssigningUserFacilityResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrganization_GetClients_of_organization_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetClients_of_organization" />
+  </wsdl:message>
+  <wsdl:message name="IOrganization_GetClients_of_organization_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetClients_of_organizationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrganization_GetOrganizationPhases_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetOrganizationPhases" />
+  </wsdl:message>
+  <wsdl:message name="IOrganization_GetOrganizationPhases_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetOrganizationPhasesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrganization_InsertOrganizationPhase_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertOrganizationPhase" />
+  </wsdl:message>
+  <wsdl:message name="IOrganization_InsertOrganizationPhase_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertOrganizationPhaseResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrganization_DeleteOrganizationPhases_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteOrganizationPhases" />
+  </wsdl:message>
+  <wsdl:message name="IOrganization_DeleteOrganizationPhases_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteOrganizationPhasesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrganization_proc_bind_entity_field_tree_InputMessage">
+    <wsdl:part name="parameters" element="tns:proc_bind_entity_field_tree" />
+  </wsdl:message>
+  <wsdl:message name="IOrganization_proc_bind_entity_field_tree_OutputMessage">
+    <wsdl:part name="parameters" element="tns:proc_bind_entity_field_treeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrganization_proc_insrt_update_selected_phase_status_InputMessage">
+    <wsdl:part name="parameters" element="tns:proc_insrt_update_selected_phase_status" />
+  </wsdl:message>
+  <wsdl:message name="IOrganization_proc_insrt_update_selected_phase_status_OutputMessage">
+    <wsdl:part name="parameters" element="tns:proc_insrt_update_selected_phase_statusResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrganization_Get_Document_Type_for_Organization_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Document_Type_for_Organization" />
+  </wsdl:message>
+  <wsdl:message name="IOrganization_Get_Document_Type_for_Organization_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Document_Type_for_OrganizationResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IOrganization">
+    <wsdl:operation name="Insert_Document_Type_for_Organization">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrganization/Insert_Document_Type_for_Organization" message="tns:IOrganization_Insert_Document_Type_for_Organization_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrganization/Insert_Document_Type_for_OrganizationResponse" message="tns:IOrganization_Insert_Document_Type_for_Organization_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Delete_Document_Type_for_Organization">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrganization/Delete_Document_Type_for_Organization" message="tns:IOrganization_Delete_Document_Type_for_Organization_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrganization/Delete_Document_Type_for_OrganizationResponse" message="tns:IOrganization_Delete_Document_Type_for_Organization_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_organization_standards">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrganization/Get_organization_standards" message="tns:IOrganization_Get_organization_standards_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrganization/Get_organization_standardsResponse" message="tns:IOrganization_Get_organization_standards_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Insert_custom_standard">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrganization/Insert_custom_standard" message="tns:IOrganization_Insert_custom_standard_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrganization/Insert_custom_standardResponse" message="tns:IOrganization_Insert_custom_standard_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Insert_custom_standard_details">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrganization/Insert_custom_standard_details" message="tns:IOrganization_Insert_custom_standard_details_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrganization/Insert_custom_standard_detailsResponse" message="tns:IOrganization_Insert_custom_standard_details_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Delete_custom_standard">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrganization/Delete_custom_standard" message="tns:IOrganization_Delete_custom_standard_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrganization/Delete_custom_standardResponse" message="tns:IOrganization_Delete_custom_standard_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_Custom_Standard_Details">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrganization/Get_Custom_Standard_Details" message="tns:IOrganization_Get_Custom_Standard_Details_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrganization/Get_Custom_Standard_DetailsResponse" message="tns:IOrganization_Get_Custom_Standard_Details_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Delete_Custom_Standard_Details">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrganization/Delete_Custom_Standard_Details" message="tns:IOrganization_Delete_Custom_Standard_Details_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrganization/Delete_Custom_Standard_DetailsResponse" message="tns:IOrganization_Delete_Custom_Standard_Details_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getCountry">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrganization/getCountry" message="tns:IOrganization_getCountry_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrganization/getCountryResponse" message="tns:IOrganization_getCountry_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getState">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrganization/getState" message="tns:IOrganization_getState_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrganization/getStateResponse" message="tns:IOrganization_getState_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOrganization">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrganization/GetOrganization" message="tns:IOrganization_GetOrganization_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrganization/GetOrganizationResponse" message="tns:IOrganization_GetOrganization_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOmniclassTypes">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrganization/GetOmniclassTypes" message="tns:IOrganization_GetOmniclassTypes_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrganization/GetOmniclassTypesResponse" message="tns:IOrganization_GetOmniclassTypes_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOrganizationType">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrganization/GetOrganizationType" message="tns:IOrganization_GetOrganizationType_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrganization/GetOrganizationTypeResponse" message="tns:IOrganization_GetOrganizationType_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCity">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrganization/GetCity" message="tns:IOrganization_GetCity_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrganization/GetCityResponse" message="tns:IOrganization_GetCity_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOranizationInformation">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrganization/GetOranizationInformation" message="tns:IOrganization_GetOranizationInformation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrganization/GetOranizationInformationResponse" message="tns:IOrganization_GetOranizationInformation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOranizationInformation_v1">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrganization/GetOranizationInformation_v1" message="tns:IOrganization_GetOranizationInformation_v1_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrganization/GetOranizationInformation_v1Response" message="tns:IOrganization_GetOranizationInformation_v1_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOranizationPrimaryContact">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrganization/GetOranizationPrimaryContact" message="tns:IOrganization_GetOranizationPrimaryContact_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrganization/GetOranizationPrimaryContactResponse" message="tns:IOrganization_GetOranizationPrimaryContact_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertUpdateOrganization">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrganization/InsertUpdateOrganization" message="tns:IOrganization_InsertUpdateOrganization_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrganization/InsertUpdateOrganizationResponse" message="tns:IOrganization_InsertUpdateOrganization_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertUpdateCityStateCountry">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrganization/InsertUpdateCityStateCountry" message="tns:IOrganization_InsertUpdateCityStateCountry_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrganization/InsertUpdateCityStateCountryResponse" message="tns:IOrganization_InsertUpdateCityStateCountry_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCityStateCountry">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrganization/UpdateCityStateCountry" message="tns:IOrganization_UpdateCityStateCountry_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrganization/UpdateCityStateCountryResponse" message="tns:IOrganization_UpdateCityStateCountry_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteOrganization">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrganization/DeleteOrganization" message="tns:IOrganization_DeleteOrganization_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrganization/DeleteOrganizationResponse" message="tns:IOrganization_DeleteOrganization_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCityStateCountry">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrganization/DeleteCityStateCountry" message="tns:IOrganization_DeleteCityStateCountry_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrganization/DeleteCityStateCountryResponse" message="tns:IOrganization_DeleteCityStateCountry_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetClientOrganization">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrganization/GetClientOrganization" message="tns:IOrganization_GetClientOrganization_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrganization/GetClientOrganizationResponse" message="tns:IOrganization_GetClientOrganization_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetunassignedOrganizations">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrganization/GetunassignedOrganizations" message="tns:IOrganization_GetunassignedOrganizations_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrganization/GetunassignedOrganizationsResponse" message="tns:IOrganization_GetunassignedOrganizations_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserSessionDetails">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrganization/GetUserSessionDetails" message="tns:IOrganization_GetUserSessionDetails_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrganization/GetUserSessionDetailsResponse" message="tns:IOrganization_GetUserSessionDetails_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPrimaryContactofOrganizationForAssigningUserFacility">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrganization/GetPrimaryContactofOrganizationForAssigningUserFacility" message="tns:IOrganization_GetPrimaryContactofOrganizationForAssigningUserFacility_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrganization/GetPrimaryContactofOrganizationForAssigningUserFacilityResponse" message="tns:IOrganization_GetPrimaryContactofOrganizationForAssigningUserFacility_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetClients_of_organization">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrganization/GetClients_of_organization" message="tns:IOrganization_GetClients_of_organization_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrganization/GetClients_of_organizationResponse" message="tns:IOrganization_GetClients_of_organization_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOrganizationPhases">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrganization/GetOrganizationPhases" message="tns:IOrganization_GetOrganizationPhases_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrganization/GetOrganizationPhasesResponse" message="tns:IOrganization_GetOrganizationPhases_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertOrganizationPhase">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrganization/InsertOrganizationPhase" message="tns:IOrganization_InsertOrganizationPhase_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrganization/InsertOrganizationPhaseResponse" message="tns:IOrganization_InsertOrganizationPhase_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteOrganizationPhases">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrganization/DeleteOrganizationPhases" message="tns:IOrganization_DeleteOrganizationPhases_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrganization/DeleteOrganizationPhasesResponse" message="tns:IOrganization_DeleteOrganizationPhases_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="proc_bind_entity_field_tree">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrganization/proc_bind_entity_field_tree" message="tns:IOrganization_proc_bind_entity_field_tree_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrganization/proc_bind_entity_field_treeResponse" message="tns:IOrganization_proc_bind_entity_field_tree_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="proc_insrt_update_selected_phase_status">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrganization/proc_insrt_update_selected_phase_status" message="tns:IOrganization_proc_insrt_update_selected_phase_status_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrganization/proc_insrt_update_selected_phase_statusResponse" message="tns:IOrganization_proc_insrt_update_selected_phase_status_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_Document_Type_for_Organization">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrganization/Get_Document_Type_for_Organization" message="tns:IOrganization_Get_Document_Type_for_Organization_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrganization/Get_Document_Type_for_OrganizationResponse" message="tns:IOrganization_Get_Document_Type_for_Organization_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IOrganization" type="tns:IOrganization">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Insert_Document_Type_for_Organization">
+      <soap:operation soapAction="http://tempuri.org/IOrganization/Insert_Document_Type_for_Organization" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Delete_Document_Type_for_Organization">
+      <soap:operation soapAction="http://tempuri.org/IOrganization/Delete_Document_Type_for_Organization" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_organization_standards">
+      <soap:operation soapAction="http://tempuri.org/IOrganization/Get_organization_standards" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Insert_custom_standard">
+      <soap:operation soapAction="http://tempuri.org/IOrganization/Insert_custom_standard" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Insert_custom_standard_details">
+      <soap:operation soapAction="http://tempuri.org/IOrganization/Insert_custom_standard_details" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Delete_custom_standard">
+      <soap:operation soapAction="http://tempuri.org/IOrganization/Delete_custom_standard" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Custom_Standard_Details">
+      <soap:operation soapAction="http://tempuri.org/IOrganization/Get_Custom_Standard_Details" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Delete_Custom_Standard_Details">
+      <soap:operation soapAction="http://tempuri.org/IOrganization/Delete_Custom_Standard_Details" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getCountry">
+      <soap:operation soapAction="http://tempuri.org/IOrganization/getCountry" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getState">
+      <soap:operation soapAction="http://tempuri.org/IOrganization/getState" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOrganization">
+      <soap:operation soapAction="http://tempuri.org/IOrganization/GetOrganization" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOmniclassTypes">
+      <soap:operation soapAction="http://tempuri.org/IOrganization/GetOmniclassTypes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOrganizationType">
+      <soap:operation soapAction="http://tempuri.org/IOrganization/GetOrganizationType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCity">
+      <soap:operation soapAction="http://tempuri.org/IOrganization/GetCity" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOranizationInformation">
+      <soap:operation soapAction="http://tempuri.org/IOrganization/GetOranizationInformation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOranizationInformation_v1">
+      <soap:operation soapAction="http://tempuri.org/IOrganization/GetOranizationInformation_v1" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOranizationPrimaryContact">
+      <soap:operation soapAction="http://tempuri.org/IOrganization/GetOranizationPrimaryContact" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertUpdateOrganization">
+      <soap:operation soapAction="http://tempuri.org/IOrganization/InsertUpdateOrganization" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertUpdateCityStateCountry">
+      <soap:operation soapAction="http://tempuri.org/IOrganization/InsertUpdateCityStateCountry" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCityStateCountry">
+      <soap:operation soapAction="http://tempuri.org/IOrganization/UpdateCityStateCountry" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteOrganization">
+      <soap:operation soapAction="http://tempuri.org/IOrganization/DeleteOrganization" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCityStateCountry">
+      <soap:operation soapAction="http://tempuri.org/IOrganization/DeleteCityStateCountry" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetClientOrganization">
+      <soap:operation soapAction="http://tempuri.org/IOrganization/GetClientOrganization" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetunassignedOrganizations">
+      <soap:operation soapAction="http://tempuri.org/IOrganization/GetunassignedOrganizations" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserSessionDetails">
+      <soap:operation soapAction="http://tempuri.org/IOrganization/GetUserSessionDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPrimaryContactofOrganizationForAssigningUserFacility">
+      <soap:operation soapAction="http://tempuri.org/IOrganization/GetPrimaryContactofOrganizationForAssigningUserFacility" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetClients_of_organization">
+      <soap:operation soapAction="http://tempuri.org/IOrganization/GetClients_of_organization" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOrganizationPhases">
+      <soap:operation soapAction="http://tempuri.org/IOrganization/GetOrganizationPhases" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertOrganizationPhase">
+      <soap:operation soapAction="http://tempuri.org/IOrganization/InsertOrganizationPhase" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteOrganizationPhases">
+      <soap:operation soapAction="http://tempuri.org/IOrganization/DeleteOrganizationPhases" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="proc_bind_entity_field_tree">
+      <soap:operation soapAction="http://tempuri.org/IOrganization/proc_bind_entity_field_tree" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="proc_insrt_update_selected_phase_status">
+      <soap:operation soapAction="http://tempuri.org/IOrganization/proc_insrt_update_selected_phase_status" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Document_Type_for_Organization">
+      <soap:operation soapAction="http://tempuri.org/IOrganization/Get_Document_Type_for_Organization" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Organization">
+    <wsdl:port name="BasicHttpBinding_IOrganization" binding="tns:BasicHttpBinding_IOrganization">
+      <soap:address location="http://localhost:3333/Central%20WCF/Organization.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

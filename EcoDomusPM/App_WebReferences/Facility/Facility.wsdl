@@ -1,0 +1,1276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Facility" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:4444/Client WCF/Facility.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:4444/Client WCF/Facility.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:4444/Client WCF/Facility.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/" />
+      <xsd:import schemaLocation="http://localhost:4444/Client WCF/Facility.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/System.Data" />
+      <xsd:import schemaLocation="http://localhost:4444/Client WCF/Facility.svc?xsd=xsd4" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IFacility_BindGridForSelectedEntity_Component_InputMessage">
+    <wsdl:part name="parameters" element="tns:BindGridForSelectedEntity_Component" />
+  </wsdl:message>
+  <wsdl:message name="IFacility_BindGridForSelectedEntity_Component_OutputMessage">
+    <wsdl:part name="parameters" element="tns:BindGridForSelectedEntity_ComponentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFacility_proc_bind_barcode_entity_InputMessage">
+    <wsdl:part name="parameters" element="tns:proc_bind_barcode_entity" />
+  </wsdl:message>
+  <wsdl:message name="IFacility_proc_bind_barcode_entity_OutputMessage">
+    <wsdl:part name="parameters" element="tns:proc_bind_barcode_entityResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFacility_proc_bind_barcode_type_InputMessage">
+    <wsdl:part name="parameters" element="tns:proc_bind_barcode_type" />
+  </wsdl:message>
+  <wsdl:message name="IFacility_proc_bind_barcode_type_OutputMessage">
+    <wsdl:part name="parameters" element="tns:proc_bind_barcode_typeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFacility_proc_bind_document_template_type_InputMessage">
+    <wsdl:part name="parameters" element="tns:proc_bind_document_template_type" />
+  </wsdl:message>
+  <wsdl:message name="IFacility_proc_bind_document_template_type_OutputMessage">
+    <wsdl:part name="parameters" element="tns:proc_bind_document_template_typeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFacility_proc_get_barcode_height_width_InputMessage">
+    <wsdl:part name="parameters" element="tns:proc_get_barcode_height_width" />
+  </wsdl:message>
+  <wsdl:message name="IFacility_proc_get_barcode_height_width_OutputMessage">
+    <wsdl:part name="parameters" element="tns:proc_get_barcode_height_widthResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFacility_proc_bind_barcode_entity_field_InputMessage">
+    <wsdl:part name="parameters" element="tns:proc_bind_barcode_entity_field" />
+  </wsdl:message>
+  <wsdl:message name="IFacility_proc_bind_barcode_entity_field_OutputMessage">
+    <wsdl:part name="parameters" element="tns:proc_bind_barcode_entity_fieldResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFacility_proc_insert_Update_facility_config_InputMessage">
+    <wsdl:part name="parameters" element="tns:proc_insert_Update_facility_config" />
+  </wsdl:message>
+  <wsdl:message name="IFacility_proc_insert_Update_facility_config_OutputMessage">
+    <wsdl:part name="parameters" element="tns:proc_insert_Update_facility_configResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFacility_proc_get_facility_config_InputMessage">
+    <wsdl:part name="parameters" element="tns:proc_get_facility_config" />
+  </wsdl:message>
+  <wsdl:message name="IFacility_proc_get_facility_config_OutputMessage">
+    <wsdl:part name="parameters" element="tns:proc_get_facility_configResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFacility_proc_get_preview_InputMessage">
+    <wsdl:part name="parameters" element="tns:proc_get_preview" />
+  </wsdl:message>
+  <wsdl:message name="IFacility_proc_get_preview_OutputMessage">
+    <wsdl:part name="parameters" element="tns:proc_get_previewResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFacility_proc_generate_barcode_InputMessage">
+    <wsdl:part name="parameters" element="tns:proc_generate_barcode" />
+  </wsdl:message>
+  <wsdl:message name="IFacility_proc_generate_barcode_OutputMessage">
+    <wsdl:part name="parameters" element="tns:proc_generate_barcodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFacility_proc_get_barcode_print_option_InputMessage">
+    <wsdl:part name="parameters" element="tns:proc_get_barcode_print_option" />
+  </wsdl:message>
+  <wsdl:message name="IFacility_proc_get_barcode_print_option_OutputMessage">
+    <wsdl:part name="parameters" element="tns:proc_get_barcode_print_optionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFacility_proc_update_custom_template_InputMessage">
+    <wsdl:part name="parameters" element="tns:proc_update_custom_template" />
+  </wsdl:message>
+  <wsdl:message name="IFacility_proc_update_custom_template_OutputMessage">
+    <wsdl:part name="parameters" element="tns:proc_update_custom_templateResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFacility_GetZoneByFacility_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetZoneByFacility" />
+  </wsdl:message>
+  <wsdl:message name="IFacility_GetZoneByFacility_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetZoneByFacilityResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFacility_GetSpaceByZone_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSpaceByZone" />
+  </wsdl:message>
+  <wsdl:message name="IFacility_GetSpaceByZone_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSpaceByZoneResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFacility_GetZoneFacility_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetZoneFacility" />
+  </wsdl:message>
+  <wsdl:message name="IFacility_GetZoneFacility_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetZoneFacilityResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFacility_GetModelUrlSpacePM_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetModelUrlSpacePM" />
+  </wsdl:message>
+  <wsdl:message name="IFacility_GetModelUrlSpacePM_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetModelUrlSpacePMResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFacility_Get_Entity_Model_Viewer_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Entity_Model_Viewer" />
+  </wsdl:message>
+  <wsdl:message name="IFacility_Get_Entity_Model_Viewer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Entity_Model_ViewerResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFacility_GetExistingFacilitiesPM_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetExistingFacilitiesPM" />
+  </wsdl:message>
+  <wsdl:message name="IFacility_GetExistingFacilitiesPM_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetExistingFacilitiesPMResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFacility_InsertExisting_FacilitiesPM_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertExisting_FacilitiesPM" />
+  </wsdl:message>
+  <wsdl:message name="IFacility_InsertExisting_FacilitiesPM_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertExisting_FacilitiesPMResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFacility_delete_document_pm_InputMessage">
+    <wsdl:part name="parameters" element="tns:delete_document_pm" />
+  </wsdl:message>
+  <wsdl:message name="IFacility_delete_document_pm_OutputMessage">
+    <wsdl:part name="parameters" element="tns:delete_document_pmResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFacility_GetFilesByFacilityForExport_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetFilesByFacilityForExport" />
+  </wsdl:message>
+  <wsdl:message name="IFacility_GetFilesByFacilityForExport_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFilesByFacilityForExportResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFacility_GetFacilitiesPM_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetFacilitiesPM" />
+  </wsdl:message>
+  <wsdl:message name="IFacility_GetFacilitiesPM_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFacilitiesPMResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFacility_InsertUpdateFacilityPM_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertUpdateFacilityPM" />
+  </wsdl:message>
+  <wsdl:message name="IFacility_InsertUpdateFacilityPM_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertUpdateFacilityPMResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFacility_delete_facility_pm_InputMessage">
+    <wsdl:part name="parameters" element="tns:delete_facility_pm" />
+  </wsdl:message>
+  <wsdl:message name="IFacility_delete_facility_pm_OutputMessage">
+    <wsdl:part name="parameters" element="tns:delete_facility_pmResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFacility_GetFacility_of_entity_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetFacility_of_entity" />
+  </wsdl:message>
+  <wsdl:message name="IFacility_GetFacility_of_entity_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFacility_of_entityResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFacility_Add_Facility_DocumentPM_InputMessage">
+    <wsdl:part name="parameters" element="tns:Add_Facility_DocumentPM" />
+  </wsdl:message>
+  <wsdl:message name="IFacility_Add_Facility_DocumentPM_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Add_Facility_DocumentPMResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFacility_InsertUpdate_DocumentPM_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertUpdate_DocumentPM" />
+  </wsdl:message>
+  <wsdl:message name="IFacility_InsertUpdate_DocumentPM_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertUpdate_DocumentPMResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFacility_InsertUpdate_BulkDocumentPM_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertUpdate_BulkDocumentPM" />
+  </wsdl:message>
+  <wsdl:message name="IFacility_InsertUpdate_BulkDocumentPM_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertUpdate_BulkDocumentPMResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFacility_InsertUpdate_Document_document_checklist_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertUpdate_Document_document_checklist" />
+  </wsdl:message>
+  <wsdl:message name="IFacility_InsertUpdate_Document_document_checklist_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertUpdate_Document_document_checklistResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFacility_GetEntityDocuments_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetEntityDocuments" />
+  </wsdl:message>
+  <wsdl:message name="IFacility_GetEntityDocuments_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetEntityDocumentsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFacility_GetDocuments_PM_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDocuments_PM" />
+  </wsdl:message>
+  <wsdl:message name="IFacility_GetDocuments_PM_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDocuments_PMResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFacility_GetDocuments_by_DocumentIds_PM_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDocuments_by_DocumentIds_PM" />
+  </wsdl:message>
+  <wsdl:message name="IFacility_GetDocuments_by_DocumentIds_PM_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDocuments_by_DocumentIds_PMResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFacility_proc_get_document_data_pm_InputMessage">
+    <wsdl:part name="parameters" element="tns:proc_get_document_data_pm" />
+  </wsdl:message>
+  <wsdl:message name="IFacility_proc_get_document_data_pm_OutputMessage">
+    <wsdl:part name="parameters" element="tns:proc_get_document_data_pmResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFacility_BindGridForSelectedEntity_InputMessage">
+    <wsdl:part name="parameters" element="tns:BindGridForSelectedEntity" />
+  </wsdl:message>
+  <wsdl:message name="IFacility_BindGridForSelectedEntity_OutputMessage">
+    <wsdl:part name="parameters" element="tns:BindGridForSelectedEntityResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFacility_BindTemplateForFacility_InputMessage">
+    <wsdl:part name="parameters" element="tns:BindTemplateForFacility" />
+  </wsdl:message>
+  <wsdl:message name="IFacility_BindTemplateForFacility_OutputMessage">
+    <wsdl:part name="parameters" element="tns:BindTemplateForFacilityResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFacility_Get_Facility_menu_PM_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Facility_menu_PM" />
+  </wsdl:message>
+  <wsdl:message name="IFacility_Get_Facility_menu_PM_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Facility_menu_PMResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFacility_Get_Spaces_For_Facility_PM_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Spaces_For_Facility_PM" />
+  </wsdl:message>
+  <wsdl:message name="IFacility_Get_Spaces_For_Facility_PM_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Spaces_For_Facility_PMResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFacility_Get_Spaces_For_Floor_PM_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Spaces_For_Floor_PM" />
+  </wsdl:message>
+  <wsdl:message name="IFacility_Get_Spaces_For_Floor_PM_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Spaces_For_Floor_PMResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFacility_UnassignSpacesPM_InputMessage">
+    <wsdl:part name="parameters" element="tns:UnassignSpacesPM" />
+  </wsdl:message>
+  <wsdl:message name="IFacility_UnassignSpacesPM_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UnassignSpacesPMResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFacility_Set_delete_flag_InputMessage">
+    <wsdl:part name="parameters" element="tns:Set_delete_flag" />
+  </wsdl:message>
+  <wsdl:message name="IFacility_Set_delete_flag_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Set_delete_flagResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFacility_Get_components_for_document_Count_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_components_for_document_Count" />
+  </wsdl:message>
+  <wsdl:message name="IFacility_Get_components_for_document_Count_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_components_for_document_CountResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFacility_Delete_Document_InputMessage">
+    <wsdl:part name="parameters" element="tns:Delete_Document" />
+  </wsdl:message>
+  <wsdl:message name="IFacility_Delete_Document_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Delete_DocumentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFacility_Insert_Update_Hierarchy_Facility_InputMessage">
+    <wsdl:part name="parameters" element="tns:Insert_Update_Hierarchy_Facility" />
+  </wsdl:message>
+  <wsdl:message name="IFacility_Insert_Update_Hierarchy_Facility_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Insert_Update_Hierarchy_FacilityResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFacility_Insert_Update_Facility_Profile_InputMessage">
+    <wsdl:part name="parameters" element="tns:Insert_Update_Facility_Profile" />
+  </wsdl:message>
+  <wsdl:message name="IFacility_Insert_Update_Facility_Profile_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Insert_Update_Facility_ProfileResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFacility_Insert_Update_Custom_Hierarchy_Relation_InputMessage">
+    <wsdl:part name="parameters" element="tns:Insert_Update_Custom_Hierarchy_Relation" />
+  </wsdl:message>
+  <wsdl:message name="IFacility_Insert_Update_Custom_Hierarchy_Relation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Insert_Update_Custom_Hierarchy_RelationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFacility_Get_Facility_menu_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Facility_menu" />
+  </wsdl:message>
+  <wsdl:message name="IFacility_Get_Facility_menu_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Facility_menuResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFacility_proc_get_facility_data_InputMessage">
+    <wsdl:part name="parameters" element="tns:proc_get_facility_data" />
+  </wsdl:message>
+  <wsdl:message name="IFacility_proc_get_facility_data_OutputMessage">
+    <wsdl:part name="parameters" element="tns:proc_get_facility_dataResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFacility_GetFacilityDocuments_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetFacilityDocuments" />
+  </wsdl:message>
+  <wsdl:message name="IFacility_GetFacilityDocuments_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFacilityDocumentsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFacility_Add_Facility_Document_InputMessage">
+    <wsdl:part name="parameters" element="tns:Add_Facility_Document" />
+  </wsdl:message>
+  <wsdl:message name="IFacility_Add_Facility_Document_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Add_Facility_DocumentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFacility_Get_Hierarchy_Data_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Hierarchy_Data" />
+  </wsdl:message>
+  <wsdl:message name="IFacility_Get_Hierarchy_Data_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Hierarchy_DataResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFacility_Delete_Facility_Assigned_InputMessage">
+    <wsdl:part name="parameters" element="tns:Delete_Facility_Assigned" />
+  </wsdl:message>
+  <wsdl:message name="IFacility_Delete_Facility_Assigned_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Delete_Facility_AssignedResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFacility_GetUserFacility_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserFacility" />
+  </wsdl:message>
+  <wsdl:message name="IFacility_GetUserFacility_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserFacilityResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFacility_Get_Hierarchy_Dropdown_Data_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Hierarchy_Dropdown_Data" />
+  </wsdl:message>
+  <wsdl:message name="IFacility_Get_Hierarchy_Dropdown_Data_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Hierarchy_Dropdown_DataResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFacility_Get_Floors_For_Facility_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Floors_For_Facility" />
+  </wsdl:message>
+  <wsdl:message name="IFacility_Get_Floors_For_Facility_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Floors_For_FacilityResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFacility_Get_Spaces_For_Facility_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Spaces_For_Facility" />
+  </wsdl:message>
+  <wsdl:message name="IFacility_Get_Spaces_For_Facility_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Spaces_For_FacilityResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFacility_Get_Zones_For_Facility_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Zones_For_Facility" />
+  </wsdl:message>
+  <wsdl:message name="IFacility_Get_Zones_For_Facility_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Zones_For_FacilityResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFacility_Get_Floors_For_Selected_Facility_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Floors_For_Selected_Facility" />
+  </wsdl:message>
+  <wsdl:message name="IFacility_Get_Floors_For_Selected_Facility_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Floors_For_Selected_FacilityResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFacility_Delete_Floor_InputMessage">
+    <wsdl:part name="parameters" element="tns:Delete_Floor" />
+  </wsdl:message>
+  <wsdl:message name="IFacility_Delete_Floor_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Delete_FloorResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFacility_Delete_Space_InputMessage">
+    <wsdl:part name="parameters" element="tns:Delete_Space" />
+  </wsdl:message>
+  <wsdl:message name="IFacility_Delete_Space_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Delete_SpaceResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFacility_Get_heirarchy_structure_for_facility_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_heirarchy_structure_for_facility" />
+  </wsdl:message>
+  <wsdl:message name="IFacility_Get_heirarchy_structure_for_facility_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_heirarchy_structure_for_facilityResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFacility_Get_hierarchy_for_facility_profile_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_hierarchy_for_facility_profile" />
+  </wsdl:message>
+  <wsdl:message name="IFacility_Get_hierarchy_for_facility_profile_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_hierarchy_for_facility_profileResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFacility_Assign_user_facility_InputMessage">
+    <wsdl:part name="parameters" element="tns:Assign_user_facility" />
+  </wsdl:message>
+  <wsdl:message name="IFacility_Assign_user_facility_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Assign_user_facilityResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFacility_GetUserFacilityUnAssigned_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserFacilityUnAssigned" />
+  </wsdl:message>
+  <wsdl:message name="IFacility_GetUserFacilityUnAssigned_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserFacilityUnAssignedResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFacility_Get_document_document_profile_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_document_document_profile" />
+  </wsdl:message>
+  <wsdl:message name="IFacility_Get_document_document_profile_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_document_document_profileResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFacility_Search_Documents_Entity_InputMessage">
+    <wsdl:part name="parameters" element="tns:Search_Documents_Entity" />
+  </wsdl:message>
+  <wsdl:message name="IFacility_Search_Documents_Entity_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Search_Documents_EntityResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFacility_Get_Entity_Name_Document_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Entity_Name_Document" />
+  </wsdl:message>
+  <wsdl:message name="IFacility_Get_Entity_Name_Document_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Entity_Name_DocumentResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IFacility">
+    <wsdl:operation name="BindGridForSelectedEntity_Component">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFacility/BindGridForSelectedEntity_Component" message="tns:IFacility_BindGridForSelectedEntity_Component_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFacility/BindGridForSelectedEntity_ComponentResponse" message="tns:IFacility_BindGridForSelectedEntity_Component_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="proc_bind_barcode_entity">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFacility/proc_bind_barcode_entity" message="tns:IFacility_proc_bind_barcode_entity_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFacility/proc_bind_barcode_entityResponse" message="tns:IFacility_proc_bind_barcode_entity_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="proc_bind_barcode_type">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFacility/proc_bind_barcode_type" message="tns:IFacility_proc_bind_barcode_type_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFacility/proc_bind_barcode_typeResponse" message="tns:IFacility_proc_bind_barcode_type_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="proc_bind_document_template_type">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFacility/proc_bind_document_template_type" message="tns:IFacility_proc_bind_document_template_type_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFacility/proc_bind_document_template_typeResponse" message="tns:IFacility_proc_bind_document_template_type_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="proc_get_barcode_height_width">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFacility/proc_get_barcode_height_width" message="tns:IFacility_proc_get_barcode_height_width_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFacility/proc_get_barcode_height_widthResponse" message="tns:IFacility_proc_get_barcode_height_width_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="proc_bind_barcode_entity_field">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFacility/proc_bind_barcode_entity_field" message="tns:IFacility_proc_bind_barcode_entity_field_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFacility/proc_bind_barcode_entity_fieldResponse" message="tns:IFacility_proc_bind_barcode_entity_field_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="proc_insert_Update_facility_config">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFacility/proc_insert_Update_facility_config" message="tns:IFacility_proc_insert_Update_facility_config_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFacility/proc_insert_Update_facility_configResponse" message="tns:IFacility_proc_insert_Update_facility_config_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="proc_get_facility_config">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFacility/proc_get_facility_config" message="tns:IFacility_proc_get_facility_config_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFacility/proc_get_facility_configResponse" message="tns:IFacility_proc_get_facility_config_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="proc_get_preview">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFacility/proc_get_preview" message="tns:IFacility_proc_get_preview_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFacility/proc_get_previewResponse" message="tns:IFacility_proc_get_preview_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="proc_generate_barcode">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFacility/proc_generate_barcode" message="tns:IFacility_proc_generate_barcode_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFacility/proc_generate_barcodeResponse" message="tns:IFacility_proc_generate_barcode_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="proc_get_barcode_print_option">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFacility/proc_get_barcode_print_option" message="tns:IFacility_proc_get_barcode_print_option_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFacility/proc_get_barcode_print_optionResponse" message="tns:IFacility_proc_get_barcode_print_option_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="proc_update_custom_template">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFacility/proc_update_custom_template" message="tns:IFacility_proc_update_custom_template_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFacility/proc_update_custom_templateResponse" message="tns:IFacility_proc_update_custom_template_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetZoneByFacility">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFacility/GetZoneByFacility" message="tns:IFacility_GetZoneByFacility_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFacility/GetZoneByFacilityResponse" message="tns:IFacility_GetZoneByFacility_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSpaceByZone">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFacility/GetSpaceByZone" message="tns:IFacility_GetSpaceByZone_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFacility/GetSpaceByZoneResponse" message="tns:IFacility_GetSpaceByZone_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetZoneFacility">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFacility/GetZoneFacility" message="tns:IFacility_GetZoneFacility_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFacility/GetZoneFacilityResponse" message="tns:IFacility_GetZoneFacility_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetModelUrlSpacePM">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFacility/GetModelUrlSpacePM" message="tns:IFacility_GetModelUrlSpacePM_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFacility/GetModelUrlSpacePMResponse" message="tns:IFacility_GetModelUrlSpacePM_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_Entity_Model_Viewer">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFacility/Get_Entity_Model_Viewer" message="tns:IFacility_Get_Entity_Model_Viewer_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFacility/Get_Entity_Model_ViewerResponse" message="tns:IFacility_Get_Entity_Model_Viewer_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetExistingFacilitiesPM">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFacility/GetExistingFacilitiesPM" message="tns:IFacility_GetExistingFacilitiesPM_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFacility/GetExistingFacilitiesPMResponse" message="tns:IFacility_GetExistingFacilitiesPM_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertExisting_FacilitiesPM">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFacility/InsertExisting_FacilitiesPM" message="tns:IFacility_InsertExisting_FacilitiesPM_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFacility/InsertExisting_FacilitiesPMResponse" message="tns:IFacility_InsertExisting_FacilitiesPM_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="delete_document_pm">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFacility/delete_document_pm" message="tns:IFacility_delete_document_pm_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFacility/delete_document_pmResponse" message="tns:IFacility_delete_document_pm_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFilesByFacilityForExport">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFacility/GetFilesByFacilityForExport" message="tns:IFacility_GetFilesByFacilityForExport_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFacility/GetFilesByFacilityForExportResponse" message="tns:IFacility_GetFilesByFacilityForExport_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFacilitiesPM">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFacility/GetFacilitiesPM" message="tns:IFacility_GetFacilitiesPM_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFacility/GetFacilitiesPMResponse" message="tns:IFacility_GetFacilitiesPM_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertUpdateFacilityPM">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFacility/InsertUpdateFacilityPM" message="tns:IFacility_InsertUpdateFacilityPM_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFacility/InsertUpdateFacilityPMResponse" message="tns:IFacility_InsertUpdateFacilityPM_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="delete_facility_pm">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFacility/delete_facility_pm" message="tns:IFacility_delete_facility_pm_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFacility/delete_facility_pmResponse" message="tns:IFacility_delete_facility_pm_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFacility_of_entity">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFacility/GetFacility_of_entity" message="tns:IFacility_GetFacility_of_entity_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFacility/GetFacility_of_entityResponse" message="tns:IFacility_GetFacility_of_entity_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Add_Facility_DocumentPM">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFacility/Add_Facility_DocumentPM" message="tns:IFacility_Add_Facility_DocumentPM_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFacility/Add_Facility_DocumentPMResponse" message="tns:IFacility_Add_Facility_DocumentPM_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertUpdate_DocumentPM">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFacility/InsertUpdate_DocumentPM" message="tns:IFacility_InsertUpdate_DocumentPM_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFacility/InsertUpdate_DocumentPMResponse" message="tns:IFacility_InsertUpdate_DocumentPM_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertUpdate_BulkDocumentPM">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFacility/InsertUpdate_BulkDocumentPM" message="tns:IFacility_InsertUpdate_BulkDocumentPM_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFacility/InsertUpdate_BulkDocumentPMResponse" message="tns:IFacility_InsertUpdate_BulkDocumentPM_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertUpdate_Document_document_checklist">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFacility/InsertUpdate_Document_document_checklist" message="tns:IFacility_InsertUpdate_Document_document_checklist_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFacility/InsertUpdate_Document_document_checklistResponse" message="tns:IFacility_InsertUpdate_Document_document_checklist_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEntityDocuments">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFacility/GetEntityDocuments" message="tns:IFacility_GetEntityDocuments_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFacility/GetEntityDocumentsResponse" message="tns:IFacility_GetEntityDocuments_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDocuments_PM">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFacility/GetDocuments_PM" message="tns:IFacility_GetDocuments_PM_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFacility/GetDocuments_PMResponse" message="tns:IFacility_GetDocuments_PM_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDocuments_by_DocumentIds_PM">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFacility/GetDocuments_by_DocumentIds_PM" message="tns:IFacility_GetDocuments_by_DocumentIds_PM_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFacility/GetDocuments_by_DocumentIds_PMResponse" message="tns:IFacility_GetDocuments_by_DocumentIds_PM_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="proc_get_document_data_pm">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFacility/proc_get_document_data_pm" message="tns:IFacility_proc_get_document_data_pm_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFacility/proc_get_document_data_pmResponse" message="tns:IFacility_proc_get_document_data_pm_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BindGridForSelectedEntity">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFacility/BindGridForSelectedEntity" message="tns:IFacility_BindGridForSelectedEntity_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFacility/BindGridForSelectedEntityResponse" message="tns:IFacility_BindGridForSelectedEntity_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BindTemplateForFacility">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFacility/BindTemplateForFacility" message="tns:IFacility_BindTemplateForFacility_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFacility/BindTemplateForFacilityResponse" message="tns:IFacility_BindTemplateForFacility_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_Facility_menu_PM">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFacility/Get_Facility_menu_PM" message="tns:IFacility_Get_Facility_menu_PM_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFacility/Get_Facility_menu_PMResponse" message="tns:IFacility_Get_Facility_menu_PM_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_Spaces_For_Facility_PM">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFacility/Get_Spaces_For_Facility_PM" message="tns:IFacility_Get_Spaces_For_Facility_PM_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFacility/Get_Spaces_For_Facility_PMResponse" message="tns:IFacility_Get_Spaces_For_Facility_PM_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_Spaces_For_Floor_PM">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFacility/Get_Spaces_For_Floor_PM" message="tns:IFacility_Get_Spaces_For_Floor_PM_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFacility/Get_Spaces_For_Floor_PMResponse" message="tns:IFacility_Get_Spaces_For_Floor_PM_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UnassignSpacesPM">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFacility/UnassignSpacesPM" message="tns:IFacility_UnassignSpacesPM_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFacility/UnassignSpacesPMResponse" message="tns:IFacility_UnassignSpacesPM_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Set_delete_flag">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFacility/Set_delete_flag" message="tns:IFacility_Set_delete_flag_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFacility/Set_delete_flagResponse" message="tns:IFacility_Set_delete_flag_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_components_for_document_Count">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFacility/Get_components_for_document_Count" message="tns:IFacility_Get_components_for_document_Count_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFacility/Get_components_for_document_CountResponse" message="tns:IFacility_Get_components_for_document_Count_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Delete_Document">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFacility/Delete_Document" message="tns:IFacility_Delete_Document_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFacility/Delete_DocumentResponse" message="tns:IFacility_Delete_Document_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Insert_Update_Hierarchy_Facility">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFacility/Insert_Update_Hierarchy_Facility" message="tns:IFacility_Insert_Update_Hierarchy_Facility_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFacility/Insert_Update_Hierarchy_FacilityResponse" message="tns:IFacility_Insert_Update_Hierarchy_Facility_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Insert_Update_Facility_Profile">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFacility/Insert_Update_Facility_Profile" message="tns:IFacility_Insert_Update_Facility_Profile_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFacility/Insert_Update_Facility_ProfileResponse" message="tns:IFacility_Insert_Update_Facility_Profile_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Insert_Update_Custom_Hierarchy_Relation">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFacility/Insert_Update_Custom_Hierarchy_Relation" message="tns:IFacility_Insert_Update_Custom_Hierarchy_Relation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFacility/Insert_Update_Custom_Hierarchy_RelationResponse" message="tns:IFacility_Insert_Update_Custom_Hierarchy_Relation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_Facility_menu">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFacility/Get_Facility_menu" message="tns:IFacility_Get_Facility_menu_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFacility/Get_Facility_menuResponse" message="tns:IFacility_Get_Facility_menu_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="proc_get_facility_data">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFacility/proc_get_facility_data" message="tns:IFacility_proc_get_facility_data_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFacility/proc_get_facility_dataResponse" message="tns:IFacility_proc_get_facility_data_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFacilityDocuments">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFacility/GetFacilityDocuments" message="tns:IFacility_GetFacilityDocuments_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFacility/GetFacilityDocumentsResponse" message="tns:IFacility_GetFacilityDocuments_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Add_Facility_Document">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFacility/Add_Facility_Document" message="tns:IFacility_Add_Facility_Document_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFacility/Add_Facility_DocumentResponse" message="tns:IFacility_Add_Facility_Document_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_Hierarchy_Data">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFacility/Get_Hierarchy_Data" message="tns:IFacility_Get_Hierarchy_Data_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFacility/Get_Hierarchy_DataResponse" message="tns:IFacility_Get_Hierarchy_Data_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Delete_Facility_Assigned">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFacility/Delete_Facility_Assigned" message="tns:IFacility_Delete_Facility_Assigned_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFacility/Delete_Facility_AssignedResponse" message="tns:IFacility_Delete_Facility_Assigned_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserFacility">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFacility/GetUserFacility" message="tns:IFacility_GetUserFacility_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFacility/GetUserFacilityResponse" message="tns:IFacility_GetUserFacility_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_Hierarchy_Dropdown_Data">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFacility/Get_Hierarchy_Dropdown_Data" message="tns:IFacility_Get_Hierarchy_Dropdown_Data_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFacility/Get_Hierarchy_Dropdown_DataResponse" message="tns:IFacility_Get_Hierarchy_Dropdown_Data_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_Floors_For_Facility">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFacility/Get_Floors_For_Facility" message="tns:IFacility_Get_Floors_For_Facility_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFacility/Get_Floors_For_FacilityResponse" message="tns:IFacility_Get_Floors_For_Facility_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_Spaces_For_Facility">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFacility/Get_Spaces_For_Facility" message="tns:IFacility_Get_Spaces_For_Facility_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFacility/Get_Spaces_For_FacilityResponse" message="tns:IFacility_Get_Spaces_For_Facility_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_Zones_For_Facility">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFacility/Get_Zones_For_Facility" message="tns:IFacility_Get_Zones_For_Facility_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFacility/Get_Zones_For_FacilityResponse" message="tns:IFacility_Get_Zones_For_Facility_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_Floors_For_Selected_Facility">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFacility/Get_Floors_For_Selected_Facility" message="tns:IFacility_Get_Floors_For_Selected_Facility_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFacility/Get_Floors_For_Selected_FacilityResponse" message="tns:IFacility_Get_Floors_For_Selected_Facility_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Delete_Floor">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFacility/Delete_Floor" message="tns:IFacility_Delete_Floor_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFacility/Delete_FloorResponse" message="tns:IFacility_Delete_Floor_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Delete_Space">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFacility/Delete_Space" message="tns:IFacility_Delete_Space_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFacility/Delete_SpaceResponse" message="tns:IFacility_Delete_Space_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_heirarchy_structure_for_facility">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFacility/Get_heirarchy_structure_for_facility" message="tns:IFacility_Get_heirarchy_structure_for_facility_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFacility/Get_heirarchy_structure_for_facilityResponse" message="tns:IFacility_Get_heirarchy_structure_for_facility_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_hierarchy_for_facility_profile">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFacility/Get_hierarchy_for_facility_profile" message="tns:IFacility_Get_hierarchy_for_facility_profile_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFacility/Get_hierarchy_for_facility_profileResponse" message="tns:IFacility_Get_hierarchy_for_facility_profile_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Assign_user_facility">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFacility/Assign_user_facility" message="tns:IFacility_Assign_user_facility_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFacility/Assign_user_facilityResponse" message="tns:IFacility_Assign_user_facility_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserFacilityUnAssigned">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFacility/GetUserFacilityUnAssigned" message="tns:IFacility_GetUserFacilityUnAssigned_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFacility/GetUserFacilityUnAssignedResponse" message="tns:IFacility_GetUserFacilityUnAssigned_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_document_document_profile">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFacility/Get_document_document_profile" message="tns:IFacility_Get_document_document_profile_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFacility/Get_document_document_profileResponse" message="tns:IFacility_Get_document_document_profile_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Search_Documents_Entity">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFacility/Search_Documents_Entity" message="tns:IFacility_Search_Documents_Entity_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFacility/Search_Documents_EntityResponse" message="tns:IFacility_Search_Documents_Entity_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_Entity_Name_Document">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFacility/Get_Entity_Name_Document" message="tns:IFacility_Get_Entity_Name_Document_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFacility/Get_Entity_Name_DocumentResponse" message="tns:IFacility_Get_Entity_Name_Document_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IFacility" type="tns:IFacility">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="BindGridForSelectedEntity_Component">
+      <soap:operation soapAction="http://tempuri.org/IFacility/BindGridForSelectedEntity_Component" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="proc_bind_barcode_entity">
+      <soap:operation soapAction="http://tempuri.org/IFacility/proc_bind_barcode_entity" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="proc_bind_barcode_type">
+      <soap:operation soapAction="http://tempuri.org/IFacility/proc_bind_barcode_type" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="proc_bind_document_template_type">
+      <soap:operation soapAction="http://tempuri.org/IFacility/proc_bind_document_template_type" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="proc_get_barcode_height_width">
+      <soap:operation soapAction="http://tempuri.org/IFacility/proc_get_barcode_height_width" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="proc_bind_barcode_entity_field">
+      <soap:operation soapAction="http://tempuri.org/IFacility/proc_bind_barcode_entity_field" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="proc_insert_Update_facility_config">
+      <soap:operation soapAction="http://tempuri.org/IFacility/proc_insert_Update_facility_config" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="proc_get_facility_config">
+      <soap:operation soapAction="http://tempuri.org/IFacility/proc_get_facility_config" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="proc_get_preview">
+      <soap:operation soapAction="http://tempuri.org/IFacility/proc_get_preview" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="proc_generate_barcode">
+      <soap:operation soapAction="http://tempuri.org/IFacility/proc_generate_barcode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="proc_get_barcode_print_option">
+      <soap:operation soapAction="http://tempuri.org/IFacility/proc_get_barcode_print_option" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="proc_update_custom_template">
+      <soap:operation soapAction="http://tempuri.org/IFacility/proc_update_custom_template" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetZoneByFacility">
+      <soap:operation soapAction="http://tempuri.org/IFacility/GetZoneByFacility" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSpaceByZone">
+      <soap:operation soapAction="http://tempuri.org/IFacility/GetSpaceByZone" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetZoneFacility">
+      <soap:operation soapAction="http://tempuri.org/IFacility/GetZoneFacility" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetModelUrlSpacePM">
+      <soap:operation soapAction="http://tempuri.org/IFacility/GetModelUrlSpacePM" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Entity_Model_Viewer">
+      <soap:operation soapAction="http://tempuri.org/IFacility/Get_Entity_Model_Viewer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetExistingFacilitiesPM">
+      <soap:operation soapAction="http://tempuri.org/IFacility/GetExistingFacilitiesPM" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertExisting_FacilitiesPM">
+      <soap:operation soapAction="http://tempuri.org/IFacility/InsertExisting_FacilitiesPM" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="delete_document_pm">
+      <soap:operation soapAction="http://tempuri.org/IFacility/delete_document_pm" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFilesByFacilityForExport">
+      <soap:operation soapAction="http://tempuri.org/IFacility/GetFilesByFacilityForExport" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFacilitiesPM">
+      <soap:operation soapAction="http://tempuri.org/IFacility/GetFacilitiesPM" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertUpdateFacilityPM">
+      <soap:operation soapAction="http://tempuri.org/IFacility/InsertUpdateFacilityPM" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="delete_facility_pm">
+      <soap:operation soapAction="http://tempuri.org/IFacility/delete_facility_pm" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFacility_of_entity">
+      <soap:operation soapAction="http://tempuri.org/IFacility/GetFacility_of_entity" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Add_Facility_DocumentPM">
+      <soap:operation soapAction="http://tempuri.org/IFacility/Add_Facility_DocumentPM" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertUpdate_DocumentPM">
+      <soap:operation soapAction="http://tempuri.org/IFacility/InsertUpdate_DocumentPM" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertUpdate_BulkDocumentPM">
+      <soap:operation soapAction="http://tempuri.org/IFacility/InsertUpdate_BulkDocumentPM" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertUpdate_Document_document_checklist">
+      <soap:operation soapAction="http://tempuri.org/IFacility/InsertUpdate_Document_document_checklist" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEntityDocuments">
+      <soap:operation soapAction="http://tempuri.org/IFacility/GetEntityDocuments" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDocuments_PM">
+      <soap:operation soapAction="http://tempuri.org/IFacility/GetDocuments_PM" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDocuments_by_DocumentIds_PM">
+      <soap:operation soapAction="http://tempuri.org/IFacility/GetDocuments_by_DocumentIds_PM" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="proc_get_document_data_pm">
+      <soap:operation soapAction="http://tempuri.org/IFacility/proc_get_document_data_pm" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BindGridForSelectedEntity">
+      <soap:operation soapAction="http://tempuri.org/IFacility/BindGridForSelectedEntity" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BindTemplateForFacility">
+      <soap:operation soapAction="http://tempuri.org/IFacility/BindTemplateForFacility" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Facility_menu_PM">
+      <soap:operation soapAction="http://tempuri.org/IFacility/Get_Facility_menu_PM" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Spaces_For_Facility_PM">
+      <soap:operation soapAction="http://tempuri.org/IFacility/Get_Spaces_For_Facility_PM" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Spaces_For_Floor_PM">
+      <soap:operation soapAction="http://tempuri.org/IFacility/Get_Spaces_For_Floor_PM" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UnassignSpacesPM">
+      <soap:operation soapAction="http://tempuri.org/IFacility/UnassignSpacesPM" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Set_delete_flag">
+      <soap:operation soapAction="http://tempuri.org/IFacility/Set_delete_flag" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_components_for_document_Count">
+      <soap:operation soapAction="http://tempuri.org/IFacility/Get_components_for_document_Count" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Delete_Document">
+      <soap:operation soapAction="http://tempuri.org/IFacility/Delete_Document" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Insert_Update_Hierarchy_Facility">
+      <soap:operation soapAction="http://tempuri.org/IFacility/Insert_Update_Hierarchy_Facility" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Insert_Update_Facility_Profile">
+      <soap:operation soapAction="http://tempuri.org/IFacility/Insert_Update_Facility_Profile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Insert_Update_Custom_Hierarchy_Relation">
+      <soap:operation soapAction="http://tempuri.org/IFacility/Insert_Update_Custom_Hierarchy_Relation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Facility_menu">
+      <soap:operation soapAction="http://tempuri.org/IFacility/Get_Facility_menu" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="proc_get_facility_data">
+      <soap:operation soapAction="http://tempuri.org/IFacility/proc_get_facility_data" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFacilityDocuments">
+      <soap:operation soapAction="http://tempuri.org/IFacility/GetFacilityDocuments" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Add_Facility_Document">
+      <soap:operation soapAction="http://tempuri.org/IFacility/Add_Facility_Document" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Hierarchy_Data">
+      <soap:operation soapAction="http://tempuri.org/IFacility/Get_Hierarchy_Data" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Delete_Facility_Assigned">
+      <soap:operation soapAction="http://tempuri.org/IFacility/Delete_Facility_Assigned" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserFacility">
+      <soap:operation soapAction="http://tempuri.org/IFacility/GetUserFacility" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Hierarchy_Dropdown_Data">
+      <soap:operation soapAction="http://tempuri.org/IFacility/Get_Hierarchy_Dropdown_Data" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Floors_For_Facility">
+      <soap:operation soapAction="http://tempuri.org/IFacility/Get_Floors_For_Facility" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Spaces_For_Facility">
+      <soap:operation soapAction="http://tempuri.org/IFacility/Get_Spaces_For_Facility" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Zones_For_Facility">
+      <soap:operation soapAction="http://tempuri.org/IFacility/Get_Zones_For_Facility" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Floors_For_Selected_Facility">
+      <soap:operation soapAction="http://tempuri.org/IFacility/Get_Floors_For_Selected_Facility" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Delete_Floor">
+      <soap:operation soapAction="http://tempuri.org/IFacility/Delete_Floor" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Delete_Space">
+      <soap:operation soapAction="http://tempuri.org/IFacility/Delete_Space" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_heirarchy_structure_for_facility">
+      <soap:operation soapAction="http://tempuri.org/IFacility/Get_heirarchy_structure_for_facility" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_hierarchy_for_facility_profile">
+      <soap:operation soapAction="http://tempuri.org/IFacility/Get_hierarchy_for_facility_profile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Assign_user_facility">
+      <soap:operation soapAction="http://tempuri.org/IFacility/Assign_user_facility" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserFacilityUnAssigned">
+      <soap:operation soapAction="http://tempuri.org/IFacility/GetUserFacilityUnAssigned" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_document_document_profile">
+      <soap:operation soapAction="http://tempuri.org/IFacility/Get_document_document_profile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Search_Documents_Entity">
+      <soap:operation soapAction="http://tempuri.org/IFacility/Search_Documents_Entity" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Entity_Name_Document">
+      <soap:operation soapAction="http://tempuri.org/IFacility/Get_Entity_Name_Document" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Facility">
+    <wsdl:port name="BasicHttpBinding_IFacility" binding="tns:BasicHttpBinding_IFacility">
+      <soap:address location="http://localhost:4444/Client%20WCF/Facility.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.datacontract.org/2004/07/" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://testpm.ecodomus.com/Client WCF/TypeProfile.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="TypeModel">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AttributeValue" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ClientId" type="ser:guid" />
+      <xs:element minOccurs="0" name="Contractor" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CreatedBy" type="ser:guid" />
+      <xs:element minOccurs="0" name="Designer" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DesignerOrContractor_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Error" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Facility_Id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Facility_Ids" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Fk_Asset_Type_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Fk_Manufacturer_Id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Fk_Masterformat_Id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Fk_Omniclass_Id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Fk_Uniformat_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Fk_Warranty_Guarranter_labour_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Fk_Warranty_Guarranter_part_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Fk_Warranty_duration_Unit_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Flag" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IsMajor" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IsNew" type="ser:char" />
+      <xs:element minOccurs="0" name="Job_category_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Masterformat" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Model_number" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="New_Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Omniclass" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Orderby" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Organization_Id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Pageindex" type="xs:int" />
+      <xs:element minOccurs="0" name="Pagesize" type="xs:int" />
+      <xs:element minOccurs="0" name="Parent_master_format_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="PartNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Pk_Spare_Id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Pk_resource_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Project_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Resource_description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Resource_name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SetNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="System_Role" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Txt_Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Txt_Expected_life" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Txt_Part_No" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Txt_Replacement_Cost" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Txt_Search" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Txt_Type_Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Txt_Warranty_Duration_labour" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Txt_criteria" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Type_Id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Type_Ids" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Uniformat" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="User_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="fk_Spare_category_Id" type="ser:guid" />
+      <xs:element minOccurs="0" name="fk_typeId" type="ser:guid" />
+      <xs:element minOccurs="0" name="jobCategory" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="jobDuration" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="jobDurationUnit" type="ser:guid" />
+      <xs:element minOccurs="0" name="jobFrequency" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="jobFrequencyUnit" type="ser:guid" />
+      <xs:element minOccurs="0" name="jobPriors" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="jobResourceName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="jobStart" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="jobStartUnit" type="ser:guid" />
+      <xs:element minOccurs="0" name="jobStatus" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="jobTaskId" type="ser:guid" />
+      <xs:element minOccurs="0" name="jobTaskNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="jobdesc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="jobid" type="ser:guid" />
+      <xs:element minOccurs="0" name="jobname" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="spare_name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="txt_Warranty_Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="txt_Warranty_Duration_part" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TypeModel" nillable="true" type="tns:TypeModel" />
+</xs:schema>

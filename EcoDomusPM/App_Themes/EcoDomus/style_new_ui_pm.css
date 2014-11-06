@@ -1,0 +1,580 @@
+﻿.searchImage
+{
+    background-image: url('../../App/Images/Icons/icon_search_sm.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    font-family: "Arial" , sans-serif;
+    font-size: 12px;
+}
+.gridHeadText
+{ 
+    font-family: "Verdana" , "Sans-Serif";
+    font-style: normal;
+    font-size: medium;
+    color: White;
+}
+.entityImage
+{
+    padding-left: 7px;
+}
+.gridHeaderText
+{
+    font-family: "Arial" , sans-serif;
+    font-size: 16px;
+    height: 20px;
+    font-weight: bold;
+    background-color: #AFAFAF;
+}
+
+.gridTopButton
+{
+    width:110px;
+    font-family:Arial;
+    font-style:normal;
+    padding-top:3px;
+    padding-bottom:3px;
+    padding-left:0px;
+    padding-right:1px;
+}
+
+.tableHeader
+{
+	padding :0px;
+	border-collapse:collapse;
+	text-align:right;
+	width:100%;
+}
+
+.bottomAlignment
+{
+    vertical-align:bottom;
+    padding-right: 1px;
+        
+}
+
+.lblToolTip
+{
+    padding-left: 4px;
+    padding-right:2px;
+    padding-bottom:2px;
+    vertical-align:bottom;
+}
+.gridRadPnlHeader
+{
+    background-color: Gray;
+    height: 30px;
+    width: 100%;
+    vertical-align: middle;
+}
+.captiondock
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #990000;
+    text-align: left;
+    vertical-align: middle;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+
+.gridRadPnlHeaderBottom
+{
+    background-color: Orange;
+    height: 1px;
+    width: 100%;
+}
+.dropDownImage
+{
+    right: 15px;
+}
+
+.PropertyValueControlFixPosition div#PropertyValueControl_RadAjaxPanelPropertyValueControl tr:first-child{
+    vertical-align: top;
+}
+
+.searchTextBox
+{
+    position: relative;
+    right: 10px;
+}
+
+.wizardHeadImage
+{
+    background-color: #FFA500;
+    height: 30px;
+    background-attachment: scroll;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: right;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.wizardLeftImage
+{
+    float: left;
+    padding-left: 15px;
+    vertical-align: middle;
+    height: 20;
+    right: 5px;
+}
+.wizardRightImage
+{
+    float: right;
+    padding-right: 10px;
+    vertical-align: middle;
+    height: 20;
+}
+
+
+
+.RadWindow_Default .rwCorner .rwTopLeft, .RadWindow_Default .rwTitlebar
+{
+    width: 0px;
+    height: 0px;
+}
+.RadWindow_Default .rwCorner .rwTopRight, .RadWindow_Default .rwIcon, .RadWindow_Default table .rwTopLeft, .RadWindow_Default table .rwTopRight, .RadWindow_Default table .rwFooterLeft, .RadWindow_Default table .rwFooterRight, .RadWindow_Default table .rwFooterCenter, .RadWindow_Default table .rwBodyLeft, .RadWindow_Default table .rwBodyRight, .RadWindow_Default table .rwTitlebar
+{
+    background: none;
+}
+
+.RadWindow_Default table .rwStatusbar .rwLoading
+{
+    background: none !important;
+    border: 0px;
+    display: none;
+    width: 0px;
+    height: 0px;
+}
+.RadWindow.rwMinimizedWindowShadow .RadWindow.rwMinimizedWindowShadow .rwTable, .normalLabel
+{
+    font-family: "Arial" , sans-serif;
+    font-size: 12px;
+}
+.normalLabelBold
+{
+    font-family: "Arial" , sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+}
+.headerBoldLabel
+{
+    font-family: "Arial" , sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.lblHeading
+{
+    font-family: "Arial";
+    font-size: 10px;
+}
+
+.tdValign
+{
+    vertical-align: top;
+    margin: 0;
+}
+.lnkButton
+{
+    font-family: "Arial";
+    font-size: 10px;
+    color: Black;
+    text-decoration: none;
+}
+
+.lnkButtonImg
+{
+    height: 14px;
+    vertical-align: bottom;
+}
+
+
+.lblBold
+{
+    font-family: "Arial" , sans-serif;
+    font-size: 12px;
+    height: 20px;
+    vertical-align: middle;
+    font-weight: bold;
+}
+
+.gridHeaderBoldText
+{
+    font-family: "Arial" , sans-serif;
+    font-size: 14px;
+    vertical-align: bottom;
+    font-weight: bold;
+}
+
+
+.textAreaScrollBar
+{
+    font-family: "Arial" , sans-serif;
+    font-size: 12px;
+    overflow: auto;
+    padding-left: 10px;
+    padding-top: 10px;
+    border-left-color: #D4D4C3;
+    border-top-color: #D4D4C3;
+    border-bottom-color: #E8E8E8;
+    border-right-color: #E8E8E8;
+    height: 170px;
+}
+
+
+
+
+
+html 
+{
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+}
+
+
+/* Skins for new UI */
+.LoginBody
+{
+    background-image: url("../../App/Images/Icons/BodyBackground.PNG");
+    background-repeat: repeat;
+}
+
+.LangaugeBox  
+{
+    font-family:Arial;
+    font-size:medium;
+    font-style:normal;
+    font-weight:normal;
+    text-align: center;
+}
+.LoginBox
+{
+    background-image: url("../../App/Images/Icons/LoginMenuBackground.PNG");
+    border-bottom: 1px solid #FF8040;
+    border-top: 1px solid #FF8040;
+    margin-top: 150px;
+    margin-right: auto;
+    margin-left: auto;
+    float: none;
+    height: 250px;
+}
+
+.LoginBoxTable
+{
+    position: relative;
+    top: 20%;
+    left: 20%;
+}
+
+.LoginButton
+{
+    outline: none;
+}
+
+.ForgotPassword
+{
+    background-color: Black;
+    width: 180px;
+    text-align: center;
+    border: 1px solid White;
+    border-top: none;
+    float: right;
+    margin-right: 40px;
+    padding: 4px;
+}
+
+.ForgotPassword a
+{
+    color: White;
+    text-decoration: none;
+    font-family:Arial;
+    font-size:14px;
+}
+
+.txtboxHeight1
+{
+    border-top:2px solid #939393;
+    border-left:2px solid #C5C5C5;
+    border-right:2px solid #E2E2E2 ;
+    border-bottom:0px;
+   
+}
+
+.MainLogo
+{
+    background-image: url('../../App/Images/Icons/logo-new.gif');
+    width: 40%;
+    background-repeat: no-repeat;
+}
+
+.gradient1
+{
+    background: -moz-linear-gradient(top, #A4A4A4, #D9D9D9);
+    background: -webkit-linear-gradient(top, #A4A4A4, #D9D9D9);
+    background: -o-linear-gradient(top, #A4A4A4, #D9D9D9);
+    background: linear-gradient(top, #A4A4A4, #D9D9D9);
+    /* versions of IE use these */
+    filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#A4A4A4',EndColorStr='#D9D9D9');
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#A4A4A4, endColorstr=#D9D9D9)";
+    }
+
+
+.gradient
+{
+     background: -moz-linear-gradient(top, #A4A4A4, #FAFAFA);
+    background: -webkit-linear-gradient(top, #A4A4A4, #FAFAFA);
+    background: -o-linear-gradient(top, #A4A4A4, #FAFAFA);
+    background: linear-gradient(top, #A4A4A4, #FAFAFA);
+    /* versions of IE use these */
+    filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#A4A4A4',EndColorStr='#FAFAFA');
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#A4A4A4, endColorstr=#FAFAFA)";
+    }
+
+.VersionHead
+{
+    color: White;
+    float: right;
+    text-decoration: none;
+}
+
+.MainProfile
+{
+    float:right;
+    margin-right: 2px;
+    font-family: "Arial" , sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    padding: 0px 2px 0px 2px;
+}
+
+.MainProfileV1
+{
+    float:right;
+    margin-right: 0px;
+    font-family: "Arial" , sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    vertical-align: bottom;
+    width: 100%;
+    height: 30px;
+    padding-bottom: 0px;
+    table-layout: fixed;
+    overflow: hidden;
+} 
+.MainPath
+{
+    float: left;
+    vertical-align: top;
+}
+
+.LangaugeTop
+{
+    margin: 0;
+    height: 1px;
+}
+
+
+.LogoutBtnHover
+{
+    color: Gray;
+    text-decoration: none;
+}
+
+.LogoutBtn
+{
+    color: Gray;
+    text-decoration: underline;
+    font-family:"Arial";
+    font-size:13;
+    vertical-align:text-bottom;
+     
+}
+.LogoutBtnV1
+{
+    color: Gray;
+    text-decoration:none;
+    font-family: "Arial" ;
+    font-weight:normal;
+    font-style:normal;
+    font-size:12px;
+}
+.btnSettingsMenu
+{
+    outline: none;
+}
+
+.tdZebraDarkkGrayNew
+{
+    background-color:#F0F0EA;
+}
+.tdZebraDarkkGray
+{
+    background-image: url('../../App/Images/asset_zebra-bkgrd_gray1.PNG');
+    
+}
+
+  .LabelText
+{
+	font-size:10px;
+	font-family:Arial;
+	font-style:normal;
+	font-weight:lighter;
+}
+
+
+
+.divZebraDarkkGray3
+{
+      font-family : 'Lucida Sans Unicode';
+      font-size:small;
+      font-weight:bold;
+       font-style:normal;  
+       text-transform: capitalize; 
+       color: #FFFFFF; 
+       text-decoration: none;
+}
+.tdZebraLightGrayOld
+{
+    background-image: url('../../App/Images/asset_zebra-bkgrd_gray2.PNG');
+}
+
+.tdZebraLightGray
+{
+    background-color:#F7F7F7;
+}
+
+.tdZebraDarkkGray3
+{
+     background-image: url('../../App/Images/DsahbordPM.PNG');
+}
+
+.lblGray1
+{
+    color:#323232;
+    font-family: "Arial" , sans-serif;
+    font-size:small;
+    font-variant:normal;
+    font-weight:normal;
+    font-style:normal;
+}
+
+.lblGray
+{
+    color:#323232;
+    font-family: "Arial" , sans-serif;
+    font-size:small;
+    font-variant:small-caps;
+    font-weight:normal;
+    font-style:normal;
+}
+
+.lblGrayLight
+{
+    color: #797979;
+    font-family: "Arial" , sans-serif;
+    font-size:small;
+    font-variant:small-caps;
+    font-weight:normal;
+    font-style:normal;
+}
+.ChangeColor
+{
+    font-size:14px;
+    font-family:Arial;
+    color: #595959;
+    
+}
+
+
+.ChangeColorV1
+{
+    font-size:14px;
+    font-family:Arial;
+    color: #595959;
+    font-family: "Arial" ;
+    font-weight:normal;
+    font-style:normal;
+}
+
+#lblSitemapRoot
+{
+    font-size:16px;
+    font-family:Arial;
+    font-weight:500;
+    color: #595959;
+}
+
+#lblSitemapRootV1
+{
+    font-size:14px;
+    font-family:Arial;
+    font-weight:500;
+    color:Black;
+
+}
+
+/* this following classes mentain for new design*/
+#td_contentPlaceHolder
+{
+    width:100%;
+    table-layout: fixed;
+    overflow: auto;
+    border-top: 1px solid #000000;
+    background-color:White;
+    vertical-align:top;
+    float:right;
+    padding-left:0px;
+    
+}
+.centerAlign
+        {
+            padding:3px;
+        }
+
+#div_contentPlaceHolderOuterMain
+{
+   width: 100%; 
+   display: block; 
+   white-space: nowrap;
+   overflow: hidden; 
+   margin: 0px; 
+   padding:0px;
+   table-layout: fixed;
+}
+
+#div_contentPlaceHolder
+{
+   width: 100%; 
+   height: 100%;
+   display: block; 
+   white-space: nowrap; 
+   overflow: hidden; 
+   margin: 0px; 
+   table-layout: fixed;
+}
+
+#dvFooter
+{
+  height: 100%; 
+  vertical-align: bottom;
+  float: right; 
+  padding-right: 05px;
+  padding-bottom: 0px;
+  font-size:small;
+  font-family:Arial;
+  font-weight:100;
+  
+  
+}
+
+.collapsRemove
+{
+    padding-right:10px;
+}
+
+.RadGrid_Default .rgSelectedRow TD
+{
+    color:White;
+}

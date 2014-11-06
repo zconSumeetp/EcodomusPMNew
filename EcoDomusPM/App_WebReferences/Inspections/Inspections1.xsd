@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.datacontract.org/2004/07/" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:4444/Client WCF/Inspections.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="InspectionModel">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Facility_name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Fk_facility_id" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Inspection_date" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Inspection_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="New_inspection_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Search_text" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="User_id" type="ser:guid" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="InspectionModel" nillable="true" type="tns:InspectionModel" />
+</xs:schema>

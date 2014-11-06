@@ -1,0 +1,182 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="EcoDomusMaster.master.cs"
+    Inherits="App_EcoDomusMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<%@ Register Assembly="Telerik.Web.UI" Namespace="Telerik.Web.UI" TagPrefix="telerik" %>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=7" />
+    <title>EcoDomus</title>
+    <link rel="stylesheet" type="text/css" href="../../App_Themes/EcoDomus/style.css" />
+    <link href="../../App_Themes/EcoDomus/radmenu.css" rel="stylesheet" type="text/css" />
+    <script language="javascript" type="text/javascript">
+        function windowresize() {
+            if (screen.width <= 1024) {
+                document.getElementById("tblmaster").style.width = screen.width;
+            }
+        }
+    </script>
+</head>
+<body style="margin: 0px 0px 0px 0px; padding-top: 0;" onload="windowresize();">
+    <form id="form1" runat="server" method="Post" style="margin: 0px 0px 0px 0px; padding-top: 0;"
+    target="_self">
+    <asp:ScriptManager ID="ScriptManager1" runat="server" AsyncPostBackTimeout="900">
+    </asp:ScriptManager>
+    <div style="margin: 0px 0px 0px 0px">
+        <telerik:radformdecorator id="rdfAll" decoratedcontrols="Scrollbars,Buttons" skin="Vista"
+            runat="server" />
+        <table id="tblmaster" class="tableHeader" border="0" width="100%" cellpadding="0"
+            cellspacing="0" style="margin: 0 0 0 0;">
+            <tr style="height: 10%;margin-left:700px;">
+            <td>
+            <table>
+            <tr>
+                <td align="left" valign="top" style="width: 15%;">
+                                <img alt="EcoDomus logo" src="../Images/EcoDomus_logo.jpg" />
+                </td>
+            
+                <td>
+                <table>
+                <tr>
+                <td style="width:1000px">
+                    <asp:Label ID="lblUserName" runat="server"></asp:Label>
+                    <asp:CheckBox ID="chkfacility" runat="server" AutoPostBack="true" />
+                    
+                </td>
+                </tr>
+                <tr>
+                    <td>
+                       <telerik:radmenu id="radQ1Menu" runat="server" skin="Default" enableembeddedskins="false">
+                       </telerik:radmenu>
+                    </td>
+                            <td style="width:5%; vertical-align:top; margin-top:10px" align="right">
+                                    <asp:Label ID="lblTodayDate" Font-Bold="true" runat="server"></asp:Label>
+                            </td>
+                            <td style="width:20px; vertical-align:top" align="right">
+                               <asp:ImageButton ID="divHelp" runat="server" ImageUrl="~/App/Images/Buttons/newhelp.gif"
+                                    OnClick="divHelp_Click" /> 
+                            </td>
+
+                            <td style="width:20px; vertical-align:top" align="right">
+                                <asp:ImageButton ID="lnkbtnLogOut" runat="server" CausesValidation="false" OnClick="lnkbtnLogOut_Click"
+                                    ImageUrl="~/App/Images/Buttons/LogOut.gif" />
+                            </td>
+                
+                </tr>
+                
+                </table>
+                </td>          
+                </tr>
+              </table>
+              </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                        <tr>
+                            <td align="left" valign="middle">
+                               <div style="margin: 12px 0px 0px 0px" id="divsitemap">
+                                    <asp:SiteMapPath ID="SiteMapPath1" runat="server" CssClass="ChangeColor">
+                                        <PathSeparatorTemplate>
+                                            <asp:Image ID="imgBrdcrmsLogo" runat="server" ImageUrl="~/App/Images/arrow-brdcrms.gif" />
+                                        </PathSeparatorTemplate>
+                                    </asp:SiteMapPath>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="left" width="100%" height="100%">
+                                <div style="margin: 12px 0px 0px 0px">
+                                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                                    </asp:ContentPlaceHolder>
+                                    <asp:ContentPlaceHolder ID="cphHead" runat="server">
+                                    </asp:ContentPlaceHolder>
+                                    
+                                </div>
+                            </td>
+                            <td width="0%">
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                <table width="100%">
+                <tr>
+                <td align="left">
+                 <asp:Image ID="img_logo2" Width="170px" Height="40px" align="left" runat="server" AlternateText="ClientLogo"/>
+                </td>
+                <td align="right">
+                <div id="footer">
+                        &copy; Copyright 2008-2011. EcoDomus, Inc.
+                        <asp:Image ID="imgSmallLogo" runat="server" ImageUrl="~/App/Images/small logo.jpg"
+                            Height="35px" Width="35px" />
+                    </div>
+                </td>
+                </tr>
+                </table>
+                    
+                </td>
+            </tr>
+        </table>
+    </div>
+     <telerik:RadWindowManager Visible="true" ID="rad_window" VisibleStatusbar="false"
+        AutoSize="false" EnableShadow="false" ShowOnTopWhenMaximized="false" runat="server"
+        KeepInScreenBounds="true" Behaviors="Move,Resize,Close" Skin="Forest">
+        <Windows>
+            <telerik:RadWindow Visible="true" ID="rd_facility_popup" runat="server"  Title="EcoDomus FM:Select Client "
+                Animation="Slide" KeepInScreenBounds="true" ReloadOnShow="false" VisibleTitlebar="true"
+                AutoSize="false"  Width="900" Height="400" VisibleStatusbar="false"
+                VisibleOnPageLoad="false" Skin="Forest">
+            </telerik:RadWindow>
+        </Windows>
+    </telerik:RadWindowManager>
+
+    <telerik:RadCodeBlock ID="loadPopUp" runat="server">
+
+     <script language="javascript" type="text/javascript">
+
+         function deleteSpaceDocument() {
+             var flag;
+             flag = confirm("Do you want to delete this document?");
+             return flag;
+         }
+
+         function OpenFacilityWindow() 
+         {
+             var url = "../FacilityList.aspx?Flag=POP";
+             manager = $find("<%= rad_window.ClientID %>");
+             if (manager != null) 
+             {
+                 var windows = manager.open(url);
+                 windows.show();
+                 windows.setSize(700, 500);
+                 windows.MoveTo(200, 150);
+             }
+         }
+
+         function openClientWindow() {
+             var url = "../Switchclient.aspx";
+             manager = $find("<%= rad_window.ClientID %>");
+             if (manager != null) {
+                 var windows = manager.open(url);
+                 windows.show();
+                 windows.setSize(600,300);
+                 windows.MoveTo(200, 150);
+             }
+         }
+
+//         function rd_facility_popup_Onclientclose() {
+//             location.reload(true);
+     //         }
+     function rd_facility_popup_Onclientclose(facilityid) {
+         var url = "../App/Locations/FacilityMenu.aspx?FacilityId=" + facilityid;
+         window.location.href(url);
+     }
+     </script>
+ </telerik:RadCodeBlock>
+ <asp:HiddenField id="hf_client_name" runat="server" />
+    </form>
+</body>
+</html>

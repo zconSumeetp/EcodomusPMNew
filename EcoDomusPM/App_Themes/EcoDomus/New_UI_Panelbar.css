@@ -1,0 +1,109 @@
+﻿.NewUIPanelbar .rpRootGroup
+{
+    border-style: none !important;
+}
+
+.NewUIPanelbar a.rpLink, .NewUIPanelbar div.rpHeaderTemplate, .NewUIPanelbar .rpTemplate
+{
+    color: #000;
+    font: normal 12px/24px "Segoe UI" , Arial, sans-serif;
+}
+
+.NewUIPanelbar div.rpHeaderTemplate, .NewUIPanelbar a.rpLink
+{
+    background-color: #fdfdfd;
+    background-image: url('../../App/Images/Icons/Left_Menu_Head_2.png');
+    background-repeat:repeat-y;
+    height:28px;
+    border-style: none;
+}
+
+.NewUIPanelbar div.rpHeaderTemplate:hover, .NewUIPanelbar a.rpLink:hover
+{
+    background-color: #fdfdfd;
+    background-image: url('../../App/Images/Icons/Left_Menu_Head_1.png');
+    background-repeat:repeat-y;
+    height:28px;
+    border-style: none;
+}
+
+.NewUIPanelbar .rpOut
+{
+    border-style: none;
+    border-bottom-width: 0px !important;
+}
+
+.NewUIPanelbar a.rpFocused, .NewUIPanelbar a.rpExpanded, .NewUIPanelbar a.rpSelected, .NewUIPanelbar div.rpFocused, .NewUIPanelbar div.rpExpanded, .NewUIPanelbar div.rpSelected, .NewUIPanelbar a.rpSelected:hover
+{
+    background-color: #fdfdfd;
+    border-style: none !important;
+    background-image: url('../../App/Images/Icons/Left_Menu_Head_1.png');
+}
+
+/* <subitems> */
+.NewUIPanelbar .rpGroup
+{
+    background-color: #fff;
+}
+
+.NewUIPanelbar .rpGroup a.rpLink, .NewUIPanelbar .rpGroup div.rpHeaderTemplate, .NewUIPanelbar .rpGroup .rpTemplate 
+{
+    color: #000;
+    background-image: none;
+    background-color: transparent;
+    border-bottom-style:dashed;
+    border-bottom: 1px  #E9E9E9;
+}
+
+.NewUIPanelbar .rpGroup a.rpLink:hover
+{
+    color: Black !important;
+    background-image: url('../../App/Images/Icons/Left_Menu_Head_3.png');
+    background-repeat: repeat;
+    border-bottom: 2px solid #EEEEEE;
+}
+
+.NewUIPanelbar .rpGroup a.rpLink:hover
+{
+    color: #000;
+}
+
+.NewUIPanelbar .rpGroup a.rpLink, .NewUIPanelbar .rpGroup a.rpLink .rpOut
+{
+    background-color: transparent;
+    background-repeat: no-repeat;
+}
+
+.NewUIPanelbar .rpGroup a.rpSelected a.rpSelected:hover, 
+{
+    color: #000 !important;
+    background-image:url('../../App/Images/Icons/Left_Menu_Head_3.png') !important;
+    background-repeat:repeat-x;
+    border-bottom-style:dashed;
+    border-bottom: 1px   #E9E9E9;
+}
+
+.NewUIPanelbar .rpExpandable span.rpExpandHandle
+{
+    background-color: transparent;
+    background-image: url('../../App/Images/Icons/asset_arrow_sm.png');
+    background-repeat: no-repeat;
+}
+
+.NewUIPanelbar .rpExpanded span.rpExpandHandle
+{
+    background-color: transparent;
+    background-image: url('../../App/Images/Icons/asset_arrow_up_sm.png');
+    background-repeat: no-repeat;
+}
+
+
+.CustomScroll
+{
+    scrollbar-face-color: #969696;
+    scrollbar-shadow-style: #969696;
+    scrollbar-highlight-color: #969696;
+    scrollbar-darkshadow-color: #969696;
+    scrollbar-track-color: #bdbdbd;
+    scrollbar-arrow-color: Green;
+}

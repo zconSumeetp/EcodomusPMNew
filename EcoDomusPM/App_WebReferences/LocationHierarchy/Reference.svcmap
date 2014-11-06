@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="bab74091-920d-4f05-bf7b-4e5ea6d5ac84" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>false</ReferenceAllAssemblies>
+    <ReferencedAssemblies>
+      <ReferencedAssembly AssemblyName="System" />
+      <ReferencedAssembly AssemblyName="System.Core" />
+      <ReferencedAssembly AssemblyName="System.Data" />
+      <ReferencedAssembly AssemblyName="System.Xml" />
+      <ReferencedAssembly AssemblyName="System.Xml.Linq" />
+    </ReferencedAssemblies>
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:4444/Client%20WCF/LocationHierarchy.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="LocationsHierarchy.wsdl" MetadataType="Wsdl" ID="d7b48bf8-80d2-41b3-8686-7a7badcdaf7b" SourceId="1" SourceUrl="http://localhost:4444/Client WCF/LocationHierarchy.svc?wsdl" />
+    <MetadataFile FileName="LocationHierarchy.xsd" MetadataType="Schema" ID="d1b84fe9-9b0f-4bec-9f9b-7ccfcd25fefc" SourceId="1" SourceUrl="http://localhost:4444/Client WCF/LocationHierarchy.svc?xsd=xsd1" />
+    <MetadataFile FileName="LocationHierarchy1.xsd" MetadataType="Schema" ID="8572c269-e0fe-442a-8a55-2eab4cc9b934" SourceId="1" SourceUrl="http://localhost:4444/Client WCF/LocationHierarchy.svc?xsd=xsd0" />
+    <MetadataFile FileName="LocationHierarchy.disco" MetadataType="Disco" ID="3ee1f4ab-4369-439d-b512-3659affa7be1" SourceId="1" SourceUrl="http://localhost:4444/Client WCF/LocationHierarchy.svc?disco" />
+    <MetadataFile FileName="LocationHierarchy2.xsd" MetadataType="Schema" ID="a96ac7ce-061c-4e17-9fd2-5d244a5ca7bd" SourceId="1" SourceUrl="http://localhost:4444/Client WCF/LocationHierarchy.svc?xsd=xsd2" />
+    <MetadataFile FileName="LocationHierarchy3.xsd" MetadataType="Schema" ID="b3e73519-c4c6-42de-9015-609501c0f158" SourceId="1" SourceUrl="http://localhost:4444/Client WCF/LocationHierarchy.svc?xsd=xsd3" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

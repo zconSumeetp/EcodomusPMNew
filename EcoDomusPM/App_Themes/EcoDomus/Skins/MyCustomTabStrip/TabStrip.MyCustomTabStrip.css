@@ -1,0 +1,169 @@
+
+.RadTabStrip_MyCustomTabStrip .rtsLI,
+.RadTabStrip_MyCustomTabStrip .rtsLink
+{
+	color: #3b3b3b;
+	 
+	font: 12px/26px "Segoe UI", Arial, sans-serif;
+	
+}
+.RadTabStrip_MyCustomTabStrip   .rtsSelected
+        {
+           
+          
+            font-weight: bold;
+              font-size: 12px;
+             
+            font-family: "Arial" , sans-serif;
+        }
+        
+   
+.RadTabStrip_MyCustomTabStrip .rtsLevel1 .rtsLI,
+.RadTabStrip_MyCustomTabStrip .rtsLevel1 .rtsLink
+{
+	color:Gray;
+} 
+
+.RadTabStrip_MyCustomTabStrip .rtsLevel .rtsLink:hover,
+.RadTabStrip_MyCustomTabStrip .rtsLevel .rtsSelected,
+.RadTabStrip_MyCustomTabStrip .rtsLevel .rtsSelected:hover
+{
+	text-decoration: underline; 
+}
+
+.RadTabStrip_MyCustomTabStrip .rtsLevel1 .rtsLink:hover,
+.RadTabStrip_MyCustomTabStrip .rtsLevel1 .rtsSelected,
+.RadTabStrip_MyCustomTabStrip .rtsLevel1 .rtsSelected:hover
+{
+	text-decoration: none;
+}
+
+.RadTabStrip_MyCustomTabStrip .rtsLevel .rtsSelected,
+.RadTabStrip_MyCustomTabStrip .rtsLevel .rtsSelected:hover {
+	color: #3b3b3b;
+}
+
+.RadTabStripLeft_MyCustomTabStrip .rtsSeparator,
+.RadTabStripRight_MyCustomTabStrip .rtsSeparator
+{
+	background: #6f6f6f;
+}-
+
+/* <focus cue> */
+div.RadTabStrip_MyCustomTabStrip a.rtsLink:focus
+{
+	outline-color: #6f6f6f; 
+}
+
+div.RadTabStrip_MyCustomTabStrip a.rtsLink:focus:after
+{
+	border-color : #6f6f6f9;
+}
+/* </focus cue> */
+
+/* <disabled tabs> */
+.RadTabStrip_MyCustomTabStrip .rtsLevel .rtsDisabled
+{
+    
+	color: #666;
+}
+/* </disabled tabs> */
+
+/* <scrolling arrows> */
+.RadTabStrip_MyCustomTabStrip .rtsNextArrow,
+.RadTabStrip_MyCustomTabStrip .rtsPrevArrow,
+.RadTabStrip_MyCustomTabStrip .rtsPrevArrowDisabled,
+.RadTabStrip_MyCustomTabStrip .rtsNextArrowDisabled
+{
+	background-image: url('TabStrip/TabStripStates.png');
+}
+/* </scrolling arrows> */
+
+/* <tab backgrounds> */
+
+.RadTabStrip_MyCustomTabStrip .rtsLevel { background: #ffffff; }
+
+.RadTabStrip_MyCustomTabStrip .rtsLevel1 { background-color: #ffffff; }
+.RadTabStripTop_MyCustomTabStrip .rtsLevel2 { background: #e5e9ee url('TabStrip/Level2Bg.png') repeat-x 0 0; }
+
+.RadTabStripTop_MyCustomTabStrip .rtsLevel .rtsLink,
+.RadTabStripTop_MyCustomTabStrip .rtsLevel .rtsOut { background-image: none; }
+
+.RadTabStripTop_MyCustomTabStrip .rtsLevel1 .rtsLink,
+.RadTabStripTop_MyCustomTabStrip .rtsLevel1 .rtsOut,
+.RadTabStripBottom_MyCustomTabStrip .rtsLevel1 .rtsLink,
+.RadTabStripBottom_MyCustomTabStrip .rtsLevel1 .rtsOut,
+.RadTabStripTop_MyCustomTabStrip .rtsLevel1,
+.RadTabStripBottom_MyCustomTabStrip .rtsLevel1 { background-image: url('TabStrip/TabStripStates.png'); }
+
+.RadTabStripLeft_MyCustomTabStrip .rtsLink,
+.RadTabStripRight_MyCustomTabStrip .rtsLink { background-image: url('TabStrip/TabStripVStates.png'); }
+
+.RadTabStripLeft_MyCustomTabStrip .rtsLast .rtsLink,
+.RadTabStripRight_MyCustomTabStrip .rtsLast .rtsLink
+{
+	border-bottom: 1px solid #b6babf;
+	
+}
+
+.RadTabStripRight_MyCustomTabStrip .rtsLink,
+.RadTabStripRight_MyCustomTabStrip .rtsLI .rtsDisabled:hover { background-position: 100% 0; }
+.RadTabStripRight_MyCustomTabStrip .rtsLink:hover { background-position: 100% -200px; }
+.RadTabStripRight_MyCustomTabStrip .rtsSelected,
+.RadTabStripRight_MyCustomTabStrip .rtsSelected:hover { background-position: 100% -400px; }
+/* </tab backgrounds> */
+
+
+/* <background positioning: tabs with hovers> */
+
+/* <orientation: top> */
+
+.RadTabStripTop_MyCustomTabStrip .rtsLevel1 .rtsLink { background-position: 0 -26px;}
+.RadTabStripTop_MyCustomTabStrip .rtsLevel1 .rtsOut { background-position: 100%  -26px;}
+
+.RadTabStripTop_MyCustomTabStrip .rtsLevel1 .rtsLink:hover { background-position: 0 -52px; }
+.RadTabStripTop_MyCustomTabStrip .rtsLevel1 .rtsLink:hover .rtsOut { background-position: 100% -52px; }
+
+.RadTabStripTop_MyCustomTabStrip .rtsLevel1 .rtsSelected,
+.RadTabStripTop_MyCustomTabStrip .rtsLevel1 .rtsSelected:hover { background-position: 0 -26px; }
+.RadTabStripTop_MyCustomTabStrip .rtsLevel1 .rtsSelected .rtsOut,
+.RadTabStripTop_MyCustomTabStrip .rtsLevel1 .rtsSelected:hover .rtsOut { background-position: 100% -26px; }
+
+.RadTabStripTop_MyCustomTabStrip .rtsLevel1 .rtsDisabled:hover { background-position: 0 0; }
+.RadTabStripTop_MyCustomTabStrip .rtsLevel1 .rtsDisabled:hover .rtsOut { background-position: 100% 0; }
+
+.RadTabStripTop_MyCustomTabStrip .rtsLevel1 { background-position: 0 100%; background-repeat: repeat-x; }
+
+/* </orientation: top> */
+
+/* <orientation: bottom> */
+
+.RadTabStripBottom_MyCustomTabStrip .rtsLevel1 .rtsLink { background-position: 0 -182px; }
+.RadTabStripBottom_MyCustomTabStrip .rtsLevel1 .rtsOut { background-position: 100% -182px; }
+
+.RadTabStripBottom_MyCustomTabStrip .rtsLevel1 .rtsLink:hover { background-position: 0 -130px; }
+.RadTabStripBottom_MyCustomTabStrip .rtsLevel1 .rtsLink:hover .rtsOut { background-position: 100% -130px; }
+
+.RadTabStripBottom_MyCustomTabStrip .rtsLevel1 .rtsSelected,
+.RadTabStripBottom_MyCustomTabStrip .rtsLevel1 .rtsSelected:hover { background-position: 0 -156px; }
+.RadTabStripBottom_MyCustomTabStrip .rtsLevel1 .rtsSelected .rtsOut,
+.RadTabStripBottom_MyCustomTabStrip .rtsLevel1 .rtsSelected:hover .rtsOut { background-position: 100% -156px; }
+
+.RadTabStripBottom_MyCustomTabStrip .rtsLevel1 .rtsDisabled:hover { background-position: 0 -182px; }
+.RadTabStripBottom_MyCustomTabStrip .rtsLevel1 .rtsDisabled:hover .rtsOut { background-position: 100% -182px; }
+
+.RadTabStripBottom_MyCustomTabStrip .rtsLevel1 { background-position: 0 -599px; background-repeat: repeat-x; }
+
+/* </orientation: bottom> */
+
+/* <orientation: right> */
+
+.RadTabStripRight_MyCustomTabStrip .rtsUL .rtsLink,
+.RadTabStripRight_MyCustomTabStrip .rtsUL .rtsLI .rtsDisabled:hover { background-position: 100% 0; text-align: left; }
+.RadTabStripRight_MyCustomTabStrip .rtsUL .rtsLink:hover { background-position: 100% -200px; }
+.RadTabStripRight_MyCustomTabStrip .rtsUL .rtsSelected,
+.RadTabStripRight_MyCustomTabStrip .rtsUL .rtsSelected:hover { background-position: 100% -400px; }
+
+/* </orientation: right> */
+
+/* </background positioning: tabs with hovers> */

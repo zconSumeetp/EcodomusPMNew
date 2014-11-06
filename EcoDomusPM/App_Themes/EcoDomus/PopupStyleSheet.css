@@ -1,0 +1,57 @@
+﻿
+            .RadWindow_Simple .rwCorner .rwTopLeft,  
+            .RadWindow_Simple .rwCorner .rwTopRight,  
+            .RadWindow_Simple .rwIcon, 
+            .RadWindow_Simple table .rwTopLeft,  
+            .RadWindow_Simple table .rwTopRight,  
+            .RadWindow_Simple table .rwFooterLeft,  
+            .RadWindow_Simple table .rwFooterRight,  
+            .RadWindow_Simple table .rwFooterCenter,  
+            .RadWindow_Simple table .rwBodyLeft,  
+            .RadWindow_Simple table .rwBodyRight,  
+            .RadWindow_Simple table .rwTopResize, 
+            .RadWindow_Simple table .rwStatusbar, 
+            .RadWindow_Simple table .rwStatusbar .rwLoading 
+             {    
+                 display: none !important;   
+             }
+            .RadWindow_Simple .rwTitlebar,
+            .RadWindow_Simple .rwCloseButton
+            {
+                background-color:#FFA500;
+                font-family:Arial;
+                font-size:large;
+            }
+             
+            .RadWindow_Simple .rwControlButtons A:hover
+             {
+                 border-color: #FFA500;
+                 background-color:#FFA500;
+                 border:1px solid #FFA500;
+             }
+            .RadWindow_Simple .rwWindowContent
+            {
+                border:0px;
+                background-color:#EEEEEE;
+            }
+            .RadWindow_Simple .rwControlButtons A
+            {
+                 border-color: #FFA500;
+                 background-color:#FFA500;
+                 border:1px solid #FFA500;
+            }
+            DIV.RadWindow_Simple .rwShadow EM
+            {
+                padding:2px 0 0 15px
+            }
+            
+            .RadWindow .rwTitleRow EM
+            {
+                font:normal 15px "Segoe UI",Arial;
+                overflow:hidden;
+                white-space:nowrap;
+                float:left;
+                text-transform:inherit;
+                padding-top:0px;
+            }
+        

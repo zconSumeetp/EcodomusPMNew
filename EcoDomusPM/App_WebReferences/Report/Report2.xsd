@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.datacontract.org/2004/07/" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:4444/Client WCF/Report.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="ReportModel">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Attribute_template_id" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Attributenames" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Entity_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Entity_name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Facility_id" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Is_equipment" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Is_facility" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Is_location" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Is_project" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MI_report_type" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Omniclass_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Refresh_flag" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RowId" type="ser:guid" />
+      <xs:element minOccurs="0" name="Search_text" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Standardname" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UserId" type="ser:guid" />
+      <xs:element minOccurs="0" name="facids" type="ser:guid" />
+      <xs:element minOccurs="0" name="field_ids" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="fk_entityids" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="fk_organization_id" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="fk_phase_id" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="fkproject_id" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="majorflag" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ReportModel" nillable="true" type="tns:ReportModel" />
+</xs:schema>

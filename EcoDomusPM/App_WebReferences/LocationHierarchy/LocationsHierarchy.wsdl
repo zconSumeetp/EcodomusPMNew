@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="LocationsHierarchy" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:4444/Client WCF/LocationHierarchy.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:4444/Client WCF/LocationHierarchy.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:4444/Client WCF/LocationHierarchy.svc?xsd=xsd2" />
+      <xsd:import schemaLocation="http://localhost:4444/Client WCF/LocationHierarchy.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/EcoDomus.LocationsHierarchy" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ILocationsHierarchy_GetHierarchyData_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetHierarchyData" />
+  </wsdl:message>
+  <wsdl:message name="ILocationsHierarchy_GetHierarchyData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetHierarchyDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILocationsHierarchy_GetLevels_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLevels" />
+  </wsdl:message>
+  <wsdl:message name="ILocationsHierarchy_GetLevels_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLevelsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILocationsHierarchy_proc_insert_organization_hierarchy_InputMessage">
+    <wsdl:part name="parameters" element="tns:proc_insert_organization_hierarchy" />
+  </wsdl:message>
+  <wsdl:message name="ILocationsHierarchy_proc_insert_organization_hierarchy_OutputMessage">
+    <wsdl:part name="parameters" element="tns:proc_insert_organization_hierarchyResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILocationsHierarchy_proc_insert_custom_hierarchy_data_InputMessage">
+    <wsdl:part name="parameters" element="tns:proc_insert_custom_hierarchy_data" />
+  </wsdl:message>
+  <wsdl:message name="ILocationsHierarchy_proc_insert_custom_hierarchy_data_OutputMessage">
+    <wsdl:part name="parameters" element="tns:proc_insert_custom_hierarchy_dataResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILocationsHierarchy_proc_get_custom_hierarchy_data_InputMessage">
+    <wsdl:part name="parameters" element="tns:proc_get_custom_hierarchy_data" />
+  </wsdl:message>
+  <wsdl:message name="ILocationsHierarchy_proc_get_custom_hierarchy_data_OutputMessage">
+    <wsdl:part name="parameters" element="tns:proc_get_custom_hierarchy_dataResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILocationsHierarchy_proc_delete_custom_hierarchy_data_InputMessage">
+    <wsdl:part name="parameters" element="tns:proc_delete_custom_hierarchy_data" />
+  </wsdl:message>
+  <wsdl:message name="ILocationsHierarchy_proc_delete_custom_hierarchy_data_OutputMessage">
+    <wsdl:part name="parameters" element="tns:proc_delete_custom_hierarchy_dataResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILocationsHierarchy_proc_get_custom_hierarchy_data_by_id_InputMessage">
+    <wsdl:part name="parameters" element="tns:proc_get_custom_hierarchy_data_by_id" />
+  </wsdl:message>
+  <wsdl:message name="ILocationsHierarchy_proc_get_custom_hierarchy_data_by_id_OutputMessage">
+    <wsdl:part name="parameters" element="tns:proc_get_custom_hierarchy_data_by_idResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILocationsHierarchy_proc_get_hierarchy_level_data_InputMessage">
+    <wsdl:part name="parameters" element="tns:proc_get_hierarchy_level_data" />
+  </wsdl:message>
+  <wsdl:message name="ILocationsHierarchy_proc_get_hierarchy_level_data_OutputMessage">
+    <wsdl:part name="parameters" element="tns:proc_get_hierarchy_level_dataResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ILocationsHierarchy">
+    <wsdl:operation name="GetHierarchyData">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILocationsHierarchy/GetHierarchyData" message="tns:ILocationsHierarchy_GetHierarchyData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILocationsHierarchy/GetHierarchyDataResponse" message="tns:ILocationsHierarchy_GetHierarchyData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLevels">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILocationsHierarchy/GetLevels" message="tns:ILocationsHierarchy_GetLevels_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILocationsHierarchy/GetLevelsResponse" message="tns:ILocationsHierarchy_GetLevels_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="proc_insert_organization_hierarchy">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILocationsHierarchy/proc_insert_organization_hierarchy" message="tns:ILocationsHierarchy_proc_insert_organization_hierarchy_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILocationsHierarchy/proc_insert_organization_hierarchyResponse" message="tns:ILocationsHierarchy_proc_insert_organization_hierarchy_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="proc_insert_custom_hierarchy_data">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILocationsHierarchy/proc_insert_custom_hierarchy_data" message="tns:ILocationsHierarchy_proc_insert_custom_hierarchy_data_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILocationsHierarchy/proc_insert_custom_hierarchy_dataResponse" message="tns:ILocationsHierarchy_proc_insert_custom_hierarchy_data_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="proc_get_custom_hierarchy_data">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILocationsHierarchy/proc_get_custom_hierarchy_data" message="tns:ILocationsHierarchy_proc_get_custom_hierarchy_data_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILocationsHierarchy/proc_get_custom_hierarchy_dataResponse" message="tns:ILocationsHierarchy_proc_get_custom_hierarchy_data_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="proc_delete_custom_hierarchy_data">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILocationsHierarchy/proc_delete_custom_hierarchy_data" message="tns:ILocationsHierarchy_proc_delete_custom_hierarchy_data_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILocationsHierarchy/proc_delete_custom_hierarchy_dataResponse" message="tns:ILocationsHierarchy_proc_delete_custom_hierarchy_data_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="proc_get_custom_hierarchy_data_by_id">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILocationsHierarchy/proc_get_custom_hierarchy_data_by_id" message="tns:ILocationsHierarchy_proc_get_custom_hierarchy_data_by_id_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILocationsHierarchy/proc_get_custom_hierarchy_data_by_idResponse" message="tns:ILocationsHierarchy_proc_get_custom_hierarchy_data_by_id_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="proc_get_hierarchy_level_data">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILocationsHierarchy/proc_get_hierarchy_level_data" message="tns:ILocationsHierarchy_proc_get_hierarchy_level_data_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILocationsHierarchy/proc_get_hierarchy_level_dataResponse" message="tns:ILocationsHierarchy_proc_get_hierarchy_level_data_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_ILocationsHierarchy" type="tns:ILocationsHierarchy">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetHierarchyData">
+      <soap:operation soapAction="http://tempuri.org/ILocationsHierarchy/GetHierarchyData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLevels">
+      <soap:operation soapAction="http://tempuri.org/ILocationsHierarchy/GetLevels" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="proc_insert_organization_hierarchy">
+      <soap:operation soapAction="http://tempuri.org/ILocationsHierarchy/proc_insert_organization_hierarchy" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="proc_insert_custom_hierarchy_data">
+      <soap:operation soapAction="http://tempuri.org/ILocationsHierarchy/proc_insert_custom_hierarchy_data" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="proc_get_custom_hierarchy_data">
+      <soap:operation soapAction="http://tempuri.org/ILocationsHierarchy/proc_get_custom_hierarchy_data" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="proc_delete_custom_hierarchy_data">
+      <soap:operation soapAction="http://tempuri.org/ILocationsHierarchy/proc_delete_custom_hierarchy_data" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="proc_get_custom_hierarchy_data_by_id">
+      <soap:operation soapAction="http://tempuri.org/ILocationsHierarchy/proc_get_custom_hierarchy_data_by_id" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="proc_get_hierarchy_level_data">
+      <soap:operation soapAction="http://tempuri.org/ILocationsHierarchy/proc_get_hierarchy_level_data" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="LocationsHierarchy">
+    <wsdl:port name="BasicHttpBinding_ILocationsHierarchy" binding="tns:BasicHttpBinding_ILocationsHierarchy">
+      <soap:address location="http://localhost:4444/Client%20WCF/LocationHierarchy.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

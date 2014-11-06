@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="a011c6fb-34ef-479d-92ee-800fe9c05b05" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>false</ReferenceAllAssemblies>
+    <ReferencedAssemblies>
+      <ReferencedAssembly AssemblyName="System" />
+      <ReferencedAssembly AssemblyName="System.Core" />
+      <ReferencedAssembly AssemblyName="System.Data" />
+      <ReferencedAssembly AssemblyName="System.Xml" />
+      <ReferencedAssembly AssemblyName="System.Xml.Linq" />
+    </ReferencedAssemblies>
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:4444/Client%20WCF/Roles.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="Roles.disco" MetadataType="Disco" ID="94572231-ef17-4aba-aabb-c190ac8eb8ab" SourceId="1" SourceUrl="http://localhost:4444/Client WCF/Roles.svc?disco" />
+    <MetadataFile FileName="Roles.xsd" MetadataType="Schema" ID="979590a0-f4be-40c4-8991-5d01ba71a177" SourceId="1" SourceUrl="http://localhost:4444/Client WCF/Roles.svc?xsd=xsd1" />
+    <MetadataFile FileName="Roles.wsdl" MetadataType="Wsdl" ID="c0383af0-788d-4817-a556-0dc2585ef830" SourceId="1" SourceUrl="http://localhost:4444/Client WCF/Roles.svc?wsdl" />
+    <MetadataFile FileName="Roles1.xsd" MetadataType="Schema" ID="58535fa8-651a-49d9-9197-3d64d3578216" SourceId="1" SourceUrl="http://localhost:4444/Client WCF/Roles.svc?xsd=xsd2" />
+    <MetadataFile FileName="Roles2.xsd" MetadataType="Schema" ID="b0c95dde-f975-41ca-a8be-afafd0545d2b" SourceId="1" SourceUrl="http://localhost:4444/Client WCF/Roles.svc?xsd=xsd0" />
+    <MetadataFile FileName="Roles3.xsd" MetadataType="Schema" ID="c92089a6-76c9-4b4c-84e6-bfce13b00ab3" SourceId="1" SourceUrl="http://localhost:4444/Client WCF/Roles.svc?xsd=xsd3" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

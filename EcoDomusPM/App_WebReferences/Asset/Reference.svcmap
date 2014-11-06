@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="79fa4d93-3e5e-476f-9fa1-8ab1cf6303f6" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>false</ReferenceAllAssemblies>
+    <ReferencedAssemblies>
+      <ReferencedAssembly AssemblyName="System" />
+      <ReferencedAssembly AssemblyName="System.Core" />
+      <ReferencedAssembly AssemblyName="System.Data" />
+      <ReferencedAssembly AssemblyName="System.Xml" />
+      <ReferencedAssembly AssemblyName="System.Xml.Linq" />
+    </ReferencedAssemblies>
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:4444/Client%20WCF/Asset.svc?wsdl" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="Asset.xsd" MetadataType="Schema" ID="2571bb7a-1f74-4712-bd97-6d040b419020" SourceId="1" SourceUrl="http://localhost:4444/Client WCF/Asset.svc?xsd=xsd0" />
+    <MetadataFile FileName="Asset2.xsd" MetadataType="Schema" ID="e274ef96-bdc1-4706-a01b-c1b2e018f957" SourceId="1" SourceUrl="http://localhost:4444/Client WCF/Asset.svc?xsd=xsd8" />
+    <MetadataFile FileName="Asset3.xsd" MetadataType="Schema" ID="91f0ce90-c29c-4ccf-825d-aeabea8d1202" SourceId="1" SourceUrl="http://localhost:4444/Client WCF/Asset.svc?xsd=xsd1" />
+    <MetadataFile FileName="Asset5.xsd" MetadataType="Schema" ID="f39e723e-61fc-4a6c-b711-c96a8385671a" SourceId="1" SourceUrl="http://localhost:4444/Client WCF/Asset.svc?xsd=xsd9" />
+    <MetadataFile FileName="Asset6.xsd" MetadataType="Schema" ID="37d3d40c-001d-4584-bbd2-4406b6a54a3d" SourceId="1" SourceUrl="http://localhost:4444/Client WCF/Asset.svc?xsd=xsd6" />
+    <MetadataFile FileName="Asset.wsdl" MetadataType="Wsdl" ID="2d2102b4-ca7a-4e13-9121-8de1e61c740f" SourceId="1" SourceUrl="http://localhost:4444/Client WCF/Asset.svc?wsdl" />
+    <MetadataFile FileName="Asset7.xsd" MetadataType="Schema" ID="36cf1238-3135-415f-85d5-a8b659e8de87" SourceId="1" SourceUrl="http://localhost:4444/Client WCF/Asset.svc?xsd=xsd2" />
+    <MetadataFile FileName="Asset8.xsd" MetadataType="Schema" ID="f4a2976e-bf6a-42a5-991d-651dd6d0a30b" SourceId="1" SourceUrl="http://localhost:4444/Client WCF/Asset.svc?xsd=xsd4" />
+    <MetadataFile FileName="Asset9.xsd" MetadataType="Schema" ID="03452cc8-a5ec-4183-86cb-d2f70e2a8f54" SourceId="1" SourceUrl="http://localhost:4444/Client WCF/Asset.svc?xsd=xsd3" />
+    <MetadataFile FileName="Asset10.xsd" MetadataType="Schema" ID="ba0017f5-7df7-4087-abaa-637e3de8a19c" SourceId="1" SourceUrl="http://localhost:4444/Client WCF/Asset.svc?xsd=xsd7" />
+    <MetadataFile FileName="Asset11.xsd" MetadataType="Schema" ID="9da18d5b-92c4-4d53-b5f4-087fbf0e9ee0" SourceId="1" SourceUrl="http://localhost:4444/Client WCF/Asset.svc?xsd=xsd5" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

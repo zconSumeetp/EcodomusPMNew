@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.datacontract.org/2004/07/" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:4444/Client WCF PM_FM/Project.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="ProjectModel">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Address_1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Address_2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="City" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Client_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Conn_string" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Country_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Enable_bit" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Lead_organization_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Logo_path" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Old_Lead_organization_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Old_Owner_organization_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Organization_Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Organization_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Owner_organization_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Phone" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Postal_code" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Project_Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Project_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Role" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Search_text_name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="State_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="User_id" type="ser:guid" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ProjectModel" nillable="true" type="tns:ProjectModel" />
+</xs:schema>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.datacontract.org/2004/07/" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://testpm.ecodomus.com/Client WCF/Facility.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="FacilityModel">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Address1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Address2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Areameasurement" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Attribute_Template_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="City" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Client_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="ConditionValue" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Created_on" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Culture" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Doc_flag" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Document_Id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Document_Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Document_ids" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Document_type_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Entity" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Entity_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="FacilityName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Facility_Ids" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Facility_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="File_path" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Fk_Omniclass_Id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Fk_approval_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Fk_child_hierarchy_table_data_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Fk_child_hierarchy_table_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Fk_country_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Fk_parent_hierarchy_table_data_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Fk_parent_hierarchy_table_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Fk_row_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Fk_row_ids" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Fk_stage_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Fk_state_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Floor_Id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Image_name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="New_Document_ID" type="ser:guid" />
+      <xs:element minOccurs="0" name="New_Document_ids" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Old_Document_Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Orderby" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OrganizatioPrimaryUserId" type="ser:guid" />
+      <xs:element minOccurs="0" name="OrganizationId" type="ser:guid" />
+      <xs:element minOccurs="0" name="Pageindex" type="xs:int" />
+      <xs:element minOccurs="0" name="Pagesize" type="xs:int" />
+      <xs:element minOccurs="0" name="Pk_Hierarchy_Table_Id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Project_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Project_name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Role" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Search_text_name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Show_unassigned_flag" type="xs:boolean" />
+      <xs:element minOccurs="0" name="SiteName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Space_Id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Spaceflag" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TableName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="User_Id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Zip_Postal" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Zone_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="existsflag" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="hierarchy_level" type="xs:int" />
+      <xs:element minOccurs="0" name="latitude" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="longitude" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="FacilityModel" nillable="true" type="tns:FacilityModel" />
+</xs:schema>  

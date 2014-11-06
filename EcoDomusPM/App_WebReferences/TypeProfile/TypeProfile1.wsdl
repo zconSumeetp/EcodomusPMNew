@@ -1,0 +1,610 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="TypeProfile" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://testpm.ecodomus.com/Client WCF/TypeProfile.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://testpm.ecodomus.com/Client WCF/TypeProfile.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://testpm.ecodomus.com/Client WCF/TypeProfile.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/" />
+      <xsd:import schemaLocation="http://testpm.ecodomus.com/Client WCF/TypeProfile.svc?xsd=xsd3" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ITypeProfile_bindtypepm_count_v1_InputMessage">
+    <wsdl:part name="parameters" element="tns:bindtypepm_count_v1" />
+  </wsdl:message>
+  <wsdl:message name="ITypeProfile_bindtypepm_count_v1_OutputMessage">
+    <wsdl:part name="parameters" element="tns:bindtypepm_count_v1Response" />
+  </wsdl:message>
+  <wsdl:message name="ITypeProfile_bindtypepm_v1_InputMessage">
+    <wsdl:part name="parameters" element="tns:bindtypepm_v1" />
+  </wsdl:message>
+  <wsdl:message name="ITypeProfile_bindtypepm_v1_OutputMessage">
+    <wsdl:part name="parameters" element="tns:bindtypepm_v1Response" />
+  </wsdl:message>
+  <wsdl:message name="ITypeProfile_AssignManufacturerModelViewer_InputMessage">
+    <wsdl:part name="parameters" element="tns:AssignManufacturerModelViewer" />
+  </wsdl:message>
+  <wsdl:message name="ITypeProfile_AssignManufacturerModelViewer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AssignManufacturerModelViewerResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITypeProfile_GetClientAssignedManufacturer_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetClientAssignedManufacturer" />
+  </wsdl:message>
+  <wsdl:message name="ITypeProfile_GetClientAssignedManufacturer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetClientAssignedManufacturerResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITypeProfile_GetManufacturerunassignedOrganizations_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetManufacturerunassignedOrganizations" />
+  </wsdl:message>
+  <wsdl:message name="ITypeProfile_GetManufacturerunassignedOrganizations_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetManufacturerunassignedOrganizationsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITypeProfile_GetAssetType_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAssetType" />
+  </wsdl:message>
+  <wsdl:message name="ITypeProfile_GetAssetType_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAssetTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITypeProfile_Getguarantor_InputMessage">
+    <wsdl:part name="parameters" element="tns:Getguarantor" />
+  </wsdl:message>
+  <wsdl:message name="ITypeProfile_Getguarantor_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetguarantorResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITypeProfile_GetDurationunit_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDurationunit" />
+  </wsdl:message>
+  <wsdl:message name="ITypeProfile_GetDurationunit_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDurationunitResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITypeProfile_GetUniformat_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUniformat" />
+  </wsdl:message>
+  <wsdl:message name="ITypeProfile_GetUniformat_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUniformatResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITypeProfile_GetMasterformat_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMasterformat" />
+  </wsdl:message>
+  <wsdl:message name="ITypeProfile_GetMasterformat_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMasterformatResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITypeProfile_GetFacilityList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetFacilityList" />
+  </wsdl:message>
+  <wsdl:message name="ITypeProfile_GetFacilityList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFacilityListResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITypeProfile_GetTypeList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTypeList" />
+  </wsdl:message>
+  <wsdl:message name="ITypeProfile_GetTypeList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTypeListResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITypeProfile_GetFaciliyListForType_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetFaciliyListForType" />
+  </wsdl:message>
+  <wsdl:message name="ITypeProfile_GetFaciliyListForType_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFaciliyListForTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITypeProfile_GetTypeProfileInformation_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTypeProfileInformation" />
+  </wsdl:message>
+  <wsdl:message name="ITypeProfile_GetTypeProfileInformation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTypeProfileInformationResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITypeProfile_InsertUpdateTypeProfile_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertUpdateTypeProfile" />
+  </wsdl:message>
+  <wsdl:message name="ITypeProfile_InsertUpdateTypeProfile_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertUpdateTypeProfileResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITypeProfile_DeleteType_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteType" />
+  </wsdl:message>
+  <wsdl:message name="ITypeProfile_DeleteType_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITypeProfile_AssignOmniclassToType_InputMessage">
+    <wsdl:part name="parameters" element="tns:AssignOmniclassToType" />
+  </wsdl:message>
+  <wsdl:message name="ITypeProfile_AssignOmniclassToType_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AssignOmniclassToTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITypeProfile_InsertUpdateMajorTypes_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertUpdateMajorTypes" />
+  </wsdl:message>
+  <wsdl:message name="ITypeProfile_InsertUpdateMajorTypes_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertUpdateMajorTypesResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITypeProfile_BindMasterFormat_InputMessage">
+    <wsdl:part name="parameters" element="tns:BindMasterFormat" />
+  </wsdl:message>
+  <wsdl:message name="ITypeProfile_BindMasterFormat_OutputMessage">
+    <wsdl:part name="parameters" element="tns:BindMasterFormatResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITypeProfile_bindtypepm_InputMessage">
+    <wsdl:part name="parameters" element="tns:bindtypepm" />
+  </wsdl:message>
+  <wsdl:message name="ITypeProfile_bindtypepm_OutputMessage">
+    <wsdl:part name="parameters" element="tns:bindtypepmResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITypeProfile_Getfacilitynamepm_InputMessage">
+    <wsdl:part name="parameters" element="tns:Getfacilitynamepm" />
+  </wsdl:message>
+  <wsdl:message name="ITypeProfile_Getfacilitynamepm_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetfacilitynamepmResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITypeProfile_deletetypepm_InputMessage">
+    <wsdl:part name="parameters" element="tns:deletetypepm" />
+  </wsdl:message>
+  <wsdl:message name="ITypeProfile_deletetypepm_OutputMessage">
+    <wsdl:part name="parameters" element="tns:deletetypepmResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITypeProfile_UpdateOmniclassForTypePM_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateOmniclassForTypePM" />
+  </wsdl:message>
+  <wsdl:message name="ITypeProfile_UpdateOmniclassForTypePM_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateOmniclassForTypePMResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITypeProfile_UpdateMasterformatForTypePM_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateMasterformatForTypePM" />
+  </wsdl:message>
+  <wsdl:message name="ITypeProfile_UpdateMasterformatForTypePM_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateMasterformatForTypePMResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITypeProfile_UpdateUniformatForTypePM_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateUniformatForTypePM" />
+  </wsdl:message>
+  <wsdl:message name="ITypeProfile_UpdateUniformatForTypePM_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateUniformatForTypePMResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITypeProfile_GetDesignerContrator_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDesignerContrator" />
+  </wsdl:message>
+  <wsdl:message name="ITypeProfile_GetDesignerContrator_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDesignerContratorResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITypeProfile_UpdateDesignerContractorPM_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateDesignerContractorPM" />
+  </wsdl:message>
+  <wsdl:message name="ITypeProfile_UpdateDesignerContractorPM_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateDesignerContractorPMResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITypeProfile_Unassign_InputMessage">
+    <wsdl:part name="parameters" element="tns:Unassign" />
+  </wsdl:message>
+  <wsdl:message name="ITypeProfile_Unassign_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UnassignResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITypeProfile_GetAssetTypePM_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAssetTypePM" />
+  </wsdl:message>
+  <wsdl:message name="ITypeProfile_GetAssetTypePM_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAssetTypePMResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITypeProfile_UpdateTypeNames_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateTypeNames" />
+  </wsdl:message>
+  <wsdl:message name="ITypeProfile_UpdateTypeNames_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateTypeNamesResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITypeProfile_Get_assets_for_type_Count_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_assets_for_type_Count" />
+  </wsdl:message>
+  <wsdl:message name="ITypeProfile_Get_assets_for_type_Count_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_assets_for_type_CountResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ITypeProfile">
+    <wsdl:operation name="bindtypepm_count_v1">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITypeProfile/bindtypepm_count_v1" message="tns:ITypeProfile_bindtypepm_count_v1_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITypeProfile/bindtypepm_count_v1Response" message="tns:ITypeProfile_bindtypepm_count_v1_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="bindtypepm_v1">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITypeProfile/bindtypepm_v1" message="tns:ITypeProfile_bindtypepm_v1_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITypeProfile/bindtypepm_v1Response" message="tns:ITypeProfile_bindtypepm_v1_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AssignManufacturerModelViewer">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITypeProfile/AssignManufacturerModelViewer" message="tns:ITypeProfile_AssignManufacturerModelViewer_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITypeProfile/AssignManufacturerModelViewerResponse" message="tns:ITypeProfile_AssignManufacturerModelViewer_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetClientAssignedManufacturer">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITypeProfile/GetClientAssignedManufacturer" message="tns:ITypeProfile_GetClientAssignedManufacturer_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITypeProfile/GetClientAssignedManufacturerResponse" message="tns:ITypeProfile_GetClientAssignedManufacturer_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetManufacturerunassignedOrganizations">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITypeProfile/GetManufacturerunassignedOrganizations" message="tns:ITypeProfile_GetManufacturerunassignedOrganizations_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITypeProfile/GetManufacturerunassignedOrganizationsResponse" message="tns:ITypeProfile_GetManufacturerunassignedOrganizations_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAssetType">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITypeProfile/GetAssetType" message="tns:ITypeProfile_GetAssetType_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITypeProfile/GetAssetTypeResponse" message="tns:ITypeProfile_GetAssetType_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Getguarantor">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITypeProfile/Getguarantor" message="tns:ITypeProfile_Getguarantor_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITypeProfile/GetguarantorResponse" message="tns:ITypeProfile_Getguarantor_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDurationunit">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITypeProfile/GetDurationunit" message="tns:ITypeProfile_GetDurationunit_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITypeProfile/GetDurationunitResponse" message="tns:ITypeProfile_GetDurationunit_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUniformat">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITypeProfile/GetUniformat" message="tns:ITypeProfile_GetUniformat_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITypeProfile/GetUniformatResponse" message="tns:ITypeProfile_GetUniformat_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMasterformat">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITypeProfile/GetMasterformat" message="tns:ITypeProfile_GetMasterformat_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITypeProfile/GetMasterformatResponse" message="tns:ITypeProfile_GetMasterformat_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFacilityList">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITypeProfile/GetFacilityList" message="tns:ITypeProfile_GetFacilityList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITypeProfile/GetFacilityListResponse" message="tns:ITypeProfile_GetFacilityList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTypeList">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITypeProfile/GetTypeList" message="tns:ITypeProfile_GetTypeList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITypeProfile/GetTypeListResponse" message="tns:ITypeProfile_GetTypeList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFaciliyListForType">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITypeProfile/GetFaciliyListForType" message="tns:ITypeProfile_GetFaciliyListForType_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITypeProfile/GetFaciliyListForTypeResponse" message="tns:ITypeProfile_GetFaciliyListForType_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTypeProfileInformation">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITypeProfile/GetTypeProfileInformation" message="tns:ITypeProfile_GetTypeProfileInformation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITypeProfile/GetTypeProfileInformationResponse" message="tns:ITypeProfile_GetTypeProfileInformation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertUpdateTypeProfile">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITypeProfile/InsertUpdateTypeProfile" message="tns:ITypeProfile_InsertUpdateTypeProfile_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITypeProfile/InsertUpdateTypeProfileResponse" message="tns:ITypeProfile_InsertUpdateTypeProfile_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteType">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITypeProfile/DeleteType" message="tns:ITypeProfile_DeleteType_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITypeProfile/DeleteTypeResponse" message="tns:ITypeProfile_DeleteType_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AssignOmniclassToType">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITypeProfile/AssignOmniclassToType" message="tns:ITypeProfile_AssignOmniclassToType_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITypeProfile/AssignOmniclassToTypeResponse" message="tns:ITypeProfile_AssignOmniclassToType_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertUpdateMajorTypes">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITypeProfile/InsertUpdateMajorTypes" message="tns:ITypeProfile_InsertUpdateMajorTypes_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITypeProfile/InsertUpdateMajorTypesResponse" message="tns:ITypeProfile_InsertUpdateMajorTypes_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BindMasterFormat">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITypeProfile/BindMasterFormat" message="tns:ITypeProfile_BindMasterFormat_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITypeProfile/BindMasterFormatResponse" message="tns:ITypeProfile_BindMasterFormat_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="bindtypepm">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITypeProfile/bindtypepm" message="tns:ITypeProfile_bindtypepm_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITypeProfile/bindtypepmResponse" message="tns:ITypeProfile_bindtypepm_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Getfacilitynamepm">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITypeProfile/Getfacilitynamepm" message="tns:ITypeProfile_Getfacilitynamepm_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITypeProfile/GetfacilitynamepmResponse" message="tns:ITypeProfile_Getfacilitynamepm_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="deletetypepm">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITypeProfile/deletetypepm" message="tns:ITypeProfile_deletetypepm_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITypeProfile/deletetypepmResponse" message="tns:ITypeProfile_deletetypepm_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateOmniclassForTypePM">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITypeProfile/UpdateOmniclassForTypePM" message="tns:ITypeProfile_UpdateOmniclassForTypePM_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITypeProfile/UpdateOmniclassForTypePMResponse" message="tns:ITypeProfile_UpdateOmniclassForTypePM_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateMasterformatForTypePM">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITypeProfile/UpdateMasterformatForTypePM" message="tns:ITypeProfile_UpdateMasterformatForTypePM_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITypeProfile/UpdateMasterformatForTypePMResponse" message="tns:ITypeProfile_UpdateMasterformatForTypePM_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateUniformatForTypePM">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITypeProfile/UpdateUniformatForTypePM" message="tns:ITypeProfile_UpdateUniformatForTypePM_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITypeProfile/UpdateUniformatForTypePMResponse" message="tns:ITypeProfile_UpdateUniformatForTypePM_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDesignerContrator">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITypeProfile/GetDesignerContrator" message="tns:ITypeProfile_GetDesignerContrator_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITypeProfile/GetDesignerContratorResponse" message="tns:ITypeProfile_GetDesignerContrator_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateDesignerContractorPM">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITypeProfile/UpdateDesignerContractorPM" message="tns:ITypeProfile_UpdateDesignerContractorPM_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITypeProfile/UpdateDesignerContractorPMResponse" message="tns:ITypeProfile_UpdateDesignerContractorPM_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Unassign">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITypeProfile/Unassign" message="tns:ITypeProfile_Unassign_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITypeProfile/UnassignResponse" message="tns:ITypeProfile_Unassign_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAssetTypePM">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITypeProfile/GetAssetTypePM" message="tns:ITypeProfile_GetAssetTypePM_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITypeProfile/GetAssetTypePMResponse" message="tns:ITypeProfile_GetAssetTypePM_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateTypeNames">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITypeProfile/UpdateTypeNames" message="tns:ITypeProfile_UpdateTypeNames_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITypeProfile/UpdateTypeNamesResponse" message="tns:ITypeProfile_UpdateTypeNames_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_assets_for_type_Count">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITypeProfile/Get_assets_for_type_Count" message="tns:ITypeProfile_Get_assets_for_type_Count_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITypeProfile/Get_assets_for_type_CountResponse" message="tns:ITypeProfile_Get_assets_for_type_Count_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_ITypeProfile" type="tns:ITypeProfile">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="bindtypepm_count_v1">
+      <soap:operation soapAction="http://tempuri.org/ITypeProfile/bindtypepm_count_v1" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="bindtypepm_v1">
+      <soap:operation soapAction="http://tempuri.org/ITypeProfile/bindtypepm_v1" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AssignManufacturerModelViewer">
+      <soap:operation soapAction="http://tempuri.org/ITypeProfile/AssignManufacturerModelViewer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetClientAssignedManufacturer">
+      <soap:operation soapAction="http://tempuri.org/ITypeProfile/GetClientAssignedManufacturer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetManufacturerunassignedOrganizations">
+      <soap:operation soapAction="http://tempuri.org/ITypeProfile/GetManufacturerunassignedOrganizations" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAssetType">
+      <soap:operation soapAction="http://tempuri.org/ITypeProfile/GetAssetType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Getguarantor">
+      <soap:operation soapAction="http://tempuri.org/ITypeProfile/Getguarantor" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDurationunit">
+      <soap:operation soapAction="http://tempuri.org/ITypeProfile/GetDurationunit" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUniformat">
+      <soap:operation soapAction="http://tempuri.org/ITypeProfile/GetUniformat" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMasterformat">
+      <soap:operation soapAction="http://tempuri.org/ITypeProfile/GetMasterformat" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFacilityList">
+      <soap:operation soapAction="http://tempuri.org/ITypeProfile/GetFacilityList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTypeList">
+      <soap:operation soapAction="http://tempuri.org/ITypeProfile/GetTypeList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFaciliyListForType">
+      <soap:operation soapAction="http://tempuri.org/ITypeProfile/GetFaciliyListForType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTypeProfileInformation">
+      <soap:operation soapAction="http://tempuri.org/ITypeProfile/GetTypeProfileInformation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertUpdateTypeProfile">
+      <soap:operation soapAction="http://tempuri.org/ITypeProfile/InsertUpdateTypeProfile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteType">
+      <soap:operation soapAction="http://tempuri.org/ITypeProfile/DeleteType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AssignOmniclassToType">
+      <soap:operation soapAction="http://tempuri.org/ITypeProfile/AssignOmniclassToType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertUpdateMajorTypes">
+      <soap:operation soapAction="http://tempuri.org/ITypeProfile/InsertUpdateMajorTypes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BindMasterFormat">
+      <soap:operation soapAction="http://tempuri.org/ITypeProfile/BindMasterFormat" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="bindtypepm">
+      <soap:operation soapAction="http://tempuri.org/ITypeProfile/bindtypepm" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Getfacilitynamepm">
+      <soap:operation soapAction="http://tempuri.org/ITypeProfile/Getfacilitynamepm" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deletetypepm">
+      <soap:operation soapAction="http://tempuri.org/ITypeProfile/deletetypepm" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateOmniclassForTypePM">
+      <soap:operation soapAction="http://tempuri.org/ITypeProfile/UpdateOmniclassForTypePM" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateMasterformatForTypePM">
+      <soap:operation soapAction="http://tempuri.org/ITypeProfile/UpdateMasterformatForTypePM" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateUniformatForTypePM">
+      <soap:operation soapAction="http://tempuri.org/ITypeProfile/UpdateUniformatForTypePM" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDesignerContrator">
+      <soap:operation soapAction="http://tempuri.org/ITypeProfile/GetDesignerContrator" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateDesignerContractorPM">
+      <soap:operation soapAction="http://tempuri.org/ITypeProfile/UpdateDesignerContractorPM" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Unassign">
+      <soap:operation soapAction="http://tempuri.org/ITypeProfile/Unassign" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAssetTypePM">
+      <soap:operation soapAction="http://tempuri.org/ITypeProfile/GetAssetTypePM" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateTypeNames">
+      <soap:operation soapAction="http://tempuri.org/ITypeProfile/UpdateTypeNames" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_assets_for_type_Count">
+      <soap:operation soapAction="http://tempuri.org/ITypeProfile/Get_assets_for_type_Count" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="TypeProfile">
+    <wsdl:port name="BasicHttpBinding_ITypeProfile" binding="tns:BasicHttpBinding_ITypeProfile">
+      <soap:address location="http://testpm.ecodomus.com/Client%20WCF/TypeProfile.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

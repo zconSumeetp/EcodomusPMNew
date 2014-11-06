@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.datacontract.org/2004/07/EcoDomus.AttributeTemplate" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/EcoDomus.AttributeTemplate" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:4444/Client WCF/AttributeTemplate.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="AttributeTemplateModel">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Abbreviation" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Attribute_Group_Id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Attribute_Group_Ids" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Attribute_Group_Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Attribute_Ids" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Attribute_Value" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Attribute_name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Attribute_template_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Attribute_template_ids" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Attributeid" type="ser:guid" />
+      <xs:element minOccurs="0" name="Customname" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Doc_type_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="EntityID" type="ser:guid" />
+      <xs:element minOccurs="0" name="Entity_Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Entity_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Facility_Id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Facility_Ids" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Fk_row_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Flag" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IsAlreadyExist" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LongName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="New_Attribute_Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Old_Attribute_Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Omniclass_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Omniclass_ids" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Omniclassversion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Organization_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="PK_Doc_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="ProjectId" type="ser:guid" />
+      <xs:element minOccurs="0" name="Search" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Shortname" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Standard_ids" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Template_name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Txt_search" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UOM_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="User_Id" type="ser:guid" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="AttributeTemplateModel" nillable="true" type="tns:AttributeTemplateModel" />
+</xs:schema>

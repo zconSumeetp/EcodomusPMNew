@@ -1,0 +1,515 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="SetupSync" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:4444/Client WCF/SetupSync.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:4444/Client WCF/SetupSync.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:4444/Client WCF/SetupSync.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/" />
+      <xsd:import schemaLocation="http://localhost:4444/Client WCF/SetupSync.svc?xsd=xsd3" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ISetupSync_Get_External_System_Attribute_Data_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_External_System_Attribute_Data" />
+  </wsdl:message>
+  <wsdl:message name="ISetupSync_Get_External_System_Attribute_Data_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_External_System_Attribute_DataResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISetupSync_DoWork_InputMessage">
+    <wsdl:part name="parameters" element="tns:DoWork" />
+  </wsdl:message>
+  <wsdl:message name="ISetupSync_DoWork_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DoWorkResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISetupSync_Insert_Update_Configuration_InputMessage">
+    <wsdl:part name="parameters" element="tns:Insert_Update_Configuration" />
+  </wsdl:message>
+  <wsdl:message name="ISetupSync_Insert_Update_Configuration_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Insert_Update_ConfigurationResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISetupSync_Get_external_system_configuration_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_external_system_configuration" />
+  </wsdl:message>
+  <wsdl:message name="ISetupSync_Get_external_system_configuration_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_external_system_configurationResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISetupSync_Get_external_system_details_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_external_system_details" />
+  </wsdl:message>
+  <wsdl:message name="ISetupSync_Get_external_system_details_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_external_system_detailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISetupSync_Delete_external_system_configuration_InputMessage">
+    <wsdl:part name="parameters" element="tns:Delete_external_system_configuration" />
+  </wsdl:message>
+  <wsdl:message name="ISetupSync_Delete_external_system_configuration_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Delete_external_system_configurationResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISetupSync_Get_sync_profile_data_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_sync_profile_data" />
+  </wsdl:message>
+  <wsdl:message name="ISetupSync_Get_sync_profile_data_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_sync_profile_dataResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISetupSync_Get_user_assigned_facility_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_user_assigned_facility" />
+  </wsdl:message>
+  <wsdl:message name="ISetupSync_Get_user_assigned_facility_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_user_assigned_facilityResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISetupSync_Get_external_system_mapping_details_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_external_system_mapping_details" />
+  </wsdl:message>
+  <wsdl:message name="ISetupSync_Get_external_system_mapping_details_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_external_system_mapping_detailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISetupSync_Insert_mapping_entity_details_InputMessage">
+    <wsdl:part name="parameters" element="tns:Insert_mapping_entity_details" />
+  </wsdl:message>
+  <wsdl:message name="ISetupSync_Insert_mapping_entity_details_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Insert_mapping_entity_detailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISetupSync_Get_mapping_entity_details_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_mapping_entity_details" />
+  </wsdl:message>
+  <wsdl:message name="ISetupSync_Get_mapping_entity_details_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_mapping_entity_detailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISetupSync_Get_standard_detail_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_standard_detail" />
+  </wsdl:message>
+  <wsdl:message name="ISetupSync_Get_standard_detail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_standard_detailResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISetupSync_Update_mapping_facility_details_InputMessage">
+    <wsdl:part name="parameters" element="tns:Update_mapping_facility_details" />
+  </wsdl:message>
+  <wsdl:message name="ISetupSync_Update_mapping_facility_details_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Update_mapping_facility_detailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISetupSync_Get_mapped_facility_details_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_mapped_facility_details" />
+  </wsdl:message>
+  <wsdl:message name="ISetupSync_Get_mapped_facility_details_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_mapped_facility_detailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISetupSync_Get_mapped_entity_details_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_mapped_entity_details" />
+  </wsdl:message>
+  <wsdl:message name="ISetupSync_Get_mapped_entity_details_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_mapped_entity_detailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISetupSync_Update_mapped_facility_details_InputMessage">
+    <wsdl:part name="parameters" element="tns:Update_mapped_facility_details" />
+  </wsdl:message>
+  <wsdl:message name="ISetupSync_Update_mapped_facility_details_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Update_mapped_facility_detailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISetupSync_Insert_and_update_entity_data_InputMessage">
+    <wsdl:part name="parameters" element="tns:Insert_and_update_entity_data" />
+  </wsdl:message>
+  <wsdl:message name="ISetupSync_Insert_and_update_entity_data_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Insert_and_update_entity_dataResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISetupSync_Update_mapped_omniClass_details_InputMessage">
+    <wsdl:part name="parameters" element="tns:Update_mapped_omniClass_details" />
+  </wsdl:message>
+  <wsdl:message name="ISetupSync_Update_mapped_omniClass_details_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Update_mapped_omniClass_detailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISetupSync_Get_mapped_omniClass_details_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_mapped_omniClass_details" />
+  </wsdl:message>
+  <wsdl:message name="ISetupSync_Get_mapped_omniClass_details_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_mapped_omniClass_detailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISetupSync_Get_mapping_space_type_details_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_mapping_space_type_details" />
+  </wsdl:message>
+  <wsdl:message name="ISetupSync_Get_mapping_space_type_details_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_mapping_space_type_detailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISetupSync_Get_mapped_space_type_details_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_mapped_space_type_details" />
+  </wsdl:message>
+  <wsdl:message name="ISetupSync_Get_mapped_space_type_details_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_mapped_space_type_detailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISetupSync_Update_mapped_omniClass_space_details_InputMessage">
+    <wsdl:part name="parameters" element="tns:Update_mapped_omniClass_space_details" />
+  </wsdl:message>
+  <wsdl:message name="ISetupSync_Update_mapped_omniClass_space_details_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Update_mapped_omniClass_space_detailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISetupSync_Update_mapped_omniClass_entity_data_InputMessage">
+    <wsdl:part name="parameters" element="tns:Update_mapped_omniClass_entity_data" />
+  </wsdl:message>
+  <wsdl:message name="ISetupSync_Update_mapped_omniClass_entity_data_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Update_mapped_omniClass_entity_dataResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISetupSync_Get_Entity_Profile_Attribute_Mapping_Data_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Entity_Profile_Attribute_Mapping_Data" />
+  </wsdl:message>
+  <wsdl:message name="ISetupSync_Get_Entity_Profile_Attribute_Mapping_Data_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Entity_Profile_Attribute_Mapping_DataResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISetupSync_Insert_Update_External_System_Entity_Profile_Attribute_Data_InputMessage">
+    <wsdl:part name="parameters" element="tns:Insert_Update_External_System_Entity_Profile_Attribute_Data" />
+  </wsdl:message>
+  <wsdl:message name="ISetupSync_Insert_Update_External_System_Entity_Profile_Attribute_Data_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Insert_Update_External_System_Entity_Profile_Attribute_DataResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISetupSync_Insert_Update_External_System_Entity_Attribute_Mapping_Data_InputMessage">
+    <wsdl:part name="parameters" element="tns:Insert_Update_External_System_Entity_Attribute_Mapping_Data" />
+  </wsdl:message>
+  <wsdl:message name="ISetupSync_Insert_Update_External_System_Entity_Attribute_Mapping_Data_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Insert_Update_External_System_Entity_Attribute_Mapping_DataResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ISetupSync">
+    <wsdl:operation name="Get_External_System_Attribute_Data">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISetupSync/Get_External_System_Attribute_Data" message="tns:ISetupSync_Get_External_System_Attribute_Data_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISetupSync/Get_External_System_Attribute_DataResponse" message="tns:ISetupSync_Get_External_System_Attribute_Data_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DoWork">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISetupSync/DoWork" message="tns:ISetupSync_DoWork_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISetupSync/DoWorkResponse" message="tns:ISetupSync_DoWork_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Insert_Update_Configuration">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISetupSync/Insert_Update_Configuration" message="tns:ISetupSync_Insert_Update_Configuration_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISetupSync/Insert_Update_ConfigurationResponse" message="tns:ISetupSync_Insert_Update_Configuration_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_external_system_configuration">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISetupSync/Get_external_system_configuration" message="tns:ISetupSync_Get_external_system_configuration_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISetupSync/Get_external_system_configurationResponse" message="tns:ISetupSync_Get_external_system_configuration_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_external_system_details">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISetupSync/Get_external_system_details" message="tns:ISetupSync_Get_external_system_details_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISetupSync/Get_external_system_detailsResponse" message="tns:ISetupSync_Get_external_system_details_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Delete_external_system_configuration">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISetupSync/Delete_external_system_configuration" message="tns:ISetupSync_Delete_external_system_configuration_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISetupSync/Delete_external_system_configurationResponse" message="tns:ISetupSync_Delete_external_system_configuration_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_sync_profile_data">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISetupSync/Get_sync_profile_data" message="tns:ISetupSync_Get_sync_profile_data_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISetupSync/Get_sync_profile_dataResponse" message="tns:ISetupSync_Get_sync_profile_data_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_user_assigned_facility">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISetupSync/Get_user_assigned_facility" message="tns:ISetupSync_Get_user_assigned_facility_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISetupSync/Get_user_assigned_facilityResponse" message="tns:ISetupSync_Get_user_assigned_facility_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_external_system_mapping_details">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISetupSync/Get_external_system_mapping_details" message="tns:ISetupSync_Get_external_system_mapping_details_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISetupSync/Get_external_system_mapping_detailsResponse" message="tns:ISetupSync_Get_external_system_mapping_details_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Insert_mapping_entity_details">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISetupSync/Insert_mapping_entity_details" message="tns:ISetupSync_Insert_mapping_entity_details_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISetupSync/Insert_mapping_entity_detailsResponse" message="tns:ISetupSync_Insert_mapping_entity_details_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_mapping_entity_details">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISetupSync/Get_mapping_entity_details" message="tns:ISetupSync_Get_mapping_entity_details_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISetupSync/Get_mapping_entity_detailsResponse" message="tns:ISetupSync_Get_mapping_entity_details_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_standard_detail">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISetupSync/Get_standard_detail" message="tns:ISetupSync_Get_standard_detail_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISetupSync/Get_standard_detailResponse" message="tns:ISetupSync_Get_standard_detail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Update_mapping_facility_details">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISetupSync/Update_mapping_facility_details" message="tns:ISetupSync_Update_mapping_facility_details_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISetupSync/Update_mapping_facility_detailsResponse" message="tns:ISetupSync_Update_mapping_facility_details_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_mapped_facility_details">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISetupSync/Get_mapped_facility_details" message="tns:ISetupSync_Get_mapped_facility_details_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISetupSync/Get_mapped_facility_detailsResponse" message="tns:ISetupSync_Get_mapped_facility_details_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_mapped_entity_details">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISetupSync/Get_mapped_entity_details" message="tns:ISetupSync_Get_mapped_entity_details_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISetupSync/Get_mapped_entity_detailsResponse" message="tns:ISetupSync_Get_mapped_entity_details_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Update_mapped_facility_details">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISetupSync/Update_mapped_facility_details" message="tns:ISetupSync_Update_mapped_facility_details_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISetupSync/Update_mapped_facility_detailsResponse" message="tns:ISetupSync_Update_mapped_facility_details_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Insert_and_update_entity_data">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISetupSync/Insert_and_update_entity_data" message="tns:ISetupSync_Insert_and_update_entity_data_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISetupSync/Insert_and_update_entity_dataResponse" message="tns:ISetupSync_Insert_and_update_entity_data_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Update_mapped_omniClass_details">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISetupSync/Update_mapped_omniClass_details" message="tns:ISetupSync_Update_mapped_omniClass_details_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISetupSync/Update_mapped_omniClass_detailsResponse" message="tns:ISetupSync_Update_mapped_omniClass_details_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_mapped_omniClass_details">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISetupSync/Get_mapped_omniClass_details" message="tns:ISetupSync_Get_mapped_omniClass_details_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISetupSync/Get_mapped_omniClass_detailsResponse" message="tns:ISetupSync_Get_mapped_omniClass_details_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_mapping_space_type_details">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISetupSync/Get_mapping_space_type_details" message="tns:ISetupSync_Get_mapping_space_type_details_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISetupSync/Get_mapping_space_type_detailsResponse" message="tns:ISetupSync_Get_mapping_space_type_details_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_mapped_space_type_details">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISetupSync/Get_mapped_space_type_details" message="tns:ISetupSync_Get_mapped_space_type_details_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISetupSync/Get_mapped_space_type_detailsResponse" message="tns:ISetupSync_Get_mapped_space_type_details_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Update_mapped_omniClass_space_details">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISetupSync/Update_mapped_omniClass_space_details" message="tns:ISetupSync_Update_mapped_omniClass_space_details_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISetupSync/Update_mapped_omniClass_space_detailsResponse" message="tns:ISetupSync_Update_mapped_omniClass_space_details_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Update_mapped_omniClass_entity_data">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISetupSync/Update_mapped_omniClass_entity_data" message="tns:ISetupSync_Update_mapped_omniClass_entity_data_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISetupSync/Update_mapped_omniClass_entity_dataResponse" message="tns:ISetupSync_Update_mapped_omniClass_entity_data_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_Entity_Profile_Attribute_Mapping_Data">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISetupSync/Get_Entity_Profile_Attribute_Mapping_Data" message="tns:ISetupSync_Get_Entity_Profile_Attribute_Mapping_Data_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISetupSync/Get_Entity_Profile_Attribute_Mapping_DataResponse" message="tns:ISetupSync_Get_Entity_Profile_Attribute_Mapping_Data_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Insert_Update_External_System_Entity_Profile_Attribute_Data">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISetupSync/Insert_Update_External_System_Entity_Profile_Attribute_Data" message="tns:ISetupSync_Insert_Update_External_System_Entity_Profile_Attribute_Data_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISetupSync/Insert_Update_External_System_Entity_Profile_Attribute_DataResponse" message="tns:ISetupSync_Insert_Update_External_System_Entity_Profile_Attribute_Data_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Insert_Update_External_System_Entity_Attribute_Mapping_Data">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISetupSync/Insert_Update_External_System_Entity_Attribute_Mapping_Data" message="tns:ISetupSync_Insert_Update_External_System_Entity_Attribute_Mapping_Data_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISetupSync/Insert_Update_External_System_Entity_Attribute_Mapping_DataResponse" message="tns:ISetupSync_Insert_Update_External_System_Entity_Attribute_Mapping_Data_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_ISetupSync" type="tns:ISetupSync">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Get_External_System_Attribute_Data">
+      <soap:operation soapAction="http://tempuri.org/ISetupSync/Get_External_System_Attribute_Data" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DoWork">
+      <soap:operation soapAction="http://tempuri.org/ISetupSync/DoWork" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Insert_Update_Configuration">
+      <soap:operation soapAction="http://tempuri.org/ISetupSync/Insert_Update_Configuration" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_external_system_configuration">
+      <soap:operation soapAction="http://tempuri.org/ISetupSync/Get_external_system_configuration" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_external_system_details">
+      <soap:operation soapAction="http://tempuri.org/ISetupSync/Get_external_system_details" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Delete_external_system_configuration">
+      <soap:operation soapAction="http://tempuri.org/ISetupSync/Delete_external_system_configuration" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_sync_profile_data">
+      <soap:operation soapAction="http://tempuri.org/ISetupSync/Get_sync_profile_data" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_user_assigned_facility">
+      <soap:operation soapAction="http://tempuri.org/ISetupSync/Get_user_assigned_facility" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_external_system_mapping_details">
+      <soap:operation soapAction="http://tempuri.org/ISetupSync/Get_external_system_mapping_details" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Insert_mapping_entity_details">
+      <soap:operation soapAction="http://tempuri.org/ISetupSync/Insert_mapping_entity_details" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_mapping_entity_details">
+      <soap:operation soapAction="http://tempuri.org/ISetupSync/Get_mapping_entity_details" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_standard_detail">
+      <soap:operation soapAction="http://tempuri.org/ISetupSync/Get_standard_detail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Update_mapping_facility_details">
+      <soap:operation soapAction="http://tempuri.org/ISetupSync/Update_mapping_facility_details" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_mapped_facility_details">
+      <soap:operation soapAction="http://tempuri.org/ISetupSync/Get_mapped_facility_details" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_mapped_entity_details">
+      <soap:operation soapAction="http://tempuri.org/ISetupSync/Get_mapped_entity_details" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Update_mapped_facility_details">
+      <soap:operation soapAction="http://tempuri.org/ISetupSync/Update_mapped_facility_details" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Insert_and_update_entity_data">
+      <soap:operation soapAction="http://tempuri.org/ISetupSync/Insert_and_update_entity_data" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Update_mapped_omniClass_details">
+      <soap:operation soapAction="http://tempuri.org/ISetupSync/Update_mapped_omniClass_details" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_mapped_omniClass_details">
+      <soap:operation soapAction="http://tempuri.org/ISetupSync/Get_mapped_omniClass_details" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_mapping_space_type_details">
+      <soap:operation soapAction="http://tempuri.org/ISetupSync/Get_mapping_space_type_details" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_mapped_space_type_details">
+      <soap:operation soapAction="http://tempuri.org/ISetupSync/Get_mapped_space_type_details" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Update_mapped_omniClass_space_details">
+      <soap:operation soapAction="http://tempuri.org/ISetupSync/Update_mapped_omniClass_space_details" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Update_mapped_omniClass_entity_data">
+      <soap:operation soapAction="http://tempuri.org/ISetupSync/Update_mapped_omniClass_entity_data" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Entity_Profile_Attribute_Mapping_Data">
+      <soap:operation soapAction="http://tempuri.org/ISetupSync/Get_Entity_Profile_Attribute_Mapping_Data" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Insert_Update_External_System_Entity_Profile_Attribute_Data">
+      <soap:operation soapAction="http://tempuri.org/ISetupSync/Insert_Update_External_System_Entity_Profile_Attribute_Data" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Insert_Update_External_System_Entity_Attribute_Mapping_Data">
+      <soap:operation soapAction="http://tempuri.org/ISetupSync/Insert_Update_External_System_Entity_Attribute_Mapping_Data" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="SetupSync">
+    <wsdl:port name="BasicHttpBinding_ISetupSync" binding="tns:BasicHttpBinding_ISetupSync">
+      <soap:address location="http://localhost:4444/Client%20WCF/SetupSync.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

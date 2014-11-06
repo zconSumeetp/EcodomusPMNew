@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.datacontract.org/2004/07/Client.App.Model" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Client.App.Model" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:4444/Client WCF/AttributeTemplate.svc?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/Client.App.Dtos" />
+  <xs:import schemaLocation="http://localhost:4444/Client WCF/AttributeTemplate.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="AttributeTemplateViewModel">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Abbreviation" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="AttributeName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="AttributeType" nillable="true" type="xs:string" />
+      <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/Client.App.Dtos" minOccurs="0" name="AttributeValueDto" nillable="true" type="q1:EntityAttributeValueDto" />
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EntityId" type="ser:guid" />
+      <xs:element minOccurs="0" name="GroupId" type="ser:guid" />
+      <xs:element minOccurs="0" name="Id" nillable="true" type="ser:guid" />
+      <xs:element minOccurs="0" name="OmniClassId" type="ser:guid" />
+      <xs:element minOccurs="0" name="TemplateId" type="ser:guid" />
+      <xs:element minOccurs="0" name="UserId" type="ser:guid" />
+      <xs:element minOccurs="0" name="Value" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="AttributeTemplateViewModel" nillable="true" type="tns:AttributeTemplateViewModel" />
+  <xs:complexType name="ArrayOfAttributeTemplateViewModel">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="AttributeTemplateViewModel" nillable="true" type="tns:AttributeTemplateViewModel" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfAttributeTemplateViewModel" nillable="true" type="tns:ArrayOfAttributeTemplateViewModel" />
+</xs:schema>

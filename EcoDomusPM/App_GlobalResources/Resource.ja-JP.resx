@@ -1,0 +1,2982 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Abbreviation" xml:space="preserve">
+    <value>略語</value>
+  </data>
+  <data name="Accept" xml:space="preserve">
+    <value>受容</value>
+  </data>
+  <data name="Access_View" xml:space="preserve">
+    <value>アクセスビュー</value>
+  </data>
+  <data name="Action" xml:space="preserve">
+    <value>アクション</value>
+  </data>
+  <data name="Active_Days" xml:space="preserve">
+    <value>アクティブデイ</value>
+  </data>
+  <data name="Activities" xml:space="preserve">
+    <value>アクティビティ</value>
+  </data>
+  <data name="Activity_Id" xml:space="preserve">
+    <value>アクティビティ　ID</value>
+  </data>
+  <data name="Add" xml:space="preserve">
+    <value>追加</value>
+  </data>
+  <data name="Address1" xml:space="preserve">
+    <value>アドレス１</value>
+  </data>
+  <data name="Address2" xml:space="preserve">
+    <value>アドレス２</value>
+  </data>
+  <data name="Address_1" xml:space="preserve">
+    <value>アドレス１</value>
+  </data>
+  <data name="Address_2" xml:space="preserve">
+    <value>アドレス２</value>
+  </data>
+  <data name="Address_Country" xml:space="preserve">
+    <value>アドレス　国</value>
+  </data>
+  <data name="Address_State_Region" xml:space="preserve">
+    <value>アドレス＿州＿地域</value>
+  </data>
+  <data name="Address_Street" xml:space="preserve">
+    <value>アドレス　通り</value>
+  </data>
+  <data name="Address_Town" xml:space="preserve">
+    <value>アドレス　町</value>
+  </data>
+  <data name="Add_Asset" xml:space="preserve">
+    <value>アセット追加</value>
+  </data>
+  <data name="Add_Attribute" xml:space="preserve">
+    <value>属性追加</value>
+  </data>
+  <data name="Add_Attribute_Group" xml:space="preserve">
+    <value>属性グループ追加</value>
+  </data>
+  <data name="Add_BAS_Server" xml:space="preserve">
+    <value>BASサーバー追加</value>
+  </data>
+  <data name="Add_By_Model_Number" xml:space="preserve">
+    <value>モデル毎のナンバー追加</value>
+  </data>
+  <data name="Add_Category" xml:space="preserve">
+    <value>カテゴリー追加</value>
+  </data>
+  <data name="Add_Component" xml:space="preserve">
+    <value>コンポーネント追加</value>
+  </data>
+  <data name="Add_Configuration" xml:space="preserve">
+    <value>構成追加</value>
+  </data>
+  <data name="Add_Constraints" xml:space="preserve">
+    <value>制約追加</value>
+  </data>
+  <data name="Add_Contractor" xml:space="preserve">
+    <value>請け負い業者追加</value>
+  </data>
+  <data name="Add_Custom_Data" xml:space="preserve">
+    <value>カスタムデータ追加</value>
+  </data>
+  <data name="Add_Designer" xml:space="preserve">
+    <value>設計者追加</value>
+  </data>
+  <data name="Add_Details" xml:space="preserve">
+    <value>詳細追加</value>
+  </data>
+  <data name="Add_Document" xml:space="preserve">
+    <value>ドキュメント追加</value>
+  </data>
+  <data name="Add_Document_to" xml:space="preserve">
+    <value>～にドキュメント追加</value>
+  </data>
+  <data name="Add_Edit_Custom_Data" xml:space="preserve">
+    <value>カスタムデータ編集を追加</value>
+  </data>
+  <data name="Add_Edit_Document" xml:space="preserve">
+    <value>ドキュメント編集を追加</value>
+  </data>
+  <data name="Add_Edit_Name" xml:space="preserve">
+    <value>名前編集を追加</value>
+  </data>
+  <data name="Add_Edit_Names" xml:space="preserve">
+    <value>名前を追加/編集</value>
+  </data>
+  <data name="Add_Edit_Required_Attributes" xml:space="preserve">
+    <value>必要な属性を追加/編集</value>
+  </data>
+  <data name="Add_Existing_Attributes" xml:space="preserve">
+    <value>既存の属性を追加</value>
+  </data>
+  <data name="Add_Existing_Facility" xml:space="preserve">
+    <value>既存の施設を追加</value>
+  </data>
+  <data name="Add_Facility" xml:space="preserve">
+    <value>施設追加</value>
+  </data>
+  <data name="Add_Floor" xml:space="preserve">
+    <value>フロア追加</value>
+  </data>
+  <data name="Add_Hierarchy" xml:space="preserve">
+    <value>ヒエラルキー追加</value>
+  </data>
+  <data name="Add_Impact" xml:space="preserve">
+    <value>インパクト追加</value>
+  </data>
+  <data name="Add_Inspection" xml:space="preserve">
+    <value>査察追加</value>
+  </data>
+  <data name="Add_Issue" xml:space="preserve">
+    <value>問題追加</value>
+  </data>
+  <data name="Add_Manufacturer" xml:space="preserve">
+    <value>メーカー追加</value>
+  </data>
+  <data name="Add_Naming_Convention" xml:space="preserve">
+    <value>ネーミングに関するきまりの追加</value>
+  </data>
+  <data name="Add_New" xml:space="preserve">
+    <value>新規追加</value>
+  </data>
+  <data name="Add_New_Attribute" xml:space="preserve">
+    <value>新規属性追加</value>
+  </data>
+  <data name="Add_New_City" xml:space="preserve">
+    <value>新規の市を追加</value>
+  </data>
+  <data name="Add_New_Client" xml:space="preserve">
+    <value>新規クライアント追加</value>
+  </data>
+  <data name="Add_New_Country" xml:space="preserve">
+    <value>新しい国を追加</value>
+  </data>
+  <data name="Add_New_Facility" xml:space="preserve">
+    <value>新規施設を追加</value>
+  </data>
+  <data name="Add_New_Impact" xml:space="preserve">
+    <value>新規のインパクトを追加</value>
+  </data>
+  <data name="Add_New_Organization" xml:space="preserve">
+    <value>新規組織追加</value>
+  </data>
+  <data name="Add_New_Project" xml:space="preserve">
+    <value>新規プロジェクト追加</value>
+  </data>
+  <data name="Add_New_Role" xml:space="preserve">
+    <value>新しい役割を追加</value>
+  </data>
+  <data name="Add_New_State" xml:space="preserve">
+    <value>新しい州を追加</value>
+  </data>
+  <data name="Add_New_Task" xml:space="preserve">
+    <value>新規タスク追加</value>
+  </data>
+  <data name="Add_New_User" xml:space="preserve">
+    <value>新規ユーザー追加</value>
+  </data>
+  <data name="Add_Organization_To_Project" xml:space="preserve">
+    <value>プロジェクトに組織を追加</value>
+  </data>
+  <data name="Add_Product" xml:space="preserve">
+    <value>成果物追加</value>
+  </data>
+  <data name="Add_Product_Attribute" xml:space="preserve">
+    <value>成果物属性追加</value>
+  </data>
+  <data name="Add_Provider" xml:space="preserve">
+    <value>プロバイダー追加</value>
+  </data>
+  <data name="Add_Required_Attributes" xml:space="preserve">
+    <value>必要な属性を追加</value>
+  </data>
+  <data name="Add_required_attributes_to_model" xml:space="preserve">
+    <value>モデルに必要な属性を追加</value>
+  </data>
+  <data name="Add_Required_Documents" xml:space="preserve">
+    <value>必要なドキュメントを追加</value>
+  </data>
+  <data name="Add_Resource" xml:space="preserve">
+    <value>リソース追加</value>
+  </data>
+  <data name="Add_Role" xml:space="preserve">
+    <value>役割追加</value>
+  </data>
+  <data name="Add_Space" xml:space="preserve">
+    <value>スペース追加</value>
+  </data>
+  <data name="Add_Spare" xml:space="preserve">
+    <value>スペア追加</value>
+  </data>
+  <data name="Add_Subsystem" xml:space="preserve">
+    <value>サブシステム追加</value>
+  </data>
+  <data name="Add_Subsystems" xml:space="preserve">
+    <value>サブシステム（複数）追加</value>
+  </data>
+  <data name="Add_System" xml:space="preserve">
+    <value>システム追加</value>
+  </data>
+  <data name="Add_Systems" xml:space="preserve">
+    <value>システム追加（複数）追加</value>
+  </data>
+  <data name="Add_Task" xml:space="preserve">
+    <value>タスク追加</value>
+  </data>
+  <data name="Add_Template" xml:space="preserve">
+    <value>テンプレート追加</value>
+  </data>
+  <data name="Add_Type" xml:space="preserve">
+    <value>タイプ追加</value>
+  </data>
+  <data name="Add_Type_Spare" xml:space="preserve">
+    <value>タイプスペア追加</value>
+  </data>
+  <data name="Add_Weather_Station" xml:space="preserve">
+    <value>測候所追加</value>
+  </data>
+  <data name="Add_Work_Order" xml:space="preserve">
+    <value>ワークオーダー追加</value>
+  </data>
+  <data name="Add_Zone" xml:space="preserve">
+    <value>ゾーン追加</value>
+  </data>
+  <data name="Add_Zones" xml:space="preserve">
+    <value>ゾーン（複数）追加</value>
+  </data>
+  <data name="Administrative_Controls" xml:space="preserve">
+    <value>アドニミニストレイティブ　コントロール</value>
+  </data>
+  <data name="Affected_Task" xml:space="preserve">
+    <value>影響を受けたタスク</value>
+  </data>
+  <data name="Alerts" xml:space="preserve">
+    <value>アラート</value>
+  </data>
+  <data name="All_My_Task" xml:space="preserve">
+    <value>オール　マイ　タスク</value>
+  </data>
+  <data name="Altitude" xml:space="preserve">
+    <value>高度</value>
+  </data>
+  <data name="Applied_Group_Name" xml:space="preserve">
+    <value>適用されたグループ名</value>
+  </data>
+  <data name="Approval_By" xml:space="preserve">
+    <value>～により承認</value>
+  </data>
+  <data name="Area" xml:space="preserve">
+    <value>エリア　面積</value>
+  </data>
+  <data name="Area_Measurement" xml:space="preserve">
+    <value>面積測定</value>
+  </data>
+  <data name="Area_Units" xml:space="preserve">
+    <value>面積単位</value>
+  </data>
+  <data name="Asset" xml:space="preserve">
+    <value>アセット</value>
+  </data>
+  <data name="Assets" xml:space="preserve">
+    <value>アセット</value>
+  </data>
+  <data name="Asset_Condition_Report" xml:space="preserve">
+    <value>アセット状況レポート</value>
+  </data>
+  <data name="Asset_Identifier" xml:space="preserve">
+    <value>アセットID</value>
+  </data>
+  <data name="Asset_Name" xml:space="preserve">
+    <value>アセット名</value>
+  </data>
+  <data name="Asset_Profile" xml:space="preserve">
+    <value>アセットプロフィール</value>
+  </data>
+  <data name="Asset_Type" xml:space="preserve">
+    <value>アセットタイプ</value>
+  </data>
+  <data name="Assign" xml:space="preserve">
+    <value>アサイン</value>
+  </data>
+  <data name="Assigned_To" xml:space="preserve">
+    <value>～にアサインされた</value>
+  </data>
+  <data name="Assign_Asset" xml:space="preserve">
+    <value>アセットをアサイン</value>
+  </data>
+  <data name="Assign_As_Major" xml:space="preserve">
+    <value>メジャーとしてアサイン</value>
+  </data>
+  <data name="Assign_As_Project_Contact" xml:space="preserve">
+    <value>プロジェクト連絡先としてアサイン</value>
+  </data>
+  <data name="Assign_Category" xml:space="preserve">
+    <value>カテゴリーアサイン</value>
+  </data>
+  <data name="Assign_Component" xml:space="preserve">
+    <value>コンポーネントアサイン</value>
+  </data>
+  <data name="Assign_Contacts_to_Project" xml:space="preserve">
+    <value>プロジェクトに連絡先をアサイン</value>
+  </data>
+  <data name="Assign_Contacts_To_The_Project" xml:space="preserve">
+    <value>プロジェクトに連絡先をアサイン</value>
+  </data>
+  <data name="Assign_Contractor" xml:space="preserve">
+    <value>請け負い業者をアサイン</value>
+  </data>
+  <data name="Assign_Designer" xml:space="preserve">
+    <value>設計者をアサイン</value>
+  </data>
+  <data name="Assign_DesignerContractor" xml:space="preserve">
+    <value>設計者/請負業者をアサイン</value>
+  </data>
+  <data name="Assign_Existing_Facilities" xml:space="preserve">
+    <value>既存の施設をアサイン</value>
+  </data>
+  <data name="Assign_Facility" xml:space="preserve">
+    <value>施設をアサイン</value>
+  </data>
+  <data name="Assign_Manufacturer" xml:space="preserve">
+    <value>メーカーをアサイン</value>
+  </data>
+  <data name="Assign_MasterFormat" xml:space="preserve">
+    <value>マスターフォーマットをアサイン</value>
+  </data>
+  <data name="Assign_Omniclass" xml:space="preserve">
+    <value>オムニクラスをアサイン</value>
+  </data>
+  <data name="Assign_Organization" xml:space="preserve">
+    <value>組織をアサイン</value>
+  </data>
+  <data name="Assign_Organization_To_Client" xml:space="preserve">
+    <value>クライアントに組織をアサイン</value>
+  </data>
+  <data name="Assign_Product" xml:space="preserve">
+    <value>成果物をアサイン</value>
+  </data>
+  <data name="Assign_Project_Role" xml:space="preserve">
+    <value>プロジェクトの役割をアサイン</value>
+  </data>
+  <data name="Assign_Project_roles_to_Contacts" xml:space="preserve">
+    <value>連絡先にプロジェクトの役割をアサイン</value>
+  </data>
+  <data name="Assign_Space" xml:space="preserve">
+    <value>スペースをアサイン</value>
+  </data>
+  <data name="Assign_SubAssembly" xml:space="preserve">
+    <value>サブアッセンブリーをアサイン</value>
+  </data>
+  <data name="Assign_Subsystem" xml:space="preserve">
+    <value>サブシステムをアサイン</value>
+  </data>
+  <data name="Assign_Subsystems" xml:space="preserve">
+    <value>サブシステム（複数）をアサイン</value>
+  </data>
+  <data name="Assign_Supplier" xml:space="preserve">
+    <value>サプライヤーをアサイン</value>
+  </data>
+  <data name="Assign_System" xml:space="preserve">
+    <value>システムをアサイン</value>
+  </data>
+  <data name="Assign_To" xml:space="preserve">
+    <value>～にアサイン</value>
+  </data>
+  <data name="Assign_UniClass" xml:space="preserve">
+    <value>ユニクラスをアサイン</value>
+  </data>
+  <data name="Assign_UniFormat" xml:space="preserve">
+    <value>ユニフォーマットをアサイン</value>
+  </data>
+  <data name="Attribute" xml:space="preserve">
+    <value>属性</value>
+  </data>
+  <data name="Attributes" xml:space="preserve">
+    <value>属性</value>
+  </data>
+  <data name="Attribute_Description" xml:space="preserve">
+    <value>属性記述</value>
+  </data>
+  <data name="Attribute_Details" xml:space="preserve">
+    <value>属性詳細</value>
+  </data>
+  <data name="Attribute_Group" xml:space="preserve">
+    <value>属性グループ</value>
+  </data>
+  <data name="Attribute_Group_List" xml:space="preserve">
+    <value>属性グループリスト</value>
+  </data>
+  <data name="Attribute_Group_Name" xml:space="preserve">
+    <value>属性グループ名</value>
+  </data>
+  <data name="Attribute_Name" xml:space="preserve">
+    <value>属性名</value>
+  </data>
+  <data name="Attribute_Template" xml:space="preserve">
+    <value>属性テンプレート</value>
+  </data>
+  <data name="Authentication_error" xml:space="preserve">
+    <value>認証エラー</value>
+  </data>
+  <data name="Back" xml:space="preserve">
+    <value>バック</value>
+  </data>
+  <data name="Barcode" xml:space="preserve">
+    <value>バーコード</value>
+  </data>
+  <data name="BASServer" xml:space="preserve">
+    <value>BASサーバー追加</value>
+  </data>
+  <data name="BAS_Attribute_History" xml:space="preserve">
+    <value>BAS_属性履歴</value>
+  </data>
+  <data name="BAS_Information" xml:space="preserve">
+    <value>BAS情報</value>
+  </data>
+  <data name="BIM" xml:space="preserve">
+    <value>BIM</value>
+  </data>
+  <data name="BIM_Connector_Installer" xml:space="preserve">
+    <value>BIM コネクター　インストーラー</value>
+  </data>
+  <data name="BIM_Model_Server" xml:space="preserve">
+    <value>BIM　モデルサーバー</value>
+  </data>
+  <data name="BIM_Server" xml:space="preserve">
+    <value>BIM　サーバー</value>
+  </data>
+  <data name="BIM_Use_Case" xml:space="preserve">
+    <value>BIM　使用例</value>
+  </data>
+  <data name="Browse_By_Manufacturer" xml:space="preserve">
+    <value>メーカーで検索</value>
+  </data>
+  <data name="Building_Automation_System_Server" xml:space="preserve">
+    <value>ビルディング　オートメーション　システム　サーバー</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>キャンセル</value>
+  </data>
+  <data name="Category" xml:space="preserve">
+    <value>カテゴリー</value>
+  </data>
+  <data name="Chance" xml:space="preserve">
+    <value>チャンス</value>
+  </data>
+  <data name="Changed_By" xml:space="preserve">
+    <value>～により変更</value>
+  </data>
+  <data name="Change_Password" xml:space="preserve">
+    <value>パスワード変更</value>
+  </data>
+  <data name="Check_All_Boxes" xml:space="preserve">
+    <value>全てのボックスをチェック</value>
+  </data>
+  <data name="City" xml:space="preserve">
+    <value>市</value>
+  </data>
+  <data name="City_State" xml:space="preserve">
+    <value>市＿州</value>
+  </data>
+  <data name="City_State_1" xml:space="preserve">
+    <value>市＿州＿１</value>
+  </data>
+  <data name="Classifications" xml:space="preserve">
+    <value>分類</value>
+  </data>
+  <data name="Clear" xml:space="preserve">
+    <value>クリア</value>
+  </data>
+  <data name="Client" xml:space="preserve">
+    <value>クライアント</value>
+  </data>
+  <data name="Clients" xml:space="preserve">
+    <value>クライアント（複数）</value>
+  </data>
+  <data name="Client_Name" xml:space="preserve">
+    <value>クライアント名</value>
+  </data>
+  <data name="Clone" xml:space="preserve">
+    <value>クローン</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>閉鎖　閉じる</value>
+  </data>
+  <data name="Close_Window" xml:space="preserve">
+    <value>窓閉鎖</value>
+  </data>
+  <data name="COBie" xml:space="preserve">
+    <value>COBie</value>
+  </data>
+  <data name="COBieDataQualityControl" xml:space="preserve">
+    <value>COBie　データ　品質管理</value>
+  </data>
+  <data name="COBie_Data_Quality_Control" xml:space="preserve">
+    <value>COBie データ　品質管理</value>
+  </data>
+  <data name="COBie_File_Export" xml:space="preserve">
+    <value>COBie ファイル　エクスポート</value>
+  </data>
+  <data name="Cobie_File_Import" xml:space="preserve">
+    <value>COBie ファイル　インポート</value>
+  </data>
+  <data name="COBie_QC" xml:space="preserve">
+    <value>COBie QC（品質管理）</value>
+  </data>
+  <data name="Collapse" xml:space="preserve">
+    <value>Collapse</value>
+  </data>
+  <data name="Company" xml:space="preserve">
+    <value>会社</value>
+  </data>
+  <data name="Component" xml:space="preserve">
+    <value>コンポーネント</value>
+  </data>
+  <data name="Components" xml:space="preserve">
+    <value>コンポーネント（複数）</value>
+  </data>
+  <data name="Component_Name" xml:space="preserve">
+    <value>コンポーネント名</value>
+  </data>
+  <data name="Component_Profile" xml:space="preserve">
+    <value>コンポーネント　プロフィール</value>
+  </data>
+  <data name="Condition" xml:space="preserve">
+    <value>状況　状態</value>
+  </data>
+  <data name="Condition_type" xml:space="preserve">
+    <value>状況タイプ</value>
+  </data>
+  <data name="Configuration" xml:space="preserve">
+    <value>構成</value>
+  </data>
+  <data name="Configuration_Name" xml:space="preserve">
+    <value>構成名</value>
+  </data>
+  <data name="Confirm_Password" xml:space="preserve">
+    <value>パスワード確認</value>
+  </data>
+  <data name="Connection_String" xml:space="preserve">
+    <value>コネクション　ストリング</value>
+  </data>
+  <data name="Contacts" xml:space="preserve">
+    <value>連絡先</value>
+  </data>
+  <data name="Contact_Email" xml:space="preserve">
+    <value>連絡先Eメール</value>
+  </data>
+  <data name="Contains" xml:space="preserve">
+    <value>囲む</value>
+  </data>
+  <data name="Contractor" xml:space="preserve">
+    <value>請負業者</value>
+  </data>
+  <data name="Count" xml:space="preserve">
+    <value>カウント</value>
+  </data>
+  <data name="Country" xml:space="preserve">
+    <value>国</value>
+  </data>
+  <data name="Created_By" xml:space="preserve">
+    <value>～により作成</value>
+  </data>
+  <data name="Created_By_1" xml:space="preserve">
+    <value>～により作成</value>
+  </data>
+  <data name="Created_On" xml:space="preserve">
+    <value>～上に作成</value>
+  </data>
+  <data name="Created_On_1" xml:space="preserve">
+    <value>～上に作成</value>
+  </data>
+  <data name="Create_Attribute_Group" xml:space="preserve">
+    <value>属性グループ作成</value>
+  </data>
+  <data name="Create_Clones" xml:space="preserve">
+    <value>クローン作成</value>
+  </data>
+  <data name="Create_Required_Attribute_Group" xml:space="preserve">
+    <value>必要な属性グループを作成</value>
+  </data>
+  <data name="Criteria" xml:space="preserve">
+    <value>基準</value>
+  </data>
+  <data name="Currency_Units" xml:space="preserve">
+    <value>通貨単位</value>
+  </data>
+  <data name="Current_Password" xml:space="preserve">
+    <value>現在のパスワード</value>
+  </data>
+  <data name="Custom_Data" xml:space="preserve">
+    <value>カスタムデータ</value>
+  </data>
+  <data name="Custom_Hierarchy_Name" xml:space="preserve">
+    <value>カスタム　ヒエラルキー名</value>
+  </data>
+  <data name="Custom_Name" xml:space="preserve">
+    <value>カスタム名</value>
+  </data>
+  <data name="Custom_Reports" xml:space="preserve">
+    <value>カスタムレポート</value>
+  </data>
+  <data name="Dashboard" xml:space="preserve">
+    <value>ダッシュボード</value>
+  </data>
+  <data name="Database_Name" xml:space="preserve">
+    <value>データベース名</value>
+  </data>
+  <data name="Data_Provider" xml:space="preserve">
+    <value>データ　プロバイダー</value>
+  </data>
+  <data name="Date" xml:space="preserve">
+    <value>日付</value>
+  </data>
+  <data name="Day" xml:space="preserve">
+    <value>日</value>
+  </data>
+  <data name="Days" xml:space="preserve">
+    <value>日</value>
+  </data>
+  <data name="Default_Value" xml:space="preserve">
+    <value>初期設定値</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>削除</value>
+  </data>
+  <data name="Delete_Attribute" xml:space="preserve">
+    <value>属性削除</value>
+  </data>
+  <data name="Delete_File" xml:space="preserve">
+    <value>ファイル削除</value>
+  </data>
+  <data name="Deny" xml:space="preserve">
+    <value>否定</value>
+  </data>
+  <data name="Department" xml:space="preserve">
+    <value>部門</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>記述</value>
+  </data>
+  <data name="Description_Comments" xml:space="preserve">
+    <value>記述/コメント</value>
+  </data>
+  <data name="Designer" xml:space="preserve">
+    <value>設計者　デザイナー</value>
+  </data>
+  <data name="Desktop_Client_Installer" xml:space="preserve">
+    <value>デスクトップ　クライアント　インストーラー</value>
+  </data>
+  <data name="Details" xml:space="preserve">
+    <value>詳細</value>
+  </data>
+  <data name="Directory_Name" xml:space="preserve">
+    <value>ディレクトリー名</value>
+  </data>
+  <data name="Display_Columns" xml:space="preserve">
+    <value>コラム表示</value>
+  </data>
+  <data name="Document" xml:space="preserve">
+    <value>ドキュメント</value>
+  </data>
+  <data name="Documents" xml:space="preserve">
+    <value>ドキュメント（複数）</value>
+  </data>
+  <data name="Document_Checklist" xml:space="preserve">
+    <value>ドキュメント　チェックリスト</value>
+  </data>
+  <data name="Document_Name" xml:space="preserve">
+    <value>ドキュメント名</value>
+  </data>
+  <data name="Document_Profile" xml:space="preserve">
+    <value>ドキュメント　プロフィール</value>
+  </data>
+  <data name="Document_Type" xml:space="preserve">
+    <value>ドキュメント　タイプ</value>
+  </data>
+  <data name="Documnet_type" xml:space="preserve">
+    <value>ドキュメント　タイプ</value>
+  </data>
+  <data name="Done" xml:space="preserve">
+    <value>済み</value>
+  </data>
+  <data name="Download" xml:space="preserve">
+    <value>ダウンロード</value>
+  </data>
+  <data name="Download_Sample_COBie_File" xml:space="preserve">
+    <value>サンプル COBie ファイルをダウンロード</value>
+  </data>
+  <data name="Due_Date" xml:space="preserve">
+    <value>期日</value>
+  </data>
+  <data name="Duration" xml:space="preserve">
+    <value>期間</value>
+  </data>
+  <data name="Duration_Unit" xml:space="preserve">
+    <value>期間　単位</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>編集</value>
+  </data>
+  <data name="Edit_Classification" xml:space="preserve">
+    <value>分類を編集</value>
+  </data>
+  <data name="Edit_Designer_Contractor" xml:space="preserve">
+    <value>設計者/請負業者を編集</value>
+  </data>
+  <data name="Edit_Impact" xml:space="preserve">
+    <value>インパクトを編集</value>
+  </data>
+  <data name="Edit_Location_Hierarchy" xml:space="preserve">
+    <value>ロケーション　ヒエラルキーを編集</value>
+  </data>
+  <data name="Edit_Master_Format" xml:space="preserve">
+    <value>マスターフォーマットを編集</value>
+  </data>
+  <data name="Edit_Omniclass" xml:space="preserve">
+    <value>オムニクラスを編集</value>
+  </data>
+  <data name="Edit_OmniClass_Masterformat_Uniformat" xml:space="preserve">
+    <value>オムニクラス/マスターフォーマット/ユニフォーマットを編集</value>
+  </data>
+  <data name="Edit_Uni_Format" xml:space="preserve">
+    <value>ユニフォーマットを編集</value>
+  </data>
+  <data name="Elapsed_Time" xml:space="preserve">
+    <value>経過タイム</value>
+  </data>
+  <data name="Elevation" xml:space="preserve">
+    <value>立面</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>Eメール</value>
+  </data>
+  <data name="Enabled" xml:space="preserve">
+    <value>動作有効</value>
+  </data>
+  <data name="End" xml:space="preserve">
+    <value>終了</value>
+  </data>
+  <data name="End_Date" xml:space="preserve">
+    <value>終了日</value>
+  </data>
+  <data name="End_Date_Time" xml:space="preserve">
+    <value>終了日　時間</value>
+  </data>
+  <data name="Energy_Model" xml:space="preserve">
+    <value>エネルギーモデル</value>
+  </data>
+  <data name="Energy_Simulation" xml:space="preserve">
+    <value>エネルギー　シミュレーション</value>
+  </data>
+  <data name="Engineering_Controls" xml:space="preserve">
+    <value>エンジニアリング　コントロール</value>
+  </data>
+  <data name="Entity" xml:space="preserve">
+    <value>エンティティ</value>
+  </data>
+  <data name="Entity_Name" xml:space="preserve">
+    <value>エンティティ名</value>
+  </data>
+  <data name="Equal_To" xml:space="preserve">
+    <value>～に等しい</value>
+  </data>
+  <data name="Equipment" xml:space="preserve">
+    <value>備品</value>
+  </data>
+  <data name="Equipment_Id" xml:space="preserve">
+    <value>備品ID</value>
+  </data>
+  <data name="Errors" xml:space="preserve">
+    <value>エラー</value>
+  </data>
+  <data name="Error_sending_Email" xml:space="preserve">
+    <value>エラー送信　Eメール</value>
+  </data>
+  <data name="Estimated_Time" xml:space="preserve">
+    <value>予測時間</value>
+  </data>
+  <data name="Expected_Life" xml:space="preserve">
+    <value>予想寿命</value>
+  </data>
+  <data name="Export" xml:space="preserve">
+    <value>エクスポート</value>
+  </data>
+  <data name="ExportedBy" xml:space="preserve">
+    <value>～によってエクスポート</value>
+  </data>
+  <data name="ExportedOn" xml:space="preserve">
+    <value>～上にエクスポート</value>
+  </data>
+  <data name="Export_COBie_File" xml:space="preserve">
+    <value>COBi　ファイルをエクスポート</value>
+  </data>
+  <data name="Export_Component" xml:space="preserve">
+    <value>コンポーネントをエクスポート</value>
+  </data>
+  <data name="Export_Contact" xml:space="preserve">
+    <value>連絡先をエクスポート</value>
+  </data>
+  <data name="Export_Data" xml:space="preserve">
+    <value>データをエクスポート</value>
+  </data>
+  <data name="Export_Documents" xml:space="preserve">
+    <value>ドキュメントをエクスポート</value>
+  </data>
+  <data name="Export_Project_Contacts" xml:space="preserve">
+    <value>プロジェクト連絡先をエクスポート</value>
+  </data>
+  <data name="Export_To_Excel" xml:space="preserve">
+    <value>エクセルにエクスポート</value>
+  </data>
+  <data name="Export_To_PDF" xml:space="preserve">
+    <value>PDF にエクスポート</value>
+  </data>
+  <data name="External_System" xml:space="preserve">
+    <value>外部システム</value>
+  </data>
+  <data name="External_System_Integration" xml:space="preserve">
+    <value>外部システム統合</value>
+  </data>
+  <data name="External_System_Name" xml:space="preserve">
+    <value>外部システム名</value>
+  </data>
+  <data name="Ext_System_Facility" xml:space="preserve">
+    <value>Ext システム施設</value>
+  </data>
+  <data name="Ext_System_Site" xml:space="preserve">
+    <value>Ext.システムサイト</value>
+  </data>
+  <data name="Facilities" xml:space="preserve">
+    <value>施設（複数）</value>
+  </data>
+  <data name="Facility" xml:space="preserve">
+    <value>施設</value>
+  </data>
+  <data name="Facility_Mapping" xml:space="preserve">
+    <value>施設マッピング</value>
+  </data>
+  <data name="Facility_Name" xml:space="preserve">
+    <value>施設名</value>
+  </data>
+  <data name="Facility_Profile" xml:space="preserve">
+    <value>施設プロフィール</value>
+  </data>
+  <data name="Family_Name" xml:space="preserve">
+    <value>ファミリー名</value>
+  </data>
+  <data name="File" xml:space="preserve">
+    <value>ファイル</value>
+  </data>
+  <data name="filepath" xml:space="preserve">
+    <value>ファイル　パス</value>
+  </data>
+  <data name="filesize" xml:space="preserve">
+    <value>ファイル　サイズ</value>
+  </data>
+  <data name="File_Name" xml:space="preserve">
+    <value>ファイル名</value>
+  </data>
+  <data name="File_Size" xml:space="preserve">
+    <value>ファイルサイズ</value>
+  </data>
+  <data name="Find" xml:space="preserve">
+    <value>見つける</value>
+  </data>
+  <data name="Find_Asset" xml:space="preserve">
+    <value>アセットを見つける</value>
+  </data>
+  <data name="Find_Data_Point" xml:space="preserve">
+    <value>データポイントを見つける</value>
+  </data>
+  <data name="Find_Location" xml:space="preserve">
+    <value>ロケーションを見つける</value>
+  </data>
+  <data name="Finish" xml:space="preserve">
+    <value>仕上げ</value>
+  </data>
+  <data name="Finish_Time" xml:space="preserve">
+    <value>完了時間</value>
+  </data>
+  <data name="First_Name" xml:space="preserve">
+    <value>ファーストネーム　名前</value>
+  </data>
+  <data name="Floor" xml:space="preserve">
+    <value>フロア</value>
+  </data>
+  <data name="Floors" xml:space="preserve">
+    <value>フロアー（複数）</value>
+  </data>
+  <data name="Floor_Name" xml:space="preserve">
+    <value>フロア名</value>
+  </data>
+  <data name="Floor_Name_Grid" xml:space="preserve">
+    <value>フロア名グリッド</value>
+  </data>
+  <data name="Floor_Profile" xml:space="preserve">
+    <value>フロア名プロフィール</value>
+  </data>
+  <data name="Floor_Spaces" xml:space="preserve">
+    <value>フロア　スペース</value>
+  </data>
+  <data name="Forgot_Password" xml:space="preserve">
+    <value>パスワードを忘れた</value>
+  </data>
+  <data name="Forgot_password_message_1" xml:space="preserve">
+    <value>Eメールアドレスとユーザー名を入力し、提出をクリックします</value>
+  </data>
+  <data name="Forgot_password_message_2" xml:space="preserve">
+    <value>EcoDomusがパスワード情報に関するメールを送ります</value>
+  </data>
+  <data name="Frequency" xml:space="preserve">
+    <value>頻度</value>
+  </data>
+  <data name="Frequency_Unit" xml:space="preserve">
+    <value>頻度の単位</value>
+  </data>
+  <data name="From" xml:space="preserve">
+    <value>フロム　～から</value>
+  </data>
+  <data name="Functional_Area" xml:space="preserve">
+    <value>機能的エリア</value>
+  </data>
+  <data name="Generated_Files" xml:space="preserve">
+    <value>作成されたファイル</value>
+  </data>
+  <data name="Generate_Barcode" xml:space="preserve">
+    <value>バーコード作成</value>
+  </data>
+  <data name="Generate_COBie_File" xml:space="preserve">
+    <value>COBie ファイル作成</value>
+  </data>
+  <data name="Generate_Component_Analysis_Report" xml:space="preserve">
+    <value>コンポーネント　分析レポート　作成</value>
+  </data>
+  <data name="Generate_Excel_File" xml:space="preserve">
+    <value>エクセル　ファイル　作成</value>
+  </data>
+  <data name="Generate_Report" xml:space="preserve">
+    <value>レポート作成</value>
+  </data>
+  <data name="Get_Location" xml:space="preserve">
+    <value>ロケーションを得る</value>
+  </data>
+  <data name="Get_Updates" xml:space="preserve">
+    <value>更新する</value>
+  </data>
+  <data name="Given_Name" xml:space="preserve">
+    <value>付与された名前</value>
+  </data>
+  <data name="Greater_Than" xml:space="preserve">
+    <value>～より大きい</value>
+  </data>
+  <data name="Gross_Area" xml:space="preserve">
+    <value>総面積</value>
+  </data>
+  <data name="Group" xml:space="preserve">
+    <value>グループ</value>
+  </data>
+  <data name="group_name" xml:space="preserve">
+    <value>グループ名</value>
+  </data>
+  <data name="Hazard" xml:space="preserve">
+    <value>ハザード</value>
+  </data>
+  <data name="Height" xml:space="preserve">
+    <value>高さ</value>
+  </data>
+  <data name="Help" xml:space="preserve">
+    <value>ヘルプ</value>
+  </data>
+  <data name="Hierarchy" xml:space="preserve">
+    <value>ヒエラルキー</value>
+  </data>
+  <data name="IAgree" xml:space="preserve">
+    <value>同意します</value>
+  </data>
+  <data name="ID" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="IDecline" xml:space="preserve">
+    <value>同意しません</value>
+  </data>
+  <data name="Image" xml:space="preserve">
+    <value>イメージ　画像</value>
+  </data>
+  <data name="Impact" xml:space="preserve">
+    <value>インパクト</value>
+  </data>
+  <data name="Impacts" xml:space="preserve">
+    <value>インパクト（複数）</value>
+  </data>
+  <data name="Implementation" xml:space="preserve">
+    <value>実行</value>
+  </data>
+  <data name="Import" xml:space="preserve">
+    <value>インポート</value>
+  </data>
+  <data name="Imported_by" xml:space="preserve">
+    <value>～によってインポート</value>
+  </data>
+  <data name="Imported_Files" xml:space="preserve">
+    <value>インポートされたファイル</value>
+  </data>
+  <data name="Imported_on" xml:space="preserve">
+    <value>～上にインポートされた</value>
+  </data>
+  <data name="Import_Data" xml:space="preserve">
+    <value>データをインポート</value>
+  </data>
+  <data name="Import_Export" xml:space="preserve">
+    <value>インポート/エクスポート</value>
+  </data>
+  <data name="Inbox" xml:space="preserve">
+    <value>インボックス</value>
+  </data>
+  <data name="Initial_Sync" xml:space="preserve">
+    <value>イニシャル　シンク</value>
+  </data>
+  <data name="Inspections" xml:space="preserve">
+    <value>査察</value>
+  </data>
+  <data name="Inspection_Profile" xml:space="preserve">
+    <value>査察　プロフィール</value>
+  </data>
+  <data name="Installation_Date" xml:space="preserve">
+    <value>設置日</value>
+  </data>
+  <data name="Integration" xml:space="preserve">
+    <value>統合</value>
+  </data>
+  <data name="Interpolate" xml:space="preserve">
+    <value>補間する</value>
+  </data>
+  <data name="Issues" xml:space="preserve">
+    <value>イシュー（問題）</value>
+  </data>
+  <data name="Issue_Log" xml:space="preserve">
+    <value>イシューログ</value>
+  </data>
+  <data name="Issue_Name" xml:space="preserve">
+    <value>イシュー名</value>
+  </data>
+  <data name="Issue_Number" xml:space="preserve">
+    <value>イシューナンバー</value>
+  </data>
+  <data name="Issue_Profile" xml:space="preserve">
+    <value>イシュープロフィール</value>
+  </data>
+  <data name="Issue_Report" xml:space="preserve">
+    <value>イシュープロフィール</value>
+  </data>
+  <data name="Issue_Status" xml:space="preserve">
+    <value>イシューステータス</value>
+  </data>
+  <data name="Issue_Type" xml:space="preserve">
+    <value>イシュータイプ</value>
+  </data>
+  <data name="Items_Completed" xml:space="preserve">
+    <value>完了したアイテム</value>
+  </data>
+  <data name="Items_Failed" xml:space="preserve">
+    <value>失敗したアイテム</value>
+  </data>
+  <data name="Items_Remaining" xml:space="preserve">
+    <value>残存するアイテム</value>
+  </data>
+  <data name="Job" xml:space="preserve">
+    <value>仕事</value>
+  </data>
+  <data name="Jobs" xml:space="preserve">
+    <value>仕事（複数）</value>
+  </data>
+  <data name="JSN" xml:space="preserve">
+    <value>JSN</value>
+  </data>
+  <data name="JSN_Name" xml:space="preserve">
+    <value>JSN 名</value>
+  </data>
+  <data name="Language" xml:space="preserve">
+    <value>言語</value>
+  </data>
+  <data name="Last_Name" xml:space="preserve">
+    <value>ラストネーム　姓</value>
+  </data>
+  <data name="Last_Sync_Date" xml:space="preserve">
+    <value>最終同期日</value>
+  </data>
+  <data name="Latitude" xml:space="preserve">
+    <value>緯度</value>
+  </data>
+  <data name="Lead_Organization" xml:space="preserve">
+    <value>先導組織</value>
+  </data>
+  <data name="Less_Than" xml:space="preserve">
+    <value>～より少ない</value>
+  </data>
+  <data name="Levels" xml:space="preserve">
+    <value>レベル（複数）</value>
+  </data>
+  <data name="Level_Of_Details" xml:space="preserve">
+    <value>詳細さの程度</value>
+  </data>
+  <data name="Likelihood" xml:space="preserve">
+    <value>可能性</value>
+  </data>
+  <data name="Linear_Units" xml:space="preserve">
+    <value>リニア　単位</value>
+  </data>
+  <data name="Linked_In_BIM" xml:space="preserve">
+    <value>BIMでリンクされた? :</value>
+  </data>
+  <data name="Links" xml:space="preserve">
+    <value>リンク（複数）</value>
+  </data>
+  <data name="Link_Status" xml:space="preserve">
+    <value>リンク　ステータス</value>
+  </data>
+  <data name="Link_to_Asset" xml:space="preserve">
+    <value>アセットへのリンク</value>
+  </data>
+  <data name="Link_to_Component" xml:space="preserve">
+    <value>コンポーネントへのリンク</value>
+  </data>
+  <data name="Link_to_Data" xml:space="preserve">
+    <value>データへのリンク</value>
+  </data>
+  <data name="Link_To_Space" xml:space="preserve">
+    <value>スペースへのリンク</value>
+  </data>
+  <data name="Live" xml:space="preserve">
+    <value>ライブの</value>
+  </data>
+  <data name="Location" xml:space="preserve">
+    <value>ロケーション</value>
+  </data>
+  <data name="Locations" xml:space="preserve">
+    <value>ロケーション（複数）</value>
+  </data>
+  <data name="Locations_Hierarchy" xml:space="preserve">
+    <value>ロケーションヒエラルキー</value>
+  </data>
+  <data name="Location_Hierarchy" xml:space="preserve">
+    <value>ロケーションヒエラルキー</value>
+  </data>
+  <data name="LogIn" xml:space="preserve">
+    <value>ログイン</value>
+  </data>
+  <data name="Login_As" xml:space="preserve">
+    <value>～としてログイン</value>
+  </data>
+  <data name="Logo" xml:space="preserve">
+    <value>ロゴ</value>
+  </data>
+  <data name="Logout" xml:space="preserve">
+    <value>ログアウト</value>
+  </data>
+  <data name="Log_In" xml:space="preserve">
+    <value>ログイン</value>
+  </data>
+  <data name="Longitude" xml:space="preserve">
+    <value>軽度</value>
+  </data>
+  <data name="Long_Name" xml:space="preserve">
+    <value>長い名前</value>
+  </data>
+  <data name="Lower_Limit_min" xml:space="preserve">
+    <value>下限（ミニマム）</value>
+  </data>
+  <data name="Major" xml:space="preserve">
+    <value>メジャー</value>
+  </data>
+  <data name="Manufacturer" xml:space="preserve">
+    <value>メーカー</value>
+  </data>
+  <data name="Manufacturer_Mapping" xml:space="preserve">
+    <value>メーカーのマッピング</value>
+  </data>
+  <data name="Manufacturer_Name" xml:space="preserve">
+    <value>メーカー名</value>
+  </data>
+  <data name="Map" xml:space="preserve">
+    <value>マップ</value>
+  </data>
+  <data name="Map_Integration" xml:space="preserve">
+    <value>マップ統合</value>
+  </data>
+  <data name="Masterformat" xml:space="preserve">
+    <value>マスターフォーマット</value>
+  </data>
+  <data name="Master_Files" xml:space="preserve">
+    <value>マスターファイル</value>
+  </data>
+  <data name="Master_Format" xml:space="preserve">
+    <value>マスターフォーマット</value>
+  </data>
+  <data name="message" xml:space="preserve">
+    <value>メッセージ</value>
+  </data>
+  <data name="Missing_Attribute" xml:space="preserve">
+    <value>不足している属性</value>
+  </data>
+  <data name="Missing_attributes" xml:space="preserve">
+    <value>不足している属性</value>
+  </data>
+  <data name="Missing_Attributes_Report" xml:space="preserve">
+    <value>不足している属性についてのレポート</value>
+  </data>
+  <data name="Mitigation" xml:space="preserve">
+    <value>緩和策</value>
+  </data>
+  <data name="Model_Number" xml:space="preserve">
+    <value>モデルナンバー</value>
+  </data>
+  <data name="Model_Server" xml:space="preserve">
+    <value>モデルサーバー</value>
+  </data>
+  <data name="Monday" xml:space="preserve">
+    <value>月曜日</value>
+  </data>
+  <data name="Month" xml:space="preserve">
+    <value>月</value>
+  </data>
+  <data name="Months" xml:space="preserve">
+    <value>月（複数）</value>
+  </data>
+  <data name="Move_To_System" xml:space="preserve">
+    <value>システムに移行</value>
+  </data>
+  <data name="My_Current_Week_Tasks" xml:space="preserve">
+    <value>現在の週のタスク</value>
+  </data>
+  <data name="My_Profile" xml:space="preserve">
+    <value>私のプロフィール</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>名前</value>
+  </data>
+  <data name="Naming_Convention" xml:space="preserve">
+    <value>ネーミングに関するきまり</value>
+  </data>
+  <data name="Navigation" xml:space="preserve">
+    <value>ナビゲーション</value>
+  </data>
+  <data name="Navisworks_Version" xml:space="preserve">
+    <value>Naviworksバージョン</value>
+  </data>
+  <data name="Net_Area" xml:space="preserve">
+    <value>総面積</value>
+  </data>
+  <data name="New_Password" xml:space="preserve">
+    <value>新しいパスワード</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>次</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>No.　否定　無し</value>
+  </data>
+  <data name="Notify" xml:space="preserve">
+    <value>通知</value>
+  </data>
+  <data name="No_Filter" xml:space="preserve">
+    <value>フィルター無し</value>
+  </data>
+  <data name="No_Of_Users" xml:space="preserve">
+    <value>ユーザー数</value>
+  </data>
+  <data name="Number_Of_Clones_To_Be_Created" xml:space="preserve">
+    <value>作成予定のクローン数</value>
+  </data>
+  <data name="Number_of_Components" xml:space="preserve">
+    <value>コンポーネント数</value>
+  </data>
+  <data name="Numeric_Type" xml:space="preserve">
+    <value>数値タイプ</value>
+  </data>
+  <data name="Object" xml:space="preserve">
+    <value>オブジェクト　対象</value>
+  </data>
+  <data name="Office_Name" xml:space="preserve">
+    <value>オフィス名</value>
+  </data>
+  <data name="Ok" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="OmniClass" xml:space="preserve">
+    <value>オムニクラス</value>
+  </data>
+  <data name="OmniClass_Type" xml:space="preserve">
+    <value>オムニクラス　タイプ</value>
+  </data>
+  <data name="OmniClas_2010" xml:space="preserve">
+    <value>オムニクラス　2010</value>
+  </data>
+  <data name="Omni_Class_Type" xml:space="preserve">
+    <value>オムニクラス　タイプ</value>
+  </data>
+  <data name="Open" xml:space="preserve">
+    <value>オープン　開く</value>
+  </data>
+  <data name="Organization" xml:space="preserve">
+    <value>組織</value>
+  </data>
+  <data name="Organizations" xml:space="preserve">
+    <value>組織</value>
+  </data>
+  <data name="Organization_Acceptance" xml:space="preserve">
+    <value>組織受領</value>
+  </data>
+  <data name="Organization_ID" xml:space="preserve">
+    <value>組織ID</value>
+  </data>
+  <data name="Organization_Name" xml:space="preserve">
+    <value>組織名</value>
+  </data>
+  <data name="Organization_Profile" xml:space="preserve">
+    <value>組織プロフィール</value>
+  </data>
+  <data name="Organization_Type" xml:space="preserve">
+    <value>組織タイプ</value>
+  </data>
+  <data name="Overall_Impact" xml:space="preserve">
+    <value>全体的インパクト</value>
+  </data>
+  <data name="Owner" xml:space="preserve">
+    <value>オーナー　所有者　施主</value>
+  </data>
+  <data name="Owner_Organization" xml:space="preserve">
+    <value>オーナーの組織</value>
+  </data>
+  <data name="Page_Title" xml:space="preserve">
+    <value>ページ　タイトル</value>
+  </data>
+  <data name="Parameter" xml:space="preserve">
+    <value>パラメーター</value>
+  </data>
+  <data name="Parent" xml:space="preserve">
+    <value>ペアレント　親</value>
+  </data>
+  <data name="Parent_System" xml:space="preserve">
+    <value>ペアレント　システム</value>
+  </data>
+  <data name="Part_Number" xml:space="preserve">
+    <value>パーツ　ナンバー</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>パスワード</value>
+  </data>
+  <data name="Password_change_message" xml:space="preserve">
+    <value>パスワードが間違っています</value>
+  </data>
+  <data name="Password_Policy" xml:space="preserve">
+    <value>パスワード　ポリシー</value>
+  </data>
+  <data name="Password_Rule_1" xml:space="preserve">
+    <value>パスワードは～でなければなりません</value>
+  </data>
+  <data name="Password_Rule_10" xml:space="preserve">
+    <value>選択されたパスワードは、一般的な姓名、ログインID,　Eメールアドレス、イニシャル、ミドルネーム、氏名、</value>
+  </data>
+  <data name="Password_Rule_11" xml:space="preserve">
+    <value>が入っていてはいけません。</value>
+  </data>
+  <data name="Password_Rule_12" xml:space="preserve">
+    <value>または昨年から使われているか、最近設定した3つのパスワードと同じであってはいけません。</value>
+  </data>
+  <data name="Password_Rule_13" xml:space="preserve">
+    <value>一年に2度はパスワードを変更することが推奨されます。</value>
+  </data>
+  <data name="Password_Rule_14" xml:space="preserve">
+    <value>（春と秋の時計の調整時などに）</value>
+  </data>
+  <data name="Password_Rule_15" xml:space="preserve">
+    <value>選択されるパスワードは　全て新しく、異なるものです。</value>
+  </data>
+  <data name="Password_Rule_16" xml:space="preserve">
+    <value>現在のパスワードとは異なるものを設定してください。</value>
+  </data>
+  <data name="Password_Rule_2" xml:space="preserve">
+    <value>長さは最短で８文字</value>
+  </data>
+  <data name="Password_Rule_3" xml:space="preserve">
+    <value>数字を頭に使用しないこと。</value>
+  </data>
+  <data name="Password_Rule_4" xml:space="preserve">
+    <value>パスワードは記憶して下さい。文字で残すと　セキュリティ上問題があります。</value>
+  </data>
+  <data name="Password_Rule_5" xml:space="preserve">
+    <value>次のカテゴリーの3つから少なくとも１文字は入れること。</value>
+  </data>
+  <data name="Password_Rule_6" xml:space="preserve">
+    <value>大文字（A-Z）</value>
+  </data>
+  <data name="Password_Rule_7" xml:space="preserve">
+    <value>小文字（a-z)</value>
+  </data>
+  <data name="Password_Rule_8" xml:space="preserve">
+    <value>アラビア数字（0-9）</value>
+  </data>
+  <data name="Password_Rule_9" xml:space="preserve">
+    <value>非公開</value>
+  </data>
+  <data name="PDF_Output_Format" xml:space="preserve">
+    <value>PDF　アウトプット　フォーマット</value>
+  </data>
+  <data name="Permissions" xml:space="preserve">
+    <value>許可</value>
+  </data>
+  <data name="Personal_Protective_equipment" xml:space="preserve">
+    <value>パーソナル　プロテクティブ　装置</value>
+  </data>
+  <data name="Phase" xml:space="preserve">
+    <value>段階</value>
+  </data>
+  <data name="Phase_Name" xml:space="preserve">
+    <value>段階名</value>
+  </data>
+  <data name="Phone" xml:space="preserve">
+    <value>電話</value>
+  </data>
+  <data name="Phone_Number" xml:space="preserve">
+    <value>電話番号</value>
+  </data>
+  <data name="Please_enter_number" xml:space="preserve">
+    <value>数字を入力してください</value>
+  </data>
+  <data name="Postal_Code" xml:space="preserve">
+    <value>郵便番号</value>
+  </data>
+  <data name="Postal_Code_Zip" xml:space="preserve">
+    <value>郵便番号</value>
+  </data>
+  <data name="Price" xml:space="preserve">
+    <value>価格</value>
+  </data>
+  <data name="Primary_Contact" xml:space="preserve">
+    <value>主たる連絡先</value>
+  </data>
+  <data name="Priority" xml:space="preserve">
+    <value>優先順位</value>
+  </data>
+  <data name="Priors" xml:space="preserve">
+    <value>先行</value>
+  </data>
+  <data name="Product" xml:space="preserve">
+    <value>製品　成果物</value>
+  </data>
+  <data name="ProductAttribute" xml:space="preserve">
+    <value>成果物属性</value>
+  </data>
+  <data name="Products" xml:space="preserve">
+    <value>製品　成果物</value>
+  </data>
+  <data name="Product_Attributes" xml:space="preserve">
+    <value>成果物属性</value>
+  </data>
+  <data name="Product_Description" xml:space="preserve">
+    <value>成果物記述</value>
+  </data>
+  <data name="Product_Document" xml:space="preserve">
+    <value>成果物ドキュメント</value>
+  </data>
+  <data name="Product_Documents" xml:space="preserve">
+    <value>成果物ドキュメント（複数）</value>
+  </data>
+  <data name="Product_Manufacturer" xml:space="preserve">
+    <value>成果物メーカー</value>
+  </data>
+  <data name="Product_Name" xml:space="preserve">
+    <value>成果物名</value>
+  </data>
+  <data name="Product_Profile" xml:space="preserve">
+    <value>成果物プロフィール</value>
+  </data>
+  <data name="Profile" xml:space="preserve">
+    <value>プロフィール</value>
+  </data>
+  <data name="Program_file" xml:space="preserve">
+    <value>プログラム　ファイル</value>
+  </data>
+  <data name="Project" xml:space="preserve">
+    <value>プロジェクト</value>
+  </data>
+  <data name="Projects" xml:space="preserve">
+    <value>プロジェクト（複数）</value>
+  </data>
+  <data name="Project_Contact" xml:space="preserve">
+    <value>プロジェクト連絡先</value>
+  </data>
+  <data name="Project_Data" xml:space="preserve">
+    <value>プロジェクトデータ</value>
+  </data>
+  <data name="Project_Facilities" xml:space="preserve">
+    <value>プロジェクト施設</value>
+  </data>
+  <data name="Project_Id" xml:space="preserve">
+    <value>プロジェクトID</value>
+  </data>
+  <data name="Project_Name" xml:space="preserve">
+    <value>プロジェクト名</value>
+  </data>
+  <data name="Project_Number" xml:space="preserve">
+    <value>プロジェクトナンバー</value>
+  </data>
+  <data name="Project_Profile" xml:space="preserve">
+    <value>プロジェクトプロフィール</value>
+  </data>
+  <data name="Project_Role" xml:space="preserve">
+    <value>プロジェクト役割</value>
+  </data>
+  <data name="Project_Roles" xml:space="preserve">
+    <value>プロジェクト役割（複数）</value>
+  </data>
+  <data name="Project_Role_Permission" xml:space="preserve">
+    <value>プロジェクト役割許可</value>
+  </data>
+  <data name="Project_Setup" xml:space="preserve">
+    <value>プロジェクトセットアップ</value>
+  </data>
+  <data name="Promise_Date" xml:space="preserve">
+    <value>約束の日</value>
+  </data>
+  <data name="Properties" xml:space="preserve">
+    <value>プロパティ</value>
+  </data>
+  <data name="Protocol" xml:space="preserve">
+    <value>プロトコル</value>
+  </data>
+  <data name="Providers" xml:space="preserve">
+    <value>プロバイダー</value>
+  </data>
+  <data name="Provide_New_Name" xml:space="preserve">
+    <value>新しい名前をつける</value>
+  </data>
+  <data name="read_only_flag" xml:space="preserve">
+    <value>リードオンリー（読み取り専用）フラッグ</value>
+  </data>
+  <data name="Recent" xml:space="preserve">
+    <value>最近の</value>
+  </data>
+  <data name="Recent_Facilities" xml:space="preserve">
+    <value>最近の施設</value>
+  </data>
+  <data name="Recent_Projects" xml:space="preserve">
+    <value>最近のプロジェクト</value>
+  </data>
+  <data name="Reference" xml:space="preserve">
+    <value>レファレンス</value>
+  </data>
+  <data name="Refresh" xml:space="preserve">
+    <value>リフレッシュ</value>
+  </data>
+  <data name="Remove" xml:space="preserve">
+    <value>削除</value>
+  </data>
+  <data name="Removed" xml:space="preserve">
+    <value>削除された</value>
+  </data>
+  <data name="Rename" xml:space="preserve">
+    <value>リネーム　名前の変更</value>
+  </data>
+  <data name="Replace" xml:space="preserve">
+    <value>場所の変更</value>
+  </data>
+  <data name="Replacement_Cost" xml:space="preserve">
+    <value>入れ替えコスト</value>
+  </data>
+  <data name="Replace_File" xml:space="preserve">
+    <value>ファイルの入れ替え</value>
+  </data>
+  <data name="Reports" xml:space="preserve">
+    <value>レポート</value>
+  </data>
+  <data name="Requested_By" xml:space="preserve">
+    <value>～によりリクエストされた</value>
+  </data>
+  <data name="Requested_Date" xml:space="preserve">
+    <value>リクエストされた日付</value>
+  </data>
+  <data name="Request_Pending" xml:space="preserve">
+    <value>ペンディング中のリクエスト</value>
+  </data>
+  <data name="Request_To_Add_New_Organization" xml:space="preserve">
+    <value>新規組織追加リクエスト</value>
+  </data>
+  <data name="Required_Attributes" xml:space="preserve">
+    <value>必要な属性</value>
+  </data>
+  <data name="Required_Documents" xml:space="preserve">
+    <value>必要なドキュメント</value>
+  </data>
+  <data name="Required_Optional" xml:space="preserve">
+    <value>必要な/任意の</value>
+  </data>
+  <data name="Reset" xml:space="preserve">
+    <value>リセット</value>
+  </data>
+  <data name="Resolved" xml:space="preserve">
+    <value>解決済み</value>
+  </data>
+  <data name="Resources" xml:space="preserve">
+    <value>リソース（複数）</value>
+  </data>
+  <data name="Resource_Name" xml:space="preserve">
+    <value>リソース名</value>
+  </data>
+  <data name="Responsible" xml:space="preserve">
+    <value>責任ある</value>
+  </data>
+  <data name="Risk" xml:space="preserve">
+    <value>リスク</value>
+  </data>
+  <data name="Role" xml:space="preserve">
+    <value>役割</value>
+  </data>
+  <data name="Roles" xml:space="preserve">
+    <value>役割（複数）</value>
+  </data>
+  <data name="Role_Description" xml:space="preserve">
+    <value>役割記述</value>
+  </data>
+  <data name="Role_Details" xml:space="preserve">
+    <value>役割詳細</value>
+  </data>
+  <data name="Role_Name" xml:space="preserve">
+    <value>役割名</value>
+  </data>
+  <data name="Room_Code" xml:space="preserve">
+    <value>部屋コード</value>
+  </data>
+  <data name="Room_Data_Sheet" xml:space="preserve">
+    <value>部屋データシート</value>
+  </data>
+  <data name="Room_Id" xml:space="preserve">
+    <value>部屋ID</value>
+  </data>
+  <data name="Room_Name" xml:space="preserve">
+    <value>部屋名</value>
+  </data>
+  <data name="Room_Tag" xml:space="preserve">
+    <value>部屋タグ</value>
+  </data>
+  <data name="Root_Cause_Analysis" xml:space="preserve">
+    <value>根本的原因分析</value>
+  </data>
+  <data name="Row" xml:space="preserve">
+    <value>行</value>
+  </data>
+  <data name="Row_Name" xml:space="preserve">
+    <value>行の名前</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>保存</value>
+  </data>
+  <data name="Save_And_Clone" xml:space="preserve">
+    <value>保存とクローン</value>
+  </data>
+  <data name="Save_Document" xml:space="preserve">
+    <value>ドキュメント保存</value>
+  </data>
+  <data name="Save_Hierarchy" xml:space="preserve">
+    <value>ヒエラルキー保存</value>
+  </data>
+  <data name="Save_Impact" xml:space="preserve">
+    <value>インパクト保存</value>
+  </data>
+  <data name="Save_Layout" xml:space="preserve">
+    <value>レイアウト保存</value>
+  </data>
+  <data name="Save_Schedule" xml:space="preserve">
+    <value>スケジュール保存</value>
+  </data>
+  <data name="Schedule" xml:space="preserve">
+    <value>スケジュール</value>
+  </data>
+  <data name="Scheduler" xml:space="preserve">
+    <value>スケジューラー</value>
+  </data>
+  <data name="Schedules" xml:space="preserve">
+    <value>スケジュール（複数）</value>
+  </data>
+  <data name="Schedule_Limits" xml:space="preserve">
+    <value>スケジュール限界</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>サーチ　検索</value>
+  </data>
+  <data name="Search_Asset" xml:space="preserve">
+    <value>アセット検索</value>
+  </data>
+  <data name="Search_By" xml:space="preserve">
+    <value>～による検索</value>
+  </data>
+  <data name="Search_Space" xml:space="preserve">
+    <value>スペース検索</value>
+  </data>
+  <data name="Select" xml:space="preserve">
+    <value>選択</value>
+  </data>
+  <data name="Selected_Masterformat" xml:space="preserve">
+    <value>選択されたマスターフォーマット</value>
+  </data>
+  <data name="Selected_Master_Format" xml:space="preserve">
+    <value>選択されたマスターフォーマット</value>
+  </data>
+  <data name="Select_Add" xml:space="preserve">
+    <value>選択/追加</value>
+  </data>
+  <data name="Select_Component" xml:space="preserve">
+    <value>コンポーネント選択</value>
+  </data>
+  <data name="Select_Date" xml:space="preserve">
+    <value>日付選択</value>
+  </data>
+  <data name="Select_Entity" xml:space="preserve">
+    <value>エンティティ選択</value>
+  </data>
+  <data name="Select_Facility" xml:space="preserve">
+    <value>施設選択</value>
+  </data>
+  <data name="Select_File" xml:space="preserve">
+    <value>ファイル選択</value>
+  </data>
+  <data name="Select_File_To_Upload" xml:space="preserve">
+    <value>アップロード用ファイル選択</value>
+  </data>
+  <data name="Select_Master_Format" xml:space="preserve">
+    <value>マスターフォーマット選択</value>
+  </data>
+  <data name="Select_Project_Role" xml:space="preserve">
+    <value>プロジェクトの役割選択</value>
+  </data>
+  <data name="Select_Sub_Assemblies" xml:space="preserve">
+    <value>サブアッセンブリー選択</value>
+  </data>
+  <data name="Select_Task" xml:space="preserve">
+    <value>タスク選択</value>
+  </data>
+  <data name="Select_Time" xml:space="preserve">
+    <value>時間選択</value>
+  </data>
+  <data name="Select_Uniformat" xml:space="preserve">
+    <value>ユニフォーマット選択</value>
+  </data>
+  <data name="Select_Uni_Format" xml:space="preserve">
+    <value>ユニフォーマット選択</value>
+  </data>
+  <data name="Serial_Number" xml:space="preserve">
+    <value>シリアル　ナンバー</value>
+  </data>
+  <data name="Server_Name" xml:space="preserve">
+    <value>サーバー名</value>
+  </data>
+  <data name="Service_Authentication_URL" xml:space="preserve">
+    <value>サービス認証URL</value>
+  </data>
+  <data name="Service_Client" xml:space="preserve">
+    <value>サービス　クライアント</value>
+  </data>
+  <data name="Service_History" xml:space="preserve">
+    <value>サービス　履歴</value>
+  </data>
+  <data name="Service_URL" xml:space="preserve">
+    <value>サービス　URL</value>
+  </data>
+  <data name="Set" xml:space="preserve">
+    <value>セット　設定</value>
+  </data>
+  <data name="Settings" xml:space="preserve">
+    <value>設定</value>
+  </data>
+  <data name="Setup_Sync_Configuration" xml:space="preserve">
+    <value>同期構成セットアップ</value>
+  </data>
+  <data name="Setup_Sync_Wizard" xml:space="preserve">
+    <value>同期ウイザードセットアップ</value>
+  </data>
+  <data name="Set_Number" xml:space="preserve">
+    <value>セット　ナンバー</value>
+  </data>
+  <data name="Severity" xml:space="preserve">
+    <value>過酷さ</value>
+  </data>
+  <data name="Sheet" xml:space="preserve">
+    <value>シート</value>
+  </data>
+  <data name="Sheet_Name" xml:space="preserve">
+    <value>シート名</value>
+  </data>
+  <data name="Short_Name" xml:space="preserve">
+    <value>短い名前</value>
+  </data>
+  <data name="Show" xml:space="preserve">
+    <value>表示する</value>
+  </data>
+  <data name="Show_All" xml:space="preserve">
+    <value>全て表示</value>
+  </data>
+  <data name="Show_All_Issues" xml:space="preserve">
+    <value>全ての問題を表示</value>
+  </data>
+  <data name="Show_All_work_order" xml:space="preserve">
+    <value>全ての作業手順を表示</value>
+  </data>
+  <data name="Show_Model" xml:space="preserve">
+    <value>モデルを表示</value>
+  </data>
+  <data name="Show_Open_Work_Order" xml:space="preserve">
+    <value>オープンな作業手順を表示</value>
+  </data>
+  <data name="Show_Report" xml:space="preserve">
+    <value>レポート表示</value>
+  </data>
+  <data name="Site_Description" xml:space="preserve">
+    <value>記述表示</value>
+  </data>
+  <data name="Site_Name" xml:space="preserve">
+    <value>名前表示</value>
+  </data>
+  <data name="Space" xml:space="preserve">
+    <value>スペース</value>
+  </data>
+  <data name="Spaces" xml:space="preserve">
+    <value>スペース（複数）</value>
+  </data>
+  <data name="Space_Name" xml:space="preserve">
+    <value>スペース名</value>
+  </data>
+  <data name="Space_Names" xml:space="preserve">
+    <value>保存されたエリア</value>
+  </data>
+  <data name="Space_Profile" xml:space="preserve">
+    <value>スペースプロフィール</value>
+  </data>
+  <data name="Space_Type" xml:space="preserve">
+    <value>スペースタイプ</value>
+  </data>
+  <data name="Spares" xml:space="preserve">
+    <value>スペア（複数）</value>
+  </data>
+  <data name="Spare_Name" xml:space="preserve">
+    <value>スペア名</value>
+  </data>
+  <data name="Stage" xml:space="preserve">
+    <value>ステージ</value>
+  </data>
+  <data name="Standard" xml:space="preserve">
+    <value>スタンダードな　標準</value>
+  </data>
+  <data name="Start" xml:space="preserve">
+    <value>スタート　開始</value>
+  </data>
+  <data name="Start_Date" xml:space="preserve">
+    <value>開始日</value>
+  </data>
+  <data name="Start_Date_Time" xml:space="preserve">
+    <value>開始日、時間</value>
+  </data>
+  <data name="Start_Time" xml:space="preserve">
+    <value>開始時間</value>
+  </data>
+  <data name="Start_Unit" xml:space="preserve">
+    <value>開始単位</value>
+  </data>
+  <data name="State" xml:space="preserve">
+    <value>州</value>
+  </data>
+  <data name="State_Region" xml:space="preserve">
+    <value>州　地域</value>
+  </data>
+  <data name="Station_Name" xml:space="preserve">
+    <value>州名</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>ステータス　状態</value>
+  </data>
+  <data name="Street" xml:space="preserve">
+    <value>通り</value>
+  </data>
+  <data name="Street_Address" xml:space="preserve">
+    <value>通り　住所</value>
+  </data>
+  <data name="SubAssemblies" xml:space="preserve">
+    <value>サブアッセンブリー（複数）</value>
+  </data>
+  <data name="SubAssembly" xml:space="preserve">
+    <value>サブアッセンブリー</value>
+  </data>
+  <data name="Submit" xml:space="preserve">
+    <value>提出</value>
+  </data>
+  <data name="Subsystem" xml:space="preserve">
+    <value>サブシステム</value>
+  </data>
+  <data name="Subsystems" xml:space="preserve">
+    <value>サブシステム（複数）</value>
+  </data>
+  <data name="Subsystem_Name" xml:space="preserve">
+    <value>サブシステム名</value>
+  </data>
+  <data name="Sub_assemblies" xml:space="preserve">
+    <value>サブ　アッセンブリー</value>
+  </data>
+  <data name="Sub_assembly_Name" xml:space="preserve">
+    <value>サブ　アッセンブリー名</value>
+  </data>
+  <data name="Sunday" xml:space="preserve">
+    <value>日曜日</value>
+  </data>
+  <data name="Supplier" xml:space="preserve">
+    <value>サプライヤー</value>
+  </data>
+  <data name="Sustainability" xml:space="preserve">
+    <value>持続可能性</value>
+  </data>
+  <data name="Synchronization" xml:space="preserve">
+    <value>同期</value>
+  </data>
+  <data name="Synchronization_filters" xml:space="preserve">
+    <value>同期フィルター</value>
+  </data>
+  <data name="Synchronization_Result_For" xml:space="preserve">
+    <value>～のための同期の結果</value>
+  </data>
+  <data name="Synchronization_Type" xml:space="preserve">
+    <value>同期タイプ</value>
+  </data>
+  <data name="Synchronize" xml:space="preserve">
+    <value>同期させる</value>
+  </data>
+  <data name="Sync_Assets" xml:space="preserve">
+    <value>アセット同期</value>
+  </data>
+  <data name="Sync_Bottom_Line" xml:space="preserve">
+    <value>注意：ページは30秒ごとにリフレッシュされます</value>
+  </data>
+  <data name="Sync_Profile" xml:space="preserve">
+    <value>同期プロフィール</value>
+  </data>
+  <data name="System" xml:space="preserve">
+    <value>システム</value>
+  </data>
+  <data name="Systems" xml:space="preserve">
+    <value>システム（複数）</value>
+  </data>
+  <data name="System_Asset" xml:space="preserve">
+    <value>システムアセット</value>
+  </data>
+  <data name="System_File_Name" xml:space="preserve">
+    <value>システムファイル名</value>
+  </data>
+  <data name="System_Name" xml:space="preserve">
+    <value>システム名</value>
+  </data>
+  <data name="System_Profile" xml:space="preserve">
+    <value>システムプロフィール</value>
+  </data>
+  <data name="System_Role" xml:space="preserve">
+    <value>システム役割</value>
+  </data>
+  <data name="Tag_Number" xml:space="preserve">
+    <value>タグナンバー</value>
+  </data>
+  <data name="Tasks" xml:space="preserve">
+    <value>タスク（複数）</value>
+  </data>
+  <data name="Task_Name" xml:space="preserve">
+    <value>タスク名</value>
+  </data>
+  <data name="Task_Number" xml:space="preserve">
+    <value>タスクナンバー</value>
+  </data>
+  <data name="Template_Name" xml:space="preserve">
+    <value>テンプレート名</value>
+  </data>
+  <data name="TestOneMore" xml:space="preserve">
+    <value>ワンモア　テスト</value>
+  </data>
+  <data name="TestString" xml:space="preserve">
+    <value>テスト　ストリング</value>
+  </data>
+  <data name="Thursday" xml:space="preserve">
+    <value>木曜日</value>
+  </data>
+  <data name="Time_Zone" xml:space="preserve">
+    <value>時間帯</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>タイトル</value>
+  </data>
+  <data name="To" xml:space="preserve">
+    <value>～へ</value>
+  </data>
+  <data name="Total" xml:space="preserve">
+    <value>トータル　総計</value>
+  </data>
+  <data name="Total_Exported_Data_Transfer" xml:space="preserve">
+    <value>エクスポートされたデータの総転送</value>
+  </data>
+  <data name="Total_Imported_Data_Transfer" xml:space="preserve">
+    <value>インポートされたデータの総転送</value>
+  </data>
+  <data name="Town" xml:space="preserve">
+    <value>町</value>
+  </data>
+  <data name="Transfer_Speed" xml:space="preserve">
+    <value>転送スピード</value>
+  </data>
+  <data name="Trend" xml:space="preserve">
+    <value>トレンド　傾向</value>
+  </data>
+  <data name="Tuesday" xml:space="preserve">
+    <value>火曜日</value>
+  </data>
+  <data name="Type" xml:space="preserve">
+    <value>タイプ</value>
+  </data>
+  <data name="Type_Name" xml:space="preserve">
+    <value>タイプ名</value>
+  </data>
+  <data name="Type_Profile" xml:space="preserve">
+    <value>タイププロフィール</value>
+  </data>
+  <data name="Unassign" xml:space="preserve">
+    <value>アサインしない</value>
+  </data>
+  <data name="Unassigned_Items" xml:space="preserve">
+    <value>アイテムのアサインを解く</value>
+  </data>
+  <data name="Unassign_Asset" xml:space="preserve">
+    <value>アセットのアサインを解く</value>
+  </data>
+  <data name="Unassign_Component" xml:space="preserve">
+    <value>コンポーネントのアサインを解く</value>
+  </data>
+  <data name="Unassign_Space" xml:space="preserve">
+    <value>スペースのアサインを解く</value>
+  </data>
+  <data name="Unassign_SubAssembly" xml:space="preserve">
+    <value>サブアッセンブリーのアサインを解く</value>
+  </data>
+  <data name="Unassign_Subsystem" xml:space="preserve">
+    <value>サブシステムのアサインを解く</value>
+  </data>
+  <data name="Unassign_System" xml:space="preserve">
+    <value>システムのアサインを解く</value>
+  </data>
+  <data name="UniClass" xml:space="preserve">
+    <value>ユニクラス</value>
+  </data>
+  <data name="Uniformat" xml:space="preserve">
+    <value>ユニフォーマット</value>
+  </data>
+  <data name="Unit" xml:space="preserve">
+    <value>単位</value>
+  </data>
+  <data name="Unit_Type" xml:space="preserve">
+    <value>単位タイプ</value>
+  </data>
+  <data name="Uni_Format" xml:space="preserve">
+    <value>ユニフォーマット</value>
+  </data>
+  <data name="UOM" xml:space="preserve">
+    <value>UOM</value>
+  </data>
+  <data name="UOM_Mapping" xml:space="preserve">
+    <value>UOMマッピング</value>
+  </data>
+  <data name="Update" xml:space="preserve">
+    <value>アップデート　更新</value>
+  </data>
+  <data name="Updated" xml:space="preserve">
+    <value>アップデートされた</value>
+  </data>
+  <data name="Updated_By" xml:space="preserve">
+    <value>～によりアップデートされた</value>
+  </data>
+  <data name="Updated_On" xml:space="preserve">
+    <value>～上にアップデートされた</value>
+  </data>
+  <data name="Update_Component_Name" xml:space="preserve">
+    <value>コンポーネント名アップデート</value>
+  </data>
+  <data name="Update_Names" xml:space="preserve">
+    <value>名前アップデート</value>
+  </data>
+  <data name="Update_Type_Name" xml:space="preserve">
+    <value>タイプ名アップデート</value>
+  </data>
+  <data name="Upload" xml:space="preserve">
+    <value>アップロード</value>
+  </data>
+  <data name="Uploaded" xml:space="preserve">
+    <value>アップロードされた</value>
+  </data>
+  <data name="Uploaded_By" xml:space="preserve">
+    <value>～によりアップロードされた</value>
+  </data>
+  <data name="Uploaded_documents" xml:space="preserve">
+    <value>アップロードされたドキュメント</value>
+  </data>
+  <data name="Uploaded_Files" xml:space="preserve">
+    <value>アップロードされたファイル</value>
+  </data>
+  <data name="Uploaded_File_Name" xml:space="preserve">
+    <value>アップロードされたファイル名</value>
+  </data>
+  <data name="Uploaded_On" xml:space="preserve">
+    <value>～上にアップロードされた</value>
+  </data>
+  <data name="Uploading_File" xml:space="preserve">
+    <value>ファイルアップロード中</value>
+  </data>
+  <data name="Upload_Document" xml:space="preserve">
+    <value>ドキュメントをアップロードする</value>
+  </data>
+  <data name="Upload_File" xml:space="preserve">
+    <value>ファイルをアップロードする</value>
+  </data>
+  <data name="Upper_Limit_max" xml:space="preserve">
+    <value>上限（マックス）</value>
+  </data>
+  <data name="URL" xml:space="preserve">
+    <value>URL</value>
+  </data>
+  <data name="Usable_Height" xml:space="preserve">
+    <value>使用可能な高さ</value>
+  </data>
+  <data name="User" xml:space="preserve">
+    <value>ユーザー</value>
+  </data>
+  <data name="Username" xml:space="preserve">
+    <value>ユーザー名</value>
+  </data>
+  <data name="Users" xml:space="preserve">
+    <value>ユーザー（複数）</value>
+  </data>
+  <data name="User_Id" xml:space="preserve">
+    <value>ユーザーID</value>
+  </data>
+  <data name="User_Name" xml:space="preserve">
+    <value>ユーザー名</value>
+  </data>
+  <data name="User_Profile" xml:space="preserve">
+    <value>ユーザープロフィール</value>
+  </data>
+  <data name="Use_Attribute_Template" xml:space="preserve">
+    <value>属性テンプレートを使用</value>
+  </data>
+  <data name="Value" xml:space="preserve">
+    <value>値</value>
+  </data>
+  <data name="Value_Range_Choices" xml:space="preserve">
+    <value>値の幅/選択肢</value>
+  </data>
+  <data name="Version" xml:space="preserve">
+    <value>バージョン</value>
+  </data>
+  <data name="Versioning" xml:space="preserve">
+    <value>バージョニング</value>
+  </data>
+  <data name="Viewer" xml:space="preserve">
+    <value>ビューワー</value>
+  </data>
+  <data name="Viewpoints" xml:space="preserve">
+    <value>ビューポイント</value>
+  </data>
+  <data name="View_in_BIM" xml:space="preserve">
+    <value>BIMにおけるビュー</value>
+  </data>
+  <data name="View_Name" xml:space="preserve">
+    <value>ビュー名</value>
+  </data>
+  <data name="Volume_Units" xml:space="preserve">
+    <value>ボリューム単位</value>
+  </data>
+  <data name="Warranty_Description" xml:space="preserve">
+    <value>保証書記述</value>
+  </data>
+  <data name="Warranty_Duration_Labor" xml:space="preserve">
+    <value>保証期間の作業（者）</value>
+  </data>
+  <data name="Warranty_Duration_Parts" xml:space="preserve">
+    <value>保障期間のパーツ</value>
+  </data>
+  <data name="Warranty_Duration_Unit" xml:space="preserve">
+    <value>保障期間の単位</value>
+  </data>
+  <data name="Warranty_Guarantor_Labor" xml:space="preserve">
+    <value>保障　保証人　作業（者）</value>
+  </data>
+  <data name="Warranty_Guarantor_Parts" xml:space="preserve">
+    <value>保障　保証人　パーツ</value>
+  </data>
+  <data name="Warranty_Start_Date" xml:space="preserve">
+    <value>保障開始日</value>
+  </data>
+  <data name="Weather_Station" xml:space="preserve">
+    <value>測候所</value>
+  </data>
+  <data name="Website" xml:space="preserve">
+    <value>ウエブサイト</value>
+  </data>
+  <data name="Wednesday" xml:space="preserve">
+    <value>水曜日</value>
+  </data>
+  <data name="Work_Orders" xml:space="preserve">
+    <value>作業手順　ワークオーダー</value>
+  </data>
+  <data name="Work_Order_Log" xml:space="preserve">
+    <value>作業手順ログ</value>
+  </data>
+  <data name="Work_Order_Name" xml:space="preserve">
+    <value>作業手順名</value>
+  </data>
+  <data name="Work_Order_No" xml:space="preserve">
+    <value>作業手順ナンバー</value>
+  </data>
+  <data name="Work_Order_Number" xml:space="preserve">
+    <value>作業手順ナンバー</value>
+  </data>
+  <data name="Work_Order_Profile" xml:space="preserve">
+    <value>作業手順プロフィール</value>
+  </data>
+  <data name="Work_Order_Report" xml:space="preserve">
+    <value>作業手順レポート</value>
+  </data>
+  <data name="Work_order_Status" xml:space="preserve">
+    <value>作業手順ステータス</value>
+  </data>
+  <data name="Work_Order_Type" xml:space="preserve">
+    <value>作業手順タイプ</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>イエス　はい</value>
+  </data>
+  <data name="Zip_Postal_Code" xml:space="preserve">
+    <value>郵便番号</value>
+  </data>
+  <data name="Zone" xml:space="preserve">
+    <value>ゾーン</value>
+  </data>
+  <data name="Zones" xml:space="preserve">
+    <value>ゾーン（複数）</value>
+  </data>
+  <data name="Zone_Name" xml:space="preserve">
+    <value>ゾーン名</value>
+  </data>
+  <data name="Zone_Name_Grid" xml:space="preserve">
+    <value>ゾーン名グリッド</value>
+  </data>
+  <data name="Zone_Profile" xml:space="preserve">
+    <value>ゾーンプロフィール</value>
+  </data>
+  <data name="master_file" xml:space="preserve">
+    <value>マスターファイル</value>
+  </data>
+  <data name="View" xml:space="preserve">
+    <value>ビュー</value>
+  </data>
+  <data name="Show_change_log" xml:space="preserve">
+    <value>表示変更履歴</value>
+  </data>
+  <data name="History" xml:space="preserve">
+    <value>歴史</value>
+  </data>
+  <data name="Total_gross_area" xml:space="preserve">
+    <value>総総面積</value>
+  </data>
+  <data name="Total_net_area" xml:space="preserve">
+    <value>総正味面積</value>
+  </data>
+  <data name="COBie_QualityControl" xml:space="preserve">
+    <value>COBie品質管理設定の</value>
+  </data>
+  <data name="Map_Document" xml:space="preserve">
+    <value>マップドキュメント</value>
+  </data>
+  <data name="Map_Documents" xml:space="preserve">
+    <value>マップドキュメント</value>
+  </data>
+  <data name="Select_subsystems" xml:space="preserve">
+    <value>サブシステムを選択します</value>
+  </data>
+  <data name="Add_New_Line" xml:space="preserve">
+    <value>ニューラインを追加</value>
+  </data>
+  <data name="Select_Field" xml:space="preserve">
+    <value>選択フィールド</value>
+  </data>
+  <data name="Select_Symbol" xml:space="preserve">
+    <value>シンボルに選択</value>
+  </data>
+  <data name="Barcode_Height" xml:space="preserve">
+    <value>バーコードの高さ</value>
+  </data>
+  <data name="Barcode_Per_Page" xml:space="preserve">
+    <value>ページ毎のバーコード</value>
+  </data>
+  <data name="Barcode_Preview" xml:space="preserve">
+    <value>バーコードのプレビュー</value>
+  </data>
+  <data name="Barcode_Print_Option" xml:space="preserve">
+    <value>バーコード印刷オプション</value>
+  </data>
+  <data name="Barcode_Sample" xml:space="preserve">
+    <value>バーコードのサンプル</value>
+  </data>
+  <data name="Barcode_type" xml:space="preserve">
+    <value>バーコードの種類</value>
+  </data>
+  <data name="Barcode_Width" xml:space="preserve">
+    <value>バーコード幅</value>
+  </data>
+  <data name="Barcode_Without_Data" xml:space="preserve">
+    <value>データのないバーコード</value>
+  </data>
+  <data name="Barcode_With_Data" xml:space="preserve">
+    <value>データとバーコード</value>
+  </data>
+  <data name="Document_Template" xml:space="preserve">
+    <value>ドキュメントテンプレート</value>
+  </data>
+  <data name="Preview" xml:space="preserve">
+    <value>プレビュー</value>
+  </data>
+  <data name="Randomization_Length" xml:space="preserve">
+    <value>ランダム化の長さ</value>
+  </data>
+  <data name="Symbol" xml:space="preserve">
+    <value>シンボル</value>
+  </data>
+  <data name="Field" xml:space="preserve">
+    <value>フィールド</value>
+  </data>
+  <data name="Attribute_Version" xml:space="preserve">
+    <value>バージョンの属性</value>
+  </data>
+  <data name="Delete_Attributes" xml:space="preserve">
+    <value>属性を削除する</value>
+  </data>
+  <data name="Add_Classification" xml:space="preserve">
+    <value>分類を追加</value>
+  </data>
+  <data name="Add_Classification_Details" xml:space="preserve">
+    <value>分類の詳細を追加</value>
+  </data>
+  <data name="Assigned_Classifications" xml:space="preserve">
+    <value>割り当てられた分類</value>
+  </data>
+  <data name="Classification_Detail_Code" xml:space="preserve">
+    <value>分類詳細コード</value>
+  </data>
+  <data name="Classification_Detail_Name" xml:space="preserve">
+    <value>分類の詳細名称</value>
+  </data>
+  <data name="Color" xml:space="preserve">
+    <value>カラー</value>
+  </data>
+  <data name="Types" xml:space="preserve">
+    <value>種類</value>
+  </data>
+  <data name="Add_Job" xml:space="preserve">
+    <value>ジョブを追加</value>
+  </data>
+  <data name="test" xml:space="preserve">
+    <value>test</value>
+  </data>
+  <data name="File_name_format" xml:space="preserve">
+    <value>[ファイル名の形式</value>
+  </data>
+  <data name="Auto_map_documents" xml:space="preserve">
+    <value>オートマップドキュメント</value>
+  </data>
+  <data name="Please_select_at_least_one_document" xml:space="preserve">
+    <value>少なくとも1つのドキュメントを選択してください！</value>
+  </data>
+  <data name="Please_select_entity_from_the_dropdown" xml:space="preserve">
+    <value>ドロップダウンからエンティティを選択してください</value>
+  </data>
+  <data name="Document_type_not_found" xml:space="preserve">
+    <value>ドキュメントタイプが見つかりません</value>
+  </data>
+  <data name="Stage_not_found" xml:space="preserve">
+    <value>ステージが見つかりません</value>
+  </data>
+  <data name="ApprovalBy_not_found" xml:space="preserve">
+    <value>見つからないの承認</value>
+  </data>
+  <data name="Please_type_a_file_name_pattern" xml:space="preserve">
+    <value>、ファイル名のパターンを入力してください。</value>
+  </data>
+  <data name="Document_type_not_defined" xml:space="preserve">
+    <value>ドキュメントタイプが定義されていません</value>
+  </data>
+  <data name="Stage_not_defined" xml:space="preserve">
+    <value>ステージが定義されていません</value>
+  </data>
+  <data name="ApprovalBy_not_defined" xml:space="preserve">
+    <value>定義されていないことで承認</value>
+  </data>
+  <data name="Invalid_pattern" xml:space="preserve">
+    <value>無効なパターン</value>
+  </data>
+  <data name="The_document_name_does_not_match_the_pattern" xml:space="preserve">
+    <value>文書名は、パターンと一致しない</value>
+  </data>
+  <data name="Unknown_entity" xml:space="preserve">
+    <value>未知の存在</value>
+  </data>
+  <data name="Job_Template" xml:space="preserve">
+    <value>ジョブテンプレート</value>
+  </data>
+  <data name="PM_jobs" xml:space="preserve">
+    <value>PMジョブズ</value>
+  </data>
+  <data name="SortBy" xml:space="preserve">
+    <value>並び替え</value>
+  </data>
+  <data name="Merge" xml:space="preserve">
+    <value>マージ</value>
+  </data>
+  <data name="DUT_ACRES" xml:space="preserve">
+    <value>エーカー</value>
+  </data>
+  <data name="DUT_ACRES_SHORT" xml:space="preserve">
+    <value>ac</value>
+  </data>
+  <data name="DUT_CENTIMETERS" xml:space="preserve">
+    <value>センチメートル</value>
+  </data>
+  <data name="DUT_CENTIMETERS_SHORT" xml:space="preserve">
+    <value>cm</value>
+  </data>
+  <data name="DUT_CUBIC_CENTIMETERS" xml:space="preserve">
+    <value>立方センチメートル</value>
+  </data>
+  <data name="DUT_CUBIC_CENTIMETERS_SHORT" xml:space="preserve">
+    <value>cm³</value>
+  </data>
+  <data name="DUT_CUBIC_FEET" xml:space="preserve">
+    <value>立方フィート</value>
+  </data>
+  <data name="DUT_CUBIC_FEET_SHORT" xml:space="preserve">
+    <value>CF</value>
+  </data>
+  <data name="DUT_CUBIC_INCHES" xml:space="preserve">
+    <value>立方インチ</value>
+  </data>
+  <data name="DUT_CUBIC_INCHES_SHORT" xml:space="preserve">
+    <value>in³</value>
+  </data>
+  <data name="DUT_CUBIC_METERS" xml:space="preserve">
+    <value>立方メートル</value>
+  </data>
+  <data name="DUT_CUBIC_METERS_SHORT" xml:space="preserve">
+    <value>m³</value>
+  </data>
+  <data name="DUT_CUBIC_MILLIMETERS" xml:space="preserve">
+    <value>立方ミリメートル</value>
+  </data>
+  <data name="DUT_CUBIC_MILLIMETERS_SHORT" xml:space="preserve">
+    <value>mm³</value>
+  </data>
+  <data name="DUT_CUBIC_YARDS" xml:space="preserve">
+    <value>立方ヤード</value>
+  </data>
+  <data name="DUT_CUBIC_YARDS_SHORT" xml:space="preserve">
+    <value>CY</value>
+  </data>
+  <data name="DUT_CURRENCY" xml:space="preserve">
+    <value>通貨</value>
+  </data>
+  <data name="DUT_CURRENCY_SHORT" xml:space="preserve">
+    <value />
+  </data>
+  <data name="DUT_DECANEWTONS" xml:space="preserve">
+    <value>decanewtons</value>
+  </data>
+  <data name="DUT_DECANEWTONS_PER_METER" xml:space="preserve">
+    <value>メートル当たりdecanewtons</value>
+  </data>
+  <data name="DUT_DECANEWTONS_PER_METER_SHORT" xml:space="preserve">
+    <value>daN/m</value>
+  </data>
+  <data name="DUT_DECANEWTONS_PER_SQUARE_METER" xml:space="preserve">
+    <value>平方メートル当たりdecanewtons</value>
+  </data>
+  <data name="DUT_DECANEWTONS_PER_SQUARE_METER_SHORT" xml:space="preserve">
+    <value>daN/m²</value>
+  </data>
+  <data name="DUT_DECANEWTONS_SHORT" xml:space="preserve">
+    <value>daN</value>
+  </data>
+  <data name="DUT_DECANEWTON_METERS" xml:space="preserve">
+    <value>decanewtonメートル</value>
+  </data>
+  <data name="DUT_DECANEWTON_METERS_SHORT" xml:space="preserve">
+    <value>daN·m</value>
+  </data>
+  <data name="DUT_DECIMETERS" xml:space="preserve">
+    <value>デシメートル</value>
+  </data>
+  <data name="DUT_DECIMETERS_SHORT" xml:space="preserve">
+    <value>dm</value>
+  </data>
+  <data name="DUT_DEGREES" xml:space="preserve">
+    <value>度</value>
+  </data>
+  <data name="DUT_DEGREES_AND_MINUTES" xml:space="preserve">
+    <value>度と分</value>
+  </data>
+  <data name="DUT_DEGREES_AND_MINUTES_SHORT" xml:space="preserve">
+    <value />
+  </data>
+  <data name="DUT_DEGREES_SHORT" xml:space="preserve">
+    <value>°</value>
+  </data>
+  <data name="DUT_FEET" xml:space="preserve">
+    <value>フィート</value>
+  </data>
+  <data name="DUT_FEET_FRACTIONAL_INCHES" xml:space="preserve">
+    <value>フィートと分数インチ</value>
+  </data>
+  <data name="DUT_FEET_FRACTIONAL_INCHES_SHORT" xml:space="preserve">
+    <value />
+  </data>
+  <data name="DUT_FEET_SHORT" xml:space="preserve">
+    <value>ft</value>
+  </data>
+  <data name="DUT_FRACTIONAL_INCHES" xml:space="preserve">
+    <value>分数インチ</value>
+  </data>
+  <data name="DUT_FRACTIONAL_INCHES_SHORT" xml:space="preserve">
+    <value />
+  </data>
+  <data name="DUT_GALLONS_US" xml:space="preserve">
+    <value>ガロン（米国）</value>
+  </data>
+  <data name="DUT_GALLONS_US_SHORT" xml:space="preserve">
+    <value>gal</value>
+  </data>
+  <data name="DUT_GRADS" xml:space="preserve">
+    <value>卒業生</value>
+  </data>
+  <data name="DUT_GRADS_SHORT" xml:space="preserve">
+    <value>grad</value>
+  </data>
+  <data name="DUT_HECTARES" xml:space="preserve">
+    <value>ヘクタール</value>
+  </data>
+  <data name="DUT_HECTARES_SHORT" xml:space="preserve">
+    <value>ha</value>
+  </data>
+  <data name="DUT_HOURS" xml:space="preserve">
+    <value>営業時間</value>
+  </data>
+  <data name="DUT_HOURS_SHORT" xml:space="preserve">
+    <value>h</value>
+  </data>
+  <data name="DUT_INCHES" xml:space="preserve">
+    <value>インチ</value>
+  </data>
+  <data name="DUT_INCHES_SHORT" xml:space="preserve">
+    <value>in</value>
+  </data>
+  <data name="DUT_KILOGRAMS_FORCE" xml:space="preserve">
+    <value>キログラム重</value>
+  </data>
+  <data name="DUT_KILOGRAMS_FORCE_PER_METER" xml:space="preserve">
+    <value>メートル当たりキログラム重</value>
+  </data>
+  <data name="DUT_KILOGRAMS_FORCE_PER_METER_SHORT" xml:space="preserve">
+    <value>kgf/m</value>
+  </data>
+  <data name="DUT_KILOGRAMS_FORCE_PER_SQUARE_METER" xml:space="preserve">
+    <value>平方メートル当たりのキログラム重</value>
+  </data>
+  <data name="DUT_KILOGRAMS_FORCE_PER_SQUARE_METER_SHORT" xml:space="preserve">
+    <value>kgf/m²</value>
+  </data>
+  <data name="DUT_KILOGRAMS_FORCE_SHORT" xml:space="preserve">
+    <value>kgf</value>
+  </data>
+  <data name="DUT_KILOGRAMS_MASS" xml:space="preserve">
+    <value>キログラム</value>
+  </data>
+  <data name="DUT_KILOGRAMS_MASS_SHORT" xml:space="preserve">
+    <value>kg</value>
+  </data>
+  <data name="DUT_KILOGRAMS_PER_CUBIC_METER" xml:space="preserve">
+    <value>立方メートル当たりキログラム</value>
+  </data>
+  <data name="DUT_KILOGRAMS_PER_CUBIC_METER_SHORT" xml:space="preserve">
+    <value>kg/m³</value>
+  </data>
+  <data name="DUT_KILOGRAM_FORCE_METERS" xml:space="preserve">
+    <value>キログラム重メートル</value>
+  </data>
+  <data name="DUT_KILOGRAM_FORCE_METERS_SHORT" xml:space="preserve">
+    <value>kgf·m</value>
+  </data>
+  <data name="DUT_KILONEWTONS" xml:space="preserve">
+    <value>キロニュートン</value>
+  </data>
+  <data name="DUT_KILONEWTONS_PER_METER" xml:space="preserve">
+    <value>毎メートルキロニュートン</value>
+  </data>
+  <data name="DUT_KILONEWTONS_PER_METER_SHORT" xml:space="preserve">
+    <value>kN/m</value>
+  </data>
+  <data name="DUT_KILONEWTONS_PER_SQUARE_METER" xml:space="preserve">
+    <value>平方メートル当たりのキロニュートン</value>
+  </data>
+  <data name="DUT_KILONEWTONS_PER_SQUARE_METER_SHORT" xml:space="preserve">
+    <value>kN/m²</value>
+  </data>
+  <data name="DUT_KILONEWTONS_SHORT" xml:space="preserve">
+    <value>kN</value>
+  </data>
+  <data name="DUT_KILONEWTON_METERS" xml:space="preserve">
+    <value>キロニュートンメートル</value>
+  </data>
+  <data name="DUT_KILONEWTON_METERS_SHORT" xml:space="preserve">
+    <value>kN·m</value>
+  </data>
+  <data name="DUT_KIPS" xml:space="preserve">
+    <value>キップ</value>
+  </data>
+  <data name="DUT_KIPS_PER_FOOT" xml:space="preserve">
+    <value>フィートあたりキップ</value>
+  </data>
+  <data name="DUT_KIPS_PER_FOOT_SHORT" xml:space="preserve">
+    <value>kip/ft</value>
+  </data>
+  <data name="DUT_KIPS_PER_INCH" xml:space="preserve">
+    <value>インチあたりのキップ</value>
+  </data>
+  <data name="DUT_KIPS_PER_INCH_SHORT" xml:space="preserve">
+    <value>kip/in</value>
+  </data>
+  <data name="DUT_KIPS_PER_SQUARE_FOOT" xml:space="preserve">
+    <value>平方フィート当たりキップ</value>
+  </data>
+  <data name="DUT_KIPS_PER_SQUARE_FOOT_SHORT" xml:space="preserve">
+    <value>kip/SF</value>
+  </data>
+  <data name="DUT_KIPS_SHORT" xml:space="preserve">
+    <value>kip</value>
+  </data>
+  <data name="DUT_KIP_FEET" xml:space="preserve">
+    <value>キップフィート</value>
+  </data>
+  <data name="DUT_KIP_FEET_SHORT" xml:space="preserve">
+    <value>kip·ft</value>
+  </data>
+  <data name="DUT_LITERS" xml:space="preserve">
+    <value>リットル</value>
+  </data>
+  <data name="DUT_LITERS_SHORT" xml:space="preserve">
+    <value>l</value>
+  </data>
+  <data name="DUT_MEGANEWTONS" xml:space="preserve">
+    <value>メガニュートン</value>
+  </data>
+  <data name="DUT_MEGANEWTONS_PER_METER" xml:space="preserve">
+    <value>メートル当たりメガニュートン</value>
+  </data>
+  <data name="DUT_MEGANEWTONS_PER_METER_SHORT" xml:space="preserve">
+    <value>MN/m</value>
+  </data>
+  <data name="DUT_MEGANEWTONS_PER_SQUARE_METER" xml:space="preserve">
+    <value>平方メートル当たりのメガニュートン</value>
+  </data>
+  <data name="DUT_MEGANEWTONS_PER_SQUARE_METER_SHORT" xml:space="preserve">
+    <value>MN/m²</value>
+  </data>
+  <data name="DUT_MEGANEWTONS_SHORT" xml:space="preserve">
+    <value>MN</value>
+  </data>
+  <data name="DUT_MEGANEWTON_METERS" xml:space="preserve">
+    <value>メガニュートンメートル</value>
+  </data>
+  <data name="DUT_MEGANEWTON_METERS_SHORT" xml:space="preserve">
+    <value>MN·m</value>
+  </data>
+  <data name="DUT_METERS" xml:space="preserve">
+    <value>メートル</value>
+  </data>
+  <data name="DUT_METERS_SHORT" xml:space="preserve">
+    <value>m</value>
+  </data>
+  <data name="DUT_MILISECONDS" xml:space="preserve">
+    <value>ミリ秒</value>
+  </data>
+  <data name="DUT_MILISECONDS_SHORT" xml:space="preserve">
+    <value>ms</value>
+  </data>
+  <data name="DUT_MILLIMETERS" xml:space="preserve">
+    <value>ミリメートル</value>
+  </data>
+  <data name="DUT_MILLIMETERS_SHORT" xml:space="preserve">
+    <value>mm</value>
+  </data>
+  <data name="DUT_MINUTES" xml:space="preserve">
+    <value>分</value>
+  </data>
+  <data name="DUT_MINUTES_SHORT" xml:space="preserve">
+    <value>min</value>
+  </data>
+  <data name="DUT_NEWTONS" xml:space="preserve">
+    <value>ニュートン</value>
+  </data>
+  <data name="DUT_NEWTONS_PER_METER" xml:space="preserve">
+    <value>メートル当たりニュートン</value>
+  </data>
+  <data name="DUT_NEWTONS_PER_METER_SHORT" xml:space="preserve">
+    <value>N/m</value>
+  </data>
+  <data name="DUT_NEWTONS_PER_SQUARE_METER" xml:space="preserve">
+    <value>平方メートル当たりのニュートン</value>
+  </data>
+  <data name="DUT_NEWTONS_PER_SQUARE_METER_SHORT" xml:space="preserve">
+    <value>N/m²</value>
+  </data>
+  <data name="DUT_NEWTONS_SHORT" xml:space="preserve">
+    <value>N</value>
+  </data>
+  <data name="DUT_NEWTON_METERS" xml:space="preserve">
+    <value>ニュートンメートル</value>
+  </data>
+  <data name="DUT_NEWTON_METERS_SHORT" xml:space="preserve">
+    <value>N·m</value>
+  </data>
+  <data name="DUT_POUNDS_FORCE" xml:space="preserve">
+    <value>重量ポンド</value>
+  </data>
+  <data name="DUT_POUNDS_FORCE_PER_FOOT" xml:space="preserve">
+    <value>フィート当たりのポンド力</value>
+  </data>
+  <data name="DUT_POUNDS_FORCE_PER_FOOT_SHORT" xml:space="preserve">
+    <value>lbf/ft</value>
+  </data>
+  <data name="DUT_POUNDS_FORCE_PER_SQUARE_FOOT" xml:space="preserve">
+    <value>平方フィート当たりのポンド力</value>
+  </data>
+  <data name="DUT_POUNDS_FORCE_PER_SQUARE_FOOT_SHORT" xml:space="preserve">
+    <value>lbf/SF</value>
+  </data>
+  <data name="DUT_POUNDS_FORCE_SHORT" xml:space="preserve">
+    <value>lbf</value>
+  </data>
+  <data name="DUT_POUNDS_MASS" xml:space="preserve">
+    <value>ポンド</value>
+  </data>
+  <data name="DUT_POUNDS_MASS_PER_CUBIC_FOOT" xml:space="preserve">
+    <value>立方フィート当たりのポンド</value>
+  </data>
+  <data name="DUT_POUNDS_MASS_PER_CUBIC_FOOT_SHORT" xml:space="preserve">
+    <value>lb/CF</value>
+  </data>
+  <data name="DUT_POUNDS_MASS_SHORT" xml:space="preserve">
+    <value>lb</value>
+  </data>
+  <data name="DUT_POUND_FORCE_FEET" xml:space="preserve">
+    <value>重量ポンドフィート</value>
+  </data>
+  <data name="DUT_POUND_FORCE_FEET_SHORT" xml:space="preserve">
+    <value>lbf·ft</value>
+  </data>
+  <data name="DUT_RADIANS" xml:space="preserve">
+    <value>ラジアン</value>
+  </data>
+  <data name="DUT_RADIANS_SHORT" xml:space="preserve">
+    <value>rad</value>
+  </data>
+  <data name="DUT_SECONDS" xml:space="preserve">
+    <value>秒</value>
+  </data>
+  <data name="DUT_SECONDS_SHORT" xml:space="preserve">
+    <value>s</value>
+  </data>
+  <data name="DUT_SQUARE_CENTIMETERS" xml:space="preserve">
+    <value>平方センチメートル</value>
+  </data>
+  <data name="DUT_SQUARE_CENTIMETERS_SHORT" xml:space="preserve">
+    <value>cm²</value>
+  </data>
+  <data name="DUT_SQUARE_FEET" xml:space="preserve">
+    <value>平方フィート</value>
+  </data>
+  <data name="DUT_SQUARE_FEET_SHORT" xml:space="preserve">
+    <value>SF</value>
+  </data>
+  <data name="DUT_SQUARE_INCHES" xml:space="preserve">
+    <value>平方インチ</value>
+  </data>
+  <data name="DUT_SQUARE_INCHES_SHORT" xml:space="preserve">
+    <value>in²</value>
+  </data>
+  <data name="DUT_SQUARE_METERS" xml:space="preserve">
+    <value>平方メートル</value>
+  </data>
+  <data name="DUT_SQUARE_METERS_SHORT" xml:space="preserve">
+    <value>m²</value>
+  </data>
+  <data name="DUT_SQUARE_MILLIMETERS" xml:space="preserve">
+    <value>平方ミリメートル</value>
+  </data>
+  <data name="DUT_SQUARE_MILLIMETERS_SHORT" xml:space="preserve">
+    <value>mm²</value>
+  </data>
+  <data name="DUT_TONNES_FORCE" xml:space="preserve">
+    <value>トンの力</value>
+  </data>
+  <data name="DUT_TONNES_FORCE_PER_METER" xml:space="preserve">
+    <value>メートル当たりトンの力</value>
+  </data>
+  <data name="DUT_TONNES_FORCE_PER_METER_SHORT" xml:space="preserve">
+    <value>tf/m</value>
+  </data>
+  <data name="DUT_TONNES_FORCE_PER_SQUARE_METER" xml:space="preserve">
+    <value>平方メートル当たりトンの力</value>
+  </data>
+  <data name="DUT_TONNES_FORCE_PER_SQUARE_METER_SHORT" xml:space="preserve">
+    <value>tf/m²</value>
+  </data>
+  <data name="DUT_TONNES_FORCE_SHORT" xml:space="preserve">
+    <value>tf</value>
+  </data>
+  <data name="DUT_TONNES_MASS" xml:space="preserve">
+    <value>トン</value>
+  </data>
+  <data name="DUT_TONNES_MASS_SHORT" xml:space="preserve">
+    <value>t</value>
+  </data>
+  <data name="DUT_TONNE_FORCE_METERS" xml:space="preserve">
+    <value>トンの力メートル</value>
+  </data>
+  <data name="DUT_TONNE_FORCE_METERS_SHORT" xml:space="preserve">
+    <value>tf·m</value>
+  </data>
+</root>

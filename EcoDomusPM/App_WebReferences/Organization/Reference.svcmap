@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="f05db016-a87f-40f5-8222-b65e277af580" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>false</ReferenceAllAssemblies>
+    <ReferencedAssemblies>
+      <ReferencedAssembly AssemblyName="System" />
+      <ReferencedAssembly AssemblyName="System.Core" />
+      <ReferencedAssembly AssemblyName="System.Data" />
+      <ReferencedAssembly AssemblyName="System.Xml" />
+      <ReferencedAssembly AssemblyName="System.Xml.Linq" />
+    </ReferencedAssemblies>
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:3333/Central%20WCF/Organization.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="Organization.xsd" MetadataType="Schema" ID="b3645357-3fd9-4cb8-bfae-d7d90390a30d" SourceId="1" SourceUrl="http://localhost:3333/Central WCF/Organization.svc?xsd=xsd3" />
+    <MetadataFile FileName="Organization.disco" MetadataType="Disco" ID="a8e853b1-5eb6-4c98-b22c-dca57188ca90" SourceId="1" SourceUrl="http://localhost:3333/Central WCF/Organization.svc?disco" />
+    <MetadataFile FileName="Organization.wsdl" MetadataType="Wsdl" ID="0186578d-d9ff-4f0b-8715-758f0da47958" SourceId="1" SourceUrl="http://localhost:3333/Central WCF/Organization.svc?wsdl" />
+    <MetadataFile FileName="Organization2.xsd" MetadataType="Schema" ID="fbbda0f9-5dba-4167-8873-ec84a558c66f" SourceId="1" SourceUrl="http://localhost:3333/Central WCF/Organization.svc?xsd=xsd2" />
+    <MetadataFile FileName="Organization3.xsd" MetadataType="Schema" ID="c867aa4a-2044-47dd-9cb9-849849e6426d" SourceId="1" SourceUrl="http://localhost:3333/Central WCF/Organization.svc?xsd=xsd1" />
+    <MetadataFile FileName="Organization4.xsd" MetadataType="Schema" ID="7edb0585-92be-455b-83c6-09ac275dfabd" SourceId="1" SourceUrl="http://localhost:3333/Central WCF/Organization.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

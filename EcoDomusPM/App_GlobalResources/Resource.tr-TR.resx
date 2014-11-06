@@ -1,0 +1,3108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Abbreviation" xml:space="preserve">
+    <value>kısaltma</value>
+  </data>
+  <data name="Accept" xml:space="preserve">
+    <value>kabul etmek</value>
+  </data>
+  <data name="Access_View" xml:space="preserve">
+    <value>Profil erişim</value>
+  </data>
+  <data name="Action" xml:space="preserve">
+    <value>eylem</value>
+  </data>
+  <data name="Active_Days" xml:space="preserve">
+    <value>Aktif Günleri</value>
+  </data>
+  <data name="Activity_Id" xml:space="preserve">
+    <value>Etkinlik Kimliği</value>
+  </data>
+  <data name="Add" xml:space="preserve">
+    <value>eklemek</value>
+  </data>
+  <data name="Add_Asset" xml:space="preserve">
+    <value>Varlık ekle</value>
+  </data>
+  <data name="Add_Attribute" xml:space="preserve">
+    <value>Öznitelik Ekleyin</value>
+  </data>
+  <data name="Add_BAS_Server" xml:space="preserve">
+    <value>BAS Sunucu ekle</value>
+  </data>
+  <data name="Add_By_Model_Number" xml:space="preserve">
+    <value>Model Numarası By ekle</value>
+  </data>
+  <data name="Add_Category" xml:space="preserve">
+    <value>Kategori Ekle</value>
+  </data>
+  <data name="Add_Component" xml:space="preserve">
+    <value>Bileşen ekle</value>
+  </data>
+  <data name="Add_Configuration" xml:space="preserve">
+    <value>Yapılandırma ekle</value>
+  </data>
+  <data name="Add_Constraints" xml:space="preserve">
+    <value>Kısıtlar ekle</value>
+  </data>
+  <data name="Add_Custom_Data" xml:space="preserve">
+    <value>Özel Veri ekle</value>
+  </data>
+  <data name="Add_Document" xml:space="preserve">
+    <value>Belge ekle</value>
+  </data>
+  <data name="Add_Edit_Custom_Data" xml:space="preserve">
+    <value>Düzenle Özel Veri ekle</value>
+  </data>
+  <data name="Add_Edit_Document" xml:space="preserve">
+    <value>Belge Düzenleme ekle</value>
+  </data>
+  <data name="Add_Edit_Name" xml:space="preserve">
+    <value>Adı Düzenle ekle</value>
+  </data>
+  <data name="Add_Edit_Required_Attributes" xml:space="preserve">
+    <value>Gereken Nitelikler Ekle / Düzenle</value>
+  </data>
+  <data name="Add_Facility" xml:space="preserve">
+    <value>Tesis ekle</value>
+  </data>
+  <data name="Add_Floor" xml:space="preserve">
+    <value>Kat ekle</value>
+  </data>
+  <data name="Add_Hierarchy" xml:space="preserve">
+    <value>Hiyerarşi ekle</value>
+  </data>
+  <data name="Add_Impact" xml:space="preserve">
+    <value>Etki ekle</value>
+  </data>
+  <data name="Add_Inspection" xml:space="preserve">
+    <value>Muayene ekle</value>
+  </data>
+  <data name="Add_Issue" xml:space="preserve">
+    <value>Sayı ekle</value>
+  </data>
+  <data name="Add_Manufacturer" xml:space="preserve">
+    <value>Üretici ekle</value>
+  </data>
+  <data name="Add_Naming_Convention" xml:space="preserve">
+    <value>Adlandırma Kuralı ekle</value>
+  </data>
+  <data name="Add_New" xml:space="preserve">
+    <value>Yeni Ekle</value>
+  </data>
+  <data name="Add_New_City" xml:space="preserve">
+    <value>New City ekle</value>
+  </data>
+  <data name="Add_New_Client" xml:space="preserve">
+    <value>Yeni Müşteri Ekle</value>
+  </data>
+  <data name="Add_New_Country" xml:space="preserve">
+    <value>Yeni Ülke ekle</value>
+  </data>
+  <data name="Add_New_Crew" xml:space="preserve">
+    <value>Yeni Mürettebat ekle</value>
+  </data>
+  <data name="Add_New_Facility" xml:space="preserve">
+    <value>Yeni Tesis ekle</value>
+  </data>
+  <data name="Add_New_Impact" xml:space="preserve">
+    <value>Yeni Etki ekle</value>
+  </data>
+  <data name="Add_New_Organization" xml:space="preserve">
+    <value>Yeni Kurum ekle</value>
+  </data>
+  <data name="Add_New_Project" xml:space="preserve">
+    <value>Yeni Proje Ekle</value>
+  </data>
+  <data name="Add_New_Role" xml:space="preserve">
+    <value>Yeni Rol Ekle</value>
+  </data>
+  <data name="Add_New_State" xml:space="preserve">
+    <value>Yeni Devlet Ekle</value>
+  </data>
+  <data name="Add_New_Task" xml:space="preserve">
+    <value>Yeni Görev Ekle</value>
+  </data>
+  <data name="Add_New_User" xml:space="preserve">
+    <value>Yeni Kullanıcı Ekle</value>
+  </data>
+  <data name="Add_Organization_To_Project" xml:space="preserve">
+    <value>Proje için Kurum ekle</value>
+  </data>
+  <data name="Add_Product" xml:space="preserve">
+    <value>Ürün ekle</value>
+  </data>
+  <data name="Add_Product_Attribute" xml:space="preserve">
+    <value>Ürün Özellik ekle</value>
+  </data>
+  <data name="Add_Provider" xml:space="preserve">
+    <value>Sağlayıcı ekle</value>
+  </data>
+  <data name="Add_Required_Attributes" xml:space="preserve">
+    <value>Gereken Nitelikler ekle</value>
+  </data>
+  <data name="Add_Required_Documents" xml:space="preserve">
+    <value>Gerekli Belgeler ekle</value>
+  </data>
+  <data name="Add_Space" xml:space="preserve">
+    <value>Uzay ekle</value>
+  </data>
+  <data name="Add_Subsystem" xml:space="preserve">
+    <value>Alt ekle</value>
+  </data>
+  <data name="Add_Subsystems" xml:space="preserve">
+    <value>Altsistemler ekle</value>
+  </data>
+  <data name="Add_System" xml:space="preserve">
+    <value>Sistem ekle</value>
+  </data>
+  <data name="Add_Systems" xml:space="preserve">
+    <value>Sistemleri ekle</value>
+  </data>
+  <data name="Add_Task" xml:space="preserve">
+    <value>Görev ekle</value>
+  </data>
+  <data name="Add_Template" xml:space="preserve">
+    <value>Şablon ekle</value>
+  </data>
+  <data name="Add_Type" xml:space="preserve">
+    <value>Tip ekle</value>
+  </data>
+  <data name="Add_Weather_Station" xml:space="preserve">
+    <value>Hava İstasyonu ekle</value>
+  </data>
+  <data name="Add_Work_Order" xml:space="preserve">
+    <value>İş Emri ekle</value>
+  </data>
+  <data name="Add_Zone" xml:space="preserve">
+    <value>Bölge ekle</value>
+  </data>
+  <data name="Add_Zones" xml:space="preserve">
+    <value>Bölgeleri ekle</value>
+  </data>
+  <data name="Address_1" xml:space="preserve">
+    <value>Adres 1</value>
+  </data>
+  <data name="Address_2" xml:space="preserve">
+    <value>Adres 2</value>
+  </data>
+  <data name="Address_Country" xml:space="preserve">
+    <value>Adres Ülke</value>
+  </data>
+  <data name="Address_State_Region" xml:space="preserve">
+    <value>Adres Devlet Bölge</value>
+  </data>
+  <data name="Address_Street" xml:space="preserve">
+    <value>Adres Sokak</value>
+  </data>
+  <data name="Address_Town" xml:space="preserve">
+    <value>Adres Town</value>
+  </data>
+  <data name="Address1" xml:space="preserve">
+    <value>Adres1</value>
+  </data>
+  <data name="Address2" xml:space="preserve">
+    <value>Adres2</value>
+  </data>
+  <data name="Administrative_Controls" xml:space="preserve">
+    <value>İdari Kontrolleri</value>
+  </data>
+  <data name="Affected_Task" xml:space="preserve">
+    <value>Etkilenen Görev</value>
+  </data>
+  <data name="Alerts" xml:space="preserve">
+    <value>Uyarılar</value>
+  </data>
+  <data name="All_My_Task" xml:space="preserve">
+    <value>All My Görev</value>
+  </data>
+  <data name="Altitude" xml:space="preserve">
+    <value>Rakım</value>
+  </data>
+  <data name="Approval_By" xml:space="preserve">
+    <value>By Onay</value>
+  </data>
+  <data name="Area" xml:space="preserve">
+    <value>Alan</value>
+  </data>
+  <data name="Area_Measurement" xml:space="preserve">
+    <value>Alan Ölçme</value>
+  </data>
+  <data name="Area_Units" xml:space="preserve">
+    <value>Alan Birimleri</value>
+  </data>
+  <data name="Asset" xml:space="preserve">
+    <value>Varlık</value>
+  </data>
+  <data name="Asset_Condition_Report" xml:space="preserve">
+    <value>Varlık Durum Raporu</value>
+  </data>
+  <data name="Asset_Identifier" xml:space="preserve">
+    <value>Varlık Identifier</value>
+  </data>
+  <data name="Asset_Name" xml:space="preserve">
+    <value>Varlık Adı</value>
+  </data>
+  <data name="Asset_Profile" xml:space="preserve">
+    <value>Varlık Profili</value>
+  </data>
+  <data name="Asset_Type" xml:space="preserve">
+    <value>Varlık Türü</value>
+  </data>
+  <data name="Assets" xml:space="preserve">
+    <value>Varlıklar</value>
+  </data>
+  <data name="Assign" xml:space="preserve">
+    <value>Atamak</value>
+  </data>
+  <data name="Assign_As_Major" xml:space="preserve">
+    <value>Binbaşı olarak atayın</value>
+  </data>
+  <data name="Assign_As_Project_Contact" xml:space="preserve">
+    <value>Proje İletişim gibi atama</value>
+  </data>
+  <data name="Assign_Asset" xml:space="preserve">
+    <value>Varlık atama</value>
+  </data>
+  <data name="Assign_Component" xml:space="preserve">
+    <value>Bileşen atama</value>
+  </data>
+  <data name="Assign_Contacts_to_Project" xml:space="preserve">
+    <value>Proje Rehber atama</value>
+  </data>
+  <data name="Assign_Contacts_To_The_Project" xml:space="preserve">
+    <value>Proje için Rehber atama</value>
+  </data>
+  <data name="Assign_DesignerContractor" xml:space="preserve">
+    <value>Tasarımcı / Yüklenici atama</value>
+  </data>
+  <data name="Assign_Facility" xml:space="preserve">
+    <value>Tesis atama</value>
+  </data>
+  <data name="Assign_Manufacturer" xml:space="preserve">
+    <value>Üretici atama</value>
+  </data>
+  <data name="Assign_MasterFormat" xml:space="preserve">
+    <value>MasterFormat atama</value>
+  </data>
+  <data name="Assign_Omniclass" xml:space="preserve">
+    <value>OmniClass atama</value>
+  </data>
+  <data name="Assign_Organization" xml:space="preserve">
+    <value>Organizasyon atama</value>
+  </data>
+  <data name="Assign_Organization_To_Client" xml:space="preserve">
+    <value>Müşteri için Organizasyon atama</value>
+  </data>
+  <data name="Assign_Product" xml:space="preserve">
+    <value>Ürün atama</value>
+  </data>
+  <data name="Assign_Project_roles_to_Contacts" xml:space="preserve">
+    <value>Rehber Projesi rolleri atama</value>
+  </data>
+  <data name="Assign_Space" xml:space="preserve">
+    <value>Uzay atama</value>
+  </data>
+  <data name="Assign_Subsystem" xml:space="preserve">
+    <value>Alt atama</value>
+  </data>
+  <data name="Assign_Subsystems" xml:space="preserve">
+    <value>Altsistemler atama</value>
+  </data>
+  <data name="Assign_System" xml:space="preserve">
+    <value>Sistem atama</value>
+  </data>
+  <data name="Assign_To" xml:space="preserve">
+    <value>Ata</value>
+  </data>
+  <data name="Assign_UniFormat" xml:space="preserve">
+    <value>UniFormat atama</value>
+  </data>
+  <data name="Assigned_To" xml:space="preserve">
+    <value>Atanan</value>
+  </data>
+  <data name="Attribute" xml:space="preserve">
+    <value>Nitelik</value>
+  </data>
+  <data name="Attribute_Name" xml:space="preserve">
+    <value>Özellik Adı</value>
+  </data>
+  <data name="Attribute_Template" xml:space="preserve">
+    <value>Öznitelik Şablon</value>
+  </data>
+  <data name="AttributeName" xml:space="preserve">
+    <value>AttributeName</value>
+  </data>
+  <data name="Attributes" xml:space="preserve">
+    <value>Öznitelikler</value>
+  </data>
+  <data name="Average_PPC" xml:space="preserve">
+    <value>Ortalama PPC</value>
+  </data>
+  <data name="Back" xml:space="preserve">
+    <value>Geri</value>
+  </data>
+  <data name="Barcode" xml:space="preserve">
+    <value>Barkod</value>
+  </data>
+  <data name="BAS_Attribute_History" xml:space="preserve">
+    <value>BAS_Attribute_History</value>
+  </data>
+  <data name="BAS_Information" xml:space="preserve">
+    <value>BAS Bilgi</value>
+  </data>
+  <data name="BASServer" xml:space="preserve">
+    <value>BAS Sunucu</value>
+  </data>
+  <data name="BIM" xml:space="preserve">
+    <value>BIM</value>
+  </data>
+  <data name="BIM_Connector_Installer" xml:space="preserve">
+    <value>BIM Connector Installer</value>
+  </data>
+  <data name="BIM_Model_Server" xml:space="preserve">
+    <value>BIM Model Sunucu</value>
+  </data>
+  <data name="BIM_Server" xml:space="preserve">
+    <value>BIM Server</value>
+  </data>
+  <data name="BIM_Use_Case" xml:space="preserve">
+    <value>BIM Use Case</value>
+  </data>
+  <data name="Browse_By_Manufacturer" xml:space="preserve">
+    <value>Üretici tarafından Gözat</value>
+  </data>
+  <data name="Building_Automation_System_Server" xml:space="preserve">
+    <value>Bina Otomasyon Sistemi Sunucu</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Iptal</value>
+  </data>
+  <data name="Category" xml:space="preserve">
+    <value>Kategori</value>
+  </data>
+  <data name="Chance" xml:space="preserve">
+    <value>Şans</value>
+  </data>
+  <data name="Changed_By" xml:space="preserve">
+    <value>By Değişti</value>
+  </data>
+  <data name="Check_All_Boxes" xml:space="preserve">
+    <value>Tüm Kutular kontrol edin</value>
+  </data>
+  <data name="City" xml:space="preserve">
+    <value>Şehir</value>
+  </data>
+  <data name="City_State" xml:space="preserve">
+    <value>Şehir devleti</value>
+  </data>
+  <data name="City_State_1" xml:space="preserve">
+    <value>Şehir , Eyalet</value>
+  </data>
+  <data name="Clear" xml:space="preserve">
+    <value>Temizle</value>
+  </data>
+  <data name="Client" xml:space="preserve">
+    <value>Müşteri</value>
+  </data>
+  <data name="Client_Name" xml:space="preserve">
+    <value>Müşteri Adı</value>
+  </data>
+  <data name="Clients" xml:space="preserve">
+    <value>Müşteriler</value>
+  </data>
+  <data name="Clone" xml:space="preserve">
+    <value>Clone</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>Yakın</value>
+  </data>
+  <data name="Close_Window" xml:space="preserve">
+    <value>Pencereyi Kapat</value>
+  </data>
+  <data name="CO_ASI" xml:space="preserve">
+    <value>CO / ASI</value>
+  </data>
+  <data name="COBie" xml:space="preserve">
+    <value>Cobie</value>
+  </data>
+  <data name="COBie_Data_Quality_Control" xml:space="preserve">
+    <value>Cobie Veri Kalite Kontrol</value>
+  </data>
+  <data name="COBie_File_Export" xml:space="preserve">
+    <value>Cobie Dosya İhracat</value>
+  </data>
+  <data name="Cobie_File_Import" xml:space="preserve">
+    <value>Cobie Dosya Alma</value>
+  </data>
+  <data name="COBie_QC" xml:space="preserve">
+    <value>Cobie QC</value>
+  </data>
+  <data name="Collapse" xml:space="preserve">
+    <value>Çöküş</value>
+  </data>
+  <data name="Commitment_Status" xml:space="preserve">
+    <value>Bağlılık Durumu</value>
+  </data>
+  <data name="Company" xml:space="preserve">
+    <value>Şirket</value>
+  </data>
+  <data name="Component" xml:space="preserve">
+    <value>Bileşen</value>
+  </data>
+  <data name="Component_Name" xml:space="preserve">
+    <value>Bileşen Adı</value>
+  </data>
+  <data name="Component_Profile" xml:space="preserve">
+    <value>Bileşen Profili</value>
+  </data>
+  <data name="Components" xml:space="preserve">
+    <value>Bileşenleri</value>
+  </data>
+  <data name="Condition" xml:space="preserve">
+    <value>Durum</value>
+  </data>
+  <data name="Condition_type" xml:space="preserve">
+    <value>Durum Türü</value>
+  </data>
+  <data name="Configuration_Name" xml:space="preserve">
+    <value>Yapılandırma Adı</value>
+  </data>
+  <data name="Connection_String" xml:space="preserve">
+    <value>Bağlantı Dizesi</value>
+  </data>
+  <data name="Constraint" xml:space="preserve">
+    <value>Sınırlama</value>
+  </data>
+  <data name="Constraint_Log" xml:space="preserve">
+    <value>Kısıt Giriş</value>
+  </data>
+  <data name="Constraints" xml:space="preserve">
+    <value>Kısıtlar</value>
+  </data>
+  <data name="Contact_Email" xml:space="preserve">
+    <value>E-posta İletişim</value>
+  </data>
+  <data name="Contacts" xml:space="preserve">
+    <value>Kişiler</value>
+  </data>
+  <data name="Contains" xml:space="preserve">
+    <value>İçeren</value>
+  </data>
+  <data name="Contractor" xml:space="preserve">
+    <value>Müteahhit</value>
+  </data>
+  <data name="Count" xml:space="preserve">
+    <value>Saymak</value>
+  </data>
+  <data name="Country" xml:space="preserve">
+    <value>Ülke</value>
+  </data>
+  <data name="Created_By" xml:space="preserve">
+    <value>Oluşturan</value>
+  </data>
+  <data name="Created_By_1" xml:space="preserve">
+    <value>Oluşturan:</value>
+  </data>
+  <data name="Created_On" xml:space="preserve">
+    <value>Oluşturulma</value>
+  </data>
+  <data name="Created_On_1" xml:space="preserve">
+    <value>Oluşturulma:</value>
+  </data>
+  <data name="Crew_Leader" xml:space="preserve">
+    <value>Ekip Lideri</value>
+  </data>
+  <data name="Crew_Profile" xml:space="preserve">
+    <value>Personel Profili</value>
+  </data>
+  <data name="Crews" xml:space="preserve">
+    <value>Ekipler</value>
+  </data>
+  <data name="Criteria" xml:space="preserve">
+    <value>Kriterleri</value>
+  </data>
+  <data name="Currency_Units" xml:space="preserve">
+    <value>Para Birimleri</value>
+  </data>
+  <data name="Custom_Reports" xml:space="preserve">
+    <value>Özel Raporlar</value>
+  </data>
+  <data name="Custom_Data" xml:space="preserve">
+    <value>Özel Veri</value>
+  </data>
+  <data name="Custom_Hierarchy_Name" xml:space="preserve">
+    <value>Özel Hiyerarşi Adı</value>
+  </data>
+  <data name="Custom_Name" xml:space="preserve">
+    <value>Özel Ad</value>
+  </data>
+  <data name="Dashboard" xml:space="preserve">
+    <value>Gösterge paneli</value>
+  </data>
+  <data name="Data_Provider" xml:space="preserve">
+    <value>Veri Sağlayıcısı</value>
+  </data>
+  <data name="Database_Name" xml:space="preserve">
+    <value>Veritabanı Adı</value>
+  </data>
+  <data name="Date" xml:space="preserve">
+    <value>Tarih</value>
+  </data>
+  <data name="Day" xml:space="preserve">
+    <value>Gün</value>
+  </data>
+  <data name="Days" xml:space="preserve">
+    <value>Gün</value>
+  </data>
+  <data name="Deadline" xml:space="preserve">
+    <value>Son Başvuru Tarihi</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Silmek</value>
+  </data>
+  <data name="Delete_File" xml:space="preserve">
+    <value>Dosya sil</value>
+  </data>
+  <data name="Demand_Response" xml:space="preserve">
+    <value>Talep Tepki</value>
+  </data>
+  <data name="Deny" xml:space="preserve">
+    <value>Reddetmek</value>
+  </data>
+  <data name="Department" xml:space="preserve">
+    <value>Bölüm</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>Tanım</value>
+  </data>
+  <data name="Designer" xml:space="preserve">
+    <value>Tasarımcı</value>
+  </data>
+  <data name="Desktop_Client_Installer" xml:space="preserve">
+    <value>Masaüstü İstemci Installer</value>
+  </data>
+  <data name="Details" xml:space="preserve">
+    <value>Ayrıntılar</value>
+  </data>
+  <data name="Directory_Name" xml:space="preserve">
+    <value>Dizin Adı</value>
+  </data>
+  <data name="Display_Columns" xml:space="preserve">
+    <value>Sütunları</value>
+  </data>
+  <data name="Document" xml:space="preserve">
+    <value>Belge</value>
+  </data>
+  <data name="Document_Checklist" xml:space="preserve">
+    <value>Belge Kontrol Listesi</value>
+  </data>
+  <data name="Document_Name" xml:space="preserve">
+    <value>Doküman Adı</value>
+  </data>
+  <data name="Document_Profile" xml:space="preserve">
+    <value>Belge Profili</value>
+  </data>
+  <data name="Documents" xml:space="preserve">
+    <value>Belgeler</value>
+  </data>
+  <data name="Documnet_type" xml:space="preserve">
+    <value>Documnet Tipi</value>
+  </data>
+  <data name="Download" xml:space="preserve">
+    <value>Indirin</value>
+  </data>
+  <data name="Download_Sample_COBie_File" xml:space="preserve">
+    <value>Örnek Cobie Dosya indirin</value>
+  </data>
+  <data name="Due_Date" xml:space="preserve">
+    <value>Due Date</value>
+  </data>
+  <data name="Duration" xml:space="preserve">
+    <value>Süre</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>Düzenle</value>
+  </data>
+  <data name="Edit_Designer_Contractor" xml:space="preserve">
+    <value>Düzenleme Tasarımcı / Müteahhit</value>
+  </data>
+  <data name="Edit_Impact" xml:space="preserve">
+    <value>Düzenle Imapct</value>
+  </data>
+  <data name="Edit_Location_Hierarchy" xml:space="preserve">
+    <value>Yer Hiyerarşi Düzenle</value>
+  </data>
+  <data name="Edit_Master_Format" xml:space="preserve">
+    <value>Ana Format Düzenle</value>
+  </data>
+  <data name="Edit_Omniclass" xml:space="preserve">
+    <value>Omniclass Düzenle</value>
+  </data>
+  <data name="Edit_OmniClass_Masterformat_Uniformat" xml:space="preserve">
+    <value>OmniClass / Düzenle MasterFormat / UniFormat</value>
+  </data>
+  <data name="Edit_Uni_Format" xml:space="preserve">
+    <value>Düzenle Uni Biçimi</value>
+  </data>
+  <data name="Elevation" xml:space="preserve">
+    <value>Yükseklik</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>E-posta</value>
+  </data>
+  <data name="Enabled" xml:space="preserve">
+    <value>Etkin</value>
+  </data>
+  <data name="End" xml:space="preserve">
+    <value>Son</value>
+  </data>
+  <data name="End_Date" xml:space="preserve">
+    <value>Bitiş Tarihi</value>
+  </data>
+  <data name="End_Date_Time" xml:space="preserve">
+    <value>Bitiş Tarihi Zaman</value>
+  </data>
+  <data name="Energy_Model" xml:space="preserve">
+    <value>Enerji Modeli</value>
+  </data>
+  <data name="Engineering_Controls" xml:space="preserve">
+    <value>Mühendislik Kontrolleri</value>
+  </data>
+  <data name="Entity" xml:space="preserve">
+    <value>Varlık</value>
+  </data>
+  <data name="Entity_Name" xml:space="preserve">
+    <value>Varlık Adı</value>
+  </data>
+  <data name="Equal_To" xml:space="preserve">
+    <value>Eşit</value>
+  </data>
+  <data name="Equipment" xml:space="preserve">
+    <value>Ekipman</value>
+  </data>
+  <data name="Equipment_Id" xml:space="preserve">
+    <value>Ekipman Kimliği</value>
+  </data>
+  <data name="Errors" xml:space="preserve">
+    <value>Hatalar</value>
+  </data>
+  <data name="Expected_Life" xml:space="preserve">
+    <value>Beklenen Yaşam</value>
+  </data>
+  <data name="Export" xml:space="preserve">
+    <value>Ihracat</value>
+  </data>
+  <data name="Export_COBie_File" xml:space="preserve">
+    <value>Cobie Dosya İhracat</value>
+  </data>
+  <data name="Export_Component" xml:space="preserve">
+    <value>İhracat Bileşen</value>
+  </data>
+  <data name="Export_Contact" xml:space="preserve">
+    <value>İhracat İletişim</value>
+  </data>
+  <data name="Export_Data" xml:space="preserve">
+    <value>İhracat Verileri</value>
+  </data>
+  <data name="Export_Documents" xml:space="preserve">
+    <value>İhracat Belgeler</value>
+  </data>
+  <data name="Export_Project_Contacts" xml:space="preserve">
+    <value>Proje Rehber İhracat</value>
+  </data>
+  <data name="Export_To_Excel" xml:space="preserve">
+    <value>Excel için İhracat</value>
+  </data>
+  <data name="Export_To_PDF" xml:space="preserve">
+    <value>PDF Aktar</value>
+  </data>
+  <data name="ExportedBy" xml:space="preserve">
+    <value>By İhraç</value>
+  </data>
+  <data name="ExportedOn" xml:space="preserve">
+    <value>On İhraç</value>
+  </data>
+  <data name="Ext_System_Facility" xml:space="preserve">
+    <value>Ext Sistemi Tesisi</value>
+  </data>
+  <data name="Ext_System_Site" xml:space="preserve">
+    <value>Ext.System Sitesi</value>
+  </data>
+  <data name="External_System" xml:space="preserve">
+    <value>Dış Sistemi</value>
+  </data>
+  <data name="External_System_Integration" xml:space="preserve">
+    <value>Dış Sistem Entegrasyonu</value>
+  </data>
+  <data name="External_System_Name" xml:space="preserve">
+    <value>Dış Sistem Adı</value>
+  </data>
+  <data name="Facilities" xml:space="preserve">
+    <value>Tesisler</value>
+  </data>
+  <data name="Facility" xml:space="preserve">
+    <value>Tesis</value>
+  </data>
+  <data name="Facility_Mapping" xml:space="preserve">
+    <value>Tesis Haritalama</value>
+  </data>
+  <data name="Facility_Name" xml:space="preserve">
+    <value>Tesisin Adı</value>
+  </data>
+  <data name="Facility_Profile" xml:space="preserve">
+    <value>Tesis Bilgileri</value>
+  </data>
+  <data name="Family_Name" xml:space="preserve">
+    <value>Soyadı</value>
+  </data>
+  <data name="File" xml:space="preserve">
+    <value>Dosya</value>
+  </data>
+  <data name="File_Name" xml:space="preserve">
+    <value>Dosya Adı</value>
+  </data>
+  <data name="File_Size" xml:space="preserve">
+    <value>Dosya Boyutu</value>
+  </data>
+  <data name="filepath" xml:space="preserve">
+    <value>Dosya yolu</value>
+  </data>
+  <data name="filesize" xml:space="preserve">
+    <value>Dosya boyutu</value>
+  </data>
+  <data name="Find" xml:space="preserve">
+    <value>Bulmak</value>
+  </data>
+  <data name="Find_Asset" xml:space="preserve">
+    <value>Varlık bul</value>
+  </data>
+  <data name="Find_Data_Point" xml:space="preserve">
+    <value>Veri Noktası bul</value>
+  </data>
+  <data name="Find_Location" xml:space="preserve">
+    <value>Yer Bul</value>
+  </data>
+  <data name="Finish" xml:space="preserve">
+    <value>Bitirmek</value>
+  </data>
+  <data name="Finish_Time" xml:space="preserve">
+    <value>Bitiş Saati</value>
+  </data>
+  <data name="First_Name" xml:space="preserve">
+    <value>Isim</value>
+  </data>
+  <data name="Floor" xml:space="preserve">
+    <value>Zemin</value>
+  </data>
+  <data name="Floor_Name" xml:space="preserve">
+    <value>Kat Adı</value>
+  </data>
+  <data name="Floor_Name_Grid" xml:space="preserve">
+    <value>Kat Adı Izgara</value>
+  </data>
+  <data name="Floor_Profile" xml:space="preserve">
+    <value>Zemin Profili</value>
+  </data>
+  <data name="Floor_Spaces" xml:space="preserve">
+    <value>FloorSpaces</value>
+  </data>
+  <data name="Floors" xml:space="preserve">
+    <value>Zeminler</value>
+  </data>
+  <data name="Friday" xml:space="preserve">
+    <value>Cuma</value>
+  </data>
+  <data name="From" xml:space="preserve">
+    <value>Itibaren</value>
+  </data>
+  <data name="Functional_Area" xml:space="preserve">
+    <value>Fonksiyonel Alan</value>
+  </data>
+  <data name="Generate_Barcode" xml:space="preserve">
+    <value>Barkod üret</value>
+  </data>
+  <data name="Generate_Report" xml:space="preserve">
+    <value>Rapor Oluştur</value>
+  </data>
+  <data name="Generated_Files" xml:space="preserve">
+    <value>Oluşturulan Dosyalar</value>
+  </data>
+  <data name="Get_Location" xml:space="preserve">
+    <value>Konum</value>
+  </data>
+  <data name="Get_Updates" xml:space="preserve">
+    <value>Güncellemeler alın</value>
+  </data>
+  <data name="Given_Name" xml:space="preserve">
+    <value>Verilen isim</value>
+  </data>
+  <data name="Greater_Than" xml:space="preserve">
+    <value>Büyüktür</value>
+  </data>
+  <data name="Gross_Area" xml:space="preserve">
+    <value>Brüt Alan</value>
+  </data>
+  <data name="Group" xml:space="preserve">
+    <value>Grup</value>
+  </data>
+  <data name="group_name" xml:space="preserve">
+    <value>Grup adı</value>
+  </data>
+  <data name="Hazard" xml:space="preserve">
+    <value>Tehlike</value>
+  </data>
+  <data name="Height" xml:space="preserve">
+    <value>Yükseklik</value>
+  </data>
+  <data name="Help" xml:space="preserve">
+    <value>Yardım</value>
+  </data>
+  <data name="Hierarchy" xml:space="preserve">
+    <value>Hiyerarşi</value>
+  </data>
+  <data name="ID" xml:space="preserve">
+    <value>Kimlik</value>
+  </data>
+  <data name="Image" xml:space="preserve">
+    <value>Görüntü</value>
+  </data>
+  <data name="Impact" xml:space="preserve">
+    <value>Darbe</value>
+  </data>
+  <data name="Impacts" xml:space="preserve">
+    <value>Etkiler</value>
+  </data>
+  <data name="Implementation" xml:space="preserve">
+    <value>Uygulama</value>
+  </data>
+  <data name="Import" xml:space="preserve">
+    <value>Ithal</value>
+  </data>
+  <data name="Import_Data" xml:space="preserve">
+    <value>İthalat Verileri</value>
+  </data>
+  <data name="Import_Export" xml:space="preserve">
+    <value>İthalat / İhracat</value>
+  </data>
+  <data name="Imported_by" xml:space="preserve">
+    <value>İthal</value>
+  </data>
+  <data name="Imported_Files" xml:space="preserve">
+    <value>İthal Dosyalar</value>
+  </data>
+  <data name="Imported_on" xml:space="preserve">
+    <value>Açık İthal</value>
+  </data>
+  <data name="Inbox" xml:space="preserve">
+    <value>Gelen Kutusu</value>
+  </data>
+  <data name="Initial_Sync" xml:space="preserve">
+    <value>İlk Sync</value>
+  </data>
+  <data name="Inspection_Profile" xml:space="preserve">
+    <value>Muayene Bilgileri</value>
+  </data>
+  <data name="Inspections" xml:space="preserve">
+    <value>Muayeneler</value>
+  </data>
+  <data name="Installation_Date" xml:space="preserve">
+    <value>Kurulum Tarihi</value>
+  </data>
+  <data name="Integration" xml:space="preserve">
+    <value>Bütünleşme</value>
+  </data>
+  <data name="Issue_Name" xml:space="preserve">
+    <value>Yayın Adı</value>
+  </data>
+  <data name="Issue_Profile" xml:space="preserve">
+    <value>Sayı Profili</value>
+  </data>
+  <data name="Issue_Report" xml:space="preserve">
+    <value>Yayın Raporu</value>
+  </data>
+  <data name="Issue_Status" xml:space="preserve">
+    <value>Sayı Durum</value>
+  </data>
+  <data name="Issue_Type" xml:space="preserve">
+    <value>Yayın Türü</value>
+  </data>
+  <data name="Issues" xml:space="preserve">
+    <value>Sorunlar</value>
+  </data>
+  <data name="Items_Completed" xml:space="preserve">
+    <value>Öğeler tamamlandı</value>
+  </data>
+  <data name="Items_Failed" xml:space="preserve">
+    <value>Öğeler başarısız</value>
+  </data>
+  <data name="Items_Remaining" xml:space="preserve">
+    <value>Kalan Öğeler</value>
+  </data>
+  <data name="JSN" xml:space="preserve">
+    <value>JSN</value>
+  </data>
+  <data name="JSN_Name" xml:space="preserve">
+    <value>JSN Adı</value>
+  </data>
+  <data name="Language" xml:space="preserve">
+    <value>Dil</value>
+  </data>
+  <data name="Last_Name" xml:space="preserve">
+    <value>Soyadı</value>
+  </data>
+  <data name="Last_Sync_Date" xml:space="preserve">
+    <value>Son Sync Tarihi</value>
+  </data>
+  <data name="Latitude" xml:space="preserve">
+    <value>Enlem</value>
+  </data>
+  <data name="Lead_Organization" xml:space="preserve">
+    <value>Organizasyon Kurşun</value>
+  </data>
+  <data name="Less_Than" xml:space="preserve">
+    <value>Less Than</value>
+  </data>
+  <data name="Level_Of_Details" xml:space="preserve">
+    <value>Detay Seviyesi</value>
+  </data>
+  <data name="Levels" xml:space="preserve">
+    <value>Seviyeleri</value>
+  </data>
+  <data name="Likelihood" xml:space="preserve">
+    <value>Olasılık</value>
+  </data>
+  <data name="Linear_Units" xml:space="preserve">
+    <value>Doğrusal Üniteleri</value>
+  </data>
+  <data name="Link_to_Asset" xml:space="preserve">
+    <value>Varlık bağlantı</value>
+  </data>
+  <data name="Link_to_Data" xml:space="preserve">
+    <value>Veri bağlama</value>
+  </data>
+  <data name="Links" xml:space="preserve">
+    <value>Linkler</value>
+  </data>
+  <data name="Live" xml:space="preserve">
+    <value>Yaşamak</value>
+  </data>
+  <data name="Location" xml:space="preserve">
+    <value>Konum</value>
+  </data>
+  <data name="Location_Hierarchy" xml:space="preserve">
+    <value>Yer Hiyerarşi</value>
+  </data>
+  <data name="Locations" xml:space="preserve">
+    <value>Mekanlar</value>
+  </data>
+  <data name="Locations_Hierarchy" xml:space="preserve">
+    <value>Mekanlar Hiyerarşi</value>
+  </data>
+  <data name="LOD_name" xml:space="preserve">
+    <value>LOD adı</value>
+  </data>
+  <data name="LOD_QC" xml:space="preserve">
+    <value>LOD QC</value>
+  </data>
+  <data name="Log_In" xml:space="preserve">
+    <value>Giriş</value>
+  </data>
+  <data name="Login_As" xml:space="preserve">
+    <value>Gibi giriniz</value>
+  </data>
+  <data name="Logout" xml:space="preserve">
+    <value>Çıkış</value>
+  </data>
+  <data name="Long_Name" xml:space="preserve">
+    <value>Uzun İsim</value>
+  </data>
+  <data name="Longitude" xml:space="preserve">
+    <value>Boylam</value>
+  </data>
+  <data name="Major" xml:space="preserve">
+    <value>Büyük</value>
+  </data>
+  <data name="Manufacturer" xml:space="preserve">
+    <value>Üretici</value>
+  </data>
+  <data name="Manufacturer_Mapping" xml:space="preserve">
+    <value>Üretici Haritalama</value>
+  </data>
+  <data name="Manufacturer_Name" xml:space="preserve">
+    <value>Üretici Adı</value>
+  </data>
+  <data name="Map" xml:space="preserve">
+    <value>Harita</value>
+  </data>
+  <data name="Map_Integration" xml:space="preserve">
+    <value>Harita Entegrasyonu</value>
+  </data>
+  <data name="Master_Format" xml:space="preserve">
+    <value>Ana Biçimi</value>
+  </data>
+  <data name="Masterformat" xml:space="preserve">
+    <value>MasterFormat</value>
+  </data>
+  <data name="message" xml:space="preserve">
+    <value>Mesaj</value>
+  </data>
+  <data name="Missing_Attribute" xml:space="preserve">
+    <value>Öznitelik Eksik</value>
+  </data>
+  <data name="Missing_attributes" xml:space="preserve">
+    <value>Eksik özellikler</value>
+  </data>
+  <data name="Missing_Attributes_Report" xml:space="preserve">
+    <value>Eksik Öznitelikler Rapor</value>
+  </data>
+  <data name="Mitigation" xml:space="preserve">
+    <value>Hafifletme</value>
+  </data>
+  <data name="Model_Number" xml:space="preserve">
+    <value>Model Numarası</value>
+  </data>
+  <data name="Model_Server" xml:space="preserve">
+    <value>Model Sunucu</value>
+  </data>
+  <data name="Monday" xml:space="preserve">
+    <value>Pazartesi</value>
+  </data>
+  <data name="Month" xml:space="preserve">
+    <value>Ay</value>
+  </data>
+  <data name="Months" xml:space="preserve">
+    <value>Ay</value>
+  </data>
+  <data name="Move_To_System" xml:space="preserve">
+    <value>Sistem Taşı</value>
+  </data>
+  <data name="My_Current_Week_Tasks" xml:space="preserve">
+    <value>Benim Haftayı Görevler</value>
+  </data>
+  <data name="My_Profile" xml:space="preserve">
+    <value>Profilim</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Isim</value>
+  </data>
+  <data name="Naming_Convention" xml:space="preserve">
+    <value>Adlandırma Kuralı</value>
+  </data>
+  <data name="Navigation" xml:space="preserve">
+    <value>Navigasyon</value>
+  </data>
+  <data name="Net_Area" xml:space="preserve">
+    <value>Net Alan</value>
+  </data>
+  <data name="Nevisworks_Version" xml:space="preserve">
+    <value>Nevisworks Sürüm</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>Sonraki</value>
+  </data>
+  <data name="No_Filter" xml:space="preserve">
+    <value>Filtre Yok</value>
+  </data>
+  <data name="No_Of_Users" xml:space="preserve">
+    <value>Kullanıcı Sayısı</value>
+  </data>
+  <data name="No_schedule_is_available_for_this_project_yet" xml:space="preserve">
+    <value>Hayır programı henüz bu proje için kullanılabilir.</value>
+  </data>
+  <data name="Non_conformance_Reasons" xml:space="preserve">
+    <value>Sigara uygunluk nedenleri</value>
+  </data>
+  <data name="Non_conformance_Reasons_Report" xml:space="preserve">
+    <value>Sigara uygunluk nedenleri Raporu</value>
+  </data>
+  <data name="Notification_Time" xml:space="preserve">
+    <value>Bildirim Süresi</value>
+  </data>
+  <data name="Notify" xml:space="preserve">
+    <value>Bildirmek</value>
+  </data>
+  <data name="Object" xml:space="preserve">
+    <value>Nesne</value>
+  </data>
+  <data name="Office_Name" xml:space="preserve">
+    <value>Ofis Adı</value>
+  </data>
+  <data name="Ok" xml:space="preserve">
+    <value>Ok</value>
+  </data>
+  <data name="Omni_Class_Type" xml:space="preserve">
+    <value>OmniClass Tipi</value>
+  </data>
+  <data name="OmniClas_2010" xml:space="preserve">
+    <value>OmniClass 2010</value>
+  </data>
+  <data name="OmniClass" xml:space="preserve">
+    <value>OmniClass</value>
+  </data>
+  <data name="OmniClass_2006" xml:space="preserve">
+    <value>OmniClass 2006</value>
+  </data>
+  <data name="OmniClass_Type" xml:space="preserve">
+    <value>OmniClass Tipi</value>
+  </data>
+  <data name="OmniClass_version" xml:space="preserve">
+    <value>OmniClass sürümü</value>
+  </data>
+  <data name="Organization" xml:space="preserve">
+    <value>Organizasyon</value>
+  </data>
+  <data name="Organization_Acceptance" xml:space="preserve">
+    <value>Organizasyon Kabul</value>
+  </data>
+  <data name="Organization_ID" xml:space="preserve">
+    <value>Kuruluş kimliği</value>
+  </data>
+  <data name="Organization_Name" xml:space="preserve">
+    <value>Kuruluş Adı</value>
+  </data>
+  <data name="Organization_Profile" xml:space="preserve">
+    <value>Organizasyon bilgileri</value>
+  </data>
+  <data name="Organization_Type" xml:space="preserve">
+    <value>Organizasyon Türü</value>
+  </data>
+  <data name="Organizations" xml:space="preserve">
+    <value>Organizasyonlar</value>
+  </data>
+  <data name="Overall_Impact" xml:space="preserve">
+    <value>Genel Etki</value>
+  </data>
+  <data name="Owner" xml:space="preserve">
+    <value>Sahip</value>
+  </data>
+  <data name="Owner_Organization" xml:space="preserve">
+    <value>Sahibi Kuruluş</value>
+  </data>
+  <data name="Page_Title" xml:space="preserve">
+    <value>Sayfa Başlığı</value>
+  </data>
+  <data name="Parameter" xml:space="preserve">
+    <value>Parametre</value>
+  </data>
+  <data name="Parent" xml:space="preserve">
+    <value>Ebeveyn</value>
+  </data>
+  <data name="Parent_System" xml:space="preserve">
+    <value>Veli Sistemi</value>
+  </data>
+  <data name="Part_Number" xml:space="preserve">
+    <value>Parça Numarası</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>Şifre</value>
+  </data>
+  <data name="PDF_Output_Format" xml:space="preserve">
+    <value>PDF Çıktı Biçimi</value>
+  </data>
+  <data name="Percent_Count" xml:space="preserve">
+    <value>Yüzde Sayısı</value>
+  </data>
+  <data name="Percent_Plan_Complete" xml:space="preserve">
+    <value>Yüzde Planı tamamlayın</value>
+  </data>
+  <data name="Percent_Plan_Complete_Report" xml:space="preserve">
+    <value>Yüzde Planı Tamamlandı (PPC) Raporu</value>
+  </data>
+  <data name="Personal_Protective_equipment" xml:space="preserve">
+    <value>Kişisel Koruyucu Donanım</value>
+  </data>
+  <data name="Phase" xml:space="preserve">
+    <value>Faz</value>
+  </data>
+  <data name="Phase_Name" xml:space="preserve">
+    <value>Faz Adı</value>
+  </data>
+  <data name="Phone" xml:space="preserve">
+    <value>Telefon</value>
+  </data>
+  <data name="Phone_Number" xml:space="preserve">
+    <value>Telefon Numarası</value>
+  </data>
+  <data name="Postal_Code" xml:space="preserve">
+    <value>Posta kodu</value>
+  </data>
+  <data name="Postal_Code_Zip" xml:space="preserve">
+    <value>Posta Kodu Zip</value>
+  </data>
+  <data name="Price" xml:space="preserve">
+    <value>Fiyat</value>
+  </data>
+  <data name="Primary_Contact" xml:space="preserve">
+    <value>Birincil İletişim</value>
+  </data>
+  <data name="Product" xml:space="preserve">
+    <value>Ürün</value>
+  </data>
+  <data name="Product_Description" xml:space="preserve">
+    <value>Ürün Açıklaması</value>
+  </data>
+  <data name="Product_Document" xml:space="preserve">
+    <value>Ürün Belgesi</value>
+  </data>
+  <data name="Product_Manufacturer" xml:space="preserve">
+    <value>Ürün Üreticisi</value>
+  </data>
+  <data name="Product_Name" xml:space="preserve">
+    <value>Ürün Adı</value>
+  </data>
+  <data name="Product_Profile" xml:space="preserve">
+    <value>Ürün Profili</value>
+  </data>
+  <data name="ProductAttribute" xml:space="preserve">
+    <value>Ürün Özellik</value>
+  </data>
+  <data name="Products" xml:space="preserve">
+    <value>Ürünler</value>
+  </data>
+  <data name="Profile" xml:space="preserve">
+    <value>Profil</value>
+  </data>
+  <data name="Program_file" xml:space="preserve">
+    <value>Program dosya</value>
+  </data>
+  <data name="Program_QC" xml:space="preserve">
+    <value>Programı QC</value>
+  </data>
+  <data name="Program_QC_For_Equipment" xml:space="preserve">
+    <value>Donanım İçin Program QC</value>
+  </data>
+  <data name="Program_QC_for_Spaces" xml:space="preserve">
+    <value>Kişinin Programı QC</value>
+  </data>
+  <data name="Project" xml:space="preserve">
+    <value>Proje</value>
+  </data>
+  <data name="Project_Contact" xml:space="preserve">
+    <value>Proje İletişim</value>
+  </data>
+  <data name="Project_Data" xml:space="preserve">
+    <value>Proje Verileri</value>
+  </data>
+  <data name="Project_Facilities" xml:space="preserve">
+    <value>Proje Tesisleri</value>
+  </data>
+  <data name="Project_Id" xml:space="preserve">
+    <value>Proje Kimliği</value>
+  </data>
+  <data name="Project_Name" xml:space="preserve">
+    <value>Projenin Adı</value>
+  </data>
+  <data name="Project_Number" xml:space="preserve">
+    <value>Proje Numarası</value>
+  </data>
+  <data name="Project_Profile" xml:space="preserve">
+    <value>Proje Bilgileri</value>
+  </data>
+  <data name="Project_Role" xml:space="preserve">
+    <value>Proje Rolü</value>
+  </data>
+  <data name="Project_Role_Permission" xml:space="preserve">
+    <value>Proje Rol İzni</value>
+  </data>
+  <data name="Project_Roles" xml:space="preserve">
+    <value>Proje Rolleri</value>
+  </data>
+  <data name="Projects" xml:space="preserve">
+    <value>Projeler</value>
+  </data>
+  <data name="Promise_Date" xml:space="preserve">
+    <value>Promise Tarihi</value>
+  </data>
+  <data name="Properties" xml:space="preserve">
+    <value>Özellikleri</value>
+  </data>
+  <data name="Protocol" xml:space="preserve">
+    <value>Protokol</value>
+  </data>
+  <data name="Providers" xml:space="preserve">
+    <value>Sağlayıcıları</value>
+  </data>
+  <data name="read_only_flag" xml:space="preserve">
+    <value>Okunur bayrak</value>
+  </data>
+  <data name="Recent" xml:space="preserve">
+    <value>Son</value>
+  </data>
+  <data name="Recent_Facilities" xml:space="preserve">
+    <value>Yeni İmkanlar</value>
+  </data>
+  <data name="Recent_Projects" xml:space="preserve">
+    <value>Yeni Projeler</value>
+  </data>
+  <data name="Reference" xml:space="preserve">
+    <value>Referans</value>
+  </data>
+  <data name="Refresh" xml:space="preserve">
+    <value>Yenile</value>
+  </data>
+  <data name="Remove" xml:space="preserve">
+    <value>Kaldırmak</value>
+  </data>
+  <data name="Removed" xml:space="preserve">
+    <value>Kaldırıldı</value>
+  </data>
+  <data name="Rename" xml:space="preserve">
+    <value>Yeni ad vermek</value>
+  </data>
+  <data name="Replace" xml:space="preserve">
+    <value>Değiştirmek</value>
+  </data>
+  <data name="Replace_File" xml:space="preserve">
+    <value>Dosya değiştirin</value>
+  </data>
+  <data name="Replacement_Cost" xml:space="preserve">
+    <value>Yenileme Maliyeti</value>
+  </data>
+  <data name="Reports" xml:space="preserve">
+    <value>Raporlar</value>
+  </data>
+  <data name="Request_Pending" xml:space="preserve">
+    <value>Bekleyen isteyin</value>
+  </data>
+  <data name="Request_To_Add_New_Organization" xml:space="preserve">
+    <value>Yeni Kurum ekle için isteyin</value>
+  </data>
+  <data name="Requested_By" xml:space="preserve">
+    <value>Talep</value>
+  </data>
+  <data name="Requested_Date" xml:space="preserve">
+    <value>Talep Tarihi</value>
+  </data>
+  <data name="Required_Attributes" xml:space="preserve">
+    <value>Gereken Nitelikler</value>
+  </data>
+  <data name="Required_Documents" xml:space="preserve">
+    <value>Gerekli Belgeler</value>
+  </data>
+  <data name="Reset" xml:space="preserve">
+    <value>Reset</value>
+  </data>
+  <data name="Resolved" xml:space="preserve">
+    <value>Çözülmüş</value>
+  </data>
+  <data name="Responsible" xml:space="preserve">
+    <value>Sorumlu</value>
+  </data>
+  <data name="RFI" xml:space="preserve">
+    <value>RFI</value>
+  </data>
+  <data name="Risk" xml:space="preserve">
+    <value>Risk</value>
+  </data>
+  <data name="Role" xml:space="preserve">
+    <value>Rol</value>
+  </data>
+  <data name="Role_Description" xml:space="preserve">
+    <value>Rolü Açıklama</value>
+  </data>
+  <data name="Role_Name" xml:space="preserve">
+    <value>Rol Adı</value>
+  </data>
+  <data name="Roles" xml:space="preserve">
+    <value>Roller</value>
+  </data>
+  <data name="Room_Code" xml:space="preserve">
+    <value>Oda Kod</value>
+  </data>
+  <data name="Room_Data_Sheet" xml:space="preserve">
+    <value>Oda Data Sheet</value>
+  </data>
+  <data name="Room_Id" xml:space="preserve">
+    <value>Oda No</value>
+  </data>
+  <data name="Room_Name" xml:space="preserve">
+    <value>Oda Adı</value>
+  </data>
+  <data name="Room_Tag" xml:space="preserve">
+    <value>Oda Tag</value>
+  </data>
+  <data name="Root_Cause_Analysis" xml:space="preserve">
+    <value>Kök Neden Analizi</value>
+  </data>
+  <data name="Root_Cause_Analysis_Report" xml:space="preserve">
+    <value>Kök Neden Analizi Raporu</value>
+  </data>
+  <data name="Row" xml:space="preserve">
+    <value>Sıra</value>
+  </data>
+  <data name="Row_Name" xml:space="preserve">
+    <value>Satır Adı</value>
+  </data>
+  <data name="Saturday" xml:space="preserve">
+    <value>Cumartesi</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>Kurtarmak</value>
+  </data>
+  <data name="Save_And_Clone" xml:space="preserve">
+    <value>Kaydet ve Clone</value>
+  </data>
+  <data name="Save_Document" xml:space="preserve">
+    <value>Belgeyi Kaydet</value>
+  </data>
+  <data name="Save_Hierarchy" xml:space="preserve">
+    <value>Hiyerarşi kaydet</value>
+  </data>
+  <data name="Save_Impact" xml:space="preserve">
+    <value>Etki kaydet</value>
+  </data>
+  <data name="Save_Layout" xml:space="preserve">
+    <value>Düzeni kaydet</value>
+  </data>
+  <data name="Schedule" xml:space="preserve">
+    <value>Zamanlamak</value>
+  </data>
+  <data name="Scheduler" xml:space="preserve">
+    <value>Zamanlayıcı</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>Ara</value>
+  </data>
+  <data name="Search_Asset" xml:space="preserve">
+    <value>Arama Varlık</value>
+  </data>
+  <data name="Search_By" xml:space="preserve">
+    <value>By ara</value>
+  </data>
+  <data name="Search_Space" xml:space="preserve">
+    <value>Arama Uzay</value>
+  </data>
+  <data name="Select" xml:space="preserve">
+    <value>Seçmek</value>
+  </data>
+  <data name="Select_Add" xml:space="preserve">
+    <value>Ekle / Seç</value>
+  </data>
+  <data name="Select_Component" xml:space="preserve">
+    <value>Bileşen seçin</value>
+  </data>
+  <data name="Select_Date" xml:space="preserve">
+    <value>Tarihi seçin</value>
+  </data>
+  <data name="Select_Entity" xml:space="preserve">
+    <value>Varlık seçin</value>
+  </data>
+  <data name="Select_Facility" xml:space="preserve">
+    <value>Tesis seçin</value>
+  </data>
+  <data name="Select_File" xml:space="preserve">
+    <value>Dosya Seç</value>
+  </data>
+  <data name="Select_File_To_Upload" xml:space="preserve">
+    <value>Yüklenecek Dosyayı seçin</value>
+  </data>
+  <data name="Select_Master_Format" xml:space="preserve">
+    <value>MasterFormat seçin</value>
+  </data>
+  <data name="Select_Master_ormat" xml:space="preserve">
+    <value>MasterFormat seçin</value>
+  </data>
+  <data name="Select_Project_Role" xml:space="preserve">
+    <value>Proje Rol seçin</value>
+  </data>
+  <data name="Select_Sub_Assemblies" xml:space="preserve">
+    <value>Alt montajlar seçin</value>
+  </data>
+  <data name="Select_Task" xml:space="preserve">
+    <value>Görev seçin</value>
+  </data>
+  <data name="Select_Time" xml:space="preserve">
+    <value>Zaman Seçin</value>
+  </data>
+  <data name="Select_Uni_Format" xml:space="preserve">
+    <value>UniFormat seçin</value>
+  </data>
+  <data name="Select_Uniformat" xml:space="preserve">
+    <value>UniFormat seçin</value>
+  </data>
+  <data name="Selected_Master_Format" xml:space="preserve">
+    <value>Seçilen Ana Biçimi</value>
+  </data>
+  <data name="Selected_Masterformat" xml:space="preserve">
+    <value>Seçilen MasterFormat</value>
+  </data>
+  <data name="Serial_Number" xml:space="preserve">
+    <value>Seri numarası</value>
+  </data>
+  <data name="Server_Name" xml:space="preserve">
+    <value>Sunucu Adı</value>
+  </data>
+  <data name="Service_Authentication_URL" xml:space="preserve">
+    <value>Hizmeti Kimlik Doğrulama URL</value>
+  </data>
+  <data name="Service_Client" xml:space="preserve">
+    <value>Service Client</value>
+  </data>
+  <data name="Service_History" xml:space="preserve">
+    <value>Servis Geçmişi</value>
+  </data>
+  <data name="Service_URL" xml:space="preserve">
+    <value>Hizmet URL'si</value>
+  </data>
+  <data name="Set" xml:space="preserve">
+    <value>Ayarlamak</value>
+  </data>
+  <data name="Settings" xml:space="preserve">
+    <value>Ayarlar</value>
+  </data>
+  <data name="Setup_Sync_Configuration" xml:space="preserve">
+    <value>Kurulum Sync Yapılandırma</value>
+  </data>
+  <data name="Setup_Sync_Wizard" xml:space="preserve">
+    <value>Kurulum Sihirbazı Sync</value>
+  </data>
+  <data name="Severity" xml:space="preserve">
+    <value>Şiddet</value>
+  </data>
+  <data name="Sheet" xml:space="preserve">
+    <value>Levha</value>
+  </data>
+  <data name="Sheet_Name" xml:space="preserve">
+    <value>Sac Adı</value>
+  </data>
+  <data name="Short_Name" xml:space="preserve">
+    <value>Kısa Adı</value>
+  </data>
+  <data name="Show" xml:space="preserve">
+    <value>Göstermek</value>
+  </data>
+  <data name="Show_All" xml:space="preserve">
+    <value>Tüm göster</value>
+  </data>
+  <data name="Show_All_Issues" xml:space="preserve">
+    <value>Tüm Göster Sorunlar</value>
+  </data>
+  <data name="Show_Model" xml:space="preserve">
+    <value>Model göster</value>
+  </data>
+  <data name="Show_Report" xml:space="preserve">
+    <value>Raporu Göster</value>
+  </data>
+  <data name="Site_Description" xml:space="preserve">
+    <value>Site Açıklaması</value>
+  </data>
+  <data name="Site_Name" xml:space="preserve">
+    <value>Site Adı</value>
+  </data>
+  <data name="Space" xml:space="preserve">
+    <value>Uzay</value>
+  </data>
+  <data name="Space_Name" xml:space="preserve">
+    <value>Alan Adı</value>
+  </data>
+  <data name="Space_Names" xml:space="preserve">
+    <value>Alan Served</value>
+  </data>
+  <data name="Space_Profile" xml:space="preserve">
+    <value>Uzay Bilgileri</value>
+  </data>
+  <data name="Space_Type" xml:space="preserve">
+    <value>Uzay Tipi</value>
+  </data>
+  <data name="Spaces" xml:space="preserve">
+    <value>Kişinin</value>
+  </data>
+  <data name="Stage" xml:space="preserve">
+    <value>Sahne</value>
+  </data>
+  <data name="Standard" xml:space="preserve">
+    <value>Standart</value>
+  </data>
+  <data name="Start" xml:space="preserve">
+    <value>Başlatmak</value>
+  </data>
+  <data name="Start_Date" xml:space="preserve">
+    <value>Başlangıç ​​Tarihi</value>
+  </data>
+  <data name="Start_Date_Time" xml:space="preserve">
+    <value>Tarihi Başlangıç ​​Zamanı</value>
+  </data>
+  <data name="Start_Time" xml:space="preserve">
+    <value>Başlangıç ​​Zamanı</value>
+  </data>
+  <data name="State" xml:space="preserve">
+    <value>Devlet</value>
+  </data>
+  <data name="State_Region" xml:space="preserve">
+    <value>Devlet Bölge</value>
+  </data>
+  <data name="Station_Name" xml:space="preserve">
+    <value>İstasyon Adı</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>Durum</value>
+  </data>
+  <data name="Street" xml:space="preserve">
+    <value>Sokak</value>
+  </data>
+  <data name="Sub_assemblies" xml:space="preserve">
+    <value>Alt montajlar</value>
+  </data>
+  <data name="Sub_assembly_Name" xml:space="preserve">
+    <value>Alt montaj Adı</value>
+  </data>
+  <data name="Submit" xml:space="preserve">
+    <value>Sunmak</value>
+  </data>
+  <data name="Subsystem" xml:space="preserve">
+    <value>Subsystem</value>
+  </data>
+  <data name="Subsystem_Name" xml:space="preserve">
+    <value>Alt Sistemi Adı</value>
+  </data>
+  <data name="Sunday" xml:space="preserve">
+    <value>Pazar</value>
+  </data>
+  <data name="Sustainability" xml:space="preserve">
+    <value>Sürdürülebilirlik</value>
+  </data>
+  <data name="Sync_Assets" xml:space="preserve">
+    <value>Sync Varlıklar</value>
+  </data>
+  <data name="Sync_Profile" xml:space="preserve">
+    <value>Sync Profili</value>
+  </data>
+  <data name="Synchronization" xml:space="preserve">
+    <value>Senkronizasyon</value>
+  </data>
+  <data name="Synchronization_filters" xml:space="preserve">
+    <value>Senkronizasyon filtreleri</value>
+  </data>
+  <data name="Synchronization_Result_For" xml:space="preserve">
+    <value>Için Senkronizasyon Sonucu</value>
+  </data>
+  <data name="Synchronization_Type" xml:space="preserve">
+    <value>Senkronizasyon Tipi</value>
+  </data>
+  <data name="Synchronize" xml:space="preserve">
+    <value>Senkronize etmek</value>
+  </data>
+  <data name="System" xml:space="preserve">
+    <value>Sistem</value>
+  </data>
+  <data name="System_Asset" xml:space="preserve">
+    <value>Sistem Varlık</value>
+  </data>
+  <data name="System_File_Name" xml:space="preserve">
+    <value>Sistem Dosya Adı</value>
+  </data>
+  <data name="System_Name" xml:space="preserve">
+    <value>Sistem Adı</value>
+  </data>
+  <data name="System_Profile" xml:space="preserve">
+    <value>Sistem Profili</value>
+  </data>
+  <data name="System_Role" xml:space="preserve">
+    <value>Sistem Rolü</value>
+  </data>
+  <data name="Systems" xml:space="preserve">
+    <value>Sistemleri</value>
+  </data>
+  <data name="Tag_Number" xml:space="preserve">
+    <value>Tag sayısı</value>
+  </data>
+  <data name="Task_Name" xml:space="preserve">
+    <value>Görev Adı</value>
+  </data>
+  <data name="Tasks" xml:space="preserve">
+    <value>Görevler</value>
+  </data>
+  <data name="tbl_name" xml:space="preserve">
+    <value>Tbl adı</value>
+  </data>
+  <data name="Template_Name" xml:space="preserve">
+    <value>Şablon Adı</value>
+  </data>
+  <data name="Thursday" xml:space="preserve">
+    <value>Perşembe</value>
+  </data>
+  <data name="Time_Zone" xml:space="preserve">
+    <value>Zaman Dilimi</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>Başlık</value>
+  </data>
+  <data name="To" xml:space="preserve">
+    <value>Için</value>
+  </data>
+  <data name="Total_Exported_Data_Transfer" xml:space="preserve">
+    <value>Toplam ihraç veri transferi</value>
+  </data>
+  <data name="Total_Imported_Data_Transfer" xml:space="preserve">
+    <value>Toplam ithal veri transferi</value>
+  </data>
+  <data name="Town" xml:space="preserve">
+    <value>Kasaba</value>
+  </data>
+  <data name="Trend" xml:space="preserve">
+    <value>Eğilim</value>
+  </data>
+  <data name="Tuesday" xml:space="preserve">
+    <value>Salı</value>
+  </data>
+  <data name="Type" xml:space="preserve">
+    <value>Tip</value>
+  </data>
+  <data name="Type_Name" xml:space="preserve">
+    <value>Tür Ad</value>
+  </data>
+  <data name="Type_Profile" xml:space="preserve">
+    <value>Tip Profili</value>
+  </data>
+  <data name="Unassign" xml:space="preserve">
+    <value>Atamasını</value>
+  </data>
+  <data name="Unassign_Asset" xml:space="preserve">
+    <value>Varlık atamasını</value>
+  </data>
+  <data name="Unassign_Component" xml:space="preserve">
+    <value>Bileşen atamasını</value>
+  </data>
+  <data name="Unassign_Subsystem" xml:space="preserve">
+    <value>Alt atamasını</value>
+  </data>
+  <data name="Unassign_System" xml:space="preserve">
+    <value>Sistem atamasını</value>
+  </data>
+  <data name="Unassigned_Items" xml:space="preserve">
+    <value>Atanmamış Öğeler</value>
+  </data>
+  <data name="Uni_Format" xml:space="preserve">
+    <value>Uni Biçimi</value>
+  </data>
+  <data name="Uniformat" xml:space="preserve">
+    <value>UniFormat</value>
+  </data>
+  <data name="Unit" xml:space="preserve">
+    <value>Birim</value>
+  </data>
+  <data name="UOM" xml:space="preserve">
+    <value>UOM</value>
+  </data>
+  <data name="UOM_Mapping" xml:space="preserve">
+    <value>UOM Haritalama</value>
+  </data>
+  <data name="Update" xml:space="preserve">
+    <value>Güncelleştirmek</value>
+  </data>
+  <data name="Update_Names" xml:space="preserve">
+    <value>Adları Güncelleştirme</value>
+  </data>
+  <data name="Upload" xml:space="preserve">
+    <value>Yükle</value>
+  </data>
+  <data name="Upload_Document" xml:space="preserve">
+    <value>Belgeyi Karşıya</value>
+  </data>
+  <data name="Upload_File" xml:space="preserve">
+    <value>Dosya Yükle</value>
+  </data>
+  <data name="Uploaded_By" xml:space="preserve">
+    <value>Yükleyen</value>
+  </data>
+  <data name="Uploaded_documents" xml:space="preserve">
+    <value>Uploaded Belgeler</value>
+  </data>
+  <data name="Uploaded_File_Name" xml:space="preserve">
+    <value>Uploaded Dosya Adı</value>
+  </data>
+  <data name="Uploaded_Files" xml:space="preserve">
+    <value>Yüklenen Dosyalar</value>
+  </data>
+  <data name="Uploaded_On" xml:space="preserve">
+    <value>On yüklendi</value>
+  </data>
+  <data name="URL" xml:space="preserve">
+    <value>URL</value>
+  </data>
+  <data name="Usable_Height" xml:space="preserve">
+    <value>Kullanılabilir Yükseklik</value>
+  </data>
+  <data name="User" xml:space="preserve">
+    <value>Kullanıcı</value>
+  </data>
+  <data name="User_Id" xml:space="preserve">
+    <value>Kullanıcı Adı</value>
+  </data>
+  <data name="User_Name" xml:space="preserve">
+    <value>Kullanıcı adı</value>
+  </data>
+  <data name="User_Profile" xml:space="preserve">
+    <value>Kullanıcı Profili</value>
+  </data>
+  <data name="Username" xml:space="preserve">
+    <value>Adı</value>
+  </data>
+  <data name="Users" xml:space="preserve">
+    <value>Kullanıcılar</value>
+  </data>
+  <data name="Value" xml:space="preserve">
+    <value>Değer</value>
+  </data>
+  <data name="Version" xml:space="preserve">
+    <value>Versiyon</value>
+  </data>
+  <data name="Versioning" xml:space="preserve">
+    <value>Sürüm</value>
+  </data>
+  <data name="View_Name" xml:space="preserve">
+    <value>Adı Görüntüle</value>
+  </data>
+  <data name="Viewpoints" xml:space="preserve">
+    <value>Bakış</value>
+  </data>
+  <data name="Volume_Units" xml:space="preserve">
+    <value>Hacim Birimleri</value>
+  </data>
+  <data name="Warranty_Description" xml:space="preserve">
+    <value>Garanti Açıklama</value>
+  </data>
+  <data name="Warranty_Duration_Labor" xml:space="preserve">
+    <value>Garanti Süresi Çalışma</value>
+  </data>
+  <data name="Warranty_Duration_Parts" xml:space="preserve">
+    <value>Garanti Süresi Parçaları</value>
+  </data>
+  <data name="Warranty_Duration_Unit" xml:space="preserve">
+    <value>Garanti Süresi Birimi</value>
+  </data>
+  <data name="Warranty_Guarantor_Labor" xml:space="preserve">
+    <value>Garanti Garantör Çalışma</value>
+  </data>
+  <data name="Warranty_Guarantor_Parts" xml:space="preserve">
+    <value>Garanti Garantör Parçaları</value>
+  </data>
+  <data name="Warranty_Start_Date" xml:space="preserve">
+    <value>Garanti Başlangıç ​​Tarihi</value>
+  </data>
+  <data name="Weather_Station" xml:space="preserve">
+    <value>Meteoroloji istasyonu</value>
+  </data>
+  <data name="Website" xml:space="preserve">
+    <value>Web sitesi</value>
+  </data>
+  <data name="Wednesday" xml:space="preserve">
+    <value>Çarşamba</value>
+  </data>
+  <data name="Weeks" xml:space="preserve">
+    <value>Hafta</value>
+  </data>
+  <data name="Work_Hours" xml:space="preserve">
+    <value>Çalışma Saatleri</value>
+  </data>
+  <data name="Work_Order_No" xml:space="preserve">
+    <value>Hayır sipariş çalışın</value>
+  </data>
+  <data name="Work_Order_Number" xml:space="preserve">
+    <value>Sipariş Numarası Çalışma</value>
+  </data>
+  <data name="Work_Order_Profile" xml:space="preserve">
+    <value>Sipariş bilgileri Çalışma</value>
+  </data>
+  <data name="Work_Orders" xml:space="preserve">
+    <value>İş Emirleri</value>
+  </data>
+  <data name="Work_Plan" xml:space="preserve">
+    <value>Çalışma Planı</value>
+  </data>
+  <data name="Workable_Backlog" xml:space="preserve">
+    <value>Çalışılabilir Backlog</value>
+  </data>
+  <data name="Zip_Postal_Code" xml:space="preserve">
+    <value>Zip / Posta kodu</value>
+  </data>
+  <data name="Zone" xml:space="preserve">
+    <value>Bölge</value>
+  </data>
+  <data name="Zone_Name" xml:space="preserve">
+    <value>Bölge Adı</value>
+  </data>
+  <data name="Zone_Name_Grid" xml:space="preserve">
+    <value>Bölge Adı Izgara</value>
+  </data>
+  <data name="Zone_Profile" xml:space="preserve">
+    <value>Bölge Profili</value>
+  </data>
+  <data name="Zones" xml:space="preserve">
+    <value>Bölgeleri</value>
+  </data>
+  <data name="Please_enter_number" xml:space="preserve">
+    <value>Numarası girin</value>
+  </data>
+  <data name="Add_Document_to" xml:space="preserve">
+    <value>Belge ekle</value>
+  </data>
+  <data name="Unassign_Space" xml:space="preserve">
+    <value>Uzay atamasını</value>
+  </data>
+  <data name="COBieDataQualityControl" xml:space="preserve">
+    <value>Cobie Veri Kalite Kontrol</value>
+  </data>
+  <data name="Assign_Existing_Facilities" xml:space="preserve">
+    <value>Mevcut Tesislerin atama</value>
+  </data>
+  <data name="Add_Existing_Facility" xml:space="preserve">
+    <value>Mevcut Tesis ekle</value>
+  </data>
+  <data name="Provide_New_Name" xml:space="preserve">
+    <value>Yeni Adı sağlayın</value>
+  </data>
+  <data name="Update_Component_Name" xml:space="preserve">
+    <value>Bileşen Adı güncelleyin</value>
+  </data>
+  <data name="Update_Type_Name" xml:space="preserve">
+    <value>Tür Ad güncelleyin</value>
+  </data>
+  <data name="Use_Attribute_Template" xml:space="preserve">
+    <value>Öznitelik Şablon kullanın</value>
+  </data>
+  <data name="Assign_Project_Role" xml:space="preserve">
+    <value>Proje Rol atama</value>
+  </data>
+  <data name="Master_Files" xml:space="preserve">
+    <value>Ana Dosyalar</value>
+  </data>
+  <data name="Elapsed_Time" xml:space="preserve">
+    <value>geçen Süre</value>
+  </data>
+  <data name="Estimated_Time" xml:space="preserve">
+    <value>Tahmini Süre</value>
+  </data>
+  <data name="Total" xml:space="preserve">
+    <value>toplam</value>
+  </data>
+  <data name="Total_Files" xml:space="preserve">
+    <value>Toplam Dosya</value>
+  </data>
+  <data name="Transfer_Speed" xml:space="preserve">
+    <value>Hız aktarın</value>
+  </data>
+  <data name="Uploaded" xml:space="preserve">
+    <value>Gönderildi</value>
+  </data>
+  <data name="Uploading_File" xml:space="preserve">
+    <value>Yükleme Dosyası</value>
+  </data>
+  <data name="Generate_COBie_File" xml:space="preserve">
+    <value>Cobie Dosyası Oluştur</value>
+  </data>
+  <data name="Add_Edit_Names" xml:space="preserve">
+    <value>Adları Ekle / Düzenle</value>
+  </data>
+  <data name="Add_Contractor" xml:space="preserve">
+    <value>Yüklenici ekle</value>
+  </data>
+  <data name="Add_Designer" xml:space="preserve">
+    <value>Tasarımcı ekle</value>
+  </data>
+  <data name="Activities" xml:space="preserve">
+    <value>faaliyetler</value>
+  </data>
+  <data name="Product_Attributes" xml:space="preserve">
+    <value>Ürün Özellikleri</value>
+  </data>
+  <data name="Product_Documents" xml:space="preserve">
+    <value>Ürün Dökümanları</value>
+  </data>
+  <data name="Project_Setup" xml:space="preserve">
+    <value>Proje Kurulum</value>
+  </data>
+  <data name="Role_Details" xml:space="preserve">
+    <value>rol Detayları</value>
+  </data>
+  <data name="Schedule_Limits" xml:space="preserve">
+    <value>Zamanlama Sınırları</value>
+  </data>
+  <data name="Interpolate" xml:space="preserve">
+    <value>katmak</value>
+  </data>
+  <data name="Lower_Limit_min" xml:space="preserve">
+    <value>Alt Limit (dk)</value>
+  </data>
+  <data name="Numeric_Type" xml:space="preserve">
+    <value>sayısal Tip</value>
+  </data>
+  <data name="Unit_Type" xml:space="preserve">
+    <value>Birim Tipi</value>
+  </data>
+  <data name="Upper_Limit_max" xml:space="preserve">
+    <value>Üst Limit (max)</value>
+  </data>
+  <data name="Schedules" xml:space="preserve">
+    <value>Tarifeleri</value>
+  </data>
+  <data name="Create_Attribute_Group" xml:space="preserve">
+    <value>Öznitelik Grup Oluştur</value>
+  </data>
+  <data name="Add_Existing_Attributes" xml:space="preserve">
+    <value>Mevcut Özellikler ekle</value>
+  </data>
+  <data name="Add_New_Attribute" xml:space="preserve">
+    <value>Yeni Öznitelik Ekle</value>
+  </data>
+  <data name="Attribute_Description" xml:space="preserve">
+    <value>Öznitelik Açıklama</value>
+  </data>
+  <data name="Attribute_Group_List" xml:space="preserve">
+    <value>Öznitelik Grup Listesi</value>
+  </data>
+  <data name="Add_Attribute_Group" xml:space="preserve">
+    <value>Öznitelik Grup Ekle</value>
+  </data>
+  <data name="Attribute_Group_Name" xml:space="preserve">
+    <value>Öznitelik Grup Adı</value>
+  </data>
+  <data name="Create_Required_Attribute_Group" xml:space="preserve">
+    <value>Gerekli Öznitelik Grup Oluştur</value>
+  </data>
+  <data name="Done" xml:space="preserve">
+    <value>yapılmış</value>
+  </data>
+  <data name="Number_of_Components" xml:space="preserve">
+    <value>Bileşenleri sayısı</value>
+  </data>
+  <data name="Link_To_Space" xml:space="preserve">
+    <value>Uzay bağlantı</value>
+  </data>
+  <data name="Energy_Simulation" xml:space="preserve">
+    <value>Enerji Simülasyon</value>
+  </data>
+  <data name="Link_to_Component" xml:space="preserve">
+    <value>Varlık bağlantı</value>
+  </data>
+  <data name="Show_All_work_order" xml:space="preserve">
+    <value>Tüm İş Emri göster</value>
+  </data>
+  <data name="Work_Order_Name" xml:space="preserve">
+    <value>Sipariş Adı çalışın</value>
+  </data>
+  <data name="Work_Order_Type" xml:space="preserve">
+    <value>Sipariş Tipi Çalışma</value>
+  </data>
+  <data name="Work_order_Status" xml:space="preserve">
+    <value>Work Order Status</value>
+  </data>
+  <data name="Priority" xml:space="preserve">
+    <value>öncelik</value>
+  </data>
+  <data name="Create_Clones" xml:space="preserve">
+    <value>Klonlar oluştur</value>
+  </data>
+  <data name="Number_Of_Clones_To_Be_Created" xml:space="preserve">
+    <value>Oluşturulacak klonların sayısı</value>
+  </data>
+  <data name="Work_Order_Report" xml:space="preserve">
+    <value>Sipariş Raporu çalışın</value>
+  </data>
+  <data name="Show_Open_Work_Order" xml:space="preserve">
+    <value>Açık İş Emri göster</value>
+  </data>
+  <data name="Open" xml:space="preserve">
+    <value>açık</value>
+  </data>
+  <data name="Attribute_Details" xml:space="preserve">
+    <value>Özellik Detayları</value>
+  </data>
+  <data name="Attribute_Group" xml:space="preserve">
+    <value>Özellik Grubu</value>
+  </data>
+  <data name="Classification" xml:space="preserve">
+    <value>sınıflandırma</value>
+  </data>
+  <data name="Classifications" xml:space="preserve">
+    <value>классификации</value>
+  </data>
+  <data name="Link_Status" xml:space="preserve">
+    <value>Bağlantı durumu</value>
+  </data>
+  <data name="Applied_Group_Name" xml:space="preserve">
+    <value>Uygulamalı Grup Adı</value>
+  </data>
+  <data name="Delete_Attribute" xml:space="preserve">
+    <value>Özellik sil</value>
+  </data>
+  <data name="Permissions" xml:space="preserve">
+    <value>İzinler</value>
+  </data>
+  <data name="Add_Details" xml:space="preserve">
+    <value>Detaylar ekle</value>
+  </data>
+  <data name="Add_Role" xml:space="preserve">
+    <value>Rol ekle</value>
+  </data>
+  <data name="Default_Value" xml:space="preserve">
+    <value>Varsayılan Değer</value>
+  </data>
+  <data name="Required_Optional" xml:space="preserve">
+    <value>Gerekli / İsteğe</value>
+  </data>
+  <data name="Value_Range_Choices" xml:space="preserve">
+    <value>Değer Aralığı / Seçimleri</value>
+  </data>
+  <data name="Description_Comments" xml:space="preserve">
+    <value>Açıklama / Yorumlar</value>
+  </data>
+  <data name="Assign_SubAssembly" xml:space="preserve">
+    <value>alt montajın atama</value>
+  </data>
+  <data name="Unassign_SubAssembly" xml:space="preserve">
+    <value>alt montajın atamasını</value>
+  </data>
+  <data name="SubAssembly" xml:space="preserve">
+    <value>alt montajın</value>
+  </data>
+  <data name="SubAssemblies" xml:space="preserve">
+    <value>modüllerde</value>
+  </data>
+  <data name="Generate_Excel_File" xml:space="preserve">
+    <value>Excel Dosyası Oluştur</value>
+  </data>
+  <data name="Generate_Component_Analysis_Report" xml:space="preserve">
+    <value>Bileşen Analizi Raporu Oluştur</value>
+  </data>
+  <data name="Jobs" xml:space="preserve">
+    <value>İşler</value>
+  </data>
+  <data name="Resources" xml:space="preserve">
+    <value>kaynaklar</value>
+  </data>
+  <data name="Spares" xml:space="preserve">
+    <value>Yedekleri</value>
+  </data>
+  <data name="Resource_Name" xml:space="preserve">
+    <value>Kaynak Adı</value>
+  </data>
+  <data name="Add_Spare" xml:space="preserve">
+    <value>Yedek ekle</value>
+  </data>
+  <data name="Spare_Name" xml:space="preserve">
+    <value>Yedek Adı</value>
+  </data>
+  <data name="Supplier" xml:space="preserve">
+    <value>satıcı</value>
+  </data>
+  <data name="Add_Resource" xml:space="preserve">
+    <value>Kaynak ekle</value>
+  </data>
+  <data name="Job" xml:space="preserve">
+    <value>iş</value>
+  </data>
+  <data name="Set_Number" xml:space="preserve">
+    <value>Sayı Seti</value>
+  </data>
+  <data name="Add_Type_Spare" xml:space="preserve">
+    <value>Türü Yedek ekle</value>
+  </data>
+  <data name="Logo" xml:space="preserve">
+    <value>logo</value>
+  </data>
+  <data name="Document_Type" xml:space="preserve">
+    <value>Belge Türü</value>
+  </data>
+  <data name="Add_missing_attributes_to_model" xml:space="preserve">
+    <value>Model eksik niteliklerini ekle</value>
+  </data>
+  <data name="Work_Order_Log" xml:space="preserve">
+    <value>Sipariş Girişi çalışın</value>
+  </data>
+  <data name="Subsystems" xml:space="preserve">
+    <value>Alt Sistemleri</value>
+  </data>
+  <data name="Updated_By" xml:space="preserve">
+    <value>By Güncelleme</value>
+  </data>
+  <data name="Updated_On" xml:space="preserve">
+    <value>Güncelleme</value>
+  </data>
+  <data name="Updated" xml:space="preserve">
+    <value>Güncelleme</value>
+  </data>
+  <data name="Viewer" xml:space="preserve">
+    <value>izleyici</value>
+  </data>
+  <data name="LogIn" xml:space="preserve">
+    <value>Giriş</value>
+  </data>
+  <data name="Linked_In_BIM" xml:space="preserve">
+    <value>BIM Linked In? :</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>hayır</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>evet</value>
+  </data>
+  <data name="Show_Open_Issue" xml:space="preserve">
+    <value>Aç Göster Sorun</value>
+  </data>
+  <data name="Issue_Number" xml:space="preserve">
+    <value>Yayın Numarası</value>
+  </data>
+  <data name="Issue_Log" xml:space="preserve">
+    <value>Sayı Girişi</value>
+  </data>
+  <data name="Assign_Supplier" xml:space="preserve">
+    <value>Tedarikçi atama</value>
+  </data>
+  <data name="Assign_Contractor" xml:space="preserve">
+    <value>Yüklenici atama</value>
+  </data>
+  <data name="Assign_Designer" xml:space="preserve">
+    <value>Tasarımcı atama</value>
+  </data>
+  <data name="Assign_UniClass" xml:space="preserve">
+    <value>Назначение UniClass</value>
+  </data>
+  <data name="UniClass" xml:space="preserve">
+    <value>Uniclass</value>
+  </data>
+  <data name="Edit_Classification" xml:space="preserve">
+    <value>Sınıflandırma Düzenle</value>
+  </data>
+  <data name="Duration_Unit" xml:space="preserve">
+    <value>Süre Ünitesi</value>
+  </data>
+  <data name="Frequency" xml:space="preserve">
+    <value>frekans</value>
+  </data>
+  <data name="Frequency_Unit" xml:space="preserve">
+    <value>Frekans Ünitesi</value>
+  </data>
+  <data name="Priors" xml:space="preserve">
+    <value>Priors</value>
+  </data>
+  <data name="Start_Unit" xml:space="preserve">
+    <value>Birim Başlangıç</value>
+  </data>
+  <data name="Task_Number" xml:space="preserve">
+    <value>Görev sayısı</value>
+  </data>
+  <data name="Assign_Category" xml:space="preserve">
+    <value>Kategori atama</value>
+  </data>
+  <data name="Change_Password" xml:space="preserve">
+    <value>Şifre değiştir</value>
+  </data>
+  <data name="Confirm_Password" xml:space="preserve">
+    <value>Şifre Onayla</value>
+  </data>
+  <data name="Current_Password" xml:space="preserve">
+    <value>Şu Şifre</value>
+  </data>
+  <data name="New_Password" xml:space="preserve">
+    <value>yeni Şifre</value>
+  </data>
+  <data name="Forgot_Password" xml:space="preserve">
+    <value>Şifremi Unuttum</value>
+  </data>
+  <data name="Password_Rule_1" xml:space="preserve">
+    <value>şifreler gerekir</value>
+  </data>
+  <data name="Password_Rule_10" xml:space="preserve">
+    <value>Şifreler seçilmedi gerekir</value>
+  </data>
+  <data name="Password_Rule_11" xml:space="preserve">
+    <value>Ortak bir özel ad, oturum açma kimliği, e-posta adresi, harfleri, ilk, orta ve soyadı içeren</value>
+  </data>
+  <data name="Password_Rule_12" xml:space="preserve">
+    <value>Geçen yıl ya da son üç şifreleri kullanılmış olan, hangisi büyükse</value>
+  </data>
+  <data name="Password_Rule_13" xml:space="preserve">
+    <value>Bu tavsiye edilir</value>
+  </data>
+  <data name="Password_Rule_14" xml:space="preserve">
+    <value>(Saatler ilkbahar ve sonbaharda ayarlanır örn.,) Şifreler yılda iki kez değiştirilir</value>
+  </data>
+  <data name="Password_Rule_15" xml:space="preserve">
+    <value>Seçilen Her şifre yeni ve farklı</value>
+  </data>
+  <data name="Password_Rule_2" xml:space="preserve">
+    <value>Sekiz (8) karakter uzunluğunda, en az bir</value>
+  </data>
+  <data name="Password_Rule_3" xml:space="preserve">
+    <value>Sayısal bir sayı ile başlamak gerekir</value>
+  </data>
+  <data name="Password_Rule_4" xml:space="preserve">
+    <value>Hafızaya, bir şifre indirilir eğer güvenli olmalı</value>
+  </data>
+  <data name="Password_Rule_5" xml:space="preserve">
+    <value>Aşağıdaki kategorilerde üç (3) en az bir (1) karakter içeren</value>
+  </data>
+  <data name="Password_Rule_6" xml:space="preserve">
+    <value>Büyük harf (A-Z)</value>
+  </data>
+  <data name="Password_Rule_7" xml:space="preserve">
+    <value>Küçük harf (a-z)</value>
+  </data>
+  <data name="Password_Rule_8" xml:space="preserve">
+    <value>Rakam (0-9)</value>
+  </data>
+  <data name="Password_Rule_9" xml:space="preserve">
+    <value>özel olun</value>
+  </data>
+  <data name="Forgot_password_message_1" xml:space="preserve">
+    <value>Gönder 'i tıklatın e-posta adresinizi ve kullanıcı adı girin</value>
+  </data>
+  <data name="Forgot_password_message_2" xml:space="preserve">
+    <value>EcoDomus şifre bilgileri size bir e-posta göndereceğiz</value>
+  </data>
+  <data name="Password_change_message" xml:space="preserve">
+    <value>Şifre uyumlu değil!.</value>
+  </data>
+  <data name="Authentication_error" xml:space="preserve">
+    <value>Kimlik Doğrulama Hata</value>
+  </data>
+  <data name="Error_sending_Email" xml:space="preserve">
+    <value>E-posta gönderirken hata</value>
+  </data>
+  <data name="Password_Rule_16" xml:space="preserve">
+    <value>Yeni parola mevcut şifreyi farklı olmalıdır</value>
+  </data>
+  <data name="IAgree" xml:space="preserve">
+    <value>Kabul Ediyorum</value>
+  </data>
+  <data name="IDecline" xml:space="preserve">
+    <value>Ben Reddet</value>
+  </data>
+  <data name="Street_Address" xml:space="preserve">
+    <value>Adres</value>
+  </data>
+  <data name="Configuration" xml:space="preserve">
+    <value>yapılandırma</value>
+  </data>
+  <data name="Save_Schedule" xml:space="preserve">
+    <value>Zamanlama kaydet</value>
+  </data>
+  <data name="Sync_Bottom_Line" xml:space="preserve">
+    <value>Not: Sayfa otomatik olarak her 30 saniye sonra yenilenir</value>
+  </data>
+  <data name="Add_Required_Attributes_to_Model" xml:space="preserve">
+    <value>Ekle Gerekli Model Öznitelikleri</value>
+  </data>
+  <data name="Designer_Contractor" xml:space="preserve">
+    <value>tasarımcı Yüklenici</value>
+  </data>
+  <data name="Entity_Names" xml:space="preserve">
+    <value>varlık İsimler</value>
+  </data>
+  <data name="Missing_Information_Report" xml:space="preserve">
+    <value>Eksik Bilgi Raporu</value>
+  </data>
+  <data name="Missing_Information_Report_Types" xml:space="preserve">
+    <value>Eksik Bilgi Rapor Türleri</value>
+  </data>
+  <data name="Report" xml:space="preserve">
+    <value>rapor</value>
+  </data>
+  <data name="master_file" xml:space="preserve">
+    <value>Master File</value>
+  </data>
+  <data name="View" xml:space="preserve">
+    <value>görünüm</value>
+  </data>
+  <data name="Show_change_log" xml:space="preserve">
+    <value>Göster Girişi değiştir</value>
+  </data>
+  <data name="History" xml:space="preserve">
+    <value>tarih</value>
+  </data>
+  <data name="Total_gross_area" xml:space="preserve">
+    <value>Toplam brüt alanı</value>
+  </data>
+  <data name="Total_net_area" xml:space="preserve">
+    <value>Toplam net alan</value>
+  </data>
+  <data name="COBie_QualityControl" xml:space="preserve">
+    <value>Cobie Kalite Kontrol Ayarları için</value>
+  </data>
+  <data name="Map_Document" xml:space="preserve">
+    <value>Harita Belge</value>
+  </data>
+  <data name="Map_Documents" xml:space="preserve">
+    <value>Harita Belgeler</value>
+  </data>
+  <data name="Select_Subsystems" xml:space="preserve">
+    <value>Alt Sistemleri seçiniz</value>
+  </data>
+  <data name="Add_New_Line" xml:space="preserve">
+    <value>New Line Ekle</value>
+  </data>
+  <data name="Select_Field" xml:space="preserve">
+    <value>Seç Alan</value>
+  </data>
+  <data name="Select_Symbol" xml:space="preserve">
+    <value>sembol seçiniz</value>
+  </data>
+  <data name="Barcode_Height" xml:space="preserve">
+    <value>Barkod Yükseklik</value>
+  </data>
+  <data name="Barcode_Per_Page" xml:space="preserve">
+    <value>Sayfa Başına Barkod</value>
+  </data>
+  <data name="Barcode_Preview" xml:space="preserve">
+    <value>Barkod Önizleme</value>
+  </data>
+  <data name="Barcode_Print_Option" xml:space="preserve">
+    <value>Barkod Yazdırma Seçeneği</value>
+  </data>
+  <data name="Barcode_Sample" xml:space="preserve">
+    <value>Barkod örnek</value>
+  </data>
+  <data name="Barcode_type" xml:space="preserve">
+    <value>Barkod Tipi</value>
+  </data>
+  <data name="Barcode_Width" xml:space="preserve">
+    <value>Barkod genişliği</value>
+  </data>
+  <data name="Barcode_Without_Data" xml:space="preserve">
+    <value>Veri olmadan Barkod</value>
+  </data>
+  <data name="Barcode_With_Data" xml:space="preserve">
+    <value>Data ile Barkoda</value>
+  </data>
+  <data name="Document_Template" xml:space="preserve">
+    <value>Belge Şablonu</value>
+  </data>
+  <data name="Preview" xml:space="preserve">
+    <value>Önizleme</value>
+  </data>
+  <data name="Randomization_Length" xml:space="preserve">
+    <value>randomizasyon Süresi</value>
+  </data>
+  <data name="Symbol" xml:space="preserve">
+    <value>sembol</value>
+  </data>
+  <data name="Field" xml:space="preserve">
+    <value>alan</value>
+  </data>
+  <data name="Delete_Attributes" xml:space="preserve">
+    <value>Öznitelikleri sil</value>
+  </data>
+  <data name="Attribute_Version" xml:space="preserve">
+    <value>Sürüm Özellik</value>
+  </data>
+  <data name="Add_Classification" xml:space="preserve">
+    <value>Sınıflandırma ekle</value>
+  </data>
+  <data name="Add_Classification_Details" xml:space="preserve">
+    <value>Sınıflandırma Detayı Ekle</value>
+  </data>
+  <data name="Assigned_Classifications" xml:space="preserve">
+    <value>atanan sınıflandırılması</value>
+  </data>
+  <data name="Classification_Detail_Code" xml:space="preserve">
+    <value>Sınıflandırma Detay Kodu</value>
+  </data>
+  <data name="Classification_Detail_Name" xml:space="preserve">
+    <value>Sınıflandırma Detay Adı</value>
+  </data>
+  <data name="Color" xml:space="preserve">
+    <value>renk</value>
+  </data>
+  <data name="Types" xml:space="preserve">
+    <value>türleri</value>
+  </data>
+  <data name="Add_Job" xml:space="preserve">
+    <value>İşi Ekle</value>
+  </data>
+  <data name="test" xml:space="preserve">
+    <value>test</value>
+  </data>
+  <data name="File_name_format" xml:space="preserve">
+    <value>Dosya adı biçimi</value>
+  </data>
+  <data name="Auto_map_documents" xml:space="preserve">
+    <value>Otomatik harita belgeler</value>
+  </data>
+  <data name="Please_select_at_least_one_document" xml:space="preserve">
+    <value>En az bir belge seçin Lütfen !!</value>
+  </data>
+  <data name="Please_select_entity_from_the_dropdown" xml:space="preserve">
+    <value>Açılan menüden varlık seçiniz</value>
+  </data>
+  <data name="Document_type_not_found" xml:space="preserve">
+    <value>Belge türü bulunamadı</value>
+  </data>
+  <data name="Stage_not_found" xml:space="preserve">
+    <value>Sahne bulunamadı</value>
+  </data>
+  <data name="ApprovalBy_not_found" xml:space="preserve">
+    <value>Bulunamadı tarafından onaylanması</value>
+  </data>
+  <data name="Please_type_a_file_name_pattern" xml:space="preserve">
+    <value>, Bir dosya adı deseni giriniz</value>
+  </data>
+  <data name="Document_type_not_defined" xml:space="preserve">
+    <value>Belge türü tanımlı değil</value>
+  </data>
+  <data name="Stage_not_defined" xml:space="preserve">
+    <value>Sahne tanımlı değil</value>
+  </data>
+  <data name="ApprovalBy_not_defined" xml:space="preserve">
+    <value>Tanımlı değil By Onay</value>
+  </data>
+  <data name="Invalid_pattern" xml:space="preserve">
+    <value>Geçersiz desen</value>
+  </data>
+  <data name="The_document_name_does_not_match_the_pattern" xml:space="preserve">
+    <value>Belge adı desen eşleşmiyor</value>
+  </data>
+  <data name="Unknown_entity" xml:space="preserve">
+    <value>bilinmeyen varlık</value>
+  </data>
+  <data name="Job_Template" xml:space="preserve">
+    <value>iş Şablon</value>
+  </data>
+  <data name="PM_jobs" xml:space="preserve">
+    <value>PM İşler</value>
+  </data>
+  <data name="SortBy" xml:space="preserve">
+    <value>göre sırala</value>
+  </data>
+  <data name="Merge" xml:space="preserve">
+    <value>Birleştirme</value>
+  </data>
+  <data name="DUT_ACRES" xml:space="preserve">
+    <value>dönüm</value>
+  </data>
+  <data name="DUT_ACRES_SHORT" xml:space="preserve">
+    <value>ac</value>
+  </data>
+  <data name="DUT_CENTIMETERS" xml:space="preserve">
+    <value>santimetre</value>
+  </data>
+  <data name="DUT_CENTIMETERS_SHORT" xml:space="preserve">
+    <value>cm</value>
+  </data>
+  <data name="DUT_CUBIC_CENTIMETERS" xml:space="preserve">
+    <value>santimetreküp</value>
+  </data>
+  <data name="DUT_CUBIC_CENTIMETERS_SHORT" xml:space="preserve">
+    <value>cm³</value>
+  </data>
+  <data name="DUT_CUBIC_FEET" xml:space="preserve">
+    <value>feet küp</value>
+  </data>
+  <data name="DUT_CUBIC_FEET_SHORT" xml:space="preserve">
+    <value>CF</value>
+  </data>
+  <data name="DUT_CUBIC_INCHES" xml:space="preserve">
+    <value>kübik İnç</value>
+  </data>
+  <data name="DUT_CUBIC_INCHES_SHORT" xml:space="preserve">
+    <value>in³</value>
+  </data>
+  <data name="DUT_CUBIC_METERS" xml:space="preserve">
+    <value>metreküp</value>
+  </data>
+  <data name="DUT_CUBIC_METERS_SHORT" xml:space="preserve">
+    <value>m³</value>
+  </data>
+  <data name="DUT_CUBIC_MILLIMETERS" xml:space="preserve">
+    <value>milimetredir</value>
+  </data>
+  <data name="DUT_CUBIC_MILLIMETERS_SHORT" xml:space="preserve">
+    <value>mm³</value>
+  </data>
+  <data name="DUT_CUBIC_YARDS" xml:space="preserve">
+    <value>kübik metre</value>
+  </data>
+  <data name="DUT_CUBIC_YARDS_SHORT" xml:space="preserve">
+    <value>CY</value>
+  </data>
+  <data name="DUT_CURRENCY" xml:space="preserve">
+    <value>para</value>
+  </data>
+  <data name="DUT_CURRENCY_SHORT" xml:space="preserve">
+    <value />
+  </data>
+  <data name="DUT_DECANEWTONS" xml:space="preserve">
+    <value>decanewtons</value>
+  </data>
+  <data name="DUT_DECANEWTONS_PER_METER" xml:space="preserve">
+    <value>metre başına decanewtons</value>
+  </data>
+  <data name="DUT_DECANEWTONS_PER_METER_SHORT" xml:space="preserve">
+    <value>daN/m</value>
+  </data>
+  <data name="DUT_DECANEWTONS_PER_SQUARE_METER" xml:space="preserve">
+    <value>metrekare başına decanewtons</value>
+  </data>
+  <data name="DUT_DECANEWTONS_PER_SQUARE_METER_SHORT" xml:space="preserve">
+    <value>daN/m²</value>
+  </data>
+  <data name="DUT_DECANEWTONS_SHORT" xml:space="preserve">
+    <value>daN</value>
+  </data>
+  <data name="DUT_DECANEWTON_METERS" xml:space="preserve">
+    <value>decanewton metre</value>
+  </data>
+  <data name="DUT_DECANEWTON_METERS_SHORT" xml:space="preserve">
+    <value>daN·m</value>
+  </data>
+  <data name="DUT_DECIMETERS" xml:space="preserve">
+    <value>izlenebildiği</value>
+  </data>
+  <data name="DUT_DECIMETERS_SHORT" xml:space="preserve">
+    <value>dm</value>
+  </data>
+  <data name="DUT_DEGREES" xml:space="preserve">
+    <value>derece</value>
+  </data>
+  <data name="DUT_DEGREES_AND_MINUTES" xml:space="preserve">
+    <value>derece ve dakika</value>
+  </data>
+  <data name="DUT_DEGREES_AND_MINUTES_SHORT" xml:space="preserve">
+    <value />
+  </data>
+  <data name="DUT_DEGREES_SHORT" xml:space="preserve">
+    <value>°</value>
+  </data>
+  <data name="DUT_FEET" xml:space="preserve">
+    <value>ayaklar</value>
+  </data>
+  <data name="DUT_FEET_FRACTIONAL_INCHES" xml:space="preserve">
+    <value>fit ve kesirli inç</value>
+  </data>
+  <data name="DUT_FEET_FRACTIONAL_INCHES_SHORT" xml:space="preserve">
+    <value />
+  </data>
+  <data name="DUT_FEET_SHORT" xml:space="preserve">
+    <value>ft</value>
+  </data>
+  <data name="DUT_FRACTIONAL_INCHES" xml:space="preserve">
+    <value>fraksiyonel inç</value>
+  </data>
+  <data name="DUT_FRACTIONAL_INCHES_SHORT" xml:space="preserve">
+    <value />
+  </data>
+  <data name="DUT_GALLONS_US" xml:space="preserve">
+    <value>galon (Amerika Birleşik Devletleri)</value>
+  </data>
+  <data name="DUT_GALLONS_US_SHORT" xml:space="preserve">
+    <value>gal</value>
+  </data>
+  <data name="DUT_GRADS" xml:space="preserve">
+    <value>grad</value>
+  </data>
+  <data name="DUT_GRADS_SHORT" xml:space="preserve">
+    <value>grad</value>
+  </data>
+  <data name="DUT_HECTARES" xml:space="preserve">
+    <value>hektar</value>
+  </data>
+  <data name="DUT_HECTARES_SHORT" xml:space="preserve">
+    <value>ha</value>
+  </data>
+  <data name="DUT_HOURS" xml:space="preserve">
+    <value>saat</value>
+  </data>
+  <data name="DUT_HOURS_SHORT" xml:space="preserve">
+    <value>h</value>
+  </data>
+  <data name="DUT_INCHES" xml:space="preserve">
+    <value>inç</value>
+  </data>
+  <data name="DUT_INCHES_SHORT" xml:space="preserve">
+    <value>in</value>
+  </data>
+  <data name="DUT_KILOGRAMS_FORCE" xml:space="preserve">
+    <value>kilogram-kuvvet</value>
+  </data>
+  <data name="DUT_KILOGRAMS_FORCE_PER_METER" xml:space="preserve">
+    <value>Metre her kilogramı için kuvvet</value>
+  </data>
+  <data name="DUT_KILOGRAMS_FORCE_PER_METER_SHORT" xml:space="preserve">
+    <value>kgf/m</value>
+  </data>
+  <data name="DUT_KILOGRAMS_FORCE_PER_SQUARE_METER" xml:space="preserve">
+    <value>Metre kare başına kilogram kuvvet</value>
+  </data>
+  <data name="DUT_KILOGRAMS_FORCE_PER_SQUARE_METER_SHORT" xml:space="preserve">
+    <value>kgf/m²</value>
+  </data>
+  <data name="DUT_KILOGRAMS_FORCE_SHORT" xml:space="preserve">
+    <value>kgf</value>
+  </data>
+  <data name="DUT_KILOGRAMS_MASS" xml:space="preserve">
+    <value>kilogram</value>
+  </data>
+  <data name="DUT_KILOGRAMS_MASS_SHORT" xml:space="preserve">
+    <value>kg</value>
+  </data>
+  <data name="DUT_KILOGRAMS_PER_CUBIC_METER" xml:space="preserve">
+    <value>metre küp başına kilogram</value>
+  </data>
+  <data name="DUT_KILOGRAMS_PER_CUBIC_METER_SHORT" xml:space="preserve">
+    <value>kg/m³</value>
+  </data>
+  <data name="DUT_KILOGRAM_FORCE_METERS" xml:space="preserve">
+    <value>kilogram-kuvvet metre</value>
+  </data>
+  <data name="DUT_KILOGRAM_FORCE_METERS_SHORT" xml:space="preserve">
+    <value>kgf·m</value>
+  </data>
+  <data name="DUT_KILONEWTONS" xml:space="preserve">
+    <value>kilonewton'dan</value>
+  </data>
+  <data name="DUT_KILONEWTONS_PER_METER" xml:space="preserve">
+    <value>metre için kilonewtonun</value>
+  </data>
+  <data name="DUT_KILONEWTONS_PER_METER_SHORT" xml:space="preserve">
+    <value>kN/m</value>
+  </data>
+  <data name="DUT_KILONEWTONS_PER_SQUARE_METER" xml:space="preserve">
+    <value>Metre kare için kilonewtonun</value>
+  </data>
+  <data name="DUT_KILONEWTONS_PER_SQUARE_METER_SHORT" xml:space="preserve">
+    <value>kN/m²</value>
+  </data>
+  <data name="DUT_KILONEWTONS_SHORT" xml:space="preserve">
+    <value>kN</value>
+  </data>
+  <data name="DUT_KILONEWTON_METERS" xml:space="preserve">
+    <value>kilonewton'dan metre</value>
+  </data>
+  <data name="DUT_KILONEWTON_METERS_SHORT" xml:space="preserve">
+    <value>kN·m</value>
+  </data>
+  <data name="DUT_KIPS" xml:space="preserve">
+    <value>kip</value>
+  </data>
+  <data name="DUT_KIPS_PER_FOOT" xml:space="preserve">
+    <value>ayak başına kip</value>
+  </data>
+  <data name="DUT_KIPS_PER_FOOT_SHORT" xml:space="preserve">
+    <value>kip/ft</value>
+  </data>
+  <data name="DUT_KIPS_PER_INCH" xml:space="preserve">
+    <value>inç başına kip</value>
+  </data>
+  <data name="DUT_KIPS_PER_INCH_SHORT" xml:space="preserve">
+    <value>kip/in</value>
+  </data>
+  <data name="DUT_KIPS_PER_SQUARE_FOOT" xml:space="preserve">
+    <value>metrekare başına kip</value>
+  </data>
+  <data name="DUT_KIPS_PER_SQUARE_FOOT_SHORT" xml:space="preserve">
+    <value>kip/SF</value>
+  </data>
+  <data name="DUT_KIPS_SHORT" xml:space="preserve">
+    <value>kip</value>
+  </data>
+  <data name="DUT_KIP_FEET" xml:space="preserve">
+    <value>kip-ayak</value>
+  </data>
+  <data name="DUT_KIP_FEET_SHORT" xml:space="preserve">
+    <value>kip·ft</value>
+  </data>
+  <data name="DUT_LITERS" xml:space="preserve">
+    <value>litre</value>
+  </data>
+  <data name="DUT_LITERS_SHORT" xml:space="preserve">
+    <value>l</value>
+  </data>
+  <data name="DUT_MEGANEWTONS" xml:space="preserve">
+    <value>meganewtons</value>
+  </data>
+  <data name="DUT_MEGANEWTONS_PER_METER" xml:space="preserve">
+    <value>metre başına meganewtons</value>
+  </data>
+  <data name="DUT_MEGANEWTONS_PER_METER_SHORT" xml:space="preserve">
+    <value>MN/m</value>
+  </data>
+  <data name="DUT_MEGANEWTONS_PER_SQUARE_METER" xml:space="preserve">
+    <value>metrekare başına meganewtons</value>
+  </data>
+  <data name="DUT_MEGANEWTONS_PER_SQUARE_METER_SHORT" xml:space="preserve">
+    <value>MN/m²</value>
+  </data>
+  <data name="DUT_MEGANEWTONS_SHORT" xml:space="preserve">
+    <value>MN</value>
+  </data>
+  <data name="DUT_MEGANEWTON_METERS" xml:space="preserve">
+    <value>meganewtons metre</value>
+  </data>
+  <data name="DUT_MEGANEWTON_METERS_SHORT" xml:space="preserve">
+    <value>MN·m</value>
+  </data>
+  <data name="DUT_METERS" xml:space="preserve">
+    <value>metre</value>
+  </data>
+  <data name="DUT_METERS_SHORT" xml:space="preserve">
+    <value>m</value>
+  </data>
+  <data name="DUT_MILISECONDS" xml:space="preserve">
+    <value>milisaniye</value>
+  </data>
+  <data name="DUT_MILISECONDS_SHORT" xml:space="preserve">
+    <value>ms</value>
+  </data>
+  <data name="DUT_MILLIMETERS" xml:space="preserve">
+    <value>milimetre</value>
+  </data>
+  <data name="DUT_MILLIMETERS_SHORT" xml:space="preserve">
+    <value>mm</value>
+  </data>
+  <data name="DUT_MINUTES" xml:space="preserve">
+    <value>dakika</value>
+  </data>
+  <data name="DUT_MINUTES_SHORT" xml:space="preserve">
+    <value>min</value>
+  </data>
+  <data name="DUT_NEWTONS" xml:space="preserve">
+    <value>newton</value>
+  </data>
+  <data name="DUT_NEWTONS_PER_METER" xml:space="preserve">
+    <value>metre başına Newton</value>
+  </data>
+  <data name="DUT_NEWTONS_PER_METER_SHORT" xml:space="preserve">
+    <value>N/m</value>
+  </data>
+  <data name="DUT_NEWTONS_PER_SQUARE_METER" xml:space="preserve">
+    <value>metrekare başına Newton</value>
+  </data>
+  <data name="DUT_NEWTONS_PER_SQUARE_METER_SHORT" xml:space="preserve">
+    <value>N/m²</value>
+  </data>
+  <data name="DUT_NEWTONS_SHORT" xml:space="preserve">
+    <value>N</value>
+  </data>
+  <data name="DUT_NEWTON_METERS" xml:space="preserve">
+    <value>newton metre</value>
+  </data>
+  <data name="DUT_NEWTON_METERS_SHORT" xml:space="preserve">
+    <value>N·m</value>
+  </data>
+  <data name="DUT_POUNDS_FORCE" xml:space="preserve">
+    <value>pound-kuvvet</value>
+  </data>
+  <data name="DUT_POUNDS_FORCE_PER_FOOT" xml:space="preserve">
+    <value>ayak başına pound-kuvvet</value>
+  </data>
+  <data name="DUT_POUNDS_FORCE_PER_FOOT_SHORT" xml:space="preserve">
+    <value>lbf/ft</value>
+  </data>
+  <data name="DUT_POUNDS_FORCE_PER_SQUARE_FOOT" xml:space="preserve">
+    <value>metrekare başına pound-kuvvet</value>
+  </data>
+  <data name="DUT_POUNDS_FORCE_PER_SQUARE_FOOT_SHORT" xml:space="preserve">
+    <value>lbf/SF</value>
+  </data>
+  <data name="DUT_POUNDS_FORCE_SHORT" xml:space="preserve">
+    <value>lbf</value>
+  </data>
+  <data name="DUT_POUNDS_MASS" xml:space="preserve">
+    <value>lira</value>
+  </data>
+  <data name="DUT_POUNDS_MASS_PER_CUBIC_FOOT" xml:space="preserve">
+    <value>ayak küp başına pound</value>
+  </data>
+  <data name="DUT_POUNDS_MASS_PER_CUBIC_FOOT_SHORT" xml:space="preserve">
+    <value>lb/CF</value>
+  </data>
+  <data name="DUT_POUNDS_MASS_SHORT" xml:space="preserve">
+    <value>lb</value>
+  </data>
+  <data name="DUT_POUND_FORCE_FEET" xml:space="preserve">
+    <value>pound-kuvvet-ayak</value>
+  </data>
+  <data name="DUT_POUND_FORCE_FEET_SHORT" xml:space="preserve">
+    <value>lbf·ft</value>
+  </data>
+  <data name="DUT_RADIANS" xml:space="preserve">
+    <value>radyan</value>
+  </data>
+  <data name="DUT_RADIANS_SHORT" xml:space="preserve">
+    <value>rad</value>
+  </data>
+  <data name="DUT_SECONDS" xml:space="preserve">
+    <value>saniye</value>
+  </data>
+  <data name="DUT_SECONDS_SHORT" xml:space="preserve">
+    <value>s</value>
+  </data>
+  <data name="DUT_SQUARE_CENTIMETERS" xml:space="preserve">
+    <value>santimetrekare</value>
+  </data>
+  <data name="DUT_SQUARE_CENTIMETERS_SHORT" xml:space="preserve">
+    <value>cm²</value>
+  </data>
+  <data name="DUT_SQUARE_FEET" xml:space="preserve">
+    <value>metre kare</value>
+  </data>
+  <data name="DUT_SQUARE_FEET_SHORT" xml:space="preserve">
+    <value>SF</value>
+  </data>
+  <data name="DUT_SQUARE_INCHES" xml:space="preserve">
+    <value>inç kare</value>
+  </data>
+  <data name="DUT_SQUARE_INCHES_SHORT" xml:space="preserve">
+    <value>in²</value>
+  </data>
+  <data name="DUT_SQUARE_METERS" xml:space="preserve">
+    <value>metrekare</value>
+  </data>
+  <data name="DUT_SQUARE_METERS_SHORT" xml:space="preserve">
+    <value>m²</value>
+  </data>
+  <data name="DUT_SQUARE_MILLIMETERS" xml:space="preserve">
+    <value>milimetre kare</value>
+  </data>
+  <data name="DUT_SQUARE_MILLIMETERS_SHORT" xml:space="preserve">
+    <value>mm²</value>
+  </data>
+  <data name="DUT_TONNES_FORCE" xml:space="preserve">
+    <value>ton-kuvvet</value>
+  </data>
+  <data name="DUT_TONNES_FORCE_PER_METER" xml:space="preserve">
+    <value>metre başına ton-kuvvet</value>
+  </data>
+  <data name="DUT_TONNES_FORCE_PER_METER_SHORT" xml:space="preserve">
+    <value>tf/m</value>
+  </data>
+  <data name="DUT_TONNES_FORCE_PER_SQUARE_METER" xml:space="preserve">
+    <value>Metre kare başına ton-kuvvet</value>
+  </data>
+  <data name="DUT_TONNES_FORCE_PER_SQUARE_METER_SHORT" xml:space="preserve">
+    <value>tf/m²</value>
+  </data>
+  <data name="DUT_TONNES_FORCE_SHORT" xml:space="preserve">
+    <value>tf</value>
+  </data>
+  <data name="DUT_TONNES_MASS" xml:space="preserve">
+    <value>ton</value>
+  </data>
+  <data name="DUT_TONNES_MASS_SHORT" xml:space="preserve">
+    <value>t</value>
+  </data>
+  <data name="DUT_TONNE_FORCE_METERS" xml:space="preserve">
+    <value>ton-kuvvet metre</value>
+  </data>
+  <data name="DUT_TONNE_FORCE_METERS_SHORT" xml:space="preserve">
+    <value>tf·m</value>
+  </data>
+</root>

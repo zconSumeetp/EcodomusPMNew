@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Login" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://devpm.ecodomus.com/CentralService/Login.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://devpm.ecodomus.com/CentralService/Login.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://devpm.ecodomus.com/CentralService/Login.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/EcoDomus.Login" />
+      <xsd:import schemaLocation="http://devpm.ecodomus.com/CentralService/Login.svc?xsd=xsd3" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ILogin_InsertLoginUsersessionDetail_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertLoginUsersessionDetail" />
+  </wsdl:message>
+  <wsdl:message name="ILogin_InsertLoginUsersessionDetail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertLoginUsersessionDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILogin_GetUserClientDetail_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserClientDetail" />
+  </wsdl:message>
+  <wsdl:message name="ILogin_GetUserClientDetail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserClientDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILogin_Gettrainingvideo_InputMessage">
+    <wsdl:part name="parameters" element="tns:Gettrainingvideo" />
+  </wsdl:message>
+  <wsdl:message name="ILogin_Gettrainingvideo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GettrainingvideoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILogin_GetUserClientDetail_new_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserClientDetail_new" />
+  </wsdl:message>
+  <wsdl:message name="ILogin_GetUserClientDetail_new_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserClientDetail_newResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILogin_GetLanguageDDL_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLanguageDDL" />
+  </wsdl:message>
+  <wsdl:message name="ILogin_GetLanguageDDL_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLanguageDDLResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILogin_setApplicationlangauage_InputMessage">
+    <wsdl:part name="parameters" element="tns:setApplicationlangauage" />
+  </wsdl:message>
+  <wsdl:message name="ILogin_setApplicationlangauage_OutputMessage">
+    <wsdl:part name="parameters" element="tns:setApplicationlangauageResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILogin_getCultureName_InputMessage">
+    <wsdl:part name="parameters" element="tns:getCultureName" />
+  </wsdl:message>
+  <wsdl:message name="ILogin_getCultureName_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getCultureNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILogin_CheckUserAuthentication_InputMessage">
+    <wsdl:part name="parameters" element="tns:CheckUserAuthentication" />
+  </wsdl:message>
+  <wsdl:message name="ILogin_CheckUserAuthentication_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CheckUserAuthenticationResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILogin_GetLoginUserDetail_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLoginUserDetail" />
+  </wsdl:message>
+  <wsdl:message name="ILogin_GetLoginUserDetail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLoginUserDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILogin_InsertLoginUserDetail_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertLoginUserDetail" />
+  </wsdl:message>
+  <wsdl:message name="ILogin_InsertLoginUserDetail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertLoginUserDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILogin_DeleteLoginUserDetail_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteLoginUserDetail" />
+  </wsdl:message>
+  <wsdl:message name="ILogin_DeleteLoginUserDetail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteLoginUserDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILogin_GetMenuData_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMenuData" />
+  </wsdl:message>
+  <wsdl:message name="ILogin_GetMenuData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMenuDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILogin_GetMenuData_PM_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMenuData_PM" />
+  </wsdl:message>
+  <wsdl:message name="ILogin_GetMenuData_PM_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMenuData_PMResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILogin_GetConnectionStringUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetConnectionStringUser" />
+  </wsdl:message>
+  <wsdl:message name="ILogin_GetConnectionStringUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetConnectionStringUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILogin_GetUserDetailsForEcoDomusMobileClient_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserDetailsForEcoDomusMobileClient" />
+  </wsdl:message>
+  <wsdl:message name="ILogin_GetUserDetailsForEcoDomusMobileClient_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserDetailsForEcoDomusMobileClientResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILogin_GetMasterTableSequence_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMasterTableSequence" />
+  </wsdl:message>
+  <wsdl:message name="ILogin_GetMasterTableSequence_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMasterTableSequenceResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILogin_GetClientTableSequence_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetClientTableSequence" />
+  </wsdl:message>
+  <wsdl:message name="ILogin_GetClientTableSequence_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetClientTableSequenceResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILogin_GetCentralConnectionString_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCentralConnectionString" />
+  </wsdl:message>
+  <wsdl:message name="ILogin_GetCentralConnectionString_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCentralConnectionStringResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILogin_GetRecentFacilityDataFM_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetRecentFacilityDataFM" />
+  </wsdl:message>
+  <wsdl:message name="ILogin_GetRecentFacilityDataFM_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetRecentFacilityDataFMResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILogin_InsertRecentUserData_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertRecentUserData" />
+  </wsdl:message>
+  <wsdl:message name="ILogin_InsertRecentUserData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertRecentUserDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILogin_GetRecentUserDataPMFM_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetRecentUserDataPMFM" />
+  </wsdl:message>
+  <wsdl:message name="ILogin_GetRecentUserDataPMFM_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetRecentUserDataPMFMResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILogin_GetSettingMenuPM_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSettingMenuPM" />
+  </wsdl:message>
+  <wsdl:message name="ILogin_GetSettingMenuPM_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSettingMenuPMResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILogin_GetSequenceKeys_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSequenceKeys" />
+  </wsdl:message>
+  <wsdl:message name="ILogin_GetSequenceKeys_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSequenceKeysResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ILogin">
+    <wsdl:operation name="InsertLoginUsersessionDetail">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILogin/InsertLoginUsersessionDetail" message="tns:ILogin_InsertLoginUsersessionDetail_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILogin/InsertLoginUsersessionDetailResponse" message="tns:ILogin_InsertLoginUsersessionDetail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserClientDetail">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILogin/GetUserClientDetail" message="tns:ILogin_GetUserClientDetail_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILogin/GetUserClientDetailResponse" message="tns:ILogin_GetUserClientDetail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Gettrainingvideo">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILogin/Gettrainingvideo" message="tns:ILogin_Gettrainingvideo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILogin/GettrainingvideoResponse" message="tns:ILogin_Gettrainingvideo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserClientDetail_new">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILogin/GetUserClientDetail_new" message="tns:ILogin_GetUserClientDetail_new_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILogin/GetUserClientDetail_newResponse" message="tns:ILogin_GetUserClientDetail_new_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLanguageDDL">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILogin/GetLanguageDDL" message="tns:ILogin_GetLanguageDDL_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILogin/GetLanguageDDLResponse" message="tns:ILogin_GetLanguageDDL_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="setApplicationlangauage">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILogin/setApplicationlangauage" message="tns:ILogin_setApplicationlangauage_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILogin/setApplicationlangauageResponse" message="tns:ILogin_setApplicationlangauage_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getCultureName">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILogin/getCultureName" message="tns:ILogin_getCultureName_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILogin/getCultureNameResponse" message="tns:ILogin_getCultureName_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckUserAuthentication">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILogin/CheckUserAuthentication" message="tns:ILogin_CheckUserAuthentication_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILogin/CheckUserAuthenticationResponse" message="tns:ILogin_CheckUserAuthentication_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLoginUserDetail">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILogin/GetLoginUserDetail" message="tns:ILogin_GetLoginUserDetail_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILogin/GetLoginUserDetailResponse" message="tns:ILogin_GetLoginUserDetail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertLoginUserDetail">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILogin/InsertLoginUserDetail" message="tns:ILogin_InsertLoginUserDetail_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILogin/InsertLoginUserDetailResponse" message="tns:ILogin_InsertLoginUserDetail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteLoginUserDetail">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILogin/DeleteLoginUserDetail" message="tns:ILogin_DeleteLoginUserDetail_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILogin/DeleteLoginUserDetailResponse" message="tns:ILogin_DeleteLoginUserDetail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMenuData">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILogin/GetMenuData" message="tns:ILogin_GetMenuData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILogin/GetMenuDataResponse" message="tns:ILogin_GetMenuData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMenuData_PM">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILogin/GetMenuData_PM" message="tns:ILogin_GetMenuData_PM_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILogin/GetMenuData_PMResponse" message="tns:ILogin_GetMenuData_PM_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetConnectionStringUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILogin/GetConnectionStringUser" message="tns:ILogin_GetConnectionStringUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILogin/GetConnectionStringUserResponse" message="tns:ILogin_GetConnectionStringUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserDetailsForEcoDomusMobileClient">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILogin/GetUserDetailsForEcoDomusMobileClient" message="tns:ILogin_GetUserDetailsForEcoDomusMobileClient_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILogin/GetUserDetailsForEcoDomusMobileClientResponse" message="tns:ILogin_GetUserDetailsForEcoDomusMobileClient_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMasterTableSequence">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILogin/GetMasterTableSequence" message="tns:ILogin_GetMasterTableSequence_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILogin/GetMasterTableSequenceResponse" message="tns:ILogin_GetMasterTableSequence_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetClientTableSequence">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILogin/GetClientTableSequence" message="tns:ILogin_GetClientTableSequence_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILogin/GetClientTableSequenceResponse" message="tns:ILogin_GetClientTableSequence_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCentralConnectionString">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILogin/GetCentralConnectionString" message="tns:ILogin_GetCentralConnectionString_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILogin/GetCentralConnectionStringResponse" message="tns:ILogin_GetCentralConnectionString_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRecentFacilityDataFM">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILogin/GetRecentFacilityDataFM" message="tns:ILogin_GetRecentFacilityDataFM_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILogin/GetRecentFacilityDataFMResponse" message="tns:ILogin_GetRecentFacilityDataFM_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertRecentUserData">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILogin/InsertRecentUserData" message="tns:ILogin_InsertRecentUserData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILogin/InsertRecentUserDataResponse" message="tns:ILogin_InsertRecentUserData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRecentUserDataPMFM">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILogin/GetRecentUserDataPMFM" message="tns:ILogin_GetRecentUserDataPMFM_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILogin/GetRecentUserDataPMFMResponse" message="tns:ILogin_GetRecentUserDataPMFM_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSettingMenuPM">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILogin/GetSettingMenuPM" message="tns:ILogin_GetSettingMenuPM_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILogin/GetSettingMenuPMResponse" message="tns:ILogin_GetSettingMenuPM_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSequenceKeys">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILogin/GetSequenceKeys" message="tns:ILogin_GetSequenceKeys_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILogin/GetSequenceKeysResponse" message="tns:ILogin_GetSequenceKeys_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_ILogin" type="tns:ILogin">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="InsertLoginUsersessionDetail">
+      <soap:operation soapAction="http://tempuri.org/ILogin/InsertLoginUsersessionDetail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserClientDetail">
+      <soap:operation soapAction="http://tempuri.org/ILogin/GetUserClientDetail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Gettrainingvideo">
+      <soap:operation soapAction="http://tempuri.org/ILogin/Gettrainingvideo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserClientDetail_new">
+      <soap:operation soapAction="http://tempuri.org/ILogin/GetUserClientDetail_new" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLanguageDDL">
+      <soap:operation soapAction="http://tempuri.org/ILogin/GetLanguageDDL" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setApplicationlangauage">
+      <soap:operation soapAction="http://tempuri.org/ILogin/setApplicationlangauage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getCultureName">
+      <soap:operation soapAction="http://tempuri.org/ILogin/getCultureName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckUserAuthentication">
+      <soap:operation soapAction="http://tempuri.org/ILogin/CheckUserAuthentication" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLoginUserDetail">
+      <soap:operation soapAction="http://tempuri.org/ILogin/GetLoginUserDetail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertLoginUserDetail">
+      <soap:operation soapAction="http://tempuri.org/ILogin/InsertLoginUserDetail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteLoginUserDetail">
+      <soap:operation soapAction="http://tempuri.org/ILogin/DeleteLoginUserDetail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMenuData">
+      <soap:operation soapAction="http://tempuri.org/ILogin/GetMenuData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMenuData_PM">
+      <soap:operation soapAction="http://tempuri.org/ILogin/GetMenuData_PM" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetConnectionStringUser">
+      <soap:operation soapAction="http://tempuri.org/ILogin/GetConnectionStringUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserDetailsForEcoDomusMobileClient">
+      <soap:operation soapAction="http://tempuri.org/ILogin/GetUserDetailsForEcoDomusMobileClient" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMasterTableSequence">
+      <soap:operation soapAction="http://tempuri.org/ILogin/GetMasterTableSequence" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetClientTableSequence">
+      <soap:operation soapAction="http://tempuri.org/ILogin/GetClientTableSequence" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCentralConnectionString">
+      <soap:operation soapAction="http://tempuri.org/ILogin/GetCentralConnectionString" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRecentFacilityDataFM">
+      <soap:operation soapAction="http://tempuri.org/ILogin/GetRecentFacilityDataFM" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertRecentUserData">
+      <soap:operation soapAction="http://tempuri.org/ILogin/InsertRecentUserData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRecentUserDataPMFM">
+      <soap:operation soapAction="http://tempuri.org/ILogin/GetRecentUserDataPMFM" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSettingMenuPM">
+      <soap:operation soapAction="http://tempuri.org/ILogin/GetSettingMenuPM" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSequenceKeys">
+      <soap:operation soapAction="http://tempuri.org/ILogin/GetSequenceKeys" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Login">
+    <wsdl:port name="BasicHttpBinding_ILogin" binding="tns:BasicHttpBinding_ILogin">
+      <soap:address location="http://devpm.ecodomus.com/CentralService/Login.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

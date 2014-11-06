@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.datacontract.org/2004/07/Ecodomus.Client" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Ecodomus.Client" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:3333/Central WCF PM/Client.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="ClientModel">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Blank_db_Name_to_Restore" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ClientId" type="ser:guid" />
+      <xs:element minOccurs="0" name="ClientName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ClientSearchText" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Cobie_filepath" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ConnectTimeout" type="xs:int" />
+      <xs:element minOccurs="0" name="CreatedByUserId" type="ser:guid" />
+      <xs:element minOccurs="0" name="DatabasePassword" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DatabaseUsername" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Fk_contractor_organization_id" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Fk_designer_organization_id" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Fk_facility_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Fk_project_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="InitialCatalogue" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ModifiedByUserId" type="ser:guid" />
+      <xs:element minOccurs="0" name="OrganizationId" type="ser:guid" />
+      <xs:element minOccurs="0" name="Pk_request_id" type="ser:guid" />
+      <xs:element minOccurs="0" name="ServerInstance" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Status" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UserId" type="ser:guid" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ClientModel" nillable="true" type="tns:ClientModel" />
+</xs:schema>

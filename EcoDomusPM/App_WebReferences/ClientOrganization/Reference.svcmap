@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="50da9fd7-7a16-4bd6-be07-bd65a3df1f44" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>false</ReferenceAllAssemblies>
+    <ReferencedAssemblies>
+      <ReferencedAssembly AssemblyName="System" />
+      <ReferencedAssembly AssemblyName="System.Core" />
+      <ReferencedAssembly AssemblyName="System.Data" />
+      <ReferencedAssembly AssemblyName="System.Xml" />
+      <ReferencedAssembly AssemblyName="System.Xml.Linq" />
+    </ReferencedAssemblies>
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:4444/Client%20WCF/ClientOrganization.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ClientOrganization.xsd" MetadataType="Schema" ID="1dbd0814-220c-446f-bc1d-fdaf4a3dcaad" SourceId="1" SourceUrl="http://localhost:4444/Client WCF/ClientOrganization.svc?xsd=xsd0" />
+    <MetadataFile FileName="ClientOrganization2.xsd" MetadataType="Schema" ID="edb71c4f-7559-4ba0-824b-8218947cf855" SourceId="1" SourceUrl="http://localhost:4444/Client WCF/ClientOrganization.svc?xsd=xsd3" />
+    <MetadataFile FileName="ClientOrganization.wsdl" MetadataType="Wsdl" ID="ebf070bd-9e69-4b49-9bac-f608d234e1ea" SourceId="1" SourceUrl="http://localhost:4444/Client WCF/ClientOrganization.svc?wsdl" />
+    <MetadataFile FileName="ClientOrganization3.xsd" MetadataType="Schema" ID="b3ddd0b1-6864-49d2-b703-30791855db1e" SourceId="1" SourceUrl="http://localhost:4444/Client WCF/ClientOrganization.svc?xsd=xsd1" />
+    <MetadataFile FileName="ClientOrganization.disco" MetadataType="Disco" ID="004c2623-443c-428a-8b60-36b0b7eae17b" SourceId="1" SourceUrl="http://localhost:4444/Client WCF/ClientOrganization.svc?disco" />
+    <MetadataFile FileName="ClientOrganization4.xsd" MetadataType="Schema" ID="aed06609-5cc7-40b4-b3a6-a2cb623e4fab" SourceId="1" SourceUrl="http://localhost:4444/Client WCF/ClientOrganization.svc?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

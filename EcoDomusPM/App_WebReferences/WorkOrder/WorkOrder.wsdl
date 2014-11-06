@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="WorkOrder" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:4444/Client WCF/WorkOrder.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:4444/Client WCF/WorkOrder.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:4444/Client WCF/WorkOrder.svc?xsd=xsd2" />
+      <xsd:import schemaLocation="http://localhost:4444/Client WCF/WorkOrder.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/EcoDomus.WorkOrder" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IWorkOrder_DoWork_InputMessage">
+    <wsdl:part name="parameters" element="tns:DoWork" />
+  </wsdl:message>
+  <wsdl:message name="IWorkOrder_DoWork_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DoWorkResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWorkOrder_GetStatusList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetStatusList" />
+  </wsdl:message>
+  <wsdl:message name="IWorkOrder_GetStatusList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetStatusListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWorkOrder_InsertWorkOrder_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertWorkOrder" />
+  </wsdl:message>
+  <wsdl:message name="IWorkOrder_InsertWorkOrder_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertWorkOrderResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWorkOrder_GetWorkOrder_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetWorkOrder" />
+  </wsdl:message>
+  <wsdl:message name="IWorkOrder_GetWorkOrder_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetWorkOrderResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWorkOrder_DeleteWorkOrder_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteWorkOrder" />
+  </wsdl:message>
+  <wsdl:message name="IWorkOrder_DeleteWorkOrder_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteWorkOrderResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWorkOrder_GetWorkOrder_Facility_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetWorkOrder_Facility" />
+  </wsdl:message>
+  <wsdl:message name="IWorkOrder_GetWorkOrder_Facility_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetWorkOrder_FacilityResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWorkOrder_GetWorkOrder_User_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetWorkOrder_User" />
+  </wsdl:message>
+  <wsdl:message name="IWorkOrder_GetWorkOrder_User_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetWorkOrder_UserResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWorkOrder_GetWorkOrder_Location_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetWorkOrder_Location" />
+  </wsdl:message>
+  <wsdl:message name="IWorkOrder_GetWorkOrder_Location_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetWorkOrder_LocationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWorkOrder_GetWorkOrder_Entity_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetWorkOrder_Entity" />
+  </wsdl:message>
+  <wsdl:message name="IWorkOrder_GetWorkOrder_Entity_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetWorkOrder_EntityResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWorkOrder_GetAssetName_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAssetName" />
+  </wsdl:message>
+  <wsdl:message name="IWorkOrder_GetAssetName_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAssetNameResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IWorkOrder">
+    <wsdl:operation name="DoWork">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWorkOrder/DoWork" message="tns:IWorkOrder_DoWork_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWorkOrder/DoWorkResponse" message="tns:IWorkOrder_DoWork_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetStatusList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWorkOrder/GetStatusList" message="tns:IWorkOrder_GetStatusList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWorkOrder/GetStatusListResponse" message="tns:IWorkOrder_GetStatusList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertWorkOrder">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWorkOrder/InsertWorkOrder" message="tns:IWorkOrder_InsertWorkOrder_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWorkOrder/InsertWorkOrderResponse" message="tns:IWorkOrder_InsertWorkOrder_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetWorkOrder">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWorkOrder/GetWorkOrder" message="tns:IWorkOrder_GetWorkOrder_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWorkOrder/GetWorkOrderResponse" message="tns:IWorkOrder_GetWorkOrder_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteWorkOrder">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWorkOrder/DeleteWorkOrder" message="tns:IWorkOrder_DeleteWorkOrder_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWorkOrder/DeleteWorkOrderResponse" message="tns:IWorkOrder_DeleteWorkOrder_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetWorkOrder_Facility">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWorkOrder/GetWorkOrder_Facility" message="tns:IWorkOrder_GetWorkOrder_Facility_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWorkOrder/GetWorkOrder_FacilityResponse" message="tns:IWorkOrder_GetWorkOrder_Facility_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetWorkOrder_User">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWorkOrder/GetWorkOrder_User" message="tns:IWorkOrder_GetWorkOrder_User_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWorkOrder/GetWorkOrder_UserResponse" message="tns:IWorkOrder_GetWorkOrder_User_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetWorkOrder_Location">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWorkOrder/GetWorkOrder_Location" message="tns:IWorkOrder_GetWorkOrder_Location_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWorkOrder/GetWorkOrder_LocationResponse" message="tns:IWorkOrder_GetWorkOrder_Location_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetWorkOrder_Entity">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWorkOrder/GetWorkOrder_Entity" message="tns:IWorkOrder_GetWorkOrder_Entity_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWorkOrder/GetWorkOrder_EntityResponse" message="tns:IWorkOrder_GetWorkOrder_Entity_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAssetName">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWorkOrder/GetAssetName" message="tns:IWorkOrder_GetAssetName_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWorkOrder/GetAssetNameResponse" message="tns:IWorkOrder_GetAssetName_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IWorkOrder" type="tns:IWorkOrder">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="DoWork">
+      <soap:operation soapAction="http://tempuri.org/IWorkOrder/DoWork" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStatusList">
+      <soap:operation soapAction="http://tempuri.org/IWorkOrder/GetStatusList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertWorkOrder">
+      <soap:operation soapAction="http://tempuri.org/IWorkOrder/InsertWorkOrder" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWorkOrder">
+      <soap:operation soapAction="http://tempuri.org/IWorkOrder/GetWorkOrder" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteWorkOrder">
+      <soap:operation soapAction="http://tempuri.org/IWorkOrder/DeleteWorkOrder" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWorkOrder_Facility">
+      <soap:operation soapAction="http://tempuri.org/IWorkOrder/GetWorkOrder_Facility" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWorkOrder_User">
+      <soap:operation soapAction="http://tempuri.org/IWorkOrder/GetWorkOrder_User" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWorkOrder_Location">
+      <soap:operation soapAction="http://tempuri.org/IWorkOrder/GetWorkOrder_Location" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWorkOrder_Entity">
+      <soap:operation soapAction="http://tempuri.org/IWorkOrder/GetWorkOrder_Entity" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAssetName">
+      <soap:operation soapAction="http://tempuri.org/IWorkOrder/GetAssetName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WorkOrder">
+    <wsdl:port name="BasicHttpBinding_IWorkOrder" binding="tns:BasicHttpBinding_IWorkOrder">
+      <soap:address location="http://localhost:4444/Client%20WCF/WorkOrder.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

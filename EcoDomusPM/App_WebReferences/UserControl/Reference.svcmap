@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="7345f605-4a23-491a-af4f-25dd82879933" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>false</ReferenceAllAssemblies>
+    <ReferencedAssemblies>
+      <ReferencedAssembly AssemblyName="System" />
+      <ReferencedAssembly AssemblyName="System.Core" />
+      <ReferencedAssembly AssemblyName="System.Data" />
+      <ReferencedAssembly AssemblyName="System.Xml" />
+      <ReferencedAssembly AssemblyName="System.Xml.Linq" />
+    </ReferencedAssemblies>
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:4444/Client%20WCF/UserControl.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="UserControl.xsd" MetadataType="Schema" ID="ec0a1030-1e8b-43f6-a50c-bfdc260c5aa4" SourceId="1" SourceUrl="http://localhost:4444/Client WCF/UserControl.svc?xsd=xsd2" />
+    <MetadataFile FileName="UserControl.disco" MetadataType="Disco" ID="9343d919-5680-46bd-a01f-2257a55ecb51" SourceId="1" SourceUrl="http://localhost:4444/Client WCF/UserControl.svc?disco" />
+    <MetadataFile FileName="UserControl1.xsd" MetadataType="Schema" ID="98454c13-685b-4b74-aec6-642b42c51202" SourceId="1" SourceUrl="http://localhost:4444/Client WCF/UserControl.svc?xsd=xsd3" />
+    <MetadataFile FileName="UserControl2.xsd" MetadataType="Schema" ID="98b9971f-ca6b-4209-8169-45df2e7a4a77" SourceId="1" SourceUrl="http://localhost:4444/Client WCF/UserControl.svc?xsd=xsd0" />
+    <MetadataFile FileName="UserControl3.xsd" MetadataType="Schema" ID="ff7cd0ff-2c8e-4f65-990a-e9a09d29266a" SourceId="1" SourceUrl="http://localhost:4444/Client WCF/UserControl.svc?xsd=xsd1" />
+    <MetadataFile FileName="UserControl.wsdl" MetadataType="Wsdl" ID="98b6db59-ce8e-4033-9945-e6f8532af245" SourceId="1" SourceUrl="http://localhost:4444/Client WCF/UserControl.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
